@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{{ partial "head" . }}
+  </head>
+  <body>
+
+    <header>
+        {{ partial "banner" .}}
+   </header>
+{{ partial "waitlist" .}}
+  <footer>
+      <div style="margin-top:135px;"></div>
+      {{partial "footer" . }}
+  </footer>
+{{partial "site-scripts" .}}
+    </body>
+  </html>
