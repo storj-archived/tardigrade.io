@@ -1,6 +1,6 @@
 # Tardigrade.io
 
-**Pending 2 images from the new designer** 
+**Pending ~~2~~ 1 image~~s~~ from Dmitri, the new designer.** 
 
 ### Running
 
