@@ -1,6 +1,6 @@
 # Tardigrade.io
 
-**Pending ~~2~~ 1 image~~s~~ from Dmitri, the new designer.** 
+**Pending 1 image from Dmitri, the new designer. Needs to be added before this can be deployed.** 
 
 ### Running
 
