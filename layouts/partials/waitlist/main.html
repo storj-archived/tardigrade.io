@@ -1,0 +1,50 @@
+{{ with .Site.GetPage "info" }}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-5 mb-5">
+        <h1 class="waitlist-heading">{{.Params.heading}}</h1>
+        <p class="waitlist-sub-heading">{{.Params.subHeading}}</p>
+        
+      <!--form-start-->
+      <form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://storj.wufoo.com/forms/m1lo4ys3176ofyo/#public">
+
+        <div class="row">
+          <div class="col-12">
+            <input id="Field1" name="Field1" type="text" class="field text fn waitlist-input-name" value="" size="8" tabindex="1"  placeholder="First Name" required />
+          </div>
+          <div class="col-12">
+            <input id="Field2" name="Field2" type="text" class="field text ln waitlist-input-name" value="" size="8" tabindex="2"   placeholder="Last Name" required />
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-12">
+              <input class="waitlist-input-email" id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" placeholder="Email Address" required />
+            </div>
+          </div>
+
+          <div class="row m-5">
+            <div class="col-12">
+              <input class="btn get-access-btn" id="saveForm" name="saveForm" type="submit" value="GET EARLY ACCESS"/>
+            </div>
+          </div>
+
+          <div class="d-none">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="El0OKNOviaoxf+nB0YK5Ls9ANra2v52SNksCbxUKXRo=" />
+          </div>
+
+        </form>
+      <!--form-end-->
+      
+        <div>
+          <small>{{.Params.disclaimer}}</small>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{{end}}
+    
+    

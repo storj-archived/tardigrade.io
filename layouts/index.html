@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-{{ partial "head" . }}
-  </head>
-
+  <html lang="en">
+    <head>
+      {{ partial "head" . }}
+    </head>
   <body>
+
     <header>
       {{ partial "banner" .}}
-   </header>
-   {{ partial "home" .}}
-<footer>
-    <div style="margin-top:30px;"></div>
-{{partial "footer" . }}
-</footer>
-{{ partial "site-scripts" .}}
+    </header>
+
+      {{ partial "home/main" .}}
+
+    <footer>
+      {{partial "footer" . }}
+    </footer>
+
+    {{ partial "site-scripts" .}}
+
   </body>
 </html>

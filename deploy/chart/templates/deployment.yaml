@@ -1,0 +1,39 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app: {{ .Values.fqdn | replace "." "-" }}
+  name: {{ .Values.fqdn | replace "." "-" }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: {{ .Values.fqdn | replace "." "-" }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: {{ .Values.fqdn | replace "." "-" }}
+    spec:
+      containers:
+      - command:
+        - httpd
+        - -f
+        - -v
+        - -h
+        - /www
+        image: storjlabs/tardigrade.io:{{ .Values.docker_image_tag }}
+        imagePullPolicy: Always
+        name: www
+        ports:
+        - containerPort: 80
+          protocol: TCP
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
