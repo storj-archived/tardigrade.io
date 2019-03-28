@@ -1,22 +1,9 @@
+{{ with .Site.GetPage "banner"}}
 <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="background-color: #1A2751;">     
-          <h4 style="color:white;margin:0 auto;padding:20px;">Tardigrade.io - The future home of the Storj Labs development ecosystem.</h4>
-        </div>
-      </div>
-    </div>
-        <div class="container">
-      <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="col-xs-12 col-sm-6 col-md-4  col-lg-5 col-lg-offset-1">
-                  <div style="margin-top:35px;"></div>
-                <h2 style="color: #1A2751;height:29px;margin:0;font-size: 24px;"><strong>Tardigrade.io</strong></h2>
-                <div class="spacer5"></div>
-                <p style="color: #1A2751;font-weight:800;margin:0;font-size: 12px;">Highly Distributed. Ridiculously Resilient.</p>
-        </div>
-
-      </div>
-    </div>
-
+  <div class="row">
+    <div class="col-12 banner text-center">     
+      <h4 class="banner-text">{{.Params.bannerText}}</h4>
     </div>
   </div>
+</div>
+{{end}}
