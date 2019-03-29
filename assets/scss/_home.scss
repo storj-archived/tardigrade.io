@@ -2,12 +2,22 @@
 
 /* Home-Page */
 
+$colors: (
+  primary:#1A2751,
+  secondary: #989898,
+  accent: #979797
+);
+
+@function color($color-name){
+  @return map-get($colors, $color-name)
+};
+
 a{
-  color: #1A2751;
+  color: color(primary);
 }
 
 .banner {
-  background-color: #1A2751;
+  background-color: color(primary);
 }
 
 .banner-text{
@@ -19,14 +29,14 @@ a{
 }
 
 .slogan-name{
-  color: #1A2751;
+  color: color(primary);
   height:29px;
   margin:0;
   font-size: 24px;
 }
 
 .slogan-description{
-  color: #1A2751;
+  color: color(primary);
   font-weight:800;
   margin:0;
   font-size: 12px;
@@ -34,7 +44,7 @@ a{
 
 .footer{
   margin-top:30px;
-  color: #989898;
+  color: color(secondary);
   opacity:0.8;
   font-size: 12px;
 }
@@ -42,22 +52,22 @@ a{
 .heading{
   font-size:30px;
   line-height:40px;
-  color: #1A2751;
+  color: color(primary);
 }
 
 .sub-heading{
-  color: #1A2751;
+  color: color(primary);
   opacity: 0.7;
   font-size:16px;
 }
 
 .cta-link{
-  color: #1A2751;
+  color: color(primary);
 }
 
 .cta-btn{
   height: 46px;
-  border: 2px solid #1A2751;
+  border: 2px solid color(primary);
   border-radius: 4px;
   margin-top:25px;
   margin-bottom:25px;
@@ -67,7 +77,7 @@ a{
 
 .waitlist-heading {
  margin-bottom:0.3em;
- color: #1A2751;
+ color: color(primary);
  font-weight: 800;
  font-size: 40px;
 }
@@ -75,7 +85,7 @@ a{
 .waitlist-sub-heading {
   height: 93px;
   opacity: 0.8;
-  color: rgba(26,39,81,0.9);
+  color: color(primary);
   font-size: 16px;
   line-height: 28px;
   text-align: center;
@@ -90,19 +100,19 @@ a{
 
 .waitlist-input-name{
   border:none;
-  background-color: rgba(205,205,205,0.25);
-  color: #979797;
+  background-color: color(secondary);
+  color: color(accent);
 }
 
 .waitlist-input-email{
   border:none;
-  background-color: rgba(205,205,205,0.25);
-  color: #979797;
+  background-color: color(secondary);
+  color: color(accent);
 }
 
 .get-access-btn{
   height: 46px;
-  border: 2px solid #1A2751;
+  border: 2px solid color(primary);
   border-radius: 4px;
   margin-top:25px;
   margin-bottom:25px;
