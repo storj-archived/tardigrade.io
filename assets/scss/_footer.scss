@@ -11,5 +11,9 @@
 
     &__link {
         color: $color--grey;
+
+        &-img {
+            margin-right: 25px;
+        }
     }
 }
