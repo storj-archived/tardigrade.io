@@ -1,7 +1,7 @@
 VERSION := $(shell utils/version)
 export VERSION
 
-BRANCH := $(shell git rev-parse --abbrev-ref HEAD | sed "s!/!-!g")
+BRANCH_NAME := $(shell git rev-parse --abbrev-ref HEAD | sed "s!/!-!g")
 ifeq (${BRANCH_NAME},master)
 TAG ?= ${VERSION}
 CLUSTER ?= prod
