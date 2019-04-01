@@ -1,0 +1,15 @@
+.footer {
+	padding-top: 3.5em;
+	background: $color--blue-dark;
+	background-size: cover;
+    text-align: left;
+
+    &__list-unstyled {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__link {
+        color: $color--grey;
+    }
+}

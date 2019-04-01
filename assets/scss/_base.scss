@@ -1,0 +1,14 @@
+a {
+    &:hover {
+        color: $color--blue-light;
+        text-decoration: none;
+    }
+}
+
+.text-white {
+    color: $color--white;
+}
+
+.text-grey {
+    color: $color--grey;
+}
