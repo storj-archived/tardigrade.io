@@ -28,7 +28,12 @@
     }
 
     &__content {
+        h5 {
+            font-size: 15px;
+        }
+        
         &-address {
+            font-size: 13px;
             font-weight: 300;
         }
     }
