@@ -7,16 +7,20 @@ TAG ?= ${VERSION}
 CLUSTER ?= prod
 DEPLOYMENT ?= tardigrade-io
 else
-TAG ?= ${VERSION}-${BRANCH_NAME}
+TAG ?= ${VERSION}-${BRANCH_NAME}-drafts
 CLUSTER ?= nonprod
 DEPLOYMENT ?= staging-tardigrade-io
 endif
 
 
 .PHONY: build
+ifeq (${BRANCH_NAME},master)
 build:
 	docker build -t storjlabs/tardigrade.io:${TAG} .
-
+else
+build:
+	docker build --build-arg hugo_args='-D --environment staging' -t storjlabs/storj.io:${TAG} .
+endif
 .PHONY: push
 ifeq (${BRANCH_NAME},master)
 push:
