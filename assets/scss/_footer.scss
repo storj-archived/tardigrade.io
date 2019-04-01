@@ -7,13 +7,72 @@
     &__list-unstyled {
         list-style-type: none;
         padding-left: 0;
+        line-height: 28px;
+        font-weight: 300;
+        font-size:13px;
     }
 
     &__link {
         color: $color--grey;
 
+        &:hover {
+            filter: invert(35%) sepia(95%) saturate(2080%) hue-rotate(204deg) brightness(105%) contrast(101%);
+        }
+
         &-img {
-            margin-right: 25px;
+            height: 22px;
+            width: 22px;
+            padding: 4px;
+            margin-right: 0.6rem;
+        }
+    }
+
+    &__content {
+        &-address {
+            font-weight: 300;
+        }
+    }
+
+    &__email-input {
+            display: block;
+            background: #fbfbfb;
+            border: 1px solid #eee;
+            border-radius: 4px 4px 0 0;
+            color: $color--grey;
+            padding: 12px 18px 10px;
+            width: 100%;
+            max-width: 320px;
+            font-size: 16px;
+            -webkit-transition: all 0.15s ease-in-out;
+            -moz-transition: all 0.15s ease-in-out;
+            -ms-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+
+        &:focus {
+            outline: 0;
+            border-color: #2D86fb;
+        }
+    }
+
+    &__btn {
+        &-submit {
+            font-weight: 800;
+            background: #2683FF;
+            color: $color--white;
+            border-radius: 0 0 4px 4px;
+            font-size: 16px;
+            padding: 12px 16px;
+            width: 100%;
+            max-width: 320px;
+            border: 0;
+            z-index: 2;
+            outline: 0;
+            -webkit-backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transition: all 0.15s ease-in-out;
+            -moz-transition: all 0.15s ease-in-out;
+            -ms-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
         }
     }
 }
