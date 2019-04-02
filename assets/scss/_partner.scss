@@ -1,0 +1,45 @@
+.partner {
+    &__headline {
+        background: url('/img/background.svg') no-repeat;
+        background-size: cover;
+        &-wrapper {
+            height: 90vh;
+        }
+
+        &-logo {
+            &-wrapper {
+                height: 100%;
+                width: 50%;
+            }
+
+            &-img {
+                height: 350px;
+            }
+        }
+
+        &-description {
+            width: 50%;
+
+            &-title {
+                font-weight: 600;
+                font-size: 34px;
+                line-height: 48px;
+            }
+
+            &-content {
+                font-weight: 300;
+                line-height: 26px;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__partners {
+        &-logo {
+            &-img {
+                height:100%;
+                width: 100%;
+            }
+        }
+    }
+}
