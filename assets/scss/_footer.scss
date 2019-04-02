@@ -10,10 +10,11 @@
         line-height: 28px;
         font-weight: 300;
         font-size:13px;
+        opacity: 0.7;
     }
 
     &__link {
-        color: $color--grey;
+        color: $color--white;
 
         &:hover {
             filter: invert(35%) sepia(95%) saturate(2080%) hue-rotate(204deg) brightness(105%) contrast(101%);
@@ -35,6 +36,7 @@
         &-address {
             font-size: 13px;
             font-weight: 300;
+            opacity: 0.7;
         }
     }
 
