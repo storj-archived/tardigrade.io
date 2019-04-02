@@ -19,7 +19,7 @@ build:
 	docker build -t storjlabs/tardigrade.io:${TAG} .
 else
 build:
-	docker build --build-arg hugo_args='-D --environment staging' -t storjlabs/storj.io:${TAG} .
+	docker build --build-arg hugo_args='-D --environment staging' -t storjlabs/tardigrade.io:${TAG} .
 endif
 
 .PHONY: push
