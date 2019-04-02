@@ -1,0 +1,14 @@
+<div class="partner__partners-container container-fluid" >
+    <div class="partner__partners-logos-wrapper d-flex flex-column">
+        <div class="partner__partners-logo" >
+            {{ range first 5 (where .Site.Pages ".Params.class" "partners")}}
+                <img class="partner__partners-logo-img" style="{{.Params.height}};{{.Params.width}};{{.Params.margin}};" src="{{.Params.img}}"/>
+            {{end}}
+        </div>
+        <div class="partner__partners-logo" >
+            {{ range after 5 (where .Site.Pages ".Params.class" "partners")}}
+                <img class="partner__partners-logo-img" style="{{.Params.height}};{{.Params.width}};{{.Params.margin}};" src="{{.Params.img}}"/>
+            {{end}}
+        </div>
+    </div>
+</div>
