@@ -1,6 +1,0 @@
-baseURL = "https://tardigrade.io"
-languageCode = "en-us"
-title = "Tardigrade"
-
-[permalinks]
-  waitlist = "/waitlist/"
