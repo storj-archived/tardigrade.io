@@ -1,0 +1,26 @@
+{{ with .Site.GetPage "benefits"}}
+<div class="partner__benefits container-fluid">
+    <div class="partner__benefits-wrapper row d-flex flex-column justify-content-center">
+        <div class="partner__benefits-title text-center pb-5">
+            <h2>
+                {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+            </h2>
+        </div>
+        <div class="pt-5 d-flex flex-row justify-content-center">
+                {{ range where .Site.Pages ".Params.class" "benefits"}}
+                    <div class="partner__benefits-logo-wrapper offset-sm-1 col-sm-2">
+                        <img class="img-fluid" src="{{ .Params.img }}" alt="benefits icon">
+                        <div class="pt-3">
+                            <h4>
+                                {{ .Params.heading }}
+                            </h4>
+                            <p>
+                                {{ .Params.content }}
+                            </p>
+                        </div>
+                    </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{end}}

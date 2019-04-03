@@ -1,14 +1,25 @@
-<div class="partner__partners-container container-fluid" >
-    <div class="partner__partners-logos-wrapper d-flex flex-column">
-        <div class="partner__partners-logo" >
-            {{ range first 5 (where .Site.Pages ".Params.class" "partners")}}
-                <img class="partner__partners-logo-img" style="{{.Params.height}};{{.Params.width}};{{.Params.margin}};" src="{{.Params.img}}"/>
-            {{end}}
+<div class="partner__partners-container container-fluid w-75" >
+    {{ with .Site.GetPage "partners"}}
+        <div class="partner__partners-header-wrapper text-center row">
+            <div class="partner__partners-header-content offset-sm-1 col-sm-10">
+                <h2>{{ .Params.heading }}</h2>
+                <br />
+                <p>{{ .Params.content }}</p>
+            </div>
         </div>
-        <div class="partner__partners-logo" >
-            {{ range after 5 (where .Site.Pages ".Params.class" "partners")}}
-                <img class="partner__partners-logo-img" style="{{.Params.height}};{{.Params.width}};{{.Params.margin}};" src="{{.Params.img}}"/>
-            {{end}}
+    {{end}}
+    <div class="partner__partners-logos-wrapper offset-sm-2 col-sm-8 d-flex justify-content-center">
+        {{ range first 5 (where .Site.Pages ".Params.class" "partners")}}
+            <div class="col-sm-2">
+                <img class="partner__partners-logo-img img-fluid" src="{{.Params.img}}"/>
+            </div>
+        {{end}}
+    </div>
+    <div class="partner__partners-logos-wrapper offset-sm-1 col-sm-10 d-flex justify-content-center">
+        {{ range after 5 (where .Site.Pages ".Params.class" "partners")}}
+        <div class="col-sm-2">
+            <img class="partner__partners-logo-img img-fluid" src="{{.Params.img}}"/>
         </div>
+        {{end}}
     </div>
 </div>

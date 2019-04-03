@@ -3,13 +3,14 @@
         background: url('/img/background.svg') no-repeat;
         background-size: cover;
         &-wrapper {
-            height: 90vh;
+            height: 80vh;
         }
 
         &-logo {
             &-wrapper {
                 height: 100%;
                 width: 50%;
+                margin-right: 6rem;
             }
 
             &-img {
@@ -18,7 +19,10 @@
         }
 
         &-description {
-            width: 50%;
+            &-wrapper {
+                width: 50%;
+                margin-left: 6rem;
+            }
 
             &-title {
                 font-weight: 600;
@@ -35,11 +39,77 @@
     }
 
     &__partners {
+        &-container {
+            box-shadow: 0 0 1.3rem;
+            border-radius: 1rem;
+            padding-bottom: 90px;
+            background: $color--white;
+        }
+
+        &-header-wrapper {
+            padding-top: 65px;
+        }
+
+        &-logos {
+            &-wrapper {
+                margin-top: 57px;
+            }
+        }
         &-logo {
             &-img {
-                height:100%;
-                width: 100%;
+                height: 25px;
             }
+        }
+    }
+
+    &__benefits {
+        padding-top: 30vh;
+
+        &-logo-wrapper {
+            img {
+                height: 40px;
+            }
+        }
+    }
+
+    &__virtuous-cycle {
+        &-icon-wrapper {
+            img {
+                height: 50px;
+            }
+        }
+
+        &-btn {
+            font-size: 16px;
+            line-height: 24px;
+            background: #2683FF;
+            color: $color--white;
+            border-radius: 6px;
+            width: 218px;
+            height: 48px;
+            max-width: 320px;
+            border: 0;
+            outline: 0;
+            -webkit-backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-transition: all 0.15s ease-in-out;
+            -moz-transition: all 0.15s ease-in-out;
+            -ms-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+        }
+    }
+
+
+    &__single {
+        &-partners {
+            position: absolute;
+            top: 75vh;
+            z-index: 1000;
+        }
+
+        &-virtuous-cycle {
+            padding-top: 15rem;
+            padding-bottom: 3rem;
         }
     }
 }

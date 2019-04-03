@@ -1,0 +1,45 @@
+{{ with .Site.GetPage "virtuous-cycle" }}
+<div class="partner__virtuous-cycle container-fluid">
+    <div class="partner__virtuous-cycle-wrapper row d-flex flex-column justify-content-center">
+        <div class="partner__virtuous-cycle-header d-flex flex-row justify-content-center align-items-center pb-5">
+            <div class="partner__virtuous-cycle-header-icon offset-sm-2 col-sm-3">
+                <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
+            </div>
+            <div class="offset-sm-1 col-sm-4">
+                <h2>
+                    {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+                </h2>
+                <p>
+                        {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
+                </p>
+            </div>
+        </div>
+        <div class="pt-5 d-flex flex-row justify-content-center">
+                {{ range where .Site.Pages ".Params.class" "virtuous-cycle"}}
+                    <div class="partner__virtuous-cycle-icon-wrapper offset-sm-1 col-sm-2 text-center">
+                        <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
+                        <div class="pt-3">
+                            <h4>
+                                {{ .Params.heading }}
+                            </h4>
+                            <p>
+                                {{ .Params.content }}
+                            </p>
+                        </div>
+                    </div>
+            {{ end }}
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center text-center p-5">
+            <div>
+                <span>{{ replace .Params.content1 "\n" "<br/>" | safeHTML}}</span>
+            </div>
+            <div class="pt-5">
+                <span>{{ replace .Params.content2 "\n" "<br/>" | safeHTML}}</span>
+            </div>
+            <div class="pt-5 clear">
+                <input class="partner__virtuous-cycle-btn btn-signup font-weight-bold" type="submit" value="Become a Partner" name="become a partner" id="mc-embedded-submit">
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

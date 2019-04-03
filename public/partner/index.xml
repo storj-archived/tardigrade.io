@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Partners on Tardigrade</title>
+    <link>https://tardigrade.io/partner/</link>
+    <description>Recent content in Partners on Tardigrade</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://tardigrade.io/partner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>couchbase</title>
+      <link>https://tardigrade.io/partner/partners/couchbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/couchbase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mongodb</title>
+      <link>https://tardigrade.io/partner/partners/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>filezilla</title>
+      <link>https://tardigrade.io/partner/partners/filezilla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/filezilla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>influxdb</title>
+      <link>https://tardigrade.io/partner/partners/influxdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/influxdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kafka</title>
+      <link>https://tardigrade.io/partner/partners/kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minio</title>
+      <link>https://tardigrade.io/partner/partners/minio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/minio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nextcloud</title>
+      <link>https://tardigrade.io/partner/partners/nextcloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/nextcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mariaDbHome</title>
+      <link>https://tardigrade.io/partner/partners/mariadbhome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/mariadbhome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plesk</title>
+      <link>https://tardigrade.io/partner/partners/plesk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/plesk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pydio</title>
+      <link>https://tardigrade.io/partner/partners/pydio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/pydio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zenko-io</title>
+      <link>https://tardigrade.io/partner/partners/zenko-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/partners/zenko-io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tardigrade.io/partner/headline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/partner/headline/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
