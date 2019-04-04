@@ -10,7 +10,6 @@
             &-wrapper {
                 height: 100%;
                 width: 50%;
-                margin-right: 6rem;
             }
 
             &-img {
@@ -21,7 +20,6 @@
         &-description {
             &-wrapper {
                 width: 50%;
-                margin-left: 6rem;
             }
 
             &-title {
@@ -118,7 +116,33 @@
 
 @media only screen and (max-width: 820px) {
     .partner {
+        &__headline {
+            &-wrapper {
+                height: 100vh;
+                flex-direction: column !important;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-logo {
+                &-wrapper {
+                    margin-left: 0 !important;
+                }
+            }
+
+            &-description {
+                &-wrapper {
+                    padding-bottom: 6rem;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+
         &__single {
+            &-partners {
+                top: 95vh;
+            }
+
             &-benefits {
                 padding-top: 75vh;
             }

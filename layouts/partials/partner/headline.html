@@ -1,10 +1,10 @@
 {{ with .Site.GetPage "headline"}}
 <div class="partner__headline container-fluid">
     <div class="partner__headline-wrapper d-flex flex-row">
-           <div class="partner__headline-logo-wrapper p-2 d-flex justify-content-end align-items-center">
+           <div class="partner__headline-logo-wrapper p-2 offset-sm-2 col-sm-3 align-items-center d-flex">
                 <img class="partner__headline-logo-img" src="{{ .Params.img }}" alt="open sourc icon">
            </div>
-           <div class="partner__headline-description-wrapper p-2 d-flex flex-column justify-content-center text-white">
+           <div class="partner__headline-description-wrapper offset-sm-1 col-sm-4 d-flex flex-column justify-content-center text-white">
                <h1 class="partner__headline-description-title">
                     {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
                </h1>
@@ -12,7 +12,6 @@
                     <span>{{ replace .Params.content "\n" "<br/>" | safeHTML}}</span>
                </div>
            </div>
-        </div>
-    </div>
+     </div>
 </div>
 {{end}}
