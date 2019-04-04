@@ -1,58 +1,306 @@
-{{ with .Site.GetPage "slogan"}}
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 col-lg-offset-1 mt-5 mb-5">
-          
-            <h2 class="mt-4 slogan-name">
-              <strong>{{.Params.sloganName}}</strong>
-            </h2>
+<div class="w-100" style="height:30px;"></div>
 
-            <p class="slogan-description">
-              {{.Params.sloganDescription}}
-            </p>
-
+<div class="container" style="margin-top:-270px;">
+    <div class="d-flex justify-content-center">
+      <div class="col text-center" style="border:1px solid black;border-radius:20px;height:300px;max-width:600px;background-color:white;">
+        <h4 class="mt-5">Interested? Try it Out for Yourself.</h4>
+        <p class="m-4">The first 10,000 developers who sign up for our waitlist will get 1TB free for 30days at production launch.</p>
+        <div class="w-100 d-none d-sm-block" style="height:20px;"></div>
+        <div style="display:flex;justify-content: center;" >
+          <input type="text" placeholder="Email Address" readonly id="url-box" style="margin:0px;border: 1px solid #DCDCDC;	border-radius: 4px 0 0 4px;	background-color: #F2F4F6;text-align:left;padding-left:25px;padding-bottom:8px;padding-top:10px;height:43px;border-right:none;resize:none;">
+          <button class="btn btn-primary" style="  border-radius: 0px 4px 4px 0px;">Join the Waitlist</button>
         </div>
       </div>
     </div>
-  {{end}}
+</div>
 
 <div class="container">
-  <div class="row mb-5">
-
-    {{with .Site.GetPage "join-the-waitlist"}}
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-          <h1 class="heading"><strong>{{.Params.heading}}</strong></h1>
-          <p class="sub-heading">{{.Params.subHeading1}}</p>
-          <p class="sub-heading">{{.Params.subHeading2}}</p>
-          <a class="cta-link" href="{{.Params.ctaLink}}">
-            <button class="btn cta-btn" type="button">
-              <strong>{{.Params.ctaText}}</strong>
-            </button>
-          </a>
-        </div>   
-    
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-          <img src="{{.Params.img}}"/>
-        </div>
-      {{end}}
-    </div>
-    
-  <div class="row mt-5">
-      {{with .Site.GetPage "open-source-partners"}}
-        <div class="col-xs-11 col-sm-10 col-sm-offset-4 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-1" height="328px" width="322px" >
-          <img src="{{ .Params.img }}/"/>
-        </div>
-  
-        <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1 mt-5">
-          <h1 class="heading" ><strong>{{.Params.heading}}</strong></h1>
-          <p class="sub-heading">{{.Params.subHeading}}</strong></p>
-          <a class="cta-link" href="{{.Params.ctaLink}}">
-            <button class="btn cta-btn" type="button">
-              <strong>{{.Params.ctaText}}</strong>
-            </button>
-          </a>
-        </div>
-        {{end}}
+  <div class="row">
+    <div class="col" style="display:flex;justify-content: center;">
+      <h1 class="m-5">How it Works</h1>
     </div>
   </div>
+  <div class="row" style="display:flex;justify-content: center;">
+    <div class="col-6 text-center">
+        <p>With Tardigrade cloud storage, your files are encrypted and split into pieces client-side before being distributed across our network of high-performance storage nodes.  </p>
+    </div>
+  </div>
+  <div class="row mt-5" style="display:flex;justify-content: center;" >
+    <div class="col-3 text-center"><img src="img/encrypt.png" height="75" width="75"/><br><p class="m-5" style="font-weight: 800;">Encrypt</p></div>
+    <div class="col-3 text-center"><img src="img/split.png" height="75" width="75"/><br><p class="m-5" style="font-weight: 800;">Split</p></div>
+    <div class="col-3 text-center"><img src="img/distr.png" height="75" width="75"/><br><p class="m-5" style="font-weight: 800;">Distribute</p></div>
+  </div>
+</div>
+<div class="w-100" style="height:30px;"></div>
+<div class="w-100" style="height:30px;"></div>
+<div class="w-100" style="height:30px;"></div>
+
+
+<div class="container-fluid" style="background-color:#DCDCDC">
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 text-center">
+      <h3 class="m-5">S3 compatible Object Storage for Half the Price.</h3>
+      <p class="m-5">Only pay for what you use</p>
+    </div>
+    <div class="col-3 text-center mt-5"><h4>Storage</h4><img src="img/icon-storage.svg"/><h2>$0.015</h2><h6>PER GB PER MONTH</h6></div>
+    <div class="col-3 text-center mt-5"><h4>Bandwidth</h4><img src="img/icon-downloads.svg"/><h2>$0.05</h2><h6>PER GB OF OUTBOUND DATA</h6><p>(all inboud data transfers are free)</p></div>
+  </div>
+</div>
+<div class="w-100" style="height:30px;"></div>
+
+<div class="w-100" style="height:30px;"></div>
+<div class="w-100" style="height:30px;"></div>
+<div class="w-100" style="height:30px;"></div>
+
+</div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col text-center mt-5">
+      <h1>A Storage Service That's<br>Actually Simple</h1>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center text-center">
+    <div class="col-3">
+      <img src="img/tar-screen-code-block.png" height="75" width="75"/>
+      <h1>Drop-in S3 Compatibility</h1>
+      <p>Our simple s3-compatible library gives developers a familiar experience.</p>
+
+    </div>
+    <div class="col-3">
+      <img src="img/tar-screen-key.png" height="75" width="75"/>
+      <h1>Simple IAM</h1>
+      <p>Tardigrade is equipped with intuitive identity and access management tools that streamline data sharing and permissions.</p>
+      
+    </div>
+    <div class="col-3">
+      <img src="img/tar-screen-curl.png" height="75" width="75"/>
+      <h1>Developer Friendly</h1>
+      <p>We have an easy-to-use library for app integration with our cloud storage network.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col text-center mt-5">
+        <h1>Need More Reasons to Try Tardigrade?</h1>
+      </div>
+      <div class="row mt-5 ">
+        <div class="col text-center mt-5">
+      <img src="img/tar-ico-performance.png" height="75" width="75"/>
+      <h1 class="mt-5">
+        Performance
+      </h1>
+      <p>
+          With multi-threaded, concurrent downloads you can get your files 20% faster than Amazon S3. 
+      </p>
+    </div>
+    <div class="col text-center mt-5">
+      <img src="img/tar-ico-durability.png" height="75" width="75"/>
+      <h1 class="mt-5">
+        Durability
+      </h1>
+      <p>
+          Reed-Solomon erasure coding enables the highest levels of durability for all files uploaded to the Tardigrade network.
+      </p>
+      </div>
+      <div class="col text-center mt-5">
+        <img src="img/tar-ico-secure.png" height="75" width="75"/>
+        <h1 class="mt-5">
+          Security & Privacy
+        </h1>
+        <p>
+            No one can compromise or view your data without your permission. Client-side AES-256-GCM encryption is standard on every file. 
+        </p>
+        </div>     
+
+        <div class="col text-center mt-5">
+          <img src="img/tar-ico-opensource.png" height="75" width="75"/>
+          <h1 class="mt-5">
+            Open Source
+          </h1>
+          <p>
+              We’re open source, which means absolute transparency. Audit our code, read our white paper, and know exactly how everything works. 
+          </p>
+        </div> 
+    </div>
+    </div>
+    <div class="row justify-content-center text-center">
+        <div class="col">
+      <h1 class="mt-5">Join the Waitlist<img src="img/carrot-right.svg" height="40" width="40"/></h1>
+    </row>
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+<div class="w-100" style="height:30px;"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background-color:#DCDCDC;">
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+        <div class="w-100" style="height:30px;"></div>
+        <div class="w-100" style="height:30px;"></div>
+      <h1 class="mt-5">Tardigrade Cloud Object Storage Use Cases</h1>
+      <div class="w-100" style="height:30px;"></div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <ul style="list-style-type: none;">
+        <li class="mt-3">Backup & Archival</li>
+        <li class="mt-3">Media Storage</li>
+        <li class="mt-3">Hybrid Cloud</li>
+        <li class="mt-3">Large File Transfers</li>
+        <li class="mt-3">Log Files</li>
+        <li class="mt-3">Database Snapshots</li>
+      </ul>
+    </div>
+    <div class="col">
+      <img src="/img/tar-ico-media.png"/>
+      <h1>Media Content Storage</h1>
+      <p>Store large volumes of video, photo, or audio media, including tape / physical alternatives.</p>
+    </div>
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+    <div class="w-100" style="height:30px;"></div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid" style="background: radial-gradient(1791.74px at 94.4% -66.62%, #1B4499 0%, #000000 100%);">
+  <div class="container" style="overflow: visible;">
+      <div class="w-100" style="height:30px;"></div>
+      <div class="w-100" style="height:30px;"></div>
+      <div class="w-100" style="height:30px;"></div>
+    <div class="row" style="height:300px;overflow: visible;">
+      <div class="col" style="color:white;">
+        <h1>Community</h1>
+        <p>With an active, worldwide community, we have a diverse network of enthusiasts to connect with, share ideas, and discuss your setup. Whether you’re looking for guidance, have product feedback, need some example code, or just need a quick tutorial - come talk with us!
+          </p>
+        <h3>Join the Community</h3>
+      </div>
+      <div class="col-4 offset-2" style="overflow: visible;">
+          <img src="img/planet-chat.png" height="600" width="700"/>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center text-center">
+      <div class="w-100" style="height:30px;"></div>
+      <div class="w-100" style="height:30px;"></div>
+    <h1>Roadmap Milestones to Production</h1>
+    <div class="w-100" style="height:30px;"></div>
+    <p>Tardigrade is currently in the Explorer phase of our alpha and we’re excited to get this product into the hands of our users for testing.</p>
+    <p>Those who sign up on our waitlist will receive the option to also participate in our beta, ahead of our production launch later this year. </p>
+  </div>
+    
+          <div class="row">
+            <div class="milestones" style="display:inline-block;width:100%;overflow-y:auto;">
+    
+            <ul class="timeline timeline-horizontal">
+
+            <li class="timeline-item">
+                <div class="timeline-badge primary"
+                  style="background-color:#B8B8B8;"
+                  style="box-shadow: 0 0 8px 4px rgba(38,131,255,0.3)"}></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <p style="height: 67px;	color: #2683FF;	font-family: Montserrat;font-size: 16px;	font-weight: 800;	line-height: 22px;" ><small>Explorer: Storage Nodes Alpha</small></p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                  <div class="timeline-badge primary"
+                    style="background-color:#B8B8B8;"
+                    style="box-shadow: 0 0 8px 4px rgba(38,131,255,0.3)"}></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <p style="height: 67px;	color: #2683FF;	font-family: Montserrat;font-size: 16px;	font-weight: 800;	line-height: 22px;" ><small>Vanguard: User Alpha</small></p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                    <div class="timeline-badge primary"
+                      style="background-color:#B8B8B8;"
+                      style="box-shadow: 0 0 8px 4px rgba(38,131,255,0.3)"}></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <p style="height: 67px;	color: #2683FF;	font-family: Montserrat;font-size: 16px;	font-weight: 800;	line-height: 22px;" ><small>Beacon: Identity & Access Management</small></p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="timeline-item">
+                      <div class="timeline-badge primary"
+                        style="background-color:#B8B8B8;"
+                        style="box-shadow: 0 0 8px 4px rgba(38,131,255,0.3)"}></div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <p style="height: 67px;	color: #2683FF;	font-family: Montserrat;font-size: 16px;	font-weight: 800;	line-height: 22px;" ><small>Pioneer: V3 Network Beta</small></p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-badge primary"
+                          style="background-color:#B8B8B8;"
+                          style="box-shadow: 0 0 8px 4px rgba(38,131,255,0.3)"}></div>
+                          <div class="timeline-panel">
+                            <div class="timeline-heading">
+                              <p style="height: 67px;	color: #2683FF;	font-family: Montserrat;font-size: 16px;	font-weight: 800;	line-height: 22px;" ><small>ISS: Open Source Partner Connection</small></p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="timeline-item">
+                          <div class="timeline-badge primary"
+                            style="background-color:#B8B8B8;"
+                            style="box-shadow: 0 0 8px 4px rgba(38,131,255,0.3)"}></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <p style="height: 67px;	color: #2683FF;	font-family: Montserrat;font-size: 16px;	font-weight: 800;	line-height: 22px;" ><small>Voyager: Network V3 Launch</small></p>
+                            </div>
+                          </div>
+                        </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color:#DCDCDC;">
+<div class="container">
+  <div class="row">
+    <div class="col-7 mt-4 mb-2">
+        <div class="w-100" style="height:20px;"></div>
+      <p style="font-weight: 800;">First 10k Users Get 1TB free for 30 Days at Production Launch.</p>
+    </div>
+        <div class="col mt-4 mb-2">
+            <div class="w-100" style="height:10px;"></div>
+            <input type="text" placeholder="Email Address" readonly id="url-box" style="margin:0px;border: 1px solid #DCDCDC;	border-radius: 4px 0 0 4px;	background-color: #F2F4F6;text-align:left;padding-left:25px;padding-bottom:8px;padding-top:10px;height:43px;border-right:none;resize:none;">
+            <button class="btn btn-primary" style="border-radius: 0px 4px 4px 0px;height:42px;margin-top:-5px;margin-left:-5px;">Join the Waitlist</button>
+          </div>
+          <div class="w-100" style="height:20px;"></div>
+  </div>
+</div>
+</div>
+
 
