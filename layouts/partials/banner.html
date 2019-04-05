@@ -3,7 +3,12 @@
   <div class="container">
     <div class="row banner">
       <h4 class=" col-6 banner-text text-left">{{.Params.leftText}}</h4>
-      <h4 class=" col-6 banner-text text-right">{{.Params.rightText}}</h4>
+      <h4 class=" col-6 banner-text text-right">
+          <a href="https://storj.io">
+        {{.Params.rightText}}
+        <img class="m-1" src="img/storj-logo.svg"/><img src="img/carrot-right.svg"/>
+        </a>
+      </h4>
     </div>
   </div>
 </div>

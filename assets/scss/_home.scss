@@ -12,6 +12,10 @@ $colors: (
   @return map-get($colors, $color-name)
 };
 
+body{
+  font-family: 'Poppins';
+}
+
 a{
   color: color(primary);
 }
@@ -136,17 +140,32 @@ bottom: 0;
 position: absolute;
 content: " ";
 width: 3px;
-background-color: #eeeeee;
+background: #2582FF;
+opacity: 0.3;
 left: 50%;
-margin-left: -1.5px;
+margin-left: 35px;
 }
+
+.post:before {
+  top: 40px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background: #C4C4C4;
+  opacity: 0.3;
+  left: 50%;
+  margin-left: 35px;
+  }
+
+
 .timeline .timeline-item {
 margin-bottom: 20px;
 position: relative;
 }
 .timeline .timeline-item:before,
 .timeline .timeline-item:after {
-content: "";
+content: " ";
 display: table;
 }
 .timeline .timeline-item:after {
@@ -213,7 +232,6 @@ background-color: #ba1f1f;
   border-left: 16px solid #c0c0c0;
   border-right: 0 solid #c0c0c0;
   border-bottom: 16px solid transparent;
-  content: " ";
   }
 .timeline .timeline-item .timeline-panel {
 position: relative;
@@ -292,7 +310,6 @@ margin-bottom: 20px;
 display: table-cell;
 height: 280px;
 width: 20%;
-
 float: none !important;
 padding-left: 0px;
 padding-right: 20px;
@@ -335,20 +352,22 @@ height: 114px;
 width: 160px;
 margin-bottom: 20px;
 margin-right:10px;
-border: 1px solid #E2E2E2;	border-radius: 4px;	background-color: #FFFFFF;	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.09);
+border: 1px solid #E2E2E2;border-radius: 4px;	background-color: #FFFFFF;box-shadow: 0 2px 12px 0 rgba(0,0,0,0.09);
 }
 
 .timeline-horizontal .timeline-item .timeline-panel:before {
 top: auto;
 bottom: -16px;
-left: 28px !important;
+left: 65px !important;
 right: auto;
 border-right: 16px solid transparent !important;
-border-top: 16px solid #c0c0c0 !important;
-border-bottom: 0 solid #c0c0c0 !important;
 border-left: 16px solid transparent !important;
 }
 
+.pointy:before{
+border-top: 16px solid #2582FF !important;
+border-bottom: 0 solid #2582FF!important;
+}
 
 
 .timeline-horizontal .timeline-item:before,
@@ -358,7 +377,7 @@ display: none;
 .timeline-horizontal .timeline-item .timeline-badge {
 top: auto;
 bottom: 14px;
-left: 43px;
+left: 79px;
 }
 
 .milestones::-webkit-scrollbar {
@@ -366,6 +385,11 @@ left: 43px;
   background: transparent; /* make scrollbar transparent */
 }
 
+/*  home-hero-banner  */
 
+.bg-gradient{
+  background-image: url('/img/Theez-Starz.svg'), radial-gradient(1791.74px at 94.4% -66.62%, #1B4499 0%, #000000 100%);
+  background-size: cover;
+}
 
 
