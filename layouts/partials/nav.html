@@ -1,26 +1,28 @@
+<nav class="navbar navbar-expand-lg p-0">
 
- <nav class="navbar navbar-expand-lg p-0">
-        <a class="navbar-brand" href="#">
-                <img src="/img/tar-logo-whit-horizontal.svg"/>
-        </a>
-    <button class="navbar-toggler navbar-light bg-light"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" ></span>
+    <a class="navbar-brand" href="/">
+        <img src="/img/tar-logo-whit-horizontal.svg"/>
+    </a>
+
+    <button class="navbar-toggler navbar-light bg-light"  type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="collapse navbar-collapse"  id="navbarTogglerDemo02">
-    <ul class="navbar-nav ml-auto" >
-        <li class="nav-item mr-3 active">
-            <a class="nav-link" href="#" style="color:white;">Docs <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item mr-3">
-            <a class="nav-link" href="#" style="color:white;font-weight:500;">Community</a>
-        </li>
-        <li class="nav-item mr-3">
-            <a class="nav-link" href="#" style="color:white;">Partners</a>
-        </li>
-        <li class="nav-item mr-3">
-            <a class="nav-link" href="#" style="color:white;">Support</a>
-        </li>
-    </ul>
-      <a href="/waitlist/"><button class="btn my-2 my-sm-0" style="border: 1px solid white;border-radius: 4px;color:white;">Join the Waitlist</button></a>
-  </div>
+
+    <div class="collapse navbar-collapse"  id="navbarToggler">
+        <ul class="navbar-nav ml-auto" >
+            {{range where .Site.Pages ".Params.class" "navOption"}}
+                <li class="nav-item mr-3 active">
+                    <a class="nav-link white" href="{{.Params.link}}">
+                        {{.Params.name}}
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            {{end}}
+        </ul>
+        <a href="/waitlist/">
+            <button class="btn my-2 my-sm-0 nav-join">
+                Join the Waitlist
+            </button>
+        </a>
+    </div>
 </nav>

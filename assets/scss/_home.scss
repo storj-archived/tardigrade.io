@@ -1,5 +1,131 @@
 /* Tardigrade.io - Highly Distributed. Rediculously Resilient */ 
 
+/* Nav */
+
+
+.white{
+  color:white;
+}
+
+.nav-join{
+  border: 1px solid white;
+  border-radius: 4px;
+  color:white;
+}
+.nav-join:hover{
+  border: 1px solid white;
+  border-radius: 4px;
+  color:white;
+}
+
+/*  home-hero-banner  */
+
+.bg-gradiant{
+  background-image: url('/img/Theez-Starz.svg'), radial-gradient(1791.74px at 94.4% -66.62%, #1B4499 0%, #000000 100%);
+  background-size: cover;
+}
+.nomp, .inner-hero-wrapper{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.inner-hero-wrapper{
+  height:830px;
+  overflow: hidden;
+}
+
+.hero-wrapper{
+  overflow:visible;
+}
+.hero-cta{
+  margin-top:-270px;
+}
+.cta-wrapper{
+  box-shadow: 0px 0px 74px rgba(31, 49, 76, 0.25);
+  border-radius:20px;
+  height:300px;
+  max-width:600px;
+  background-color:white;
+}
+
+.hero-heading{
+  color:white;
+  font-size:34px;
+}
+.spacer20{
+  height:20px;
+  width:100%;
+}
+
+.spacer30{
+  height:30px;
+  width:100%;
+}
+
+.spacer125{
+  height:125px;
+  width:100%;
+}
+
+.spacer55{
+  height:55px;
+  width:100%;
+}
+
+.spacer90{
+  height:90px;
+  width:100%;
+}
+
+.spacer125{
+  height:125px;
+  width:100%;
+}
+
+.hero-heading{
+  color:white;
+  font-size:34px;
+}
+
+.hero-subheading{
+  color:white;
+}
+
+.hero-listitems{
+  list-style-image: url('/img/check.svg');
+  color:white;
+}
+
+.cta-inner-container{
+  display:flex;
+  justify-content: center;
+}
+
+.cta-email{
+  width: 50%;
+  margin:0px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px 0 0 4px;
+  background-color: #F2F4F6;
+  text-align:left;
+  padding-left:25px;
+  padding-bottom:8px;
+  padding-top:10px;
+  height:43px;
+  border-right:none;
+  resize:none;
+}
+
+.cta-join-btn{
+  width: 50%;
+  border-radius: 0px 4px 4px 0px;
+  height:43px;
+  margin-top:-5px;
+  margin-left:-5px;
+}
+
+
+
 /* Home-Page */
 
 $colors: (
@@ -79,6 +205,62 @@ a{
   border-radius: 4px;
   margin-top:25px;
   margin-bottom:25px;
+}
+
+.hiw-col{
+  display:flex;
+  justify-content: center;
+  max-width:800;
+}
+
+.lite-gray-bg{
+  background-color: #FBFBFC;
+}
+
+.lite-blu{
+  color:#2582FF;
+}
+
+.gray{
+  color:#DCDCDC;
+}
+
+.btm-border{
+  border-bottom:1px solid #DCDCDC;
+}
+
+.right-border{
+  border-right:1px solid #DCDCDC;
+}
+
+.waitlist-middle{
+  text-decoration: none !important;
+}
+
+.limit{
+  max-width:400px;
+}
+
+.usecase-link-wrapper{
+  border-left: 2px solid #DCDCDC;
+  list-style-type: none;
+  height:50px;
+}
+
+.milestone-intro{
+  max-width:800px;
+  color:#354049;
+}
+
+.milestones-wrapper{
+  display:inline-block;
+  width:100%;
+  overflow-y:auto;
+}
+
+.faded-blu{
+  background: #2582FF;
+  opacity: 0.3;
 }
 
 /* Waitlist */
@@ -385,11 +567,5 @@ left: 79px;
   background: transparent; /* make scrollbar transparent */
 }
 
-/*  home-hero-banner  */
-
-.bg-gradient{
-  background-image: url('/img/Theez-Starz.svg'), radial-gradient(1791.74px at 94.4% -66.62%, #1B4499 0%, #000000 100%);
-  background-size: cover;
-}
 
 

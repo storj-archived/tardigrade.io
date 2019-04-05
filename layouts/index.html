@@ -4,29 +4,23 @@
       {{ partial "head" . }}
     </head>
   <body>
-
     <header>
       {{ partial "banner" .}}
       {{ partial "home/hero" .}}
     </header>
-
       {{ partial "home/main" .}}
-
     <footer>
       {{partial "footer" . }}
     </footer>
-
-    {{ partial "site-scripts" .}}
+      {{ partial "site-scripts" .}}
     <script>
       function select(e){
         var currentTab = e.parentNode;
         var choices = currentTab.parentNode.children;
-        for(var i = 0; i < choices.length; i++){
-
-          choices[i].children[0].classList.remove("active");
-          console.log(choices[i]);
-          choices[i].style.borderLeft = "2px solid #DCDCDC";
-        }
+          for(var i = 0; i < choices.length; i++){
+            choices[i].children[0].classList.remove("active");
+            choices[i].style.borderLeft = "2px solid #DCDCDC";
+          }
         currentTab.style.borderLeft = "2px solid #2582FF";
       }
     </script>
