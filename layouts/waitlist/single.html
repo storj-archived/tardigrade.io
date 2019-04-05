@@ -4,11 +4,9 @@
     {{ partial "head" . }}
   </head>
   <body>
-    <header>
-      {{ partial "banner" .}}
-    </header>
-
-    {{ partial "waitlist/main" .}}
+    <div class="waitlist__container">
+      {{ partial "waitlist/main" .}}
+    </div>
 
     <footer>
         {{partial "footer" . }}

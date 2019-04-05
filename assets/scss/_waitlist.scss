@@ -1,46 +1,110 @@
 
 /* Waitlist */
 
-.waitlist-heading {
-    margin-bottom:0.3em;
-    color: color(primary);
-    font-weight: 800;
-    font-size: 40px;
-   }
-   
-   .waitlist-sub-heading {
-     height: 93px;
-     opacity: 0.8;
-     color: color(primary);
-     font-size: 16px;
-     line-height: 28px;
-     text-align: center;
-   }
-   
-   .waitlist-input-name, .waitlist-input-email{
-     width: 100%;
-     margin-top: 15px;
-     padding: 15px;
-     max-width: 500px;
-   }
-   
-   .waitlist-input-name{
-     border:none;
-     background-color: color(secondary);
-     color: color(secondary);
-   }
-   
-   .waitlist-input-email{
-     border:none;
-     background-color: color(secondary);
-     color: color(secondary);
-   }
-   
-   .get-access-btn{
-     height: 46px;
-     border: 2px solid color(primary);
-     border-radius: 4px;
-     margin-top:25px;
-     margin-bottom:25px;
-     font-weight: 800;
-   }
+.waitlist {
+
+  &__container {
+    background: url('/img/background.svg') no-repeat;
+    background-size: cover;
+    height: 120vh;
+  }
+
+  &__form {
+    &-wrapper {
+      background: $color--white;
+      box-shadow: 0px 0px 74px rgba(31, 49, 76, 0.25);
+      border-radius: 10px;
+      z-index: 999;
+  
+      input {
+        border: 1px solid #96ADBE;
+        border-radius: 6px;
+        width: 100%;
+        height: 40px;
+        padding-left: .5rem;
+      }
+    }
+  
+    &-header {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    &-input {
+      &-name {
+        margin-bottom: 20px;
+        min-width: 100px;
+      }
+
+      &-email {
+        min-width: 220px;
+      }
+    }
+
+    &-submit {
+      font-weight: 800;
+      background: $color--blue-light;
+      font-family: 'Poppins';
+      font-size: 14px;
+      min-width: 220px;
+    }
+  }
+
+  &__img {
+    &-satellite {
+      position: absolute;
+      z-index: 1000;
+    }
+
+    &-mars {
+      position: absolute;
+      left: 58vw;
+      bottom: -6vh;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) {
+  .waitlist {
+    &__img {
+      &-satellite {
+        left:13vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .waitlist {
+    &__img {
+      &-satellite {
+        left:25vw;
+      }
+
+      &-mars {
+        left: 58vw;
+        bottom: 0vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .waitlist {
+    &__container {
+      height: 135vh;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .waitlist {
+    &__img {
+      &-mars {
+        bottom: 2vh;
+        left:68vw;
+      }
+    }
+  }
+}

@@ -1,49 +1,78 @@
 {{ with .Site.GetPage "info" }}
-  <div class="container">
+  <div class="waitlist container-fluid">
     <div class="row">
-      <div class="col-12 text-center mt-5 mb-5">
-        <h1 class="waitlist-heading">{{.Params.heading}}</h1>
-        <p class="waitlist-sub-heading">{{.Params.subHeading}}</p>
+        <div class="col-12 text-center mt-5 mb-5">
+          <h1 class="waitlist__heading text-white">
+              {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+          </h1>
+          <p class="waitlist__sub-heading text-white">
+              {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
+          </p>
+        </div>
+    </div>
+        
+    <div class="row">
+      <div class="waitlist__img-satellite col-3 col-sm-3 col-xl-2">
+        {{$satelliteImg := index (.Params.imgs) 0 }}
+        <img class="img-fluid" src="{{ $satelliteImg.img_path }}" alt="{{ $satelliteImg.caption }}">
+      </div>
+    </div>
         
       <!--form-start-->
-      <form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://storj.wufoo.com/forms/m1lo4ys3176ofyo/#public">
-
-        <div class="row">
-          <div class="col-12">
-            <input id="Field1" name="Field1" type="text" class="field text fn waitlist-input-name" value="" size="8" tabindex="1"  placeholder="First Name" required />
-          </div>
-          <div class="col-12">
-            <input id="Field2" name="Field2" type="text" class="field text ln waitlist-input-name" value="" size="8" tabindex="2"   placeholder="Last Name" required />
-          </div>
-        </div>
-
+    <div class="row">
+      <div class="waitlist__form-wrapper col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
+        <div class="waitlist__form-header text-center offset-sm-1 col-10">
+            <h1 class="waitlist__form-heading">
+                {{ replace .Params.formHeading "\n" "<br/>" | safeHTML}}
+            </h1>
+            <p class="waitlist__form-description">
+                {{ replace .Params.formDescription "\n" "<br/>" | safeHTML}}
+            </p>
+        </div> 
+        <form id="form2" name="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://storj.wufoo.com/forms/m1lo4ys3176ofyo/#public">
+  
           <div class="row">
-            <div class="col-12">
-              <input class="waitlist-input-email" id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" placeholder="Email Address" required />
+            <div class="offset-xl-3 col-xl-3 col-sm-3 offset-sm-3">
+              <input id="Field1" name="Field1" type="text" class="field text fn waitlist__form-input-name" value="" size="8" tabindex="1"  placeholder="First Name" required />
+            </div>
+            <div class="col-xl-3 col-sm-3">
+              <input id="Field2" name="Field2" type="text" class="field text ln waitlist__form-input-name" value="" size="8" tabindex="2"   placeholder="Last Name" required />
             </div>
           </div>
-
-          <div class="row m-5">
-            <div class="col-12">
-              <input class="btn get-access-btn" id="saveForm" name="saveForm" type="submit" value="GET EARLY ACCESS"/>
+  
+          <div class="row">
+            <div class="offset-sm-3 col-xl-6 col-sm-6">
+              <input class="waitlist__form-input-email" id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" placeholder="Email Address" required />
             </div>
           </div>
-
+  
+          <div class="row mt-3 mb-5">
+            <div class="offset-sm-3 col-sm-6 col-12">
+              <input class="waitlist__form-submit text-white" id="saveForm" name="saveForm" type="submit" value="GET EARLY ACCESS"/>
+            </div>
+          </div>
+  
           <div class="d-none">
             <label for="comment">Do Not Fill This Out</label>
             <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
             <input type="hidden" id="idstamp" name="idstamp" value="El0OKNOviaoxf+nB0YK5Ls9ANra2v52SNksCbxUKXRo=" />
           </div>
-
         </form>
-      <!--form-end-->
-      
-        <div>
-          <small>{{.Params.disclaimer}}</small>
-        </div>
+      </div>
 
+      <div class="row">
+        <div class="waitlist__img-mars col-3 col-sm-3 col-xl-2">
+          {{$marsImg := index (.Params.imgs) 1 }}
+          <img class="img-fluid" src="{{ $marsImg.img_path }}" alt="{{ $marsImg.caption }}">
+        </div>
       </div>
     </div>
+    <!--form-end-->
+  
+    <div>
+      <small>{{.Params.disclaimer}}</small>
+    </div>
+
   </div>
 {{end}}
     
