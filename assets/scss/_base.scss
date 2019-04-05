@@ -6,13 +6,18 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+    font-style: normal;
     font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
 }
 
 span, p {
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 19px;
     font-weight: 300;
 }
 
