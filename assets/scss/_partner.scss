@@ -2,8 +2,10 @@
     &__headline {
         background: url('/img/background.svg') no-repeat;
         background-size: cover;
+        height: 80vh;
+
         &-wrapper {
-            height: 80vh;
+            margin-top: 120px;
         }
 
         &-logo {
@@ -120,11 +122,11 @@
         }
 
         &-benefits {
-            padding-top: 65vh;
+            padding-top: 60vh;
         }
 
         &-virtuous-cycle {
-            padding-top: 15rem;
+            padding-top: 10rem;
             padding-bottom: 3rem;
         }
     }
@@ -160,7 +162,7 @@
             }
 
             &-benefits {
-                padding-top: 75vh;
+                padding-top: 80vh;
             }
         }
     }
