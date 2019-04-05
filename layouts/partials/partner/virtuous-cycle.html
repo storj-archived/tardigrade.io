@@ -9,24 +9,28 @@
                 <h2>
                     {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
                 </h2>
+                <br />
                 <p>
                         {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
                 </p>
             </div>
         </div>
         <div class="pt-5 d-flex flex-row justify-content-center">
-                {{ range where .Site.Pages ".Params.class" "virtuous-cycle"}}
-                    <div class="partner__virtuous-cycle-icon-wrapper offset-sm-1 col-sm-2 text-center">
-                        <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
-                        <div class="pt-3">
-                            <h4>
-                                {{ .Params.heading }}
-                            </h4>
-                            <p>
-                                {{ .Params.content }}
-                            </p>
-                        </div>
+            {{ range where .Site.Pages ".Params.class" "virtuous-cycle"}}
+                <div class="partner__virtuous-cycle-icon-wrapper col-sm-2 text-center d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
+                    <div class="pt-3">
+                        <h4>
+                            {{ .Params.heading }}
+                        </h4>
+                        <p>
+                            {{ .Params.content }}
+                        </p>
                     </div>
+                </div>
+                <div class="partner__virtuous-cycle-icon-arrow d-flex justify-content-center align-items-center mr-3">
+                    <img class="img-fluid" src="/img/next-step-arrow.svg" alt="arrow right">
+                </div>
             {{ end }}
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center text-center p-5">
