@@ -221,6 +221,10 @@ a{
   color:#2582FF;
 }
 
+.lite-blu-bg{
+  background-color: #2582FF !important;
+}
+
 .gray{
   color:#DCDCDC;
 }
@@ -259,8 +263,37 @@ a{
 }
 
 .faded-blu{
-  background: #2582FF;
-  opacity: 0.3;
+  background: #2582FF !important;
+  opacity: 0.3 !important;
+}
+
+.isCurrent-milestone-text{
+  height: 67px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.isCurrent{
+  background-color:#2582FF !important;
+  box-shadow: 0 0 8px 4px rgba(38,131,255,0.3) !important;
+}
+
+.isFuture{
+
+  background-color:#B8B8B8 !important;
+
+}
+
+.isFuture-milestone-text{
+  height: 67px;
+  color: #7E90A5;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
 }
 
 /* Waitlist */
