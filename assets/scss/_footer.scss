@@ -4,6 +4,10 @@
 	background-size: cover;
     text-align: left;
 
+    &__logo-img {
+        width: 100%;
+    }
+
     &__list-unstyled {
         list-style-type: none;
         padding-left: 0;
@@ -89,14 +93,22 @@
       &__content {
         flex-direction: column;
       }
+
+      &__logo-img {
+          width: 40%;
+      }
     }
 }
 
-@media (min-width: 874px) and (max-width: 975px) {
+@media (min-width: 874px) and (max-width: 992px) {
     .footer {
-      &__content-item-btn {
+        &__content-item-btn {
         width:400px;
-        margin-left: 0;
-      }
+        margin-left: 70px;
+        }
+
+        &__logo-img {
+            width: 40%;
+        }
     }
 }
