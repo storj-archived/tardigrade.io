@@ -37,7 +37,11 @@
                 <span>{{ replace .Params.content2 "\n" "<br/>" | safeHTML}}</span>
             </div>
             <div class="pt-5 clear">
-                <input class="partner__virtuous-cycle-btn btn-signup font-weight-bold" type="submit" value="Become a Partner" name="become a partner" id="mc-embedded-submit">
+                <a href="{{ .Params.btnLink }}">
+                    <button class="partner__virtuous-cycle-btn btn-signup font-weight-bold">
+                        {{ .Params.btnText }}        
+                    </button>
+                </a>
             </div>
         </div>
     </div>
