@@ -1,5 +1,11 @@
 {{ with .Site.GetPage "info" }}
   <div class="waitlist container-fluid">
+      <div class="spacer30"></div>
+      <div class="container">
+          <div>
+            {{partial "nav" .}}
+          </div>
+      </div>
     <div class="row">
         <div class="col-12 text-center mt-5 mb-5">
           <h1 class="waitlist__heading text-white">

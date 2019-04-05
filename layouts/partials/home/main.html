@@ -1,58 +1,18 @@
-{{ with .Site.GetPage "slogan"}}
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 col-lg-offset-1 mt-5 mb-5">
-          
-            <h2 class="mt-4 slogan-name">
-              <strong>{{.Params.sloganName}}</strong>
-            </h2>
+{{partial "home/cta" .}}
 
-            <p class="slogan-description">
-              {{.Params.sloganDescription}}
-            </p>
+{{partial "home/howitworks" .}}
 
-        </div>
-      </div>
-    </div>
-  {{end}}
+{{partial "home/s3compatible" .}}
 
-<div class="container">
-  <div class="row mb-5">
+{{partial "home/simpleStorage" .}}
 
-    {{with .Site.GetPage "join-the-waitlist"}}
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-          <h1 class="heading"><strong>{{.Params.heading}}</strong></h1>
-          <p class="sub-heading">{{.Params.subHeading1}}</p>
-          <p class="sub-heading">{{.Params.subHeading2}}</p>
-          <a class="cta-link" href="{{.Params.ctaLink}}">
-            <button class="btn cta-btn" type="button">
-              <strong>{{.Params.ctaText}}</strong>
-            </button>
-          </a>
-        </div>   
-    
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-          <img src="{{.Params.img}}"/>
-        </div>
-      {{end}}
-    </div>
-    
-  <div class="row mt-5">
-      {{with .Site.GetPage "open-source-partners"}}
-        <div class="col-xs-11 col-sm-10 col-sm-offset-4 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-1" height="328px" width="322px" >
-          <img src="{{ .Params.img }}/"/>
-        </div>
-  
-        <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1 mt-5">
-          <h1 class="heading" ><strong>{{.Params.heading}}</strong></h1>
-          <p class="sub-heading">{{.Params.subHeading}}</strong></p>
-          <a class="cta-link" href="{{.Params.ctaLink}}">
-            <button class="btn cta-btn" type="button">
-              <strong>{{.Params.ctaText}}</strong>
-            </button>
-          </a>
-        </div>
-        {{end}}
-    </div>
-  </div>
+{{partial "home/whyTardigrade" .}}
+
+
+{{partial "home/usecases" .}}
+
+{{partial "home/milestones" .}}
+
+{{partial "home/ctabottom" .}}
+
 

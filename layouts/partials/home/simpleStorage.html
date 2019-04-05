@@ -1,0 +1,18 @@
+<div class="container">
+        <div class="row mt-5">
+          <div class="col text-center mt-5">
+            <h1>A Storage Service That's<br>Actually Simple</h1>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center text-center">
+          {{range where .Site.Pages ".Params.class" "simplestorage"}}
+          <div class="col-xs-12 col-lg-3">
+            <img src="{{.Params.img}}" height="75" width="75"/>
+            <h5 class="mt-5"><strong>{{.Params.heading}}</strong></h5>
+            <p class="mt-2" style="font-size:14px;">
+              {{.Params.desc}}            
+            </p>
+          </div>
+          {{end}}
+        </div>
+      </div>

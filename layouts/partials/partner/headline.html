@@ -1,5 +1,11 @@
 {{ with .Site.GetPage "headline"}}
 <div class="partner__headline container-fluid">
+     <div class="spacer30"></div>
+     <div class="container">
+          <div>
+               {{partial "nav" .}}
+          </div>
+     </div>
     <div class="partner__headline-wrapper d-flex flex-row">
            <div class="partner__headline-logo-wrapper p-2 offset-sm-3 col-sm-2 align-items-center d-flex">
                 <img class="partner__headline-logo-img" src="{{ .Params.img }}" alt="open sourc icon">

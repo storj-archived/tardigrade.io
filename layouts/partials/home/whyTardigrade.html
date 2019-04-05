@@ -1,0 +1,33 @@
+  <div class="container">
+    <div class="row mt-5 p-3">
+      <div class="col text-center mt-5">
+        <h1>Need More Reasons to Try Tardigrade?</h1>
+      </div>
+      <div class="row mt-5 ">
+        {{range where .Site.Pages ".Params.class" "whytardigrade"}}
+          <div class="col-xs-12 col-lg-3 text-center mt-5 p-3">
+            <img src="{{.Params.img}}" height="75" width="75"/>
+            <h4 class="mt-5">
+              {{.Params.heading}}
+            </h4>
+            <small>
+              {{.Params.desc}}                
+            </small>
+          </div>
+        {{end}}
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col">
+        <a class="waitlist-middle" href="/waitlist/">
+          <h2 class="mt-5">
+            Join the Waitlist
+            <img src="img/carrot-right.svg" height="40" width="40"/>
+          </h2>
+        </a>
+      </div>
+          <div class="spacer125"></div>
+      </div>
+    </div>
+  </div>
+</div>
