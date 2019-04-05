@@ -83,3 +83,11 @@
         }
     }
 }
+
+@media (max-width: 874px) {
+    .footer {
+      &__content {
+        flex-direction: column;
+      }
+    }
+  }
