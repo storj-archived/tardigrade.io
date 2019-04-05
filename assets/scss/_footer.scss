@@ -90,4 +90,13 @@
         flex-direction: column;
       }
     }
-  }
+}
+
+@media (min-width: 874px) and (max-width: 975px) {
+    .footer {
+      &__content-item-btn {
+        width:400px;
+        margin-left: 0;
+      }
+    }
+}
