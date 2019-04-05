@@ -65,13 +65,29 @@
             img {
                 height: 40px;
             }
+            
+            h4 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
     }
 
     &__virtuous-cycle {
-        &-icon-wrapper {
-            img {
-                height: 50px;
+        &-icon{
+            &-wrapper {
+                img {
+                    height: 50px;
+                }
+            }
+
+            &-arrow {
+                &:last-child {
+                    display: none !important;
+                }
             }
         }
 
