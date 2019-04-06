@@ -1,13 +1,15 @@
-<div class="container">
+<div class="container mb-5">
   <div class="row justify-content-center text-center">
-    <div class="spacer60"></div>
+    <div class="col-xs-12 col-md-9">
+    <div class="spacer125"></div>
     {{with .Site.GetPage "milestones"}}
     <h1>{{.Params.heading}}</h1>
     <div class="spacer30"></div>
-    <p class="milestone-intro">{{.Params.subheading1}}</p>
-    <p class="milestone-intro">{{.Params.subheading2}}</p>
+    <p class="milestone-intro pl-4 pr-4">{{.Params.subheading1}}</p>
+    <p class="milestone-intro pl-4 pr-4">{{.Params.subheading2}}</p>
     {{end}}
     </div>
+  </div>
     <div class="row">
       <div class="milestones milestones-wrapper">
         <div class="row d-flex flex-nowrap">
@@ -41,3 +43,4 @@
     </div>
   </div>
 </div>
+

@@ -9,13 +9,18 @@
     height: 120vh;
   }
 
+  &__sub-heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
   &__form {
     &-wrapper {
       background: $color--white;
       box-shadow: 0px 0px 74px rgba(31, 49, 76, 0.25);
       border-radius: 10px;
       z-index: 999;
-  
+
       input {
         border: 1px solid #96ADBE;
         border-radius: 6px;
@@ -24,10 +29,28 @@
         padding-left: .5rem;
       }
     }
+
+    &-input {
+      input {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
   
     &-header {
       margin-bottom: 20px;
-      margin-top: 20px;
+      margin-top: 40px;
+    }
+
+    &-heading {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    &-description {
+      font-size: 14px;
+      line-height: 19px;
     }
   
     &-input {
@@ -42,11 +65,13 @@
     }
 
     &-submit {
-      font-weight: 800;
+      font-weight: bold;
       background: $color--blue-light;
-      font-family: 'Poppins';
+      font-family: 'Poppins', sans-serif;
       font-size: 14px;
+      line-height: 20px;
       min-width: 220px;
+      letter-spacing: 0.25px
     }
   }
 
@@ -69,7 +94,7 @@
   .waitlist {
     &__img {
       &-satellite {
-        left:13vw;
+        left:5vw;
       }
     }
   }
@@ -79,7 +104,7 @@
   .waitlist {
     &__img {
       &-satellite {
-        left:25vw;
+        left:20vw;
       }
 
       &-mars {

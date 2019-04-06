@@ -5,9 +5,9 @@
       </div>
       <div class="row mt-5 ">
         {{range where .Site.Pages ".Params.class" "whytardigrade"}}
-          <div class="col-xs-12 col-lg-3 text-center mt-5 p-3">
-            <img src="{{.Params.img}}" height="75" width="75"/>
-            <h4 class="mt-5">
+          <div class="col-xs-12 col-lg-3 text-left mt-5 p-3">
+            <img class="img-fluid" src="{{.Params.img}}" height="{{.Params.h}}" width="{{.Params.w}}"/>
+            <h4 class="mt-5 y-tar-heading">
               {{.Params.heading}}
             </h4>
             <small>
@@ -22,7 +22,7 @@
         <a class="waitlist-middle" href="/waitlist/">
           <h2 class="mt-5">
             Join the Waitlist
-            <img src="img/carrot-right.svg" height="40" width="40"/>
+            <img class="mb-1" src="img/carrot-right.svg" height="20" width="30"/>
           </h2>
         </a>
       </div>
