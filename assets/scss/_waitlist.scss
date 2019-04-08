@@ -6,11 +6,11 @@
   &__container {
     background: url('/img/background.svg') no-repeat;
     background-size: cover;
-    height: 120vh;
+    height: 105vh;
   }
 
   &__sub-heading {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
   }
 
@@ -33,6 +33,7 @@
     &-input {
       input {
         font-family: 'Roboto', sans-serif;
+        font-weight: 300;
         font-size: 14px;
         line-height: 16px;
       }
@@ -45,11 +46,12 @@
 
     &-heading {
       font-size: 19px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+      font-weight: 600;
     }
 
     &-description {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 19px;
     }
   
@@ -84,7 +86,7 @@
     &-mars {
       position: absolute;
       left: 58vw;
-      bottom: -6vh;
+      top: 650px;
     }
   }
 }
@@ -118,7 +120,7 @@
 @media (max-width: 576px) {
   .waitlist {
     &__container {
-      height: 135vh;
+      height: 120vh;
     }
   }
 }
@@ -127,8 +129,24 @@
   .waitlist {
     &__img {
       &-mars {
-        bottom: 2vh;
         left:68vw;
+      }
+    }
+  }
+}
+
+@media (min-height: 949px) {
+  .waitlist {
+    &__content {
+      display: flex;
+      align-items: center;
+      height: 80vh;
+    }
+
+    &__img {
+      &-mars {
+        top: 1050px;
+        left: 55vw;
       }
     }
   }
