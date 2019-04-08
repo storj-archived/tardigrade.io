@@ -5,4 +5,5 @@ desc : No one can compromise or view your data without your permission. Client-s
 class : "whytardigrade"
 h : 31
 w : 31
+weight : 3
 ---

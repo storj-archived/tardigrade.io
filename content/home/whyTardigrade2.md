@@ -5,4 +5,5 @@ desc : Reed-Solomon erasure coding enables the highest levels of durability for 
 class : "whytardigrade"
 h : 37
 w : 38
+weight : 2
 ---

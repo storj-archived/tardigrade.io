@@ -5,4 +5,5 @@ desc : We’re open source, which means absolute transparency. Audit our code, r
 class : "whytardigrade"
 h : 39
 w : 40
+weight : 4
 ---

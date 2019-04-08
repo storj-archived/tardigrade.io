@@ -5,4 +5,5 @@ desc : With multi-threaded, concurrent downloads you can get your files 20% fast
 class : "whytardigrade"
 h : 40
 w : 55
+weight : 1
 ---
