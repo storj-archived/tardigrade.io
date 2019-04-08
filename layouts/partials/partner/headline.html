@@ -6,11 +6,11 @@
                {{partial "nav" .}}
           </div>
      </div>
-    <div class="partner__headline-wrapper d-flex flex-row">
-           <div class="partner__headline-logo-wrapper p-2 offset-sm-3 col-sm-2 align-items-center d-flex">
-                <img class="partner__headline-logo-img" src="{{ .Params.img }}" alt="open sourc icon">
+    <div class="partner__headline-wrapper row">
+           <div class="partner__headline-logo-wrapper p-2 offset-sm-3 col-4 offset-4 col-sm-3 col-xl-2 order-2 order-sm-1">
+                <img class="partner__headline-logo-img img-fluid" src="{{ .Params.img }}" alt="open sourc icon">
            </div>
-           <div class="partner__headline-description-wrapper offset-sm-1 col-sm-4 d-flex flex-column justify-content-center text-white">
+           <div class="partner__headline-description-wrapper mt-lg-5 offset-1 offset-sm-1 col-sm-4 col-10 d-flex flex-column text-white order-1 order-sm-2">
                <h1 class="partner__headline-description-title">
                     {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
                </h1>

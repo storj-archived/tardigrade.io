@@ -13,10 +13,6 @@
                 height: 100%;
                 width: 50%;
             }
-
-            &-img {
-                height: 350px;
-            }
         }
 
         &-description {
@@ -132,26 +128,26 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .partner {
+        &__single {
+            &-benefits {
+                padding-top: 70vh;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 890px) {
     .partner {
         &__headline {
             &-wrapper {
                 height: 100vh;
-                flex-direction: column !important;
-                justify-content: center;
-                align-items: center;
-            }
-
-            &-logo {
-                &-wrapper {
-                    margin-left: 0 !important;
-                }
             }
 
             &-description {
                 &-wrapper {
-                    padding-bottom: 6rem;
-                    margin-left: 0 !important;
+                    padding-bottom: 2rem;
                 }
             }
         }
@@ -162,7 +158,7 @@
             }
 
             &-benefits {
-                padding-top: 80vh;
+                padding-top: 95vh;
             }
         }
     }
@@ -170,6 +166,18 @@
 
 @media only screen and (max-width: 765px) {
     .partner {
+        &__virtuous-cycle-header {
+            text-align: center;
+        }
+
+        &__virtuous-cycle-icon-arrow {
+            img {
+                transform: rotate(90deg) ;
+            }
+
+            padding-bottom: 20px;
+        }
+
         &__single {
             &-benefits {
                 padding-top: 100vh;
@@ -183,6 +191,13 @@
         &__virtuous-cycle{
             &-header {
                 flex-direction: column !important;
+                text-align: center;
+            }
+        }
+
+        &__single {
+            &-benefits {
+                padding-top: 110vh;
             }
         }
     }
