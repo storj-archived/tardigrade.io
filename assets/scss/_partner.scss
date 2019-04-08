@@ -42,8 +42,17 @@
             background: $color--white;
         }
 
-        &-header-wrapper {
-            padding-top: 65px;
+        &-header{
+            &-wrapper {
+                padding-top: 65px;
+            }
+
+            &-content {
+                h2 {
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+            }
         }
 
         &-logos {
@@ -75,10 +84,22 @@
     }
 
     &__virtuous-cycle {
+        &__virtuous-cycle-heading-content {
+            h2 {
+                font-weight: 600;
+            }
+        }
+
         &-icon{
             &-wrapper {
                 img {
                     height: 50px;
+                }
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 21px;
                 }
             }
 
@@ -154,11 +175,11 @@
 
         &__single {
             &-partners {
-                top: 95vh;
+                top: 70vh;
             }
 
             &-benefits {
-                padding-top: 95vh;
+                padding-top: 70vh;
             }
         }
     }
@@ -180,7 +201,7 @@
 
         &__single {
             &-benefits {
-                padding-top: 100vh;
+                padding-top: 80vh;
             }
         }
     }
@@ -188,6 +209,10 @@
 
 @media only screen and (max-width: 570px) {
     .partner {
+        &__headline-description-wrapper {
+            text-align: center;
+        }
+
         &__virtuous-cycle{
             &-header {
                 flex-direction: column !important;
@@ -197,7 +222,7 @@
 
         &__single {
             &-benefits {
-                padding-top: 110vh;
+                padding-top: 95vh;
             }
         }
     }

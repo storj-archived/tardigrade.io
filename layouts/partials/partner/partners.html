@@ -8,7 +8,7 @@
             </div>
         </div>
     {{end}}
-    <div class="partner__partners-logos-wrapper row d-flex justify-content-center offset-xl-1 col-xl-10">
+    <div class="partner__partners-logos-wrapper row d-flex justify-content-center offset-1 col-10">
         {{ range where .Site.Pages ".Params.class" "partners" }}
             <div class="col-4 col-sm-3 col-xl-2 d-flex justify-content-center mb-5">
                 <img class="partner__partners-logo-img img-fluid" src="{{.Params.img}}"/>
