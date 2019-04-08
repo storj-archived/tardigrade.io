@@ -8,18 +8,11 @@
             </div>
         </div>
     {{end}}
-    <div class="partner__partners-logos-wrapper offset-sm-1 col-sm-10 d-flex justify-content-center">
-        {{ range first 5 (where .Site.Pages ".Params.class" "partners")}}
-            <div class="col-sm-2 d-flex justify-content-center">
+    <div class="partner__partners-logos-wrapper row d-flex justify-content-center offset-1 col-10">
+        {{ range where .Site.Pages ".Params.class" "partners" }}
+            <div class="col-4 col-sm-3 col-xl-2 d-flex justify-content-center mb-5">
                 <img class="partner__partners-logo-img img-fluid" src="{{.Params.img}}"/>
             </div>
-        {{end}}
-    </div>
-    <div class="partner__partners-logos-wrapper offset-sm-1 col-sm-10 d-flex justify-content-center">
-        {{ range after 5 (where .Site.Pages ".Params.class" "partners")}}
-        <div class="col-sm-2 d-flex justify-content-center">
-            <img class="partner__partners-logo-img img-fluid" src="{{.Params.img}}"/>
-        </div>
         {{end}}
     </div>
 </div>

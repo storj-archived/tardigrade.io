@@ -13,10 +13,6 @@
                 height: 100%;
                 width: 50%;
             }
-
-            &-img {
-                height: 350px;
-            }
         }
 
         &-description {
@@ -46,8 +42,17 @@
             background: $color--white;
         }
 
-        &-header-wrapper {
-            padding-top: 65px;
+        &-header{
+            &-wrapper {
+                padding-top: 65px;
+            }
+
+            &-content {
+                h2 {
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+            }
         }
 
         &-logos {
@@ -79,10 +84,22 @@
     }
 
     &__virtuous-cycle {
+        &__virtuous-cycle-heading-content {
+            h2 {
+                font-weight: 600;
+            }
+        }
+
         &-icon{
             &-wrapper {
                 img {
                     height: 50px;
+                }
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 21px;
                 }
             }
 
@@ -132,37 +149,37 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .partner {
+        &__single {
+            &-benefits {
+                padding-top: 70vh;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 890px) {
     .partner {
         &__headline {
             &-wrapper {
                 height: 100vh;
-                flex-direction: column !important;
-                justify-content: center;
-                align-items: center;
-            }
-
-            &-logo {
-                &-wrapper {
-                    margin-left: 0 !important;
-                }
             }
 
             &-description {
                 &-wrapper {
-                    padding-bottom: 6rem;
-                    margin-left: 0 !important;
+                    padding-bottom: 2rem;
                 }
             }
         }
 
         &__single {
             &-partners {
-                top: 95vh;
+                top: 77vh;
             }
 
             &-benefits {
-                padding-top: 80vh;
+                padding-top: 70vh;
             }
         }
     }
@@ -170,9 +187,21 @@
 
 @media only screen and (max-width: 765px) {
     .partner {
+        &__virtuous-cycle-header {
+            text-align: center;
+        }
+
+        &__virtuous-cycle-icon-arrow {
+            img {
+                transform: rotate(90deg) ;
+            }
+
+            padding-bottom: 20px;
+        }
+
         &__single {
             &-benefits {
-                padding-top: 100vh;
+                padding-top: 80vh;
             }
         }
     }
@@ -180,9 +209,20 @@
 
 @media only screen and (max-width: 570px) {
     .partner {
+        &__headline-description-wrapper {
+            text-align: center;
+        }
+
         &__virtuous-cycle{
             &-header {
                 flex-direction: column !important;
+                text-align: center;
+            }
+        }
+
+        &__single {
+            &-benefits {
+                padding-top: 95vh;
             }
         }
     }

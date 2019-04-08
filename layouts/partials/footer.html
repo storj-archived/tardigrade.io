@@ -1,14 +1,14 @@
 <div class="footer container-fluid">
   <div class="footer__content row d-flex justify-content-center">
-    <div class="row col-lg-2">
-      <div class="footer__content-item col-10 offset-1 col-lg-12 offset-lg-5">
+    <div class="row col-lg-2 mb-5">
+      <div class="footer__content-item col-4 offset-1 col-lg-12 offset-lg-1 offset-xl-1">
         <a href="/" class="footer__logo">
           <img class="footer__logo-img" src="/img/logo-blue.svg" alt="Tardigrade.io">
         </a>
       </div>
     </div>
-    <div class="row d-flex col-lg-4">
-      <div class="footer__content-item col-5 offset-1 col-sm-5 offset-sm-1 offset-lg-1">
+    <div class="row d-flex col-lg-4 col-xl-4">
+      <div class="footer__content-item col-4 col-lg-5 offset-1 offset-lg-0 col-xl-5">
         <h5 class="text-white">Product</h5>
         <ul class="footer__list-unstyled">
           {{ range where .Site.Pages ".Params.class" "product"}}
@@ -20,7 +20,7 @@
           {{end}}
         </ul>
       </div>
-      <div class="footer__content-item col-5 offset-1 col-sm-5 offset-sm-1">
+      <div class="footer__content-item col-4 offset-1 col-sm-5 offset-sm-1">
         <h5 class="text-white">Resources</h5>
         <ul class="footer__list-unstyled">
           {{ range where .Site.Pages ".Params.class" "resources"}}
@@ -34,8 +34,8 @@
       </div>
     </div>
 
-    <div class="row col-xl-2 col-lg-2">
-      <div class="footer__content-item col-10 offset-1 col-sm-5 offset-sm-1 col-lg-12">
+    <div class="row d-flex col-xl-4 col-lg-6">
+      <div class="footer__content-item col-4 offset-1 col-sm-5 offset-sm-1 col-lg-4 col-xl-4 offset-xl-0">
         <h5 class="text-white">Connect</h5>
         <ul class="footer__list-unstyled">
           {{ range where .Site.Pages ".Params.class" "connect"}}
@@ -48,9 +48,7 @@
           {{end}}
         </ul>
       </div>
-    </div>
-    <div class="row col-xl-3 col-lg-4">
-      <div class="footer__content-item footer__content-item-btn col-10 offset-2 col-sm-4 col-lg-8 offset-sm-1 offset-md-1 offset-lg-0">
+      <div class="footer__content-item footer__content-item-btn col-5 offset-1 col-sm-4 col-lg-6 col-xl-6 offset-sm-0">
           <h5 class="text-white">Stay in Touch</h5>
           <div style="padding-top: 0.1em" id="mc_embed_signup">
             <form action="https://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=da152f16f8" method="post" id="mc-embedded-submit-form" name="mc-embedded-submit-form" class="validate" target="_blank" novalidate="">

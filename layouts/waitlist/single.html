@@ -5,7 +5,15 @@
   </head>
   <body>
     <div class="waitlist__container">
-      {{ partial "waitlist/main" .}}
+      <div class="spacer30"></div>
+      <div class="container">
+          <div>
+            {{partial "nav" .}}
+          </div>
+      </div>
+      <div class="waitlist__content h-100">
+        {{ partial "waitlist/main" .}}
+      </div>
     </div>
 
     <footer>

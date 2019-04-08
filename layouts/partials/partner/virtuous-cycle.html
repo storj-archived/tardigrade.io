@@ -1,11 +1,11 @@
 {{ with .Site.GetPage "virtuous-cycle" }}
 <div class="partner__virtuous-cycle container-fluid">
     <div class="partner__virtuous-cycle-wrapper row d-flex flex-column justify-content-center">
-        <div class="partner__virtuous-cycle-header d-flex flex-row justify-content-center align-items-center pb-5">
-            <div class="partner__virtuous-cycle-header-icon offset-sm-1 col-sm-3">
+        <div class="partner__virtuous-cycle-header pb-5 row offset-sm-1 m-0">
+            <div class="partner__virtuous-cycle-header-icon text-center offset-md-2 col-md-4 col-lg-3 mb-5">
                 <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
             </div>
-            <div class="offset-sm-1 col-sm-4">
+            <div class="partne__virtuous-cycle-heading-content offset-md-1 offset-sm-4 offset-md-1 col-sm-4 col-12">
                 <h2>
                     {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
                 </h2>
@@ -15,9 +15,9 @@
                 </p>
             </div>
         </div>
-        <div class="pt-5 d-flex flex-row justify-content-center">
+        <div class="pt-5 row text-center offset-md-2 offset-xl-1 offset-1 col-10">
             {{ range where .Site.Pages ".Params.class" "virtuous-cycle"}}
-                <div class="partner__virtuous-cycle-icon-wrapper col-sm-2 text-center d-flex justify-content-center align-items-center">
+                <div class="partner__virtuous-cycle-icon-wrapper col-md-3 text-center">
                     <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
                     <div class="pt-3">
                         <h4>
@@ -28,7 +28,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="partner__virtuous-cycle-icon-arrow d-flex justify-content-center align-items-center mr-3">
+                <div class="partner__virtuous-cycle-icon-arrow col-sm-3 col-md-1 m-auto text-center mr-md-3">
                     <img class="img-fluid" src="/img/next-step-arrow.svg" alt="arrow right">
                 </div>
             {{ end }}
