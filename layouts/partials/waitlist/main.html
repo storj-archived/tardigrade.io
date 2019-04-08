@@ -22,7 +22,7 @@
       <!--form-start-->
     <div class="row">
       <div class="waitlist__form-wrapper col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
-        <div class="waitlist__form-header text-center offset-sm-1 col-10">
+        <div class="waitlist__form-header text-center offset-1 col-10">
             <h2 class="waitlist__form-heading">
                 {{ replace .Params.formHeading "\n" "<br/>" | safeHTML}}
             </h2>
@@ -42,7 +42,7 @@
           </div>
   
           <div class="row">
-            <div class="waitlist__form-input offset-sm-2 col-xl-8 col-sm-8">
+            <div class="waitlist__form-input offset-sm-2 col-xl-8 col-sm-8 mt-2">
               <input class="waitlist__form-input-email" id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" placeholder="Email Address" required />
             </div>
           </div>

@@ -5,7 +5,7 @@
         height: 80vh;
 
         &-wrapper {
-            margin-top: 120px;
+            margin-top: 80px;
         }
 
         &-logo {
@@ -36,9 +36,9 @@
 
     &__partners {
         &-container {
-            box-shadow: 0 0 1.3rem;
+            box-shadow: 0 0 2.3rem;
             border-radius: 1rem;
-            padding-bottom: 90px;
+            padding-bottom: 50px;
             background: $color--white;
         }
 
@@ -139,7 +139,7 @@
         }
 
         &-benefits {
-            padding-top: 60vh;
+            padding-top: 65vh;
         }
 
         &-virtuous-cycle {
@@ -153,7 +153,7 @@
     .partner {
         &__single {
             &-benefits {
-                padding-top: 70vh;
+                padding-top: 80vh;
             }
         }
     }
@@ -179,7 +179,7 @@
             }
 
             &-benefits {
-                padding-top: 70vh;
+                padding-top: 80vh;
             }
         }
     }
@@ -201,7 +201,7 @@
 
         &__single {
             &-benefits {
-                padding-top: 80vh;
+                padding-top: 85vh;
             }
         }
     }

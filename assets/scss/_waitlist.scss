@@ -122,6 +122,16 @@
     &__container {
       height: 120vh;
     }
+
+    &__img {
+      &-satellite {
+        display: none;
+      }
+
+      &-mars {
+        display: none;
+      }
+    }
   }
 }
 
