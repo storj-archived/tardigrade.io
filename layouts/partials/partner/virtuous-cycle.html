@@ -15,9 +15,9 @@
                 </p>
             </div>
         </div>
-        <div class="pt-5 row text-center offset-md-2 offset-xl-1 offset-1 col-10">
+        <div class="pt-5 row text-center offset-md-1 offset-1 col-10">
             {{ range where .Site.Pages ".Params.class" "virtuous-cycle"}}
-                <div class="partner__virtuous-cycle-icon-wrapper col-md-3 text-center">
+                <div class="partner__virtuous-cycle-icon-wrapper col-md-3 mb-5 mt-5 text-center">
                     <img class="img-fluid" src="{{ .Params.img }}" alt="virtuous cycle icon">
                     <div class="pt-3">
                         <h4>
@@ -28,7 +28,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="partner__virtuous-cycle-icon-arrow col-sm-3 col-md-1 m-auto text-center mr-md-3">
+                <div class="partner__virtuous-cycle-icon-arrow col-sm-3 col-md-1 m-auto mr-md-3">
                     <img class="img-fluid" src="/img/next-step-arrow.svg" alt="arrow right">
                 </div>
             {{ end }}
