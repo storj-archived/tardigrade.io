@@ -1,15 +1,10 @@
 .footer {
 	padding-top: 3.5em;
-	background: $color--blue-dark;
 	background-size: cover;
     text-align: left;
 
-    h5 {
-        margin-bottom: 21px;
-    }
-
     &__logo-img {
-        width: 125px;
+        width: 100%;
         height: auto;
     }
 
@@ -104,6 +99,15 @@
     .footer {
         &__content-item-btn {
         width:400px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        &__logo-img {
+            width: 125px;
+            height: auto;
         }
     }
 }
