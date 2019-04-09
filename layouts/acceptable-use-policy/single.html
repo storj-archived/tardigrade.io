@@ -5,12 +5,12 @@
   </head>
   <body class="page">
     <section class="legal__nav">
+        {{partial "banner" .}}
         {{partial "nav" .}}
     </section>
-    {{ with .Site.GetPage "acceptable-use-policy" }}
+    {{ with .Site.GetPage "acceptableUsePolicy" }}
     <div class="legal__container container">
         <div class="legal__content h-100">
-            {{ .Params.title }}
             {{ .Content }}
         </div>
     </div>

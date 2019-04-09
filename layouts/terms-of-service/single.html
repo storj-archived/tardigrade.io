@@ -1,1 +1,25 @@
-{{ .Content }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body class="page">
+    <section class="legal__nav">
+        {{partial "banner" .}}
+        {{partial "nav" .}}
+    </section>
+    {{ with .Site.GetPage "termsOfService" }}
+    <div class="legal__container container">
+        <div class="legal__content h-100">
+            {{ .Content }}
+        </div>
+    </div>
+    {{end}}
+
+    <footer>
+        {{partial "footer" . }}
+    </footer>
+
+    {{partial "site-scripts" .}}
+  </body>
+</html>
