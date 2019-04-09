@@ -2,7 +2,7 @@
     &__headline {
         background: url('/img/background.svg') no-repeat;
         background-size: cover;
-        height: 80vh;
+        height: 609px;
 
         &-wrapper {
             margin-top: 80px;
@@ -36,8 +36,8 @@
 
     &__partners {
         &-container {
-            box-shadow: 0 0 2.3rem;
-            border-radius: 1rem;
+            box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.221482);
+            border-radius: 14px;
             padding-bottom: 50px;
             background: $color--white;
         }
@@ -134,7 +134,7 @@
     &__single {
         &-partners {
             position: absolute;
-            top: 75vh;
+            top: 590px;
             z-index: 1000;
         }
 
@@ -175,7 +175,7 @@
 
         &__single {
             &-partners {
-                top: 77vh;
+                top: 70vh;
             }
 
             &-benefits {
