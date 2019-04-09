@@ -43,20 +43,6 @@
       </ul>
     </div>
 
-    <div class="row d-flex col-xl-4 col-lg-6">
-      <div class="footer__content-item col-4 offset-1 col-sm-5 offset-sm-1 col-lg-4 col-xl-4 offset-xl-0">
-        <h5 class="text-white">Connect</h5>
-        <ul class="footer__list-unstyled">
-          {{ range where .Site.Pages ".Params.class" "connect"}}
-            <li>
-              <a class="footer__link" href="{{ .Params.link }}">
-                <img class="footer__link-img" src="{{.Params.icon}}" alt="">
-                  <span class="footer__link-text">{{ .Title }}</span>
-              </a>
-            </li>
-          {{end}}
-        </ul>
-      </div>
     <div class="footer__content-item footer__content-item-btn col-6 col-md-3 ml-xl-4">
         <h5 class="text-white">Newsletter</h5>
         <div style="padding-top: 0.1em" id="mc_embed_signup">
