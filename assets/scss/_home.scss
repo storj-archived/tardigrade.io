@@ -7,6 +7,55 @@
   color:white;
 }
 
+.mod-wrapper{
+  width: 574px;
+  height: 357px;
+  margin-top:300px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px){
+  .mod-wrapper{
+    width: 400px;
+    height: 357px;
+    margin-top:300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mod-wrapper{
+    width: 400px;
+    height: 357px;
+    margin-top:300px;
+  }
+}
+
+.modal-arrow{
+  margin-left:15px;
+  margin-top:-2px;
+  border-radius:2px;
+  background: #2582FF;
+}
+
+.modal-bod{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 33px;
+text-align: center;
+color: #000000;
+}
+
+.navlink{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+cursor: pointer;
+}
+
 .nav-join{
   border: 2px solid white;
   border-radius: 4px;
