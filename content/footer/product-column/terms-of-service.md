@@ -1,6 +1,6 @@
 ---
 link : "/terms-of-service"
-weight : 4
+weight : 3
 title : "Terms of Service"
 class : "product"
 ---

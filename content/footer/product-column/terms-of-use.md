@@ -1,6 +1,6 @@
 ---
 link : "/terms-of-use"
-weight : 3 
+weight : 2 
 title : "Terms of Use"
 class : "product"
 ---

@@ -1,6 +1,6 @@
 ---
 link : "/storage-sla"
-weight : 7
+weight : 5
 title : "Storage SLA"
 class : "product"
 ---

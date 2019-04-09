@@ -1,6 +1,6 @@
 ---
-link : "https://docs.storj.io/docs"
+link : "/acceptable-use-policy"
 title : "Acceptable Use Policy"
-weight : 6
+weight : 2
 class : "resources"
 ---

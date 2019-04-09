@@ -1,6 +1,6 @@
 ---
-link : "https://storj.io/blog"
+link : "/cookie-policy"
 title : "Cookie Policy"
-weight : 8
+weight : 3
 class : "resources"
 ---

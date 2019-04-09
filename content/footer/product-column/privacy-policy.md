@@ -1,6 +1,6 @@
 ---
 link : "/privacy-policy"
-weight : 2
+weight : 1
 title : "Privacy Policy"
 class : "product"
 ---
