@@ -1,5 +1,12 @@
 /* Tardigrade.io - Highly Distributed. Rediculously Resilient */ 
 
-/* Home-Page */
+/* Base CSS files */
+@import "color";
+@import "base";
 
+/* Pages */
 @import "home";
+@import "partner";
+@import "legal";
+@import "footer";
+@import "waitlist";

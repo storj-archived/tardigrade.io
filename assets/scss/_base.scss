@@ -1,0 +1,41 @@
+a {
+    &:hover {
+        color: $color--blue-light;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+span, p {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 19px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.text-white {
+    color: $color--white;
+}
+
+.text-grey {
+    color: $color--grey;
+}
+
+footer {
+	background: $color--blue-dark;
+}
+
+.isDisabled {
+    display: inline-block;  /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;;
+}

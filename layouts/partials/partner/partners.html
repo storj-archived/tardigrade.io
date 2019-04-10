@@ -1,0 +1,18 @@
+<div class="partner__partners-container container" >
+    {{ with .Site.GetPage "partners"}}
+        <div class="partner__partners-header-wrapper text-center row">
+            <div class="partner__partners-header-content offset-sm-1 col-sm-10">
+                <h2>{{ .Params.heading }}</h2>
+                <br />
+                <p>{{ .Params.content }}</p>
+            </div>
+        </div>
+    {{end}}
+    <div class="partner__partners-logos-wrapper row d-flex justify-content-center offset-1 col-10">
+        {{ range where .Site.Pages ".Params.class" "partners" }}
+            <div class="col-4 col-sm-3 col-xl-2 d-flex justify-content-center mb-5">
+                <img class="partner__partners-logo-img img-fluid" src="{{.Params.img}}"/>
+            </div>
+        {{end}}
+    </div>
+</div>

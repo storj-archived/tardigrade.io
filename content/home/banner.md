@@ -1,3 +1,4 @@
 ---
-bannerText : Tardigrade.io - The future home of the Storj Labs development ecosystem.
+leftText : Tardigrade.io is Powered By Storj Labs
+rightText : Visit Storj Labs
 ---
