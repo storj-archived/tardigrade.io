@@ -62,7 +62,7 @@ cursor: pointer;
   color:white;
 }
 .nav-join:hover{
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 4px;
   color:white;
 }
@@ -70,7 +70,7 @@ cursor: pointer;
 /*  home-hero-banner  */
 
 .bg-gradiant{
-  background-image: url('/img/Theez-Starz.svg'), radial-gradient(1077.85px at 49.38% 41.4%, #0055C6 0%, #000000 100%);
+  background-image: url('/img/Theez-Starz.svg'), radial-gradient(1047.02px at 63.66% 65.09%, #0055C6 0%, #000000 100%);
   background-size: cover;
 }
 .nomp, .inner-hero-wrapper{
@@ -134,7 +134,14 @@ cursor: pointer;
 }
 
 .hero-subheading{
-  color:white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #000000;
 }
 
 .hero-listitems{
@@ -324,17 +331,32 @@ a{
 }
 
 .banner {
+  height:28px;
   background-color: color(secondary);
 }
+
+@media only screen and (min-width: 321px) and (max-width: 767px){
+.banner {
+  height:50px;
+  background-color: color(secondary);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+.banner {
+  height:50px;
+  background-color: color(secondary);
+  }
+}
+
 
 .banner-text{
   margin-top:5px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
   line-height: 22px;
-  font-size : 10px;
+  font-size : 12px;
   color:color(primary);
 
 }
@@ -414,10 +436,10 @@ color: #1B2D45;
   background: #FFFFFF;
   border-radius: 6px;
   margin:0px;
-  border: 0px solid #DCDCDC;
+  border: 1px solid #7E8B9C;
   border-radius: 4px 0 0 4px;
   text-align:left;
-  padding-left:25px;
+  padding-left:5px;
   padding-bottom:8px;
   padding-top:10px;
   height:43px;
@@ -437,10 +459,10 @@ color: #1B2D45;
     background: #FFFFFF;
     border-radius: 6px;
     margin:0px;
-    border: 0px solid #DCDCDC;
+    border: 1px solid #7E8B9C;
     border-radius: 4px 0 0 4px;
     text-align:left;
-    padding-left:25px;
+    padding-left:5px;
     padding-bottom:8px;
     padding-top:10px;
     height:43px;
@@ -462,10 +484,10 @@ color: #1B2D45;
     background: #FFFFFF;
     border-radius: 6px;
     margin:0px;
-    border: 0px solid #DCDCDC;
+    border: 1px solid #7E8B9C;
     border-radius: 4px 0 0 4px;
     text-align:left;
-    padding-left:25px;
+    padding-left:5px;
     padding-bottom:8px;
     padding-top:10px;
     height:43px;
@@ -499,6 +521,47 @@ letter-spacing: 0.25px;
 color: #FFFFFF;
 height: 40px;
 width:167px;
+margin-top:-4px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px){
+  .cta-btm-join{
+    border-radius: 0px 4px 4px 0px;
+    height:42.5px;
+    margin-top:-5px;
+    margin-left:-5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    height: 40px;
+    width:167px;
+    margin-top:-2px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  .cta-btm-join{
+    border-radius: 0px 4px 4px 0px;
+    height:42.5px;
+    margin-top:-5px;
+    margin-left:-5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    height: 40px;
+    width:167px;
+    margin-top:-2px;
+    }
 }
 
 .hiw-col{
@@ -998,6 +1061,7 @@ font-size: 18px;
 line-height: 20px;
 color: #2582FF;
 }
+
 
 .usecase-txt{
 font-family: 'Poppins';
