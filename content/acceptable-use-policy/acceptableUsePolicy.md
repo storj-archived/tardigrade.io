@@ -1,5 +1,5 @@
 ---
-title: "acceptable use policy"
+title: "Acceptable Use Policy"
 content: "testing"
 ---
 <p>

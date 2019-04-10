@@ -1,3 +1,3 @@
 ---
-title: "support policy"
+title: "Support Policy"
 ---

@@ -1,3 +1,3 @@
 ---
-title: "terms of service"
+title: "Terms Of Service"
 ---

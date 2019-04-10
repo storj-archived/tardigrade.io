@@ -1,3 +1,3 @@
 ---
-title: "storage sla"
+title: "Storage SLA"
 ---

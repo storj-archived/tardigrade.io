@@ -9,7 +9,9 @@
         {{partial "nav" .}}
     </section>
     {{ with .Site.GetPage "sla" }}
-    <div class="legal__container container">
+    <div class="legal__container container text-center">
+        <h1> {{ .Params.title }} </h1>
+
         <div class="legal__content h-100">
             {{ .Content }}
         </div>

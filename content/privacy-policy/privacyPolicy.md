@@ -1,3 +1,3 @@
 ---
-title: "privacy policy"
+title: "Privacy Policy"
 ---

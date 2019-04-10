@@ -1,3 +1,3 @@
 ---
-title: "terms of use"
+title: "Terms Of Use"
 ---

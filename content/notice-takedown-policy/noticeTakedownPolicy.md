@@ -1,3 +1,3 @@
 ---
-title: "notice and takedown policy"
+title: "Notice And Takedown Policy"
 ---
