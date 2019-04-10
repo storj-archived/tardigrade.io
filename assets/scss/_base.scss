@@ -33,3 +33,9 @@ span, p {
 footer {
 	background: $color--blue-dark;
 }
+
+.isDisabled {
+    display: inline-block;  /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;;
+}

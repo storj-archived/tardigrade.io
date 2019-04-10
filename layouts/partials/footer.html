@@ -9,7 +9,7 @@
       <h5 class="text-white">Product</h5>
       <ul class="footer__list-unstyled">
         {{ range where .Site.Pages ".Params.class" "product"}}
-          <li>
+          <li class="isDisabled">
             <a class="footer__link" href="{{ .Params.link }}">
               <span class="footer__link-text">{{ .Title }}</span>
             </a>
@@ -21,7 +21,7 @@
       <h5 class="text-white">Resources</h5>
       <ul class="footer__list-unstyled">
         {{ range where .Site.Pages ".Params.class" "resources"}}
-          <li>
+          <li class="isDisabled">
             <a class="footer__link" href="{{ .Params.link }}">
               <span class="footer__link-text">{{ .Title }}</span>
             </a>
