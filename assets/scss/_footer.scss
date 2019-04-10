@@ -22,11 +22,17 @@
     &__link {
         color: $color--white;
 
+        &-temp {
+            opacity: 1;
+            color: #2582FF; 
+        }
+
         &:hover {
             .footer__link-text {
                 opacity: 1;
                 color: #2582FF;
             }
+            opacity: 1;
             filter: invert(35%) sepia(95%) saturate(2080%) hue-rotate(204deg) brightness(105%) contrast(101%);
         }
 
