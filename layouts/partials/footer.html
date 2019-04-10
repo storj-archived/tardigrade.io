@@ -1,6 +1,51 @@
 <div class="footer container">
   <div class="footer__content row">
-    <div class="footer__content-item col-12 col-md-2 mt-2">
+      <div class="footer__content-item col-12 col-md-6 mt-2">
+          <div class="col-12 col-sm-4 pl-0">
+            <a href="/" class="footer__logo">
+              <img class="footer__logo-img img-fluid" src="/img/tar-logo-blue-horizontal.svg" alt="Tardigrade.io">
+            </a>
+          </div>
+          <div class="col-12 pl-0 mt-3">
+            <span class="footer__list-unstyled">
+              <span class="footer__link-text text-white">
+                  Tardigrade.io is a subsidiary of Stroj Labs INC. For further resources and information please visit <a class="footer__link-temp" href="https://storj.io">Storj.io</a>.
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="footer__content-item col-6 col-md-2 ml-xl-3">
+          <h5 class="text-white">Connect</h5>
+          <ul class="footer__list-unstyled">
+            {{ range where .Site.Pages ".Params.class" "connect"}}
+              <li>
+                <a class="footer__link" href="{{ .Params.link }}">
+                  <img class="footer__link-img" src="{{.Params.icon}}" alt="">
+                    <span class="footer__link-text">{{ .Title }}</span>
+                </a>
+              </li>
+            {{end}}
+          </ul>
+        </div>
+    
+        <div class="footer__content-item footer__content-item-btn col-6 col-md-3 ml-xl-4">
+            <h5 class="text-white">Newsletter</h5>
+            <div style="padding-top: 0.1em" id="mc_embed_signup">
+              <form action="https://storj.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=da152f16f8" method="post" id="mc-embedded-submit-form" name="mc-embedded-submit-form" class="validate" target="_blank" novalidate="">
+                  <div id="mc_embed_signup_scroll">
+                    <input class="footer__email-input" style="height:50%; font-size: 12px;font-family: Roboto" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" required="">
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                      <input type="text" name="b_edba9fc4ce8b9095a31859cba_09353db057" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                      <input class="footer__btn-submit btn-signup" style="height:50%; font-size: 12px;font-family: Poppins" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-submit">
+                    </div>
+                  </div>
+              </form>
+            </div>
+        </div>
+    {{/*  <div class="footer__content-item col-12 col-md-2 mt-2">
       <a href="/" class="footer__logo">
         <img class="footer__logo-img img-fluid" src="/img/tar-logo-blue-horizontal.svg" alt="Tardigrade.io">
       </a>
@@ -59,7 +104,7 @@
               </div>
           </form>
         </div>
-    </div>
+    </div>  */}}
   </div>
 
   <div class="footer__content d-flex row justify-content-center mt-5">
