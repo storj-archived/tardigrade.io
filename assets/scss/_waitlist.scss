@@ -6,7 +6,7 @@
   &__container {
     background: url('/img/background.svg') no-repeat;
     background-size: cover;
-    height: 105vh;
+    height: 1075px;
   }
 
   &__sub-heading {
@@ -119,10 +119,6 @@
 
 @media (max-width: 576px) {
   .waitlist {
-    &__container {
-      height: 120vh;
-    }
-
     &__img {
       &-satellite {
         display: none;
@@ -150,7 +146,6 @@
     &__content {
       display: flex;
       align-items: center;
-      height: 80vh;
     }
 
     &__img {
