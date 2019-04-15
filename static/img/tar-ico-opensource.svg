@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="42px" viewBox="0 0 43 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>tar-com-ico-opensource</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#29FBCF" offset="0%"></stop>
+            <stop stop-color="#12F5A2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Tardigrade-Icos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.742761145">
+        <path d="M16.183908,41 C7.44781158,38.721747 1,30.7780002 1,21.3282862 C1,10.1012838 10.1012838,1 21.3282862,1 C32.5552887,1 41.6565725,10.1012838 41.6565725,21.3282862 C41.6565725,30.3911523 35.72587,38.0688286 27.5337768,40.6920032 L24.7810567,28.267219 C27.4489052,26.9633475 29.2864403,24.2230751 29.2864403,21.0536234 C29.2864403,16.6219119 25.6938283,13.0292999 21.2621168,13.0292999 C16.8304053,13.0292999 13.2377933,16.6219119 13.2377933,21.0536234 C13.2377933,24.6644388 15.6227359,27.7182211 18.9032997,28.7256485 L16.183908,41 Z" id="tar-com-ico-opensource" stroke="#009345" stroke-width="1.5" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>
