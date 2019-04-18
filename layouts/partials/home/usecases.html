@@ -25,7 +25,7 @@
             </div>
             {{end}}
         </div>
-        <div class="tab-content pl-3" id="v-pills-tabContent">
+        <div class="col-xs-6 offset-1 col-sm-11 offset-sm-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 tab-content" id="v-pills-tabContent">
             <div class="spacer30 d-block d-sm-none"></div>
             {{range where .Site.Pages ".Params.class" "tab"}}
             <div  class="tab-pane fade{{if eq .Params.isActive true}}show active{{end}}" 

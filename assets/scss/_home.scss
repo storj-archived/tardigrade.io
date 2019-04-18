@@ -599,7 +599,49 @@ color: #1B2D45;
   margin-top:-4px;
   }
 
-@media only screen and (min-width: 321px) and (max-width: 982px){
+
+  @media only screen and (min-width: 0px) and (max-width: 379px){
+    .cta-btm-email{
+      background: #FFFFFF;
+      border-radius: 6px;
+      border: 1px solid #7E8B9C;
+      border-radius: 4px 0 0 4px;
+      text-align:left;
+      padding-left:5px;
+      padding-bottom:8px;
+      padding-top:10px;
+      height:43px;
+      border-right:none;
+      resize:none;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7E8B9C;
+      height: 40px;
+    }
+  
+    .cta-btm-join{
+      height:42.5px;
+      margin-top:-5px;
+      margin-left:0px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.25px;
+      color: #FFFFFF;
+      height: 40px;
+      width:155px;
+      margin-top:-4px;
+      margin-left:-5px;
+      }
+  }
+
+@media only screen and (min-width: 380px) and (max-width: 982px){
   .cta-btm-email{
     background: #FFFFFF;
     border-radius: 6px;
