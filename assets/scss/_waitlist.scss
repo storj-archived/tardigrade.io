@@ -1,10 +1,8 @@
-
 /* Waitlist */
 
 .waitlist {
-
   &__container {
-    background: url('/img/background.svg') no-repeat;
+    background: url("/img/background.svg") no-repeat;
     background-size: cover;
     height: 1075px;
   }
@@ -22,23 +20,23 @@
       z-index: 999;
 
       input {
-        border: 1px solid #96ADBE;
+        border: 1px solid #96adbe;
         border-radius: 6px;
         width: 100%;
         height: 40px;
-        padding-left: .5rem;
+        padding-left: 0.5rem;
       }
     }
 
     &-input {
       input {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 300;
         font-size: 14px;
         line-height: 16px;
       }
     }
-  
+
     &-header {
       margin-bottom: 20px;
       margin-top: 40px;
@@ -54,7 +52,7 @@
       font-size: 16px;
       line-height: 19px;
     }
-  
+
     &-input {
       &-name {
         margin-bottom: 20px;
@@ -69,11 +67,11 @@
     &-submit {
       font-weight: bold;
       background: $color--blue-light;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 14px;
       line-height: 20px;
       min-width: 220px;
-      letter-spacing: 0.25px
+      letter-spacing: 0.25px;
     }
   }
 
@@ -96,7 +94,7 @@
   .waitlist {
     &__img {
       &-satellite {
-        left:5vw;
+        left: 5vw;
       }
     }
   }
@@ -106,7 +104,7 @@
   .waitlist {
     &__img {
       &-satellite {
-        left:20vw;
+        left: 20vw;
       }
 
       &-mars {
@@ -135,7 +133,7 @@
   .waitlist {
     &__img {
       &-mars {
-        left:68vw;
+        left: 68vw;
       }
     }
   }

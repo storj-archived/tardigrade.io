@@ -1,239 +1,238 @@
 .partner {
-    &__headline {
-        background: url('/img/background.svg') no-repeat;
-        background-size: cover;
-        height: 609px;
+  &__headline {
+    background: url("/img/background.svg") no-repeat;
+    background-size: cover;
+    height: 609px;
 
-        &-wrapper {
-            margin-top: 80px;
-        }
-
-        &-logo {
-            &-wrapper {
-                height: 100%;
-                width: 50%;
-            }
-        }
-
-        &-description {
-            &-wrapper {
-                width: 50%;
-            }
-
-            &-title {
-                font-weight: 600;
-                font-size: 34px;
-                line-height: 48px;
-            }
-
-            &-content {
-                font-weight: 300;
-                line-height: 26px;
-                opacity: 0.7;
-            }
-        }
+    &-wrapper {
+      margin-top: 80px;
     }
 
-    &__partners {
-        &-container {
-            box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.221482);
-            border-radius: 14px;
-            padding-bottom: 50px;
-            background: $color--white;
-        }
-
-        &-header{
-            &-wrapper {
-                padding-top: 65px;
-            }
-
-            &-content {
-                h2 {
-                    font-weight: 600;
-                    font-size: 28px;
-                }
-            }
-        }
-
-        &-logos {
-            &-wrapper {
-                margin-top: 57px;
-            }
-        }
-        &-logo {
-            &-img {
-                height: 25px;
-            }
-        }
+    &-logo {
+      &-wrapper {
+        height: 100%;
+        width: 50%;
+      }
     }
 
-    &__benefits {
-        &-logo-wrapper {
-            img {
-                height: 40px;
-            }
-            
-            h4 {
-                font-size: 16px;
-            }
+    &-description {
+      &-wrapper {
+        width: 50%;
+      }
 
-            p {
-                font-size: 14px;
-            }
-        }
+      &-title {
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      &-content {
+        font-weight: 300;
+        line-height: 26px;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__partners {
+    &-container {
+      box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.221482);
+      border-radius: 14px;
+      padding-bottom: 50px;
+      background: $color--white;
     }
 
-    &__virtuous-cycle {
-        &__virtuous-cycle-heading-content {
-            h2 {
-                font-weight: 600;
-            }
+    &-header {
+      &-wrapper {
+        padding-top: 65px;
+      }
+
+      &-content {
+        h2 {
+          font-weight: 600;
+          font-size: 28px;
         }
-
-        &-icon{
-            &-wrapper {
-                img {
-                    height: 50px;
-                }
-
-                h4 {
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 21px;
-                }
-            }
-
-            &-arrow {
-                &:last-child {
-                    display: none !important;
-                }
-            }
-        }
-
-        &-btn {
-            font-size: 16px;
-            line-height: 24px;
-            background: #2683FF;
-            color: $color--white;
-            border-radius: 6px;
-            width: 218px;
-            height: 48px;
-            max-width: 320px;
-            border: 0;
-            outline: 0;
-            -webkit-backface-visibility: hidden;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-transition: all 0.15s ease-in-out;
-            -moz-transition: all 0.15s ease-in-out;
-            -ms-transition: all 0.15s ease-in-out;
-            transition: all 0.15s ease-in-out;
-        }
+      }
     }
 
-
-    &__single {
-        &-partners {
-            position: absolute;
-            top: 590px;
-            z-index: 1000;
-        }
-
-        &-benefits {
-            padding-top: 65vh;
-        }
-
-        &-virtuous-cycle {
-            padding-top: 10rem;
-            padding-bottom: 3rem;
-        }
+    &-logos {
+      &-wrapper {
+        margin-top: 57px;
+      }
     }
+    &-logo {
+      &-img {
+        height: 25px;
+      }
+    }
+  }
+
+  &__benefits {
+    &-logo-wrapper {
+      img {
+        height: 40px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__virtuous-cycle {
+    &__virtuous-cycle-heading-content {
+      h2 {
+        font-weight: 600;
+      }
+    }
+
+    &-icon {
+      &-wrapper {
+        img {
+          height: 50px;
+        }
+
+        h4 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+
+      &-arrow {
+        &:last-child {
+          display: none !important;
+        }
+      }
+    }
+
+    &-btn {
+      font-size: 16px;
+      line-height: 24px;
+      background: #2683ff;
+      color: $color--white;
+      border-radius: 6px;
+      width: 218px;
+      height: 48px;
+      max-width: 320px;
+      border: 0;
+      outline: 0;
+      -webkit-backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition: all 0.15s ease-in-out;
+      -moz-transition: all 0.15s ease-in-out;
+      -ms-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+    }
+  }
+
+  &__single {
+    &-partners {
+      position: absolute;
+      top: 590px;
+      z-index: 1000;
+    }
+
+    &-benefits {
+      padding-top: 65vh;
+    }
+
+    &-virtuous-cycle {
+      padding-top: 10rem;
+      padding-bottom: 3rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .partner {
-        &__single {
-            &-benefits {
-                padding-top: 80vh;
-            }
-        }
+  .partner {
+    &__single {
+      &-benefits {
+        padding-top: 80vh;
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 890px) {
-    .partner {
-        &__headline {
-            &-wrapper {
-                height: 100vh;
-            }
+  .partner {
+    &__headline {
+      &-wrapper {
+        height: 100vh;
+      }
 
-            &-description {
-                &-wrapper {
-                    padding-bottom: 2rem;
-                }
-            }
+      &-description {
+        &-wrapper {
+          padding-bottom: 2rem;
         }
-
-        &__single {
-            &-partners {
-                top: 70vh;
-            }
-
-            &-benefits {
-                padding-top: 80vh;
-            }
-        }
+      }
     }
+
+    &__single {
+      &-partners {
+        top: 70vh;
+      }
+
+      &-benefits {
+        padding-top: 80vh;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 765px) {
-    .partner {
-        &__virtuous-cycle-header {
-            text-align: center;
-        }
-
-        &__virtuous-cycle-icon-arrow {
-            img {
-                transform: rotate(90deg) ;
-            }
-
-            padding-bottom: 20px;
-        }
-
-        &__single {
-            &-benefits {
-                padding-top: 85vh;
-            }
-        }
+  .partner {
+    &__virtuous-cycle-header {
+      text-align: center;
     }
+
+    &__virtuous-cycle-icon-arrow {
+      img {
+        transform: rotate(90deg);
+      }
+
+      padding-bottom: 20px;
+    }
+
+    &__single {
+      &-benefits {
+        padding-top: 85vh;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 570px) {
-    .partner {
-        &__headline-description-wrapper {
-            text-align: center;
-        }
-
-        &__virtuous-cycle{
-            &-header {
-                flex-direction: column !important;
-                text-align: center;
-            }
-        }
-
-        &__single {
-            &-benefits {
-                padding-top: 95vh;
-            }
-        }
+  .partner {
+    &__headline-description-wrapper {
+      text-align: center;
     }
+
+    &__virtuous-cycle {
+      &-header {
+        flex-direction: column !important;
+        text-align: center;
+      }
+    }
+
+    &__single {
+      &-benefits {
+        padding-top: 95vh;
+      }
+    }
+  }
 }
 
 @media only screen and (min-height: 1000px) {
-    .partner {
-        &__single {
-            &-benefits {
-                padding-top: 30vh;
-            }
-        }
+  .partner {
+    &__single {
+      &-benefits {
+        padding-top: 30vh;
+      }
     }
+  }
 }
