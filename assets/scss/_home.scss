@@ -1384,3 +1384,23 @@ a {
     width: 70px;
   }
 }
+
+.footer-wrapper{
+  position:absolute;
+  bottom:0px;
+  width:100%;
+}
+
+.subscribe-flow{
+  margin-top:160px;
+}
+
+@media only screen and (max-width: 767px) {
+  .subscribe-flow{
+    margin-top: 70px;
+  }
+}
+
+.storj-blu-bg{
+  background-color:#2582FF;
+}

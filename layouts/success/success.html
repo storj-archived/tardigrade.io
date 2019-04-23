@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{{partial "head" .}}
+</head>
+<body class="page">
+    {{ partial "banner" .}}
+    <div  class="container-fluid pt-3 pb-1 storj-blu-bg">
+        <div class="container storj-blu-bg">
+        {{ partial "nav"  .}}
+        </div>
+        <div class="container-fluid pt-3 d-xs-block d-lg-none storj-blu-bg"></div>
+    </div>
+    <div class="text-center subscribe-flow">
+        {{partial "success/main" .}}
+    </div>
+    <footer class="footer-wrapper">
+        {{partial "footer" . }}
+    </footer>
+    {{partial "site-scripts" .}}
+</body>
+</html>
