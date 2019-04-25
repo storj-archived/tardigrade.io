@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-{{partial "head" .}}
+<head>
+    {{partial "head" .}}
 </head>
 <body class="page">
     {{ partial "banner" .}}
@@ -13,7 +14,7 @@
     <div class="text-center subscribe-flow">
         {{partial "success/main" .}}
     </div>
-    <footer class="footer-wrapper">
+    <footer class="fixed-bottom">
         {{partial "footer" . }}
     </footer>
     {{partial "site-scripts" .}}

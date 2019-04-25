@@ -1385,12 +1385,6 @@ a {
   }
 }
 
-.footer-wrapper{
-  position:absolute;
-  bottom:0px;
-  width:100%;
-}
-
 .subscribe-flow{
   margin-top:160px;
 }
@@ -1402,5 +1396,5 @@ a {
 }
 
 .storj-blu-bg{
-  background-color:#2582FF;
+  background-color: $color--blue-light;
 }
