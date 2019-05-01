@@ -4,4 +4,54 @@
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='MMERGE1';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script>
+    function select(e){
+        var currentTab = e.parentNode;
+        var choices = currentTab.parentNode.children;
+        for(var i = 0; i < choices.length; i++){
+            choices[i].children[0].classList.remove("active");
+            choices[i].style.borderLeft = "2px solid #DCDCDC";
+            choices[i].style.opacity = 0.5 ;
+            choices[i].style.fontWeight = 500;
+        }
+        currentTab.style.borderLeft = "2px solid #2582FF";
+        currentTab.style.opacity = 1.0;
+        currentTab.style.fontWeight = "bold";
+    }
+</script>
+<script>
+    function hasConsented() {
+        var name = "tardigrade_cookie_consent" + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function checkConsent(){
+        if(hasConsented()){
+            closeBanner()
+            return
+        }else{
+            document.cookie = "tardigrade_cookie_consent=true;"
+            return
+        }
+    }
+
+    window.onload = checkConsent();
+
+    function closeBanner(){
+        var consentBanner = document.getElementById("consent-banner");
+        consentBanner.classList.remove("d-flex");
+        consentBanner.style.display = "none";
+    }
+</script>
 
