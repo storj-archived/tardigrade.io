@@ -40,18 +40,17 @@
         if(hasConsented()){
             closeBanner()
             return
-        }else{
-            document.cookie = "tardigrade_cookie_consent=true;"
-            return
         }
     }
 
     window.onload = checkConsent();
 
     function closeBanner(){
+        document.cookie = "tardigrade_cookie_consent=true;"
         var consentBanner = document.getElementById("consent-banner");
         consentBanner.classList.remove("d-flex");
         consentBanner.style.display = "none";
+        return
     }
 </script>
 
