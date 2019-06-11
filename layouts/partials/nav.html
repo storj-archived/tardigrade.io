@@ -17,49 +17,16 @@
             </p>
         </li>
 
-        <div class="modal fade" id="docsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog mod-wrapper" role="document">
-                  <div class="modal-content text-center">
-                    <div class="modal-header" style="border-bottom:none;">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-bod mt-4 p-3">
-                        <img src="/img/tar-2-git.png" class="img-fluid" height="112" width="178"/><br>
+        {{partial "docsModal" .}}
 
-                        If you’ve received your alpha invite, check out the Tardigrade documentation on Storj Labs’ GitHub.
-                        </div>
-                      <a class="mt-3 mb-4" href="https://github.com/storj"><button type="button" class="btn btn-primary">Tardigrade on GitHub<img class="modal-arrow" src="/img/arrow-right.svg"/></button></a>
-                    
-                  </div>
-                </div>
-              </div>
-<!-- 
-        <li class="nav-item mr-3 active">
-            <p class="nav-link navlink" data-toggle="modal" data-target="#communityModal">
-                Community
-                <span class="sr-only">(current)</span>
-            </p>
-        </li> -->
-
-        <div class="modal fade" id="communityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog mod-wrapper" role="document">
-                  <div class="modal-content text-center">
-                    <div class="modal-header" style="border-bottom:none;">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-bod mt-4 p-3">
-                    <img src="/img/tar-2-storj.png" class="img-fluid" height="112" width="178"/><br>
-                    Tardigrade hosts its community on Storj.io. If you’ve received your alpha invite, join us here:                    </div>
-                      <a class="mt-3 mb-4" href="https://community.storj.io"><button type="button" class="btn btn-primary">Storj.io Community<img class="modal-arrow" src="/img/arrow-right.svg"/></button></a>
-                    
-                  </div>
-                </div>
-              </div>
-
+            <!-- 
+            <li class="nav-item mr-3 active">
+                <p class="nav-link navlink" data-toggle="modal" data-target="#communityModal">
+                    Community
+                    <span class="sr-only">(current)</span>
+                </p>
+            </li> 
+            -->
 
         <li class="nav-item mr-3 active">
             <a class="nav-link" href="/partner/">

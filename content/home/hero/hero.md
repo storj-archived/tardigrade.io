@@ -1,5 +1,5 @@
 ---
-title : "hero"
+title : "home-hero"
 headingLeft : "Decentralized Cloud"
 headingRight: "Storage is Better"
 stage : "ALPHA 4"
