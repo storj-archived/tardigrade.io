@@ -2,11 +2,12 @@
     <div class="container hero-cta">
         <div class="d-flex justify-content-center">
           <div class="col-xs-12 col-md-8 text-center cta-wrapper">
+            {{ with .Site.GetPage "page" "cta"}}
             <h4 class="mt-5 font-weight-bold pop-set">
-              Interested? Try it Out for Yourself.
+              {{.Params.heading}}
             </h4>
             <p class="m-4 mx-auto limit540 cta-subheading">
-              The first 10,000 developers who sign up for our waitlist will get 1TB free for 30 days at production launch.
+              {{.Params.subheading}}
             </p>
             <div class="spacer20 d-none d-sm-block"></div>
             <div class="cta-inner-container">
@@ -14,12 +15,13 @@
                 <form action="https://github.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=a5cc1e6ed3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll">
                     <input type="email" placeholder="Email Address" name="EMAIL" class="cta-email" id="mce-EMAIL url-box cta-btm-email"  style="margin-top:-40px;">
-                    <button class="btn btn-primary cta-join-btn" name="subscribe" id="mc-embedded-subscribe" type="submit">Join the Waitlist</button>
+                    <button class="btn btn-primary cta-join-btn" name="subscribe" id="mc-embedded-subscribe" type="submit">{{.Params.buttonText}}</button>
                   <div id="mce-responses" class="clear">
                     <div class="response p-2" id="mce-error-response" style="display:none;font-size:12px;"></div>
                     <div class="response p-2" id="mce-success-response" style="display:none;font-size:12px;"></div>
                   </div>    
                 </form>
+                {{end}}
               </div>
             </div>
           </div>

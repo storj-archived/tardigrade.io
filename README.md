@@ -1,7 +1,8 @@
 # Tardigrade.io
 
-Live at https://tardigrade.io
+## Introducing Tardigrade - Decentralized Cloud Storage from Storj Labs
 
-In progress
-Development will continue at the forked repo located at https://github.com/storj/Tardigrade.io
+[Read More](https://storj.io/blog/2019/04/introducing-tardigrade-decentralized-cloud-storage-from-storj-labs/) or [Visit the site!](https://tardigrade.io)
+
+
 
