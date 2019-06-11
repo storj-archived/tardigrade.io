@@ -8,3 +8,44 @@ backend:
 media_folder: "static/img/"
 public_folder: "/img"
 publish_mode: editorial_workflow
+
+collections:
+  - name: "hero"
+    label: "hero"
+    folder: "content/home/hero/"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "title", name: "title", widget: "string"}
+      - {label: "headingLeft", name: "headingLeft", widget: "string"}
+      - {label: "headingRight", name: "headingRight", widget: "string"}
+      - {label: "subheadingLeft", name: "subheadingLeft", widget: "string", required: false }
+      - {label: "subheadingRight", name: "subheadingRight", widget: "string"}
+      - {label: "stage", name: "stage", widget: "string"}
+      - {label: "stageDescriptor", name: "stageDescriptor", widget: "string"}
+      - {label: "poweredByIMG", name: "poweredByIMG", widget: "image"}
+      - {label: "heroIMG", name: "heroIMG", widget: "image"}
+      - {label: "leftBenefitsCol", name: "leftBenefitsCol", widget: "list", default : ["Affordable", "Performant", "Resilient",] }
+      - {label: "rightBenefitsCol", name: "rightBenefitsCol", widget: "list", default : ["Secure", "Predictable", "Intuitive",] }                        
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+  - name: "cta"
+    label: "cta"
+    folder: "content/home/cta/"
+    slug: "{{slug}}"
+    fields:
+      - {label: "title", name: "title", widget: "string"}
+      - {label: "heading", name: "heading", widget: "string"}
+      - {label: "buttonText", name: "buttonText", widget: "string"}
+      - {label: "draft", name: "draft", widget: "boolean", default: false}
+  - name : "how-it-works"
+    label: "how-it-works"
+    folder: "content/how-it-works/"
+    slug: "{{slug}}"
+    fields:
+      - {label: "title", name: "title", widget: "string"}
+      - {label: "heading", name: "heading", widget: "string"}
+      - {label: "subheading", name: "subheading", widget: "string"}
+      - {label: "draft", name: "draft", widget: "boolean", default: false}
+  - name: "simple"
+    label: "simple"
+    folder: "content/"
