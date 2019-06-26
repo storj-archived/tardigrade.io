@@ -6,7 +6,7 @@ backend:
   auth_endpoint: /oauth/auth
 
 media_folder: "static/img/"
-public_folder: "/img"
+public_folder: "img"
 publish_mode: editorial_workflow
 
 collections:
@@ -25,7 +25,7 @@ collections:
     - {label: "Powered-By-Image", name: "poweredByIMG", widget: "image"}
     - {label: "Hero-image", name: "heroIMG", widget: "image"}
     - {label: "Benefits-Column-Left", name: "leftBenefitsCol", widget: "list", default : ["Affordable", "Performant", "Resilient",] }
-    - {label: "Benefits-Column-Right", name: "rightBenefitsCol", widget: "list", default : ["Secure", "Predictable", "Intuitive",] }                        
+    - {label: "Benefits-Column-Right", name: "rightBenefitsCol", widget: "list", default : ["Secure", "Predictable", "Intuitive",] }
     - {label: "Draft", name: "draft", widget: "boolean", default: false}
   - name: "cta"
     label: "Home-CTA-section"
@@ -176,7 +176,7 @@ collections:
     label: "Partner-Hero-section"
     folder: "content/partner/headline/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Content", name: "content", widget: "string"}
@@ -186,7 +186,7 @@ collections:
     label: "Partner-Heading-section"
     folder: "content/partner/partners/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Content", name: "content", widget: "string"}
@@ -195,7 +195,7 @@ collections:
     label: "partners-benefits-heading"
     folder: "content/partner/benefits/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "heading", name: "heading", widget: "string"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
@@ -203,7 +203,7 @@ collections:
     label: "Partners-Logo-section"
     folder: "content/partner/benefit-icons/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "Image", name: "img", widget: "image"}
     - {label: "class", name: "class", widget: "hidden", default: "partners"}
@@ -213,7 +213,7 @@ collections:
     label: "Partners-Benefits-section"
     folder: "content/partner/benefit-icons/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Content", name: "content", widget: "string"}
@@ -225,7 +225,7 @@ collections:
     label: "Partners-Virtuous-Cycle-section"
     folder: "content/partner/virtuous-cycle/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "heading", name: "heading", widget: "string"}
     - {label: "subheading", name: "subheading", widget: "markdown"}
@@ -239,7 +239,7 @@ collections:
     label: "partners-virtuous-circle-flow"
     folder: "content/partner/virtuous-circle-icons/"
     slug: "{{slug}}"
-    fields: 
+    fields:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Image", name: "img", widget: "image"}
@@ -261,5 +261,5 @@ collections:
 
 
 
-    
+
 
