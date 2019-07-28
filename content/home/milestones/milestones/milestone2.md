@@ -1,6 +1,6 @@
 ---
 title : "milestone"
-heading : "Vanguard: User Alpha"
+heading : "Beacon: Identity & Access Management"
 status : isCurrent
 class : "milestone"
 ---
