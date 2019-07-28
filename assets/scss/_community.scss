@@ -1,0 +1,203 @@
+.community{
+
+    &_hero{
+
+        &_bg{
+            background: radial-gradient(516.50px at 92.17% 47.6%, #133E9C 0%, #00091E 100%);
+            max-height:660px;
+            overflow: hidden;
+        }
+
+        &_img{
+            height:700px;
+            width:1500px;
+            margin-top:-160px;
+            margin-left: -400px;
+        }
+
+        &_heading{
+            font-family: 'Poppins';
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 40px;
+            color: $color--white;
+            font-style: normal;
+        }
+
+        &_subheading{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: $color--white;
+            position: relative;
+            z-index: 999999;
+        }
+
+        &_btn_text{
+            padding:15px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: $color--white;
+            width: 240px;
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 999px) {
+            &_mobile_adjust{
+                text-align: center;
+            }
+
+            &_bg{
+                max-height:1200px;
+            }
+
+            &_img{
+                height:500px;
+                width:1000px;
+                margin-top:-200px;
+                margin-left: -240px;
+            }
+        }
+    }
+
+    &_main{
+        &_heading{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_subheading{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_cta{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            color: #2582FF;
+            margin-left:30px;
+        }
+
+        &_box_top{
+            height:300px;
+        }
+
+        &_chevron_right{
+            height:40px;
+            width:30px;
+            margin-top:-10px;
+        }
+    }
+
+    &_events{
+
+        &_bg{
+            background-color: #F4F6F9;
+        }
+
+        &_heading{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_subheading{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_table{
+            width : 100%;
+            border: 1.5px solid #C9D0D7;
+            border-radius: 6px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height:1380px;
+            background : $color--white;
+        }
+
+        &_link{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 40px;
+            color: #9CA3AD;
+        }
+        
+        &_name{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 40px;
+            color: #000000;
+            text-align: left;
+            padding-left:25px;
+        }
+
+        &_data{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 40px;
+            color: #000000;
+        }
+
+        &_divider{
+            width:120%;
+            margin-left:-15px;
+            border : 1px solid rgba(147, 161, 175, 0.6);
+        }
+
+        &_bottom_heading{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_bottom_cta{
+            font-weight: 800;
+            color: #2582FF;
+        }
+        
+        @media only screen and (min-width: 0px) and (max-width: 900px) {
+            &_table{
+                overflow-y: auto;
+            }
+        }
+    }
+}
