@@ -5,33 +5,20 @@
     {{with .Site.GetPage "milestones"}}
     <h1 class="use-case-top-heading">{{.Params.heading}}</h1>
     <div class="spacer16"></div>
-    <p class="milestone-intro pl-5 pr-5">{{.Params.subheading1}}</p>
-    <p class="milestone-intro pl-5 pr-5">{{.Params.subheading2}}</p>
+    <p class="milestone-intro pl-5 pr-5">{{.Params.subheading}}</p>
     {{end}}
     </div>
   </div>
     <div class="row">
       <div class="milestones milestones-wrapper" style="margin-top:-60px;">
         <div class="row d-flex flex-nowrap">
-          <ul class="timeline timeline-first timeline-horizontal">
-          <li class="timeline-item">
-              <div class="timeline-badge primary faded-blu"></div>
-                <div class="timeline-panel faded-blu"> 
-                  <div class="timeline-heading ">
-                    <p class="isCurrent-milestone-text">
-                      <span style="font-family:'Poppins';font-weight:bold;font-size:12px;font-style:normal;">Explorer: Storage Nodes Alpha</span>
-                    </p>
-                </div>
-              </div>
-            </li>
-          </ul>
           
-          <ul class="timeline post timeline-horizontal" style="margin-left:-35px;">
+          <ul class="timeline post timeline-horizontal">
           {{range where .Site.Pages ".Params.class" "milestone"}}
             <li class="timeline-item">
                 <div class="timeline-badge primary {{.Params.status}}"></div>
                   <div class="timeline-panel {{if eq .Params.status "isCurrent"}}lite-blu-bg pointy{{end}}">
-                    <div class="timeline-heading" style="margin-top:5px;">
+                    <div class="timeline-heading" style="margin-top:-8px;">
                       <p style="font-family:'Poppins';line-height:19px;{{if eq .Params.status "isCurrent" }}font-weight:bold{{else}}font-weight:normal{{end}};font-size:12px;font-style:normal;" class="{{.Params.status}}-milestone-text" >{{.Params.heading}}</p>
                   </div>
                 </div>

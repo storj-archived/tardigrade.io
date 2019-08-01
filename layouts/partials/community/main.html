@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="spacer125"></div>
+        <div class="row text-center">
+        {{ range where .Site.Pages ".Params.class" "communityBox" }}
+        <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="community_main_box_top">
+            <img src="{{.Params.img}}" width="70" height="70">
+            <div class="spacer20"></div>
+            <p class="community_main_heading">{{.Params.heading}}</p>
+            <p class="community_main_subheading">{{.Description}}</p>
+            <div class="spacer20"></div>
+        </div>
+            <div class="row">
+                <div class="col">
+                    <a href="{{.Params.ctaLink}}">
+                        <p class="community_main_cta">{{.Params.ctaText}}
+                            <img class="community_main_chevron_right" src="/img/chevron-right.png"/>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="spacer125"></div>
+        </div>
+        {{end}}
+    </div>
+</div>
+    
