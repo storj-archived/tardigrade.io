@@ -1,4 +1,4 @@
-# Tardigrade.io
+# tardigrade.io
 
 ## Introducing Tardigrade - Decentralized Cloud Storage from Storj Labs
 
