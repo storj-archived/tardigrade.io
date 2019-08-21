@@ -792,6 +792,22 @@ a {
   overflow-y: auto;
 }
 
+.mstone-link-wrapper {
+  margin-top: 60px;
+  
+  p {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  a {
+    color: #2582ff;
+  }
+}
+
 .faded-blu {
   background: #2582ff !important;
   opacity: 0.3 !important;
@@ -1325,7 +1341,7 @@ a {
   text-align: center;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  width: 360px;
+  width: 150px;
 }
 
 .powered-by {

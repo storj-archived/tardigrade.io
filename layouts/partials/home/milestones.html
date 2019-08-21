@@ -26,6 +26,18 @@
             {{end}}
           </ul>
         </div>
+        <div class="row mstone-link-wrapper">
+          {{with .Site.GetPage "milestoneBottom"}}
+            <div class="col-12 text-center">
+                <p class="mstone-link">
+                  <a href={{.Params.link}} target="_blank" class="link">
+                    {{.Params.linkDescription}}
+                    <img src="/img/blue-carrot.svg" height="13" width="13">
+                  </a>
+                </p>
+            </div>
+          {{end}}
+        </div>
       </div>
     </div>
   </div>
