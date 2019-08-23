@@ -1,7 +1,7 @@
 ---
 title : "home-hero"
 headingLeft : "Decentralized Cloud"
-headingRight: "Storage is Better"
+headingRight: "Storage is the Future"
 stage : "BETA"
 stageDescriptor:  ""
 subheadingLeft : "Tardigrade is the enterprise, production-ready version of"
