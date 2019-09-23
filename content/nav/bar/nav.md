@@ -7,5 +7,5 @@ navOpts:
 - Support
 links :
 - /partner/
-- "https://storjlabs.atlassian.net/servicedesk/customer/portals"
+- "https://support.tardigrade.io/hc/en-us"
 ---
