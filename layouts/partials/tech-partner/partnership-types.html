@@ -1,0 +1,20 @@
+{{ with .Site.GetPage "partnershipTypes" }}
+<div class="container-fluid">
+  <div class="row d-flex flex-row justify-content-center">
+    <div class="col-md-6">
+        <img class="img-fluid" src="/img/benefit-icons/support.png" alt="benefits icon">
+        <div class="pt-3">
+            <h4>{{ .Params.subheading1 }}</h4>
+            <p>{{ .Params.content1 }}</p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img class="img-fluid" src="/img/benefit-icons/support.png" alt="benefits icon">
+        <div class="pt-3">
+            <h4>{{ .Params.subheading2 }}</h4>
+            <p>{{ .Params.content2 }}</p>
+        </div>
+    </div>
+  </div>
+</div>
+{{end}}

@@ -6,17 +6,15 @@
 <body class="page">
     {{ partial "banner" .}}
     {{partial "tech-partner/headline" .}}
-    <div class="partner__single-partners container-fluid">
-        <div class="row d-flex justify-content-center">
-            {{partial "tech-partner/partners" .}}
-        </div>
+    <div class="partner__single-partners">
+      {{partial "tech-partner/partnership-types" .}}
     </div>
 
     <div class="partner__single-benefits">
         {{partial "tech-partner/benefits" .}}
     </div>
 
-    <div class="partner__single-virtuous-cycle">
+    <div class="partner__single-virtu ous-cycle">
         {{partial "tech-partner/virtuous-cycle" .}}
     </div>
 
