@@ -1,20 +1,32 @@
 {{ with .Site.GetPage "who-partner-with" }}
 <div class="lite-gray-bg container-fluid">
-    <div class="row d-flex flex-column justify-content-center">
-        <div class="pb-5 row offset-sm-1 m-0">
-            <div class="text-center offset-md-2 col-md-4 col-lg-3 mb-5">
-              <div></div>
-            </div>
-            <div class="offset-md-1 offset-sm-4 offset-md-1 col-sm-4 col-12">
-                <h2>
-                    {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-                </h2>
-                <br />
-                <p>
-                        {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
-                </p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="spacer30"></div>
+    <div class="spacer30"></div>
+    <div class="spacer30"></div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <h2>
+          {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+        </h2>
+        <br />
+        <p>
+          {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          {{ range where .Site.Pages ".Params.class" "partner-list-item"}}
+          <li>
+            <img class="img-fluid" src="/img/tar-check.png" alt="benefits icon">
+            <h4>{{ .Params.content }}</h4>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
-</div>
+  </div>
+  <div class="spacer30"></div>
+  <div class="spacer30"></div>
+  <div class="spacer30"></div></div>
 {{end}}
