@@ -1,23 +1,36 @@
 {{ with .Site.GetPage "heroMsg"}}
-<div class="partner__headline container-fluid">
+<div class="container-fluid tech-partner__headline-bg">
   <div class="spacer30"></div>
   <div class="container">
     <div>
          {{partial "nav" .}}
     </div>
   </div>
-  <div class="partner__headline-wrapper row">
-    <div class="partner__headline-description-wrapper d-flex flex-column text-white">
-      <h1 class="partner__headline-description-title">
-       {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-      </h1>
-      <div class="partner__headline-description-content">
-        <span>{{ replace .Params.content "\n" "<br/>" | safeHTML}}</span>
+  <div class="spacer30"></div>
+  <div class="spacer30"></div>
+  <div class="spacer30"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row mb-24">
+          <div class="col-xs-12 col-md-10 center-sm">
+            <h1 class="">
+             {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+            </h1>
+          </div>
+        </div>
+        <div class="spacer30"></div>
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0 center-sm">
+            <p>{{ replace .Params.content "\n" "<br/>" | safeHTML}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+         <!-- <img class="partner__headline-logo-img img-fluid" src="{{ .Params.img }}" alt="open sourc icon"> -->
       </div>
     </div>
-    <div class="partner__headline-logo-wrapper">
-       <img class="partner__headline-logo-img img-fluid" src="{{ .Params.img }}" alt="open sourc icon">
-    </div>
   </div>
+  <div class="spacer125"></div>
 </div>
 {{end}}

@@ -1,3 +1,18 @@
+.tech-partner__heading {
+  background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
+  .tech-partner__headline {
+    .tech-partner__headline-bg {
+      background-image: url(../img/internet-future.png);
+      background-repeat: no-repeat;
+      background-position: 100% -60%;
+      background-size: 650px;
+   }
+   h1, p {
+     color: #fff;
+   }
+  }
+}
+
 .tech-partner__partnership-types {
   .tech-partner__partnership-types-content {
     .col-md-6 {

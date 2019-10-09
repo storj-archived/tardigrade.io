@@ -4,8 +4,12 @@
 </head>
 
 <body class="page">
-    {{ partial "banner" .}}
-    {{partial "tech-partner/headline" .}}
+    <div class="tech-partner__heading">
+      {{ partial "banner" .}}
+      <div class="tech-partner__headline">
+        {{partial "tech-partner/headline" .}}
+      </div>
+    </div>
     <div class="tech-partner__partnership-types">
       {{partial "tech-partner/partnership-types" .}}
     </div>
