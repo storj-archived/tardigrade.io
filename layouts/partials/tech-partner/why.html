@@ -1,27 +1,31 @@
 {{ with .Site.GetPage "why-tardigrade-partner"}}
 <div class="partner__benefits container-fluid">
-    <div class="partner__benefits-wrapper row">
-        <div class="partner__benefits-title col-sm-12 text-center pb-5">
-            <h2>
-                {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-            </h2>
-        </div>
+  <div class="container">
+    <div class="spacer30"></div>
+    <div class="spacer30"></div>
+    <div class="row">
+      <div class="col text-center mt-5">
+        <h2>
+            {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+        </h2>
+      </div>
     </div>
-
+    <div class="spacer30"></div>
     <div class="pt-5 row d-flex flex-row">
-        {{ range where .Site.Pages ".Params.class" "why-become-partner"}}
-            <div class="partner__benefits-logo-wrapper ml-3 col-sm-3">
-                <img class="img-fluid" src="{{ .Params.img }}" alt="benefits icon">
-                <div class="pt-3">
-                    <h4>
-                        {{ .Params.heading }}
-                    </h4>
-                    <p>
-                        {{ .Params.content }}
-                    </p>
-                </div>
-            </div>
-        {{ end }}
+      {{ range where .Site.Pages ".Params.class" "why-become-partner"}}
+        <div class="ol-xs-12 col-lg-3">
+          <img class="img-fluid" src="{{ .Params.img }}" alt="benefits icon">
+          <div class="pt-3">
+            <h4>
+                {{ .Params.heading }}
+            </h4>
+            <p>
+                {{ .Params.content }}
+            </p>
+          </div>
+        </div>
+      {{ end }}
     </div>
+  </div>
 </div>
 {{end}}

@@ -1,27 +1,33 @@
 {{ with .Site.GetPage "partnershipTypes" }}
-<div class="container-fluid">
-  <div class="partner__benefits-wrapper row">
-      <div class="partner__benefits-title col-sm-12 text-center pb-5">
-          <h2>
-              {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-          </h2>
+<div class="container-fluid lite-gray-bg">
+  <div class="container">
+    <div class="spacer30"></div>
+    <div class="spacer30"></div>
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h2>
+                {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+            </h2>
+        </div>
+    </div>
+    <div class="spacer30"></div>
+    <div class="tech-partner__partnership-types-content row d-flex mt-10 flex-row justify-content-center">
+      <div class="col-md-6 text-center">
+          <div class="pt-3">
+              <img class="img-fluid" src="{{ .Params.img1 }}" alt="benefits icon">
+              <h4>{{ .Params.subheading1 }}</h4>
+              <p>{{ .Params.content1 }}</p>
+          </div>
       </div>
-  </div>
-  <div class="row d-flex flex-row justify-content-center">
-    <div class="col-md-6">
-        <img class="img-fluid" src="{{ .Params.img1 }}" alt="benefits icon">
-        <div class="pt-3">
-            <h4>{{ .Params.subheading1 }}</h4>
-            <p>{{ .Params.content1 }}</p>
-        </div>
+      <div class="col-md-6 text-center">
+          <div class="pt-3">
+              <img class="img-fluid" src="{{ .Params.img2 }}" alt="benefits icon">
+              <h4>{{ .Params.subheading2 }}</h4>
+              <p>{{ .Params.content2 }}</p>
+          </div>
+      </div>
     </div>
-    <div class="col-md-6">
-        <img class="img-fluid" src="{{ .Params.img2 }}" alt="benefits icon">
-        <div class="pt-3">
-            <h4>{{ .Params.subheading2 }}</h4>
-            <p>{{ .Params.content2 }}</p>
-        </div>
-    </div>
+    <div class="spacer125"></div>
   </div>
 </div>
 {{end}}
