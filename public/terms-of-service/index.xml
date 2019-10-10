@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terms-of-services on Tardigrade</title>
+    <link>https://tardigrade.io/terms-of-service/</link>
+    <description>Recent content in Terms-of-services on Tardigrade</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://tardigrade.io/terms-of-service/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Terms Of Service</title>
+      <link>https://tardigrade.io/terms-of-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tardigrade.io/terms-of-service/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
