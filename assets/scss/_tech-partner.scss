@@ -1,18 +1,65 @@
 .tech-partner__heading {
   background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
   .tech-partner__headline {
+    @media only screen and (max-width: 738px) {
+      text-align: center;
+    }
     .tech-partner__headline-bg {
       background-image: url(../img/internet-future.png);
       background-repeat: no-repeat;
-      background-position: 100% 70px;
+      background-position: 100% 90px;
       background-size: 650px;
-      @media only screen and (max-width: 1200px) {
-        background-position: 100% 120px;
+      .col-sm-8 {
+        @media only screen and (max-width: 600px) {
+          margin: 0 auto;
+        }
+      }
+      .tech-partner__cta-button-wrapper {
+        @media only screen and (max-width: 768px) {
+          text-align: left;
+        }
+        @media only screen and (max-width: 600px) {
+          text-align: center;
+        }
+      }
+      @media only screen and (max-width: 991px) {
+        background-position: 100% 240px;
+        background-size: 550px;
+      }
+      @media only screen and (max-width: 600px) {
+        background-position: 100% 480px;
+        background-size: 550px;
+        height: 850px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        background-position: 100% 590px;
+        background-size: 350px;
+        height: 850px;
       }
    }
    h1, p {
      color: #fff;
+     width: 150%;
+     text-align: left;
+     @media only screen and (max-width: 600px) {
+       width: auto;
+       text-align: center;
+     }
    }
+   a {
+     button {
+        font-size: 16px;
+        line-height: 24px;
+        background: #2683ff;
+        color: #fff;
+        border-radius: 6px;
+        width: 271px;
+        height: 48px;
+        border: 0;
+        outline: 0;
+      }
+    }
   }
   @media only screen and (max-width: 768px) {
     background: radial-gradient(236.22% 100.97% at 50% -4.33%, #0059D1 0%, #000000 100%);
@@ -140,7 +187,7 @@
       li {
         @media only screen and (max-width: 768px) {
           position: relative;
-          left: 15%;
+          left: 12%;
         }
         @media only screen and (max-width: 500px) {
           left: 0;
