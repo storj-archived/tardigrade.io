@@ -1,32 +1,34 @@
 {{ with .Site.GetPage "who-partner-with" }}
-<div class="lite-gray-bg container-fluid">
-  <div class="container">
-    <div class="spacer30"></div>
-    <div class="spacer30"></div>
-    <div class="spacer30"></div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-6">
-        <h2>
-          {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-        </h2>
-        <br />
-        <p>
-          {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
-        </p>
-      </div>
-      <div class="col-md-6">
-        <ul>
-          {{ range where .Site.Pages ".Params.class" "partner-list-item"}}
-          <li>
-            <img class="img-fluid" src="/img/tar-check.png" alt="benefits icon">
-            <h4>{{ .Params.content }}</h4>
-          </li>
-          {{ end }}
-        </ul>
+  <div class="lite-gray-bg container-fluid">
+    <div class="container">
+      <div class="spacer30"></div>
+      <div class="spacer30"></div>
+      <div class="spacer30"></div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <h2>
+            {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+          </h2>
+          <br />
+          <p>
+            {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
+          </p>
+        </div>
+        <div class="col-md-6 list">
+          <ul>
+            {{ range where .Site.Pages ".Params.class" "partner-list-item"}}
+            <li>
+              <img class="img-fluid" src="/img/tar-check.png" alt="benefits icon">
+              <h4>{{ .Params.content }}</h4>
+            </li>
+            {{ end }}
+          </ul>
+          <div class="spacer30"></div>
+          <div class="spacer30"></div>
+          <p>Not on the list, but think you may be a good fit?</p>
+        </div>
       </div>
     </div>
+    <div class="spacer125"></div>
   </div>
-  <div class="spacer30"></div>
-  <div class="spacer30"></div>
-  <div class="spacer30"></div></div>
 {{end}}
