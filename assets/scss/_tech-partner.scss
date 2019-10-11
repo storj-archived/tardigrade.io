@@ -48,7 +48,7 @@
      }
    }
    a {
-     button {
+     .btn-signup {
         font-size: 16px;
         line-height: 24px;
         background: #2683ff;
@@ -218,7 +218,7 @@
       font-size: 18px;
       line-height: 20px;
       a {
-        color: #2582ff;
+        color: $color--blue-light;
       }
     }
   }
