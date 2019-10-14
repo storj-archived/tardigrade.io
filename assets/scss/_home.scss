@@ -477,7 +477,6 @@ a {
 
 @media only screen and (min-width: 321px) and (max-width: 767px) {
   .banner {
-    height: 50px;
     background-color: color(secondary);
   }
 }
@@ -497,6 +496,7 @@ a {
   line-height: 22px;
   font-size: 12px;
   color: color(primary);
+  white-space: nowrap;
 }
 
 .slogan-name {
@@ -620,7 +620,7 @@ a {
       color: #7E8B9C;
       height: 40px;
     }
-  
+
     .cta-btm-join{
       height:42.5px;
       margin-top:-5px;
@@ -798,7 +798,7 @@ a {
 
 .mstone-link-wrapper {
   margin-top: 60px;
-  
+
   p {
     font-family: poppins;
     font-style: normal;
