@@ -59,6 +59,56 @@
   }
 }
 
+.navlink {
+  &:hover {
+    color: #fff;
+    text-shadow: 1px 0 0 #fff;
+  }
+  &:active {
+    font-weight: bold;
+  }
+}
+
+.dropdown-item {
+  margin: 10px 0;
+  font-size: 16px;
+  &:hover {
+    background: none;
+    img {
+      display: block;
+    }
+  }
+}
+
+.dropdown-menu {
+  font-size: 16px;
+  width: 300px;
+  .dropdown-divider {
+    width: 85%;
+    margin: 10px auto;
+  }
+  img {
+    float: right;
+    position: relative;
+    top: 7px;
+    display: none
+  }
+  p {
+    font-family: "Poppins";
+    color: #93A1AF;
+    font-weight: bold;
+    &:hover {
+      color: #93A1AF;
+    }
+  }
+  a {
+    &:hover {
+      color: $color--blue-light;
+      font-weight: bold;
+    }
+  }
+}
+
 .btn-group {
   display: inline;
 }
