@@ -1,0 +1,34 @@
+{{ with .Site.GetPage "terminology"}}
+<div class="container-fluid">
+  <div class="container">
+    <div class="spacer30"></div>
+    <div class="spacer30"></div>
+    <div class="row">
+      <div class="col mt-5">
+        <h2>
+          {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+        </h2>
+        <div class="spacer20"></div>
+        <p>
+        {{ replace .Params.content "\n" "<br/>" | safeHTML}}
+        </p>
+      </div>
+    </div>
+    <div class="pt-5 row d-flex flex-row">
+      {{ range where .Site.Pages ".Params.class" "terminology"}}
+        <div class="col-xs-12 col-lg-3">
+          <div class="pt-3">
+            <h4>
+                {{ .Params.heading }}
+            </h4>
+            <p>
+                {{ .Params.content }}
+            </p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="spacer125"></div>
+  </div>
+</div>
+{{end}}

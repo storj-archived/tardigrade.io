@@ -3,20 +3,15 @@
 {{partial "head" .}}
 </head>
 
-<body class="page">
+<body class="press-kit-page page">
     {{ partial "banner" .}}
-    {{partial "partner/headline" .}}
-    <div class="partner__single-partners container-fluid">
-        <div class="row d-flex justify-content-center">
-            {{partial "partner/partners" .}}
-        </div>
+    {{partial "press-kit/hero" .}}
+
+    <div class="press-kit__single-benefits">
+        {{partial "press-kit/terminology" .}}
     </div>
 
-    <div class="partner__single-benefits">
-        {{partial "partner/benefits" .}}
-    </div>
-
-    <div class="partner__single-virtuous-cycle">
+    <div class="press-kit__single-virtuous-cycle">
         {{partial "partner/virtuous-cycle" .}}
     </div>
 
