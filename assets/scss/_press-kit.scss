@@ -17,4 +17,29 @@
       justify-content: center;
     }
   }
+  .press-kit__fonts {
+    .font {
+      max-width: 460px;
+      height: 160px;
+      border-radius: 10px;
+      border: 1px solid #A1A8B1;
+      margin: 10px;
+    }
+  }
+
+  .press-kit__colors {
+    .color {
+      max-width: 299px;
+      height: 111px;
+      border-radius: 10px;
+      border: 1px solid #A1A8B1;
+      margin: 10px;
+      padding: 0;
+      .visual {
+        height: 50%;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+      }
+    }
+  }
 }
