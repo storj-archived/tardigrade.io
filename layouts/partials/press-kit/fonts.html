@@ -1,29 +1,24 @@
 <div class="container-fluid">
   <div class="container">
+    <div class="spacer125"></div>
     <div class="row">
-      <div class="col-md-12 ">
-        <h3 class="title">Fonts</h3>
+      <div class="col-lg-11 mt-5">
+        <h2>
+            Fonts
+        </h2>
+      </div>
+      <!-- <div class="col-lg-1 mt-5">
+        <p>
+            Download Logo Kit
+        </p>
+      </div> -->
+    </div>
+    <div class="pt-5 row d-flex flex-row">
+      <div class="font col-xs-12 col-lg-6">
+      </div>
+      <div class="font col-xs-12 col-lg-6">
       </div>
     </div>
-
-    <div class="row">
-    {{ range where .Site.Pages ".Params.class" "press-kit-logo"}}
-    <div class="col-md-6">
-        <div class="presskit-logo {{ .Params.bkgrndColor }}">
-          <img src="{{.Params.logoImg}}" alt="">
-          <div class="row">
-            <div class="col-xs-6">
-              <p class="text-left">Logo ({{.Params.logoColor}})</p>
-            </div>
-            <div class="col-xs-6 text-right">
-              <p>
-                <a href="{{.Site.BaseURL}}/{{.Params.logoLink}}.png" class="link text-right">.PNG</a>
-                <a href="{{.Site.BaseURL}}/{{.Params.logoLink}}.svg" class="link text-right">.SVG</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {{end}}
-    </div>
+    <div class="spacer125"></div>
+  </div>
 </div>
