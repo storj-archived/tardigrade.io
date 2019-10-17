@@ -109,6 +109,7 @@
     }
   }
   a {
+    font-family: Roboto;
     &:hover {
       color: $color--blue-light;
       font-weight: bold;
@@ -118,6 +119,8 @@
 
 .btn-group {
   display: inline;
+  position: relative;
+  top: 2px;
 }
 
 .nav-join {
