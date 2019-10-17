@@ -56,7 +56,7 @@
   }
   .press-kit__fonts {
     .font {
-      max-width: 460px;
+      max-width: 550px;
       height: 160px;
       border-radius: 10px;
       border: 1px solid #A1A8B1;
@@ -65,13 +65,39 @@
       .display {
         border-bottom: 1px solid #A1A8B1;
         height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        h4 {
+          font-size: 35px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 23px;
+          line-height: 30px;
+        }
+      }
+      .desc {
+        padding: 10px 20px;
+        background: #F4F6F9;
+        height: 40%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        p {
+          font-family: Poppins;
+          font-style: normal;
+          font-size: 12px;
+          line-height: 11px;
+        }
       }
     }
   }
 
   .press-kit__colors {
     .color {
-      max-width: 299px;
+      max-width: 360px;
       height: 111px;
       border-radius: 10px;
       border: 1px solid #A1A8B1;
@@ -81,6 +107,15 @@
         height: 50%;
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
+      }
+      .text {
+        padding: 10px 20px;
+        p {
+          font-family: Poppins;
+          font-style: normal;
+          font-size: 12px;
+          line-height: 11px;
+        }
       }
     }
   }
