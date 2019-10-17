@@ -5,4 +5,16 @@
     background-size: 100%;
     background-position: center;
   }
+  .press-kit__logo {
+    .logo {
+      max-width: 460px;
+      height: 160px;
+      border-radius: 10px;
+      border: 1px solid #A1A8B1;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
