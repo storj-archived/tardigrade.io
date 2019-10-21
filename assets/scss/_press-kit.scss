@@ -25,24 +25,28 @@
     h2 {
       font-size: 40px;
     }
-    h4 {
-      a {
-        font-weight: bold;
+    .article {
+      display: none;
+      h4 {
+        a {
+          font-weight: bold;
+          font-size: 16px;
+          color: #2582FF;
+        }
+      }
+      .press-date {
+        font-weight: 300;
+        font-size: 14px;
+      }
+      .press-source {
+        font-weight: 300;
         font-size: 16px;
-        color: #2582FF;
+        line-height: 40px;
+        letter-spacing: 0.5px;
+        float: right;
       }
     }
-    .press-date {
-      font-weight: 300;
-      font-size: 14px;
-    }
-    .press-source {
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 40px;
-      letter-spacing: 0.5px;
-      float: right;
-    }
+
   }
   .press-kit__terminology {
     .col {
