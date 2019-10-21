@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="spacer125"></div>
+    {{ with .Site.GetPage "pressHeading.md" }}
+      <div class="row">
+        <div class="col mt-5 text-center">
+          <h2 >{{.Title}}</h2>
+        </div>
+        <div class="spacer125"></div>
+      </div>
+    {{end}}
+    {{range where .Site.Pages.ByPublishDate.Reverse ".Params.class" "newPressArticle" }}
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-lg-2">
+          <p class="press-date">{{ dateFormat "January 2, 2006" .Params.publishdate }}</p>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-lg-10">
+          <span class="press-source">{{.Params.publishedBy}}</span>
+          <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+        </div>
+      </div>
+      <hr>
+    {{end}}
+    <div class="spacer125"></div>
+  </div>
+</div>
+
+
+
+<!-- {{range where .Site.Pages ".Params.class" "pressArticle"}}
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-lg-2">
+            <p class="press-date">{{ .Params.publishedOn }}</p>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-lg-10">
+            <span class="press-source">{{.Params.publishedBy}}</span>
+            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+          </div>
+        </div>
+        <hr>
+{{end}}
+</div>
+</div> -->

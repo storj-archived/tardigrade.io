@@ -5,11 +5,32 @@
     font-size: 28px;
     line-height: 40px;
   }
+  .heading {
+    .col-lg-3 {
+      img {
+        display: inline;
+      }
+      p {
+        display: inline;
+      }
+    }
+  }
   .press-kit__hero-bg {
     color: #fff;
     background-image: url(../img/press-hero.png);
     background-size: 100%;
     background-position: center;
+  }
+  .press-kit__news {
+    .col {
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
   }
   .press-kit__terminology {
     .col {
@@ -39,6 +60,16 @@
     }
   }
   .press-kit__logo {
+    .heading {
+      .col-lg-3 {
+        img {
+          display: inline;
+        }
+        p {
+          display: inline;
+        }
+      }
+    }
     .pt-5 {
       display: flex;
       justify-content: space-between;
