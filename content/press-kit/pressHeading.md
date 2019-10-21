@@ -1,3 +1,3 @@
 ---
-Title : 'Storj in the News'
+Title : 'Tardigrade in the News'
 ---
