@@ -16,11 +16,50 @@
       }
     }
   }
-  .press-kit__hero-bg {
-    color: #fff;
-    background-image: url(../img/press-hero.png);
-    background-size: 100%;
-    background-position: center;
+  .press-kit__hero {
+    @media only screen and (max-width: 991px) {
+      background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
+    }
+    .press-kit__hero-bg {
+      color: #fff;
+      background-image: url(../img/press-hero.png);
+      background-size: cover;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      @media only screen and (max-width: 991px) {
+        background-position: 30% 0;
+      }
+       @media only screen and (max-width: 768px) {
+         background-image: url(../img/internet-future.png);
+         background-position: 100% 430px;
+         background-size: 620px;
+         height: 850px;
+       }
+
+       @media only screen and (max-width: 600px) {
+         background-position: 100% 390px;
+         background-size: 430px;
+         height: 700px;
+       }
+      .hero-msg {
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+          margin: 0 auto;
+        }
+      .press-kit__cta-button-wrapper {
+          button {
+            width: 244px;
+            height: 46px;
+            background: #fff;
+            border: none;
+            border-radius: 5px;
+            color: #2582FF;
+            font-weight: 900;
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
   .press-kit__news {
     h2 {

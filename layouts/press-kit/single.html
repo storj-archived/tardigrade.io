@@ -5,8 +5,9 @@
 
 <body class="press-kit-page page">
     {{ partial "banner" .}}
-    {{partial "press-kit/hero" .}}
-
+    <div class="press-kit__hero">
+      {{partial "press-kit/hero" .}}
+    </div>
     <div class="press-kit__news">
         {{partial "press-kit/news" .}}
     </div>
