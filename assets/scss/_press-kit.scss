@@ -25,6 +25,36 @@
     h2 {
       font-size: 40px;
     }
+    .years {
+      list-style-type: none;
+      ul {
+        list-style-type: none;
+        li {
+          border-left: 5px solid #979797;
+          height: 50px;
+          padding-left: 15px;
+          padding-top: 15px;
+          font-weight: 500;
+          font-size: 16px;
+          color: #354049;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+          cursor: pointer;
+        }
+        .active {
+          border-left: 5px solid #2582FF;
+          color: #000;
+          font-weight: bold;
+          opacity: 1;
+        }
+      }
+    }
+    .article-group {
+      display: none;
+    }
+    .current-year {
+      display: block;
+    }
     .article {
       display: none;
       h4 {
@@ -44,6 +74,22 @@
         line-height: 40px;
         letter-spacing: 0.5px;
         float: right;
+      }
+    }
+    #loadMore {
+      margin: 0 auto;
+      p {
+        font-family: Poppins;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 41px;
+        text-align: center;
+        color: #2582FF;
+        border: 2px solid #2582FF;
+        width: 244px;
+        height: 46px;
+        border-radius: 5px;
+        cursor: pointer;
       }
     }
 
