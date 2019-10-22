@@ -7,6 +7,7 @@
   }
   .heading {
     .col-lg-3 {
+      text-align: right;
       img {
         display: inline;
       }
@@ -121,6 +122,20 @@
       }
     }
   }
+  .press-kit__mascot {
+    .download-btn {
+      text-align: right;
+      p {
+        display: inline;
+      }
+    }
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
   .press-kit__logo {
     .heading {
       .col-lg-3 {
@@ -149,12 +164,15 @@
   }
   .press-kit__fonts {
     .font {
-      max-width: 550px;
+      max-width: 47.5%;
       height: 160px;
       border-radius: 10px;
       border: 1px solid #A1A8B1;
       margin: 10px;
       padding: 0;
+      @media only screen and (max-width: 991px) {
+        max-width: 100%
+      }
       .display {
         border-bottom: 1px solid #A1A8B1;
         height: 60%;
@@ -194,12 +212,15 @@
 
   .press-kit__colors {
     .color {
-      max-width: 360px;
+      max-width: 31%;
       height: 111px;
       border-radius: 10px;
       border: 1px solid #A1A8B1;
       margin: 10px;
       padding: 0;
+      @media only screen and (max-width: 991px) {
+        max-width: 100%
+      }
       .visual {
         height: 50%;
         border-top-left-radius: 9px;
