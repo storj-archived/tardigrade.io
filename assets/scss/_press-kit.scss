@@ -53,11 +53,20 @@
         }
       }
     }
+    .mobile-article-group {
+      display: none;
+      @media only screen and (max-width: 991px) {
+        display: block;
+      }
+    }
     .article-group {
       display: none;
     }
     .current-year {
       display: block;
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
     }
     .article {
       display: none;

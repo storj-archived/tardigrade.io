@@ -20,6 +20,22 @@
           <li class="year">2014</li>
         </ul>
       </div>
+      <div class="col-lg-10 2019 mobile-article-group">
+       {{range where .Site.Pages ".Params.class" "pressArticle"}}
+        <div class="row article">
+          <div class="col-lg-9">
+            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+          </div>
+          <div class="col-lg-3">
+            <span class="press-source">{{.Params.publishedBy}}</span>
+          </div>
+          <div class="col-lg-12">
+            <p class="press-date">{{.Params.publishedOn}}</p>
+          </div>
+          <div class="spacer30"></div>
+        </div>
+      {{end}}
+    </div>
       <div class="col-lg-10 2019 article-group current-year">
        {{range where .Site.Pages ".Params.class" "pressArticle"}}
          {{ if in .Params.publishedOn "2019" }}
@@ -169,6 +185,19 @@
     if($(".current-year .article:hidden").length === 0){
       $("#loadMore").hide()
     }
+
+
+
+    $(".mobile-article-group .article").slice(0, 4).css("display", "flex");
+
+    $("#loadMore").click(function(e){ // click event for load more
+      e.preventDefault();
+      if($(".mobile-article-group .article:hidden").length !== 0){ // check if any hidden divs still exist
+        $(".mobile-article-group .article:hidden").slice(0, 4).css("display", "flex");
+      } else if($(".mobile-article-group .article:hidden").length === 0){
+        $("#loadMore").hide()
+      }
+    });
 
 
   })
