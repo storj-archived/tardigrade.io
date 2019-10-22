@@ -27,6 +27,9 @@
       font-size: 40px;
     }
     .years {
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
       list-style-type: none;
       ul {
         list-style-type: none;
@@ -96,33 +99,54 @@
 
   }
   .press-kit__terminology {
-    .col {
-      p {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 28px;
+    .container-fluid {
+      .terms {
+        @media only screen and (max-width: 768px) {
+          overflow-x: auto;
+          flex-wrap: nowrap;
+        }
       }
-    }
-    .pt-3 {
-      h4 {
-        font-style: italic;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 21px;
+      .heading {
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 28px;
+        }
       }
-      p {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 19px;
-        letter-spacing: 0.5px;
+      .term-segment {
+        @media only screen and (max-width: 768px) {
+          display: inline-block;
+          float: none;
+          background: #fff;
+          margin-right: 10px;
+          max-width: 75%;
+        }
+        h4 {
+          font-style: italic;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 21px;
+        }
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 19px;
+          letter-spacing: 0.5px;
+        }
       }
     }
   }
   .press-kit__mascot {
+    .title {
+      padding-left: 0;
+    }
     .download-btn {
       text-align: right;
       p {
@@ -130,14 +154,31 @@
       }
     }
     .image {
-      width: 100%;
       img {
+        min-width: 550px;
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      .image {
+        img {
+          min-width: 450px;
+        }
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .image {
         width: 100%;
+        img {
+          width: 100%;
+        }
       }
     }
   }
   .press-kit__logo {
     .heading {
+      @media only screen and (max-width: 991px) {
+        text-align: center;
+      }
       .col-lg-3 {
         img {
           display: inline;
@@ -151,7 +192,7 @@
       display: flex;
       justify-content: space-between;
       .logo {
-        max-width: 550px;
+        max-width: 47.5%;
         height: 160px;
         border-radius: 10px;
         border: 1px solid #A1A8B1;
@@ -159,6 +200,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media only screen and (max-width: 991px) {
+          max-width: 100%
+        }
       }
     }
   }
