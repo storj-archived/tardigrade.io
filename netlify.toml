@@ -1,7 +1,7 @@
 [build]
 publish = "public"
 command = "hugo --gc --minify"
-baseUrl = "https://fervent-blackwell-2a149f.netlify.com/"
+baseUrl = "https://https://tardigrade.io/"
 
 [context.production.environment]
 HUGO_VERSION = "0.58.3"
