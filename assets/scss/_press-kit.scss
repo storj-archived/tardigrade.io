@@ -18,10 +18,15 @@
   }
   .download-btn {
     a {
-      color: #000;
+      color: #7E8B9C;
       p {
         position: relative;
         right: 5px;
+        display: inline;
+      }
+      img {
+        position: relative;
+        top: 2px;
       }
     }
   }
@@ -65,6 +70,21 @@
             color: #2582FF;
             font-weight: 900;
             font-size: 14px;
+          }
+          p {
+            color: #fff;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 28px;
+            display: inline;
+            margin-left: 20px;
+            @media only screen and (max-width: 768px) {
+              display: block;
+              margin-left: 0;
+              margin-top: 30px;
+            }
           }
         }
       }
@@ -209,6 +229,9 @@
       p {
         display: inline;
       }
+      img {
+        top: -2px;
+      }
     }
     .image {
       img {
@@ -236,6 +259,12 @@
       @media only screen and (max-width: 991px) {
         text-align: center;
       }
+      .download-btn {
+        display: block;
+        @media only screen and (max-width: 991px) {
+          display: none;
+        }
+      }
       .col-lg-3 {
         img {
           display: inline;
@@ -260,6 +289,12 @@
         @media only screen and (max-width: 991px) {
           max-width: 100%
         }
+      }
+    }
+    .download-btn.bottom {
+      display: none;
+      @media only screen and (max-width: 991px) {
+        display: block;
       }
     }
   }
