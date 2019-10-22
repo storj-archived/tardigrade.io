@@ -16,6 +16,15 @@
       }
     }
   }
+  .download-btn {
+    a {
+      color: #000;
+      p {
+        position: relative;
+        right: 5px;
+      }
+    }
+  }
   .press-kit__hero {
     @media only screen and (max-width: 991px) {
       background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
@@ -310,6 +319,7 @@
       border: 1px solid #A1A8B1;
       margin: 10px;
       padding: 0;
+      background: #fff;
       @media only screen and (max-width: 991px) {
         max-width: 100%
       }
@@ -330,4 +340,24 @@
       }
     }
   }
+
+  .press-kit__bottom {
+    background: radial-gradient(83.61% 309.43% at 50% 50%, #133E9C 0%, #000000 100%);
+    color: #fff;
+    .row {
+      display: flex;
+      justify-content: center;
+      a {
+        color: #fff;
+        p {
+          font-size: 14px;
+          font-weight: bold;
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
 }
