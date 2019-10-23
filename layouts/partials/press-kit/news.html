@@ -4,140 +4,140 @@
     {{ with .Site.GetPage "pressHeading.md" }}
       <div class="row">
         <div class="col mt-5 text-center">
-          <h2 >{{.Title}}</h2>
+          <h2 class="news_title" >{{.Title}}</h2>
         </div>
         <div class="spacer125"></div>
       </div>
     {{end}}
     <div class="row">
-      <div class="col-lg-2 years">
-        <ul>
-          <li class="year active">2019</li>
-          <li class="year">2018</li>
-          <li class="year">2017</li>
-          <li class="year">2016</li>
-          <li class="year">2015</li>
-          <li class="year">2014</li>
+      <div class="col-lg-2 news_years-wrapper">
+        <ul class="news_years-list">
+          <li class="news_year active">2019</li>
+          <li class="news_year">2018</li>
+          <li class="news_year">2017</li>
+          <li class="news_year">2016</li>
+          <li class="news_year">2015</li>
+          <li class="news_year">2014</li>
         </ul>
       </div>
-      <div class="col-lg-10 2019 mobile-article-group">
-       {{range where .Site.Pages ".Params.class" "pressArticle"}}
-        <div class="row article">
-          <div class="col-lg-9">
-            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
-          </div>
-          <div class="col-lg-3">
-            <span class="press-source">{{.Params.publishedBy}}</span>
-          </div>
-          <div class="col-lg-12">
-            <p class="press-date">{{.Params.publishedOn}}</p>
-          </div>
-          <div class="spacer30"></div>
-        </div>
-      {{end}}
-    </div>
-      <div class="col-lg-10 2019 article-group current-year">
-       {{range where .Site.Pages ".Params.class" "pressArticle"}}
-         {{ if in .Params.publishedOn "2019" }}
-          <div class="row article">
+      <div class="col-lg-10 2019 news_mobile-article-group">
+         {{range where .Site.Pages ".Params.class" "pressArticle"}}
+          <div class="row news_article">
             <div class="col-lg-9">
-              <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+              <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
             </div>
             <div class="col-lg-3">
-              <span class="press-source">{{.Params.publishedBy}}</span>
+              <span class="news_press-source">{{.Params.publishedBy}}</span>
             </div>
             <div class="col-lg-12">
-              <p class="press-date">{{.Params.publishedOn}}</p>
+              <p class="news_press-date">{{.Params.publishedOn}}</p>
+            </div>
+            <div class="spacer30"></div>
+          </div>
+        {{end}}
+      </div>
+      <div class="col-lg-10 2019 news_desktop-article-group current-year">
+       {{range where .Site.Pages ".Params.class" "pressArticle"}}
+         {{ if in .Params.publishedOn "2019" }}
+           <div class="row news_article">
+             <div class="col-lg-9">
+               <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
+             </div>
+             <div class="col-lg-3">
+               <span class="news_press-source">{{.Params.publishedBy}}</span>
+             </div>
+             <div class="col-lg-12">
+               <p class="news_press-date">{{.Params.publishedOn}}</p>
+             </div>
+             <div class="spacer30"></div>
+           </div>
+        {{end}}
+      {{end}}
+    </div>
+    <div class="col-lg-10 2018 news_desktop-article-group">
+      {{range where .Site.Pages ".Params.class" "pressArticle"}}
+        {{ if in .Params.publishedOn "2018" }}
+          <div class="row news_article">
+            <div class="col-lg-9">
+              <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
+            </div>
+            <div class="col-lg-3">
+              <span class="news_press-source">{{.Params.publishedBy}}</span>
+            </div>
+            <div class="col-lg-12">
+              <p class="news_press-date">{{.Params.publishedOn}}</p>
             </div>
             <div class="spacer30"></div>
           </div>
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2018 article-group">
-      {{range where .Site.Pages ".Params.class" "pressArticle"}}
-        {{ if in .Params.publishedOn "2018" }}
-        <div class="row article">
-          <div class="col-lg-9">
-            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
-          </div>
-          <div class="col-lg-3">
-            <span class="press-source">{{.Params.publishedBy}}</span>
-          </div>
-          <div class="col-lg-12">
-            <p class="press-date">{{.Params.publishedOn}}</p>
-          </div>
-          <div class="spacer30"></div>
-        </div>
-        {{end}}
-      {{end}}
-    </div>
-    <div class="col-lg-10 2017 article-group">
+    <div class="col-lg-10 2017 news_desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2017" }}
-        <div class="row article">
-          <div class="col-lg-9">
-            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+          <div class="row news_article">
+            <div class="col-lg-9">
+              <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
+            </div>
+            <div class="col-lg-3">
+              <span class="news_press-source">{{.Params.publishedBy}}</span>
+            </div>
+            <div class="col-lg-12">
+              <p class="news_press-date">{{.Params.publishedOn}}</p>
+            </div>
+            <div class="spacer30"></div>
           </div>
-          <div class="col-lg-3">
-            <span class="press-source">{{.Params.publishedBy}}</span>
-          </div>
-          <div class="col-lg-12">
-            <p class="press-date">{{.Params.publishedOn}}</p>
-          </div>
-          <div class="spacer30"></div>
-        </div>
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2016 article-group">
+    <div class="col-lg-10 2016 news_desktop-article-group">
     {{range where .Site.Pages ".Params.class" "pressArticle"}}
       {{ if in .Params.publishedOn "2016" }}
-        <div class="row article">
+        <div class="row news_article">
           <div class="col-lg-9">
-            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+            <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
           </div>
           <div class="col-lg-3">
-            <span class="press-source">{{.Params.publishedBy}}</span>
+            <span class="news_press-source">{{.Params.publishedBy}}</span>
           </div>
           <div class="col-lg-12">
-            <p class="press-date">{{.Params.publishedOn}}</p>
+            <p class="news_press-date">{{.Params.publishedOn}}</p>
           </div>
           <div class="spacer30"></div>
         </div>
       {{end}}
     {{end}}
     </div>
-    <div class="col-lg-10 2015 article-group">
+    <div class="col-lg-10 2015 news_desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2015" }}
-          <div class="row article">
+          <div class="row news_article">
             <div class="col-lg-9">
-              <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+              <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
             </div>
             <div class="col-lg-3">
-              <span class="press-source">{{.Params.publishedBy}}</span>
+              <span class="news_press-source">{{.Params.publishedBy}}</span>
             </div>
             <div class="col-lg-12">
-              <p class="press-date">{{.Params.publishedOn}}</p>
+              <p class="news_press-date">{{.Params.publishedOn}}</p>
             </div>
             <div class="spacer30"></div>
-          </div>
+        </div>
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2014 article-group">
+    <div class="col-lg-10 2014 news_desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2014" }}
-          <div class="row article">
+          <div class="row news_article">
             <div class="col-lg-9">
-              <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
+              <h4 class="news_article-name"><a href="{{.Params.link}}" target="_blank" class="news_article-name-link">{{.Params.articleName}}</a></h4>
             </div>
             <div class="col-lg-3">
-              <span class="press-source">{{.Params.publishedBy}}</span>
+              <span class="news_press-source">{{.Params.publishedBy}}</span>
             </div>
             <div class="col-lg-12">
-              <p class="press-date">{{.Params.publishedOn}}</p>
+              <p class="news_press-date">{{.Params.publishedOn}}</p>
             </div>
             <div class="spacer30"></div>
           </div>
@@ -146,7 +146,7 @@
     </div>
     <div class="spacer30"></div>
     <div id="loadMore">
-      <p>Load More</p>
+      <p class="news_load-more-btn">Load More</p>
     </div>
     <div class="spacer125"></div>
   </div>
@@ -157,44 +157,44 @@
 
   $(document).ready(function(){
 
-    $(".current-year .article").slice(0, 4).css("display", "flex");
+    $(".current-year .news_article").slice(0, 4).css("display", "flex");
     $("#loadMore").click(function(e){ // click event for load more
       e.preventDefault();
-      if($(".current-year .article:hidden").length !== 0){ // check if any hidden divs still exist
-        $(".current-year .article:hidden").slice(0, 4).css("display", "flex");
-      } else if($(".current-year .article:hidden").length === 0){
+      if($(".current-year .news_article:hidden").length !== 0){ // check if any hidden divs still exist
+        $(".current-year .news_article:hidden").slice(0, 4).css("display", "flex");
+      } else if($(".current-year .news_article:hidden").length === 0){
         $("#loadMore").hide()
       }
     });
 
-    $(".year").click(function(e){
+    $(".news_year").click(function(e){
       e.preventDefault();
       var year = $(event.target).text()
       $(".active").removeClass('active')
       $(e.target).addClass('active')
       $(".current-year").removeClass('current-year')
       $("." + year).addClass('current-year')
-      $(".current-year .article").slice(0, 4).css("display", "flex");
-      if($(".current-year .article:hidden").length > 0){
+      $(".current-year .news_article").slice(0, 4).css("display", "flex");
+      if($(".current-year .news_article:hidden").length > 0){
         $("#loadMore").show()
-      } else if($(".current-year .article:hidden").length === 0){
+      } else if($(".current-year .news_article:hidden").length === 0){
         $("#loadMore").hide()
       }
     });
 
-    if($(".current-year .article:hidden").length === 0){
+    if($(".current-year .news_article:hidden").length === 0){
       $("#loadMore").hide()
     }
 
 
 
-    $(".mobile-article-group .article").slice(0, 4).css("display", "flex");
+    $(".news_mobile-article-group .news_article").slice(0, 4).css("display", "flex");
 
     $("#loadMore").click(function(e){ // click event for load more
       e.preventDefault();
-      if($(".mobile-article-group .article:hidden").length !== 0){ // check if any hidden divs still exist
-        $(".mobile-article-group .article:hidden").slice(0, 4).css("display", "flex");
-      } else if($(".mobile-article-group .article:hidden").length === 0){
+      if($(".news_mobile-article-group .news_article:hidden").length !== 0){ // check if any hidden divs still exist
+        $(".news_mobile-article-group .news_article:hidden").slice(0, 4).css("display", "flex");
+      } else if($(".news_mobile-article-group .news_article:hidden").length === 0){
         $("#loadMore").hide()
       }
     });
