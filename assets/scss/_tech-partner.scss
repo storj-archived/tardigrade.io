@@ -9,19 +9,6 @@
       background-repeat: no-repeat;
       background-position: 100% 90px;
       background-size: 650px;
-      .col-sm-8 {
-        @media only screen and (max-width: 600px) {
-          margin: 0 auto;
-        }
-      }
-      .tech-partner__cta-button-wrapper {
-        @media only screen and (max-width: 768px) {
-          text-align: left;
-        }
-        @media only screen and (max-width: 600px) {
-          text-align: center;
-        }
-      }
       @media only screen and (max-width: 991px) {
         background-position: 100% 240px;
         background-size: 550px;
@@ -37,8 +24,22 @@
         background-size: 350px;
         height: 850px;
       }
+      .col-sm-8 {
+        @media only screen and (max-width: 600px) {
+          margin: 0 auto;
+        }
+      }
+      .tech-partner__cta-button-wrapper {
+        @media only screen and (max-width: 768px) {
+          text-align: left;
+        }
+        @media only screen and (max-width: 600px) {
+          text-align: center;
+        }
+      }
+
    }
-   h1, p {
+   .tech-partner__headline-heading, .tech-partner__headline-content {
      color: #fff;
      width: 150%;
      text-align: left;
@@ -47,8 +48,8 @@
        text-align: center;
      }
    }
-   a {
-     .btn-signup {
+   .tech-partner__cta-button-link {
+     .tech-partner__cta-button {
         font-size: 16px;
         line-height: 24px;
         background: #2683ff;
@@ -212,7 +213,7 @@
     }
 
     .contact-us-link {
-      font-family: poppins;
+      font-family: $primary-font-family;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
