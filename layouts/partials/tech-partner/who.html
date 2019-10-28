@@ -4,28 +4,28 @@
       <div class="spacer125"></div>
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
-          <h2>
+          <h2 class="tech-partner__who-heading">
             {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
           </h2>
           <br />
-          <p>
+          <p class="tech-partner__who-subheading">
             {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
           </p>
         </div>
-        <div class="col-md-6 list">
-          <ul>
+        <div class="col-md-6 tech-partner__who-list-container">
+          <ul class="tech-partner__who-list">
             {{ range where .Site.Pages ".Params.class" "partner-list-item"}}
-            <li>
-              <img class="img-fluid" src="/img/tar-check.png" alt="benefits icon">
-              <h4>{{ .Params.content }}</h4>
+            <li class="tech-partner__who-list-item">
+              <img class="tech-partner__who-list-img img-fluid" src="/img/tar-check.png" alt="benefits icon">
+              <h4 class="tech-partner__who-list-content">{{ .Params.content }}</h4>
             </li>
             {{ end }}
           </ul>
           <div class="spacer60"></div>
-          <p>Not on the list, but think you may be a good fit?</p>
+          <p class="tech-partner__who-contact-us-text">Not on the list, but think you may be a good fit?</p>
           <div class="spacer30"></div>
-          <p class="contact-us-link">
-            <a href="" target="_blank" class="link">
+          <p class="tech-partner__who-contact-us-text">
+            <a href="" target="_blank" class="tech-partner__who-contact-us-link">
               Contact Us
               <img src="/img/blue-carrot.svg" height="13" width="13">
             </a>

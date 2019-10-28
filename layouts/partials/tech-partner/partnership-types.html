@@ -1,32 +1,32 @@
 {{ with .Site.GetPage "partnershipTypes" }}
-<div class="container-fluid lite-gray-bg">
-  <div class="container">
-    <div class="spacer90"></div>
-    <div class="row">
-        <div class="col text-center mt-5">
-            <h2 class="tech-partner__partnership-types-heading">
-                {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-            </h2>
+  <div class="container-fluid lite-gray-bg">
+    <div class="container">
+      <div class="spacer90"></div>
+      <div class="row">
+          <div class="col text-center mt-5">
+              <h2 class="tech-partner__partnership-types-heading">
+                  {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+              </h2>
+          </div>
+      </div>
+      <div class="spacer30"></div>
+      <div class="tech-partner__partnership-types-section row d-flex mt-10 flex-row justify-content-center">
+        <div class="tech-partner__partnership-types-section-one col-md-6 text-center">
+            <div class="tech-partner__partnership-types-section-wrapper pt-3">
+                <img class="tech-partner__partnership-types-section-img img-fluid" src="{{ .Params.img1 }}" alt="benefits icon">
+                <h4 class="tech-partner__partnership-types-subheading">{{ .Params.subheading1 }}</h4>
+                <p class="tech-partner__partnership-types-content">{{ .Params.content1 }}</p>
+            </div>
         </div>
-    </div>
-    <div class="spacer30"></div>
-    <div class="tech-partner__partnership-types-section row d-flex mt-10 flex-row justify-content-center">
-      <div class="tech-partner__partnership-types-section-one col-md-6 text-center">
-          <div class="tech-partner__partnership-types-section-wrapper pt-3">
-              <img class="tech-partner__partnership-types-section-img img-fluid" src="{{ .Params.img1 }}" alt="benefits icon">
-              <h4 class="tech-partner__partnership-types-subheading">{{ .Params.subheading1 }}</h4>
-              <p class="tech-partner__partnership-types-content">{{ .Params.content1 }}</p>
-          </div>
+        <div class="tech-partner__partnership-types-section-two col-md-6 text-center">
+            <div class="tech-partner__partnership-types-section-wrapper pt-3">
+                <img class="tech-partner__partnership-types-section-img img-fluid" src="{{ .Params.img2 }}" alt="benefits icon">
+                <h4 class="tech-partner__partnership-types-subheading">{{ .Params.subheading2 }}</h4>
+                <p class="tech-partner__partnership-types-content">{{ .Params.content2 }}</p>
+            </div>
+        </div>
       </div>
-      <div class="tech-partner__partnership-types-section-two col-md-6 text-center">
-          <div class="tech-partner__partnership-types-section-wrapper pt-3">
-              <img class="tech-partner__partnership-types-section-img img-fluid" src="{{ .Params.img2 }}" alt="benefits icon">
-              <h4 class="tech-partner__partnership-types-subheading">{{ .Params.subheading2 }}</h4>
-              <p class="tech-partner__partnership-types-content">{{ .Params.content2 }}</p>
-          </div>
-      </div>
+      <div class="spacer125"></div>
     </div>
-    <div class="spacer125"></div>
   </div>
-</div>
 {{end}}

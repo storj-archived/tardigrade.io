@@ -118,14 +118,14 @@
 }
 
 .tech-partner__why, .tech-partner__more-benefits {
-  h2 {
+  .tech-partner__why-heading, .tech-partner__more-benefit-heading {
     font-size: 28px;
   }
-  h4 {
+  .tech-partner__why-subheading, .tech-partner__more-benefit-subheading {
     font-size: 14px;
   }
 
-  p {
+  .tech-partner__why-content, .tech-partner__more-benefit-content {
     font-size: 16px;
   }
   .col-xs-12 {
@@ -135,7 +135,7 @@
     }
 
   }
-  h2, .col-xs-12 {
+  .tech-partner__why-heading, .tech-partner__more-benefit-heading, .col-xs-12 {
     @media only screen and (max-width: 768px) {
       margin: 20px auto;
       width: 90%;
@@ -154,15 +154,17 @@
 
 .tech-partner__who {
 
-  h2 {
+  .tech-partner__who {
     font-size: 28px;
   }
 
-  p {
+  .tech-partner__who-subheading {
     font-size: 18px;
   }
 
-  .col-md-6.list {
+  .tech-partner__who-list-container {
+    position: relative;
+    bottom: 10px;
     @media only screen and (max-width: 768px) {
       margin-top: 30px;
       text-align: left;
@@ -170,23 +172,26 @@
         height: 25px;
       }
     }
-    p {
+    .tech-partner__who-contact-us-text {
+      font-weight: 300;
+      font-size: 16px;
       margin-left: 30px;
       @media only screen and (max-width: 768px) {
         margin-left: 0;
         text-align: center;
       }
+      .tech-partner__who-contact-us-link {
+        color: $color--blue-light;
+        font-family: $primary-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
-  }
-  .col-md-6 {
-    position: relative;
-    bottom: 10px;
-    @media only screen and (max-width: 768px) {
-      text-align: center;
-    }
-    ul {
+    .tech-partner__who-list {
       list-style-type: none;
-      li {
+      .tech-partner__who-list-item {
         @media only screen and (max-width: 768px) {
           position: relative;
           left: 12%;
@@ -194,7 +199,7 @@
         @media only screen and (max-width: 500px) {
           left: 0;
         }
-        img {
+        .tech-partner__who-list-img {
           float: left;
           position: relative;
           top: 15px;
@@ -203,24 +208,13 @@
             right: 25px;
           }
         }
-        h4 {
+        .tech-partner__who-list-content {
           font-size: 20px;
           width: 110%;
           @media only screen and (max-width: 500px) {
             font-size: 14px;
           }
         }
-      }
-    }
-
-    .contact-us-link {
-      font-family: $primary-font-family;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 20px;
-      a {
-        color: $color--blue-light;
       }
     }
   }
