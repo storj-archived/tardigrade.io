@@ -1,5 +1,9 @@
 .tech-partner__heading {
   background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
+  @media only screen and (max-width: 768px) {
+    background: radial-gradient(236.22% 100.97% at 50% -4.33%, #0059D1 0%, #000000 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
   .tech-partner__headline {
     @media only screen and (max-width: 738px) {
       text-align: center;
@@ -62,15 +66,12 @@
       }
     }
   }
-  @media only screen and (max-width: 768px) {
-    background: radial-gradient(236.22% 100.97% at 50% -4.33%, #0059D1 0%, #000000 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+
 }
 
 .tech-partner__partnership-types {
   font-size: 18px;
-  h2 {
+  .tech-partner__partnership-types-heading {
     font-size: 28px;
     bottom: 20px;
     position: relative;
@@ -78,27 +79,27 @@
       bottom: 30px;
     }
   }
-  h4,p {
+  .tech-partner__partnership-types-subheading, .tech-partner__partnership-types-conent {
     font-size: 18px;
   }
-  img {
+  .tech-partner__partnership-types-section-img {
     margin-bottom: 10px;
   }
-  .tech-partner__partnership-types-content {
+  .tech-partner__partnership-types-section {
     .col-md-6 {
       max-width: 939px;
       height: 320px;
       background: #FFFFFF;
       box-shadow: 0px 4px 74px rgba(31, 49, 76, 0.25);
       border-radius: 10px;
-      div {
+      .tech-partner__partnership-types-section-wrapper {
         width: 80%;
         margin: 0 auto;
         margin-top: 10%;
       }
     }
   }
-  .tech-partner__partnership-types-content-two {
+  .tech-partner__partnership-types-section-two {
     position: relative;
     left: 30px;
     @media only screen and (max-width: 768px) {
