@@ -1,0 +1,44 @@
+{{ with .Site.GetPage "heroMsg"}}
+  <div class="container-fluid tech-partner__headline-bg">
+    <div class="spacer30"></div>
+    <div class="container">
+      <div>
+           {{partial "nav" .}}
+      </div>
+    </div>
+    <div class="spacer90"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row mb-24">
+            <div class="col-xs-12 col-md-10 center-sm">
+              <h1 class="tech-partner__headline-heading">
+               {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+              </h1>
+            </div>
+          </div>
+          <div class="spacer30"></div>
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0 center-sm">
+              <p class="tech-partner__headline-content">{{ replace .Params.content "\n" "<br/>" | safeHTML}}</p>
+            </div>
+          </div>
+          <div class="spacer30"></div>
+          <div class="row">
+            <div class="tech-partner__cta-button-wrapper col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0 center-sm">
+              <a class="tech-partner__cta-button-link" href="https://storjsupport.typeform.com/to/dEzmtr">
+                <button class="tech-partner__cta-button font-weight-bold">
+                    Become a Tardigrade Partner
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+           <!-- <img class="partner__headline-logo-img img-fluid" src="{{ .Params.img }}" alt="open sourc icon"> -->
+        </div>
+      </div>
+    </div>
+    <div class="spacer125"></div>
+  </div>
+{{end}}

@@ -59,6 +59,70 @@
   }
 }
 
+.navlink {
+  &:hover {
+    color: #fff;
+    text-shadow: 1px 0 0 #fff;
+  }
+  &:active {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  button.navlink {
+    padding: 0;
+    margin: 5px 0px 20px 0px;
+  }
+}
+
+.dropdown-item {
+  margin: 10px 0;
+  font-size: 16px;
+  &:hover {
+    background: none;
+    img {
+      display: block;
+    }
+  }
+}
+
+.dropdown-menu {
+  font-size: 16px;
+  width: 300px;
+  .dropdown-divider {
+    width: 85%;
+    margin: 10px auto;
+  }
+  img {
+    float: right;
+    position: relative;
+    top: 7px;
+    display: none
+  }
+  p {
+    font-family: "Poppins";
+    color: #93A1AF;
+    font-weight: bold;
+    &:hover {
+      color: #93A1AF;
+    }
+  }
+  a {
+    font-family: Roboto;
+    &:hover {
+      color: $color--blue-light;
+      font-weight: bold;
+    }
+  }
+}
+
+.btn-group {
+  display: inline;
+  position: relative;
+  top: 2px;
+}
+
 .nav-join {
   border: 2px solid white;
   border-radius: 4px;
@@ -145,6 +209,17 @@
   height: 30px;
   width: 100%;
 }
+
+.spacer60 {
+  height: 60px;
+  width: 100%;
+}
+
+.spacer90 {
+  height: 90px;
+  width: 100%;
+}
+
 
 .spacer125 {
   height: 125px;
@@ -477,7 +552,6 @@ a {
 
 @media only screen and (min-width: 321px) and (max-width: 767px) {
   .banner {
-    height: 50px;
     background-color: color(secondary);
   }
 }
@@ -497,6 +571,7 @@ a {
   line-height: 22px;
   font-size: 12px;
   color: color(primary);
+  white-space: nowrap;
 }
 
 .slogan-name {
@@ -620,7 +695,7 @@ a {
       color: #7E8B9C;
       height: 40px;
     }
-  
+
     .cta-btm-join{
       height:42.5px;
       margin-top:-5px;
@@ -798,7 +873,7 @@ a {
 
 .mstone-link-wrapper {
   margin-top: 60px;
-  
+
   p {
     font-family: poppins;
     font-style: normal;
