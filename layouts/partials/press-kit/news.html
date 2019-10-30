@@ -21,6 +21,20 @@
         </ul>
       </div>
       <div class="col-lg-10 2019 press-kit__news-mobile-article-group">
+        {{range where .Site.Pages ".Params.class" "newPressArticle"}}
+         <div class="row press-kit__news-article">
+           <div class="col-lg-9">
+             <h4 class="press-kit__news-article-name"><a href="{{.Params.link}}" target="_blank" class="press-kit__news-article-name-link">{{.Params.articleName}}</a></h4>
+           </div>
+           <div class="col-lg-3">
+             <span class="press-kit__news-press-source">{{.Params.publishedBy}}</span>
+           </div>
+           <div class="col-lg-12">
+             <p class="press-kit__news-press-date">{{ dateFormat "January 2, 2006" .Params.publishdate }}</p>
+           </div>
+           <div class="spacer30"></div>
+         </div>
+       {{end}}
          {{range where .Site.Pages ".Params.class" "pressArticle"}}
           <div class="row press-kit__news-article">
             <div class="col-lg-9">
@@ -30,13 +44,28 @@
               <span class="press-kit__news-press-source">{{.Params.publishedBy}}</span>
             </div>
             <div class="col-lg-12">
-              <p class="press-kit__news-press-date">{{.Params.publishedOn}}</p>
+              <p class="press-kit__news-press-date">{{  .Params.publishedOn }}</p>
             </div>
             <div class="spacer30"></div>
           </div>
         {{end}}
+
       </div>
       <div class="col-lg-10 2019 press-kit__news-desktop-article-group current-year">
+        {{range where .Site.Pages ".Params.class" "newPressArticle"}}
+         <div class="row press-kit__news-article">
+           <div class="col-lg-9">
+             <h4 class="press-kit__news-article-name"><a href="{{.Params.link}}" target="_blank" class="press-kit__news-article-name-link">{{.Params.articleName}}</a></h4>
+           </div>
+           <div class="col-lg-3">
+             <span class="press-kit__news-press-source">{{.Params.publishedBy}}</span>
+           </div>
+           <div class="col-lg-12">
+             <p class="press-kit__news-press-date">{{ dateFormat "January 2, 2006" .Params.publishdate }}</p>
+           </div>
+           <div class="spacer30"></div>
+         </div>
+       {{end}}
        {{range where .Site.Pages ".Params.class" "pressArticle"}}
          {{ if in .Params.publishedOn "2019" }}
            <div class="row press-kit__news-article">
