@@ -177,7 +177,7 @@
   }
   .press-kit__terminology {
     .container-fluid {
-      .terms {
+      .press-kit__terminology-terms {
         @media only screen and (max-width: 768px) {
           overflow-x: auto;
           flex-wrap: nowrap;
@@ -187,7 +187,7 @@
         @media only screen and (max-width: 768px) {
           text-align: center;
         }
-        p {
+        .press-kit__terminology-heading-content {
           font-family: Roboto;
           font-style: normal;
           font-weight: 300;
@@ -195,7 +195,7 @@
           line-height: 28px;
         }
       }
-      .term-segment {
+      .press-kit__terminology-term-segment {
         @media only screen and (max-width: 768px) {
           display: inline-block;
           float: none;
@@ -203,13 +203,13 @@
           margin-right: 10px;
           max-width: 75%;
         }
-        h4 {
+        .press-kit__terminology-term-segment-heading {
           font-style: italic;
           font-weight: bold;
           font-size: 14px;
           line-height: 21px;
         }
-        p {
+        .press-kit__terminology-term-segment-content {
           font-family: Roboto;
           font-style: normal;
           font-weight: 300;
@@ -221,36 +221,31 @@
     }
   }
   .press-kit__mascot {
-    @media only screen and (max-width: 1200px) {
-      .image {
-        img {
-          min-width: 450px;
-        }
-      }
-    }
-    @media only screen and (max-width: 991px) {
-      .image {
-        width: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-    .title {
+
+    .press-kit__mascot-title {
       padding-left: 0;
     }
-    .download-btn {
+    .press-kit__mascot-download-btn {
       text-align: right;
-      p {
+      .press-kit__mascot-download-btn-text {
         display: inline;
       }
-      img {
+      .img-fluid {
         top: -2px;
       }
     }
-    .image {
-      img {
+    .press-kit__mascot-image-wrapper {
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+      }
+      .img-fluid {
         min-width: 550px;
+        @media only screen and (max-width: 1200px) {
+          min-width: 450px;
+        }
+        @media only screen and (max-width: 991px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -259,17 +254,12 @@
       @media only screen and (max-width: 991px) {
         text-align: center;
       }
-      .download-btn {
+      .press-kit__logo-download-btn {
         display: block;
         @media only screen and (max-width: 991px) {
           display: none;
         }
-      }
-      .col-lg-3 {
-        img {
-          display: inline;
-        }
-        p {
+        .press-kit__logo-download-btn-text, .img-fluid {
           display: inline;
         }
       }
@@ -277,7 +267,7 @@
     .pt-4 {
       display: flex;
       justify-content: space-between;
-      .logo {
+      .press-kit__logo-logo {
         max-width: 47.5%;
         height: 160px;
         border-radius: 10px;
@@ -291,7 +281,7 @@
         }
       }
     }
-    .download-btn.bottom {
+    .press-kit__logo-download-btn.bottom {
       display: none;
       @media only screen and (max-width: 991px) {
         display: block;
@@ -299,7 +289,7 @@
     }
   }
   .press-kit__fonts {
-    .font {
+    .press-kit__fonts-font {
       max-width: 47.5%;
       height: 160px;
       border-radius: 10px;
@@ -309,17 +299,17 @@
       @media only screen and (max-width: 991px) {
         max-width: 100%
       }
-      .display {
+      .press-kit__fonts-display {
         border-bottom: 1px solid #A1A8B1;
         height: 60%;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
-        h4 {
+        .press-kit__fonts-headline-example {
           font-size: 35px;
         }
-        p {
+        .press-kit__fonts-body-example {
           font-style: normal;
           font-weight: 300;
           font-size: 23px;
