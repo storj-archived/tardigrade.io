@@ -34,7 +34,7 @@
     @media only screen and (max-width: 991px) {
       background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
     }
-    .hero_bg {
+    .press-kit__hero-bg {
       color: #fff;
       background-image: url(../img/press-hero.png);
       background-size: cover;
@@ -55,12 +55,12 @@
          background-size: 430px;
          height: 700px;
        }
-      .hero_msg {
+      .press-kit__hero-msg {
         @media only screen and (max-width: 768px) {
           text-align: center;
           margin: 0 auto;
         }
-      .hero__cta-button-wrapper {
+      .press-kit__hero-cta-button-wrapper {
           .hero_signup-btn {
             width: 244px;
             height: 46px;
@@ -71,7 +71,7 @@
             font-weight: 900;
             font-size: 14px;
           }
-          .hero_contact-us {
+          .press-kit__hero-contact-us {
             color: #fff;
             font-family: Poppins;
             font-style: normal;
