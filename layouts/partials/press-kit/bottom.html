@@ -7,10 +7,10 @@
         {{ replace .Params.title "\n" "<br/>" | safeHTML}}
       </h2>
       <div class="spacer20"></div>
-      <a href="#">
-        <p>
+      <a class="press-kit__bottom-link" href="#">
+        <p class="press-kit__bottom-content">
         {{ replace .Params.cta "\n" "<br/>" | safeHTML}}
-        <img class="mb-1" src="/img/white-carrot.png" height="13" width="13">
+        <img class="mb-1 press-kit__bottom-img" src="/img/white-carrot.png" height="13" width="13">
         </p>
       </a>
     </div>

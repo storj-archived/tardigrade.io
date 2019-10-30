@@ -347,7 +347,7 @@
   }
 
   .press-kit__colors {
-    .color {
+    .press-kit__colors-color {
       max-width: 31%;
       height: 111px;
       border-radius: 10px;
@@ -358,14 +358,14 @@
       @media only screen and (max-width: 991px) {
         max-width: 100%
       }
-      .visual {
+      .press-kit__colors-visual {
         height: 50%;
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
       }
-      .text {
+      .press-kit__colors-text {
         padding: 10px 20px;
-        p {
+        .press-kit__colors-color-name, .press-kit__colors-color-hex {
           font-family: Poppins;
           font-style: normal;
           font-size: 12px;
@@ -382,12 +382,13 @@
     .row {
       display: flex;
       justify-content: center;
-      a {
+      .press-kit__bottom-link {
         color: #fff;
-        p {
+        .press-kit__bottom-content {
+          font-family: $primary-font;
           font-size: 14px;
           font-weight: bold;
-          img {
+          .press-kit__bottom-img {
             margin-left: 10px;
           }
         }
