@@ -196,6 +196,9 @@
         }
       }
       .press-kit__terminology-term-segment {
+        @media only screen and (min-width: 992px) {
+          padding-left: 0;
+        }
         @media only screen and (max-width: 768px) {
           display: inline-block;
           float: none;
@@ -227,6 +230,8 @@
     }
     .press-kit__mascot-download-btn {
       text-align: right;
+      position: relative;
+      top: 7px;
       .press-kit__mascot-download-btn-text {
         display: inline;
       }

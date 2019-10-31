@@ -20,7 +20,7 @@
           <li class="press-kit__news-year">2014</li>
         </ul>
       </div>
-      <div class="col-lg-10 2019 press-kit__news-mobile-article-group">
+      <div class="col-lg-10 press-kit__news-mobile-article-group">
         {{range where .Site.Pages ".Params.class" "newPressArticle"}}
          <div class="row press-kit__news-article">
            <div class="col-lg-9">
@@ -186,7 +186,9 @@
 
   $(document).ready(function(){
 
+    //grab first four articles of currently active year
     $(".current-year .press-kit__news-article").slice(0, 4).css("display", "flex");
+
     $("#loadMore").click(function(e){ // click event for load more
       e.preventDefault();
       if($(".current-year .press-kit__news-article:hidden").length !== 0){ // check if any hidden divs still exist
@@ -196,14 +198,20 @@
       }
     });
 
+
+    // active timeline year logic
     $(".press-kit__news-year").click(function(e){
+
       e.preventDefault();
+      // grabbing year of clicked element
       var year = $(event.target).text()
+
       $(".active").removeClass('active')
       $(e.target).addClass('active')
       $(".current-year").removeClass('current-year')
       $("." + year).addClass('current-year')
       $(".current-year .press-kit__news-article").slice(0, 4).css("display", "flex");
+
       if($(".current-year .press-kit__news-article:hidden").length > 0){
         $("#loadMore").show()
       } else if($(".current-year .press-kit__news-article:hidden").length === 0){
@@ -211,18 +219,18 @@
       }
     });
 
+    // if there're no more articles, hide load more btn
     if($(".current-year .press-kit__news-article:hidden").length === 0){
       $("#loadMore").hide()
     }
 
-
-
+    // mobile load more logic
     $(".press-kit__news-mobile-article-group .press-kit__news-article").slice(0, 4).css("display", "flex");
 
     $("#loadMore").click(function(e){ // click event for load more
       e.preventDefault();
       if($(".press-kit__news-mobile-article-group .press-kit__news-article:hidden").length !== 0){ // check if any hidden divs still exist
-        $("press-kit__news-_mobile-article-group .press-kit__news-article:hidden").slice(0, 4).css("display", "flex");
+        $(".press-kit__news-mobile-article-group .press-kit__news-article:hidden").slice(0, 4).css("display", "flex");
       } else if($(".press-kit__news-mobile-article-group .press-kit__news-article:hidden").length === 0){
         $("#loadMore").hide()
       }
@@ -233,17 +241,3 @@
 
 
 </script>
-<!--   {{range where .Site.Pages.ByPublishDate.Reverse ".Params.class" "newPressArticle" }}
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 col-lg-2">
-            <p class="press-date"> {{ dateFormat "January 2, 2006" .Params.publishdate }}</p>
-          </div>
-          <div class="col-xs-12 col-sm-9 col-lg-10">
-            <span class="press-source">{{.Params.publishedBy}}</span>
-            <h4><a href="{{.Params.link}}" target="_blank" class="press-title link">{{.Params.articleName}}</a></h4>
-          </div>
-        </div>
-        <hr>
-{{end}}
-</div>
-</div> -->
