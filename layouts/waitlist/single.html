@@ -24,3 +24,13 @@
     {{partial "site-scripts" .}}
   </body>
 </html>
+<script type="text/javascript">
+  window.onload = function() {
+    var button = document.getElementById("test")
+    button.onclick = function () {
+      analytics.identify(analytics.user().anonymousId(), {email: "test@test.com"}, {}, function() {
+        analytics.track("developer_sign_up", {});
+      });
+    }
+  }
+</script>
