@@ -27,9 +27,9 @@
             <p class="waitlist__form-description">
                 {{ replace .Params.formDescription "\n" "<br/>" | safeHTML}}
             </p>
-        </div> 
+        </div>
       <div id="mc_embed_signup">
-        <form action="https://github.us8.list-manage.com/subscribe/post?u=edba9fc4ce8b9095a31859cba&amp;id=a5cc1e6ed3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form method="post" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
             <div class="row">
               <div class="waitlist__form-input offset-sm-2 col-xl-8 col-sm-8 mt-2">
@@ -54,11 +54,6 @@
       <div class="waitlist__img-mars col-3 col-sm-3 col-xl-2">
         {{$marsImg := index (.Params.imgs) 1 }}
         <img class="img-fluid" src="{{ $marsImg.img_path }}" alt="{{ $marsImg.caption }}">
-      </div>
-    </div>
-    <div class="row mt-3 mb-5">
-      <div class="offset-sm-2 col-xl-8 col-sm-8">
-        <input id="test" class="waitlist__form-submit text-white" name="subscribe" type="submit" value="Get Early Access"/>
       </div>
     </div>
   </div>

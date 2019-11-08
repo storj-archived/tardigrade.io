@@ -15,3 +15,16 @@
       {{ partial "site-scripts" .}}
   </body>
 </html>
+<script type="text/javascript">
+  window.onload = function() {
+    var button = document.getElementById("mc-embedded-subscribe")
+
+    button.onclick = function (event) {
+      event.preventDefault()
+      var inputValue = document.getElementById("mce-EMAIL").value
+      analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+        analytics.track("developer_sign_up", {});
+      });
+    }
+  }
+</script>
