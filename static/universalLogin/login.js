@@ -30,7 +30,7 @@ function selectUSSatellite() {
     document.getElementById('us-checkmark').classList.remove('checkmark');
     document.getElementById('us-checkmark').classList.add('selected-checkmark');
 
-    setIframeSource('http://localhost:10002/login');
+    setIframeSource('https://us-central-1.tardigrade.io/login');
 }
 
 function selectAsiaSatellite() {
@@ -61,7 +61,7 @@ function selectAsiaSatellite() {
     document.getElementById('asia-checkmark').classList.remove('checkmark');
     document.getElementById('asia-checkmark').classList.add('selected-checkmark');
 
-    setIframeSource('http://localhost:10012/login');
+    setIframeSource('https://asia-east-1.tardigrade.io/login');
 }
 
 function selectEuropeSatellite() {
@@ -92,5 +92,5 @@ function selectEuropeSatellite() {
     document.getElementById('europe-checkmark').classList.remove('checkmark');
     document.getElementById('europe-checkmark').classList.add('selected-checkmark');
 
-    setIframeSource('http://localhost:10022/login');
+    setIframeSource('https://europe-west-1.tardigrade.io/login');
 }
