@@ -1,4 +1,4 @@
-<div class="container-fluid lite-gray-bg">
+<div class="container-fluid">
   <div class="container">
     <div class="row">
       <div class="col text-center">
@@ -14,12 +14,12 @@
             {{range where .Site.Pages ".Params.class" "usecase"}}
             <div class="pl-3 {{if eq .Params.isActive true}}usecase-link-wrapper-active{{else}}usecase-link-wrapper{{end}}" >
               <a  class="nav-link"
-                  onclick="select(this);" 
-                  id="v-pills-{{.Params.name}}-tab" 
-                  data-toggle="pill" 
-                  href="#v-pills-{{.Params.name}}" 
-                  role="tab" 
-                  aria-controls="v-pills-{{.Params.name}}" 
+                  onclick="select(this);"
+                  id="v-pills-{{.Params.name}}-tab"
+                  data-toggle="pill"
+                  href="#v-pills-{{.Params.name}}"
+                  role="tab"
+                  aria-controls="v-pills-{{.Params.name}}"
                   aria-selected="true">
                   {{.Params.heading}}</a>
             </div>
@@ -28,12 +28,12 @@
         <div class="col-xs-6 offset-1 col-sm-11 offset-sm-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 tab-content" id="v-pills-tabContent">
             <div class="spacer30 d-block d-sm-none"></div>
             {{range where .Site.Pages ".Params.class" "tab"}}
-            <div  class="tab-pane fade{{if eq .Params.isActive true}}show active{{end}}" 
-                  id="v-pills-{{.Params.name}}" 
-                  role="tabpanel" 
+            <div  class="tab-pane fade{{if eq .Params.isActive true}}show active{{end}}"
+                  id="v-pills-{{.Params.name}}"
+                  role="tabpanel"
                   aria-labelledby="v-pills-{{.Params.name}}-tab">
-              <img  src="{{.Params.img}}" 
-                    height="94" 
+              <img  src="{{.Params.img}}"
+                    height="94"
                     width="94">
               <h3 class="mt-4 tab-heading">{{.Params.heading}}</h3>
               <p class="limit">{{.Params.desc}}</p>
