@@ -5,8 +5,21 @@
             <div class="spacer20"></div>
             {{ partial "nav" .}}
             <div class="row">
-              <div class="spacer90"></div>
-              <div class="col-xs-12 col-sm-12 col-lg-6 hero-content">
+              <div class="spacer20"></div>
+              <div class="jumbotron hero-tardigrade-msg">
+                <div>
+                  <p class="hero-tardigrade-msg-left">Tardigrade is Powered by Storj Labs</p>
+                </div>
+                <div>
+                  <a target="_blank" href="https://storj.io" style="text-decoration: none">
+                    <p class="hero-tardigrade-msg-right">Visit Storj.io</p>
+                    <img class="hero-tardigrade-msg-img" src="/img/mini-storj-logo.png" />
+                    <img class="hero-tardigrade-msg-img" src="/img/chevron-right-white.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="spacer40"></div>
+              <div class="col-md-12 col-sm-12 col-lg-6 hero-content">
                 <div class="row">
                 {{with .Site.GetPage "page" "hero"}}
                     <div class="col-xs-11 hero-prod-status">CURRENTLY IN {{.Params.stage}}</div>
@@ -26,7 +39,6 @@
                   </div>
                 </form>
             </div>
-            <!-- <div style="background:url({{.Params.heroIMG}})" class="col-sm-5 offset-1"> -->
             <div class="col-sm-5 offset-1">
                 <img class="pl-5 hero-image" src="{{.Params.heroIMG}}" height="95%" width="1200" />
             </div>
