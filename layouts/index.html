@@ -21,10 +21,11 @@
 
     button.onclick = function (event) {
       event.preventDefault()
-      var inputValue = document.getElementById("mce-EMAIL").value
-      analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
-        analytics.track("developer_sign_up", {});
-      });
+      var inputValue = document.getElementById("url-box").value
+      console.log("VALUE:", inputValue)
+      // analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+      //   analytics.track("developer_sign_up", {});
+      // });
     }
   }
 </script>
