@@ -4,9 +4,23 @@
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
           {{ with .Site.GetPage "halfPrice" }}
-          <h2 class="tech-partner__who-heading">
+          <h2 class="half-price-heading">
             {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
           </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>{{ .Params.col1Heading }}</p>
+              <img src="{{ .Params.col1Image }}" />
+              <h2>{{ .Params.col1Amount }}</h2>
+              <p>{{ .Params.col1Metric }}</p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ .Params.col2Heading }}</p>
+              <img src="{{ .Params.col2Image }}" />
+              <h2>{{ .Params.col2Amount }}</h2>
+              <p>{{ .Params.col2Metric }}</p>
+            </div>
+          </div>
           <a class="">
             {{ .Params.cta}}
           </a>
@@ -14,19 +28,19 @@
         </div>
         <div class="col-md-6">
           {{ with .Site.GetPage "whySection" }}
-          <h2 class="tech-partner__who-heading">
+          <h2 class="why-tardigrade-heading">
             {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
           </h2>
           <br />
-          <p class="tech-partner__who-subheading">
+          <p class="why-tardigrade-subheading">
             {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
           </p>
-          <div class="tech-partner__who-list-container">
-            <ul class="tech-partner__who-list">
+          <div class="why-tardigrade-list-container">
+            <ul class="why-tardigrade-list">
               {{ range where .Site.Pages ".Params.class" "why-item"}}
-              <li class="tech-partner__who-list-item">
-                <img class="tech-partner__who-list-img img-fluid" src="/img/tar-check.png" alt="benefits icon">
-                <h4 class="tech-partner__who-list-content">{{ .Params.content }}</h4>
+              <li class="why-tardigrade-list-item">
+                <img class="why-tardigrade-list-img img-fluid" src="/img/storj-check.svg" alt="benefits icon">
+                <h4 class="why-tardigrade-list-item-content">{{ .Params.content }}</h4>
               </li>
               {{ end }}
             </ul>

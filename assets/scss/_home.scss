@@ -334,6 +334,25 @@
   text-align: center;
 }
 
+.why-tardigrade-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.why-tardigrade-list-item {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.why-tardigrade-list-check {
+  margin-right: 10px;
+}
+
+.why-tardigrade-list-item-content {
+  color: #000;
+}
+
 /* Home-Page */
 
 $colors: (
