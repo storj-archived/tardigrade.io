@@ -134,6 +134,7 @@
   color: white;
 }
 
+
 /*  home-hero-banner  */
 
 .bg-gradiant {
@@ -334,6 +335,17 @@
   text-align: center;
 }
 
+.why-tardigrade-heading {
+  font-size: 22px;
+  font-size: 100;
+}
+
+.why-tardigrade-subheading {
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
 .why-tardigrade-list {
   list-style-type: none;
   padding-left: 0;
@@ -345,12 +357,57 @@
   font-size: 14px;
 }
 
-.why-tardigrade-list-check {
-  margin-right: 10px;
+.why-tardigrade-list-img {
+  position: relative;
+  bottom: 5px;
 }
 
 .why-tardigrade-list-item-content {
   color: #000;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.half-price-content {
+  text-align: center;
+}
+
+.half-price-heading {
+  font-size: 28px;
+  width: 90%;
+}
+
+.half-price-column-heading {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.half-price-column-image {
+  margin-bottom: 15px;
+}
+
+.half-price-column-amount {
+  color: $color--blue-light;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.half-price-column-metric {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.half-price-content .half-price-cta {
+  background: $color--blue-light;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 250px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
 /* Home-Page */
@@ -364,6 +421,7 @@ $colors: (
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
 
 body {
   font-family: "Poppins";

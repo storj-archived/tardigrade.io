@@ -1,5 +1,5 @@
 ---
-heading: "s3-compatible and Half the Price"
+heading: "S3-compatible and Half the Price."
 col1Heading: "Storage"
 col1Image: "/img/tar-ico-cloud.png"
 col1Amount: "$10.00"
