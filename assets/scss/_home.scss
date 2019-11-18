@@ -271,7 +271,7 @@
 }
 
 .cta-email {
-  width: 55%;
+  width: 45%;
   margin: 0px;
   border: 1px solid #96adbe;
   border-radius: 6px 0 0 6px;
@@ -302,7 +302,7 @@
   height: 40px;
   margin-top: -4px;
   margin-left: -5px;
-  width: 45%;
+  width: 40%;
 }
 
 .hiw-heading {
@@ -403,7 +403,7 @@
     margin-bottom: 60px;
 
     .col-md-6 {
-      border-right: none;
+      border-right: none !important;
     }
   }
 }
@@ -444,6 +444,7 @@
   margin: 0 auto;
   padding: 10px 0;
   letter-spacing: .25px;
+  font-family: "Poppins"
 }
 
 /* Home-Page */
@@ -684,6 +685,10 @@ a {
     width: 167px;
     margin-top: -4px;
   }
+}
+
+.simple-section-image {
+  margin-right: 15px;
 }
 
 .hiw-col {
@@ -1402,7 +1407,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .hero-prod-status {
-    margin-left: 35%;
+    margin-left: 36%;
   }
 }
 
