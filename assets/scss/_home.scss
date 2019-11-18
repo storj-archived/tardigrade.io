@@ -397,6 +397,10 @@
 @media only screen and (max-width: 991px) {
   .half-price-content {
     margin-bottom: 60px;
+
+    .col-md-6 {
+      border-right: none;
+    }
   }
 }
 
@@ -1097,7 +1101,7 @@ a {
   bottom: 26px;
   left: 56px;
   right: 0;
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item {
@@ -1232,6 +1236,12 @@ a {
   height: 120px;
   .text-center {
     margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-pre-footer {
+    height: 220px;
   }
 }
 
