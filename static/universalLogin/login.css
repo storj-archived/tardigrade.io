@@ -8,13 +8,18 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src:  url('../fonts/Inter-Regular.woff');
+}
+
 .login {
     display: flex;
 }
 
 .universal-login-area {
     padding: 80px 95px 0 95px;
-    font-family: inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f5f6fa;
     height: calc(100vh - 80px);
     min-width: calc(100% - 765px);
