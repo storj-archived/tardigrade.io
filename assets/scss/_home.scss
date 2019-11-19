@@ -156,6 +156,13 @@
   height: 608px;
   overflow: hidden;
 }
+
+
+#mce-responses a {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
 @media only screen and (max-width: 991px) {
 
   .hero-content {
@@ -172,7 +179,9 @@
 }
 
 .hero-image {
-  max-width: 700px;
+  max-width: 680px;
+  position: relative;
+  right: 100px;
 }
 
 @media only screen and (max-width: 991px) {
