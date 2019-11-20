@@ -10,7 +10,10 @@ body {
 
 @font-face {
     font-family: 'Inter';
-    src:  url('../fonts/Inter-Regular.woff');
+    font-display: swap;
+    src: url('./fonts/inter-regular.ttf?v=3.11') format('truetype'),
+         url('./fonts/inter-regular.woff2?v=3.11') format('woff2'),
+         url('./fonts/inter-regular.woff?v=3.11') format('woff');
 }
 
 .login {
