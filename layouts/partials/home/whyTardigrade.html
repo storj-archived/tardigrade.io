@@ -1,36 +1,39 @@
-  <div class="container">
-    <div class="row mt-5 p-3">
-      <div class="col text-center mt-5">
-        {{with .Site.GetPage "page" "whytardigrade"}}
-          <h1>{{.Params.heading}}</h1>
-        {{end}}
+  <div class="container-fluid lite-gray-bg">
+    <div class="container">
+      <div class="row p-3">
+        <div class="spacer90"></div>
+        <div class="col text-center mt-5">
+          {{with .Site.GetPage "page" "whytardigrade"}}
+            <h1>{{.Params.heading}}</h1>
+          {{end}}
+        </div>
+        <div class="row mt-5 y-tar-box">
+          {{range where .Site.Pages ".Params.class" "whytardigrade"}}
+            <div class="col-6 col-lg-3 text-left mt-5 p-3">
+              <img class="img-fluid" src="{{.Params.img}}" height="{{.Params.h}}" width="{{.Params.w}}" {{if eq .Weight 1}}style="margin-top:13px;"{{end}}/>
+              <h4 class="mt-5 y-tar-heading">
+                {{.Params.heading}}
+              </h4>
+              <p class="y-tar-description">
+                {{.Params.desc}}
+              </p>
+            </div>
+          {{end}}
+        </div>
       </div>
-      <div class="row mt-5 y-tar-box">
-        {{range where .Site.Pages ".Params.class" "whytardigrade"}}
-          <div class="col-6 col-lg-3 text-left mt-5 p-3">
-            <img class="img-fluid" src="{{.Params.img}}" height="{{.Params.h}}" width="{{.Params.w}}" {{if eq .Weight 1}}style="margin-top:13px;"{{end}}/>
-            <h4 class="mt-5 y-tar-heading">
-              {{.Params.heading}}
-            </h4>
-            <p class="y-tar-description">
-              {{.Params.desc}}                
-            </p>
-          </div>
-        {{end}}
-      </div>
-    </div>
-    <div class="row justify-content-center text-center">
-      <div class="col">
-        {{with .Site.GetPage "page" "whyTardigradeCta"}}
-          <a class="waitlist-middle" href={{.Params.link}}>
-            <h2 class="mt-5 join-y-tar">
-              {{.Params.ctaText}}
-              <img class="mb-1" src="/img/blue-carrot.svg" height="13" width="13"/>
-            </h2>
-          </a>
-        {{end}}
-      </div>
-          <div class="spacer125"></div>
+      <div class="row justify-content-center text-center">
+        <div class="col">
+          {{with .Site.GetPage "page" "whyTardigradeCta"}}
+            <a class="waitlist-middle" href={{.Params.link}}>
+              <h2 class="mt-5 join-y-tar">
+                {{.Params.ctaText}}
+                <img class="mb-1" src="/img/blue-carrot.svg" height="13" width="13"/>
+              </h2>
+            </a>
+          {{end}}
+        </div>
+            <div class="spacer125"></div>
+        </div>
       </div>
     </div>
   </div>
