@@ -15,17 +15,19 @@
       {{ partial "site-scripts" .}}
   </body>
 </html>
+
 <script type="text/javascript">
   window.onload = function() {
     var button = document.getElementById("mc-embedded-subscribe")
+    console.log("CUTTON:", button)
 
     button.onclick = function (event) {
       event.preventDefault()
-      var inputValue = document.getElementById("url-box").value
-      console.log("VALUE:", inputValue)
-      // analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
-      //   analytics.track("developer_sign_up", {});
-      // });
+      var inputValue = document.getElementsByClassName("cta-email")[0].value
+
+      analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+        analytics.track("developer_sign_up", {});
+      });
     }
   }
 </script>
