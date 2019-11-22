@@ -20,6 +20,7 @@
     var button = document.getElementById("mc-embedded-subscribe")
 
     button.onclick = function (event) {
+
       var inputValue = document.getElementsByClassName("cta-email")[0].value
 
       analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
