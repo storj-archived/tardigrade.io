@@ -21,11 +21,14 @@
 
     button.onclick = function (event) {
 
-      var inputValue = document.getElementsByClassName("cta-email")[0].value
+      if(document.getElementsByClassName("cta-email")[0]) {
 
-      analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
-        analytics.track("developer_sign_up", {});
-      });
+        var inputValue = document.getElementsByClassName("cta-email")[0].value
+
+        analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+          analytics.track("developer_sign_up", {});
+        });
+      }
     }
   }
 </script>
