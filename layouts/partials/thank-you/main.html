@@ -1,0 +1,28 @@
+<div class="lite-gray-bg container-fluid thank-you">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="spacer125"></div>
+      <div class="col-lg-4 thank-you__content">
+        {{ with .Site.GetPage "thankYou" }}
+        <h2 class="thank-you__heading">
+          {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+        </h2>
+        <div class="spacer20"></div>
+        <div class="thank-you__msg">
+          {{ .Params.content}}
+        </div>
+        <div class="spacer20"></div>
+        <a href="/waitlist">
+          <p class="thank-you__cta">
+          {{ .Params.cta}}
+          </p>
+        </a>
+        {{ end }}
+      </div>
+      <div class="col-lg-4 offset-2 thank-you__mascot">
+
+      </div>
+    </div>
+  </div>
+  <div class="spacer125"></div>
+</div>

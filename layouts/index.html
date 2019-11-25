@@ -17,18 +17,56 @@
 
 <script type="text/javascript">
   window.onload = function() {
+    // form in hero
     var button = document.getElementById("mc-embedded-subscribe")
 
     button.onclick = function (event) {
+      event.preventDefault()
 
       if(document.getElementsByClassName("cta-email")[0]) {
 
-        var inputValue = document.getElementsByClassName("cta-email")[0].value
+        var inputValue = document.getElementsByClassName("cta-email")[0].value;
+        var errElm = document.getElementById("mce-error-response");
 
-        analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
-          analytics.track("developer_sign_up", {});
-        });
+        console.log("err:", errElm)
+
+        if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+              // display error message
+              errElm.setAttribute("style", "display:flex;");
+              return;
+        } else {
+          errElm.setAttribute("style", "display:none;");
+
+          analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+            analytics.track("developer_sign_up", {});
+            window.location = "/thank-you"
+          });
+        }
       }
     }
+
+    // form above footer
+    if(document.getElementsByClassName("cta-btm-join")[0]) {
+      var buttomButton = document.getElementsByClassName("cta-btm-join")[0]
+
+      buttomButton.onclick = function (event) {
+
+        if(document.getElementsByClassName("cta-btm-email")[0]) {
+
+          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
+
+          if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+                // display error message
+                // errElm.setAttribute("class", "row");
+                // return;
+            }
+
+          analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+            analytics.track("developer_sign_up", {});
+          });
+        }
+      }
+    }
+
   }
 </script>
