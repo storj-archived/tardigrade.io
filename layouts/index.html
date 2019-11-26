@@ -28,14 +28,17 @@
         var inputValue = document.getElementsByClassName("cta-email")[0].value;
         var errElm = document.getElementById("mce-error-response");
 
-        console.log("err:", errElm)
-
         if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
               // display error message
-              errElm.setAttribute("style", "display:flex;");
-              return;
+          if(errElm) {
+            errElm.setAttribute("style", "display:flex;");
+          }
+          return;
         } else {
-          errElm.setAttribute("style", "display:none;");
+          //remove error message
+          if(errElm) {
+            errElm.setAttribute("style", "display:none;");
+          }
 
           analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
             analytics.track("developer_sign_up", {});
@@ -50,20 +53,29 @@
       var buttomButton = document.getElementsByClassName("cta-btm-join")[0]
 
       buttomButton.onclick = function (event) {
-
+        event.preventDefault()
         if(document.getElementsByClassName("cta-btm-email")[0]) {
 
           var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
-
+          var errElm = document.getElementById("mce-error-response-bottom");
+          
           if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
                 // display error message
-                // errElm.setAttribute("class", "row");
-                // return;
+                if(errElm) {
+                  errElm.setAttribute("style", "display:flex;");
+                }
+                return;
+          } else if(inputValue && inputValue.length < 0 && !inputValue.includes("@")) {
+            // remove error message
+            if(errElm) {
+              errElm.setAttribute("style", "display:none;");
             }
 
-          analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
-            analytics.track("developer_sign_up", {});
-          });
+            analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+              analytics.track("developer_sign_up", {});
+              window.location = "/thank-you"
+            });
+          }
         }
       }
     }
