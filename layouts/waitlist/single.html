@@ -31,15 +31,22 @@
     button.onclick = function (event) {
       var inputValue = document.getElementById("mce-EMAIL").value
 
-      if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
-            // display error message
-            errElm.setAttribute("class", "row");
-            return;
-        }
+      var errElm = document.getElementById("mce-error-response");
 
-      analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
-        analytics.track("developer_sign_up", {});
-      });
+      if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+        console.log("HIT")
+            if(errElm) {
+              console.log("EOOR:", errElm)
+              errElm.setAttribute("style", "display:flex;");
+            }
+            return;
+      } else {
+
+        analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+          analytics.track("developer_sign_up", {});
+          window.location = "/thank-you"
+        });
+      }
     }
   }
 </script>
