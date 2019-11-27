@@ -3,11 +3,27 @@
 
 class Satellite {
     constructor(container, svg, title, subtitle, checkmark) {
-        this.container = container;
-        this.svg = svg;
-        this.title = title;
-        this.subtitle = subtitle;
-        this.checkmark = checkmark;
+        this.container = document.getElementById(container);
+        this.svg = document.getElementById(svg);
+        this.title = document.getElementById(title);
+        this.subtitle = document.getElementById(subtitle);
+        this.checkmark = document.getElementById(checkmark);
+    }
+
+    selectSatellite() {
+        this.container.className = 'selected-container';
+        this.svg.classList.add('selected-image');
+        this.title.className = 'selected-title';
+        this.subtitle.className = 'selected-subtitle';
+        this.checkmark.classList.replace('checkmark', 'selected-checkmark');
+    }
+
+    unselectSatellite() {
+        this.container.className = 'satellite-container';
+        this.svg.classList.replace('selected-image', this.svg.id);
+        this.title.className = 'satellite-name';
+        this.subtitle.className = 'storj-logo-text';
+        this.checkmark.classList.replace('selected-checkmark', 'checkmark');
     }
 }
 
@@ -19,52 +35,27 @@ const europeSatellite = new Satellite('europe-container', 'europe-svg-path', 'eu
     'europe-subtitle', 'europe-checkmark');
 
 function selectUSSatellite() {
-    unselectSatellite(europeSatellite);
-    unselectSatellite(asiaSatellite);
+    europeSatellite.unselectSatellite();
+    asiaSatellite.unselectSatellite();
 
-    selectSatellite(usSatellite);
+    usSatellite.selectSatellite();
     setIframeSource('https://us-central-1.tardigrade.io/login');
 }
 
 function selectAsiaSatellite() {
-    unselectSatellite(europeSatellite);
-    unselectSatellite(usSatellite);
+    europeSatellite.unselectSatellite();
+    usSatellite.unselectSatellite();
 
-    selectSatellite(asiaSatellite);
+    asiaSatellite.selectSatellite();
     setIframeSource('https://asia-east-1.tardigrade.io/login');
 }
 
 function selectEuropeSatellite() {
-    unselectSatellite(usSatellite);
-    unselectSatellite(asiaSatellite);
+    usSatellite.unselectSatellite();
+    asiaSatellite.unselectSatellite();
 
-    selectSatellite(europeSatellite);
+    europeSatellite.selectSatellite();
     setIframeSource('https://europe-west-1.tardigrade.io/login');
-}
-
-function selectSatellite(satellite) {
-    document.getElementById(satellite.container).className = 'selected-container';
-    document.getElementById(satellite.svg).classList.add('selected-image');
-    document.getElementById(satellite.title).className = 'selected-title';
-    document.getElementById(satellite.subtitle).className = 'selected-subtitle';
-    document.getElementById(satellite.checkmark).classList.replace('checkmark', 'selected-checkmark');
-}
-
-function unselectSatellite(satellite) {
-    document.getElementById(satellite.container).className = 'satellite-container';
-    switch (satellite.svg) {
-        case 'europe-svg-path':
-            document.getElementById(satellite.svg).classList.replace('selected-image', 'europe-svg-path');
-            break;
-        case 'asia-svg-path':
-            document.getElementById(satellite.svg).classList.replace('selected-image', 'asia-svg-path');
-            break;
-        default:
-            document.getElementById(satellite.svg).classList.replace('selected-image', 'us-svg-path');
-    }
-    document.getElementById(satellite.title).className = 'satellite-name';
-    document.getElementById(satellite.subtitle).className = 'storj-logo-text';
-    document.getElementById(satellite.checkmark).classList.replace('selected-checkmark', 'checkmark');
 }
 
 function setIframeSource(url) {
