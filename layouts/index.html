@@ -35,10 +35,6 @@
           }
           return;
         } else {
-          //remove error message
-          if(errElm) {
-            errElm.setAttribute("style", "display:none;");
-          }
 
           analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
             analytics.track("developer_sign_up", {});
@@ -58,18 +54,15 @@
 
           var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
           var errElm = document.getElementById("mce-error-response-bottom");
-          
+
+          console.log("CRIT:", inputValue, inputValue.length > 0, inputValue.includes("@"))
           if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
                 // display error message
                 if(errElm) {
                   errElm.setAttribute("style", "display:flex;");
                 }
                 return;
-          } else if(inputValue && inputValue.length < 0 && !inputValue.includes("@")) {
-            // remove error message
-            if(errElm) {
-              errElm.setAttribute("style", "display:none;");
-            }
+          } else if(inputValue && inputValue.length > 0 && inputValue.includes("@")) {
 
             analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
               analytics.track("developer_sign_up", {});
