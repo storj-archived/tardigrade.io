@@ -30,13 +30,10 @@
 
     button.onclick = function (event) {
       var inputValue = document.getElementById("mce-EMAIL").value
-
       var errElm = document.getElementById("mce-error-response");
 
       if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
-        console.log("HIT")
             if(errElm) {
-              console.log("EOOR:", errElm)
               errElm.setAttribute("style", "display:flex;");
             }
             return;

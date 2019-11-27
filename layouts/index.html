@@ -23,7 +23,7 @@
     button.onclick = function (event) {
       event.preventDefault()
 
-      if(document.getElementsByClassName("cta-email")[0]) {
+      if(document.getElementsByClassName("cta-email") && document.getElementsByClassName("cta-email")[0]) {
 
         var inputValue = document.getElementsByClassName("cta-email")[0].value;
         var errElm = document.getElementById("mce-error-response");
@@ -50,9 +50,9 @@
 
       buttomButton.onclick = function (event) {
         event.preventDefault()
-        if(document.getElementsByClassName("cta-btm-email")[0]) {
+        if(document.getElementsByClassName("cta-btm-email") && document.getElementsByClassName("cta-btm-email")[0]) {
 
-          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
+          var input = document.getElementsByClassName("cta-btm-email")[0].value
           var errElm = document.getElementById("mce-error-response-bottom");
 
           if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
