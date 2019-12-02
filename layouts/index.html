@@ -14,3 +14,62 @@
       {{ partial "site-scripts" .}}
   </body>
 </html>
+
+<script type="text/javascript">
+  window.onload = function() {
+    // form in hero
+    var button = document.getElementById("mc-embedded-subscribe")
+
+    button.onclick = function (event) {
+      event.preventDefault()
+
+      if(document.getElementsByClassName("cta-email") && document.getElementsByClassName("cta-email")[0]) {
+
+        var inputValue = document.getElementsByClassName("cta-email")[0].value;
+        var errElm = document.getElementById("mce-error-response");
+
+        if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+              // display error message
+          if(errElm) {
+            errElm.setAttribute("style", "display:flex;");
+          }
+          return;
+        } else {
+
+          analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+            analytics.track("developer_sign_up", {});
+            window.location = "/thank-you"
+          });
+        }
+      }
+    }
+
+    // form above footer
+    if(document.getElementsByClassName("cta-btm-join")[0]) {
+      var buttomButton = document.getElementsByClassName("cta-btm-join")[0]
+
+      buttomButton.onclick = function (event) {
+        event.preventDefault()
+        if(document.getElementsByClassName("cta-btm-email") && document.getElementsByClassName("cta-btm-email")[0]) {
+
+          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
+          var errElm = document.getElementById("mce-error-response-bottom");
+
+          if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+                if(errElm) {
+                  errElm.setAttribute("style", "display:flex;");
+                }
+                return;
+          } else {
+
+            analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+              analytics.track("developer_sign_up", {});
+              window.location = "/thank-you"
+            });
+          }
+        }
+      }
+    }
+
+  }
+</script>

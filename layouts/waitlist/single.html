@@ -24,3 +24,26 @@
     {{partial "site-scripts" .}}
   </body>
 </html>
+<script type="text/javascript">
+  window.onload = function() {
+    var button = document.getElementById("mc-embedded-subscribe")
+
+    button.onclick = function (event) {
+      var inputValue = document.getElementById("mce-EMAIL").value
+      var errElm = document.getElementById("mce-error-response");
+
+      if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+            if(errElm) {
+              errElm.setAttribute("style", "display:flex;");
+            }
+            return;
+      } else {
+
+        analytics.identify(analytics.user().anonymousId(), {email: inputValue}, {}, function() {
+          analytics.track("developer_sign_up", {});
+          window.location = "/thank-you"
+        });
+      }
+    }
+  }
+</script>
