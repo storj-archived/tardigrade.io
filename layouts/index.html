@@ -14,3 +14,31 @@
       {{ partial "site-scripts" .}}
   </body>
 </html>
+<script type="text/javascript">
+  window.onload = function() {
+    var button = document.getElementById("mc-embedded-subscribe")
+    console.log("button:", button)
+    button.onclick = function (event) {
+      console.log("EVENT", event)
+      event.preventDefault()
+      var inputValue = document.getElementById("mce-EMAIL").value
+      var errElm = document.getElementById("mce-error-response");
+      console.log("INTPUT:", errElm)
+
+      if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
+            if(errElm) {
+              console.log("ERROR HIT")
+
+              errElm.setAttribute("style", "display:flex;");
+            }
+            return;
+      } else {
+
+        // analytics.identify(analytics.user().anonymousId(), {email: inputValue, storj_newsletter: true}, {}, function() {
+        //   analytics.track("", {});
+        //   window.location = "/thank-you"
+        // });
+      }
+    }
+  }
+</script>
