@@ -1,0 +1,29 @@
+.thank-you {
+  .thank-you__content {
+    text-align: left;
+  }
+  .thank-you__heading {
+    font-size: 32px;
+  }
+  .thank-you__msg {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Roboto'
+  }
+  .thank-you__cta {
+    font-weight: 700;
+    font-size: 18px;
+    color: $color--blue-light;
+    .mb-1 {
+      position: relative;
+      top: 2px;
+    }
+  }
+  .thank-you__mascot {
+    background-image: url("/img/tardigrade-mascot.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 380px;
+  }
+}

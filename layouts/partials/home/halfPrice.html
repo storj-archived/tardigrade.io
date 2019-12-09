@@ -1,0 +1,56 @@
+  <div class="lite-gray-bg container-fluid">
+    <div class="container">
+      <div class="spacer125"></div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 half-price-content">
+          {{ with .Site.GetPage "halfPrice" }}
+          <h2 class="half-price-heading">
+            {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+          </h2>
+          <div class="spacer40"></div>
+          <div class="row">
+            <div class="col-md-6" style="border-right: 1px solid #979797">
+              <p class="half-price-column-heading">{{ .Params.col1Heading }}</p>
+              <img class="half-price-column-image" src="{{ .Params.col1Image }}" />
+              <h2 class="half-price-column-amount">{{ .Params.col1Amount }}</h2>
+              <p class="half-price-column-metric">{{ .Params.col1Metric }}</p>
+            </div>
+            <div class="col-md-6">
+              <p class="half-price-column-heading">{{ .Params.col2Heading }}</p>
+              <img class="half-price-column-image" src="{{ .Params.col2Image }}" />
+              <h2 class="half-price-column-amount">{{ .Params.col2Amount }}</h2>
+              <p class="half-price-column-metric">{{ .Params.col2Metric }}</p>
+            </div>
+          </div>
+          <div class="spacer40"></div>
+          <a href="/waitlist">
+            <p class="half-price-cta">
+            {{ .Params.cta}}
+            </p>
+          </a>
+          {{ end }}
+        </div>
+        <div class="col-lg-4 offset-2 why-tardigrade-section">
+          {{ with .Site.GetPage "whySection" }}
+          <h2 class="why-tardigrade-heading">
+            {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
+          </h2>
+          <p class="why-tardigrade-subheading">
+            {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
+          </p>
+          <div class="why-tardigrade-list-container">
+            <ul class="why-tardigrade-list">
+              {{ range where .Site.Pages ".Params.class" "why-item"}}
+              <li class="why-tardigrade-list-item">
+                <img class="why-tardigrade-list-img img-fluid" src="/img/check.svg" alt="benefits icon">
+                <h4 class="why-tardigrade-list-item-content">{{ .Params.content }}</h4>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+    <div class="spacer125"></div>
+  </div>

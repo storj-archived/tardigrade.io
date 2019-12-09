@@ -5,45 +5,46 @@
             <div class="spacer20"></div>
             {{ partial "nav" .}}
             <div class="row">
-            <div class="spacer30"></div>
-
-            <div class="col-xs-10 col-sm-10 col-lg-6">
+              <div class="spacer20"></div>
+              <div class="jumbotron hero-tardigrade-msg">
+                <div>
+                  <p class="hero-tardigrade-msg-left">Tardigrade is Powered by Storj Labs</p>
+                </div>
+                <div>
+                  <a target="_blank" href="https://storj.io" style="text-decoration: none">
+                    <p class="hero-tardigrade-msg-right">Visit Storj.io</p>
+                    <img class="hero-tardigrade-msg-img" src="/img/mini-storj-logo.png" />
+                    <img class="hero-tardigrade-msg-img" src="/img/chevron-right-white.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="spacer40"></div>
+              <div class="col-md-12 col-sm-12 col-lg-6 hero-content">
                 <div class="row">
                 {{with .Site.GetPage "page" "hero"}}
                     <div class="col-xs-11 hero-prod-status">CURRENTLY IN {{.Params.stage}}</div>
                 </div>
-
-
                 <h1 class="mt-4 hero-heading">{{.Params.headingLeft}}<br>{{.Params.headingRight}}</h1>
                 <div class="spacer30"></div>
-                <p class="white home-subheading">{{.Params.subheadingLeft}}<br>{{.Params.subheadingRight}}</p>
-                <div class="row ml-auto nomp">
-                    <div class="col-3">
-                        <ul class="white hero-listitems nomp">
-                        {{range .Params.leftBenefitsCol}}
-                            <li class="mt-2">{{.}}</li>
-                        {{end}}
-                        </ul>
+                <p class="white home-subheading">{{.Params.subheading}}</p>
+                <div class="spacer30"></div>
+                <form method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" method="post" class="validate" target="_blank" novalidate>
+                  <div class="cta-form" id="mc_embed_signup_scroll">
+                    <input type="email" placeholder="Email Address" name="EMAIL" class="cta-email" id="mce-EMAIL url-box cta-btm-email"  style="margin-top:-40px;">
+                    <button class="btn btn-primary cta-join-btn" name="subscribe" id="mc-embedded-subscribe" type="submit">Get Started</button>
+                  </div>
+                  <div style="color: #fff" id="mce-responses" class="clear">
+                    <div style="color: #fff;display:none;font-size:12px;" class="response p-2" id="mce-error-response">
+                      The email address you have prodived is not valid!
                     </div>
-                    <div class="col-4 offset-2" >
-                        <ul class="white hero-listitems">
-                        {{range .Params.rightBenefitsCol}}
-                            <li class="mt-2">{{.}}</li>
-                        {{end}}
-                        </ul>
-                    </div>
-                </div>
-                <div class="powered-by">
-                    <img src="{{.Params.poweredByIMG}}" height="40.89" width="105.15"/>
-                </div>
+                  </div>
+                </form>
             </div>
             <div class="col-sm-5 offset-1">
-                <img class="pl-5" src="{{.Params.heroIMG}}" height="95%" width="1200" />
+                <img class="pl-5 hero-image" src="{{.Params.heroIMG}}" height="95%" width="1200" />
             </div>
+
             {{end}}
         </div>
     </div>
-</div>  
-
-
-
+</div>

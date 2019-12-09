@@ -12,6 +12,15 @@
     line-height: 19px;
   }
 
+  #mce-responses {
+    .response {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 15px;
+    }
+  }
+
   &__form {
     &-wrapper {
       background: $color--white;

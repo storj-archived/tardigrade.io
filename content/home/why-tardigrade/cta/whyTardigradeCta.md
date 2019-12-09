@@ -1,5 +1,5 @@
 ---
 title: "why-tardigrade-cta"
-ctaText: Join the Waitlist
+ctaText: Get Started
 link: "/waitlist/"
 ---
