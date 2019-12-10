@@ -36,10 +36,11 @@
     }
     .press-kit__hero-bg {
       color: #fff;
-      background-image: url(../img/press-hero.png);
+      background: #000;
       background-size: cover;
       background-position: 0 30%;
       background-repeat: no-repeat;
+      overflow: hidden;
       @media only screen and (max-width: 991px) {
         background-position: 30% 0;
       }
@@ -55,6 +56,15 @@
          background-size: 430px;
          height: 700px;
        }
+      .press-kit__hero-img {
+        height: auto;
+        position: absolute;
+        float: right;
+        right: le;
+        width: 160%;
+        right: -75px;
+        bottom: -85%;
+      }
       .press-kit__hero-msg {
         @media only screen and (max-width: 768px) {
           text-align: center;
