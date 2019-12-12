@@ -1,6 +1,6 @@
 .partner-form-page {
   #partner-form {
-    margin-top: 15%;
+    margin-top: 210px;
     text-align: center;
     height: 100vh;
     .input {
@@ -30,20 +30,11 @@
       text-transform: uppercase;
       color: #212429;
     }
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      left: 15px;
-      position: relative;
-      opacity: 1; /* Firefox */
+    .custom-select {
+      width: 65%;
     }
-
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
-      left: 15px;
-      position: relative;
-    }
-
-    ::-ms-input-placeholder { /* Microsoft Edge */
-      left: 15px;
-      position: relative;
+    input {
+      padding-left: 15px;
     }
   }
 }
