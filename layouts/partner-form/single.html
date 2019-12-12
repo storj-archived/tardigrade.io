@@ -4,9 +4,6 @@
       {{ partial "head" . }}
     </head>
   <body>
-    <header>
-
-    </header>
       {{ partial "partner-form/form" .}}
     <footer>
       {{partial "footer" . }}
@@ -27,9 +24,14 @@
     var user = {partner_signup: true}
 
     nextButton.onclick = function (event) {
-      parent[index].setAttribute("style", "display:none;");
-      index = index + 1
-      parent[index].setAttribute("style", "display:flex;");
+      if(parent[index].classList.contains('partner-form-per-month')) {
+        nextButton.setAttribute("style", "display:none;");
+        submitButton.setAttribute("style", "display:block;");
+      } else {
+        parent[index].setAttribute("style", "display:none;");
+        index = index + 1
+        parent[index].setAttribute("style", "display:block;");
+      }
     }
 
     submitButton.onclick = function (event) {

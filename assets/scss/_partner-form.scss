@@ -1,0 +1,49 @@
+.partner-form-page {
+  #partner-form {
+    margin-top: 15%;
+    text-align: center;
+    height: 100vh;
+    .input {
+      background: #FFFFFF;
+      border: 1px solid #C5CBDB;
+      box-sizing: border-box;
+      border-radius: 6px;
+      width: 350px;
+      height: 56px;
+    }
+    .partner-form-button {
+      background: $color--blue-light;
+      border-radius: 6px;
+      border: none;
+      width: 182px;
+      height: 48px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .label {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #212429;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      left: 15px;
+      position: relative;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      left: 15px;
+      position: relative;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      left: 15px;
+      position: relative;
+    }
+  }
+}
