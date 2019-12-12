@@ -39,11 +39,42 @@
       parent[index].setAttribute("style", "display:flex;");
     }
 
-    var radios = document.getElementsByClassName('choice');
-    var val= "";
-    for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
-           val = radios[i].value;
+    var useCaseOptions = document.getElementsByClassName('use-case');
+
+    var useCaseVal= "";
+    for (var i = 0, length = useCaseOptions.length; i < length; i++) {
+        if (useCaseOptions[i].checked) {
+           useCaseVal = useCaseOptins[i].value;
+           break;
+         }
+    }
+
+    var dataAmountOptions = document.getElementsByClassName('data-amount');
+
+    var dataAmountVal= "";
+    for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
+        if (dataAmountOptions[i].checked) {
+           dataAmountVal = dataAmountOptions[i].value;
+           break;
+         }
+    }
+
+    var fileSizeOptions = document.getElementsByClassName('file-size');
+
+    var fileSizeVal= "";
+    for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
+        if (fileSizeOptions[i].checked) {
+           fileSizeVal = fileSizeOptions[i].value;
+           break;
+         }
+    }
+
+    var perMonthOptions = document.getElementsByClassName('per-month');
+
+    var perMonthVal= "";
+    for (var i = 0, length = perMonthOptions.length; i < length; i++) {
+        if (perMonthOptions[i].checked) {
+           perMonthVal = perMonthOptions[i].value;
            break;
          }
     }

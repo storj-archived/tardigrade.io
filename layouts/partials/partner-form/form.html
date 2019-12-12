@@ -23,22 +23,47 @@
     <input style="height:50%; font-size: 14px" value="" name="company"  placeholder="email" required="">
   </div>
 
-  <div style="display:none" class="partner-form-use-case step active form-group">
+  <div style="display:none" id="multiselect" class="partner-form-use-case step active form-group">
     <select class="custom-select" multiple>
-      <option class="choice" selected> Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
-      <option class="choice"> Temporary storage of data for transit between external file systems</option>
-      <option class="choice"> Transfer of large files over the internet</option>
-      <option class="choice"> General object storage</option>
-      <option class="choice"> Other</option>
+      <option class="use-case" selected> Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
+      <option class="use-case"> Temporary storage of data for transit between external file systems</option>
+      <option class="use-case"> Transfer of large files over the internet</option>
+      <option class="use-case"> General object storage</option>
+      <option class="use-case"> Other</option>
     </select>
   </div>
 
-  <div style="display:none"  class="partner-form-data-amount step active" id>
-    <input type="radio" class="choice">
-    <input type="radio" class="choice">
-    <input type="radio" class="choice">
-    <input type="radio" class="choice">
-    <input type="radio" class="choice">
+  <div style="display:none" class="partner-form-data-amount  step active form-group">
+    <select class="custom-select" multiple>
+      <option class="data-amount">< 1 TB</option>
+      <option class="data-amount">1-10 TB</option>
+      <option class="data-amount">10-100 TB</option>
+      <option class="data-amount">> 100 TB</option>
+      <option class="data-amount">> 1000 TPB</option>
+    </select>
+  </div>
+
+  <div style="display:none" class="partner-form-file-size  step active form-group">
+    <select class="custom-select" multiple>
+      <option class="file-size">< 1 MB</option>
+      <option class="file-size">1 GB</option>
+      <option class="file-size">10-100 GB</option>
+      <option class="file-size">> 100 GB</option>
+      <option class="file-size">> 1 TB</option>
+    </select>
+  </div>
+
+  <div style="display:none" class="partner-form-how-long step active">
+    <input style="height:50%; font-size: 14px" value="" name="company"  placeholder="email" required="">
+  </div>
+
+  <div style="display:none" class="partner-form-per-month  step active form-group">
+    <select class="custom-select" multiple>
+      <option class="per-month">Very infrequently</option>
+      <option class="per-month"> < 20% of the total data per month</option>
+      <option class="per-month">< 1 time per month</option>
+      <option class="per-month">Multiple times per month</option>
+    </select>
   </div>
 
   <div class="clear"><input style="height:50%; font-size: 14px" type="submit" value="Next" name="next" id="partner-form-next"></div>
