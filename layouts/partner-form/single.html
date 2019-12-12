@@ -19,19 +19,12 @@
     window.onload = function() {
 
     var nextButton = document.getElementById("partner-form-next");
+    var submitButton = document.getElementById("partner-form-submit");
     var parent = document.getElementsByClassName("step");
 
     var index = 0;
 
-    // var person = {}
-    // var cars = document.querySelectorAll(".so")
-    // for (i = 0; i < cars.length; i++) {
-    //   person[cars[i].name] = cars[i].value
-    // }
-    // console.log(person)
-
-    var multi = document.getElementById("multiselect");
-    console.log("MILTI:", multi)
+    var user = {partner_signup: true}
 
     nextButton.onclick = function (event) {
       parent[index].setAttribute("style", "display:none;");
@@ -39,45 +32,67 @@
       parent[index].setAttribute("style", "display:flex;");
     }
 
-    var useCaseOptions = document.getElementsByClassName('use-case');
+    submitButton.onclick = function (event) {
+      var userInput = document.querySelectorAll(".input")
 
-    var useCaseVal= "";
-    for (var i = 0, length = useCaseOptions.length; i < length; i++) {
-        if (useCaseOptions[i].checked) {
-           useCaseVal = useCaseOptins[i].value;
-           break;
-         }
+      for (i = 0; i < userInput.length; i++) {
+        user[userInput[i].name] = userInput[i].value
+      }
+
+      var useCaseOptions = document.getElementsByClassName('use-case');
+      var useCaseVal= "";
+      for (var i = 0, length = useCaseOptions.length; i < length; i++) {
+          if (useCaseOptions[i].selected) {
+             user.use_case = useCaseOptions[i].value;
+             break;
+           }
+      }
+
+      var dataAmountOptions = document.getElementsByClassName('data-amount');
+
+      var dataAmountVal= "";
+      for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
+          if (dataAmountOptions[i].selected) {
+             user.data_amount = dataAmountOptions[i].value;
+             break;
+           }
+      }
+
+      var fileSizeOptions = document.getElementsByClassName('file-size');
+
+      for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
+          if (fileSizeOptions[i].selected) {
+             user.file_sizes = fileSizeOptions[i].value;
+             break;
+           }
+      }
+
+      var perMonthOptions = document.getElementsByClassName('per-month');
+
+      for (var i = 0, length = perMonthOptions.length; i < length; i++) {
+          if (perMonthOptions[i].selected) {
+             user.download_times_per_month = perMonthOptions[i].value;
+             console.log("USER:", user)
+             console.log("VALUE:", perMonthOptions[i].value)
+             break;
+           }
+      }
+
+      console.log("PERSON:",user)
+
+      // analytics.identify(analytics.user().anonymousId(), {email: inputValue, storj_newsletter: true}, {}, function() {
+          // analytics.track("storj_newsletter", {});
+          // if(errElm) {
+          //   errElm.setAttribute("style", "display:none;");
+          // }
+          // if(succElm) {
+          //   succElm.setAttribute("style", "display:table-caption;");
+          // }
+      // });
     }
 
-    var dataAmountOptions = document.getElementsByClassName('data-amount');
 
-    var dataAmountVal= "";
-    for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
-        if (dataAmountOptions[i].checked) {
-           dataAmountVal = dataAmountOptions[i].value;
-           break;
-         }
-    }
 
-    var fileSizeOptions = document.getElementsByClassName('file-size');
-
-    var fileSizeVal= "";
-    for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
-        if (fileSizeOptions[i].checked) {
-           fileSizeVal = fileSizeOptions[i].value;
-           break;
-         }
-    }
-
-    var perMonthOptions = document.getElementsByClassName('per-month');
-
-    var perMonthVal= "";
-    for (var i = 0, length = perMonthOptions.length; i < length; i++) {
-        if (perMonthOptions[i].checked) {
-           perMonthVal = perMonthOptions[i].value;
-           break;
-         }
-    }
 
 
 

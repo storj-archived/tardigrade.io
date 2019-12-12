@@ -1,29 +1,29 @@
 <div method="post" id="partner-form">
   <div class="partner-form-name step active">
-    <input style="height:50%; font-size: 14px" value="" name="first name" placeholder="fist name" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="first_name" placeholder="fist name" required="">
   </div>
 
   <div style="display:none" class="partner-form-last-name step active">
-    <input style="height:50%; font-size: 14px" value="" name="last name" placeholder="last name" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="last_name" placeholder="last name" required="">
   </div>
 
   <div style="display:none" class="partner-form-title step active">
-    <input style="height:50%; font-size: 14px" value="" name="title" placeholder="title" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="title" placeholder="title" required="">
   </div>
 
   <div style="display:none" class="partner-form-company step active">
-    <input style="height:50%; font-size: 14px" value="" name="company" placeholder="company" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="company" placeholder="company" required="">
   </div>
 
   <div style="display:none" class="partner-form-company-website step active">
-    <input style="height:50%; font-size: 14px" value="" name="company"  placeholder="company website" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="company_website"  placeholder="company website" required="">
   </div>
 
   <div style="display:none" class="partner-form-company-email step active">
-    <input style="height:50%; font-size: 14px" value="" name="company"  placeholder="email" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="company_email"  placeholder="email" required="">
   </div>
 
-  <div style="display:none" id="multiselect" class="partner-form-use-case step active form-group">
+  <div style="display:none" class="partner-form-use-case step active form-group">
     <select class="custom-select" multiple>
       <option class="use-case" selected> Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
       <option class="use-case"> Temporary storage of data for transit between external file systems</option>
@@ -54,7 +54,7 @@
   </div>
 
   <div style="display:none" class="partner-form-how-long step active">
-    <input style="height:50%; font-size: 14px" value="" name="company"  placeholder="email" required="">
+    <input style="height:50%; font-size: 14px" class="input" value="" name="how_long_data_needed"  placeholder="email" required="">
   </div>
 
   <div style="display:none" class="partner-form-per-month  step active form-group">
@@ -67,4 +67,6 @@
   </div>
 
   <div class="clear"><input style="height:50%; font-size: 14px" type="submit" value="Next" name="next" id="partner-form-next"></div>
+  <div class="clear"><input style="height:50%; font-size: 14px" type="submit" value="Submit" name="submit" id="partner-form-submit"></div>
+
 </div>
