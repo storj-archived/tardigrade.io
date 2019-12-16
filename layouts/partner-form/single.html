@@ -28,9 +28,17 @@
         nextButton.setAttribute("style", "display:none;");
         submitButton.setAttribute("style", "display:block;");
       } else {
-        parent[index].setAttribute("style", "display:none;");
-        index = index + 1
-        parent[index].setAttribute("style", "display:block;");
+        var errElm = document.getElementsByClassName("error");
+
+        if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "") {
+          parent[index].setAttribute("style", "display:none;");
+          index = index + 1
+          parent[index].setAttribute("style", "display:block;");
+        } else {
+          if(errElm && errElm[index]) {
+            errElm[index].setAttribute("style", "display:block;");
+          }
+        }
       }
     }
 
@@ -82,15 +90,15 @@
 
       console.log("PERSON:",user)
 
-      // analytics.identify(analytics.user().anonymousId(), {email: inputValue, storj_newsletter: true}, {}, function() {
-          // analytics.track("storj_newsletter", {});
-          // if(errElm) {
-          //   errElm.setAttribute("style", "display:none;");
-          // }
-          // if(succElm) {
-          //   succElm.setAttribute("style", "display:table-caption;");
-          // }
-      // });
+      analytics.identify(analytics.user().anonymousId(), {user}, {}, function() {
+          analytics.track("storj_newsletter", {});
+          if(errElm) {
+            errElm.setAttribute("style", "display:none;");
+          }
+          if(succElm) {
+            succElm.setAttribute("style", "display:table-caption;");
+          }
+      });
     }
 
 

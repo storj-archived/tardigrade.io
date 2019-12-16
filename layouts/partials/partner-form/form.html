@@ -10,37 +10,43 @@
     <div class="partner-form-name step active">
       <label class="label">Your First Name</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="first_name" placeholder="first name" required="">
+      <input class="input" value="" id="input" name="first_name" placeholder="first name" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-last-name step active">
       <label class="label">Your Last Name</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="last_name" placeholder="last name" required="">
+      <input class="input" value="" id="input" name="last_name" placeholder="last name" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-title step active">
       <label class="label">Your Title</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="title" placeholder="title" required="">
+      <input class="input" value="" name="title" id="input" placeholder="title" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-company step active">
       <label class="label">Your Company</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="company" placeholder="company" required="">
+      <input class="input" value="" id="input" name="company" placeholder="company" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-company-website step active">
       <label class="label">Your Company Website</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="company_website"  placeholder="company website" required="">
+      <input class="input" value="" id="input" name="company_website"  placeholder="company website" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-company-email step active">
       <label class="label">Your Email</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="company_email"  placeholder="email" required="">
+      <input class="input" value="" id="input" name="company_email"  placeholder="email" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-use-case step active form-group">
@@ -53,6 +59,7 @@
         <option class="use-case">General object storage</option>
         <option class="use-case">Other</option>
       </select>
+      <div class="error">A choice must be made to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-data-amount  step active form-group">
@@ -65,6 +72,7 @@
         <option class="data-amount">> 100 TB</option>
         <option class="data-amount">> 1000 TPB</option>
       </select>
+      <div class="error">A choice must be made to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-file-size  step active form-group">
@@ -77,12 +85,14 @@
         <option class="file-size">> 100 GB</option>
         <option class="file-size">> 1 TB</option>
       </select>
+      <div class="error">A choice must be made to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-how-long step active">
       <label class="label">How long do you need the data to be stored on the network before you no longer need the data?</label>
       <div class="spacer15"></div>
-      <input class="input" value="" name="how_long_data_needed"  placeholder="Length" required="">
+      <input class="input" value="" id="input" name="how_long_data_needed"  placeholder="Length" required="">
+      <div class="error">This must be filled out to continue!</div>
     </div>
 
     <div style="display:none" class="partner-form-per-month step active form-group">
@@ -94,6 +104,7 @@
         <option class="per-month">< 1 time per month</option>
         <option class="per-month">Multiple times per month</option>
       </select>
+      <div class="error">A choice must be made to continue!</div>
     </div>
 
     <div>
