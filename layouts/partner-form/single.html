@@ -26,11 +26,10 @@
     nextButton.onclick = function (event) {
       if(parent[index].classList.contains('partner-form-per-month')) {
         nextButton.setAttribute("style", "display:none;");
-        submitButton.setAttribute("style", "display:block;");
+        submitButton.setAttribute("style", "display:inline-block;");
       } else {
         var errElm = document.getElementsByClassName("error");
-
-        if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "") {
+        if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "" || parent[index].querySelector(".custom-select")) {
           parent[index].setAttribute("style", "display:none;");
           index = index + 1
           parent[index].setAttribute("style", "display:block;");
@@ -88,17 +87,21 @@
            }
       }
 
+      user.timestamp = Math.floor((new Date()).getTime() / 1000)
+
       console.log("PERSON:",user)
 
-      analytics.identify(analytics.user().anonymousId(), {user}, {}, function() {
-          analytics.track("storj_newsletter", {});
-          if(errElm) {
-            errElm.setAttribute("style", "display:none;");
-          }
-          if(succElm) {
-            succElm.setAttribute("style", "display:table-caption;");
-          }
-      });
+      // timestamps with timezone
+
+      // analytics.identify(analytics.user().anonymousId(), {user}, {}, function() {
+      //     analytics.track("storj_newsletter", {});
+      //     if(errElm) {
+      //       errElm.setAttribute("style", "display:none;");
+      //     }
+      //     if(succElm) {
+      //       succElm.setAttribute("style", "display:table-caption;");
+      //     }
+      // });
     }
 
 

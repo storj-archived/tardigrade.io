@@ -1,8 +1,32 @@
+@-webkit-keyframes in {
+  0% { opacity: 0; visibility: hidden;  }
+  100% { opacity: 1; visibility: visible; }
+}
+
+@keyframes in {
+  0% { opacity: 0; visibility: hidden;  }
+  100% { transform: scale(1); opacity: 1; visibility: visible; }
+}
+
+@-webkit-keyframes out {
+  0% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes out {
+  0% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden;  }
+}
+
 .partner-form-page {
   #partner-form {
     margin-top: 210px;
     text-align: center;
     height: 100vh;
+    .step {
+      -webkit-animation: in 700ms ease both;
+      animation: in 700ms ease both;
+    }
     .input {
       background: #FFFFFF;
       border: 1px solid #C5CBDB;
