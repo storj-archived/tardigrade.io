@@ -21,12 +21,26 @@
     var parent = document.getElementsByClassName("step");
     var progressBar = document.getElementById("progress-bar");
     var errElm = document.getElementsByClassName("error");
+    var formStart = document.getElementById("start-wrapper");
+    var startButton = document.getElementById("partner-form-start");
+    var firstStep = document.getElementById("partner-form-name");
+    var progressBarWrapper = document.getElementById("progress-bar-wrapper");
+    var stepButtons = document.getElementById("step-buttons");
 
 
     var index = 0;
     var progressBarValue = 8.333;
 
     var user = {partner_signup: true}
+
+    if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
+      startButton.onclick = function (event) {
+        formStart.setAttribute("style", "display:none;");
+        firstStep.setAttribute("style", "display:inherit;");
+        progressBarWrapper.setAttribute("style", "display:inherit;");
+        stepButtons.setAttribute("style", "display:inherit;");
+      }
+    }
 
     nextButton.onclick = function (event) {
 
@@ -36,7 +50,6 @@
           backButton.setAttribute("style", "display:inline-block;");
         }
         if(progressBar) {
-          console.log("VALUE:", progressBar.innerHTML)
           progressBar.innerHTML = index + 2
           progressBarValue = progressBarValue + 8.333;
           progressBar.setAttribute("style", `width: ${progressBarValue}%`);
@@ -75,9 +88,8 @@
       user.use_case = [];
       for (var i = 0, length = useCaseOptions.length; i < length; i++) {
           if (useCaseOptions[i].selected) {
-             user.use_case.push(useCaseOptions[i].value);
-             break;
-           }
+            user.use_case.push(useCaseOptions[i].value);
+          }
       }
 
       var dataAmountOptions = document.getElementsByClassName('data-amount');
@@ -104,8 +116,6 @@
       for (var i = 0, length = perMonthOptions.length; i < length; i++) {
         if (perMonthOptions[i].selected) {
            user.download_times_per_month = perMonthOptions[i].value;
-           console.log("USER:", user)
-           console.log("VALUE:", perMonthOptions[i].value)
            break;
          }
       }

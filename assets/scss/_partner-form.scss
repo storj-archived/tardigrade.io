@@ -92,6 +92,12 @@
       width: 350px;
       margin: 0 auto;
       margin-top: 40px;
+      -webkit-animation: in 900ms ease both;
+      animation: in 900ms ease both;
+    }
+    #step-buttons {
+      -webkit-animation: in 900ms ease both;
+      animation: in 900ms ease both;
     }
     input {
       padding-left: 15px;

@@ -7,7 +7,16 @@
     </div>
   </div>
   <div id="partner-form">
-    <div class="partner-form-name step active">
+    <div id="start-wrapper">
+      <h2>Want to learn more about becoming</h2>
+      <h2>a Tardigrade.io Open-Source Partner?</h2>
+      <div class="spacer30"></div>
+      <h2>Great! Let's get started.</h2>
+      <div class="spacer25"></div>
+      <input type="submit" value="Start" name="start" id="partner-form-start" class ="partner-form-button">
+    </div>
+
+    <div style="display:none" id="partner-form-name" class="step active">
       <label class="label">Your First Name *</label>
       <div class="spacer15"></div>
       <input class="input" value="" id="input" name="first_name" placeholder="first name" required="">
@@ -124,14 +133,14 @@
       <div class="error">A choice must be made to continue!</div>
     </div>
 
-    <div>
+    <div style="display:none" id="step-buttons">
       <div class="spacer25"></div>
       <input style="display:none" type="submit" value="Back" name="back" id="partner-form-back">
       <input type="submit" value="Next" name="next" class="partner-form-button" id="partner-form-next">
       <input style="display:none" type="submit" value="Submit" name="submit" class="partner-form-button" id="partner-form-submit">
     </div>
 
-    <div class="progress">
+    <div style="display:none" id="progress-bar-wrapper" class="progress">
       <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 8.3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
     </div>
 
