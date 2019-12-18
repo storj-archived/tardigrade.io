@@ -27,7 +27,7 @@
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
     }
-    .input {
+    .required, .not-required {
       background: #FFFFFF;
       border: 1px solid #C5CBDB;
       box-sizing: border-box;

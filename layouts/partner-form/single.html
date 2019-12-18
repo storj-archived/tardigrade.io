@@ -43,26 +43,26 @@
     }
 
     nextButton.onclick = function (event) {
-
-      if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "" || parent[index].querySelector(".custom-select")) {
-        parent[index].setAttribute("style", "display:none;");
-        if(backButton) {
-          backButton.setAttribute("style", "display:inline-block;");
-        }
-        if(progressBar) {
-          progressBar.innerHTML = index + 2
-          progressBarValue = progressBarValue + 8.333;
-          progressBar.setAttribute("style", `width: ${progressBarValue}%`);
-        }
-        index = index + 1
-        parent[index].setAttribute("style", "display:block;");
-        if(parent[index].classList.contains('partner-form-per-month')) {
-          nextButton.setAttribute("style", "display:none;");
-          submitButton.setAttribute("style", "display:inline-block;");
-        }
-      } else {
-        if(errElm && errElm[index]) {
+      if(parent[index]) {
+        if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "" && errElm && errElm[index]) {
           errElm[index].setAttribute("style", "display:block;");
+        } else {
+          console.log("HIT", index)
+          parent[index].setAttribute("style", "display:none;");
+          if(backButton) {
+            backButton.setAttribute("style", "display:inline-block;");
+          }
+          if(progressBar) {
+            progressBar.innerHTML = index + 2
+            progressBarValue = progressBarValue + 8.333;
+            progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+          }
+          index = index + 1
+          parent[index].setAttribute("style", "display:block;");
+          if(parent[index].classList.contains('partner-form-per-month')) {
+            nextButton.setAttribute("style", "display:none;");
+            submitButton.setAttribute("style", "display:inline-block;");
+          }
         }
       }
     }
@@ -120,11 +120,10 @@
          }
       }
 
+      // timestamps with timezone
       user.timestamp = Math.floor((new Date()).getTime() / 1000)
 
       console.log("PERSON:",user)
-
-      // timestamps with timezone
 
       // analytics.identify(analytics.user().anonymousId(), {user}, {}, function() {
       //     analytics.track("storj_newsletter", {});
