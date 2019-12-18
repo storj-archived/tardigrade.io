@@ -42,26 +42,50 @@
       }
     }
 
+    function nextStep(currentStep) {
+      currentStep.setAttribute("style", "display:none;");
+      if(backButton) {
+        backButton.setAttribute("style", "display:inline-block;");
+      }
+      if(progressBar) {
+        progressBar.innerHTML = index + 2
+        progressBarValue = progressBarValue + 8.333;
+        progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+      }
+      index = index + 1
+      currentStep.setAttribute("style", "display:block;");
+      if(currentStep.classList.contains('partner-form-per-month')) {
+        nextButton.setAttribute("style", "display:none;");
+        submitButton.setAttribute("style", "display:inline-block;");
+      }
+    }
+
     nextButton.onclick = function (event) {
-      if(parent[index]) {
-        if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "" && errElm && errElm[index]) {
+
+
+      if(parent[index] && errElm && errElm[index]) {
+        if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
           errElm[index].setAttribute("style", "display:block;");
         } else {
-          console.log("HIT", index)
-          parent[index].setAttribute("style", "display:none;");
-          if(backButton) {
-            backButton.setAttribute("style", "display:inline-block;");
-          }
-          if(progressBar) {
-            progressBar.innerHTML = index + 2
-            progressBarValue = progressBarValue + 8.333;
-            progressBar.setAttribute("style", `width: ${progressBarValue}%`);
-          }
-          index = index + 1
-          parent[index].setAttribute("style", "display:block;");
-          if(parent[index].classList.contains('partner-form-per-month')) {
-            nextButton.setAttribute("style", "display:none;");
-            submitButton.setAttribute("style", "display:inline-block;");
+          var userEmailInput = parent[index].querySelector(".user-email");
+          if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
+            errElm[index].setAttribute("style", "display:block;");
+          } else {
+            parent[index].setAttribute("style", "display:none;");
+            if(backButton) {
+              backButton.setAttribute("style", "display:inline-block;");
+            }
+            if(progressBar) {
+              progressBar.innerHTML = index + 2
+              progressBarValue = progressBarValue + 8.333;
+              progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+            }
+            index = index + 1
+            parent[index].setAttribute("style", "display:block;");
+            if(parent[index].classList.contains('partner-form-per-month')) {
+              nextButton.setAttribute("style", "display:none;");
+              submitButton.setAttribute("style", "display:inline-block;");
+            }
           }
         }
       }
@@ -77,7 +101,7 @@
     }
 
     submitButton.onclick = function (event) {
-      var userInput = document.querySelectorAll(".input")
+      var userInput = document.querySelectorAll(".user-input")
 
       for (i = 0; i < userInput.length; i++) {
         user[userInput[i].name] = userInput[i].value

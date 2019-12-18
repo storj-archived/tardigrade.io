@@ -27,7 +27,7 @@
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
     }
-    .required, .not-required {
+    .user-input {
       background: #FFFFFF;
       border: 1px solid #C5CBDB;
       box-sizing: border-box;
@@ -58,8 +58,8 @@
     .label {
       display: block;
       font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
+      font-weight: 600;
+      font-size: 16px;
       line-height: 13px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
