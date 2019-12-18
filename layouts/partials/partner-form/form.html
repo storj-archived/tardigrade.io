@@ -8,57 +8,74 @@
   </div>
   <div id="partner-form">
     <div class="partner-form-name step active">
-      <label class="label">Your First Name</label>
+      <label class="label">Your First Name *</label>
       <div class="spacer15"></div>
       <input class="input" value="" id="input" name="first_name" placeholder="first name" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-last-name step active">
       <label class="label">Your Last Name</label>
       <div class="spacer15"></div>
       <input class="input" value="" id="input" name="last_name" placeholder="last name" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-title step active">
-      <label class="label">Your Title</label>
+      <label class="label">Your Title *</label>
       <div class="spacer15"></div>
       <input class="input" value="" name="title" id="input" placeholder="title" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-company step active">
-      <label class="label">Your Company</label>
+      <label class="label">Your Company *</label>
       <div class="spacer15"></div>
       <input class="input" value="" id="input" name="company" placeholder="company" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-company-website step active">
       <label class="label">Your Company Website</label>
       <div class="spacer15"></div>
       <input class="input" value="" id="input" name="company_website"  placeholder="company website" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-company-email step active">
-      <label class="label">Your Email</label>
+      <label class="label">Your Email *</label>
       <div class="spacer15"></div>
       <input class="input" value="" id="input" name="company_email"  placeholder="email" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <div class="error">Please fill this in</div>
     </div>
 
-    <div style="display:none" class="partner-form-use-case step active form-group">
+    <div style="display:none" class="partner-form-company-number step active">
+      <label class="label">Best number we can reach you at</label>
+      <div class="spacer15"></div>
+      <input class="input" value="" id="input" name="number"  placeholder="number" required="">
+      <div class="error">Please fill this in</div>
+    </div>
+
+    <div  class="partner-form-use-case step active form-group">
       <label class="label">Tell us more about your use case please, which of the following applies:</label>
       <div class="spacer15"></div>
-      <select class="custom-select" multiple>
-        <option class="use-case" selected>Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
-        <option class="use-case">Temporary storage of data for transit between external file systems</option>
-        <option class="use-case">Transfer of large files over the internet</option>
-        <option class="use-case">General object storage</option>
-        <option class="use-case">Other</option>
-      </select>
+      <div class="multiple-select-wrapper">
+        <select class="custom-select multiple-select" multiple>
+          <option class="use-case" selected>Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
+        </select>
+        <select class="custom-select multiple-select" multiple>
+          <option class="use-case">Temporary storage of data for transit between external file systems</option>
+        </select>
+        <select class="custom-select multiple-select" multiple>
+          <option class="use-case">Transfer of large files over the internet</option>
+        </select>
+        <select class="custom-select multiple-select" multiple>
+          <option class="use-case">General object storage</option>
+        </select>
+        <select class="custom-select multiple-select" multiple>
+          <option class="use-case">Other</option>
+        </select>
+      </div>
       <div class="error">A choice must be made to continue!</div>
     </div>
 
@@ -91,8 +108,8 @@
     <div style="display:none" class="partner-form-how-long step active">
       <label class="label">How long do you need the data to be stored on the network before you no longer need the data?</label>
       <div class="spacer15"></div>
-      <input class="input" value="" id="input" name="how_long_data_needed"  placeholder="Length" required="">
-      <div class="error">This must be filled out to continue!</div>
+      <input class="input" value="" id="input" name="how_long_data_needed"  placeholder="length of time" required="">
+      <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-per-month step active form-group">
@@ -112,6 +129,10 @@
       <input style="display:none" type="submit" value="Back" name="back" id="partner-form-back">
       <input type="submit" value="Next" name="next" class="partner-form-button" id="partner-form-next">
       <input style="display:none" type="submit" value="Submit" name="submit" class="partner-form-button" id="partner-form-submit">
+    </div>
+
+    <div class="progress">
+      <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 8.3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
     </div>
 
   </div>

@@ -24,8 +24,8 @@
     text-align: center;
     height: 100vh;
     .step {
-      -webkit-animation: in 700ms ease both;
-      animation: in 700ms ease both;
+      -webkit-animation: in 900ms ease both;
+      animation: in 900ms ease both;
     }
     .input {
       background: #FFFFFF;
@@ -66,10 +66,30 @@
       color: #212429;
     }
     .custom-select {
-      width: 65%;
+      width: 50%;
+    }
+    .multiple-select-wrapper {
+      border: 1px solid #ced4da;
+      width: 60%;
+      margin: 0 auto;
+      .multiple-select {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 0;
+        outline: none;
+      }
     }
     .error {
       display: none;
+      position: relative;
+      top: 11px;
+      color: red;
+    }
+    .progress {
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 40px;
     }
     input {
       padding-left: 15px;

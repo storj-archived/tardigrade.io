@@ -19,28 +19,37 @@
     var backButton = document.getElementById("partner-form-back");
     var submitButton = document.getElementById("partner-form-submit");
     var parent = document.getElementsByClassName("step");
+    var progressBar = document.getElementById("progress-bar");
+    var errElm = document.getElementsByClassName("error");
+
 
     var index = 0;
+    var progressBarValue = 8.333;
 
     var user = {partner_signup: true}
 
     nextButton.onclick = function (event) {
-      if(parent[index].classList.contains('partner-form-per-month')) {
-        nextButton.setAttribute("style", "display:none;");
-        submitButton.setAttribute("style", "display:inline-block;");
+
+      if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "" || parent[index].querySelector(".custom-select")) {
+        parent[index].setAttribute("style", "display:none;");
+        if(backButton) {
+          backButton.setAttribute("style", "display:inline-block;");
+        }
+        if(progressBar) {
+          console.log("VALUE:", progressBar.innerHTML)
+          progressBar.innerHTML = index + 2
+          progressBarValue = progressBarValue + 8.333;
+          progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+        }
+        index = index + 1
+        parent[index].setAttribute("style", "display:block;");
+        if(parent[index].classList.contains('partner-form-per-month')) {
+          nextButton.setAttribute("style", "display:none;");
+          submitButton.setAttribute("style", "display:inline-block;");
+        }
       } else {
-        var errElm = document.getElementsByClassName("error");
-        if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "" || parent[index].querySelector(".custom-select")) {
-          parent[index].setAttribute("style", "display:none;");
-          if(backButton) {
-            backButton.setAttribute("style", "display:inline-block;");
-          }
-          index = index + 1
-          parent[index].setAttribute("style", "display:block;");
-        } else {
-          if(errElm && errElm[index]) {
-            errElm[index].setAttribute("style", "display:block;");
-          }
+        if(errElm && errElm[index]) {
+          errElm[index].setAttribute("style", "display:block;");
         }
       }
     }
@@ -116,11 +125,6 @@
       //     }
       // });
     }
-
-
-
-
-
 
   }
 </script>
