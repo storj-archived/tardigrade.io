@@ -39,10 +39,21 @@
       background: $color--blue-light;
       border-radius: 6px;
       border: none;
-      width: 182px;
+      width: 142px;
       height: 48px;
       color: #fff;
       font-weight: bold;
+      outline: none;
+    }
+    #partner-form-back {
+      background: #fff;
+      border-radius: 6px;
+      border: 2px solid $color--blue-light;
+      width: 142px;
+      height: 48px;
+      color: $color--blue-light;
+      font-weight: bold;
+      outline: none;
     }
     .label {
       display: block;

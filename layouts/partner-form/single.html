@@ -16,6 +16,7 @@
     window.onload = function() {
 
     var nextButton = document.getElementById("partner-form-next");
+    var backButton = document.getElementById("partner-form-back");
     var submitButton = document.getElementById("partner-form-submit");
     var parent = document.getElementsByClassName("step");
 
@@ -31,6 +32,9 @@
         var errElm = document.getElementsByClassName("error");
         if(parent[index].querySelector("#input") && parent[index].querySelector("#input").value !== "" || parent[index].querySelector(".custom-select")) {
           parent[index].setAttribute("style", "display:none;");
+          if(backButton) {
+            backButton.setAttribute("style", "display:inline-block;");
+          }
           index = index + 1
           parent[index].setAttribute("style", "display:block;");
         } else {
@@ -39,6 +43,15 @@
           }
         }
       }
+    }
+
+    backButton.onclick = function (event) {
+      if(index == 1 && backButton) {
+        backButton.setAttribute("style", "display:none");
+      }
+      parent[index].setAttribute("style", "display:none;");
+      index = index - 1
+      parent[index].setAttribute("style", "display:block;");
     }
 
     submitButton.onclick = function (event) {
