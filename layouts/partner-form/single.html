@@ -72,9 +72,10 @@
 
       var useCaseOptions = document.getElementsByClassName('use-case');
       var useCaseVal= "";
+      user.use_case = [];
       for (var i = 0, length = useCaseOptions.length; i < length; i++) {
           if (useCaseOptions[i].selected) {
-             user.use_case = useCaseOptions[i].value;
+             user.use_case.push(useCaseOptions[i].value);
              break;
            }
       }
@@ -101,12 +102,12 @@
       var perMonthOptions = document.getElementsByClassName('per-month');
 
       for (var i = 0, length = perMonthOptions.length; i < length; i++) {
-          if (perMonthOptions[i].selected) {
-             user.download_times_per_month = perMonthOptions[i].value;
-             console.log("USER:", user)
-             console.log("VALUE:", perMonthOptions[i].value)
-             break;
-           }
+        if (perMonthOptions[i].selected) {
+           user.download_times_per_month = perMonthOptions[i].value;
+           console.log("USER:", user)
+           console.log("VALUE:", perMonthOptions[i].value)
+           break;
+         }
       }
 
       user.timestamp = Math.floor((new Date()).getTime() / 1000)
