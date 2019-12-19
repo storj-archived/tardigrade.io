@@ -1,3 +1,5 @@
+
+
 @-webkit-keyframes in {
   0% { opacity: 0; visibility: hidden;  }
   100% { opacity: 1; visibility: visible; }
@@ -47,6 +49,7 @@
       color: #fff;
       font-weight: bold;
       outline: none;
+      cursor: pointer;
     }
     #partner-form-back {
       background: #fff;
@@ -57,6 +60,7 @@
       color: $color--blue-light;
       font-weight: bold;
       outline: none;
+      cursor: pointer;
     }
     .label {
       display: block;
@@ -104,6 +108,51 @@
     }
     input {
       padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-form-page {
+    #partner-form {
+      #start-wrapper {
+        h2 {
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+      .label {
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-form-page {
+    #partner-form {
+      margin: 140px auto;
+      width: 92%;
+      #start-wrapper {
+        h2 {
+          font-size: 15px;
+          line-height: 27px;
+        }
+      }
+      .progress, .user-input  {
+        width: 90%;
+      }
+
+      .custom-select {
+        width: 90%;
+        overflow-x: scroll;
+      }
+      .multiple-select-wrapper {
+        width: 90%;
+        .multiple-select {
+          overflow-x: scroll;
+        }
+      }
     }
   }
 }
