@@ -31,7 +31,7 @@
     var index = 0; // to be increased an decreased depending on button clicked
     var progressBarValue = 8.333; // 100 divided by the 12 steps
 
-    var user = {partner_form: true}
+    var partner_form = {partner_form: true}
 
     if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
       // remove beginning message and start process
@@ -95,15 +95,15 @@
       var userInput = document.querySelectorAll(".user-input") // all non-selecter user inputs
 
       for (i = 0; i < userInput.length; i++) {
-        user[userInput[i].name] = userInput[i].value
+        partner_form[userInput[i].name] = userInput[i].value
       }
 
       var useCaseOptions = document.getElementsByClassName('use-case');
       if(useCaseOptions) {
-        user.use_case = [];
+        partner_form.use_case = [];
         for (var i = 0, length = useCaseOptions.length; i < length; i++) {
           if (useCaseOptions[i].selected) {
-            user.use_case.push(useCaseOptions[i].value);
+            partner_form.use_case.push(useCaseOptions[i].value);
           }
         }
       }
@@ -113,7 +113,7 @@
       if(dataAmountOptions) {
         for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
           if (dataAmountOptions[i].selected) {
-             user.data_amount = dataAmountOptions[i].value;
+             partner_form.data_amount = dataAmountOptions[i].value;
              break;
           }
         }
@@ -124,36 +124,36 @@
       if(fileSizeOptions) {
         for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
           if (fileSizeOptions[i].selected) {
-           user.file_sizes = fileSizeOptions[i].value;
+           partner_form.file_sizes = fileSizeOptions[i].value;
            break;
           }
         }
       }
 
       var perMonthOptions = document.getElementsByClassName('per-month');
-
+s
       if(perMonthOptions) {
         for (var i = 0, length = perMonthOptions.length; i < length; i++) {
           if (perMonthOptions[i].selected) {
-             user.download_times_per_month = perMonthOptions[i].value;
+             partner_form.download_times_per_month = perMonthOptions[i].value;
              break;
            }
         }
       }
 
       // timestamps with timezone
-      user.timestamp = Math.floor((new Date()).getTime() / 1000)
+      partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
 
       analytics.identify(analytics.user().anonymousId(),
-        {email: user.email, timestamp: user.timestamp, partner_form: true},
+        {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
         {integrations: {'All': false, 'Customer.io': true}}, function() {
           analytics.track("partner-form", {});
       });
 
       analytics.identify(analytics.user().anonymousId(),
-        user,
+        partner_form,
         {integrations: {'All': false, 'postgresSelfHosted': true}}, function() {
-          window.location = "/thank-you"
+          window.location = "/partner-thank-you"
       });
     }
 
