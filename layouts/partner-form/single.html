@@ -76,6 +76,23 @@
       }
     }
 
+    // deselect multiple select optin on double click
+    var useCaseOptions = document.getElementsByClassName('use-case');
+
+    if(useCaseOptions) {
+      for (var i = 0; i < useCaseOptions.length; i++) {
+
+        var option = useCaseOptions[i]
+        option.ondblclick = function(e) {
+         var target = e.target || e.srcElement
+         if(target && target.selected) {
+           target.selected = false
+         }
+        }
+      }
+    }
+
+
     backButton.onclick = function (event) {
       // no back button on first step
       if(index == 1 && backButton) {
@@ -98,7 +115,6 @@
         partner_form[userInput[i].name] = userInput[i].value
       }
 
-      var useCaseOptions = document.getElementsByClassName('use-case');
       if(useCaseOptions) {
         partner_form.use_case = [];
         for (var i = 0, length = useCaseOptions.length; i < length; i++) {
@@ -131,7 +147,7 @@
       }
 
       var perMonthOptions = document.getElementsByClassName('per-month');
-s
+
       if(perMonthOptions) {
         for (var i = 0, length = perMonthOptions.length; i < length; i++) {
           if (perMonthOptions[i].selected) {
