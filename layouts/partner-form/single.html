@@ -76,19 +76,16 @@
       }
     }
 
-    // deselect multiple select optin on double click
-    var useCaseOptions = document.getElementsByClassName('use-case');
+    // toggle use case options
+    window.onmousedown = function (e) {
+      var el = e.target;
+      if (el.tagName.toLowerCase() == "option" &&
+          el.parentNode.hasAttribute("multiple") &&
+          el.className == "use-case") {
 
-    if(useCaseOptions) {
-      for (var i = 0; i < useCaseOptions.length; i++) {
-
-        var option = useCaseOptions[i]
-        option.ondblclick = function(e) {
-         var target = e.target || e.srcElement
-         if(target && target.selected) {
-           target.selected = false
-         }
-        }
+        e.preventDefault();
+        // toggle selection
+        el.hasAttribute("selected") ? el.removeAttribute("selected") : el.setAttribute("selected", "")
       }
     }
 
@@ -114,6 +111,8 @@
       for (i = 0; i < userInput.length; i++) {
         partner_form[userInput[i].name] = userInput[i].value
       }
+
+      var useCaseOptions = document.getElementsByClassName('use-case');
 
       if(useCaseOptions) {
         partner_form.use_case = [];
@@ -159,6 +158,7 @@
 
       // timestamps with timezone
       partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
+
 
       analytics.identify(analytics.user().anonymousId(),
         {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
