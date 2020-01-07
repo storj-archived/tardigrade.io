@@ -47,16 +47,18 @@
         background-position: 30% 0;
       }
        @media only screen and (max-width: 768px) {
-         background-image: url(../img/tar-ill-press.png);
-         background-position: 100% 430px;
-         background-size: 620px;
-         height: 850px;
+         background: radial-gradient(236.22% 100.97% at 50% -4.33%, #0059D1 0%, #000000 100%);
+         height: 712px;
        }
-
-       @media only screen and (max-width: 600px) {
-         background-position: 100% 390px;
-         background-size: 430px;
-         height: 700px;
+       .col-md-7 {
+         @media only screen and (max-width: 768px) {
+           background-image: url(../img/tar-ill-press.png);
+           background-position: 100% 270px;
+           background-size: 620px;
+           height: 710px;
+           background-repeat: no-repeat;
+           position: absolute;
+         }
        }
       .press-kit__hero-img {
         height: auto;
@@ -76,6 +78,9 @@
           max-height: 130%;
           width: 190%;
           right: -165px;
+        }
+        @media only screen and (max-width: 768px) {
+          display: none;
         }
       }
       .press-kit__hero-msg {
