@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body class="page">
+    <header>
+      {{ partial "apps/hero" .}}
+    </header>
+      {{partial "apps/main" . }}
+    <footer>
+        {{partial "footer" . }}
+    </footer>
+
+    {{partial "site-scripts" .}}
+  </body>
+</html>
