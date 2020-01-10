@@ -1,0 +1,16 @@
+
+.apps__hero-container {
+  background-image: url("/img/apps-bg.png");
+  background-size: cover;
+  max-height: 1200px;
+  .btn-group-vertical>.btn, .btn-group>.btn{
+    color: $color--blue-light;
+  }
+  .navlink, .navlink a {
+    color: $color--blue-light;
+  }
+  .nav-join {
+    border-color: $color--blue-light;
+    color: $color--blue-light;
+  }
+}
