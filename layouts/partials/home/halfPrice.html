@@ -31,24 +31,7 @@
           {{ end }}
         </div>
         <div class="col-lg-4 offset-2 why-tardigrade-section">
-          {{ with .Site.GetPage "whySection" }}
-          <h2 class="why-tardigrade-heading">
-            {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
-          </h2>
-          <p class="why-tardigrade-subheading">
-            {{ replace .Params.subheading "\n" "<br/>" | safeHTML}}
-          </p>
-          <div class="why-tardigrade-list-container">
-            <ul class="why-tardigrade-list">
-              {{ range where .Site.Pages ".Params.class" "why-item"}}
-              <li class="why-tardigrade-list-item">
-                <img class="why-tardigrade-list-img img-fluid" src="/img/check.svg" alt="benefits icon">
-                <h4 class="why-tardigrade-list-item-content">{{ .Params.content }}</h4>
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-          {{end}}
+
         </div>
       </div>
     </div>

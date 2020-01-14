@@ -1,12 +1,12 @@
 ---
 title : "home-hero"
-headingLeft : "Get Started with"
-headingRight: "Decentralized Storage"
+headingLeft : "Decentralized Cloud"
+headingRight: "Storage is the Future"
 stage : "BETA"
 stageDescriptor:  ""
-subheading : "We’re just weeks away from production launch of the faster, safer, more resilient cloud. Upgrade your storage layer and join thousands of developers already making the switch."
+subheading : "Upgrade your storage layer and join thousands of developers already making the switch."
 poweredByIMG : "/img/poweredbystorj.svg"
-heroIMG : "/img/tardigrade-cloud.png"
+heroIMG : "/img/tar-ill-illustration.svg"
 leftBenefitsCol :
 - Affordable
 - Performant
