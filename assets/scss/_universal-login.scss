@@ -8,13 +8,6 @@ body {
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Inter';
-    font-display: swap;
-    src: url('./fonts/inter-regular.ttf?v=3.11') format('truetype'),
-         url('./fonts/inter-regular.woff2?v=3.11') format('woff2'),
-         url('./fonts/inter-regular.woff?v=3.11') format('woff');
-}
 
 .login {
     display: flex;
@@ -24,7 +17,7 @@ body {
     padding: 80px 95px 0 95px;
     font-family: 'Inter', sans-serif;
     background-color: #f5f6fa;
-    height: calc(100vh - 80px);
+    height: 100vh;
     min-width: calc(100% - 765px);
 }
 
@@ -35,6 +28,7 @@ body {
     letter-spacing: -0.100741px;
     color: #252525;
     user-select: none;
+    font-family: 'Inter', sans-serif;
 }
 
 .sub-title {
@@ -43,6 +37,7 @@ body {
     margin: 10px 0 30px 0;
     color: rgba(37, 37, 37, 0.7);
     user-select: none;
+    font-family: 'Inter', sans-serif;
 }
 
 .info-link {
@@ -97,9 +92,10 @@ body {
 .satellite-name {
     font-size: 16px;
     line-height: 21px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 5px;
     color: #494949;
+    font-family: 'Inter', sans-serif;
 }
 
 .logo-area {
@@ -115,6 +111,7 @@ body {
     font-size: 12px;
     line-height: 15px;
     color: #5e6978;
+    font-family: 'Inter', sans-serif;
 }
 
 .metadata-info {
