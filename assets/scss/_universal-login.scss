@@ -8,7 +8,6 @@ body {
     margin: 0;
 }
 
-
 .login {
     display: flex;
 }
@@ -17,7 +16,7 @@ body {
     padding: 80px 95px 0 95px;
     font-family: 'Inter', sans-serif;
     background-color: #f5f6fa;
-    height: 100vh;
+    height: calc(100vh - 80px);
     min-width: calc(100% - 765px);
 }
 
@@ -43,6 +42,7 @@ body {
 .info-link {
     text-decoration: underline;
     cursor: pointer;
+    color: #007bff;
 }
 
 .satellite-container {
@@ -108,7 +108,7 @@ body {
 }
 
 .storj-logo-text {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
     color: #5e6978;
     font-family: 'Inter', sans-serif;
@@ -156,7 +156,7 @@ body {
 
 .selected-subtitle {
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
 }
 
@@ -171,6 +171,10 @@ body {
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+*, ::before, ::after {
+    box-sizing: unset;
 }
 
 @media screen and (max-width: 1090px) {
