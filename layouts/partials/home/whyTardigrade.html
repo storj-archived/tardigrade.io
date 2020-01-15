@@ -3,8 +3,10 @@
       <div class="row p-3">
         <div class="spacer90"></div>
 
-        <div class="col-lg-4 why-tardigrade-section">
+        <div class="col-lg-4 why-tardigrade-section-wrapper">
           {{ with .Site.GetPage "whySection" }}
+		  <div class="why-tardigrade-section">
+			  <div class="spacer40"></div>
           <h2 class="why-tardigrade-heading">
             {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
           </h2>
@@ -16,20 +18,26 @@
                 <h4 class="why-tardigrade-list-item-content">{{ .Params.content }}</h4>
               </li>
               {{ end }}
+							<div class="spacer40"></div>
             </ul>
           </div>
+		  	</div>
           {{end}}
         </div>
+				{{ with .Site.GetPage "superior-cloud" }}
         <div class="col-lg-5 offset-3 superior-cloud-section">
+					<h2>{{ .Params.header }}</h2>
           <div class="row">
             {{range where .Site.Pages ".Params.class" "superior-cloud"}}
             <div class="col-xs-12 col-lg-6 text-center">
-              <h3 class="m-5 superior-cloud-heading">{{.Params.heading}}</h3>
-              <p class="m-5 superior-cloud-subheading">{{.Params.desc}}</p>
+              <h3 class="superior-cloud-heading">{{.Params.heading}}</h3>
+							<img src="{{.Params.img}}" />
+              <p class="superior-cloud-subheading">{{.Params.desc}}</p>
             </div>
             {{end}}
           </div>
         </div>
+				{{end}}
       </div>
       </div>
     </div>

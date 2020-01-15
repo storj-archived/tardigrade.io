@@ -1,6 +1,6 @@
 ---
 title: "superior-cloud"
-img : "/img/tar-ico-performance.svg"
+img : "/img/tar-ico-globe-network.svg"
 heading : Globally Distributed
 desc : Data is broken into smaller pieces and stored on a global network.
 class : "superior-cloud"

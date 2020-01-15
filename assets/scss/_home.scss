@@ -327,7 +327,6 @@
   letter-spacing: 0.25px;
   color: #ffffff;
   width: 270px;
-  border-radius: 0px 4px 4px 0px;
   height: 40px;
   margin-top: -4px;
   margin-left: -5px;
@@ -393,7 +392,6 @@
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
-  height: 350px;
   width: 319px;
 }
 
@@ -445,6 +443,12 @@
   font-size: 16px;
   line-height: 40px;
   margin-left: 10px;
+}
+
+.superior-cloud-section {
+	.superior-cloud-heading {
+		font-size: 18px;
+	}
 }
 
 .half-price-content {
