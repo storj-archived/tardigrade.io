@@ -1,10 +1,10 @@
-<div class="lite-gray-bg dev-in-mind container-fluid">
+<div class="dev-in-mind container-fluid">
   <div class="container">
     <div class="spacer125"></div>
-    <div class="row d-flex justify-content-center">
-      <div class="col-lg-4 half-price-content">
+    <div class="row">
+      <div class="col-lg-6 dev-in-mind__content">
         {{ with .Site.GetPage "devInMind" }}
-        <h2 class="half-price-heading">
+        <h2 class="dev-in-mind-heading">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
         </h2>
         <div class="spacer40"></div>
@@ -13,14 +13,14 @@
           </p>
         <div class="spacer40"></div>
         <a href="/waitlist">
-          <p class="half-price-cta">
+          <p class="dev-in-mind__cta">
           {{ .Params.cta}}
           </p>
         </a>
         {{ end }}
       </div>
-      <div class="col-sm-5 offset-1 dev-in-mind__image-wrapper">
-          <img class="pl-5 dev-in-mind__image" src="/img/tar-gui-cli.png" width="1200" />
+      <div class="col-sm-5 col-lg-6 dev-in-mind__image-wrapper">
+          <img class="pl-5 dev-in-mind__image" src="/img/tar-gui-cli.png" />
       </div>
     </div>
   </div>

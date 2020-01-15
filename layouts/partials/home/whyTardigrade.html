@@ -30,8 +30,8 @@
           <div class="row">
             {{range where .Site.Pages ".Params.class" "superior-cloud"}}
             <div class="col-xs-12 col-lg-6 text-center">
-              <h3 class="superior-cloud-heading">{{.Params.heading}}</h3>
 							<img src="{{.Params.img}}" />
+              <h3 class="superior-cloud-heading">{{.Params.heading}}</h3>
               <p class="superior-cloud-subheading">{{.Params.desc}}</p>
             </div>
             {{end}}
