@@ -351,10 +351,12 @@
   text-align: center;
 }
 
-.hiw-cta-wrapper {
-	display: flex;
+
+
+.hiw-cta-link {
+	display: inline-flex;
   justify-content: center;
-	box-shadow: 0px 4px 4px rbga(0, 0, 0, 0.25);
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.034);
 }
 
 .hiw-cta__arrow {
@@ -395,6 +397,34 @@
   line-height: 19px;
   text-align: center;
 }
+
+.hiw-arrow {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url("/img/next-step-arrow.svg");
+  height: 30px;
+  width: 70px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 999px) {
+  .hiw-arrow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url("/img/next-step-arrow-down.png");
+    height: 70px;
+    width: 30px;
+		-webkit-transform: rotate(-90deg);
+		  -moz-transform: rotate(-90deg);
+		  -o-transform: rotate(-90deg);
+		  -ms-transform: rotate(-90deg);
+		  transform: rotate(-90deg);
+			margin: 20px 30px;
+  }
+}
+
+// @media only screen (max-width: 574px) {
+//
+// }
 
 .why-tardigrade {
   position: relative;
@@ -582,6 +612,7 @@
 	background-image: url("/img/tar-web-grey-bg.png");
 	background-size: cover;
 	background-position: 0px 0px;
+	position: relative;
 }
 
 .dev-in-mind__content .dev-in-mind__cta {
@@ -599,8 +630,15 @@
 	float: left;
 }
 
+.dev-in-mind__image-wrapper {
+	position: relative;
+}
+
 .dev-in-mind__image {
-	height: 410px;
+	height: 470px;
+	position: absolute;
+	right: -80px;
+	bottom: 10px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -614,8 +652,18 @@
 		top: 670px;
 	}
 
+	.dev-in-mind__content {
+		text-align: center;
+	}
+
 	.dev-in-mind__content .dev-in-mind__cta {
 		float: none;
+	}
+
+	.dev-in-mind__image {
+		position: relative;
+		right: 0;
+		bottom: 0;
 	}
 }
 
@@ -1616,24 +1664,7 @@ a {
   }
 }
 
-.hiw-arrow {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-image: url("/img/next-step-arrow.svg");
-  height: 30px;
-  width: 70px;
-}
 
-@media only screen and (min-width: 321px) and (max-width: 999px) {
-  .hiw-arrow {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: -5px;
-    background-image: url("/img/next-step-arrow-down.png");
-    height: 70px;
-    width: 30px;
-  }
-}
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   .hiw-arrow {
