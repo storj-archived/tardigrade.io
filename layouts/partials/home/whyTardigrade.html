@@ -25,7 +25,7 @@
           {{end}}
         </div>
 				{{ with .Site.GetPage "superior-cloud" }}
-        <div class="col-lg-5 offset-3-lg superior-cloud-section">
+        <div class="col-lg-5 offset-lg-2 superior-cloud-section">
 					<h2>{{ .Params.header }}</h2>
           <div class="row">
             {{range where .Site.Pages ".Params.class" "superior-cloud"}}

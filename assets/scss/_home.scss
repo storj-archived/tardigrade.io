@@ -144,8 +144,8 @@
 .bg-gradiant {
   background-image: url("/img/tar-web-product-hero-bg.png");
   background-size: cover;
-  background-position: 0px 0px;
-  height: 1000px;
+	background-position: bottom;
+	height: 1045px;
 }
 
 .nomp,
@@ -330,7 +330,16 @@
   height: 40px;
   margin-top: -4px;
   margin-left: -5px;
-  width: 40%;
+  width: 32%;
+	text-align: left;
+	padding-left: 30px;
+}
+
+.cta-join-btn-arrow {
+	position: relative;
+	right: 7%;
+	width: 15px;
+	bottom: 2px;
 }
 
 .hiw-heading {
@@ -429,8 +438,7 @@
 .why-tardigrade {
   position: relative;
   background: transparent;
-  bottom: 540px;
-  margin-bottom: -410px;
+  bottom: 580px;
 }
 
 .why-tardigrade-section {
@@ -520,7 +528,7 @@
 }
 
 .half-price-content {
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -528,16 +536,13 @@
   .half-price-content {
     margin-bottom: 60px;
 		text-align: center;
-
-    .col-md-6 {
-      border-right: none !important;
-    }
   }
 }
 
 
 .half-price-heading {
   font-size: 28px;
+	text-align: center;
 }
 
 .half-price-column-heading {
@@ -561,7 +566,7 @@
   font-weight: 700;
 }
 
-.half-price-content .half-price-cta {
+.half-price-cta {
   background: $color--blue-light;
   color: #fff;
   border-radius: 6px;
@@ -573,7 +578,6 @@
   letter-spacing: .25px;
   font-family: "Poppins";
 	text-align: center;
-	float: left;
 }
 
 .half-price-image {
@@ -590,7 +594,6 @@
 		left: 0;
 		right: 0;
 		text-align: center;
-		top: 760px;
 	}
 
 	.half-price-content .half-price-cta {
@@ -649,7 +652,6 @@
 		left: 0;
 		right: 0;
 		text-align: center;
-		top: 670px;
 	}
 
 	.dev-in-mind__content {
@@ -959,7 +961,8 @@ a {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 19px;
+  line-height: 25px;
+	width: 80%;
 }
 
 .usecase-link-wrapper {
