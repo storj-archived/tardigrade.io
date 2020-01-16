@@ -1,8 +1,8 @@
 <div class="dev-in-mind container-fluid">
   <div class="container">
     <div class="spacer125"></div>
-    <div class="row">
-      <div class="col-lg-6 dev-in-mind__content">
+    <div class="row row-fluid">
+      <div class="col-lg-6 col-sm-push-6  dev-in-mind__content">
         {{ with .Site.GetPage "devInMind" }}
         <h2 class="dev-in-mind-heading">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
@@ -12,14 +12,14 @@
             {{ replace .Params.desc "\n" "<br/>" | safeHTML}}
           </p>
         <div class="spacer40"></div>
-        <a href="/waitlist">
+        <a class="dev-in-mind__cta-wrapper" href="/waitlist">
           <p class="dev-in-mind__cta">
           {{ .Params.cta}}
           </p>
         </a>
         {{ end }}
       </div>
-      <div class="col-sm-5 col-lg-6 dev-in-mind__image-wrapper">
+      <div class="col-sm-5 col-sm-pull-6 col-lg-6 dev-in-mind__image-wrapper">
           <img class="pl-5 dev-in-mind__image" src="/img/tar-gui-cli.png" />
       </div>
     </div>

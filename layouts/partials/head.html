@@ -40,10 +40,13 @@
   }
   return cookies;
 }
-  console.log("COOKIE:",getCookies() )
     analytics.load("a8QhJNlHReg1Cw3ilHuD3DpvPWrNrJHa");
     analytics.page();
-console.log("COOKIE:",getCookies() )
+
+		analytics.ready(function() {
+			console.log(window.analytics.user().traits().crossDomainId)
+	});
+
     }}();
 </script>
 <!-- Start VWO Smartcode (SPA) -->
