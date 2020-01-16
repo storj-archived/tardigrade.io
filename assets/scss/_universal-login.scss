@@ -17,7 +17,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #f5f6fa;
     height: calc(100vh - 80px);
-    min-width: calc(100% - 765px);
+    min-width: calc(55% - 190px);
 }
 
 .title {
@@ -31,7 +31,7 @@ body {
 }
 
 .sub-title {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     margin: 10px 0 30px 0;
     color: rgba(37, 37, 37, 0.9);
@@ -123,8 +123,7 @@ body {
 }
 
 .iframe {
-    max-width: 575px;
-    width: 575px;
+    width: 45%;
     max-height: 100vh;
     border: none;
 }
