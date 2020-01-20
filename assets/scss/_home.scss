@@ -148,6 +148,13 @@
 	height: 1045px;
 }
 
+// @media only screen and (max-width: 991px) {
+// 	.bg-gradiant {
+// 		background-image: url("/img/tar-web-product-hero-bg-sm.png");
+// 	}
+// }
+
+
 .nomp,
 .inner-hero-wrapper {
   margin: 0 !important;
@@ -342,6 +349,13 @@
 	bottom: 2px;
 }
 
+@media only screen and (max-width: 768px) {
+  .cta-join-btn {
+    width: 40%;
+  }
+}
+
+
 .hiw-heading {
   font-family: "Poppins";
   font-style: normal;
@@ -485,23 +499,31 @@
 }
 
 .why-tardigrade-list-item {
-  display: flex;
   font-weight: 700;
   font-size: 14px;
-  display: flex;
-  justify-content: center;
+	position: relative;
+	display: flex;
 }
 
 .why-tardigrade-list-img {
-  position: relative;
-  bottom: 5px;
+	position: absolute;
+	top: 10px;
+	right: 72%;
+	width: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+	.why-tardigrade-list-img {
+		right: 100%;
+	}
+
 }
 
 .why-tardigrade-list-item-content {
   color: #000;
   font-size: 16px;
   line-height: 40px;
-  margin-left: 10px;
+  margin-left: 110px;
 }
 
 .superior-cloud-section {
@@ -964,6 +986,13 @@ a {
   line-height: 25px;
 	width: 80%;
 }
+
+@media only screen and (max-width: 991px) {
+	.home-subheading {
+		width: 100%;
+	}
+}
+
 
 .usecase-link-wrapper {
   border-left: 3px solid #dcdcdc;

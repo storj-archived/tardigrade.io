@@ -6,14 +6,15 @@
         <div class="col-lg-4 col-sm-12 why-tardigrade-section-wrapper">
           {{ with .Site.GetPage "whySection" }}
 		  <div class="why-tardigrade-section">
-			  <div class="spacer40"></div>
+			  <div class="spacer30"></div>
           <h2 class="why-tardigrade-heading">
             {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
           </h2>
+					<div class="spacer20"></div>
           <div class="why-tardigrade-list-container text-center">
             <ul class="why-tardigrade-list">
               {{ range where .Site.Pages ".Params.class" "why-item"}}
-              <li class="why-tardigrade-list-item text-center">
+              <li class="why-tardigrade-list-item">
                 <img class="why-tardigrade-list-img img-fluid" src="/img/check.svg" alt="benefits icon">
                 <h4 class="why-tardigrade-list-item-content">{{ .Params.content }}</h4>
               </li>
