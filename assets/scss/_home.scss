@@ -584,13 +584,19 @@
   text-align: center;
 }
 
-
 @media only screen and (max-width: 991px) {
-  .half-price-content {
-    margin-bottom: 60px;
-		text-align: center;
-  }
+	.half-price-section {
+		width: 50%;
+	}
 }
+
+
+// @media only screen and (max-width: 991px) {
+//   .half-price-content {
+//     margin-bottom: 60px;
+// 		text-align: center;
+//   }
+// }
 
 
 .half-price-heading {
