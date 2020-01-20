@@ -584,7 +584,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 600px) {
 	.half-price-section {
 		width: 50%;
 	}
@@ -676,6 +676,13 @@
 	background-position: 0px 0px;
 	position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+	.dev-in-mind {
+		background-image: url("/img/tar-web-grey-bg-sm.png");
+	}
+}
+
 
 .dev-in-mind__content .dev-in-mind__cta {
   background: $color--blue-light;
@@ -973,6 +980,8 @@ a {
   margin-right: 15px;
 }
 
+
+
 .hiw-col {
   display: flex;
   justify-content: center;
@@ -982,6 +991,13 @@ a {
 .lite-gray-bg {
   background-color: #f4f6f8;
 }
+
+@media only screen and (max-width: 600px) {
+	.hiw {
+		background: #fff;
+	}
+}
+
 
 .lite-blu {
   color: #2582ff;
