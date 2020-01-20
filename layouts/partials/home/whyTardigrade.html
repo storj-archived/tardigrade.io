@@ -27,11 +27,12 @@
         </div>
 				{{ with .Site.GetPage "superior-cloud" }}
         <div class="col-lg-5 offset-lg-2 superior-cloud-section">
-					<h2>{{ .Params.header }}</h2>
+					<h2 class="superior-cloud__header">{{ .Params.header }}</h2>
           <div class="row">
+						<div class="spacer30"></div>
             {{range where .Site.Pages ".Params.class" "superior-cloud"}}
             <div class="col-xs-12 col-lg-6 text-center">
-							<img src="{{.Params.img}}" />
+							<img class="superior-cloud__img" src="{{.Params.img}}" />
               <h3 class="superior-cloud-heading">{{.Params.heading}}</h3>
               <p class="superior-cloud-subheading">{{.Params.desc}}</p>
             </div>
