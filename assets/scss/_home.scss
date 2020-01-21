@@ -683,6 +683,13 @@
 .half-price-image {
 	width: 460px;
 	height: 225px;
+	display: block;
+}
+
+.half-price-image-resp {
+	display: none;
+	width: 460px;
+	height: 225px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -707,6 +714,14 @@
 	.half-price-image {
 		height: 100%;
 		width: 100%;
+		display: none;
+	}
+
+
+	.half-price-image-resp {
+		height: 100%;
+		width: 100%;
+		display: block;
 	}
 }
 
@@ -724,9 +739,9 @@
 
 @media only screen and (max-width: 768px) {
 	.dev-in-mind {
-		// background-image: url("/img/tar-web-grey-bg-sm.png");
 		background-image: none;
 		position: relative;
+		padding-left: 0;
 	}
 
 	.dev-in-mind__responsive-mobile-bg {
@@ -770,6 +785,15 @@
 	position: absolute;
 	right: -80px;
 	bottom: 10px;
+	display: block;
+}
+
+.dev-in-mind__image-resp {
+	height: 470px;
+	position: absolute;
+	right: -80px;
+	bottom: 10px;
+	display: none;
 }
 
 @media only screen and (max-width: 991px) {
@@ -793,9 +817,16 @@
 	}
 
 	.dev-in-mind__image {
+		display: none;
+	}
+
+	.dev-in-mind__image-resp {
 		position: relative;
 		right: 0;
 		bottom: 0;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
 	}
 }
 
@@ -1102,7 +1133,6 @@ a {
   font-size: 18px;
   line-height: 25px;
 	width: 80%;
-	display: block;
 }
 
 .home-subheading-resp {
@@ -1114,7 +1144,7 @@ a {
 	display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
 	.home-subheading {
 		display: none;
 	}
@@ -1694,6 +1724,11 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+
+	.use-case {
+		padding-left: 0;
+	}
+
 	.use-case-top-heading {
 		display: none;
 	}
