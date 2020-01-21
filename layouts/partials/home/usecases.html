@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="row mt-5">
-          <div class="col-sm-6 col-md-4 use-case-list" style="height:250px;">
+          <div class="col-sm-5 col-md-4 offset-lg-1 offset-sm-1 use-case-list" style="height:250px;">
             {{range where .Site.Pages ".Params.class" "usecase"}}
             <div class="pl-3 {{if eq .Params.isActive true}}usecase-link-wrapper-active{{else}}usecase-link-wrapper{{end}}" >
               <a  class="nav-link"

@@ -453,9 +453,20 @@
   }
 }
 
-// @media only screen (max-width: 574px) {
-//
-// }
+@media only screen and (max-width: 578px) {
+	.hiw-image-wrapper {
+		flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+	}
+
+	.hiw-image {
+		width: 100%;
+	}
+
+	.d-block {
+		display: none !important;
+	}
+}
 
 .why-tardigrade {
 	position: absolute;
@@ -702,7 +713,7 @@
 
 .dev-in-mind {
 	background-image: url("/img/tar-web-grey-bg.png");
-	background-size: cover;
+	background-size: auto;
 	background-position: 0px 0px;
 	position: relative;
 }
@@ -729,6 +740,8 @@
 }
 
 
+
+
 .dev-in-mind__content .dev-in-mind__cta {
   background: $color--blue-light;
   color: #fff;
@@ -742,6 +755,10 @@
   font-family: "Poppins";
 	text-align: center;
 	float: left;
+}
+
+.dev-in-mind__text {
+	width: 92%;
 }
 
 .dev-in-mind__image-wrapper {
@@ -1658,9 +1675,20 @@ a {
 	.use-case .tab-content {
 		text-align: center;
 	}
+
 	.use-case .limit {
 		width: 80%;
 		margin: 0 auto;
+	}
+}
+
+@media only screen and (min-width: 574px) and (max-width: 991px) {
+	.tab-heading {
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.use-case .limit {
+		width: 100%;
 	}
 }
 
@@ -1679,6 +1707,10 @@ a {
 	.use-case-list {
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	.use-case .tab-content {
+		margin-top: 40px;
 	}
 
 
