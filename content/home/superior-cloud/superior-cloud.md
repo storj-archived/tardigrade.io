@@ -4,7 +4,7 @@ img : "/img/tar-ico-lock.svg"
 heading : Secure by Default
 desc : Files are automatically encrypted before being uploaded.
 class : "superior-cloud"
-header: "s3-Compatible & Lightyears Ahead"
+header: "S3-Compatible & Lightyears Ahead"
 h : 40
 w : 55
 weight : 1
