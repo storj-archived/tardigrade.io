@@ -146,6 +146,7 @@
   background-size: cover;
 	background-position: bottom;
 	height: 1045px;
+	background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 991px) {
@@ -312,7 +313,7 @@
 
 
 @media only screen and (max-width: 991px) {
-  .cta-form {
+  .cta-join-btn-wrapper {
     width: 80%;
     margin: 0 auto;
 		top: 20px;
@@ -365,6 +366,12 @@
 @media only screen and (max-width: 991px) {
 	.cta-join-btn {
 		width: 32%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.cta-join-btn {
+		width: 48%;
 	}
 }
 
@@ -525,6 +532,10 @@
   }
 }
 
+.why-tardigrade-section-wrapper {
+	padding-left: 0;
+}
+
 
 .why-tardigrade-heading {
   font-size: 22px;
@@ -599,6 +610,16 @@
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.superior-cloud-section {
+		width: 100%;
+		.col-lg-6 {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
 .superior-cloud__header {
 	text-align: center;
 	font-size: 30px;
@@ -623,6 +644,7 @@
 	background-size: cover;
 	background-position: 0px 0px;
 	height: 1000px;
+	background-repeat: no-repeat;
 }
 
 .half-price {
@@ -759,6 +781,7 @@
 	background-size: auto;
 	background-position: 0px 0px;
 	position: relative;
+	background-repeat: no-repeat;
 }
 
 .dev-in-mind__responsive-mobile-bg {
@@ -770,6 +793,7 @@
 		background-image: none;
 		position: relative;
 		padding-left: 0;
+		padding-right: 0;
 		height: 1110px;
 		margin-top: 160px;
 	}
@@ -806,16 +830,36 @@
 	width: 92%;
 }
 
+@media only screen and (max-width: 991px) {
+	.dev-in-mind__text {
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.dev-in-mind__text {
+		width: 100%;
+	}
+}
+
 .dev-in-mind__image-wrapper {
 	position: relative;
 }
 
 .dev-in-mind__image {
-	height: 470px;
+	height: 570px;
 	position: absolute;
 	right: -130px;
-	bottom: 10px;
+	bottom: 0;
 	display: block;
+}
+
+@media only screen and (max-width: 1650px) {
+	.dev-in-mind__image {
+		height: 470px;
+		bottom: 10px;
+	}
 }
 
 .dev-in-mind__image-resp {
@@ -1769,6 +1813,10 @@ a {
 	}
 
 	.usecase-link-wrapper-active[style*="border-left: 2px solid rgb(220, 220, 220); opacity: 0.5; font-weight: 500;"] .nav-link .tab-pane {
+		display: none
+	}
+
+	.usecase-link-wrapper-active[style*="border-left-width: 2px; border-left-style: solid; border-left-color: rgb(220, 220, 220); opacity: 0.5; font-weight: 500;"] .nav-link .tab-pane {
 		display: none
 	}
 

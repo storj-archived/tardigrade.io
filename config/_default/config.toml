@@ -2,7 +2,6 @@ languageCode = "en-us"
 title = "Tardigrade"
 
 [permalinks]
-  waitlist = "/waitlist/"
   partner = "/partner/"
   privacy-policy = "/privacy-policy/"
   storage-sla = "/service-level-commitment/"
