@@ -497,8 +497,8 @@
 @media only screen and (max-width: 991px) {
 	.why-tardigrade {
 		position: relative;
-		top: -510px;
-    margin-bottom: -450px;
+		top: -410px;
+    margin-bottom: -550px;
 	}
 }
 
@@ -761,6 +761,7 @@
 		background-image: none;
 		position: relative;
 		padding-left: 0;
+		height: 1110px;
 	}
 
 	.dev-in-mind__responsive-mobile-bg {
@@ -1728,15 +1729,11 @@ a {
 
 .use-case-list .limit {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 18px;
 }
 
 
 .usecase-link-wrapper .nav-link .tab-pane {
-	display: none;
-}
-
-.usecase-link-wrapper-active .nav-link .tab-pane {
 	display: none;
 }
 
@@ -1757,6 +1754,13 @@ a {
 
 	.use-case {
 		padding-left: 0;
+		height: 1000px;
+		margin-bottom: -140px;
+	}
+
+	.use-case .container {
+		top: 230px;
+		position: relative;
 	}
 
 	.use-case-top-heading {
@@ -1814,7 +1818,7 @@ a {
 
 	.small-content .limit {
 		position: relative;
-		left: 10px;
+		left: 14px;
 		top: 5px;
 	}
 
@@ -1827,6 +1831,12 @@ a {
 		display: none;
 	}
 
+}
+
+@media only screen and (max-width: 600px) {
+	.use-case-list {
+		left: 30px;
+	}
 }
 
 
