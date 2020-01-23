@@ -1,6 +1,6 @@
 ---
-title: "half"
-content: "Half the Price"
+title: "faster"
+content: "20% Faster"
 class: "why-item"
 weight: 3
 ---

@@ -244,6 +244,11 @@
   width: 100%;
 }
 
+.spacer70 {
+  height: 70px;
+  width: 100%;
+}
+
 .spacer90 {
   height: 90px;
   width: 100%;
@@ -310,6 +315,8 @@
   .cta-form {
     width: 80%;
     margin: 0 auto;
+		top: 20px;
+		position: relative;
   }
 }
 
@@ -368,11 +375,6 @@
 	bottom: 2px;
 }
 
-@media only screen and (max-width: 991px) {
-  .cta-join-btn {
-    width: 40%;
-  }
-}
 
 
 .hiw-heading {
@@ -550,7 +552,7 @@
 
 .why-tardigrade-list-img {
 	position: absolute;
-	top: 10px;
+	top: 12px;
 	right: 72%;
 	width: 20px;
 }
@@ -561,6 +563,13 @@
   font-size: 16px;
   line-height: 40px;
   margin-left: 110px;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 991px) {
+	.why-tardigrade-list-item-content {
+	  font-weight: 700;
+	}
 }
 
 .superior-cloud-section {
@@ -762,6 +771,7 @@
 		position: relative;
 		padding-left: 0;
 		height: 1110px;
+		margin-top: 160px;
 	}
 
 	.dev-in-mind__responsive-mobile-bg {
@@ -803,7 +813,7 @@
 .dev-in-mind__image {
 	height: 470px;
 	position: absolute;
-	right: -80px;
+	right: -130px;
 	bottom: 10px;
 	display: block;
 }
@@ -829,7 +839,7 @@
 	.dev-in-mind__content {
 		text-align: center;
 		margin: 0 auto;
-		width: 90%;
+		width: 80%;
 	}
 
 	.dev-in-mind__content .dev-in-mind__cta {
@@ -1155,26 +1165,11 @@ a {
 	width: 80%;
 }
 
-.home-subheading-resp {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
-	width: 80%;
-	display: none;
-}
-
 @media only screen and (max-width: 991px) {
 	.home-subheading {
-		display: none;
-	}
-
-	.home-subheading-resp {
 		margin: 0 auto;
-		display: block;
 	}
 }
-
 
 .usecase-link-wrapper {
   border-left: 3px solid #dcdcdc;
@@ -1717,14 +1712,6 @@ a {
   font-family: "Poppins";
   font-style: bold;
   font-size: 28px;
-	display: block;
-}
-
-.use-case-top-heading-resp {
-  font-family: "Poppins";
-  font-style: bold;
-  font-size: 28px;
-	display: none;
 }
 
 .use-case-list .limit {
@@ -1755,22 +1742,12 @@ a {
 	.use-case {
 		padding-left: 0;
 		height: 1000px;
-		margin-bottom: -140px;
+		margin-bottom: -200px;
 	}
 
 	.use-case .container {
 		top: 230px;
 		position: relative;
-	}
-
-	.use-case-top-heading {
-		display: none;
-	}
-
-	.use-case-top-heading-resp {
-		display: block;
-		width: 80%;
-		margin: 0 auto;
 	}
 
 	.use-case-list {

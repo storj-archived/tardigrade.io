@@ -1,6 +1,6 @@
 ---
-title: "easier"
-content: "Easier to Use"
+title: "enterprise"
+content: "Enterprise-Grade"
 class: "why-item"
 weight: 5
 ---

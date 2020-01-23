@@ -1,5 +1,5 @@
 ---
 title: "how-it-works"
 heading: How it Works
-subheading: With Tardigrade cloud storage, your files are encrypted and split into pieces client-side before being distributed across our network of high-performance storage nodes.
+subheading: With Tardigrade cloud storage, files are encrypted and split into pieces client-side, then distributed across our network of high-performance storage nodes, making it virtually impossible for your data to be compromised.
 ---
