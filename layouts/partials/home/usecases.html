@@ -3,14 +3,14 @@
     <div class="row">
       <div class="col text-center">
           <div class="spacer90"></div>
-          <h2 class="mt-5 use-case-top-heading">
+          <h2 class="mt-5 use-case__top-heading">
             Upgrade Your Storage Layer
           </h2>
           <div class="spacer30"></div>
       </div>
     </div>
     <div class="row mt-5">
-          <div class="col-sm-8 offset-sm-1 col-md-8 col-lg-4 offset-lg-1 use-case-list" style="height:250px;">
+          <div class="col-sm-8 offset-sm-1 col-md-8 col-lg-4 offset-lg-1 use-case__list" style="height:250px;">
             {{range where .Site.Pages ".Params.class" "usecase"}}
             <div class="pl-3 {{if eq .Params.isActive true}}usecase-link-wrapper-active{{else}}usecase-link-wrapper{{end}}" >
               	<a

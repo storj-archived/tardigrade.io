@@ -6,7 +6,7 @@
 			<img class="dev-in-mind__image-resp" src="/img/tar-gui-cli-resp.svg" />
       <div class="col-lg-6 col-sm-push-6  dev-in-mind__content">
         {{ with .Site.GetPage "devInMind" }}
-        <h2 class="dev-in-mind-heading">
+        <h2 class="dev-in-mind__heading">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
         </h2>
         <div class="spacer40"></div>
