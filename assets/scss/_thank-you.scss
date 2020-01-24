@@ -25,7 +25,11 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      height: 380px;
+			height: 680px;
+			position: relative;
+			@media (max-width: 1200px) {
+        height: 620px;
+      }
       @media (max-width: 991px) {
         display: none;
       }
