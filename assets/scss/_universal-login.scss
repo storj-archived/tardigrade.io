@@ -172,8 +172,10 @@ body {
     right: 30px;
 }
 
-*, ::before, ::after {
-    box-sizing: unset;
+.login {
+	*, ::before, ::after {
+	    box-sizing: unset;
+	}
 }
 
 @media screen and (max-width: 1090px) {
