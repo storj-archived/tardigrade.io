@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      {{ partial "head" . }}
+    </head>
+  <body>
+      {{ partial "partner-form/form" .}}
+    <footer>
+      {{partial "footer" . }}
+    </footer>
+      {{ partial "site-scripts" .}}
+  </body>
+</html>
+
+<script type="text/javascript">
+    window.onload = function() {
+
+    var nextButton = document.getElementById("partner-form-next");
+    var backButton = document.getElementById("partner-form-back");
+    var submitButton = document.getElementById("partner-form-submit");
+    var parent = document.getElementsByClassName("step"); // all step wrapper divs
+    var progressBar = document.getElementById("progress-bar");
+    var errElm = document.getElementsByClassName("error"); // all error divs
+    var formStart = document.getElementById("start-wrapper"); // initial page message
+    var startButton = document.getElementById("partner-form-start");
+    var firstStep = document.getElementById("partner-form-name");
+    var progressBarWrapper = document.getElementById("progress-bar-wrapper");
+    var stepButtons = document.getElementById("step-buttons");
+
+
+    var index = 0; // to be increased an decreased depending on button clicked
+    var progressBarValue = 8.333; // 100 divided by the 12 steps
+
+    var partner_form = {partner_form: true}
+
+    if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
+      // remove beginning message and start process
+      startButton.onclick = function (event) {
+        formStart.setAttribute("style", "display:none;");
+        firstStep.setAttribute("style", "display:inherit;");
+        progressBarWrapper.setAttribute("style", "display:inherit;");
+        stepButtons.setAttribute("style", "display:inherit;");
+      }
+    }
+
+    nextButton.onclick = function (event) {
+      // parent[index] will always be current step
+      if(parent[index] && errElm && errElm[index]) {
+        // if required field is empty
+        if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
+          errElm[index].setAttribute("style", "display:block;");
+        } else {
+          var userEmailInput = parent[index].querySelector(".user-email");
+          // if email input does not include ampersand
+          if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
+            errElm[index].setAttribute("style", "display:block;");
+          } else {
+            // next button successful click logic
+            parent[index].setAttribute("style", "display:none;");
+            if(backButton) {
+              backButton.setAttribute("style", "display:inline-block;");
+            }
+            if(progressBar) {
+              progressBar.innerHTML = index + 2
+              progressBarValue = progressBarValue + 8.333;
+              progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+            }
+            index = index + 1
+            parent[index].setAttribute("style", "display:block;");
+            if(parent[index].classList.contains('partner-form-per-month')) {
+              nextButton.setAttribute("style", "display:none;");
+              submitButton.setAttribute("style", "display:inline-block;");
+            }
+          }
+        }
+      }
+    }
+
+    // toggle use case options
+    window.onmousedown = function (e) {
+      var el = e.target;
+      if (el.tagName.toLowerCase() == "option" &&
+          el.parentNode.hasAttribute("multiple") &&
+          el.className == "use-case") {
+
+        e.preventDefault();
+        // toggle selection
+        el.hasAttribute("selected") ? el.removeAttribute("selected") : el.setAttribute("selected", "")
+      }
+    }
+
+
+    backButton.onclick = function (event) {
+      // no back button on first step
+      if(index == 1 && backButton) {
+        backButton.setAttribute("style", "display:none");
+      }
+      parent[index].setAttribute("style", "display:none;");
+      if(progressBar) {
+        progressBar.innerHTML = index
+        progressBarValue = progressBarValue - 8.333;
+        progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+      }
+      index = index - 1
+      parent[index].setAttribute("style", "display:block;");
+    }
+
+    submitButton.onclick = function (event) {
+      var userInput = document.querySelectorAll(".user-input") // all non-selecter user inputs
+
+      for (i = 0; i < userInput.length; i++) {
+        partner_form[userInput[i].name] = userInput[i].value
+      }
+
+      var useCaseOptions = document.getElementsByClassName('use-case');
+
+      if(useCaseOptions) {
+        partner_form.use_case = [];
+        for (var i = 0, length = useCaseOptions.length; i < length; i++) {
+          if (useCaseOptions[i].selected) {
+            partner_form.use_case.push(useCaseOptions[i].value);
+          }
+        }
+      }
+
+      var dataAmountOptions = document.getElementsByClassName('data-amount');
+
+      if(dataAmountOptions) {
+        for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
+          if (dataAmountOptions[i].selected) {
+             partner_form.data_amount = dataAmountOptions[i].value;
+             break;
+          }
+        }
+      }
+
+      var fileSizeOptions = document.getElementsByClassName('file-size');
+
+      if(fileSizeOptions) {
+        for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
+          if (fileSizeOptions[i].selected) {
+           partner_form.file_sizes = fileSizeOptions[i].value;
+           break;
+          }
+        }
+      }
+
+      var perMonthOptions = document.getElementsByClassName('per-month');
+
+      if(perMonthOptions) {
+        for (var i = 0, length = perMonthOptions.length; i < length; i++) {
+          if (perMonthOptions[i].selected) {
+             partner_form.download_times_per_month = perMonthOptions[i].value;
+             break;
+           }
+        }
+      }
+
+      // timestamps with timezone
+      partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
+
+
+      analytics.identify(analytics.user().anonymousId(),
+        {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
+        {integrations: {'All': false, 'Customer.io': true}}, function() {
+          analytics.track("partner-form", {});
+      });
+
+      analytics.identify(analytics.user().anonymousId(),
+        partner_form,
+        {integrations: {'All': false, 'postgresSelfHosted': true}}, function() {
+          window.location = "/partner-thank-you"
+      });
+    }
+
+  }
+</script>
