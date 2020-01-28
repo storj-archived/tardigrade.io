@@ -351,7 +351,7 @@
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	.cta-join-btn {
 		width: 48%;
 	}
@@ -437,6 +437,14 @@
 	}
 }
 
+@media only screen and (max-width: 591px) {
+	.hiw-subheading {
+		margin: 0 auto;
+		width: 90%;
+	}
+}
+
+
 
 .hiw-arrow {
   margin-top: 30px;
@@ -514,6 +522,7 @@
 
 .why-tardigrade__section-wrapper {
 	padding-left: 0;
+	padding-right: 0;
 }
 
 
@@ -1992,7 +2001,7 @@ a {
   }
 }
 
-.subscribe-flow{
+.subscribe-flow {
   margin-top:160px;
 }
 
