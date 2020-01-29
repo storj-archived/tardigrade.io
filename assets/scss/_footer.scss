@@ -105,6 +105,17 @@
   }
 }
 
+.footer__content .footer__stay-in-touch {
+	margin-bottom: 0;
+}
+
+.footer-message {
+	color: #fff;
+	font-size: 12px;
+	line-height: 15px;
+	margin-bottom: 10px;
+}
+
 @media (min-width: 874px) and (max-width: 992px) {
   .footer {
     &__content-item-btn {
