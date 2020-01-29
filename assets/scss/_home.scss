@@ -143,6 +143,7 @@
 
 .bg-gradiant {
   background-image: url("/img/tar-web-product-hero-bg.png");
+	background-image: url("/img/tar-bg-ill-cloud.jpg");
   background-size: cover;
 	background-position: bottom;
 	height: 1045px;
@@ -574,7 +575,7 @@
 
 .superior-cloud-section {
 	position: relative;
-	left: 20px;
+	right: 20px;
 	.superior-cloud-heading {
 		font-size: 18px;
 		margin-bottom: 0;
@@ -585,9 +586,16 @@
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.superior-cloud-section {
+		position: relative;
+		left: 20px;
+	}
+}
 
 @media only screen and (max-width: 991px) {
 	.superior-cloud-section {
+		right: 0;
 		left: 0;
 		width: 80%;
 		margin: 0 auto;
@@ -781,9 +789,10 @@
 		position: absolute;
 		bottom: -100px;
 		z-index: -1;
-		width: 100%;
+		width: 200%;
 		height: 100%;
-		display: block
+		display: block;
+		right: 0;
 	}
 }
 
