@@ -1,6 +1,7 @@
 languageCode = "en-us"
 title = "Tardigrade | Decentralized Cloud Object Storage"
 description="Get started with durable enterprise-grade cloud storage that's 100% secure, 20% faster, and half the cost of traditional cloud storage."
+
 [permalinks]
   partner = "/partner/"
   privacy-policy = "/privacy-policy/"

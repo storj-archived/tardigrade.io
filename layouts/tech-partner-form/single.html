@@ -163,13 +163,13 @@
       analytics.identify(analytics.user().anonymousId(),
         {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
         {integrations: {'All': false, 'Customer.io': true}}, function() {
-          analytics.track("partner-form", {});
+          analytics.track("tech-partner-form", {});
       });
 
       analytics.identify(analytics.user().anonymousId(),
         partner_form,
         {integrations: {'All': false, 'postgresSelfHosted': true}}, function() {
-          window.location = "/partner-thank-you"
+          window.location = "/tech-partner-thank-you"
       });
     }
 
