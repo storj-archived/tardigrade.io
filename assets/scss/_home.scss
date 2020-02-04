@@ -825,7 +825,11 @@ a {
   display: inline-block;
   width: 100%;
   overflow-y: auto;
+	.flex-nowrap {
+	  overflow: scroll;
+	}
 }
+
 
 .mstone-link-wrapper {
   margin-top: 60px;
@@ -1132,7 +1136,7 @@ a {
   bottom: 26px;
   left: 56px;
   right: 0;
-  width: 80%;
+  width: 82%;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item {
