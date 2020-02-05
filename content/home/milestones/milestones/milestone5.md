@@ -1,6 +1,6 @@
 ---
 title : "milestone"
-heading : "ISS: Open Source Partner Connection"
-status : isFuture
+heading : "Voyager: Early Access V3 Production Launch"
+status : isCurrent
 class : "milestone"
 ---
