@@ -35,7 +35,7 @@
       background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
       background-image: radial-gradient(236.22% 100.97% at 50% -4.33%, #0059D1 0%, #000000 100%);
     }
-    .press-kit__hero__bg {
+    &__bg {
       color: #fff;
       background: #000;
       background-size: cover;
@@ -60,69 +60,69 @@
            position: absolute;
          }
        }
-      .press-kit__hero__img {
-        height: auto;
-        position: absolute;
-        float: right;
-        width: 160%;
-        right: -115px;
-        bottom: -85%;
-        box-sizing: border-box;
-        max-width: 140%;
-        max-height: 240%;
-        @media only screen and (max-width: 1200px) {
-          max-width: 190%;
-          bottom: -55%;
-        }
-        @media only screen and (max-width: 991px) {
-          max-height: 130%;
-          width: 190%;
-          right: -165px;
-        }
-        @media only screen and (max-width: 768px) {
-          display: none;
-        }
-      }
       .press-kit__hero__msg {
         @media only screen and (max-width: 768px) {
           text-align: center;
           margin: 0 auto;
         }
-      .press-kit__hero__cta-button-wrapper {
-          .hero_signup-btn {
-            width: 244px;
-            height: 46px;
-            background: #fff;
-            border: none;
-            border-radius: 5px;
-            color: #2582FF;
-            font-weight: 900;
-            font-size: 14px;
-          }
-          .press-kit__hero__contact-us {
-            color: #fff;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 28px;
-            display: inline;
-            margin-left: 20px;
-            @media only screen and (max-width: 991px) {
-              margin-left: 0;
-              margin-top: 20px;
-              top: 5px;
-              position: relative;
-            }
-            @media only screen and (max-width: 768px) {
-              display: block;
-              margin-top: 30px;
-              top: 0;
-            }
-          }
-        }
       }
     }
+		&__img {
+			height: auto;
+			position: absolute;
+			float: right;
+			width: 160%;
+			right: -115px;
+			bottom: -85%;
+			box-sizing: border-box;
+			max-width: 140%;
+			max-height: 240%;
+			@media only screen and (max-width: 1200px) {
+				max-width: 190%;
+				bottom: -55%;
+			}
+			@media only screen and (max-width: 991px) {
+				max-height: 130%;
+				width: 190%;
+				right: -165px;
+			}
+			@media only screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		.press-kit__hero__cta-button-wrapper {
+			.hero_signup-btn {
+				width: 244px;
+				height: 46px;
+				background: #fff;
+				border: none;
+				border-radius: 5px;
+				color: #2582FF;
+				font-weight: 900;
+				font-size: 14px;
+			}
+			.press-kit__hero__contact-us {
+				color: #fff;
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 28px;
+				display: inline;
+				margin-left: 20px;
+				@media only screen and (max-width: 991px) {
+					margin-left: 0;
+					margin-top: 20px;
+					top: 5px;
+					position: relative;
+				}
+				@media only screen and (max-width: 768px) {
+					display: block;
+					margin-top: 30px;
+					top: 0;
+				}
+			}
+		}
   }
   .press-kit__news {
     .press-kit__news__title {
@@ -211,7 +211,7 @@
   }
   .press-kit__terminology {
     .container-fluid {
-      .press-kit__terminology-terms {
+      .press-kit__terminology__terms {
         @media only screen and (max-width: 768px) {
           overflow-x: auto;
           flex-wrap: nowrap;
@@ -221,7 +221,7 @@
         @media only screen and (max-width: 768px) {
           text-align: center;
         }
-        .press-kit__terminology-heading-content {
+        .press-kit__terminology__heading-content {
           font-family: Roboto;
           font-style: normal;
           font-weight: 300;
@@ -229,7 +229,7 @@
           line-height: 28px;
         }
       }
-      .press-kit__terminology-term-segment {
+      .press-kit__terminology__term-segment {
         @media only screen and (min-width: 992px) {
           padding-left: 0;
         }
@@ -240,13 +240,13 @@
           margin-right: 10px;
           max-width: 75%;
         }
-        .press-kit__terminology-term-segment-heading {
+        .press-kit__terminology__term-segment-heading {
           font-style: italic;
           font-weight: bold;
           font-size: 14px;
           line-height: 21px;
         }
-        .press-kit__terminology-term-segment-content {
+        .press-kit__terminology__term-segment-content {
           font-family: Roboto;
           font-style: normal;
           font-weight: 300;
