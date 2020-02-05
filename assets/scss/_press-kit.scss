@@ -1,34 +1,32 @@
 .press-kit-page {
-  h2 {
+  .heading__name {
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 40px;
+		color: #000;
   }
   .heading {
-    .col-lg-3 {
+    .download-btn {
       text-align: right;
-      img {
-        display: inline;
-      }
-      p {
+      &__image, &__text {
         display: inline;
       }
     }
   }
   .download-btn {
-    a {
+    &__link {
       color: #7E8B9C;
-      p {
-        position: relative;
-        right: 5px;
-        display: inline;
-      }
-      img {
-        position: relative;
-        top: 2px;
-      }
     }
+		&__text {
+			position: relative;
+			right: 5px;
+			display: inline;
+		}
+		&__image {
+			position: relative;
+			top: 2px;
+		}
   }
   .press-kit__hero {
     @media only screen and (max-width: 991px) {
