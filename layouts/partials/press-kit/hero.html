@@ -1,5 +1,5 @@
 {{ with .Site.GetPage "press-kit-hero"}}
-<div class="container-fluid press-kit__hero-bg">
+<div class="container-fluid press-kit__hero__bg">
   <div class="spacer30"></div>
   <div class="container">
     <div>
@@ -9,10 +9,10 @@
   <div class="spacer90"></div>
   <div class="container">
     <div class="row">
-      <div class="press-kit__hero-msg col-md-5 col-sm-12">
+      <div class="press-kit__hero__msg col-md-5 col-sm-12">
         <div class="row mb-24">
           <div class="col-xs-12 col-md-10 center-sm">
-            <h1 class="press-kit__hero-title">
+            <h1 class="press-kit__hero__title">
              {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
             </h1>
           </div>
@@ -25,14 +25,14 @@
         </div>
         <div class="spacer30"></div>
         <div class="row">
-          <div class="press-kit__hero-cta-button-wrapper col-xs-12 col-sm-12 center-sm">
+          <div class="press-kit__hero__cta-button-wrapper col-xs-12 col-sm-12 center-sm">
             <a href="/press-kit/Tardigrade-Full-Kit.zip">
               <button class="hero_signup-btn font-weight-bold">
                   Download Full Press Kit
               </button>
             </a>
             <a href="mailto:hello@storj.io">
-              <p class="press-kit__hero-contact-us">
+              <p class="press-kit__hero__contact-us">
                 Contact Us
                 <img class="mb-1" src="/img/white-carrot.png" height="13" width="13">
               </p>
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="col-md-7">
-         <img class="press-kit__hero-img img-fluid" src="{{ .Params.img }}" alt="open sourc icon">
+         <img class="press-kit__hero__img img-fluid" src="{{ .Params.img }}" alt="open sourc icon">
       </div>
     </div>
   </div>
