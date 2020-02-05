@@ -298,6 +298,9 @@
 			.press-kit__logo__download-btn-text, .img-fluid {
 				display: inline;
 			}
+			&__image {
+				top: -2px;
+			}
 		}
     .pt-4 {
       display: flex;
@@ -392,6 +395,15 @@
         max-width: 100%
       }
     }
+		.color-1 {
+			background: #2582FF
+		}
+		.color-2 {
+			background: #0059D0
+		}
+		.color-3 {
+			background: #133E9C
+		}
 		&__visual {
 			height: 50%;
 			border-top-left-radius: 9px;
