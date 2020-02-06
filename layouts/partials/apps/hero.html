@@ -1,29 +1,28 @@
-<div class="container-fluid apps__hero-container nomp">
-
-<div class="container-fluid inner-hero-wrapper">
+<div class="container-fluid apps__hero__container nomp">
+	<div class="container-fluid inner-hero-wrapper">
     <div class="container">
-        <div class="spacer20"></div>
-        {{ partial "nav" .}}
-        <div class="row">
-          <div class="spacer20"></div>
-          <div class="jumbotron hero-tardigrade-msg">
-            <div>
-              <a target="_blank" href="https://storj.io" style="text-decoration: none">
-                <p class="hero-tardigrade-msg-right">Visit Storj.io</p>
-                <img class="hero-tardigrade-msg-img" src="/img/mini-storj-logo.png" />
-                <img class="hero-tardigrade-msg-img" src="/img/chevron-right-white.png" />
-              </a>
-            </div>
-          </div>
-          <div class="spacer40"></div>
-          <div class="col-md-12 col-sm-12 col-lg-12 hero-content">
-          {{with .Site.GetPage "page" "apps-hero"}}
-            <h1>{{ .Params.title }}</h1>
-            <p>{{ .Params.subHeading }}</p>
-            <div class="spacer40"></div>
-            <a>{{ .Params.cta }}</a>
-          </div>
-        {{end}}
-    </div>
-</div>
+      <div class="spacer20"></div>
+      {{ partial "nav" .}}
+	      <div class="row">
+	        <div class="spacer20"></div>
+	        <div class="jumbotron hero-tardigrade-msg">
+	          <div>
+	            <a target="_blank" href="https://storj.io" style="text-decoration: none">
+	              <p class="hero-tardigrade-msg-right">Visit Storj.io</p>
+	              <img class="hero-tardigrade-msg-img" src="/img/mini-storj-logo.png" />
+	              <img class="hero-tardigrade-msg-img" src="/img/chevron-right-white.png" />
+	            </a>
+	          </div>
+	        </div>
+	        <div class="spacer40"></div>
+	        <div class="col-md-12 col-sm-12 col-lg-12 apps__hero__content">
+	        {{with .Site.GetPage "page" "apps-hero"}}
+	          <h1 class="apps__hero__title">{{ .Params.title }}</h1>
+	          <p class="apps__hero__subheading">{{ .Params.subHeading }}</p>
+	          <div class="spacer40"></div>
+	          <a class="apps__hero__cta">{{ .Params.cta }}</a>
+	        </div>
+	    </div>
+		{{end}}
+	</div>
 </div>
