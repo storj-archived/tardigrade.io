@@ -1,5 +1,22 @@
-<div class="container-fluid apps__partners nomp">
+<div class="container-fluid nomp">
   <div class="container">
+		<div class="pt-5 row d-flex flex-row apps__partners__partners">
+			{{ range where .Site.Pages ".Params.class" "partner"}}
+				<div class="col-xs-12 col-lg-4">
+					<img class="img-fluid" src="{{ .Params.img }}" alt="benefits icon">
+					<div class="pt-3">
+						<h4 class="tech-partner__more-benefit-subheading">
+								{{ .Params.name }}
+						</h4>
+						<p class="tech-partner__more-benefit-content">
+								{{ .Params.content }}
+						</p>
+						<div>
+						</div>
+					</div>
+				</div>
+			{{ end }}
+		</div>
     <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
