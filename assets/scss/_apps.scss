@@ -31,4 +31,17 @@
 .apps__partners {
     height: 1000px;
 		background: #F4F6F9;
+		&__partner {
+			background: #fff;
+			height: 188px;
+			margin-bottom: 25px;
+			&__header {
+				&__name {
+					font-family: 'Poppins';
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 20px;
+				}
+			}
+		}
 }
