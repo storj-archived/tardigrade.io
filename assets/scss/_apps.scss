@@ -29,19 +29,43 @@
 }
 
 .apps__partners {
-    height: 1000px;
-		background: #F4F6F9;
-		&__partner {
-			background: #fff;
-			height: 188px;
-			margin-bottom: 25px;
-			&__header {
-				&__name {
-					font-family: 'Poppins';
-					font-weight: bold;
-					font-size: 18px;
-					line-height: 20px;
-				}
+  height: 1000px;
+	background: #F4F6F9;
+	&__partner {
+		background: #fff;
+		height: 188px;
+		margin-bottom: 25px;
+		&__header {
+			&__name {
+				font-family: 'Poppins';
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 20px;
+				display: inline;
+				margin-left: 10px;
+				top: 15px;
+				position: relative;
+			}
+			&__image {
+				height: 46px;
+				width: 46px;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			&__version {
+				display: inline;
+			}
+			&__status {
+				display: inline;
 			}
 		}
+		&__description {
+			font-family: Roboto;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 20px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+	}
 }
