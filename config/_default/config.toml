@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "Tardigrade"
+title = "Tardigrade | Decentralized Cloud Object Storage"
 
 [permalinks]
   waitlist = "/waitlist/"
@@ -16,6 +16,10 @@ title = "Tardigrade"
   support-policy="/support-policy/"
   almost-there="/almost-there/"
   community="/community/"
+  press-kit="/press-kit/"
   tech-partner = "/tech-partner/"
   thank-you="/thank-you/"
   apps="/apps/"
+  partner-form="/partner-form/"
+  partner-thank-you="/partner-thank-you/"
+  universal-login="/satellites/"

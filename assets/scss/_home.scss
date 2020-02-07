@@ -195,10 +195,22 @@
   color: white;
   font-size: 34px;
 }
+
+.spacer15 {
+  height: 15px;
+  width: 100%;
+}
+
 .spacer20 {
   height: 20px;
   width: 100%;
 }
+
+.spacer25 {
+  height: 25px;
+  width: 100%;
+}
+
 
 .spacer30 {
   height: 30px;
@@ -210,16 +222,6 @@
   width: 100%;
 }
 
-.spacer90 {
-  height: 90px;
-  width: 100%;
-}
-
-
-.spacer125 {
-  height: 125px;
-  width: 100%;
-}
 
 .spacer55 {
   height: 55px;
@@ -707,7 +709,7 @@ a {
 }
 
 .lite-gray-bg {
-  background-color: #fbfbfc;
+  background-color: #F4F6F9;
 }
 
 .lite-blu {
@@ -813,7 +815,11 @@ a {
   display: inline-block;
   width: 100%;
   overflow-y: auto;
+	.flex-nowrap {
+	  overflow: scroll;
+	}
 }
+
 
 .mstone-link-wrapper {
   margin-top: 60px;
@@ -1120,7 +1126,7 @@ a {
   bottom: 26px;
   left: 56px;
   right: 0;
-  width: 80%;
+  width: 82%;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item {

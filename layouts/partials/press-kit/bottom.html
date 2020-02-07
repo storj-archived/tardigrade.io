@@ -1,0 +1,20 @@
+{{ with .Site.GetPage "bottom"}}
+<div class="container-fluid">
+  <div class="container">
+    <div class="spacer125"></div>
+    <div class="row">
+      <h2>
+        {{ replace .Params.title "\n" "<br/>" | safeHTML}}
+      </h2>
+      <div class="spacer20"></div>
+      <a class="press-kit__bottom__link" href="#">
+        <p class="press-kit__bottom__content">
+        {{ replace .Params.cta "\n" "<br/>" | safeHTML}}
+        <img class="mb-1 press-kit__bottom__img" src="/img/white-carrot.png" height="13" width="13">
+        </p>
+      </a>
+    </div>
+    <div class="spacer125"></div>
+  </div>
+</div>
+{{end}}
