@@ -1,5 +1,8 @@
 <div class="container-fluid nomp">
   <div class="container">
+		<div class="apps__partners__search-container">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search Tardigrade partners & apps..." aria-label="Search">
+		</div>
 		<div class="pt-5 row d-flex flex-row apps__partners__partners">
 			{{ range where .Site.Pages ".Params.class" "partner"}}
 				<div class="col-xs-12 col-lg-4 ">
