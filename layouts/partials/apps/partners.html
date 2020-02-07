@@ -1,7 +1,7 @@
 <div class="container-fluid nomp">
   <div class="container">
 		<div class="apps__partners__search-container">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search Tardigrade partners & apps..." aria-label="Search">
+			<input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Search Tardigrade partners & apps..." aria-label="Search">
 		</div>
 		<div class="pt-5 row d-flex flex-row apps__partners__partners">
 			{{ range where .Site.Pages ".Params.class" "partner"}}
@@ -39,3 +39,28 @@
 	  </nav>
 	</div>
 </div>
+
+<script type="text/javascript">
+
+// 	var size = 10; var arrayOfArrays = [];
+// for (var i=0; i<bigarray.length; i+=size) {
+//      arrayOfArrays.push(bigarray.slice(i,i+size));
+// }
+// console.log(arrayOfArrays);
+
+	var size = 9; var arrayOfArrays = []; var partners = $(".apps__partners__partner")
+	let searchBar = $("#searchBar")
+	console.log("BAR:", searchBar, searchBar.val())
+	for (var i=0; i<partners.length; i+=size) {
+	     arrayOfArrays.push(partners.slice(i,i+size));
+	}
+
+  $(document).ready(function(){
+		arrayOfArrays[1].css("display", "inherit");
+
+		$(searchBar).on('input', function() {
+		   console.log(searchBar.val())
+		});
+	})
+
+</script>
