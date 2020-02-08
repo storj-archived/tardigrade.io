@@ -1,5 +1,6 @@
 languageCode = "en-us"
 title = "Tardigrade | Decentralized Cloud Object Storage"
+paginate = 9
 
 [permalinks]
   waitlist = "/waitlist/"

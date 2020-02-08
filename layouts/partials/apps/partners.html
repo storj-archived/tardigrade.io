@@ -4,7 +4,8 @@
 			<input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Search Tardigrade partners & apps..." aria-label="Search">
 		</div>
 		<div class="pt-5 row d-flex flex-row apps__partners__partners">
-			{{ range where .Site.Pages ".Params.class" "partner"}}
+			{{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") 9}}
+			{{ range $paginator.Pages }}
 				<div class="col-xs-12 col-lg-4 ">
 					<div class="apps__partners__partner">
 						<div class="apps__partners__partner__header">
@@ -26,41 +27,38 @@
 						</div>
 					</div>
 				</div>
-			{{ end }}
+			{{ partial "pagination/pagination" .}}
+			{{end}}
 		</div>
-	    <nav aria-label="Page navigation example">
+	    <!-- <nav aria-label="Page navigation example">
 	    <ul class="pagination">
 	      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
 	      <li class="page-item"><a class="page-link" href="#">1</a></li>
 	      <li class="page-item"><a class="page-link" href="#">2</a></li>
 	      <li class="page-item"><a class="page-link" href="#">3</a></li>
 	      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-	    </ul>
+	    </ul> -->
 	  </nav>
 	</div>
 </div>
 
 <script type="text/javascript">
 
-// 	var size = 10; var arrayOfArrays = [];
-// for (var i=0; i<bigarray.length; i+=size) {
-//      arrayOfArrays.push(bigarray.slice(i,i+size));
-// }
-// console.log(arrayOfArrays);
+	// var isContains = $('#elementId').text().indexOf('some text') > -1;
 
-	var size = 9; var arrayOfArrays = []; var partners = $(".apps__partners__partner")
-	let searchBar = $("#searchBar")
-	console.log("BAR:", searchBar, searchBar.val())
-	for (var i=0; i<partners.length; i+=size) {
-	     arrayOfArrays.push(partners.slice(i,i+size));
-	}
-
-  $(document).ready(function(){
-		arrayOfArrays[1].css("display", "inherit");
-
-		$(searchBar).on('input', function() {
-		   console.log(searchBar.val())
-		});
-	})
+	// var size = 9; var arrayOfArrays = []; var partners = $(".apps__partners__partner")
+	// let searchBar = $("#searchBar")
+	// console.log("BAR:", searchBar, searchBar.val())
+	// for (var i=0; i<partners.length; i+=size) {
+	//      arrayOfArrays.push(partners.slice(i,i+size));
+	// }
+	//
+  // $(document).ready(function(){
+	// 	arrayOfArrays[1].css("display", "inherit");
+	//
+	// 	$(searchBar).on('input', function() {
+	// 	   console.log(searchBar.val())
+	// 	});
+	// })
 
 </script>
