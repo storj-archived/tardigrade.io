@@ -56,7 +56,7 @@
         event.preventDefault()
         if(document.getElementsByClassName("cta-btm-email") && document.getElementsByClassName("cta-btm-email")[0]) {
 
-          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
+          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value;
           var errElm = document.getElementById("mce-error-response-bottom");
 
           if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
