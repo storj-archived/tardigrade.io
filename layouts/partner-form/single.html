@@ -159,14 +159,15 @@
       // timestamps with timezone
       partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
 
+			var partnerFormEmail = partner_form.email.toLowerCase().trim()
 
-      analytics.identify(partner_form.email,
-        {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
+      analytics.identify(partnerFormEmail,
+        {email: partnerFormEmail, timestamp: partner_form.timestamp, partner_form: true},
         {integrations: {'All': false, 'Customer.io': true}}, function() {
           analytics.track("partner-form", {});
       });
 
-      analytics.identify(partner_form.email,
+      analytics.identify(partnerFormEmail,
         partner_form,
         {integrations: {'All': false, 'postgresSelfHosted': true}}, function() {
           window.location = "/partner-thank-you"
