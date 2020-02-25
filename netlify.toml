@@ -29,3 +29,9 @@ HUGO_VERSION = "ç"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/blog/*"
+  to = "https://adoring-borg-aad42e.netlify.com/:splat"
+  status = 200
+  force = true
