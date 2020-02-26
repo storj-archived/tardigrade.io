@@ -35,3 +35,9 @@ HUGO_ENABLEGITINFO = "true"
   to = "https://adoring-borg-aad42e.netlify.com/:splat"
   status = 200
   force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "deny"
+    Strict-Transport-Security = "max-age=300; includeSubDomains"
