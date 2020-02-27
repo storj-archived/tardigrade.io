@@ -37,7 +37,7 @@ HUGO_ENABLEGITINFO = "true"
   force = true
 
 [[redirects]]
-	  from = "/.netlify/identity/settings/*"
-	  to = "https://adoring-borg-aad42e.netlify.com/.netlify/identity/settings/:splat"
+	  from = "/.netlify/identity/settings"
+	  to = "https://adoring-borg-aad42e.netlify.com/.netlify/identity/settings"
 	  status = 200
 	  force = true
