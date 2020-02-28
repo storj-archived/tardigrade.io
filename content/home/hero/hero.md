@@ -1,10 +1,10 @@
 ---
 title : "home-hero"
-headingLeft : "Decentralized Cloud"
-headingRight: "Storage is the Future"
+headingLeft : "Join Thousands of Developers"
+headingRight: "on Decentralized Cloud Storage"
 stage : "BETA"
 stageDescriptor:  ""
-subheading : "Join thousands of developers experiencing Tardigrade's safer, faster, completely decentralized enterprise-grade cloud storage solution."
+subheading : "Developers all over the world are experiencing the safer, faster, decentralized, enterprise-grade cloud storage alternative."
 poweredByIMG : "/img/poweredbystorj.svg"
 heroIMG : "/img/tar-ill-illustration.svg"
 leftBenefitsCol :

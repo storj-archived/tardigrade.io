@@ -1,6 +1,6 @@
 ---
-title: "half"
-content: "Half the Price"
+title: "fraction"
+content: "A Fraction of the Cost"
 class: "why-item"
-weight: 2
+weight: 3
 ---
