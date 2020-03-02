@@ -24,15 +24,7 @@
       }
     }
     &__mascot {
-      // background-image: url("/img/tardigrade-mascot.svg");
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // background-position: center center;
 			height: 680px;
-			// position: relative;
-			// @media (max-width: 1200px) {
-      //   height: 620px;
-      // }
 			z-index: 0;
       @media (max-width: 991px) {
         display: none;
