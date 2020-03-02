@@ -18,9 +18,9 @@
     var nextButton = document.getElementById("partner-form-next");
     var backButton = document.getElementById("partner-form-back");
     var submitButton = document.getElementById("partner-form-submit");
-    var parent = document.getElementsByClassName("step"); // all step wrapper divs
+    var stepWrappers = document.getElementsByClassName("step"); // all step wrapper divs
     var progressBar = document.getElementById("progress-bar");
-    var errElm = document.getElementsByClassName("error"); // all error divs
+    var errors = document.getElementsByClassName("error"); // all error divs
     var formStart = document.getElementById("start-wrapper"); // initial page message
     var startButton = document.getElementById("partner-form-start");
     var firstStep = document.getElementById("partner-form-name");
@@ -31,7 +31,7 @@
     var index = 0; // to be increased an decreased depending on button clicked
     var progressBarValue = 8.333; // 100 divided by the 12 steps
 
-    var partner_form = {partner_form: true}
+    var partnerForm = {partner_form: true}
 
     if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
       // remove beginning message and start process
@@ -44,30 +44,30 @@
     }
 
     nextButton.onclick = function (event) {
-      // parent[index] will always be current step
-      if(parent[index] && errElm && errElm[index]) {
+      // stepWrappers[index] will always be current step
+      if(stepWrappers[index] && errors && errors[index]) {
         // if required field is empty
-        if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
-          errElm[index].setAttribute("style", "display:block;");
+        if(stepWrappers[index].querySelector(".required") && stepWrappers[index].querySelector(".required").value == "") {
+          errors[index].setAttribute("style", "display:block;");
         } else {
-          var userEmailInput = parent[index].querySelector(".user-email");
+          var userEmailInput = stepWrappers[index].querySelector(".user-email");
           // if email input does not include ampersand
-          if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
-            errElm[index].setAttribute("style", "display:block;");
+          if(userEmailInput && userEmailInput.value && userEmailInput.value < 3 && !userEmailInput.value.includes(".") && !userEmailInput.value.includes("@")) {
+            errors[index].setAttribute("style", "display:block;");
           } else {
             // next button successful click logic
-            parent[index].setAttribute("style", "display:none;");
+            stepWrappers[index].setAttribute("style", "display:none;");
             if(backButton) {
               backButton.setAttribute("style", "display:inline-block;");
             }
             if(progressBar) {
               progressBar.innerHTML = index + 2
-              progressBarValue = progressBarValue + 8.333;
+              progressBarValue += 8.333;
               progressBar.setAttribute("style", `width: ${progressBarValue}%`);
             }
-            index = index + 1
-            parent[index].setAttribute("style", "display:block;");
-            if(parent[index].classList.contains('partner-form-per-month')) {
+            index += 1
+            stepWrappers[index].setAttribute("style", "display:block;");
+            if(stepWrappers[index].classList.contains('partner-form-per-month')) {
               nextButton.setAttribute("style", "display:none;");
               submitButton.setAttribute("style", "display:inline-block;");
             }
@@ -77,13 +77,13 @@
     }
 
     // toggle use case options
-    window.onmousedown = function (e) {
-      var el = e.target;
+    window.onmousedown = function (event) {
+      var el = event.target;
       if (el.tagName.toLowerCase() == "option" &&
-          el.parentNode.hasAttribute("multiple") &&
+          el.stepWrappersNode.hasAttribute("multiple") &&
           el.className == "use-case") {
 
-        e.preventDefault();
+        event.preventDefault();
         // toggle selection
         el.hasAttribute("selected") ? el.removeAttribute("selected") : el.setAttribute("selected", "")
       }
@@ -95,79 +95,63 @@
       if(index == 1 && backButton) {
         backButton.setAttribute("style", "display:none");
       }
-      parent[index].setAttribute("style", "display:none;");
+      stepWrappers[index].setAttribute("style", "display:none;");
       if(progressBar) {
         progressBar.innerHTML = index
         progressBarValue = progressBarValue - 8.333;
         progressBar.setAttribute("style", `width: ${progressBarValue}%`);
       }
       index = index - 1
-      parent[index].setAttribute("style", "display:block;");
+      stepWrappers[index].setAttribute("style", "display:block;");
     }
 
     submitButton.onclick = function (event) {
       var userInput = document.querySelectorAll(".user-input") // all non-selecter user inputs
 
-      for (i = 0; i < userInput.length; i++) {
-        partner_form[userInput[i].name] = userInput[i].value
+      for (i = 0; i < userInput.length; i++) { // get answers for all non-selecter user inputs
+        partnerForm[userInput[i].name] = userInput[i].value
       }
+
+			function valuePush(formStep, answerOptions) { // function to grab user answers for selecter inputs
+				if(answerOptions) {
+					for (var i = 0, length = answerOptions.length; i < length; i++) {
+						if (answerOptions[i].selected) {
+							 formStep = answerOptions[i].value;
+							 break;
+						}
+					}
+				}
+			}
 
       var useCaseOptions = document.getElementsByClassName('use-case');
+			var dataAmountOptions = document.getElementsByClassName('data-amount');
+			var fileSizeOptions = document.getElementsByClassName('file-size');
+			var perMonthOptions = document.getElementsByClassName('per-month');
 
-      if(useCaseOptions) {
-        partner_form.use_case = [];
+      if(useCaseOptions) { // not using function beacuse multiple answers can be chosen for this specific question
+        partnerForm.use_case = [];
         for (var i = 0, length = useCaseOptions.length; i < length; i++) {
           if (useCaseOptions[i].selected) {
-            partner_form.use_case.push(useCaseOptions[i].value);
+            partnerForm.use_case.push(useCaseOptions[i].value);
           }
         }
       }
 
-      var dataAmountOptions = document.getElementsByClassName('data-amount');
-
-      if(dataAmountOptions) {
-        for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
-          if (dataAmountOptions[i].selected) {
-             partner_form.data_amount = dataAmountOptions[i].value;
-             break;
-          }
-        }
-      }
-
-      var fileSizeOptions = document.getElementsByClassName('file-size');
-
-      if(fileSizeOptions) {
-        for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
-          if (fileSizeOptions[i].selected) {
-           partner_form.file_sizes = fileSizeOptions[i].value;
-           break;
-          }
-        }
-      }
-
-      var perMonthOptions = document.getElementsByClassName('per-month');
-
-      if(perMonthOptions) {
-        for (var i = 0, length = perMonthOptions.length; i < length; i++) {
-          if (perMonthOptions[i].selected) {
-             partner_form.download_times_per_month = perMonthOptions[i].value;
-             break;
-           }
-        }
-      }
+			valuePush(partnerForm.data_amount, dataAmountOptions)
+			valuePush(partnerForm.file_sizes, fileSizeOptions)
+			valuePush(partnerForm.download_times_per_month, perMonthOptions)
 
       // timestamps with timezone
-      partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
-
+      partnerForm.timestamp = Math.floor((new Date()).getTime() / 1000)
 
       analytics.identify(analytics.user().anonymousId(),
-        {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
+        {email: partnerForm.email, timestamp: partnerForm.timestamp, partner_form: true},
         {integrations: {'All': false, 'Customer.io': true}}, function() {
           analytics.track("partner-form", {});
       });
 
       analytics.identify(analytics.user().anonymousId(),
-        partner_form,
+        partnerForm,
         {integrations: {'All': false, 'postgresSelfHosted': true}}, function() {
           window.location = "/partner-thank-you"
       });
