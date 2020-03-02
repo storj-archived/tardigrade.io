@@ -78,7 +78,7 @@
 
     // toggle use case options
     window.onmousedown = function (event) {
-      var el = e.target;
+      var el = event.target;
       if (el.tagName.toLowerCase() == "option" &&
           el.stepWrappersNode.hasAttribute("multiple") &&
           el.className == "use-case") {
@@ -108,13 +108,27 @@
     submitButton.onclick = function (event) {
       var userInput = document.querySelectorAll(".user-input") // all non-selecter user inputs
 
-      for (i = 0; i < userInput.length; i++) {
+      for (i = 0; i < userInput.length; i++) { // get answers for all non-selecter user inputs
         partnerForm[userInput[i].name] = userInput[i].value
       }
 
-      var useCaseOptions = document.getElementsByClassName('use-case');
+			function valuePush(formStep, answerOptions) { // function to grab user answers for selecter inputs
+				if(answerOptions) {
+					for (var i = 0, length = answerOptions.length; i < length; i++) {
+						if (answerOptions[i].selected) {
+							 formStep = answerOptions[i].value;
+							 break;
+						}
+					}
+				}
+			}
 
-      if(useCaseOptions) {
+      var useCaseOptions = document.getElementsByClassName('use-case');
+			var dataAmountOptions = document.getElementsByClassName('data-amount');
+			var fileSizeOptions = document.getElementsByClassName('file-size');
+			var perMonthOptions = document.getElementsByClassName('per-month');
+
+      if(useCaseOptions) { // not using function beacuse multiple answers can be chosen for this specific question
         partnerForm.use_case = [];
         for (var i = 0, length = useCaseOptions.length; i < length; i++) {
           if (useCaseOptions[i].selected) {
@@ -123,42 +137,12 @@
         }
       }
 
-      var dataAmountOptions = document.getElementsByClassName('data-amount');
-
-      if(dataAmountOptions) {
-        for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
-          if (dataAmountOptions[i].selected) {
-             partnerForm.data_amount = dataAmountOptions[i].value;
-             break;
-          }
-        }
-      }
-
-      var fileSizeOptions = document.getElementsByClassName('file-size');
-
-      if(fileSizeOptions) {
-        for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
-          if (fileSizeOptions[i].selected) {
-           partnerForm.file_sizes = fileSizeOptions[i].value;
-           break;
-          }
-        }
-      }
-
-      var perMonthOptions = document.getElementsByClassName('per-month');
-
-      if(perMonthOptions) {
-        for (var i = 0, length = perMonthOptions.length; i < length; i++) {
-          if (perMonthOptions[i].selected) {
-             partnerForm.download_times_per_month = perMonthOptions[i].value;
-             break;
-           }
-        }
-      }
+			valuePush(partnerForm.data_amount, dataAmountOptions)
+			valuePush(partnerForm.file_sizes, fileSizeOptions)
+			valuePush(partnerForm.download_times_per_month, perMonthOptions)
 
       // timestamps with timezone
       partnerForm.timestamp = Math.floor((new Date()).getTime() / 1000)
-
 
       analytics.identify(analytics.user().anonymousId(),
         {email: partnerForm.email, timestamp: partnerForm.timestamp, partner_form: true},
