@@ -320,6 +320,17 @@
   width: 40%;
 }
 
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+	.cta-join-btn {
+	 margin-top: -2px;
+	}
+}}
+
+
+
 .hiw-heading {
   font-family: "Poppins";
   font-style: normal;
