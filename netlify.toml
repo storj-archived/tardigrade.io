@@ -36,6 +36,12 @@ HUGO_ENABLEGITINFO = "true"
   status = 200
   force = true
 
+[[redirects]]
+  from = "/.netlify/identity/settings"
+  to = "https://adoring-borg-aad42e.netlify.com/.netlify/identity/settings"
+  status = 200
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

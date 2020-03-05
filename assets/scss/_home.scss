@@ -45,6 +45,10 @@
   color: #000000;
 }
 
+.navbar {
+	z-index: 2;
+}
+
 .navlink {
   font-family: "Poppins";
   font-style: normal;
@@ -315,6 +319,17 @@
   margin-left: -5px;
   width: 40%;
 }
+
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+	.cta-join-btn {
+	 margin-top: -2px;
+	}
+}}
+
+
 
 .hiw-heading {
   font-family: "Poppins";
