@@ -199,7 +199,7 @@
 
 .hero-heading {
   color: white;
-  font-size: 34px;
+  font-size: 26px;
 }
 
 .spacer15 {
@@ -259,10 +259,6 @@
   width: 100%;
 }
 
-.hero-heading {
-  color: white;
-  font-size: 34px;
-}
 
 .hero-subheading {
   font-family: "Roboto";
@@ -1967,6 +1963,25 @@ a {
   font-size: 12px;
   display: inline;
   margin-right: 5px;
+}
+
+.hero-prod-status {
+  margin-left: 15px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  width: 316px;
+  border-radius: 50px;
+	padding: 1px;
 }
 
 
