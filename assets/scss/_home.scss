@@ -1740,6 +1740,18 @@ a {
 	line-height: 18px;
 }
 
+.use-case__list .usecase-link-wrapper .nav-link {
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.use-case__list .usecase-link-wrapper-active .nav-link {
+	font-weight: bold;
+}
+
 
 .usecase-link-wrapper .nav-link .tab-pane {
 	display: none;
