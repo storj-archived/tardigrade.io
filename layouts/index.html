@@ -4,6 +4,10 @@
       {{ partial "head" . }}
     </head>
   <body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXWQXGX"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
     <header>
       {{ partial "home/hero" .}}
     </header>
@@ -52,7 +56,7 @@
         event.preventDefault()
         if(document.getElementsByClassName("cta-btm-email") && document.getElementsByClassName("cta-btm-email")[0]) {
 
-          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
+          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value;
           var errElm = document.getElementById("mce-error-response-bottom");
 
           if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
@@ -77,8 +81,7 @@
     newsletterButton.onclick = function (event) {
 
       event.preventDefault()
-
-      var inputValue = document.getElementById("mce-EMAIL-newsletter").value
+.toLowerCase().trim()
       var errElm = document.getElementById("mce-error-response-newsletter");
       var succElm = document.getElementById("mce-success-response-newsletter");
 

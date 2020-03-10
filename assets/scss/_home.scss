@@ -45,6 +45,10 @@
   color: #000000;
 }
 
+.navbar {
+	z-index: 2;
+}
+
 .navlink {
   font-family: "Poppins";
   font-style: normal;
@@ -360,6 +364,17 @@
 	width: 15px;
 	bottom: 2px;
 }
+
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+	.cta-join-btn {
+	 margin-top: -2px;
+	}
+}}
+
+
 
 .hiw-heading {
   font-family: "Poppins";
@@ -1259,7 +1274,11 @@ a {
   display: inline-block;
   width: 100%;
   overflow-y: auto;
+	.flex-nowrap {
+	  overflow: scroll;
+	}
 }
+
 
 .mstone-link-wrapper {
   margin-top: 60px;
@@ -1566,7 +1585,7 @@ a {
   bottom: 26px;
   left: 56px;
   right: 0;
-  width: 80%;
+  width: 82%;
   margin-bottom: 20px;
 }
 .timeline-horizontal .timeline-item {

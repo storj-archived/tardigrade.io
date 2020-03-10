@@ -2,7 +2,7 @@
 
 /* Base CSS files */
 @import "color";
-@import "font";
+@import "fonts";
 @import "base";
 
 /* Pages */
@@ -13,6 +13,8 @@
 @import "waitlist";
 @import "consent-banner";
 @import "community";
+@import "press-kit";
 @import "tech-partner";
 @import "thank-you";
 @import "partner-form";
+@import "universal-login";
