@@ -15,7 +15,7 @@
             <ul class="why-tardigrade__list">
               {{ range where .Site.Pages ".Params.class" "why-item"}}
               <li class="why-tardigrade__list-item">
-                <img class="why-tardigrade__list-img img-fluid" src="/img/check.svg" alt="benefits icon">
+                <img class="why-tardigrade__list-img img-fluid" src="/img/check.svg" alt="Decentralized Cloud Storage Benfits Check Mark">
                 <h4 class="why-tardigrade__list-item-content">{{ .Params.content }}</h4>
               </li>
               {{ end }}
@@ -32,7 +32,7 @@
 						<div class="spacer30"></div>
             {{range where .Site.Pages ".Params.class" "superior-cloud"}}
             <div class="col-xs-12 col-lg-6 text-center">
-							<img class="superior-cloud__img" src="{{.Params.img}}" />
+							<img alt="{{.Params.alt}}" class="superior-cloud__img" src="{{.Params.img}}" />
               <h3 class="superior-cloud-heading">{{.Params.heading}}</h3>
               <p class="superior-cloud-subheading">{{.Params.desc}}</p>
             </div>
