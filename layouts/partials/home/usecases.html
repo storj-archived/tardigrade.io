@@ -1,46 +1,88 @@
-<div class="container-fluid">
+<div class="container-fluid use-case">
   <div class="container">
     <div class="row">
       <div class="col text-center">
           <div class="spacer90"></div>
-          <h2 class="mt-5 use-case-top-heading">
-            Tardigrade Cloud Object Storage Use Cases
+          <h2 class="mt-5 use-case__top-heading">
+            Upgrade Your Storage Layer
           </h2>
           <div class="spacer30"></div>
       </div>
     </div>
     <div class="row mt-5">
-          <div class="col-xs-12 col-md-4 offset-1" style="height:250px;">
+          <div class="col-sm-8 offset-sm-1 col-md-8 col-lg-4 offset-lg-1 use-case__list" style="height:250px;">
             {{range where .Site.Pages ".Params.class" "usecase"}}
             <div class="pl-3 {{if eq .Params.isActive true}}usecase-link-wrapper-active{{else}}usecase-link-wrapper{{end}}" >
-              <a  class="nav-link"
+              	<a
+									class="nav-link"
                   onclick="select(this);"
                   id="v-pills-{{.Params.name}}-tab"
                   data-toggle="pill"
                   href="#v-pills-{{.Params.name}}"
                   role="tab"
                   aria-controls="v-pills-{{.Params.name}}"
-                  aria-selected="true">
-                  {{.Params.heading}}</a>
+                  aria-selected="true"
+								>
+                  {{.Params.heading}}
+									<div class="small-content">
+										<div
+											class="tab-pane fade{{if eq .Params.isActive true}}show active{{end}}"
+		                  id="v-pills-{{.Params.name}}"
+		                  role="tabpanel"
+		                  aria-labelledby="v-pills-{{.Params.name}}-tab"
+										>
+				              <img
+												src="{{.Params.img}}"
+		                    height="45"
+		                    width="45"
+												alt="{{.Params.alt}}"
+											>
+				              <p class="limit">{{.Params.desc}}</p>
+				            </div>
+									</div>
+								</a>
             </div>
             {{end}}
         </div>
-        <div class="col-xs-6 offset-1 col-sm-11 offset-sm-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 tab-content" id="v-pills-tabContent">
-            <div class="spacer30 d-block d-sm-none"></div>
-            {{range where .Site.Pages ".Params.class" "tab"}}
-            <div  class="tab-pane fade{{if eq .Params.isActive true}}show active{{end}}"
-                  id="v-pills-{{.Params.name}}"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-{{.Params.name}}-tab">
-              <img  src="{{.Params.img}}"
-                    height="94"
-                    width="94">
-              <h3 class="mt-4 tab-heading">{{.Params.heading}}</h3>
-              <p class="limit">{{.Params.desc}}</p>
-            </div>
-            {{end}}
-          </div>
-        <div class="spacer90"></div>
+				<div class="col-sm-6 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 large-content">
+	        <div class="tab-content" id="v-pills-tabContent">
+	            <div class="spacer30 d-block d-sm-none"></div>
+	            {{range where .Site.Pages ".Params.class" "tab"}}
+	            <div  class="tab-pane fade{{if eq .Params.isActive true}}show active{{end}}"
+	                  id="v-pills-{{.Params.name}}"
+	                  role="tabpanel"
+	                  aria-labelledby="v-pills-{{.Params.name}}-tab">
+	              <img  src="{{.Params.img}}"
+	                    height="94"
+	                    width="94">
+	              <h3 class="mt-4 tab-heading">{{.Params.heading}}</h3>
+	              <p class="limit">{{.Params.desc}}</p>
+	            </div>
+	            {{end}}
+	          </div>
+	        <div class="spacer90"></div>
+				</div>
       </div>
     </div>
+		<img class="dev-in-mind__responsive-mobile-bg" src="/img/tar-web-grey-bg-sm-2.png" />
   </div>
+
+	<script type="text/javascript">
+		let smallContent = document.querySelectorAll('.small-content');
+		let largeContent = document.getElementById("large-content")
+
+			if(window.innerWidth && window.innerWidth > "991") {
+				if(smallContent) {
+					document.querySelectorAll('.small-content').forEach(function(a){
+						a.remove()
+					})
+				}
+			}
+			else if(window.innerWidth && window.innerWidth < "991") {
+				if(largeContent) {
+					largeContent.remove();
+				}
+
+			}
+
+	</script>

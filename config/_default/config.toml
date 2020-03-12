@@ -2,7 +2,6 @@ languageCode = "en-us"
 title = "Tardigrade | Decentralized Cloud Object Storage"
 
 [permalinks]
-  waitlist = "/waitlist/"
   partner = "/partner/"
   privacy-policy = "/privacy-policy/"
   storage-sla = "/service-level-commitment/"

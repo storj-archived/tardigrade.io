@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="62px" viewBox="0 0 46 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>tar-ico-secure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="46.6398717%" x2="100%" y2="53.3601283%" id="linearGradient-1">
+            <stop stop-color="#C165FF" offset="0%"></stop>
+            <stop stop-color="#16B3FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="58.319722%" y1="16.5898174%" x2="58.319722%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#BCC6CB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="72.8651572%" x2="0%" y2="30.8504238%" id="linearGradient-3">
+            <stop stop-color="#2582FF" offset="0%"></stop>
+            <stop stop-color="#12F5E1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tar-ico-secure" fill-rule="nonzero">
+            <g id="Shape-Copy-2" transform="translate(0.000000, 49.000000)">
+                <path d="M45.2844764,0.976353 L0.6414065,0.976353 C2.70551773,8.6504986 7.94911791,12.4506523 16.4885022,12.4506523 L29.4511725,12.4506523 C37.9826468,12.4506523 43.2216847,8.6505756 45.2844764,0.976353 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M45.2844764,0.976353 L0.6414065,0.976353 C2.70551773,8.6504986 7.94911791,12.4506523 16.4885022,12.4506523 L29.4511725,12.4506523 C37.9826468,12.4506523 43.2216847,8.6505756 45.2844764,0.976353 Z" id="Path-Copy" fill="#007698"></path>
+            </g>
+            <path d="M33.4354103,26.1028369 L33.4354103,19.1048632 C33.4354103,13.4219818 28.8285247,8.81509625 23.1456434,8.81509625 C17.462762,8.81509625 12.8558764,13.4219818 12.8558764,19.1048632 L12.8558764,26.1028369 L33.4354103,26.1028369 Z M4.54078014,27.1028369 L4.54078014,19.1048632 C4.54078014,8.82968099 12.8704611,0.5 23.1456434,0.5 C33.4208256,0.5 41.7505066,8.82968099 41.7505066,19.1048632 L41.7505066,27.1028369 L4.54078014,27.1028369 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+            <path d="M45.5053191,26.1028369 L0.42021277,26.1028369 L0.42021277,47.5481256 C0.42021277,53.5340082 5.27272937,58.3865248 11.258612,58.3865248 L34.66692,58.3865248 C40.6528025,58.3865248 45.5053191,53.5340082 45.5053191,47.5481256 L45.5053191,26.1028369 Z" id="Shape-Copy" fill="url(#linearGradient-3)"></path>
+        </g>
+    </g>
+</svg>
