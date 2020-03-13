@@ -725,6 +725,7 @@
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 20px;
+	margin-top: 40px;
 }
 
 #toggleUpBtn {
@@ -762,6 +763,10 @@
 	margin-top: 40px;
 }
 
+#htcCollapseWrapper {
+	display: none;
+}
+
 @media only screen and (max-width: 991px) {
 
 	.half-price__cta__wrapper {
@@ -791,6 +796,10 @@
 	.half-price__image-resp {
 		height: 100%;
 		width: 100%;
+		display: block;
+	}
+
+	#htcCollapseWrapper {
 		display: block;
 	}
 }
