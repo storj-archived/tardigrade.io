@@ -10,5 +10,5 @@ col2Image: "/img/tar-ico-arrows-left-right.png"
 col2Amount: "$0.045"
 col2Metric: "PER GB"
 col2Alt: "storage bandwidth icon"
-cta: "Sign Up Today"
+cta: "Get Started"
 ---

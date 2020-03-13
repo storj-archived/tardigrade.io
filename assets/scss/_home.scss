@@ -715,6 +715,26 @@
   font-weight: 700;
 }
 
+.half-price__image-wrapper__content__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.half-price__image-wrapper__content__header__title {
+	font-family: Poppins;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+#toggleUpBtn {
+	display: none;
+}
+
+#toggleDownBtn {
+	display: flex;
+}
+
 .half-price__cta {
   background: $color--blue-light;
   color: #fff;
@@ -739,6 +759,7 @@
 	display: none;
 	width: 460px;
 	height: 225px;
+	margin-top: 40px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1771,6 +1792,13 @@ a {
 
 .large-content .tab-content {
 	display: block;
+}
+
+.large-content .tab-pane .limit {
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 25px;
 }
 
 .small-content {
