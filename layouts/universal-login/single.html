@@ -6,6 +6,9 @@
 <head>
     <title>Tardigrade Satellite</title>
     {{ partial "head" . }}
+    <link rel="preconnect" href="https://us-central-1.tardigrade.io/login">
+    <link rel="preconnect" href="https://asia-east-1.tardigrade.io/login">
+    <link rel="preconnect" href="https://europe-west-1.tardigrade.io/login">
 </head>
 <body>
     <div class="login">
@@ -61,7 +64,7 @@
             </a>
             <div class="metadata-info">Metadata does not include actual data. Objects are distributed globally.</div>
         </div>
-        <iframe class="iframe" id="iframe" src="https://us-central-1.tardigrade.io/login" name="iframe-window" onerror="reload()"></iframe>
+        <iframe class="iframe" src="https://us-central-1.tardigrade.io/login" name="iframe-window"></iframe>
     </div>
     {{partial "site-scripts" .}}
 </body>
@@ -121,10 +124,4 @@
 
 		europeSatellite.selectSatellite();
 	}
-
-	function reload() {
-        const iframeContainer = document.getElementById('iframe');
-        const content = iframeContainer.innerHTML;
-        iframeContainer.innerHTML = content;
-    }
 </script>
