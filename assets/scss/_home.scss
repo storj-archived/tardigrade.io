@@ -49,6 +49,10 @@
 	z-index: 2;
 }
 
+.navbar-nav {
+	margin-bottom: 13px;
+}
+
 .navlink {
   font-family: "Poppins";
   font-style: normal;
@@ -203,7 +207,8 @@
 
 .hero-heading {
   color: white;
-  font-size: 26px;
+  font-size: 36px;
+	line-height: 42px;
 }
 
 .spacer15 {
