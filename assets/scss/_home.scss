@@ -146,7 +146,6 @@
 /*  home-hero-banner  */
 
 .bg-gradiant {
-  background-image: url("/img/tar-web-product-hero-bg.png");
 	background-image: url("/img/tar-bg-ill-cloud.jpg");
   background-size: cover;
 	background-position: bottom;
@@ -156,7 +155,7 @@
 
 @media only screen and (max-width: 991px) {
 	.bg-gradiant {
-		background-image: url("/img/tar-web-product-hero-bg-resp.png");
+		background-image: url("/img/tar-web-product-hero-bg-resp.jpg");
 		height: 1250px;
 	}
 }
