@@ -600,6 +600,7 @@
 		font-size: 16px;
 		line-height: 26px;
 	}
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -618,7 +619,10 @@
 		top: 60px;
 		.col-lg-6 {
 			width: 70%;
-			margin: 0 auto;
+			margin: 10px auto;
+		}
+		.second-section {
+			margin-top: 50px;
 		}
 	}
 }
@@ -702,6 +706,8 @@
 .half-price__column-heading {
   font-size: 14px;
   font-weight: 700;
+	margin-bottom: 15px;
+	font-family: 'Poppins';
 }
 
 .half-price__column-image {
@@ -1884,6 +1890,8 @@ a {
 		position: relative;
 		left: 14px;
 		top: 5px;
+		text-transform: none;
+		margin-bottom: 15px;
 	}
 
 
