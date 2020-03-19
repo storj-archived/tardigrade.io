@@ -4,6 +4,7 @@ img : "/img/tar-ico-globe-network.svg"
 heading : Globally Distributed
 desc : Data is broken into smaller pieces and stored on a global network.
 class : "superior-cloud"
+secondClass: "second-section"
 alt: Globally Distributed Storage Network for Developers
 h : 40
 w : 55

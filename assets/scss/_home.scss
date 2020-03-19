@@ -49,6 +49,10 @@
 	z-index: 2;
 }
 
+.navbar-nav {
+	margin-bottom: 13px;
+}
+
 .navlink {
   font-family: "Poppins";
   font-style: normal;
@@ -203,7 +207,8 @@
 
 .hero-heading {
   color: white;
-  font-size: 26px;
+  font-size: 36px;
+	line-height: 42px;
 }
 
 .spacer15 {
@@ -331,11 +336,10 @@
   text-align: center;
   letter-spacing: 0.25px;
   color: #ffffff;
-  width: 270px;
   height: 40px;
   margin-top: -4px;
   margin-left: -5px;
-  width: 32%;
+  width: 172px;
 	text-align: left;
 	padding-left: 30px;
 }
@@ -595,6 +599,7 @@
 		font-size: 16px;
 		line-height: 26px;
 	}
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -613,7 +618,10 @@
 		top: 60px;
 		.col-lg-6 {
 			width: 70%;
-			margin: 0 auto;
+			margin: 10px auto;
+		}
+		.second-section {
+			margin-top: 50px;
 		}
 	}
 }
@@ -697,6 +705,8 @@
 .half-price__column-heading {
   font-size: 14px;
   font-weight: 700;
+	margin-bottom: 15px;
+	font-family: 'Poppins';
 }
 
 .half-price__column-image {
@@ -1879,6 +1889,8 @@ a {
 		position: relative;
 		left: 14px;
 		top: 5px;
+		text-transform: none;
+		margin-bottom: 15px;
 	}
 
 
