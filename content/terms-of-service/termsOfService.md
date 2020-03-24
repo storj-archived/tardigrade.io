@@ -458,3 +458,33 @@ lastUpdated: "March 19, 2020"
 
 	<li>&nbsp;&nbsp;<p><u>Survival</u>. This Mandatory Arbitration and Class Action Waiver section shall survive any termination of your use of the Offerings and Websites.</p></li>
 </ol>
+
+<p>17.&nbsp;&nbsp;<b>General.</b></p>
+
+<ol type="a">
+	<li>&nbsp;&nbsp;<p><u>Communications.</u>/p></li>
+
+		<ol type="i">
+			<li>&nbsp;&nbsp;<p><u>To User</u>. User agrees to receive electronically all communications, agreements, documents, notices, and disclosures that Company provides in connection with the Offerings (“<b>Communications</b>”).  Company may provide Communications in a variety of ways, including by e-mail, text, in-app notifications, or by posting them on the Company website or through the Offerings. User agrees that all Communications provided by Company electronically satisfy any legal requirement that such communication(s) be in writing. </p></li>
+
+			<li>&nbsp;&nbsp;<p><u>To Company</u>. Notices required or permitted to be given by User to Company hereunder shall be in writing and shall be delivered to Company with attention to Storj’s Legal Department, at 3423 Piedmont Rd NE Suite 475, Atlanta, Georgia 30305, by certified mail, postage prepaid, return receipt requested or nationally recognized overnight courier service to the attention of Company’s legal department.</p></li>
+		</ol>
+
+	<li>&nbsp;&nbsp;<p><b>Publicity.</b> Company may identify User as a User on its website and in print and other marketing materials using User’s name and logo.</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>No Agency.</b> Other than as specified herein, neither party has any authority to create any obligation on behalf of the other.</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>Force Majeure.</b> Except for payment obligations, neither Company nor User will be liable for delayed or inadequate performance of its obligations hereunder to the extent caused by a condition that is beyond the party’s reasonable control, including but not limited to natural disaster, civil disturbance, acts of terrorism or war, labor conditions, governmental actions, interruption or failure of the Internet or any utility service, and denial of service attacks (each a “Force Majeure Event”).  The party affected shall be relieved from its applicable obligations as long as the Force Majeure Event lasts and hinders the performance of said obligations. The party affected shall promptly notify the other party and make reasonable efforts to mitigate the effects of the Force Majeure Event with reasonable dispatch; if Company is the party affected, this requirement can be satisfied by notice posted on its website.</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>Severability; No Waiver.</b> In the event that any provision of this Agreement is found invalid or unenforceable pursuant to any judicial decree or decision, such provision shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and remain enforceable between the parties.  No waiver of any term of this Agreement shall be deemed a further or continuing waiver of such term or any other term, and a party’s failure to assert any right or provision under this Agreement shall not constitute a waiver of such right or provision.</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>Assignment.</b> You may not assign this Agreement or any of its rights hereunder, nor delegate any of its obligations hereunder, by operation of law or otherwise, without Company’s prior written consent, provided that consent for an assignment of this Agreement in its entirety (including all Orders) will not be required in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of a party’s assets.  Notwithstanding the foregoing, if a party is acquired by, sells substantially all of its assets to, or undergoes a change of control in favor of, a direct competitor of the other party, then such other party may terminate this Agreement upon written notice.   Subject to the foregoing, this Agreement will be binding and inure to the benefit of the parties, their respective successors, and permitted assigns.  There are no third-party beneficiaries to this Agreement.</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>Company Affiliates.</b> The term Company includes Company and its affiliates,  meaning an entity which, directly or indirectly, controls, is controlled by or is under common control with Storj.  As used herein, “control” means the beneficial ownership of more than fifty percent (50%) of the voting equity securities or other equivalent voting interests of the entity (“<b>Affiliates</b>”).</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>Entire Agreement; Order of Precedence.</b> This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes and replaces any prior or contemporaneous representations, understandings and agreements, whether written or oral, with respect to the subject matter hereof. To the extent of any conflict or inconsistency between the provisions in the body of this Agreement and any addendum hereto or any User Agreement, the terms of such addendum or User Agreement shall prevail. Notwithstanding any language to the contrary therein, no terms or conditions stated in any Documentation shall be incorporated into or form any part of this Agreement. Headers used in this Agreement are for convenience only and are not intended as, nor shall they be used as, an aid to interpretation.</p></li>
+
+	<li>&nbsp;&nbsp;<p><b>Amendment.</b> Company may revise this Agreement from time to time by posting the modified version on its website with or without prior notice to User, except as otherwise stated herein. By continuing to access or use the Storage Services after the posted effective date of modifications to this Agreement, you agree to be bound by the revised version of the Agreement.</p></li>
+
+	<li>&nbsp;&nbsp;<p>Survival. The following sections of this Agreement will survive expiration or earlier termination of this Agreement for any reason: 3. Payment, 5. Term & Termination, 6. User’s Use of Out of Scope Service, 7. Software Updates, Service Deprecation, 9. Service Level Agreement, 10. Feedback, 11. Indemnification, 12. Disclaimers, 13. Limitation of Liability, </p></li>
+</ol>
