@@ -45,17 +45,118 @@ lastUpdated: "March 19, 2020"
 	<li>“<b>Major Release</b>” means a new release of the Software as indicated by a change to the number to the left of the decimal point in the version number, for example, Version 2.1 upgraded to Version 3.0.</li>
 
 	<li>“<b>Supported Software Versions</b>” means the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes.</li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+
+	<li>“<b>User Cause</b>” means any of the following causes of an Error: </li>
+
+	<ol type="i">
+		<li>Any negligent or improper use (including improper installation, configuration or implementation), misapplication, misuse or abuse of, or damage to, the Services, Storage Services, Uplink, or Storage Nodes by User or any of its Representatives; </li>
+
+		<li>Any maintenance, update, improvement or other modification to or alteration of Storage Services, Storage Nodes or the Open Source Software by User or its Representatives that was not specifically authorized in writing by Company; </li>
+
+		<li>Any use of the Storage Services or Storage Nodes by User or its Representatives in a manner inconsistent with the then-current Documentation; </li>
+
+		<li>Any use by User or their Representatives of any Third-party Products that Company has not provided to User;</li>
+
+		<li>Any use by User or their Representatives of a version of the Storage Services or Storage Nodes that is earlier than the Supported Software Versions as defined herein;</li>
+
+		<li>Any Error caused by User Systems; or</li>
+
+
+		<li>Any Error related to Out-of-Scope Services not covered by this Policy.</li>
+	</ol>
+
+	<li>“<b>Custom Development</b>” means custom software or products designed to interact with the Storage Services or Storage Nodes developed </li>
+
+	<ol type="i">
+		<li>by User, with or without Company’s assistance, using application programming interfaces (APIs) or other development tools related to the Products, or</li>
+		<li>by Company for the benefit of User.</li>
+	</ol>
+
+	<li>“<b>End Users</b>” or “<b>User’s End Users</b>” means the end users of Custom Development, User Systems, Third-party Products, or User Applications.  User is solely responsible for all matters relating to its end users, including without limitation, registration, billing, collections, and support. User acknowledges and agrees that</li>
+
+	<ol type="i">
+		<li>User’s payment and other obligations hereunder are separate from and wholly independent of User’s relationship with its End Users, and </li>
+
+		<li>Company has no responsibility or liability in connection with User’s End Users.</li>
+	</ol>
+
+	<li>“<b>User Application</b>” means any web, mobile, or other application developed by User using the Storage Services or Storage Nodes, including any source code written by User.</li>
+
+	<li>“<b>User Systems</b>” means User’s information technology infrastructure, including User’s computers, software, databases, electronic systems (including database management systems) and networks. </li>
+
+	<li>“<b>User Agreement</b>” means a separately executed Tardigrade partnership agreement between Company and User.</li>
+
+	<li>“<b>Error</b>” means with respect to any Storage Services or Storage Nodes, any reproducible failure of the Storage Services or Storage Nodes to operate in all material respects in accordance with the then-current Documentation, including any problem, failure or error referred to in the Severity Level Table.</li>
+
+	<li>“<b>Force Majeure Event</b>” means any unavailability caused by circumstances beyond Company’s reasonable control, including without limitation, acts of God, acts of government, flood, fire, earthquakes, civil unrest, acts of terror, strikes or other labor problems (other than those involving Company employees), computer, telecommunications, Internet service provider or hosting facility failures or delays involving hardware, software or power systems not within Company’s possession or reasonable control, and denial of service attacks.</li>
+
+	<li>“<b>Out-of-scope Services</b>” means any of the following: </li>
+
+	<ol type="i">
+		<li>Unless otherwise agreed to in writing between you  and Company specifically stating that such services are covered under this Policy, any services requested by User for Custom Development, User Systems, or Third-party Products; </li>
+
+		<li>Any services requested by User in connection with any apparent Error that Company determines in its reasonable discretion to have been caused by a User Cause; </li>
+
+		<li>Any other services that User and Company may from time to time agree in writing are not included in the Support Services; an</li>
+
+		<li>Any loss of an encryption key or encryption key seed.</li>
+	</ol>
+
+	<li>“<b>Severity Levels</b>” means the defined Error severity levels and corresponding required service level responses, Response Times, Resolutions and Resolution Targets referred to in the Severity Level Table.</li>
+
+	<ol type="i">
+		<li>“<b>Severity Level Table</b>” means the table set out in Section 2.b.</li>
+
+		<li>“<b>Severity Level 1 Error</b>” has the meaning set forth in the Severity Level Table.</li>
+
+		<li>“<b>Severity Level 2 Error</b>” has the meaning set forth in the Severity Level Table.</li>
+
+		<li>“<b>Non-Severe Error</b>” has the meaning set forth in the Severity Level Table.</li>
+
+		<li>“<b>Non-Incident</b>” has the meaning set forth in the Severity Level Table.</li>
+	</ol>
+
+	<li>“<b>Representative</b>” means any employee or contractor of User, or any employee or contractor of a partner or affiliate of User.</li>
+
+	<li>“<b>Response Time</b>” has the meaning set forth in the Severity Level Table.</li>
+
+	<li>“<b>Resolve</b>” and the correlative terms, “<b>Resolved</b>”, “<b>Resolving</b>” and “<b>Resolution</b>” each have the meaning set forth in Section 2.b.</li>
+
+	<li>“<b>Resolution Target</b>” has the meaning set forth in the Severity Level Table.</li>
+
+	<li>“<b>Support Hours</b>” means </li>
+
+	<ol type="i">
+		<li>Between 9:00 A.M. to 8:00 P.M. Eastern Time on Business Days for Severity Level 1 Errors</li>
+
+		<li>Between 9:00 A.M. to 5:00 P.M. Eastern Time on Business Days for other Support Requests.</li>
+	</ol>
+
+	<li>“<b>Support Period</b>” means the term during which Company provides the Support Services to User as set forth in any Order between Company and User or as specified in a User Agreement.</li>
+
+	<li>“<b>Support Request</b>” has the meaning set forth in Section 5.a.</li>
+
+	<li>“<b>Support Services</b>” means Company’s support of the Storage Services or Storage Nodes, but excluding any Out-of-scope Services.</li>
+
+	<li>“<b>Technical Contact</b>” has the meaning set forth in Section 5.b.</li>
+
+	<li>“<b>Third-party Products</b>” means all third-party software, computer hardware, network hardware, electrical, telephone, wiring and all related accessories, components, parts and devices.</li>
+
+	<li>“<b>Uptime Availability</b>” means that the Storage Services will be available and online in accordance with the SLA defined herein.</li>
+
+	<li>“<b>Support Tiers.</b>”  Support responsibilities for User and/ or User’s End Users are divided into three (3) tiers of ownership:</li>
+
+	<ol type="i">
+		<li><b>Tier 1 Support</b> is provided by the User to User’s End Users.* Tier 1 Support is responsible for handling the initial communication with the User’s End User and for documenting the Incident in the form of a ticket.  Tier 1 Support performs basic triage resulting in Resolution of the Incident or escalation to Tier 2. All communication with the End User is provided by Tier 1 Support, which allows User to control the message to their End Users.  In order to communicate effectively with the End Users about the status of their ticket, it is expected that Tier 1 Support will continue to communicate with Tier 2 Support on the progress of the ticket until the ticket is Resolved.</li>
+
+		<p>* If a developer or partner has developed a User Application that incorporates Storage Services Storage Nodes, Uplink or the Open Source Software into the User Application, and the support issue is raised by an End User of that User Application, the developer or partner is responsible for Tier 1 support of incidents involving User’s End Users of the developer or partner’s User Application. </p>
+
+		<li>“<b>Tier 2 Support</b>” is provided by Company. Tier 2 Support is responsible for advanced troubleshooting and Resolution of Incidents that require deeper expertise on the Company Storage ServicesStorage Platform functionality. </li>
+
+		<li><b>Tier 3 Support</b> is provided by Company. Tier 3 Support is responsible for all incidents and problems that cannot be resolved in a timely manner by Tier 2 Support. Tier 3 Support includes engineers from product development and networking, as well as other functional specialists, including architects and security specialists.</li>
+	</ol>
+
+	<p><b>Storage Services.</b> The Storage  Platform is comprised of a distributed network of independent third-party storage nodes which you may access and use to store Storage Materials pursuant to the terms of your use of the Storage Services as set forth herein.  The Storage Services employ technology designed to encrypt and shard Storage Materials locally on your device and then facilitate the distribution of encrypted data fragments to the network of Storage Nodes. The Storage Nodes are neither operated nor maintained by Company, and Company has no responsibility or liability for the Storage Nodes. You are solely responsible for your use of the Storage Services including for configurations that you select for maintaining access to your Storage Materials. </p>
 </ol>
+
+<p></p>
