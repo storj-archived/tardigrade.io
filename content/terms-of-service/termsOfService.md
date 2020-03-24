@@ -361,17 +361,100 @@ lastUpdated: "March 19, 2020"
 	<li><p><b>Incident Resolution Process</b></p></li>
 
 	<ol type="i">
-		<li>&nbsp;<p>The Company Service Desk will use commercially reasonable efforts to resolve Incidents and answer questions to resolve Support Requests within the Resolution Target specified in the Severity Level Table set forth in Section 2.b.</p></li>
+		<li>&nbsp;&nbsp;<p>The Company Service Desk will use commercially reasonable efforts to resolve Incidents and answer questions to resolve Support Requests within the Resolution Target specified in the Severity Level Table set forth in Section 2.b.</p></li>
 
-		<li>&nbsp;<p>In cases where the Company Service Desk is unable to resolve the Incident, it will be escalated to the appropriate Company Tier 3 Support staff (with regard to Company Platform Services Incidents) or User Tier 1 Support staff (with regard to Incidents determined not to be related to the Company Platform Services) for the next level of Incident Resolution.</p></li>
+		<li>&nbsp;&nbsp;<p>In cases where the Company Service Desk is unable to resolve the Incident, it will be escalated to the appropriate Company Tier 3 Support staff (with regard to Company Platform Services Incidents) or User Tier 1 Support staff (with regard to Incidents determined not to be related to the Company Platform Services) for the next level of Incident Resolution.</p></li>
 
 		<li>During the process of Incident Resolution, the requester will be notified when the problem is solved or when Company changes the forecasted date of Resolution via email.</p></li>
 
-		<li>&nbsp;<p>The Company Help Desk shall use commercially reasonable efforts to identify the cause of problems involving public or User-owned software, network or computer infrastructure, but shall not be responsible for correcting or resolving any such problems. To the extent that Company is able to determine the external problem cause, Company will inform the requester and close the request log.  Company Help Desk support will not include the responsibility to cure or correct defects in any non- Company products, services, or infrastructure, including, but not limited to Custom Development, User Systems, or Third-party Products and Services.</p></li>
+		<li>&nbsp;&nbsp;<p>The Company Help Desk shall use commercially reasonable efforts to identify the cause of problems involving public or User-owned software, network or computer infrastructure, but shall not be responsible for correcting or resolving any such problems. To the extent that Company is able to determine the external problem cause, Company will inform the requester and close the request log.  Company Help Desk support will not include the responsibility to cure or correct defects in any non- Company products, services, or infrastructure, including, but not limited to Custom Development, User Systems, or Third-party Products and Services.</p></li>
 	</ol>
 
-	<li><p><b>Supported Releases for Software</b>.Notwithstanding anything herein to the contrary, Company provides Support Services for (i) the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes (the “<b>Supported Software Versions</b>”).
+	<li>&nbsp;&nbsp;<p><b>Supported Releases for Software</b>.Notwithstanding anything herein to the contrary, Company provides Support Services for (i) the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes (the “<b>Supported Software Versions</b>”).
 	</p></li>
 </ol>
 
 <p>9.&nbsp;&nbsp;<b>Service Level Agreement("SLA")</b></p>
+
+<ol type="a">
+	<li>&nbsp;&nbsp;<p>Company will use commercially reasonable efforts to meet the following service level commitment: except for scheduled maintenance, the Storage Services will be available 99.95% of the time. We calculate availability based upon the service records we maintain. We will use reasonable efforts to notify you in advance of any scheduled maintenance.</p></li>
+
+	<ol type="i">
+		<li>&nbsp;&nbsp;<p>Our SLA obligations do not extend to any unavailability of the Storage Services that is caused by: (i) any hardware or software that you use in connection with the Storage Services; (ii) misuse of our Storage Services, including use in breach of the Agreement or use other than in accordance with any content or Documentation or other instructions provided by Company; (iii) circumstances or events beyond the reasonable control of Company; (iv) maintenance or scheduled downtime; or (iv) our suspension or termination of your access to the Storage Services pursuant to the rights we have reserved under the the Storj agreements. </p></li>
+
+		<li>&nbsp;&nbsp;<p>As the sole and exclusive remedy for our breach of the SLA, Company will provide a credit against Fees payable to Company (“Credits”) in the following amounts: (i) if availability during any rolling 30 day period is less than 99.95% but above 99.0%, then we will provide a Credit of 5% of the monthly Fees actually paid during that month; and (ii) if availability during any calendar month is less than 99.0%, then we will provide a Credit of 10% of the monthly Fees actually paid during that month.</p></li>
+
+		<li>&nbsp;&nbsp;<p>You will only be eligible to receive Credits if you have paid all Fees on time, are not past due on any payments, and notify us of a request for Credits within 30 days of the end of the calendar month in which we have not met our SLA. We will issue Credits solely as an offset against future Fees that are payable by you to Company. You will not be entitled to a refund or other payment from Company in connection with any Credits you accrue. In no event will the total amount of Credits exceed 10% of the Fees payable by you for the corresponding month.</p></li>
+
+		<li>&nbsp;&nbsp;<p><b>Scheduled Downtime.</b> Scheduled Downtime will generally occur during the Maintenance Windows. Company will endeavor to provide notice at least eight hours in advance of any scheduled downtime occurring outside of the Maintenance Windows.</p></li>
+
+		<li>&nbsp;&nbsp;<p><b>Maintenance Windows.</b> Company has an optional weekly maintenance window on Sundays from 2:00 a.m. EST/EDT to 6:00 a.m. EST/EDT during which scheduled maintenance, upgrades and repairs can occur.</p></li>
+
+		<ol type="1">
+			<li>&nbsp;&nbsp;<p>Usage of the maintenance window is scheduled according to the Company release calendar.</p></li>
+
+			<li>&nbsp;&nbsp;<p>Company may also perform emergency maintenance in a non-standard maintenance window.</p></li>
+
+			<ol type="a">
+				<li>&nbsp;&nbsp;<p>Company will use commercially reasonable efforts to perform emergency maintenance at the time of lowest use levels, as determined by web use logs from the previous month.</p></li>
+
+				<li>&nbsp;&nbsp;<p>Emergency maintenance windows will last no longer than four (4) hours.</p></li>
+
+				<li>&nbsp;&nbsp;<p>Company reserves the right to use two (2) emergency (non-scheduled) maintenance windows per year.  Emergency maintenance beyond these two (2) additional windows will be considered downtime.</p></li>
+
+				<li>&nbsp;&nbsp;<p>Company will inform User about all relevant changes planned for the upcoming maintenance window no less than one (1) weeks prior to the maintenance window.</p></li>
+			</ol>
+		</ol>
+	</ol>
+</ol>
+
+<p>10.&nbsp;&nbsp;<b>Feedback</b>To the extent that User or its End Users provide Company with any suggestions, ideas, enhancement requests, recommendations, or other feedback or information (collectively, “<b>Feedback</b>”), User hereby grants to Company a fully paid-up, royalty free, worldwide, perpetual, irrevocable, transferable, sub-licensable license to freely use, disclose, and otherwise exploit such Feedback, including but not limited to incorporation of the Feedback into future versions of the Storage Services without any compensation or other obligation to User. </p>
+
+<p>11.&nbsp;&nbsp;<b>Indemnification.</b></p>
+
+<ol type="a">
+	<li>&nbsp;&nbsp;<p>To the fullest extent permitted by applicable law, you agree to defend, hold harmless, and indemnify Company from and against any and all losses, liabilities, claims, or demands, including but not limited to reasonable attorney’s fees, made by any third party due to or arising out of (i) your use of the Storage Services, (ii) the Storage Materials, (iii) your sharing or rental of Space; (iv) any Feedback you provide; or (v) your breach of any of this Agreement.</p></li>
+
+	<li>&nbsp;&nbsp;<p>Company reserves the right to exercise sole control over the defense and settlement of any claim subject to indemnification hereunder at your expense.  This indemnity is in addition to, and not in lieu of, any other indemnities set forth in a written agreement between you and Company.  You may not settle and claim without our prior written consent.</p></li>
+</ol>
+
+<p>&nbsp;&nbsp;<b>Disclaimers</b></p>
+
+<p>TO THE FULLEST EXTENT PERMITTED BY LAW, THE STORAGE SERVICES AND ALL RELATED COMPONENTS AND INFORMATION ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT ANY WARRANTIES OF ANY KIND, AND COMPANY AND ITS SUBCONTRACTORS AND AFFILIATES EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.  USER ACKNOWLEDGES THAT COMPANY DOES NOT WARRANT THAT ACCESS, USE, OR OPERATION OF THE STORAGE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT DEFECTS WILL BE CORRECTED.  COMPANY IS NOT RESPONSIBLE FOR AND DISCLAIMS ALL LIABILITY RELATED TO DELAYS, DELIVERY FAILURES, INTERCEPTION, ALTERATION, OR OTHER DAMAGE RESULTING FROM MATTERS OUTSIDE OF ITS CONTROL, INCLUDING PROBLEMS INHERENT IN THE USE OF THE INTERNET, MOBILE AND PERSONAL COMPUTING DEVICES, TRANSMISSION OF ELECTRONIC COMMUNICATIONS OVER THE INTERNET OR OTHER NETWORKS, AND THIRD PARTY HOSTING SERVICE PROVIDERS.  COMPANY DOES NOT MAKE ANY REPRESENTATIONS OR WARRANTIES REGARDING THE MAINTENANCE, STORAGE, RETRIEVABILITY, OR CONDITION OF STORAGE MATERIALS.</p>
+
+<p>13.&nbsp;&nbsp;<b>Limitation of Liability.</b></p>
+
+<ol type="a">
+	<li>&nbsp;&nbsp;<p><u>Consequential Damages</u>. IN NO EVENT SHALL COMPANY BE LIABLE TO YOU OR ANY OTHER PERSON OR ENTITY FOR ANY LOST PROFIT OR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES OF ANY KIND (INCLUDING, BUT NOT LIMITED TO, RELATED TO LOSS OF REVENUE, INCOME, OR PROFITS, LOSS OF USE OR DATA, DAMAGES FOR BUSINESS INTERRUPTION, OR COSTS OF OBTAINING SUBSTITUTE GOODS OR SERVICES) ARISING OUT OF OR IN ANY WAY RELATED TO THIS AGREEMENT OR TO THE ACCESS OR USE OF THE STORAGE SERVICES OR RELATED COMPONENTS, EVEN IF COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE AND WHETHER BASED UPON WARRANTY, CONTRACT, TORT, STRICT LIABILITY, VIOLATION OF STATUTE, OR OTHERWISE.  THIS EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Limitation of Liability</u>. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, COMPANY’S AGGREGATE LIABILITY TO USER FOR ANY DAMAGES ARISING FROM OR RELATED TO USER’S  USE OF THE STORAGE  SERVICES, OR OTHERWISE RELATED TO THIS AGREEMENT (FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION), WILL AT ALL TIMES BE LIMITED, OTHER THAN TO THE LESSER OF FIFTY U.S. DOLLARS ($50) AND THE AMOUNTS PAID BY USER TO COMPANY IN THE TWELVE (12) MONTHS PRIOR TO THE DATE THE CLAIM FIRST AROSE.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Promotional Credit</u>.  IN THE EVENT A VALID PROMOTIONAL CREDIT IS NON-FUNCTIONAL DURING THE REDEMPTION PERIOD, USER’S SOLE REMEDY, AND COMPANY’S SOLE LIABILITY, SHALL BE THE REPLACEMENT OF SUCH PROMOTIONAL CREDIT.  </p></li>
+
+	<li>&nbsp;&nbsp;<p>THE PROVISIONS OF THIS SECTION ALLOCATE THE RISKS UNDER THIS AGREEMENT BETWEEN THE PARTIES, AND THE PARTIES HAVE RELIED ON THESE LIMITATIONS IN DETERMINING WHETHER TO ENTER INTO THIS AGREEMENT.
+	</p></li>
+
+	<li>&nbsp;&nbsp;<p>THE FOREGOING LIMITATIONS WILL APPLY EVEN IF A REMEDY FAILS OF ITS ESSENTIAL PURPOSE AND TO THE FULLEST EXTENT PERMITTED BY LAW.</p></li>
+</ol>
+
+<p>14.&nbsp;&nbsp;<b>Export Restrictions</b>Elements of the Storage Services may be subject to export laws and regulations of the United States and other jurisdictions. User represents that it is not named on any U.S. government denied-party list.  The Storage Services may not be used in any country that is subject to an embargo by the United States, and User may not use the Storage Services in violation of any export restriction or embargo or sanctions by the United States or any other applicable jurisdiction.  In addition, User must ensure that the Storage Services is not made available for use in jurisdictions or by persons or entities blocked or denied by the United States government or any other applicable jurisdiction. User and User’s End Users shall not export any product or use the Storage Services to export, re-export, transfer, or make available, whether directly or indirectly, any regulated item or information to anyone outside the U.S. without first complying with all export control laws and regulations that may be imposed by the U.S. Government and any country or organization of nations within whose jurisdiction User operates or does business. </p>
+
+<p>15.&nbsp;&nbsp;<b>Use In Your Jurisdiction</b> Except as explicitly set forth herein, Company makes no representations that the Storage Services is appropriate for use in any jurisdictions. Those who access or use the Storage Services from any jurisdictions do so at their own risk and are responsible for compliance with any and all laws or regulations that apply in such jurisdictions. Company may offer services in other jurisdictions that are subject to different terms and conditions. In such instances, the terms and conditions governing those other jurisdictions shall take precedence over any conflicting provisions in this Agreement.</p>
+
+<p>15.&nbsp;&nbsp;<b>Governing Law; Dispute Resolution</b></p>
+
+<ol type="a">
+	<li>&nbsp;&nbsp;<p><u>Governing Law; Arbitration.</u> This Agreement is governed by the laws of the State of Delaware without regard to its conflict of laws provisions.  The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.  You and Storj agree that these Terms of Use affect interstate commerce and that the Federal Arbitration Act governs the interpretation and enforcement of these arbitration provisions.  This Section is intended to be interpreted broadly and governs any and all disputes between us including but not limited to claims arising out of or relating to any aspect of the relationship between us, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory; claims that arose before these Terms of Use or any prior agreement (including, but not limited to, claims related to advertising); and claims that may arise after the termination of these Terms of Use.  The only disputes excluded from this broad prohibition are the litigation of certain intellectual property and small court claims, as provided below.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Initial Dispute Resolution</u>. The parties agree that most disputes can be resolved without resort to litigation.  If you have any dispute with us, you agree that before taking any formal action, you will contact us at legal@storj.io and provide a brief, written description of the dispute and your contact information (including your username, if your dispute relates to an account).  Except for intellectual property and small claims court claims, the parties agree to use their best efforts to settle any dispute, claim, question, or disagreement directly through consultation with Storj, and good faith negotiations shall be a condition to either party initiating a lawsuit or arbitration.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Binding Arbitration</u>. If the Parties do not reach an agreed-upon solution within a period of thirty (30) days from the time the informal dispute resolution is initiated under the Initial Dispute Resolution provision above, then either party may initiate binding arbitration as the sole means to resolve claims, subject to the terms set forth below. Specifically, all claims arising out of or relating to this Agreement (including its formation, performance and breach), the Parties’ relationship with each other and/or your use of the Storage Services shall be resolved solely and exclusively by final and binding arbitration initiated and conducted according to the JAMS/Endispute Comprehensive Arbitration Rules and Procedures in effect as of the date hereof before a single arbitrator.  If the Parties cannot agree upon selection of an arbitrator, then JAMS shall appoint the arbitrator experienced in the enterprise software industry. The place of the arbitration will be Fulton County, Georgia. Notwithstanding the foregoing, either party may enforce judgment upon any arbitration award in any court of competent jurisdiction located in Georgia.  Additionally, the Parties may seek injunctive or other equitable relief to protect its Intellectual Property Rights, Confidential Information, or as otherwise required to prevent irreparable harm, in any court of competent jurisdiction selected by Company. The prevailing party in any action or proceeding hereunder, including any arbitration or court proceedings, will be entitled to recover its reasonable costs and attorneys’ fees. The parties understand that, absent this mandatory arbitration provision, they would have the right to sue in court and have a jury trial. They further understand that, in some instances, the costs of arbitration could exceed the costs of litigation and the right to discovery may be more limited in arbitration than in court.  </p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Class Action Waiver</u>. The parties further agree that the arbitration shall be conducted in the party’s respective individual capacities only and not as a class action or other representative action, and the parties expressly waive their right to file a class action or seek relief on a class basis. YOU AND STORJ AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. If any court or arbitrator determines that the class action waiver set forth in this paragraph is void or unenforceable for any reason or that an arbitration can proceed on a class basis, then the arbitration provisions set forth above shall be deemed null and void in their entirety and the parties shall be deemed to have not agreed to arbitrate disputes.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Exception: Litigation of Intellectual Property and Small Claims Court Claims</u>. Notwithstanding the parties’ decision to resolve all disputes through arbitration, either party may bring enforcement actions, validity determinations or claims arising from or relating to theft, piracy or unauthorized use of intellectual property in state or federal court with jurisdiction or in the U.S. Patent and Trademark Office to protect its intellectual property rights (“intellectual property rights” means patents, copyrights, moral rights, trademarks, and trade secrets, but not privacy or publicity rights). Either party may also seek relief in small claims court in Fulton County, Georgia for disputes or claims within the scope of that court’s jurisdiction.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Changs to This Section</u>. Storj will provide thirty (30) days’ notice of any changes to this section by posting on the Offerings and Websites. Amendments will become effective thirty (30) days after they are posted on the Offerings and Websites or sent to you by email. Changes to this section will otherwise apply prospectively only to claims arising after the thirtieth (30th) day. If a court or arbitrator decides that this subsection on “Changes to This Section” is not enforceable or valid, then this subsection shall be severed from the section entitled Mandatory Arbitration and Class Action Waiver, and the court or arbitrator shall apply the first Mandatory Arbitration and Class Action Waiver section in existence after you began using the Offerings and Websites.</p></li>
+
+	<li>&nbsp;&nbsp;<p><u>Survival</u>. This Mandatory Arbitration and Class Action Waiver section shall survive any termination of your use of the Offerings and Websites.</p></li>
+</ol>
