@@ -1,5 +1,14 @@
 .legal {
 	background: #F4F5F7;
+	b {
+		font-weight: bold;
+	}
+	p {
+		font-family: Roboto;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 31px;
+	}
   &__nav {
 		background: #fff;
 		margin-bottom: 80px;
