@@ -3,7 +3,7 @@ title: "Terms Of Service"
 lastUpdated: "March 19, 2020"
 ---
 
-<p>THESE TARDIGRADE TERMS OF SERVICE (THE “<b>AGREEMENT</b>”) ARE A LEGAL AGREEMENT BETWEEN YOU OR THE ENTITY YOU REPRESENT (“<b>USER>/b>,” OR “<b>SUBSCRIBER>/b>,” OR “<b>YOU>/b>” OR “<b>YOUR>/b>”) AND STORJ LABS INTERNATIONAL, SEZC,, INCLUDING ITS PARENT, SUBSIDIARIES, AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, LICENSEES, AND EMPLOYEES (“<b>COMPANY>/b>,” AS DEFINED BELOW, “<b>US>/b>,” “<b>WE>/b>” OR “<b>OUR>/b>”) GOVERNING THE TERMS OF YOUR  USE OF THE STORAGE SERVICES AS DEFINED HEREIN.  THIS AGREEMENT HEREBY INCORPORATES BY REFERENCE THE FOLLOWING AGREEMENTS: <a target="_blank" href="" class="link">PRIVACY POLICY</a>, <a target="_blank" href="" class="link">TERMS OF USE</a>, <a target="_blank" href="" class="link">CODE OF CONDUCT</a>, AND <a target="_blank" href="" class="link">STORAGE NODE OPERATOR TERMS AND CONDITIONS.</a>  BY ACCEPTING THE TERMS OF THIS AGREEMENT, EITHER BY CLICKING TO SIGNIFY ACCEPTANCE, BY SETTING UP A USER ACCOUNT, OR BY USING THE STORAGE SERVICES, YOU AGREE TO BE BOUND BY THE PROVISIONS OF THIS AGREEMENT.   YOU REPRESENT AND WARRANT THAT YOU HAVE THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON USER’S BEHALF. </p>
+<p>THESE TARDIGRADE TERMS OF SERVICE (THE “<b>AGREEMENT</b>”) ARE A LEGAL AGREEMENT BETWEEN YOU OR THE ENTITY YOU REPRESENT (“<b>USER</b>,” OR “<b>SUBSCRIBER</b>,” OR “<b>YOU</b>” OR “<b>YOUR</b>”) AND STORJ LABS INTERNATIONAL, SEZC,, INCLUDING ITS PARENT, SUBSIDIARIES, AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, LICENSEES, AND EMPLOYEES (“<b>COMPANY</b>,” AS DEFINED BELOW, “<b>US</b>,” “<b>WE</b>” OR “<b>OUR</b>”) GOVERNING THE TERMS OF YOUR  USE OF THE STORAGE SERVICES AS DEFINED HEREIN.  THIS AGREEMENT HEREBY INCORPORATES BY REFERENCE THE FOLLOWING AGREEMENTS: <a target="_blank" href="" class="link">PRIVACY POLICY</a>, <a target="_blank" href="" class="link">TERMS OF USE</a>, <a target="_blank" href="" class="link">CODE OF CONDUCT</a>, AND <a target="_blank" href="" class="link">STORAGE NODE OPERATOR TERMS AND CONDITIONS.</a>  BY ACCEPTING THE TERMS OF THIS AGREEMENT, EITHER BY CLICKING TO SIGNIFY ACCEPTANCE, BY SETTING UP A USER ACCOUNT, OR BY USING THE STORAGE SERVICES, YOU AGREE TO BE BOUND BY THE PROVISIONS OF THIS AGREEMENT.   YOU REPRESENT AND WARRANT THAT YOU HAVE THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON USER’S BEHALF. </p>
 
 <p><b>PLEASE READ THE TERMS OF THIS AGREEMENT CAREFULLY TO ENSURE THAT YOU UNDERSTAND EACH PROVISION. THIS AGREEMENT CONTAINS A BINDING ARBITRATION AND WAIVER OF CLASS ACTION RIGHTS PROVISION THAT REQUIRES THE USE OF INDIVIDUAL ARBITRATION TO RESOLVE DISPUTES AS SET FORTH BELOW.  IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, PLEASE DO NOT ACCESS OR USE THE STORAGE SERVICES.</b></p>
 
@@ -12,149 +12,155 @@ lastUpdated: "March 19, 2020"
 <p>1.&nbsp;&nbsp;<u>Definitions</u>.  For purposes of this Policy, the following terms have the meanings set forth below.</p>
 
 <ol type="a">
-	<li>&nbsp;&nbsp;<p>“<b>Business Day</b>” means a working day, Monday through Friday, excluding weekends and any U.S. bank holidays.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Business Day</b>” means a working day, Monday through Friday, excluding weekends and any U.S. bank holidays.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Open Source Software</b>” means any open source software made available by Company pursuant to the terms of the open source license associated therewith.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Open Source Software</b>” means any open source software made available by Company pursuant to the terms of the open source license associated therewith.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Storage Node</b>” means a third-party device that operates Open Source Software and is part of the distributed network comprising the Storage Services.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Storage Node</b>” means a third-party device that operates Open Source Software and is part of the distributed network comprising the Storage Services.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Device</b>” means an independently operated computer or other electronic data storage device meeting all of the technical and other requirements set forth in this Agreement. </li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Device</b>” means an independently operated computer or other electronic data storage device meeting all of the technical and other requirements set forth in this Agreement. </p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>NodeID</b>” means a unique code generated when a Storage Node completes a proof of work as required during the setup and configuration of the Storage Node Software (as defined below) in order for a Device to communicate with the Storage Services.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>NodeID</b>” means a unique code generated when a Storage Node completes a proof of work as required during the setup and configuration of the Storage Node Software (as defined below) in order for a Device to communicate with the Storage Services.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Storage Node Operator Services</b>” means Storage Node Operator’s sharing of Space and Bandwidth on a Storage Node as part of the Storage Network in accordance with the terms of this Agreement.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Storage Node Operator Services</b>” means Storage Node Operator’s sharing of Space and Bandwidth on a Storage Node as part of the Storage Network in accordance with the terms of this Agreement.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Storage Node Software</b>” means the Storage Node Software which, when installed on a Device, enables such Device to participate in the Storage Network.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Storage Node Software</b>” means the Storage Node Software which, when installed on a Device, enables such Device to participate in the Storage Network.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Space” means the online storage sharing services provided to Users via a distributed network (“<b>Storage Network</b>”) of Storage Nodes by Company.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Space” means the online storage sharing services provided to Users via a distributed network (“<b>Storage Network</b>”) of Storage Nodes by Company.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Bandwidth</b>” means upload and download network service for transfer of Storage Materials as defined below between the storage node and the online storage sharing services provided by Company to Users via the Storage Network, as defined herein.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Bandwidth</b>” means upload and download network service for transfer of Storage Materials as defined below between the storage node and the online storage sharing services provided by Company to Users via the Storage Network, as defined herein.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Storage Node Operator</b>” means an individual or entity operating one or more Storage Nodes pursuant to the terms of this Agreement.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Storage Node Operator</b>” means an individual or entity operating one or more Storage Nodes pursuant to the terms of this Agreement.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Satellite</b>” means an application operated by Company or a third party that allows User Applications to register accounts, access application credentials, add payment methods, process billing and payment, facilitate storage and retrieval of Storage Materials on Storage Nodes, manage file repair, manage Storage Node reputation and process payments. Company is only responsible for providing support for Satellites hosted and operated by Company.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Satellite</b>” means an application operated by Company or a third party that allows User Applications to register accounts, access application credentials, add payment methods, process billing and payment, facilitate storage and retrieval of Storage Materials on Storage Nodes, manage file repair, manage Storage Node reputation and process payments. Company is only responsible for providing support for Satellites hosted and operated by Company.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Uplink</b>” means the Libuplink asynchronous multi-platform client library, S3 Compatible Gateway and Command Line Interface for encrypted transfer of Storage Materials on the Storj Platform for use by User to create User Applications.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Uplink</b>” means the Libuplink asynchronous multi-platform client library, S3 Compatible Gateway and Command Line Interface for encrypted transfer of Storage Materials on the Storj Platform for use by User to create User Applications.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Storage Services</b>” means the service provided by Company to Users via the Storage Network for the transfer of Storage Materials, as defined below, between the Uplink, a distributed network of Storage Nodes, and one or more Satellites operated by Company or third parties that independently operate Open Source Software to facilitate storage of the Storage Materials. </li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Storage Services</b>” means the service provided by Company to Users via the Storage Network for the transfer of Storage Materials, as defined below, between the Uplink, a distributed network of Storage Nodes, and one or more Satellites operated by Company or third parties that independently operate Open Source Software to facilitate storage of the Storage Materials. </p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Storage Materials</b>” means data and other materials stored by User on the Storage Services.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Storage Materials</b>” means data and other materials stored by User on the Storage Services.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Documentation</b>” means information that describes the Storage Services, provides instructions or recommendations related to the configuration and/or use of the Storage Services, or otherwise informs Users of the intended use of the Storage Services, including, but not limited to content provided directly to user or  published at <a class="link" target="_blank" href="https://documentation.tardigrade.io">https://documentation.tardigrade.io</a>, <a class="link" target="_blank" href="https://documentation.storj.io">https://documentation.storj.io</a>, or otherwise made available in conjunction with the Storage Services.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Documentation</b>” means information that describes the Storage Services, provides instructions or recommendations related to the configuration and/or use of the Storage Services, or otherwise informs Users of the intended use of the Storage Services, including, but not limited to content provided directly to user or  published at <a class="link" target="_blank" href="https://documentation.tardigrade.io">https://documentation.tardigrade.io</a>, <a class="link" target="_blank" href="https://documentation.storj.io">https://documentation.storj.io</a>, or otherwise made available in conjunction with the Storage Services.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Major Release</b>” means a new release of the Software as indicated by a change to the number to the left of the decimal point in the version number, for example, Version 2.1 upgraded to Version 3.0.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Major Release</b>” means a new release of the Software as indicated by a change to the number to the left of the decimal point in the version number, for example, Version 2.1 upgraded to Version 3.0.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>Supported Software Versions</b>” means the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes.</li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Supported Software Versions</b>” means the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes.</p></li>
 
-	<li>&nbsp;&nbsp;<p>“<b>User Cause</b>” means any of the following causes of an Error: </li></p>
+	<li>&nbsp;&nbsp;<p>“<b>User Cause</b>” means any of the following causes of an Error: </p>
+		<ol type="i">
+			<li>&nbsp;&nbsp;<p>Any negligent or improper use (including improper installation, configuration or implementation), misapplication, misuse or abuse of, or damage to, the Services, Storage Services, Uplink, or Storage Nodes by User or any of its Representatives; </p></li>
+
+			<li>&nbsp;&nbsp;<p>Any maintenance, update, improvement or other modification to or alteration of Storage Services, Storage Nodes or the Open Source Software by User or its Representatives that was not specifically authorized in writing by Company; </p></li>
+
+			<li>&nbsp;&nbsp;<p>Any use of the Storage Services or Storage Nodes by User or its Representatives in a manner inconsistent with the then-current Documentation; </p></li>
+
+			<li>&nbsp;&nbsp;<p>Any use by User or their Representatives of any Third-party Products that Company has not provided to User;</p></li>
+
+			<li>&nbsp;&nbsp;<p>Any use by User or their Representatives of a version of the Storage Services or Storage Nodes that is earlier than the Supported Software Versions as defined herein;</p></li>
+
+			<li>&nbsp;&nbsp;<p>Any Error caused by User Systems; or</p></li>
+
+
+			<li>&nbsp;&nbsp;<p>Any Error related to Out-of-Scope Services not covered by this Policy.</p></li>
+		</ol>
+	</li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Custom Development</b>” means custom software or products designed to interact with the Storage Services or Storage Nodes developed </p>
+		<ol type="i">
+			<li>&nbsp;&nbsp;<p>by User, with or without Company’s assistance, using application programming interfaces (APIs) or other development tools related to the Products, or</p></li>
+
+			<li>&nbsp;&nbsp;<p>by Company for the benefit of User.</p></li>
+		</ol>
+	</li>
+
+
+	<li>&nbsp;&nbsp;<p>“<b>End Users</b>” or “<b>User’s End Users</b>” means the end users of Custom Development, User Systems, Third-party Products, or User Applications.  User is solely responsible for all matters relating to its end users, including without limitation, registration, billing, collections, and support. User acknowledges and agrees that</p>
+		<ol type="i">
+			<li>&nbsp;&nbsp;<p>User’s payment and other obligations hereunder are separate from and wholly independent of User’s relationship with its End Users, and </p></li>
+
+			<li>&nbsp;&nbsp;<p>Company has no responsibility or liability in connection with User’s End Users.</p></li>
+		</ol>
+	</li>
+
+
+
+	<li>&nbsp;&nbsp;<p>“<b>User Application</b>” means any web, mobile, or other application developed by User using the Storage Services or Storage Nodes, including any source code written by User.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>User Systems</b>” means User’s information technology infrastructure, including User’s computers, software, databases, electronic systems (including database management systems) and networks. </p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>User Agreement</b>” means a separately executed Tardigrade partnership agreement between Company and User.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Error</b>” means with respect to any Storage Services or Storage Nodes, any reproducible failure of the Storage Services or Storage Nodes to operate in all material respects in accordance with the then-current Documentation, including any problem, failure or error referred to in the Severity Level Table.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Force Majeure Event</b>” means any unavailability caused by circumstances beyond Company’s reasonable control, including without limitation, acts of God, acts of government, flood, fire, earthquakes, civil unrest, acts of terror, strikes or other labor problems (other than those involving Company employees), computer, telecommunications, Internet service provider or hosting facility failures or delays involving hardware, software or power systems not within Company’s possession or reasonable control, and denial of service attacks.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Out-of-scope Services</b>” means any of the following: </p>
+		<ol type="i">
+			<li>&nbsp;&nbsp;<p>Unless otherwise agreed to in writing between you  and Company specifically stating that such services are covered under this Policy, any services requested by User for Custom Development, User Systems, or Third-party Products; </p></li>
+
+			<li>&nbsp;&nbsp;<p>Any services requested by User in connection with any apparent Error that Company determines in its reasonable discretion to have been caused by a User Cause; </p></li>
+
+			<li>&nbsp;&nbsp;<p>Any other services that User and Company may from time to time agree in writing are not included in the Support Services; an</p></li>
+
+			<li>&nbsp;&nbsp;<p>Any loss of an encryption key or encryption key seed.</p></li>
+		</ol>
+
+	</li>
+
+
+
+	<li>&nbsp;&nbsp;<p>“<b>Severity Levels</b>” means the defined Error severity levels and corresponding required service level responses, Response Times, Resolutions and Resolution Targets referred to in the Severity Level Table.</p>
+		<ol type="i">
+			<li>&nbsp;&nbsp;<p>“<b>Severity Level Table</b>” means the table set out in Section 2.b.</p></li>
+
+			<li>&nbsp;&nbsp;<p>“<b>Severity Level 1 Error</b>” has the meaning set forth in the Severity Level Table.</p></li>
+
+			<li>&nbsp;&nbsp;<p>“<b>Severity Level 2 Error</b>” has the meaning set forth in the Severity Level Table.</p></li>
+
+			<li>&nbsp;&nbsp;<p>“<b>Non-Severe Error</b>” has the meaning set forth in the Severity Level Table.</p></li>
+
+			<li>&nbsp;&nbsp;<p>“<b>Non-Incident</b>” has the meaning set forth in the Severity Level Table.</p></li>
+		</ol>
+	</li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Representative</b>” means any employee or contractor of User, or any employee or contractor of a partner or affiliate of User.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Response Time</b>” has the meaning set forth in the Severity Level Table.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Resolve</b>” and the correlative terms, “<b>Resolved</b>”, “<b>Resolving</b>” and “<b>Resolution</b>” each have the meaning set forth in Section 2.b.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Resolution Target</b>” has the meaning set forth in the Severity Level Table.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Support Hours</b>” means </p></li>
 
 	<ol type="i">
-		<li>&nbsp;&nbsp;<p>Any negligent or improper use (including improper installation, configuration or implementation), misapplication, misuse or abuse of, or damage to, the Services, Storage Services, Uplink, or Storage Nodes by User or any of its Representatives; </li></p>
+		<li>&nbsp;&nbsp;<p>Between 9:00 A.M. to 8:00 P.M. Eastern Time on Business Days for Severity Level 1 Errors</p></li>
 
-		<li>&nbsp;&nbsp;<p>Any maintenance, update, improvement or other modification to or alteration of Storage Services, Storage Nodes or the Open Source Software by User or its Representatives that was not specifically authorized in writing by Company; </li></p>
-
-		<li>&nbsp;&nbsp;<p>Any use of the Storage Services or Storage Nodes by User or its Representatives in a manner inconsistent with the then-current Documentation; </li></p>
-
-		<li>&nbsp;&nbsp;<p>Any use by User or their Representatives of any Third-party Products that Company has not provided to User;</li></p>
-
-		<li>&nbsp;&nbsp;<p>Any use by User or their Representatives of a version of the Storage Services or Storage Nodes that is earlier than the Supported Software Versions as defined herein;</li></p>
-
-		<li>&nbsp;&nbsp;<p>Any Error caused by User Systems; or</li></p>
-
-
-		<li>&nbsp;&nbsp;<p>Any Error related to Out-of-Scope Services not covered by this Policy.</li></p>
+		<li>&nbsp;&nbsp;<p>Between 9:00 A.M. to 5:00 P.M. Eastern Time on Business Days for other Support Requests.</p></li>
 	</ol>
 
-	<li>&nbsp;&nbsp;<p>“<b>Custom Development</b>” means custom software or products designed to interact with the Storage Services or Storage Nodes developed </li></p>
+	<li>&nbsp;&nbsp;<p>“<b>Support Period</b>” means the term during which Company provides the Support Services to User as set forth in any Order between Company and User or as specified in a User Agreement.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Support Request</b>” has the meaning set forth in Section 5.a.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Support Services</b>” means Company’s support of the Storage Services or Storage Nodes, but excluding any Out-of-scope Services.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Technical Contact</b>” has the meaning set forth in Section 5.b.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Third-party Products</b>” means all third-party software, computer hardware, network hardware, electrical, telephone, wiring and all related accessories, components, parts and devices.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Uptime Availability</b>” means that the Storage Services will be available and online in accordance with the SLA defined herein.</p></li>
+
+	<li>&nbsp;&nbsp;<p>“<b>Support Tiers.</b>”  Support responsibilities for User and/ or User’s End Users are divided into three (3) tiers of ownership:</p></li>
 
 	<ol type="i">
-		<li>&nbsp;&nbsp;<p>by User, with or without Company’s assistance, using application programming interfaces (APIs) or other development tools related to the Products, or</li></p>
-
-		<li>&nbsp;&nbsp;<p>by Company for the benefit of User.</li></p>
-	</ol>
-
-	<li>&nbsp;&nbsp;<p>“<b>End Users</b>” or “<b>User’s End Users</b>” means the end users of Custom Development, User Systems, Third-party Products, or User Applications.  User is solely responsible for all matters relating to its end users, including without limitation, registration, billing, collections, and support. User acknowledges and agrees that</li></p>
-
-	<ol type="i">
-		<li>&nbsp;&nbsp;<p>User’s payment and other obligations hereunder are separate from and wholly independent of User’s relationship with its End Users, and </li></p>
-
-		<li>&nbsp;&nbsp;<p>Company has no responsibility or liability in connection with User’s End Users.</li></p>
-	</ol>
-
-	<li>&nbsp;&nbsp;<p>“<b>User Application</b>” means any web, mobile, or other application developed by User using the Storage Services or Storage Nodes, including any source code written by User.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>User Systems</b>” means User’s information technology infrastructure, including User’s computers, software, databases, electronic systems (including database management systems) and networks. </li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>User Agreement</b>” means a separately executed Tardigrade partnership agreement between Company and User.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Error</b>” means with respect to any Storage Services or Storage Nodes, any reproducible failure of the Storage Services or Storage Nodes to operate in all material respects in accordance with the then-current Documentation, including any problem, failure or error referred to in the Severity Level Table.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Force Majeure Event</b>” means any unavailability caused by circumstances beyond Company’s reasonable control, including without limitation, acts of God, acts of government, flood, fire, earthquakes, civil unrest, acts of terror, strikes or other labor problems (other than those involving Company employees), computer, telecommunications, Internet service provider or hosting facility failures or delays involving hardware, software or power systems not within Company’s possession or reasonable control, and denial of service attacks.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Out-of-scope Services</b>” means any of the following: </li></p>
-
-	<ol type="i">
-		<li>&nbsp;&nbsp;<p>Unless otherwise agreed to in writing between you  and Company specifically stating that such services are covered under this Policy, any services requested by User for Custom Development, User Systems, or Third-party Products; </li></p>
-
-		<li>&nbsp;&nbsp;<p>Any services requested by User in connection with any apparent Error that Company determines in its reasonable discretion to have been caused by a User Cause; </li></p>
-
-		<li>&nbsp;&nbsp;<p>Any other services that User and Company may from time to time agree in writing are not included in the Support Services; an</li></p>
-
-		<li>&nbsp;&nbsp;<p>Any loss of an encryption key or encryption key seed.</li></p>
-	</ol>
-
-	<li>&nbsp;&nbsp;<p>“<b>Severity Levels</b>” means the defined Error severity levels and corresponding required service level responses, Response Times, Resolutions and Resolution Targets referred to in the Severity Level Table.</li></p>
-
-	<ol type="i">
-		<li>&nbsp;&nbsp;<p>“<b>Severity Level Table</b>” means the table set out in Section 2.b.</li></p>
-
-		<li>&nbsp;&nbsp;<p>“<b>Severity Level 1 Error</b>” has the meaning set forth in the Severity Level Table.</li></p>
-
-		<li>&nbsp;&nbsp;<p>“<b>Severity Level 2 Error</b>” has the meaning set forth in the Severity Level Table.</li></p>
-
-		<li>&nbsp;&nbsp;<p>“<b>Non-Severe Error</b>” has the meaning set forth in the Severity Level Table.</li></p>
-
-		<li>&nbsp;&nbsp;<p>“<b>Non-Incident</b>” has the meaning set forth in the Severity Level Table.</li></p>
-	</ol>
-
-	<li>&nbsp;&nbsp;<p>“<b>Representative</b>” means any employee or contractor of User, or any employee or contractor of a partner or affiliate of User.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Response Time</b>” has the meaning set forth in the Severity Level Table.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Resolve</b>” and the correlative terms, “<b>Resolved</b>”, “<b>Resolving</b>” and “<b>Resolution</b>” each have the meaning set forth in Section 2.b.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Resolution Target</b>” has the meaning set forth in the Severity Level Table.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Support Hours</b>” means </li></p>
-
-	<ol type="i">
-		<li>&nbsp;&nbsp;<p>Between 9:00 A.M. to 8:00 P.M. Eastern Time on Business Days for Severity Level 1 Errors</li></p>
-
-		<li>&nbsp;&nbsp;<p>Between 9:00 A.M. to 5:00 P.M. Eastern Time on Business Days for other Support Requests.</li></p>
-	</ol>
-
-	<li>&nbsp;&nbsp;<p>“<b>Support Period</b>” means the term during which Company provides the Support Services to User as set forth in any Order between Company and User or as specified in a User Agreement.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Support Request</b>” has the meaning set forth in Section 5.a.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Support Services</b>” means Company’s support of the Storage Services or Storage Nodes, but excluding any Out-of-scope Services.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Technical Contact</b>” has the meaning set forth in Section 5.b.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Third-party Products</b>” means all third-party software, computer hardware, network hardware, electrical, telephone, wiring and all related accessories, components, parts and devices.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Uptime Availability</b>” means that the Storage Services will be available and online in accordance with the SLA defined herein.</li></p>
-
-	<li>&nbsp;&nbsp;<p>“<b>Support Tiers.</b>”  Support responsibilities for User and/ or User’s End Users are divided into three (3) tiers of ownership:</li></p>
-
-	<ol type="i">
-		<li>&nbsp;&nbsp;<p><b>Tier 1 Support</b> is provided by the User to User’s End Users.* Tier 1 Support is responsible for handling the initial communication with the User’s End User and for documenting the Incident in the form of a ticket.  Tier 1 Support performs basic triage resulting in Resolution of the Incident or escalation to Tier 2. All communication with the End User is provided by Tier 1 Support, which allows User to control the message to their End Users.  In order to communicate effectively with the End Users about the status of their ticket, it is expected that Tier 1 Support will continue to communicate with Tier 2 Support on the progress of the ticket until the ticket is Resolved.</li></p>
+		<li>&nbsp;&nbsp;<p><b>Tier 1 Support</b> is provided by the User to User’s End Users.* Tier 1 Support is responsible for handling the initial communication with the User’s End User and for documenting the Incident in the form of a ticket.  Tier 1 Support performs basic triage resulting in Resolution of the Incident or escalation to Tier 2. All communication with the End User is provided by Tier 1 Support, which allows User to control the message to their End Users.  In order to communicate effectively with the End Users about the status of their ticket, it is expected that Tier 1 Support will continue to communicate with Tier 2 Support on the progress of the ticket until the ticket is Resolved.</p></li>
 
 		<p>* If a developer or partner has developed a User Application that incorporates Storage Services Storage Nodes, Uplink or the Open Source Software into the User Application, and the support issue is raised by an End User of that User Application, the developer or partner is responsible for Tier 1 support of incidents involving User’s End Users of the developer or partner’s User Application. </p>
 
-		<li>&nbsp;&nbsp;<p>“<b>Tier 2 Support</b>” is provided by Company. Tier 2 Support is responsible for advanced troubleshooting and Resolution of Incidents that require deeper expertise on the Company Storage ServicesStorage Platform functionality. </li></p>
+		<li>&nbsp;&nbsp;<p>“<b>Tier 2 Support</b>” is provided by Company. Tier 2 Support is responsible for advanced troubleshooting and Resolution of Incidents that require deeper expertise on the Company Storage ServicesStorage Platform functionality. </p></li>
 
-		<li>&nbsp;&nbsp;<p><b>Tier 3 Support</b> is provided by Company. Tier 3 Support is responsible for all incidents and problems that cannot be resolved in a timely manner by Tier 2 Support. Tier 3 Support includes engineers from product development and networking, as well as other functional specialists, including architects and security specialists.</li></p>
+		<li>&nbsp;&nbsp;<p><b>Tier 3 Support</b> is provided by Company. Tier 3 Support is responsible for all incidents and problems that cannot be resolved in a timely manner by Tier 2 Support. Tier 3 Support includes engineers from product development and networking, as well as other functional specialists, including architects and security specialists.</p></li>
 	</ol>
 </ol>
 
@@ -164,22 +170,22 @@ lastUpdated: "March 19, 2020"
 
 <ol type="a">
 
-	<li>&nbsp;&nbsp;<p><u>Registration</u>. This Agreement shall be effective on the date the User first registers for an Account, as defined herein, for access to the Storage Services (the “Effective Date”). Company may update the content, functionality, and user interface of the Storage Services from time to time in its sole discretion. In order to use the Storage Services you will need to register for an account (“<b>Account</b>”).  In connection with your creation of any Account, you must (i) provide accurate, current and complete Account information, (ii) maintain and promptly update your Account information as necessary, including a valid email address, (iii) maintain the security of your Account, including by not using the same password for the Storage Services that you use for third-party products or services, (iv) not disclose your password, API keys, or private keys to any third party, and (v) immediately notify us if you discover or otherwise suspect any unauthorized activities in connection with your Account or the Storage Services. <b>You acknowledge and agree that, in addition to other circumstances, if you lose your private keys, you will not be able to recover any Storage Materials</b>.  User acknowledges that it retains administrative control over to whom it grants access to Storage Materials maintained in the Storage Services.  </li></p>
+	<li>&nbsp;&nbsp;<p><u>Registration</u>. This Agreement shall be effective on the date the User first registers for an Account, as defined herein, for access to the Storage Services (the “Effective Date”). Company may update the content, functionality, and user interface of the Storage Services from time to time in its sole discretion. In order to use the Storage Services you will need to register for an account (“<b>Account</b>”).  In connection with your creation of any Account, you must (i) provide accurate, current and complete Account information, (ii) maintain and promptly update your Account information as necessary, including a valid email address, (iii) maintain the security of your Account, including by not using the same password for the Storage Services that you use for third-party products or services, (iv) not disclose your password, API keys, or private keys to any third party, and (v) immediately notify us if you discover or otherwise suspect any unauthorized activities in connection with your Account or the Storage Services. <b>You acknowledge and agree that, in addition to other circumstances, if you lose your private keys, you will not be able to recover any Storage Materials</b>.  User acknowledges that it retains administrative control over to whom it grants access to Storage Materials maintained in the Storage Services.  </p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Access Rights</u>. User has a non-exclusive, non-sublicenseable, non-transferable (except as specifically permitted in this Agreement) right to use the Storage Services pursuant to the terms of this Agreement during the applicable Term as defined below.</li></p>
+	<li>&nbsp;&nbsp;<p><u>Access Rights</u>. User has a non-exclusive, non-sublicenseable, non-transferable (except as specifically permitted in this Agreement) right to use the Storage Services pursuant to the terms of this Agreement during the applicable Term as defined below.</p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Usage Restrictions</u>. User shall not (a) reverse engineer, copy, modify, adapt, hack the Storage Services or otherwise attempt to gain unauthorized access to the Storage Services or its related systems or networks; (b) without authorization, access the Storage Services, the Documentation, or Company’s Confidential Information to build a competitive product or Storage Services; (c) alter or remove, or permit any third party to alter or remove, any proprietary trademark or copyright markings incorporated in, marked on, or affixed to the Storage Services; (d) access or use the Storage Services: (i) to store infringing, obscene, threatening, or otherwise unlawful material, including material violative of third-party privacy rights; (ii) in violation of applicable laws; (iii) to store material knowingly or intentionally containing software viruses, worms, Trojan horses, or other harmful computer code, files, or scripts; or, (iv) in a manner that interferes with or disrupts the integrity or performance of the Storage Services (or the data contained therein). </li></p>
+	<li>&nbsp;&nbsp;<p><u>Usage Restrictions</u>. User shall not (a) reverse engineer, copy, modify, adapt, hack the Storage Services or otherwise attempt to gain unauthorized access to the Storage Services or its related systems or networks; (b) without authorization, access the Storage Services, the Documentation, or Company’s Confidential Information to build a competitive product or Storage Services; (c) alter or remove, or permit any third party to alter or remove, any proprietary trademark or copyright markings incorporated in, marked on, or affixed to the Storage Services; (d) access or use the Storage Services: (i) to store infringing, obscene, threatening, or otherwise unlawful material, including material violative of third-party privacy rights; (ii) in violation of applicable laws; (iii) to store material knowingly or intentionally containing software viruses, worms, Trojan horses, or other harmful computer code, files, or scripts; or, (iv) in a manner that interferes with or disrupts the integrity or performance of the Storage Services (or the data contained therein). </p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Sensitive/Personal Information</u>. You agree that you shall not use the Storage Services to send or store personal information subject to special regulatory or contractual handling requirements (e.g., Payment Card Industry Data Security Standards, the Gramm-Leach-Bliley Act, the Health Insurance Portability and Accountability Act, and any similar data protection laws) including without limitation: credit card information, credit card numbers and magnetic stripe information, social security numbers, driver’s license numbers, passport numbers, government-issued identification numbers, health-related information, biometric data, financial account information, personally identifiable information collected from children under the age of 13 or from online services directed toward children, and real time geo-location data which can identify an individual, or information deemed “sensitive” under applicable law (su</li></p>
+	<li>&nbsp;&nbsp;<p><u>Sensitive/Personal Information</u>. You agree that you shall not use the Storage Services to send or store personal information subject to special regulatory or contractual handling requirements (e.g., Payment Card Industry Data Security Standards, the Gramm-Leach-Bliley Act, the Health Insurance Portability and Accountability Act, and any similar data protection laws) including without limitation: credit card information, credit card numbers and magnetic stripe information, social security numbers, driver’s license numbers, passport numbers, government-issued identification numbers, health-related information, biometric data, financial account information, personally identifiable information collected from children under the age of 13 or from online services directed toward children, and real time geo-location data which can identify an individual, or information deemed “sensitive” under applicable law (su</p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Derived Data</u>. Except for software subject to the Open Source License, and except for any rights expressly granted under this Agreement, Company and its licensors own and shall retain all right, title, and interest in and to the Storage Services (including any improvements, enhancements, customizations, and modifications thereto), the Documentation, Company Confidential Information, and the Derived Data, including, without limitation, all related intellectual property rights therein. For purposes hereof, the term “Derived Data” means data derived from operation of the Uplink and of the Storage Services via the Uplink, and any data that is aggregated by Company (including aggregations with data sourced from other Users and other third party data sources), and data and information regarding Users’ access to and participation in the Storage Services, including, without limitation, statistical usage data derived from the use of the Storage Services and configurations, log data and the performance results related thereto. For the avoidance of doubt, nothing herein shall be construed as prohibiting Company from utilizing Derived Data to optimize and improve the Storage Services or otherwise operate Company’s business; provided that if Company provides Derived Data to third parties, such Derived Data shall be de-identified and presented in the aggregate so that it will not disclose the identity of User to any third party. No rights are granted to User hereunder other than as expressly set forth in this Agreement.</li></p>
+	<li>&nbsp;&nbsp;<p><u>Derived Data</u>. Except for software subject to the Open Source License, and except for any rights expressly granted under this Agreement, Company and its licensors own and shall retain all right, title, and interest in and to the Storage Services (including any improvements, enhancements, customizations, and modifications thereto), the Documentation, Company Confidential Information, and the Derived Data, including, without limitation, all related intellectual property rights therein. For purposes hereof, the term “Derived Data” means data derived from operation of the Uplink and of the Storage Services via the Uplink, and any data that is aggregated by Company (including aggregations with data sourced from other Users and other third party data sources), and data and information regarding Users’ access to and participation in the Storage Services, including, without limitation, statistical usage data derived from the use of the Storage Services and configurations, log data and the performance results related thereto. For the avoidance of doubt, nothing herein shall be construed as prohibiting Company from utilizing Derived Data to optimize and improve the Storage Services or otherwise operate Company’s business; provided that if Company provides Derived Data to third parties, such Derived Data shall be de-identified and presented in the aggregate so that it will not disclose the identity of User to any third party. No rights are granted to User hereunder other than as expressly set forth in this Agreement.</p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Right to Suspend</u>. Company may immediately, with or without notice, suspend the Account of any User or User’s End User who: (a) violates this Agreement (b) is using the Storage Services in a manner that Company reasonably believes may cause a security risk, a disruption to others’ use of the Storage Services or liability for Company.</li></p>
+	<li>&nbsp;&nbsp;<p><u>Right to Suspend</u>. Company may immediately, with or without notice, suspend the Account of any User or User’s End User who: (a) violates this Agreement (b) is using the Storage Services in a manner that Company reasonably believes may cause a security risk, a disruption to others’ use of the Storage Services or liability for Company.</p></li>
 
 	<p>3.&nbsp;&nbsp;<b>Payment</b></p>
 
 	<ol type="a">
-		<li>&nbsp;&nbsp;<p><u>Fees</u>. You will pay the Fees and any other amounts due as you are otherwise notified via the Storage Services of the fees applicable to use of the Storage Platform ("Fees"). All Fees are exclusive of any applicable taxes, which are your sole responsibility. We will provide notice at least thirty (30) days in advance of any increase to the Fees. The Fees are as follows:</li></p>
+		<li>&nbsp;&nbsp;<p><u>Fees</u>. You will pay the Fees and any other amounts due as you are otherwise notified via the Storage Services of the fees applicable to use of the Storage Platform ("Fees"). All Fees are exclusive of any applicable taxes, which are your sole responsibility. We will provide notice at least thirty (30) days in advance of any increase to the Fees. The Fees are as follows:</p></li>
 	</ol>
 
 </ol>
@@ -212,11 +218,11 @@ lastUpdated: "March 19, 2020"
 </table>
 
 <ol type="a">
-	<li>&nbsp;&nbsp;<p><u>Payment</u>. Except where otherwise indicated via the Storage Services we will charge all Fees to a payment method designated by you from the available options you have via the Storage Services (the “<b>Payment Method</b>”).  You represent and warrant that you are authorized to use the Payment Method and authorize us to charge all amounts due hereunder to the Payment Method.  If your Payment Method cannot be verified, is invalid, or is not otherwise acceptable, your right to use the Storage Services may be suspended and/or terminated automatically.  Fees will be charged on a monthly basis based on your prior month’s usage. You can avoid incurring future Fees at any time by discontinuing your use of the Storage Services to store your Storage Materials.</li></p>
+	<li>&nbsp;&nbsp;<p><u>Payment</u>. Except where otherwise indicated via the Storage Services we will charge all Fees to a payment method designated by you from the available options you have via the Storage Services (the “<b>Payment Method</b>”).  You represent and warrant that you are authorized to use the Payment Method and authorize us to charge all amounts due hereunder to the Payment Method.  If your Payment Method cannot be verified, is invalid, or is not otherwise acceptable, your right to use the Storage Services may be suspended and/or terminated automatically.  Fees will be charged on a monthly basis based on your prior month’s usage. You can avoid incurring future Fees at any time by discontinuing your use of the Storage Services to store your Storage Materials.</p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Late Fees</u>. Except as prohibited by law, we may assess a late charge if you do not pay Fees when due which you will pay at the lesser of 1.5% of the unpaid amount per month or the maximum rate permitted by law along with our costs of collection including but not limited to reasonable attorneys' fees and other legal fees and costs. In addition, we may suspend and/or terminate your access to the Storage Services immediately without notice if you fail to pay Fees on time.</li></p>
+	<li>&nbsp;&nbsp;<p><u>Late Fees</u>. Except as prohibited by law, we may assess a late charge if you do not pay Fees when due which you will pay at the lesser of 1.5% of the unpaid amount per month or the maximum rate permitted by law along with our costs of collection including but not limited to reasonable attorneys' fees and other legal fees and costs. In addition, we may suspend and/or terminate your access to the Storage Services immediately without notice if you fail to pay Fees on time.</p></li>
 
-	<li>&nbsp;&nbsp;<p><u>Promotional Credits</u>. From time to time, Company or an authorized third party may make available certain credits against future charges for promotional purposes which may include marketing incentives, referral, or other events (“<b>Promotional Credits</b>”).  Promotional Credits are valid for the period as stated in the terms of any such Promotional Credits (the “<b>Usage Period</b>”).  Promotional Credits that have not been used by the end of the Usage Period will expire.  All Company promotion codes are subject to the following terms, in addition to any terms printed on the applicable promotional material:</li></p>
+	<li>&nbsp;&nbsp;<p><u>Promotional Credits</u>. From time to time, Company or an authorized third party may make available certain credits against future charges for promotional purposes which may include marketing incentives, referral, or other events (“<b>Promotional Credits</b>”).  Promotional Credits are valid for the period as stated in the terms of any such Promotional Credits (the “<b>Usage Period</b>”).  Promotional Credits that have not been used by the end of the Usage Period will expire.  All Company promotion codes are subject to the following terms, in addition to any terms printed on the applicable promotional material:</p></li>
 
 	<ol type="i">
 		<li>&nbsp;&nbsp;<p>A Company promotion code may be redeemed only during the period shown in the selected promotional media, or, if none is stated, then for a period of three (3) months from the promotion date;</p></li>
@@ -263,49 +269,51 @@ lastUpdated: "March 19, 2020"
 	<li>&nbsp;&nbsp;<p><b>Support Responsibilities</b>. Company shall perform Support Services during the Support Hours throughout the Support Period in accordance with the terms and conditions of this Policy.</p></li>
 
 	<ol type="i">
-		<li>&nbsp;&nbsp;<p><b>Support Service Responsibilities</b>. Company shall</p></li>
-
+		<li>&nbsp;&nbsp;<p><b>Support Service Responsibilities</b>. Company shall</p>
 			<ol type="1">
 				<li>&nbsp;&nbsp;<p>Respond to and Resolve all Support Requests in accordance with the Service Levels;</p></li>
 
 				<li>&nbsp;&nbsp;<p>Provide e-mail and Community support to User during Support Hours by means of the support page located at <a class="link" target"_blank" href="https://storj.io/support.html">https://storj.io/support.html</a>, the e-mail address <a href="mailto:support@storj.io">support@storj.io</a> and the Storj Community Forum at <a class="link" target"_blank" href="https://forum.storj.io/home">https://forum.storj.io/home</a>;</p></li>
 			</ol>
+		</li>
+
 
 		<li>&nbsp;&nbsp;<p><b>Errors</b>. This Section 2.b applies only to Errors.  Response Times and Resolution Targets are set forth in the Severity Level Table below.  Response Time will be measured from the time Company receives a Support Request until Company has responded to that Support Request.  Resolution Target will be measured from the time Company receives a Support Request until Company has Resolved that Support Request. “Resolve”, “Resolved”, “Resolution” and correlative capitalized terms mean, with respect to any particular Support Request, that Company has corrected the Error, whether by a work-around or any other reasonable means, that prompted that Support Request.  Company shall endeavor to respond to and Resolve all Support Requests within the following Response Times and Resolution Targets based on Company's designation of the severity of the associated Error:</p></li>
 
-
-		<table>
-		  <tr>
-				<th>Priorty Level of Error</th>
-				<th>Definition</th>
-				<th>Response Time</th>
-				<th>Resolution Target</th>
-		  </tr>
-		  <tr>
-				<td>Severity 1 Error</td>
-				<td>The Error results in complete interruption of a production system that impacts all users and no viable workaround exists. User must email Company to report a Severity Level 1 Error Support Request.</td>
-				<td>Company shall acknowledge receipt within one (1) day of a Support Request. Company shall provide updates every eight (8) hours.</td>
-				<td>Company shall Resolve the Support Request as soon as practicable and no later than three (3) days after Company’s receipt of the Support Request.</td>
-			</tr>
-			<tr>
-		    <td>Severity 2 Error</td>
-		    <td>The Error has a (i) severe impact on performance, important services / components are not functioning, a single connection is down, or a subset of users cannot access the Services in a production system; or (ii) critical business impact and deployment is delayed with a hard deadline approaching in a non-production environment; the Error cannot be easily circumvented. </td>
-		    <td>During Support Hours, Company shall acknowledge receipt within two (2) days of a Support Request. Company and User will mutually agree on a schedule for ongoing updates.</td>
-				<td>Company shall Resolve the Support Request as soon as practicable and no later than five (5) days after Company’s receipt of the Support Request.</td>
-			</tr>
-			<tr>
-		    <td>Non- Severe Error</td>
-		    <td>The Error has a low impact on (i) a small number of users in a production environment; or (ii) development or quality assurance in a non-production environment.  Key functionality is usable; the Error can be readily circumvented.</td>
-		    <td>During Support Hours, Company shall acknowledge receipt within three (3) business days of a Support Request. Company will provide ongoing updates every five (5) days.</td>
-				<td>Company shall Resolve the Support Request as soon as practicable and no later than ten (10) days after Company’s receipt of the Support Request.</td>
-			</tr>
-			<tr>
-		    <td>Non- Incident</td>
-		    <td>User is letting Company know about a minor problem or enhancement request for which feedback is not required. Platform is functioning as designed. </td>
-		    <td>During Support Hours, Company shall acknowledge receipt within five (5) Business Days of a Support Request.</td>
-				<td>Not applicable.</td>
-			</tr>
-		</table>
+		<li>
+			<table>
+			  <tr>
+					<th>Priorty Level of Error</th>
+					<th>Definition</th>
+					<th>Response Time</th>
+					<th>Resolution Target</th>
+			  </tr>
+			  <tr>
+					<td>Severity 1 Error</td>
+					<td>The Error results in complete interruption of a production system that impacts all users and no viable workaround exists. User must email Company to report a Severity Level 1 Error Support Request.</td>
+					<td>Company shall acknowledge receipt within one (1) day of a Support Request. Company shall provide updates every eight (8) hours.</td>
+					<td>Company shall Resolve the Support Request as soon as practicable and no later than three (3) days after Company’s receipt of the Support Request.</td>
+				</tr>
+				<tr>
+			    <td>Severity 2 Error</td>
+			    <td>The Error has a (i) severe impact on performance, important services / components are not functioning, a single connection is down, or a subset of users cannot access the Services in a production system; or (ii) critical business impact and deployment is delayed with a hard deadline approaching in a non-production environment; the Error cannot be easily circumvented. </td>
+			    <td>During Support Hours, Company shall acknowledge receipt within two (2) days of a Support Request. Company and User will mutually agree on a schedule for ongoing updates.</td>
+					<td>Company shall Resolve the Support Request as soon as practicable and no later than five (5) days after Company’s receipt of the Support Request.</td>
+				</tr>
+				<tr>
+			    <td>Non- Severe Error</td>
+			    <td>The Error has a low impact on (i) a small number of users in a production environment; or (ii) development or quality assurance in a non-production environment.  Key functionality is usable; the Error can be readily circumvented.</td>
+			    <td>During Support Hours, Company shall acknowledge receipt within three (3) business days of a Support Request. Company will provide ongoing updates every five (5) days.</td>
+					<td>Company shall Resolve the Support Request as soon as practicable and no later than ten (10) days after Company’s receipt of the Support Request.</td>
+				</tr>
+				<tr>
+			    <td>Non- Incident</td>
+			    <td>User is letting Company know about a minor problem or enhancement request for which feedback is not required. Platform is functioning as designed. </td>
+			    <td>During Support Hours, Company shall acknowledge receipt within five (5) Business Days of a Support Request.</td>
+					<td>Not applicable.</td>
+				</tr>
+			</table>
+		</li>
 
 		<li>&nbsp;&nbsp;<p><b>Time Extensions</b>.  The parties may, on a case-by-case basis, agree in writing to a reasonable extension of the Response Times or Resolution Targets</p></li>
 
@@ -313,8 +321,9 @@ lastUpdated: "March 19, 2020"
 
 		<li>&nbsp;&nbsp;<p><b>Remote Services</b>. Company may provide services to User remotely, including by means of telephone or over the internet (“Remote Services”), to assist in analyzing and Resolving any Error reported by a Support Request during the Support Period. In the case of any Error relating to Software, and only if requested by User and agreed to by Company, User may provide Company access to User Systems via remote access software (“Remote Access Software”).  If User makes such request, the parties acknowledge and agree that Company may collect, maintain, process and use only such information as it reasonably believes is necessary to assist in analyzing and Resolving a Support Request; and use such information solely to provide the Support Services in accordance with the terms and conditions of this Policy and the User Agreement. </p></li>
 
-		<p>Company shall at all times treat any information it collects, maintains, processes or uses under this Section 8 as User’s Confidential Information and shall comply with all User security and encryption requirements notified to Company in writing.</p>
 	</ol>
+
+		<p>Company shall at all times treat any information it collects, maintains, processes or uses under this Section 8 as User’s Confidential Information and shall comply with all User security and encryption requirements notified to Company in writing.</p>
 
 	<li>&nbsp;&nbsp;<b>Contacting the Company Service Desk</b>.  User should contact the Company Service Desk using the following methods:</li>
 
@@ -486,5 +495,5 @@ lastUpdated: "March 19, 2020"
 
 	<li>&nbsp;&nbsp;<p><b>Amendment.</b> Company may revise this Agreement from time to time by posting the modified version on its website with or without prior notice to User, except as otherwise stated herein. By continuing to access or use the Storage Services after the posted effective date of modifications to this Agreement, you agree to be bound by the revised version of the Agreement.</p></li>
 
-	<li>&nbsp;&nbsp;<p>Survival. The following sections of this Agreement will survive expiration or earlier termination of this Agreement for any reason: 3. Payment, 5. Term & Termination, 6. User’s Use of Out of Scope Service, 7. Software Updates, Service Deprecation, 9. Service Level Agreement, 10. Feedback, 11. Indemnification, 12. Disclaimers, 13. Limitation of Liability, </p></li>
+	<li>&nbsp;&nbsp;<p><b>Survival.</b> The following sections of this Agreement will survive expiration or earlier termination of this Agreement for any reason: 3. Payment, 5. Term & Termination, 6. User’s Use of Out of Scope Service, 7. Software Updates, Service Deprecation, 9. Service Level Agreement, 10. Feedback, 11. Indemnification, 12. Disclaimers, 13. Limitation of Liability, </p></li>
 </ol>
