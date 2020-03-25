@@ -214,14 +214,14 @@ lastUpdated: "March 19, 2020"
 		<td>Bandwidth related to object downloads calculated on bytes downloaded including long tail elimination-related bandwidth</td>
 	</tr>
 </table>
-
+<br>
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Payment</u>. Except where otherwise indicated via the Storage Services we will charge all Fees to a payment method designated by you from the available options you have via the Storage Services (the “<b>Payment Method</b>”).  You represent and warrant that you are authorized to use the Payment Method and authorize us to charge all amounts due hereunder to the Payment Method.  If your Payment Method cannot be verified, is invalid, or is not otherwise acceptable, your right to use the Storage Services may be suspended and/or terminated automatically.  Fees will be charged on a monthly basis based on your prior month’s usage. You can avoid incurring future Fees at any time by discontinuing your use of the Storage Services to store your Storage Materials.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Late Fees</u>. Except as prohibited by law, we may assess a late charge if you do not pay Fees when due which you will pay at the lesser of 1.5% of the unpaid amount per month or the maximum rate permitted by law along with our costs of collection including but not limited to reasonable attorneys' fees and other legal fees and costs. In addition, we may suspend and/or terminate your access to the Storage Services immediately without notice if you fail to pay Fees on time.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Promotional Credits</u>. From time to time, Company or an authorized third party may make available certain credits against future charges for promotional purposes which may include marketing incentives, referral, or other events (“<b>Promotional Credits</b>”).  Promotional Credits are valid for the period as stated in the terms of any such Promotional Credits (the “<b>Usage Period</b>”).  Promotional Credits that have not been used by the end of the Usage Period will expire.  All Company promotion codes are subject to the following terms, in addition to any terms printed on the applicable promotional material:</p></li>
-
+	<br>
 	<ol type="i">
 		<li><p>&nbsp;&nbsp;A Company promotion code may be redeemed only during the period shown in the selected promotional media, or, if none is stated, then for a period of three (3) months from the promotion date;</p></li>
 
@@ -239,28 +239,28 @@ lastUpdated: "March 19, 2020"
 
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>License</u>. You grant Company a non-exclusive, royalty-free, worldwide, perpetual, irrevocable, transferable, and fully sublicensable right to reproduce, modify, distribute, and export the Storage Materials solely as necessary to meet our obligations hereunder and to comply with your instructions to store such Storage Materials via the Storage Services. </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Backup</u>. Company does not guarantee the maintenance of any Storage Materials and is not responsible for any loss, misuse, or deletion of Storage Materials or any failure of any Storage Materials to be stored or encrypted. You are solely responsible for backing up and maintaining copies of the Storage Materials.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Security</u>. You are responsible for properly configuring and using the Storage Services to store your Storage Materials and for maintaining appropriate security of your Storage Materials, which includes client-side encryption. </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Compliance with Laws</u>. You are solely responsible for ensuring that storage of your Storage Materials via the Storage Services is in compliance with all applicable laws.  We make no representations or warranties regarding the suitability of the Storage Services for the storage of any particular types of data or for your specific usage.  Company makes no representation or warranty that the using the Storage Services to store any Storage Materials that include personal data or sensitive data requiring heightened security protections complies with any specific regulations or laws, including without limitation (i) “protected health information,” as defined under the Health Insurance Portability and Accountability Act (“HIPAA”), (ii) “cardholder data,” as defined by the Payment Card Industry Data Security Standard (“PCI DSS”), or (iii) “Sensitive Personal Data” as defined under the General Data Protection Regulation, Regulation (EU) 2016/679 (“<b>GDPR</b>”) and other applicable law.  You must provide all notices to, and obtain any necessary consents from, third parties as required by applicable law in connection with the storage of Storage Materials via the Storage Services.  We reserve the right at any time, without notice, to remove, reject or delete any Storage Materials that contain unencrypted and/or plain text data or otherwise violate this Agreement.</p></li>
 </ol>
 
-<p>5.&nbsp;&nbsp;Terms and Termination</p>
-
+<p>5.&nbsp;&nbsp;<b>Terms and Termination</b></p>
+<br>
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Term.</u>. This Agreement commences on the Effective Date and shall remain in effect per the terms below.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Termination</u>. Either party may terminate this Agreement if the other party: (a) is in material breach of this Agreement and fails to cure such breach within thirty (30) days following receipt of written notice from the non-breaching party, except where termination may be earlier affected as otherwise stated in this Agreement; or (b) ceases its business operations or becomes subject to insolvency proceedings and the proceedings are not dismissed within sixty (60) days, however, User may not terminate this Agreement until all of User’s Storage Materials are removed from the Storage Services.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Effect of Suspension or Termination</u>. Upon expiration or termination of this Agreement for any reason, all use of the Storage Services and any other rights granted to User under this Agreement shall immediately terminate, and User shall immediately cease all use of the Storage Services.  User acknowledges and agrees that when User’s subscription expires, or if User’s access to the Storage Services is otherwise suspended or terminated for any reason, User  will no longer have access to the Storage Materials stored in the Storage Services and User’s Storage Materials may not be recoverable.  As earlier stated, there is no guarantee that any Storage Materials will be available on demand or retrievable at any time.  User is responsible for maintaining backup copies of all Storage Materials at all times.  Company is not responsible for any loss or damage to any Storage Materials.  If Company terminates or suspends User’s access to the Storage Services for reasons other than User’s  breach of the Agreement, negligence, or misconduct, Company will make commercially reasonable efforts to provide you an opportunity to retrieve your Storage Materials via the Storage Service. </p></li>
 </ol>
-
+<br>
 <p><b>6.&nbsp;&nbsp;User’s Use of Out of Scope Services</b>To the extent User uses the Storage Services in connection with Out of Scope Services, any acquisition and use by User or its End Users of such Out of Scope Services is solely the responsibility of User.  User acknowledges that providers of such Out of Scope Services may have access to Storage Materials in connection with the interoperation and support of such Out of Scope Services with the Storage Services.  To the extent User authorizes the access or transmission of Storage Materials through a Third Party Service, Company shall not be responsible for any use, disclosure, modification or deletion of such Storage Materials or for any act or omission on the part of such third party provider.</p>
-
+<br>
 <p><b>7.&nbsp;&nbsp;Software Updates; Service Deprecation</b>Notwithstanding anything herein to the contrary, Company reserves the right to change or update the Storage Services at any time. Such changes will be documented in the Documentation prior to, or within a reasonable amount of time following, such changes. If such changes constitute a Major Release, and the Major Release is not backwards compatible with the Supported Software Services, Company will continue to provide support for the incompatible Major Release for a minimum of three (3) months. If Company determines that it will deprecate support for the incompatible Major Release, Company will provide a minimum of three (3) months notice that the unsupported Major Release will be deprecated via email and by publishing such notice in the Documentation.</p>
-
+<br>
 <p><b>8.&nbsp;&nbsp;User Support</b>. Company will provide certain support in connection with your use of the Storage Services as stated herein.</p>
 
 <ol type="a">
@@ -392,13 +392,13 @@ lastUpdated: "March 19, 2020"
 		<li><p>&nbsp;&nbsp;Company will use commercially reasonable efforts to meet the following service level commitment: except for scheduled maintenance, the Storage Services will be available 99.95% of the time. We calculate availability based upon the service records we maintain. We will use reasonable efforts to notify you in advance of any scheduled maintenance.</p>
 			<ol type="i">
 				<li><p>&nbsp;&nbsp;Our SLA obligations do not extend to any unavailability of the Storage Services that is caused by: (i) any hardware or software that you use in connection with the Storage Services; (ii) misuse of our Storage Services, including use in breach of the Agreement or use other than in accordance with any content or Documentation or other instructions provided by Company; (iii) circumstances or events beyond the reasonable control of Company; (iv) maintenance or scheduled downtime; or (iv) our suspension or termination of your access to the Storage Services pursuant to the rights we have reserved under the the Storj agreements. </p></li>
-
+				<br>
 				<li><p>&nbsp;&nbsp;As the sole and exclusive remedy for our breach of the SLA, Company will provide a credit against Fees payable to Company (“Credits”) in the following amounts: (i) if availability during any rolling 30 day period is less than 99.95% but above 99.0%, then we will provide a Credit of 5% of the monthly Fees actually paid during that month; and (ii) if availability during any calendar month is less than 99.0%, then we will provide a Credit of 10% of the monthly Fees actually paid during that month.</p></li>
-
+				<br>
 				<li><p>&nbsp;&nbsp;You will only be eligible to receive Credits if you have paid all Fees on time, are not past due on any payments, and notify us of a request for Credits within 30 days of the end of the calendar month in which we have not met our SLA. We will issue Credits solely as an offset against future Fees that are payable by you to Company. You will not be entitled to a refund or other payment from Company in connection with any Credits you accrue. In no event will the total amount of Credits exceed 10% of the Fees payable by you for the corresponding month.</p></li>
-
+				<br>
 				<li><p>&nbsp;&nbsp;<b>Scheduled Downtime.</b> Scheduled Downtime will generally occur during the Maintenance Windows. Company will endeavor to provide notice at least eight hours in advance of any scheduled downtime occurring outside of the Maintenance Windows.</p></li>
-
+				<br>
 				<li><p>&nbsp;&nbsp;<b>Maintenance Windows.</b> Company has an optional weekly maintenance window on Sundays from 2:00 a.m. EST/EDT to 6:00 a.m. EST/EDT during which scheduled maintenance, upgrades and repairs can occur.</p>
 					<ol type="1">
 						<li><p>&nbsp;&nbsp;Usage of the maintenance window is scheduled according to the Company release calendar.</p></li>
@@ -422,53 +422,52 @@ lastUpdated: "March 19, 2020"
 </p>
 
 <p>10.&nbsp;&nbsp;<b>Feedback</b>To the extent that User or its End Users provide Company with any suggestions, ideas, enhancement requests, recommendations, or other feedback or information (collectively, “<b>Feedback</b>”), User hereby grants to Company a fully paid-up, royalty free, worldwide, perpetual, irrevocable, transferable, sub-licensable license to freely use, disclose, and otherwise exploit such Feedback, including but not limited to incorporation of the Feedback into future versions of the Storage Services without any compensation or other obligation to User. </p>
-
+<br>
 <p>11.&nbsp;&nbsp;<b>Indemnification.</b></p>
-
 <ol type="a">
 	<li><p>&nbsp;&nbsp;To the fullest extent permitted by applicable law, you agree to defend, hold harmless, and indemnify Company from and against any and all losses, liabilities, claims, or demands, including but not limited to reasonable attorney’s fees, made by any third party due to or arising out of (i) your use of the Storage Services, (ii) the Storage Materials, (iii) your sharing or rental of Space; (iv) any Feedback you provide; or (v) your breach of any of this Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;Company reserves the right to exercise sole control over the defense and settlement of any claim subject to indemnification hereunder at your expense.  This indemnity is in addition to, and not in lieu of, any other indemnities set forth in a written agreement between you and Company.  You may not settle and claim without our prior written consent.</p></li>
 </ol>
 
-<p>&nbsp;&nbsp;<b>Disclaimers</b></p>
+<p>12.&nbsp;&nbsp;<b>Disclaimers</b></p>
 
 <p>TO THE FULLEST EXTENT PERMITTED BY LAW, THE STORAGE SERVICES AND ALL RELATED COMPONENTS AND INFORMATION ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT ANY WARRANTIES OF ANY KIND, AND COMPANY AND ITS SUBCONTRACTORS AND AFFILIATES EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.  USER ACKNOWLEDGES THAT COMPANY DOES NOT WARRANT THAT ACCESS, USE, OR OPERATION OF THE STORAGE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT DEFECTS WILL BE CORRECTED.  COMPANY IS NOT RESPONSIBLE FOR AND DISCLAIMS ALL LIABILITY RELATED TO DELAYS, DELIVERY FAILURES, INTERCEPTION, ALTERATION, OR OTHER DAMAGE RESULTING FROM MATTERS OUTSIDE OF ITS CONTROL, INCLUDING PROBLEMS INHERENT IN THE USE OF THE INTERNET, MOBILE AND PERSONAL COMPUTING DEVICES, TRANSMISSION OF ELECTRONIC COMMUNICATIONS OVER THE INTERNET OR OTHER NETWORKS, AND THIRD PARTY HOSTING SERVICE PROVIDERS.  COMPANY DOES NOT MAKE ANY REPRESENTATIONS OR WARRANTIES REGARDING THE MAINTENANCE, STORAGE, RETRIEVABILITY, OR CONDITION OF STORAGE MATERIALS.</p>
-
+<br>
 <p>13.&nbsp;&nbsp;<b>Limitation of Liability.</b></p>
 
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Consequential Damages</u>. IN NO EVENT SHALL COMPANY BE LIABLE TO YOU OR ANY OTHER PERSON OR ENTITY FOR ANY LOST PROFIT OR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES OF ANY KIND (INCLUDING, BUT NOT LIMITED TO, RELATED TO LOSS OF REVENUE, INCOME, OR PROFITS, LOSS OF USE OR DATA, DAMAGES FOR BUSINESS INTERRUPTION, OR COSTS OF OBTAINING SUBSTITUTE GOODS OR SERVICES) ARISING OUT OF OR IN ANY WAY RELATED TO THIS AGREEMENT OR TO THE ACCESS OR USE OF THE STORAGE SERVICES OR RELATED COMPONENTS, EVEN IF COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE AND WHETHER BASED UPON WARRANTY, CONTRACT, TORT, STRICT LIABILITY, VIOLATION OF STATUTE, OR OTHERWISE.  THIS EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Limitation of Liability</u>. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, COMPANY’S AGGREGATE LIABILITY TO USER FOR ANY DAMAGES ARISING FROM OR RELATED TO USER’S  USE OF THE STORAGE  SERVICES, OR OTHERWISE RELATED TO THIS AGREEMENT (FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION), WILL AT ALL TIMES BE LIMITED, OTHER THAN TO THE LESSER OF FIFTY U.S. DOLLARS ($50) AND THE AMOUNTS PAID BY USER TO COMPANY IN THE TWELVE (12) MONTHS PRIOR TO THE DATE THE CLAIM FIRST AROSE.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Promotional Credit</u>.  IN THE EVENT A VALID PROMOTIONAL CREDIT IS NON-FUNCTIONAL DURING THE REDEMPTION PERIOD, USER’S SOLE REMEDY, AND COMPANY’S SOLE LIABILITY, SHALL BE THE REPLACEMENT OF SUCH PROMOTIONAL CREDIT.  </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;THE PROVISIONS OF THIS SECTION ALLOCATE THE RISKS UNDER THIS AGREEMENT BETWEEN THE PARTIES, AND THE PARTIES HAVE RELIED ON THESE LIMITATIONS IN DETERMINING WHETHER TO ENTER INTO THIS AGREEMENT.
 	</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;THE FOREGOING LIMITATIONS WILL APPLY EVEN IF A REMEDY FAILS OF ITS ESSENTIAL PURPOSE AND TO THE FULLEST EXTENT PERMITTED BY LAW.</p></li>
 </ol>
 
-<p>14.&nbsp;&nbsp;<b>Export Restrictions</b>Elements of the Storage Services may be subject to export laws and regulations of the United States and other jurisdictions. User represents that it is not named on any U.S. government denied-party list.  The Storage Services may not be used in any country that is subject to an embargo by the United States, and User may not use the Storage Services in violation of any export restriction or embargo or sanctions by the United States or any other applicable jurisdiction.  In addition, User must ensure that the Storage Services is not made available for use in jurisdictions or by persons or entities blocked or denied by the United States government or any other applicable jurisdiction. User and User’s End Users shall not export any product or use the Storage Services to export, re-export, transfer, or make available, whether directly or indirectly, any regulated item or information to anyone outside the U.S. without first complying with all export control laws and regulations that may be imposed by the U.S. Government and any country or organization of nations within whose jurisdiction User operates or does business. </p>
-
+<p>14.&nbsp;&nbsp;<b>Export Restrictions</b> Elements of the Storage Services may be subject to export laws and regulations of the United States and other jurisdictions. User represents that it is not named on any U.S. government denied-party list.  The Storage Services may not be used in any country that is subject to an embargo by the United States, and User may not use the Storage Services in violation of any export restriction or embargo or sanctions by the United States or any other applicable jurisdiction.  In addition, User must ensure that the Storage Services is not made available for use in jurisdictions or by persons or entities blocked or denied by the United States government or any other applicable jurisdiction. User and User’s End Users shall not export any product or use the Storage Services to export, re-export, transfer, or make available, whether directly or indirectly, any regulated item or information to anyone outside the U.S. without first complying with all export control laws and regulations that may be imposed by the U.S. Government and any country or organization of nations within whose jurisdiction User operates or does business. </p>
+<br>
 <p>15.&nbsp;&nbsp;<b>Use In Your Jurisdiction</b> Except as explicitly set forth herein, Company makes no representations that the Storage Services is appropriate for use in any jurisdictions. Those who access or use the Storage Services from any jurisdictions do so at their own risk and are responsible for compliance with any and all laws or regulations that apply in such jurisdictions. Company may offer services in other jurisdictions that are subject to different terms and conditions. In such instances, the terms and conditions governing those other jurisdictions shall take precedence over any conflicting provisions in this Agreement.</p>
-
-<p>15.&nbsp;&nbsp;<b>Governing Law; Dispute Resolution</b></p>
-
+<br>
+<p>16.&nbsp;&nbsp;<b>Governing Law; Dispute Resolution</b></p>
+<br>
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Governing Law; Arbitration.</u> This Agreement is governed by the laws of the State of Delaware without regard to its conflict of laws provisions.  The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.  You and Storj agree that these Terms of Use affect interstate commerce and that the Federal Arbitration Act governs the interpretation and enforcement of these arbitration provisions.  This Section is intended to be interpreted broadly and governs any and all disputes between us including but not limited to claims arising out of or relating to any aspect of the relationship between us, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory; claims that arose before these Terms of Use or any prior agreement (including, but not limited to, claims related to advertising); and claims that may arise after the termination of these Terms of Use.  The only disputes excluded from this broad prohibition are the litigation of certain intellectual property and small court claims, as provided below.</p></li>
 
 	<li><p>&nbsp;&nbsp;<u>Initial Dispute Resolution</u>. The parties agree that most disputes can be resolved without resort to litigation.  If you have any dispute with us, you agree that before taking any formal action, you will contact us at legal@storj.io and provide a brief, written description of the dispute and your contact information (including your username, if your dispute relates to an account).  Except for intellectual property and small claims court claims, the parties agree to use their best efforts to settle any dispute, claim, question, or disagreement directly through consultation with Storj, and good faith negotiations shall be a condition to either party initiating a lawsuit or arbitration.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Binding Arbitration</u>. If the Parties do not reach an agreed-upon solution within a period of thirty (30) days from the time the informal dispute resolution is initiated under the Initial Dispute Resolution provision above, then either party may initiate binding arbitration as the sole means to resolve claims, subject to the terms set forth below. Specifically, all claims arising out of or relating to this Agreement (including its formation, performance and breach), the Parties’ relationship with each other and/or your use of the Storage Services shall be resolved solely and exclusively by final and binding arbitration initiated and conducted according to the JAMS/Endispute Comprehensive Arbitration Rules and Procedures in effect as of the date hereof before a single arbitrator.  If the Parties cannot agree upon selection of an arbitrator, then JAMS shall appoint the arbitrator experienced in the enterprise software industry. The place of the arbitration will be Fulton County, Georgia. Notwithstanding the foregoing, either party may enforce judgment upon any arbitration award in any court of competent jurisdiction located in Georgia.  Additionally, the Parties may seek injunctive or other equitable relief to protect its Intellectual Property Rights, Confidential Information, or as otherwise required to prevent irreparable harm, in any court of competent jurisdiction selected by Company. The prevailing party in any action or proceeding hereunder, including any arbitration or court proceedings, will be entitled to recover its reasonable costs and attorneys’ fees. The parties understand that, absent this mandatory arbitration provision, they would have the right to sue in court and have a jury trial. They further understand that, in some instances, the costs of arbitration could exceed the costs of litigation and the right to discovery may be more limited in arbitration than in court.  </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Class Action Waiver</u>. The parties further agree that the arbitration shall be conducted in the party’s respective individual capacities only and not as a class action or other representative action, and the parties expressly waive their right to file a class action or seek relief on a class basis. YOU AND STORJ AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. If any court or arbitrator determines that the class action waiver set forth in this paragraph is void or unenforceable for any reason or that an arbitration can proceed on a class basis, then the arbitration provisions set forth above shall be deemed null and void in their entirety and the parties shall be deemed to have not agreed to arbitrate disputes.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Exception: Litigation of Intellectual Property and Small Claims Court Claims</u>. Notwithstanding the parties’ decision to resolve all disputes through arbitration, either party may bring enforcement actions, validity determinations or claims arising from or relating to theft, piracy or unauthorized use of intellectual property in state or federal court with jurisdiction or in the U.S. Patent and Trademark Office to protect its intellectual property rights (“intellectual property rights” means patents, copyrights, moral rights, trademarks, and trade secrets, but not privacy or publicity rights). Either party may also seek relief in small claims court in Fulton County, Georgia for disputes or claims within the scope of that court’s jurisdiction.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Changs to This Section</u>. Storj will provide thirty (30) days’ notice of any changes to this section by posting on the Offerings and Websites. Amendments will become effective thirty (30) days after they are posted on the Offerings and Websites or sent to you by email. Changes to this section will otherwise apply prospectively only to claims arising after the thirtieth (30th) day. If a court or arbitrator decides that this subsection on “Changes to This Section” is not enforceable or valid, then this subsection shall be severed from the section entitled Mandatory Arbitration and Class Action Waiver, and the court or arbitrator shall apply the first Mandatory Arbitration and Class Action Waiver section in existence after you began using the Offerings and Websites.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Survival</u>. This Mandatory Arbitration and Class Action Waiver section shall survive any termination of your use of the Offerings and Websites.</p></li>
 </ol>
 
