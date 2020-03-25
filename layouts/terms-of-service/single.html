@@ -3,11 +3,11 @@
   <head>
     {{ partial "head" . }}
   </head>
-  <body class="page">
-    <section class="legal__nav">
+  <body class="legal page">
+    <header class="legal__nav">
         {{partial "banner" .}}
-        {{partial "nav" .}}
-    </section>
+        {{partial "legalNav" .}}
+    </header>
     {{ with .Site.GetPage "termsOfService" }}
     <div class="legal__container container">
         <h1> {{ .Params.title }} </h1>

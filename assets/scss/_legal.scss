@@ -1,6 +1,18 @@
 .legal {
+	background: #F4F5F7;
   &__nav {
-    p {
-    }
+		background: #fff;
+		margin-bottom: 80px;
+		.navbar {
+			margin-top: 15px;
+			padding-bottom: 10px;
+	    .navlink {
+				color: #93A1AF;
+			}
+			.nav-join {
+				color: #2582FF;
+				border: 2px solid #2582FF;
+			}
+		}
   }
 }

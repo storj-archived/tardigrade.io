@@ -471,13 +471,15 @@ lastUpdated: "March 19, 2020"
 <p>17.&nbsp;&nbsp;<b>General.</b></p>
 
 <ol type="a">
-	<li>&nbsp;&nbsp;<p><u>Communications.</u>/p></li>
-
+	<li>&nbsp;&nbsp;<p><u>Communications.</u></p>
 		<ol type="i">
 			<li>&nbsp;&nbsp;<p><u>To User</u>. User agrees to receive electronically all communications, agreements, documents, notices, and disclosures that Company provides in connection with the Offerings (“<b>Communications</b>”).  Company may provide Communications in a variety of ways, including by e-mail, text, in-app notifications, or by posting them on the Company website or through the Offerings. User agrees that all Communications provided by Company electronically satisfy any legal requirement that such communication(s) be in writing. </p></li>
 
 			<li>&nbsp;&nbsp;<p><u>To Company</u>. Notices required or permitted to be given by User to Company hereunder shall be in writing and shall be delivered to Company with attention to Storj’s Legal Department, at 3423 Piedmont Rd NE Suite 475, Atlanta, Georgia 30305, by certified mail, postage prepaid, return receipt requested or nationally recognized overnight courier service to the attention of Company’s legal department.</p></li>
 		</ol>
+
+	</li>
+
 
 	<li>&nbsp;&nbsp;<p><b>Publicity.</b> Company may identify User as a User on its website and in print and other marketing materials using User’s name and logo.</p></li>
 
