@@ -9,6 +9,11 @@
 		font-size: 18px;
 		line-height: 31px;
 	}
+	table, th, td {
+	  border: 1px solid black;
+		vertical-align: top;
+		padding: 5px;
+	}
   &__nav {
 		background: #fff;
 		margin-bottom: 80px;

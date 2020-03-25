@@ -165,29 +165,27 @@ lastUpdated: "March 19, 2020"
 </ol>
 
 <p><b>Storage Services.</b> The Storage  Platform is comprised of a distributed network of independent third-party storage nodes which you may access and use to store Storage Materials pursuant to the terms of your use of the Storage Services as set forth herein.  The Storage Services employ technology designed to encrypt and shard Storage Materials locally on your device and then facilitate the distribution of encrypted data fragments to the network of Storage Nodes. The Storage Nodes are neither operated nor maintained by Company, and Company has no responsibility or liability for the Storage Nodes. You are solely responsible for your use of the Storage Services including for configurations that you select for maintaining access to your Storage Materials. </p>
-
+<br>
 <p>&nbsp;&nbsp;<b>2.Registration; Access and Usage</b></p>
-
+<br>
 <ol type="a">
 
 	<li><p>&nbsp;&nbsp;<u>Registration</u>. This Agreement shall be effective on the date the User first registers for an Account, as defined herein, for access to the Storage Services (the “Effective Date”). Company may update the content, functionality, and user interface of the Storage Services from time to time in its sole discretion. In order to use the Storage Services you will need to register for an account (“<b>Account</b>”).  In connection with your creation of any Account, you must (i) provide accurate, current and complete Account information, (ii) maintain and promptly update your Account information as necessary, including a valid email address, (iii) maintain the security of your Account, including by not using the same password for the Storage Services that you use for third-party products or services, (iv) not disclose your password, API keys, or private keys to any third party, and (v) immediately notify us if you discover or otherwise suspect any unauthorized activities in connection with your Account or the Storage Services. <b>You acknowledge and agree that, in addition to other circumstances, if you lose your private keys, you will not be able to recover any Storage Materials</b>.  User acknowledges that it retains administrative control over to whom it grants access to Storage Materials maintained in the Storage Services.  </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Access Rights</u>. User has a non-exclusive, non-sublicenseable, non-transferable (except as specifically permitted in this Agreement) right to use the Storage Services pursuant to the terms of this Agreement during the applicable Term as defined below.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Usage Restrictions</u>. User shall not (a) reverse engineer, copy, modify, adapt, hack the Storage Services or otherwise attempt to gain unauthorized access to the Storage Services or its related systems or networks; (b) without authorization, access the Storage Services, the Documentation, or Company’s Confidential Information to build a competitive product or Storage Services; (c) alter or remove, or permit any third party to alter or remove, any proprietary trademark or copyright markings incorporated in, marked on, or affixed to the Storage Services; (d) access or use the Storage Services: (i) to store infringing, obscene, threatening, or otherwise unlawful material, including material violative of third-party privacy rights; (ii) in violation of applicable laws; (iii) to store material knowingly or intentionally containing software viruses, worms, Trojan horses, or other harmful computer code, files, or scripts; or, (iv) in a manner that interferes with or disrupts the integrity or performance of the Storage Services (or the data contained therein). </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Sensitive/Personal Information</u>. You agree that you shall not use the Storage Services to send or store personal information subject to special regulatory or contractual handling requirements (e.g., Payment Card Industry Data Security Standards, the Gramm-Leach-Bliley Act, the Health Insurance Portability and Accountability Act, and any similar data protection laws) including without limitation: credit card information, credit card numbers and magnetic stripe information, social security numbers, driver’s license numbers, passport numbers, government-issued identification numbers, health-related information, biometric data, financial account information, personally identifiable information collected from children under the age of 13 or from online services directed toward children, and real time geo-location data which can identify an individual, or information deemed “sensitive” under applicable law (su</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Derived Data</u>. Except for software subject to the Open Source License, and except for any rights expressly granted under this Agreement, Company and its licensors own and shall retain all right, title, and interest in and to the Storage Services (including any improvements, enhancements, customizations, and modifications thereto), the Documentation, Company Confidential Information, and the Derived Data, including, without limitation, all related intellectual property rights therein. For purposes hereof, the term “Derived Data” means data derived from operation of the Uplink and of the Storage Services via the Uplink, and any data that is aggregated by Company (including aggregations with data sourced from other Users and other third party data sources), and data and information regarding Users’ access to and participation in the Storage Services, including, without limitation, statistical usage data derived from the use of the Storage Services and configurations, log data and the performance results related thereto. For the avoidance of doubt, nothing herein shall be construed as prohibiting Company from utilizing Derived Data to optimize and improve the Storage Services or otherwise operate Company’s business; provided that if Company provides Derived Data to third parties, such Derived Data shall be de-identified and presented in the aggregate so that it will not disclose the identity of User to any third party. No rights are granted to User hereunder other than as expressly set forth in this Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Right to Suspend</u>. Company may immediately, with or without notice, suspend the Account of any User or User’s End User who: (a) violates this Agreement (b) is using the Storage Services in a manner that Company reasonably believes may cause a security risk, a disruption to others’ use of the Storage Services or liability for Company.</p></li>
-
+	<br>
 	<p>3.&nbsp;&nbsp;<b>Payment</b></p>
-
 	<ol type="a">
 		<li><p>&nbsp;&nbsp;<u>Fees</u>. You will pay the Fees and any other amounts due as you are otherwise notified via the Storage Services of the fees applicable to use of the Storage Platform ("Fees"). All Fees are exclusive of any applicable taxes, which are your sole responsibility. We will provide notice at least thirty (30) days in advance of any increase to the Fees. The Fees are as follows:</p></li>
 	</ol>
-
 </ol>
 
 <table>
