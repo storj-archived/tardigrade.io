@@ -410,7 +410,7 @@ lastUpdated: "March 19, 2020"
 	</ol>
 </p>
 
-<p><b>10.&nbsp;&nbsp;Feedback</b>To the extent that User or its End Users provide Company with any suggestions, ideas, enhancement requests, recommendations, or other feedback or information (collectively, “<b>Feedback</b>”), User hereby grants to Company a fully paid-up, royalty free, worldwide, perpetual, irrevocable, transferable, sub-licensable license to freely use, disclose, and otherwise exploit such Feedback, including but not limited to incorporation of the Feedback into future versions of the Storage Services without any compensation or other obligation to User. </p>
+<p><b>10.&nbsp;&nbsp;Feedback</b> To the extent that User or its End Users provide Company with any suggestions, ideas, enhancement requests, recommendations, or other feedback or information (collectively, “<b>Feedback</b>”), User hereby grants to Company a fully paid-up, royalty free, worldwide, perpetual, irrevocable, transferable, sub-licensable license to freely use, disclose, and otherwise exploit such Feedback, including but not limited to incorporation of the Feedback into future versions of the Storage Services without any compensation or other obligation to User. </p>
 <br>
 <p><b>11.&nbsp;&nbsp;Indemnification.</b></p>
 <ol type="a">
