@@ -13,39 +13,39 @@ lastUpdated: "March 19, 2020"
 
 <ol type="a">
 	<li><p>&nbsp;&nbsp;“<b>Business Day</b>” means a working day, Monday through Friday, excluding weekends and any U.S. bank holidays.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Open Source Software</b>” means any open source software made available by Company pursuant to the terms of the open source license associated therewith.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Node</b>” means a third-party device that operates Open Source Software and is part of the distributed network comprising the Storage Services.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Device</b>” means an independently operated computer or other electronic data storage device meeting all of the technical and other requirements set forth in this Agreement. </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>NodeID</b>” means a unique code generated when a Storage Node completes a proof of work as required during the setup and configuration of the Storage Node Software (as defined below) in order for a Device to communicate with the Storage Services.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Node Operator Services</b>” means Storage Node Operator’s sharing of Space and Bandwidth on a Storage Node as part of the Storage Network in accordance with the terms of this Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Node Software</b>” means the Storage Node Software which, when installed on a Device, enables such Device to participate in the Storage Network.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Space</b>” means the online storage sharing services provided to Users via a distributed network (“<b>Storage Network</b>”) of Storage Nodes by Company.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Bandwidth</b>” means upload and download network service for transfer of Storage Materials as defined below between the storage node and the online storage sharing services provided by Company to Users via the Storage Network, as defined herein.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Node Operator</b>” means an individual or entity operating one or more Storage Nodes pursuant to the terms of this Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Satellite</b>” means an application operated by Company or a third party that allows User Applications to register accounts, access application credentials, add payment methods, process billing and payment, facilitate storage and retrieval of Storage Materials on Storage Nodes, manage file repair, manage Storage Node reputation and process payments. Company is only responsible for providing support for Satellites hosted and operated by Company.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Uplink</b>” means the Libuplink asynchronous multi-platform client library, S3 Compatible Gateway and Command Line Interface for encrypted transfer of Storage Materials on the Storj Platform for use by User to create User Applications.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Services</b>” means the service provided by Company to Users via the Storage Network for the transfer of Storage Materials, as defined below, between the Uplink, a distributed network of Storage Nodes, and one or more Satellites operated by Company or third parties that independently operate Open Source Software to facilitate storage of the Storage Materials. </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Materials</b>” means data and other materials stored by User on the Storage Services.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Documentation</b>” means information that describes the Storage Services, provides instructions or recommendations related to the configuration and/or use of the Storage Services, or otherwise informs Users of the intended use of the Storage Services, including, but not limited to content provided directly to user or  published at <a class="link" target="_blank" href="https://documentation.tardigrade.io">https://documentation.tardigrade.io</a>, <a class="link" target="_blank" href="https://documentation.storj.io">https://documentation.storj.io</a>, or otherwise made available in conjunction with the Storage Services.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Major Release</b>” means a new release of the Software as indicated by a change to the number to the left of the decimal point in the version number, for example, Version 2.1 upgraded to Version 3.0.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Supported Software Versions</b>” means the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>User Cause</b>” means any of the following causes of an Error: </p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;Any negligent or improper use (including improper installation, configuration or implementation), misapplication, misuse or abuse of, or damage to, the Services, Storage Services, Uplink, or Storage Nodes by User or any of its Representatives; </p></li>
@@ -64,7 +64,7 @@ lastUpdated: "March 19, 2020"
 			<li><p>&nbsp;&nbsp;Any Error related to Out-of-Scope Services not covered by this Policy.</p></li>
 		</ol>
 	</li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Custom Development</b>” means custom software or products designed to interact with the Storage Services or Storage Nodes developed </p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;by User, with or without Company’s assistance, using application programming interfaces (APIs) or other development tools related to the Products, or</p></li>
@@ -72,8 +72,7 @@ lastUpdated: "March 19, 2020"
 			<li><p>&nbsp;&nbsp;by Company for the benefit of User.</p></li>
 		</ol>
 	</li>
-
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>End Users</b>” or “<b>User’s End Users</b>” means the end users of Custom Development, User Systems, Third-party Products, or User Applications.  User is solely responsible for all matters relating to its end users, including without limitation, registration, billing, collections, and support. User acknowledges and agrees that</p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;User’s payment and other obligations hereunder are separate from and wholly independent of User’s relationship with its End Users, and </p></li>
@@ -81,19 +80,17 @@ lastUpdated: "March 19, 2020"
 			<li><p>&nbsp;&nbsp;Company has no responsibility or liability in connection with User’s End Users.</p></li>
 		</ol>
 	</li>
-
-
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>User Application</b>” means any web, mobile, or other application developed by User using the Storage Services or Storage Nodes, including any source code written by User.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>User Systems</b>” means User’s information technology infrastructure, including User’s computers, software, databases, electronic systems (including database management systems) and networks. </p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>User Agreement</b>” means a separately executed Tardigrade partnership agreement between Company and User.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Error</b>” means with respect to any Storage Services or Storage Nodes, any reproducible failure of the Storage Services or Storage Nodes to operate in all material respects in accordance with the then-current Documentation, including any problem, failure or error referred to in the Severity Level Table.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Force Majeure Event</b>” means any unavailability caused by circumstances beyond Company’s reasonable control, including without limitation, acts of God, acts of government, flood, fire, earthquakes, civil unrest, acts of terror, strikes or other labor problems (other than those involving Company employees), computer, telecommunications, Internet service provider or hosting facility failures or delays involving hardware, software or power systems not within Company’s possession or reasonable control, and denial of service attacks.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Out-of-scope Services</b>” means any of the following: </p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;Unless otherwise agreed to in writing between you  and Company specifically stating that such services are covered under this Policy, any services requested by User for Custom Development, User Systems, or Third-party Products; </p></li>
@@ -104,11 +101,8 @@ lastUpdated: "March 19, 2020"
 
 			<li><p>&nbsp;&nbsp;Any loss of an encryption key or encryption key seed.</p></li>
 		</ol>
-
 	</li>
-
-
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Severity Levels</b>” means the defined Error severity levels and corresponding required service level responses, Response Times, Resolutions and Resolution Targets referred to in the Severity Level Table.</p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;“<b>Severity Level Table</b>” means the table set out in Section 2.b.</p></li>
@@ -122,35 +116,35 @@ lastUpdated: "March 19, 2020"
 			<li><p>&nbsp;&nbsp;“<b>Non-Incident</b>” has the meaning set forth in the Severity Level Table.</p></li>
 		</ol>
 	</li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Representative</b>” means any employee or contractor of User, or any employee or contractor of a partner or affiliate of User.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Response Time</b>” has the meaning set forth in the Severity Level Table.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Resolve</b>” and the correlative terms, “<b>Resolved</b>”, “<b>Resolving</b>” and “<b>Resolution</b>” each have the meaning set forth in Section 2.b.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Resolution Target</b>” has the meaning set forth in the Severity Level Table.</p></li>
+	<br>
+	<li><p>&nbsp;&nbsp;“<b>Support Hours</b>” means </p>
+		<ol type="i">
+			<li><p>&nbsp;&nbsp;Between 9:00 A.M. to 8:00 P.M. Eastern Time on Business Days for Severity Level 1 Errors</p></li>
 
-	<li><p>&nbsp;&nbsp;“<b>Support Hours</b>” means </p></li>
-
-	<ol type="i">
-		<li><p>&nbsp;&nbsp;Between 9:00 A.M. to 8:00 P.M. Eastern Time on Business Days for Severity Level 1 Errors</p></li>
-
-		<li><p>&nbsp;&nbsp;Between 9:00 A.M. to 5:00 P.M. Eastern Time on Business Days for other Support Requests.</p></li>
-	</ol>
-
+			<li><p>&nbsp;&nbsp;Between 9:00 A.M. to 5:00 P.M. Eastern Time on Business Days for other Support Requests.</p></li>
+		</ol>
+	</li>
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Support Period</b>” means the term during which Company provides the Support Services to User as set forth in any Order between Company and User or as specified in a User Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Support Request</b>” has the meaning set forth in Section 5.a.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Support Services</b>” means Company’s support of the Storage Services or Storage Nodes, but excluding any Out-of-scope Services.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Technical Contact</b>” has the meaning set forth in Section 5.b.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Third-party Products</b>” means all third-party software, computer hardware, network hardware, electrical, telephone, wiring and all related accessories, components, parts and devices.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Uptime Availability</b>” means that the Storage Services will be available and online in accordance with the SLA defined herein.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;“<b>Support Tiers.</b>”  Support responsibilities for User and/ or User’s End Users are divided into three (3) tiers of ownership:</p></li>
 
 	<ol type="i">
