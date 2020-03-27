@@ -10,7 +10,8 @@
     </header>
     {{ with .Site.GetPage "termsOfService" }}
     <div class="legal__container container">
-        <h1> {{ .Params.title }} </h1>
+        <h1 class="legal__title"> {{ .Params.title }} </h1>
+				<p class="legal__date"> Last Updated <b>{{ .Params.lastUpdated }}</b> </p>
 
         <div class="legal__content h-100">
             {{ .Content }}

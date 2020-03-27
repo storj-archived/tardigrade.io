@@ -1,5 +1,5 @@
 ---
-title: "Terms Of Service"
+title: "Tardigrade Terms Of Service"
 lastUpdated: "March 19, 2020"
 ---
 
@@ -148,7 +148,7 @@ lastUpdated: "March 19, 2020"
 	<li><p>&nbsp;&nbsp;“<b>Support Tiers.</b>”  Support responsibilities for User and/ or User’s End Users are divided into three (3) tiers of ownership:</p></li>
 
 	<ol type="i">
-		<li><p>&nbsp;&nbsp;<b>Tier 1 Support</b> is provided by the User to User’s End Users.* Tier 1 Support is responsible for handling the initial communication with the User’s End User and for documenting the Incident in the form of a ticket.  Tier 1 Support performs basic triage resulting in Resolution of the Incident or escalation to Tier 2. All communication with the End User is provided by Tier 1 Support, which allows User to control the message to their End Users.  In order to communicate effectively with the End Users about the status of their ticket, it is expected that Tier 1 Support will continue to communicate with Tier 2 Support on the progress of the ticket until the ticket is Resolved.</p></li>
+		<li><p>&nbsp;&nbsp;<b>Tier 1 Support</b> is provided by the User to User’s End Users.* Tier 1 Support is responsible for handling the initial communication with the User’s End User and for documenting the Incident in the form of a ticket.  Tier 1 Support performs basic triage resulting in Resolution of the Incident or escalation to Tier 2. All communication with the End User is provided by Tier 1 Support, which allows User to control the message to their End Usex`rs.  In order to communicate effectively with the End Users about the status of their ticket, it is expected that Tier 1 Support will continue to communicate with Tier 2 Support on the progress of the ticket until the ticket is Resolved.</p></li>
 
 		<p>* If a developer or partner has developed a User Application that incorporates Storage Services Storage Nodes, Uplink or the Open Source Software into the User Application, and the support issue is raised by an End User of that User Application, the developer or partner is responsible for Tier 1 support of incidents involving User’s End Users of the developer or partner’s User Application. </p>
 
@@ -176,7 +176,7 @@ lastUpdated: "March 19, 2020"
 	<br>
 	<li><p>&nbsp;&nbsp;<u>Right to Suspend</u>. Company may immediately, with or without notice, suspend the Account of any User or User’s End User who: (a) violates this Agreement (b) is using the Storage Services in a manner that Company reasonably believes may cause a security risk, a disruption to others’ use of the Storage Services or liability for Company.</p></li>
 	<br>
-	<p>3.&nbsp;&nbsp;<b>Payment</b></p>
+	<p><b>3.&nbsp;&nbsp;Payment</b></p>
 	<ol type="a">
 		<li><p>&nbsp;&nbsp;<u>Fees</u>. You will pay the Fees and any other amounts due as you are otherwise notified via the Storage Services of the fees applicable to use of the Storage Platform ("Fees"). All Fees are exclusive of any applicable taxes, which are your sole responsibility. We will provide notice at least thirty (30) days in advance of any increase to the Fees. The Fees are as follows:</p></li>
 	</ol>
@@ -241,7 +241,7 @@ lastUpdated: "March 19, 2020"
 	<li><p>&nbsp;&nbsp;<u>Compliance with Laws</u>. You are solely responsible for ensuring that storage of your Storage Materials via the Storage Services is in compliance with all applicable laws.  We make no representations or warranties regarding the suitability of the Storage Services for the storage of any particular types of data or for your specific usage.  Company makes no representation or warranty that the using the Storage Services to store any Storage Materials that include personal data or sensitive data requiring heightened security protections complies with any specific regulations or laws, including without limitation (i) “protected health information,” as defined under the Health Insurance Portability and Accountability Act (“HIPAA”), (ii) “cardholder data,” as defined by the Payment Card Industry Data Security Standard (“PCI DSS”), or (iii) “Sensitive Personal Data” as defined under the General Data Protection Regulation, Regulation (EU) 2016/679 (“<b>GDPR</b>”) and other applicable law.  You must provide all notices to, and obtain any necessary consents from, third parties as required by applicable law in connection with the storage of Storage Materials via the Storage Services.  We reserve the right at any time, without notice, to remove, reject or delete any Storage Materials that contain unencrypted and/or plain text data or otherwise violate this Agreement.</p></li>
 </ol>
 
-<p>5.&nbsp;&nbsp;<b>Terms and Termination</b></p>
+<p><b>5.&nbsp;&nbsp;Terms and Termination</b></p>
 <br>
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Term.</u>. This Agreement commences on the Effective Date and shall remain in effect per the terms below.</p></li>
@@ -264,48 +264,46 @@ lastUpdated: "March 19, 2020"
 				<ol type="1">
 					<li><p>&nbsp;&nbsp;Respond to and Resolve all Support Requests in accordance with the Service Levels;</p></li>
 
-					<li><p>&nbsp;&nbsp;Provide e-mail and Community support to User during Support Hours by means of the support page located at <a class="link" target"_blank" href="https://storj.io/support.html">https://storj.io/support.html</a>, the e-mail address <a href="mailto:support@storj.io">support@storj.io</a> and the Storj Community Forum at <a class="link" target"_blank" href="https://forum.storj.io/home">https://forum.storj.io/home</a>;</p></li>
+					<li><p>&nbsp;&nbsp;Provide e-mail and Community support to User during Support Hours by means of the support page located at <a class="link" target"_blank" href="https://storj.io/support.html">https://storj.io/support.html</a>, the e-mail address <a class="link" href="mailto:support@storj.io">support@storj.io</a> and the Storj Community Forum at <a class="link" target"_blank" href="https://forum.storj.io/home">https://forum.storj.io/home</a>;</p></li>
 				</ol>
 			</li>
 
 
 			<li><p>&nbsp;&nbsp;<b>Errors</b>. This Section 2.b applies only to Errors.  Response Times and Resolution Targets are set forth in the Severity Level Table below.  Response Time will be measured from the time Company receives a Support Request until Company has responded to that Support Request.  Resolution Target will be measured from the time Company receives a Support Request until Company has Resolved that Support Request. “Resolve”, “Resolved”, “Resolution” and correlative capitalized terms mean, with respect to any particular Support Request, that Company has corrected the Error, whether by a work-around or any other reasonable means, that prompted that Support Request.  Company shall endeavor to respond to and Resolve all Support Requests within the following Response Times and Resolution Targets based on Company's designation of the severity of the associated Error:</p></li>
-
-			<li>
-				<table>
-					<tr>
-						<th>Priorty Level of Error</th>
-						<th>Definition</th>
-						<th>Response Time</th>
-						<th>Resolution Target</th>
-					</tr>
-					<tr>
-						<td>Severity 1 Error</td>
-						<td>The Error results in complete interruption of a production system that impacts all users and no viable workaround exists. User must email Company to report a Severity Level 1 Error Support Request.</td>
-						<td>Company shall acknowledge receipt within one (1) day of a Support Request. Company shall provide updates every eight (8) hours.</td>
-						<td>Company shall Resolve the Support Request as soon as practicable and no later than three (3) days after Company’s receipt of the Support Request.</td>
-					</tr>
-					<tr>
-						<td>Severity 2 Error</td>
-						<td>The Error has a (i) severe impact on performance, important services / components are not functioning, a single connection is down, or a subset of users cannot access the Services in a production system; or (ii) critical business impact and deployment is delayed with a hard deadline approaching in a non-production environment; the Error cannot be easily circumvented. </td>
-						<td>During Support Hours, Company shall acknowledge receipt within two (2) days of a Support Request. Company and User will mutually agree on a schedule for ongoing updates.</td>
-						<td>Company shall Resolve the Support Request as soon as practicable and no later than five (5) days after Company’s receipt of the Support Request.</td>
-					</tr>
-					<tr>
-						<td>Non- Severe Error</td>
-						<td>The Error has a low impact on (i) a small number of users in a production environment; or (ii) development or quality assurance in a non-production environment.  Key functionality is usable; the Error can be readily circumvented.</td>
-						<td>During Support Hours, Company shall acknowledge receipt within three (3) business days of a Support Request. Company will provide ongoing updates every five (5) days.</td>
-						<td>Company shall Resolve the Support Request as soon as practicable and no later than ten (10) days after Company’s receipt of the Support Request.</td>
-					</tr>
-					<tr>
-						<td>Non- Incident</td>
-						<td>User is letting Company know about a minor problem or enhancement request for which feedback is not required. Platform is functioning as designed. </td>
-						<td>During Support Hours, Company shall acknowledge receipt within five (5) Business Days of a Support Request.</td>
-						<td>Not applicable.</td>
-					</tr>
-				</table>
-			</li>
-
+			<br>
+			<table>
+				<tr>
+					<th>Priorty Level of Error</th>
+					<th>Definition</th>
+					<th>Response Time</th>
+					<th>Resolution Target</th>
+				</tr>
+				<tr>
+					<td>Severity 1 Error</td>
+					<td>The Error results in complete interruption of a production system that impacts all users and no viable workaround exists. User must email Company to report a Severity Level 1 Error Support Request.</td>
+					<td>Company shall acknowledge receipt within one (1) day of a Support Request. Company shall provide updates every eight (8) hours.</td>
+					<td>Company shall Resolve the Support Request as soon as practicable and no later than three (3) days after Company’s receipt of the Support Request.</td>
+				</tr>
+				<tr>
+					<td>Severity 2 Error</td>
+					<td>The Error has a (i) severe impact on performance, important services / components are not functioning, a single connection is down, or a subset of users cannot access the Services in a production system; or (ii) critical business impact and deployment is delayed with a hard deadline approaching in a non-production environment; the Error cannot be easily circumvented. </td>
+					<td>During Support Hours, Company shall acknowledge receipt within two (2) days of a Support Request. Company and User will mutually agree on a schedule for ongoing updates.</td>
+					<td>Company shall Resolve the Support Request as soon as practicable and no later than five (5) days after Company’s receipt of the Support Request.</td>
+				</tr>
+				<tr>
+					<td>Non- Severe Error</td>
+					<td>The Error has a low impact on (i) a small number of users in a production environment; or (ii) development or quality assurance in a non-production environment.  Key functionality is usable; the Error can be readily circumvented.</td>
+					<td>During Support Hours, Company shall acknowledge receipt within three (3) business days of a Support Request. Company will provide ongoing updates every five (5) days.</td>
+					<td>Company shall Resolve the Support Request as soon as practicable and no later than ten (10) days after Company’s receipt of the Support Request.</td>
+				</tr>
+				<tr>
+					<td>Non- Incident</td>
+					<td>User is letting Company know about a minor problem or enhancement request for which feedback is not required. Platform is functioning as designed. </td>
+					<td>During Support Hours, Company shall acknowledge receipt within five (5) Business Days of a Support Request.</td>
+					<td>Not applicable.</td>
+				</tr>
+			</table>
+			<br>
 			<li><p>&nbsp;&nbsp;<b>Time Extensions</b>.  The parties may, on a case-by-case basis, agree in writing to a reasonable extension of the Response Times or Resolution Targets</p></li>
 
 			<li><p>&nbsp;&nbsp;<b>Uptime Availability</b>. This Section 2.e applies only to the Storage Services and does not pertain to Errors, each of which are subject to the Severity Level Table set forth in Section 2.b.  Company will maintain Uptime Availability as specified in the Service Level Agreement, defined herein.  In case of Company’s failure to meet the SLA terms, Company will provide User with credit(s) as set forth in the SLA. Uptime Availability does not include: (i) downtime that results from a User Cause or a Force Majeure Event or (ii) scheduled downtime, which shall not be more than 12 hours per year.  Company shall provide notice at least eight hours in advance of any scheduled downtime.</p></li>
@@ -318,15 +316,15 @@ lastUpdated: "March 19, 2020"
 
 
 		<p>Company shall at all times treat any information it collects, maintains, processes or uses under this Section 8 as User’s Confidential Information and shall comply with all User security and encryption requirements notified to Company in writing.</p>
-
+	<br>
 	<li>&nbsp;&nbsp;<b>Contacting the Company Service Desk</b>.  User should contact the Company Service Desk using the following methods:
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;Tardigrade support portal at <a class="link" target="_blank" href="https://support.tardigrade.io">https://support.tardigrade.io</a></p></li>
 
-			<li><p>&nbsp;&nbsp;For Severity 1 or 2 Errors Company provides a support email address at <a href="mailto:support@tardigrade.io">support@tardigrade.io</a></p></li>
+			<li><p>&nbsp;&nbsp;For Severity 1 or 2 Errors Company provides a support email address at <a class="link" href="mailto:support@tardigrade.io">support@tardigrade.io</a></p></li>
 		</ol>
 	</li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Personal Information</b>.   Notwithstanding anything to the contrary in this Agreement, Company will not be responsible, accountable or liable for any of the following that User voluntarily transmits or discloses to Company unsolicited:</p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;protected health information (as that term is used in HIPAA),</p></li>
@@ -336,9 +334,8 @@ lastUpdated: "March 19, 2020"
 			<li><p>&nbsp;&nbsp;personal information/data (as such terms are used in state breach notification laws or European Union privacy directives or other similar legislation) </p></li>
 		</ol>
 	</li>
-
-
-	<li><p>&nbsp;&nbsp;<b>Support Requests and User Obligations.</p>
+	<br>
+	<li><p>&nbsp;&nbsp;<b>Support Requests and User Obligations.</b></p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;<b>Support Requests</b>. Unless otherwise specified in this Policy, User may request Support Services by email, via the Storj Community Rocketchat, or other means as may be agreed to by Company and User (each, a “Support Request”). Following receipt of a Support Request, Company shall classify the Error corrections in accordance with the severity level numbers and definitions of the Severity Level Table set forth in Section 2.b. User shall include in each Support Request a description of the reported Error and the time User first observed the Error.</p></li>
 
@@ -362,9 +359,7 @@ lastUpdated: "March 19, 2020"
 
 		</ol>
 	</li>
-
-
-
+	<br>
 	<li><p><b>Incident Resolution Process</b></p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;The Company Service Desk will use commercially reasonable efforts to resolve Incidents and answer questions to resolve Support Requests within the Resolution Target specified in the Severity Level Table set forth in Section 2.b.</p></li>
@@ -376,12 +371,12 @@ lastUpdated: "March 19, 2020"
 			<li><p>&nbsp;&nbsp;The Company Help Desk shall use commercially reasonable efforts to identify the cause of problems involving public or User-owned software, network or computer infrastructure, but shall not be responsible for correcting or resolving any such problems. To the extent that Company is able to determine the external problem cause, Company will inform the requester and close the request log.  Company Help Desk support will not include the responsibility to cure or correct defects in any non- Company products, services, or infrastructure, including, but not limited to Custom Development, User Systems, or Third-party Products and Services.</p></li>
 		</ol>
 	</li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Supported Releases for Software</b>.Notwithstanding anything herein to the contrary, Company provides Support Services for (i) the current Major Release of the Software, (ii) any other Major Release that was first made generally available and backwards compatible with the Storage Services or Storage Nodes (the “<b>Supported Software Versions</b>”).
 	</p></li>
 </ol>
 
-<p>9.&nbsp;&nbsp;<b>Service Level Agreement("SLA")</b>
+<p><b>9.&nbsp;&nbsp;Service Level Agreement("SLA")</b>
 	<ol type="a">
 		<li><p>&nbsp;&nbsp;Company will use commercially reasonable efforts to meet the following service level commitment: except for scheduled maintenance, the Storage Services will be available 99.95% of the time. We calculate availability based upon the service records we maintain. We will use reasonable efforts to notify you in advance of any scheduled maintenance.</p>
 			<ol type="i">
@@ -415,20 +410,20 @@ lastUpdated: "March 19, 2020"
 	</ol>
 </p>
 
-<p>10.&nbsp;&nbsp;<b>Feedback</b>To the extent that User or its End Users provide Company with any suggestions, ideas, enhancement requests, recommendations, or other feedback or information (collectively, “<b>Feedback</b>”), User hereby grants to Company a fully paid-up, royalty free, worldwide, perpetual, irrevocable, transferable, sub-licensable license to freely use, disclose, and otherwise exploit such Feedback, including but not limited to incorporation of the Feedback into future versions of the Storage Services without any compensation or other obligation to User. </p>
+<p><b>10.&nbsp;&nbsp;Feedback</b>To the extent that User or its End Users provide Company with any suggestions, ideas, enhancement requests, recommendations, or other feedback or information (collectively, “<b>Feedback</b>”), User hereby grants to Company a fully paid-up, royalty free, worldwide, perpetual, irrevocable, transferable, sub-licensable license to freely use, disclose, and otherwise exploit such Feedback, including but not limited to incorporation of the Feedback into future versions of the Storage Services without any compensation or other obligation to User. </p>
 <br>
-<p>11.&nbsp;&nbsp;<b>Indemnification.</b></p>
+<p><b>11.&nbsp;&nbsp;Indemnification.</b></p>
 <ol type="a">
 	<li><p>&nbsp;&nbsp;To the fullest extent permitted by applicable law, you agree to defend, hold harmless, and indemnify Company from and against any and all losses, liabilities, claims, or demands, including but not limited to reasonable attorney’s fees, made by any third party due to or arising out of (i) your use of the Storage Services, (ii) the Storage Materials, (iii) your sharing or rental of Space; (iv) any Feedback you provide; or (v) your breach of any of this Agreement.</p></li>
 	<br>
 	<li><p>&nbsp;&nbsp;Company reserves the right to exercise sole control over the defense and settlement of any claim subject to indemnification hereunder at your expense.  This indemnity is in addition to, and not in lieu of, any other indemnities set forth in a written agreement between you and Company.  You may not settle and claim without our prior written consent.</p></li>
 </ol>
 
-<p>12.&nbsp;&nbsp;<b>Disclaimers</b></p>
+<p><b>12.&nbsp;&nbsp;Disclaimers</b></p>
 
 <p>TO THE FULLEST EXTENT PERMITTED BY LAW, THE STORAGE SERVICES AND ALL RELATED COMPONENTS AND INFORMATION ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT ANY WARRANTIES OF ANY KIND, AND COMPANY AND ITS SUBCONTRACTORS AND AFFILIATES EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.  USER ACKNOWLEDGES THAT COMPANY DOES NOT WARRANT THAT ACCESS, USE, OR OPERATION OF THE STORAGE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT DEFECTS WILL BE CORRECTED.  COMPANY IS NOT RESPONSIBLE FOR AND DISCLAIMS ALL LIABILITY RELATED TO DELAYS, DELIVERY FAILURES, INTERCEPTION, ALTERATION, OR OTHER DAMAGE RESULTING FROM MATTERS OUTSIDE OF ITS CONTROL, INCLUDING PROBLEMS INHERENT IN THE USE OF THE INTERNET, MOBILE AND PERSONAL COMPUTING DEVICES, TRANSMISSION OF ELECTRONIC COMMUNICATIONS OVER THE INTERNET OR OTHER NETWORKS, AND THIRD PARTY HOSTING SERVICE PROVIDERS.  COMPANY DOES NOT MAKE ANY REPRESENTATIONS OR WARRANTIES REGARDING THE MAINTENANCE, STORAGE, RETRIEVABILITY, OR CONDITION OF STORAGE MATERIALS.</p>
 <br>
-<p>13.&nbsp;&nbsp;<b>Limitation of Liability.</b></p>
+<p><b>13.&nbsp;&nbsp;Limitation of Liability.</b></p>
 
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Consequential Damages</u>. IN NO EVENT SHALL COMPANY BE LIABLE TO YOU OR ANY OTHER PERSON OR ENTITY FOR ANY LOST PROFIT OR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES OF ANY KIND (INCLUDING, BUT NOT LIMITED TO, RELATED TO LOSS OF REVENUE, INCOME, OR PROFITS, LOSS OF USE OR DATA, DAMAGES FOR BUSINESS INTERRUPTION, OR COSTS OF OBTAINING SUBSTITUTE GOODS OR SERVICES) ARISING OUT OF OR IN ANY WAY RELATED TO THIS AGREEMENT OR TO THE ACCESS OR USE OF THE STORAGE SERVICES OR RELATED COMPONENTS, EVEN IF COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF WHETHER SUCH DAMAGES WERE FORESEEABLE AND WHETHER BASED UPON WARRANTY, CONTRACT, TORT, STRICT LIABILITY, VIOLATION OF STATUTE, OR OTHERWISE.  THIS EXCLUSION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW.</p></li>
@@ -443,15 +438,15 @@ lastUpdated: "March 19, 2020"
 	<li><p>&nbsp;&nbsp;THE FOREGOING LIMITATIONS WILL APPLY EVEN IF A REMEDY FAILS OF ITS ESSENTIAL PURPOSE AND TO THE FULLEST EXTENT PERMITTED BY LAW.</p></li>
 </ol>
 
-<p>14.&nbsp;&nbsp;<b>Export Restrictions</b> Elements of the Storage Services may be subject to export laws and regulations of the United States and other jurisdictions. User represents that it is not named on any U.S. government denied-party list.  The Storage Services may not be used in any country that is subject to an embargo by the United States, and User may not use the Storage Services in violation of any export restriction or embargo or sanctions by the United States or any other applicable jurisdiction.  In addition, User must ensure that the Storage Services is not made available for use in jurisdictions or by persons or entities blocked or denied by the United States government or any other applicable jurisdiction. User and User’s End Users shall not export any product or use the Storage Services to export, re-export, transfer, or make available, whether directly or indirectly, any regulated item or information to anyone outside the U.S. without first complying with all export control laws and regulations that may be imposed by the U.S. Government and any country or organization of nations within whose jurisdiction User operates or does business. </p>
+<p><b>14.&nbsp;&nbsp;Export Restrictions</b> Elements of the Storage Services may be subject to export laws and regulations of the United States and other jurisdictions. User represents that it is not named on any U.S. government denied-party list.  The Storage Services may not be used in any country that is subject to an embargo by the United States, and User may not use the Storage Services in violation of any export restriction or embargo or sanctions by the United States or any other applicable jurisdiction.  In addition, User must ensure that the Storage Services is not made available for use in jurisdictions or by persons or entities blocked or denied by the United States government or any other applicable jurisdiction. User and User’s End Users shall not export any product or use the Storage Services to export, re-export, transfer, or make available, whether directly or indirectly, any regulated item or information to anyone outside the U.S. without first complying with all export control laws and regulations that may be imposed by the U.S. Government and any country or organization of nations within whose jurisdiction User operates or does business. </p>
 <br>
-<p>15.&nbsp;&nbsp;<b>Use In Your Jurisdiction</b> Except as explicitly set forth herein, Company makes no representations that the Storage Services is appropriate for use in any jurisdictions. Those who access or use the Storage Services from any jurisdictions do so at their own risk and are responsible for compliance with any and all laws or regulations that apply in such jurisdictions. Company may offer services in other jurisdictions that are subject to different terms and conditions. In such instances, the terms and conditions governing those other jurisdictions shall take precedence over any conflicting provisions in this Agreement.</p>
+<p><b>15.&nbsp;&nbsp;Use In Your Jurisdiction</b> Except as explicitly set forth herein, Company makes no representations that the Storage Services is appropriate for use in any jurisdictions. Those who access or use the Storage Services from any jurisdictions do so at their own risk and are responsible for compliance with any and all laws or regulations that apply in such jurisdictions. Company may offer services in other jurisdictions that are subject to different terms and conditions. In such instances, the terms and conditions governing those other jurisdictions shall take precedence over any conflicting provisions in this Agreement.</p>
 <br>
-<p>16.&nbsp;&nbsp;<b>Governing Law; Dispute Resolution</b></p>
-<br>
+<p><b>16.&nbsp;&nbsp;Governing Law; Dispute Resolution</b></p>
+
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Governing Law; Arbitration.</u> This Agreement is governed by the laws of the State of Delaware without regard to its conflict of laws provisions.  The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.  You and Storj agree that these Terms of Use affect interstate commerce and that the Federal Arbitration Act governs the interpretation and enforcement of these arbitration provisions.  This Section is intended to be interpreted broadly and governs any and all disputes between us including but not limited to claims arising out of or relating to any aspect of the relationship between us, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory; claims that arose before these Terms of Use or any prior agreement (including, but not limited to, claims related to advertising); and claims that may arise after the termination of these Terms of Use.  The only disputes excluded from this broad prohibition are the litigation of certain intellectual property and small court claims, as provided below.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<u>Initial Dispute Resolution</u>. The parties agree that most disputes can be resolved without resort to litigation.  If you have any dispute with us, you agree that before taking any formal action, you will contact us at legal@storj.io and provide a brief, written description of the dispute and your contact information (including your username, if your dispute relates to an account).  Except for intellectual property and small claims court claims, the parties agree to use their best efforts to settle any dispute, claim, question, or disagreement directly through consultation with Storj, and good faith negotiations shall be a condition to either party initiating a lawsuit or arbitration.</p></li>
 	<br>
 	<li><p>&nbsp;&nbsp;<u>Binding Arbitration</u>. If the Parties do not reach an agreed-upon solution within a period of thirty (30) days from the time the informal dispute resolution is initiated under the Initial Dispute Resolution provision above, then either party may initiate binding arbitration as the sole means to resolve claims, subject to the terms set forth below. Specifically, all claims arising out of or relating to this Agreement (including its formation, performance and breach), the Parties’ relationship with each other and/or your use of the Storage Services shall be resolved solely and exclusively by final and binding arbitration initiated and conducted according to the JAMS/Endispute Comprehensive Arbitration Rules and Procedures in effect as of the date hereof before a single arbitrator.  If the Parties cannot agree upon selection of an arbitrator, then JAMS shall appoint the arbitrator experienced in the enterprise software industry. The place of the arbitration will be Fulton County, Georgia. Notwithstanding the foregoing, either party may enforce judgment upon any arbitration award in any court of competent jurisdiction located in Georgia.  Additionally, the Parties may seek injunctive or other equitable relief to protect its Intellectual Property Rights, Confidential Information, or as otherwise required to prevent irreparable harm, in any court of competent jurisdiction selected by Company. The prevailing party in any action or proceeding hereunder, including any arbitration or court proceedings, will be entitled to recover its reasonable costs and attorneys’ fees. The parties understand that, absent this mandatory arbitration provision, they would have the right to sue in court and have a jury trial. They further understand that, in some instances, the costs of arbitration could exceed the costs of litigation and the right to discovery may be more limited in arbitration than in court.  </p></li>
@@ -465,34 +460,35 @@ lastUpdated: "March 19, 2020"
 	<li><p>&nbsp;&nbsp;<u>Survival</u>. This Mandatory Arbitration and Class Action Waiver section shall survive any termination of your use of the Offerings and Websites.</p></li>
 </ol>
 
-<p>17.&nbsp;&nbsp;<b>General.</b></p>
+<p><b>17.&nbsp;&nbsp;General.</b></p>
 
 <ol type="a">
 	<li><p>&nbsp;&nbsp;<u>Communications.</u></p>
 		<ol type="i">
 			<li><p>&nbsp;&nbsp;<u>To User</u>. User agrees to receive electronically all communications, agreements, documents, notices, and disclosures that Company provides in connection with the Offerings (“<b>Communications</b>”).  Company may provide Communications in a variety of ways, including by e-mail, text, in-app notifications, or by posting them on the Company website or through the Offerings. User agrees that all Communications provided by Company electronically satisfy any legal requirement that such communication(s) be in writing. </p></li>
-
 			<li><p>&nbsp;&nbsp;<u>To Company</u>. Notices required or permitted to be given by User to Company hereunder shall be in writing and shall be delivered to Company with attention to Storj’s Legal Department, at 3423 Piedmont Rd NE Suite 475, Atlanta, Georgia 30305, by certified mail, postage prepaid, return receipt requested or nationally recognized overnight courier service to the attention of Company’s legal department.</p></li>
 		</ol>
-
 	</li>
-
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Publicity.</b> Company may identify User as a User on its website and in print and other marketing materials using User’s name and logo.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>No Agency.</b> Other than as specified herein, neither party has any authority to create any obligation on behalf of the other.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Force Majeure.</b> Except for payment obligations, neither Company nor User will be liable for delayed or inadequate performance of its obligations hereunder to the extent caused by a condition that is beyond the party’s reasonable control, including but not limited to natural disaster, civil disturbance, acts of terrorism or war, labor conditions, governmental actions, interruption or failure of the Internet or any utility service, and denial of service attacks (each a “Force Majeure Event”).  The party affected shall be relieved from its applicable obligations as long as the Force Majeure Event lasts and hinders the performance of said obligations. The party affected shall promptly notify the other party and make reasonable efforts to mitigate the effects of the Force Majeure Event with reasonable dispatch; if Company is the party affected, this requirement can be satisfied by notice posted on its website.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Severability; No Waiver.</b> In the event that any provision of this Agreement is found invalid or unenforceable pursuant to any judicial decree or decision, such provision shall be limited or eliminated to the minimum extent necessary so that this Agreement shall otherwise remain in full force and effect and remain enforceable between the parties.  No waiver of any term of this Agreement shall be deemed a further or continuing waiver of such term or any other term, and a party’s failure to assert any right or provision under this Agreement shall not constitute a waiver of such right or provision.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Assignment.</b> You may not assign this Agreement or any of its rights hereunder, nor delegate any of its obligations hereunder, by operation of law or otherwise, without Company’s prior written consent, provided that consent for an assignment of this Agreement in its entirety (including all Orders) will not be required in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of a party’s assets.  Notwithstanding the foregoing, if a party is acquired by, sells substantially all of its assets to, or undergoes a change of control in favor of, a direct competitor of the other party, then such other party may terminate this Agreement upon written notice.   Subject to the foregoing, this Agreement will be binding and inure to the benefit of the parties, their respective successors, and permitted assigns.  There are no third-party beneficiaries to this Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Company Affiliates.</b> The term Company includes Company and its affiliates,  meaning an entity which, directly or indirectly, controls, is controlled by or is under common control with Storj.  As used herein, “control” means the beneficial ownership of more than fifty percent (50%) of the voting equity securities or other equivalent voting interests of the entity (“<b>Affiliates</b>”).</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Entire Agreement; Order of Precedence.</b> This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes and replaces any prior or contemporaneous representations, understandings and agreements, whether written or oral, with respect to the subject matter hereof. To the extent of any conflict or inconsistency between the provisions in the body of this Agreement and any addendum hereto or any User Agreement, the terms of such addendum or User Agreement shall prevail. Notwithstanding any language to the contrary therein, no terms or conditions stated in any Documentation shall be incorporated into or form any part of this Agreement. Headers used in this Agreement are for convenience only and are not intended as, nor shall they be used as, an aid to interpretation.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Amendment.</b> Company may revise this Agreement from time to time by posting the modified version on its website with or without prior notice to User, except as otherwise stated herein. By continuing to access or use the Storage Services after the posted effective date of modifications to this Agreement, you agree to be bound by the revised version of the Agreement.</p></li>
-
+	<br>
 	<li><p>&nbsp;&nbsp;<b>Survival.</b> The following sections of this Agreement will survive expiration or earlier termination of this Agreement for any reason: 3. Payment, 5. Term & Termination, 6. User’s Use of Out of Scope Service, 7. Software Updates, Service Deprecation, 9. Service Level Agreement, 10. Feedback, 11. Indemnification, 12. Disclaimers, 13. Limitation of Liability, </p></li>
 </ol>
+<br>
+<br>
+<br>
+<br>
