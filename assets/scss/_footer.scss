@@ -23,7 +23,10 @@
 
   &__link {
     color: $color--white;
-
+		font-family: $primary-font;
+		font-size: 12px;
+		line-height: 20px;
+		color: $footer--text;
     &-temp {
       opacity: 1;
       color: #2582ff;
