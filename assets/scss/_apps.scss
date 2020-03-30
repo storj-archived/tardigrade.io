@@ -1,8 +1,8 @@
 .apps__hero {
 	&__container {
-	  background-image: url("/img/apps-bg.png");
+	  background-image: url("/img/apps-bg.jpg");
 		background-size: cover;
-		height: 980px;
+		height: 580px;
 	  .btn-group-vertical>.btn, .btn-group>.btn{
 	    color: $color--blue-light;
 	  }
