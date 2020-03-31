@@ -86,5 +86,18 @@
 			margin-left: 20px;
 			margin-top: 20px;
 		}
+		&__category {
+			font-family: $secondary-font;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 20px;
+			color: #133E9C;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
 	}
+}
+
+.pagination {
+	display: inline-flex;
 }
