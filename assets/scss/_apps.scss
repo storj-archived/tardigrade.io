@@ -28,11 +28,29 @@
 	}
 }
 
+.sidebar {
+	.category-title {
+		font-weight: bold;
+		font-family: $primary-font;
+		font-size: 14px;
+		line-height: 40px;
+		color: #000;
+	}
+	.category-name {
+		font-family: $primary-font;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 50px;
+		letter-spacing: .25px;
+		color: #000;
+	}
+}
+
 .apps__partners {
   height: 1000px;
-	background: #F4F6F9;
+	background: #fff;
 	&__partner {
-		background: #fff;
+		background: #F7F8FA;
 		height: 188px;
 		margin-bottom: 25px;
 		// display: none;

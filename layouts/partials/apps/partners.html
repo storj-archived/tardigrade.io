@@ -2,14 +2,15 @@
   <div class="container">
 		<div class="row">
 			<div class="col-4">
+				{{ partial "apps/sidebar" .}}
 			</div>
 			<div class="col-8">
 				<div class="apps__partners__search-container">
 					<input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Search Tardigrade partners & apps..." aria-label="Search">
 				</div>
 				<div class="pt-5 row d-flex flex-row apps__partners__partners">
-					{{ range where .Site.Pages ".Params.class" "partner"}}
-
+					{{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") 8}}
+		 			{{ range $paginator.Pages }}
 						<div class="col-xs-12 col-lg-6 ">
 							<div class="apps__partners__partner">
 								<div class="apps__partners__partner__header">
@@ -17,9 +18,6 @@
 									<h4 class="apps__partners__partner__header__name">
 										{{ .Params.name }}
 									</h4>
-									<p class="apps__partners__partner__header__version">
-										{{ .Params.version }}
-									</p>
 									<p class="apps__partners__partner__header__status">
 										{{ .Params.new }}
 									</p>
@@ -28,23 +26,24 @@
 									{{ .Params.description }}
 								</p>
 								<div class="apps__partners__partner__footer">
+									{{ .Params.categories }}
 								</div>
 							</div>
 						</div>
-					{{ end }}
+					{{end}}
 				</div>
 
-				<!-- {{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") }} -->
+				{{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") }}
 
-			    <!-- <nav aria-label="Page navigation example">
+			    <nav aria-label="Page navigation example">
 			    <ul class="pagination">
 			      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
 			      <li class="page-item"><a class="page-link" href="#">1</a></li>
 			      <li class="page-item"><a class="page-link" href="#">2</a></li>
 			      <li class="page-item"><a class="page-link" href="#">3</a></li>
 			      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-			    </ul> -->
-			  <!-- </nav> -->
+			    </ul>
+			  </nav>
 			</div>
 		</div>
 	</div>

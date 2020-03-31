@@ -24,3 +24,6 @@ paginate = 9
   partner-form="/partner-form/"
   partner-thank-you="/partner-thank-you/"
   universal-login="/satellites/"
+
+[taxonomies]
+  category = "categories"
