@@ -46,6 +46,47 @@
 	}
 }
 
+.dropdown {
+	margin-top: 45px;
+	display: block;
+	.btn {
+		font-family: $secondary-font;
+		font-weight: 300;
+		font-size: 16px;
+		color: #93A1AF;
+		background: #fff;
+		border: none;
+		&:hover, &:focus, &:active {
+			background: #fff;
+			color: inherit;
+			border: none;
+		}
+		.fa {
+			margin-left: 20px;
+		}
+	}
+	.dropdown-menu {
+		transform: translate3d(5px, 35px, 0px)!important;
+		border: 1px solid #F2F2F2;
+		box-sizing: border-box;
+		box-shadow: 0px 7px 14px rgba(20, 29, 37, 0.6);
+		border-radius: 6px;
+		overflow: scroll;
+		margin-top: 20px;
+		.dropdown-item {
+			.item-name {
+				color: #93A1AF;
+				font-family: $secondary-font;
+				font-size: 14px;
+				font-weight: 300;
+			}
+		}
+	}
+	.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+		background: transparent;
+	}
+}
+
 .apps__partners {
   height: 1000px;
 	background: #fff;
