@@ -18,13 +18,24 @@
 		width: 200px;
 		margin: 0 auto;
 		text-align: center;
+		margin-top: 10%;
+		color: #fff;
 	}
-	&__cta {
-		font-family: 'Poppins';
+	&__title {
+		font-family: $primary-font;
 		font-weight: bold;
+		font-size: 34px;
+		line-height: 40px;
+		margin-bottom: 40px;
+	}
+	&__subheading {
+		font-family: $secondary-font;
+		font-weight: 300;
 		font-size: 18px;
-		line-height: 20px;
-		color: #2582FF !important;
+		line-height: 27px;
+		width: 400px;
+		margin: 0 auto;
+
 	}
 }
 
