@@ -98,6 +98,42 @@
 	}
 }
 
-.pagination {
-	display: inline-flex;
+.pagination-wrapper {
+	text-align: center;
+	margin-top: 20px;
+	.pagination {
+		display: inline-flex;
+		.page-item {
+			.page-link {
+				border: none;
+				color: #354049;
+				font-family: $secondary-font;
+				font-size: 16px;
+				font-weight: 300;
+				margin: 0 5px;
+			}
+		}
+		.page-item.active {
+			.page-link {
+				background: #fff;
+				border-bottom: 3px solid $color--blue-light;
+				color: $color--blue-light;
+				font-weight: bold;
+				padding: 9px 5px 2px 5px;
+				border-radius: 0;
+			}
+		}
+		.page-item.arrow {
+			.page-link {
+				border: 1px solid #AFB7C1;
+				border-radius: 6px;
+				margin: 0 15px;
+				padding: 7px 14px;
+			}
+		}
+	}
+}
+
+.apps footer {
+	margin-top: 150px;
 }
