@@ -64,7 +64,7 @@
             </div>
             <div class="metadata-info">Metadata does not include actual data. Objects are distributed globally.</div>
         </div>
-        <iframe class="iframe" id="iframe" src="https://us-central-1.tardigrade.io/login"></iframe>
+        <iframe class="iframe" id="iframe" src="https://us-central-1.tardigrade.io/register"></iframe>
     </div>
     {{partial "site-scripts" .}}
 </body>
@@ -109,7 +109,7 @@
 		asiaSatellite.unselectSatellite();
 
 		usSatellite.selectSatellite();
-        setIframeSource('https://us-central-1.tardigrade.io/login');
+        setIframeSource('https://us-central-1.tardigrade.io/register');
 	}
 
 	function selectAsiaSatellite() {
@@ -117,7 +117,7 @@
 		usSatellite.unselectSatellite();
 
 		asiaSatellite.selectSatellite();
-        setIframeSource('https://asia-east-1.tardigrade.io/login');
+        setIframeSource('https://asia-east-1.tardigrade.io/register');
 	}
 
 	function selectEuropeSatellite() {
@@ -125,7 +125,7 @@
 		asiaSatellite.unselectSatellite();
 
 		europeSatellite.selectSatellite();
-        setIframeSource('https://europe-west-1.tardigrade.io/login');
+        setIframeSource('https://europe-west-1.tardigrade.io/register');
 	}
 
     function setIframeSource(url) {
