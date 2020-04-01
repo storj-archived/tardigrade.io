@@ -1,3 +1,4 @@
+
 <div class="container-fluid nomp">
   <div class="container">
 		<div class="row">
@@ -11,6 +12,7 @@
 				<div class="pt-5 row d-flex flex-row apps__partners__partners">
 					{{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") 8}}
 		 			{{ range $paginator.Pages }}
+
 						<div class="col-xs-12 col-lg-6 ">
 							<div class="apps__partners__partner">
 								<div class="apps__partners__partner__header">
@@ -18,9 +20,11 @@
 									<h4 class="apps__partners__partner__header__name">
 										{{ .Params.name }}
 									</h4>
+									{{ if eq .Params.new true }}
 									<p class="apps__partners__partner__header__status">
-										{{ .Params.new }}
+											New
 									</p>
+									{{end}}
 								</div>
 								<p class="apps__partners__partner__description">
 									{{ .Params.description }}

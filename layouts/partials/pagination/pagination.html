@@ -8,7 +8,6 @@
         <!-- {{ if and (ne $pag.PageNumber 1) (ne $pag.PageNumber 2) }}
         <li class="page-item"><a href="{{ $pag.First.URL }}" rel="first" class="page-link">1</a></li>
         {{ end }} -->
-
         {{ if $pag.HasPrev  }}
         <li class="page-item arrow"><a href="{{ $pag.Prev.URL }}" rel="prev" class="page-link"><img src="/img/pagination-arrow-left.svg" /></a></li>
         {{ end }}
