@@ -1,8 +1,64 @@
+.apps {
+	background: #fff;
+
+	@media only screen and (max-width: 1024px) {
+		background: #F7F8FA;
+	}
+}
+
 .apps__hero {
 	&__container {
 	  background-image: url("/img/apps-bg.jpg");
 		background-size: cover;
 		height: 580px;
+		background-position: 0 -200px;
+		@media only screen and (max-width: 1950px) {
+			background-position: 0 -80px;
+		}
+		@media only screen and (max-width: 1700px) {
+			background-position: 0 -50px;
+		}
+		@media only screen and (max-width: 1600px) {
+			background-position: 0 -20px;
+		}
+		@media only screen and (max-width: 1500px) {
+			background-position: 0 0px;
+			height: 540px;
+		}
+		@media only screen and (max-width: 1375px) {
+			height: 490px;
+		}
+		@media only screen and (max-width: 1205px) {
+			height: 440px;
+		}
+		@media only screen and (max-width: 1085px) {
+			height: 420px;
+		}
+		@media only screen and (max-width: 1024px) {
+			background-image: url("/img/apps-bg-sm.jpg");
+			height: 700px;
+			background-position: 0 -810px;
+		}
+		@media only screen and (max-width: 991px) {
+			height: 790px;
+	    background-position: 0 -650px;
+		}
+		@media only screen and (max-width: 900px) {
+			height: 790px;
+			background-position: 0 -590px;
+		}
+		@media only screen and (max-width: 840px) {
+			height: 880px;
+	    background-position: 0px -370px;
+		}
+		@media only screen and (max-width: 768px) {
+			height: 860px;
+			background-position: 0px -370px;
+		}
+		@media only screen and (max-width: 700px) {
+			height: 900px;
+			background-position: 0px -190px;
+		}
 	  .btn-group-vertical>.btn, .btn-group>.btn{
 	    color: $color--blue-light;
 	  }
@@ -20,6 +76,18 @@
 		text-align: center;
 		margin-top: 10%;
 		color: #fff;
+		@media only screen and (max-width: 1375px) {
+			margin-top: 8%;
+		}
+		@media only screen and (max-width: 991px) {
+			margin-top: 15%;
+		}
+		@media only screen and (max-width: 840px) {
+			margin-top: 20%;
+		}
+		@media only screen and (max-width: 768px) {
+			margin-top: 30%;
+		}
 	}
 	&__title {
 		font-family: $primary-font;
@@ -40,6 +108,9 @@
 }
 
 .sidebar {
+	@media only screen and (max-width: 1024px) {
+		display: none;
+	}
 	.category-title {
 		font-weight: bold;
 		font-family: $primary-font;
@@ -117,13 +188,13 @@
 }
 
 .apps__partners {
-  height: 1000px;
-	background: #fff;
 	&__partner {
 		background: #F7F8FA;
 		height: 188px;
 		margin-bottom: 25px;
-		// display: none;
+		@media only screen and (max-width: 1024px) {
+			background: #fff;
+		}
 		&__header {
 			&__name {
 				font-family: 'Poppins';

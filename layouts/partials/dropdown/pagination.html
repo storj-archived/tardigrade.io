@@ -1,13 +1,8 @@
-{{ $lastPage := .lastPage }}
-{{ $lastUrlElement := .lastUrlElement }}
+{{ $pag := $.Paginator }}
 <div class="btn-group dropdown">
 	<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		<img alt="dropdown-icon" class="dropdown-icon" src="/img/dropdown-icon.svg" />
-		{{if eq $lastUrlElement $lastPage}}
-			Oldest
-		{{else}}
-			Latest {{$lastUrlElement}}
-		{{end}}
+			Latest
 		 <i class="fa fa-angle-down"></i>
 	</button>
 	<div class="dropdown-menu">
