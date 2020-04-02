@@ -54,6 +54,11 @@
 		line-height: 50px;
 		letter-spacing: .25px;
 		color: #000;
+		text-transform: capitalize;
+	}
+	.current-page {
+		font-weight: bold;
+		color: $color--blue-light;
 	}
 }
 
