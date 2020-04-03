@@ -132,6 +132,22 @@
         document.getElementById('iframe').src = url;
     }
 
+    function selectSatelliteOnActivation(nameParam, activated) {
+        switch (nameParam) {
+            case 'Asia-East-1':
+                selectAsiaSatellite();
+                setIframeSource(`https://asia-east-1.tardigrade.io/login?activated=${activated}`);
+                break;
+            case 'Europe-West-1':
+                selectEuropeSatellite();
+                setIframeSource(`https://europe-west-1.tardigrade.io/login?activated=${activated}`);
+                break;
+            default:
+                selectUSSatellite();
+                setIframeSource(`https://us-central-1.tardigrade.io/login?activated=${activated}`);
+        }
+    }
+
     window.onload = () => {
         const urlParams = new URLSearchParams(window.location.search);
         if (!urlParams.has('name')) {
@@ -143,30 +159,11 @@
         const nameParam = urlParams.get('name');
 
         if (urlParams.get('activated') === 'true') {
-            switch (nameParam) {
-                case 'Asia-East-1':
-                    selectAsiaSatellite();
-                    setIframeSource('https://asia-east-1.tardigrade.io/login?activated=true');
-                    break;
-                case 'Europe-West-1':
-                    selectEuropeSatellite();
-                    setIframeSource('https://europe-west-1.tardigrade.io/login?activated=true');
-                    break;
-                default:
-                    selectUSSatellite();
-                    setIframeSource('https://us-central-1.tardigrade.io/login?activated=true');
-            }
-        } else {
-            switch (nameParam) {
-                case 'Asia-East-1':
-                    selectAsiaSatellite();
-                    break;
-                case 'Europe-West-1':
-                    selectEuropeSatellite();
-                    break;
-                default:
-                    selectUSSatellite();
-            }
+            selectSatelliteOnActivation(nameParam, true);
+
+            return;
         }
+
+        selectSatelliteOnActivation(nameParam, false);
     }
 </script>
