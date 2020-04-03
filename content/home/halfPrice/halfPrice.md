@@ -1,5 +1,5 @@
 ---
-heading: "Straight-Forwarding Pricing"
+heading: "Straight-Forward Pricing"
 col1Heading: "Storage"
 col1Image: "/img/tar-ico-cloud.png"
 col1Amount: "$0.01"
