@@ -18,3 +18,29 @@
     {{partial "site-scripts" .}}
   </body>
 </html>
+
+<script type="text/javascript">
+
+var search = $("#searchInput");
+
+console.log("SEARCHSAD:", search)
+
+$("#searchInput").on("keyup", function() {
+		console.log("HIT")
+		var value = $(this).val().toLowerCase();
+		console.log("VALUE:", value)
+		$(".apps__partners__partner").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			if($(".apps__partners__partner:visible").length < 10) {
+				$("#loadMore").hide()
+			}
+
+			if(value.length == 0) {
+				$(".apps__partners__partner").css("display", "none");
+				$(".apps__partners__partner").slice(0, 8).css("display", "flex");
+				$("#loadMore").show()
+			}
+		});
+	});
+
+</script>

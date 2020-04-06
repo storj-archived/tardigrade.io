@@ -8,6 +8,7 @@
 	        {{with .Site.GetPage "page" "apps-hero"}}
 	          <h1 class="apps__hero__title">{{ .Params.title }}</h1>
 	          <p class="apps__hero__subheading">{{ .Params.subHeading }}</p>
+						<input id="searchInput" class="form-control" type="search" placeholder="Search" aria-label="Search">
 	        </div>
 	    </div>
 		{{end}}
