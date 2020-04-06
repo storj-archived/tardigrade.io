@@ -8,56 +8,16 @@
 
 .apps__hero {
 	&__container {
-	  background-image: url("/img/apps-bg.jpg");
+		background: url("/img/apps-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		background-size: cover;
-		height: 580px;
-		background-position: 0 -200px;
-		@media only screen and (max-width: 1950px) {
-			background-position: 0 -80px;
-		}
-		@media only screen and (max-width: 1700px) {
-			background-position: 0 -50px;
-		}
-		@media only screen and (max-width: 1600px) {
-			background-position: 0 -20px;
-		}
-		@media only screen and (max-width: 1500px) {
-			background-position: 0 0px;
-			height: 540px;
-		}
-		@media only screen and (max-width: 1375px) {
-			height: 490px;
-		}
-		@media only screen and (max-width: 1205px) {
-			height: 440px;
-		}
-		@media only screen and (max-width: 1085px) {
-			height: 420px;
-		}
-		@media only screen and (max-width: 1024px) {
-			background-image: url("/img/apps-bg-sm.jpg");
-			height: 700px;
-			background-position: 0 -810px;
-		}
-		@media only screen and (max-width: 991px) {
-			height: 790px;
-	    background-position: 0 -650px;
-		}
-		@media only screen and (max-width: 900px) {
-			height: 790px;
-			background-position: 0 -590px;
-		}
-		@media only screen and (max-width: 840px) {
-			height: 880px;
-	    background-position: 0px -370px;
+		// background-position: 0 -200px;
+		@media only screen and (max-width: 1660px) {
+			height: 560px;
 		}
 		@media only screen and (max-width: 768px) {
-			height: 860px;
-			background-position: 0px -370px;
-		}
-		@media only screen and (max-width: 700px) {
-			height: 900px;
-			background-position: 0px -190px;
+			background: url("/img/apps-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
+			height: 790px;
+			// background-position: 0 -590px;
 		}
 	  .btn-group-vertical>.btn, .btn-group>.btn{
 	    color: $color--blue-light;
@@ -78,6 +38,9 @@
 		color: #fff;
 		@media only screen and (max-width: 1375px) {
 			margin-top: 8%;
+		}
+		@media only screen and (max-width: 1085px) {
+			margin-top: 5%;
 		}
 		@media only screen and (max-width: 991px) {
 			margin-top: 15%;
@@ -108,7 +71,7 @@
 }
 
 .sidebar {
-	@media only screen and (max-width: 1024px) {
+	@media only screen and (max-width: 991px) {
 		display: none;
 	}
 	.category-title {
@@ -192,6 +155,7 @@
 		background: #F7F8FA;
 		height: 188px;
 		margin-bottom: 25px;
+		display: none;
 		@media only screen and (max-width: 1024px) {
 			background: #fff;
 		}

@@ -1,5 +1,4 @@
 {{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
-{{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") 8}}
 <div class="container-fluid nomp">
   <div class="container">
 		<div class="row">
@@ -12,11 +11,8 @@
 				</aside>
 			</div>
 			<div class="col-md-12 col-md-12 col-lg-8 ">
-				<div class="apps__partners__search-container">
-					{{ partial "apps/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
-				</div>
 				<div class="pt-5 row d-flex flex-row apps__partners__partners">
-		 			{{ range $paginator.Pages }}
+		 			{{ range (where .Site.Pages ".Params.class" "partner") }}
 						<div class="col-xs-12 col-lg-6 ">
 							<div class="apps__partners__partner">
 								<div class="apps__partners__partner__header">
@@ -40,8 +36,32 @@
 						</div>
 					{{end}}
 				</div>
-				{{ partial "pagination/pagination" . }}
+				<div id="loadMore">
+		      <p class="apps__partners__load-more-btn">Load More</p>
+		    </div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+
+	//grab first four articles of currently active year
+	$(".apps__partners__partner").slice(0, 8).css("display", "block");
+
+	$("#loadMore").click(function(e){ // click event for load more
+		e.preventDefault();
+		if($(".apps__partners__partner:hidden").length !== 0){ // check if any hidden divs still exist
+			$(".apps__partners__partner:hidden").slice(0, 8).css("display", "block");
+		} else if($(".apps__partners__partnere:hidden").length === 0){
+			$("#loadMore").hide()
+		}
+	});
+
+	// if there're no more articles, hide load more btn
+	if($(".apps__partners__partner:hidden").length === 0){
+		$("#loadMore").hide()
+	}
+
+
+</script>
