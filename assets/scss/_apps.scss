@@ -10,14 +10,31 @@
 	&__container {
 		background: url("/img/apps-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		background-size: cover;
-		// background-position: 0 -200px;
 		@media only screen and (max-width: 1660px) {
 			height: 560px;
+		}
+		@media only screen and (max-width: 1500px) {
+			height: 500px;
+		}
+		@media only screen and (max-width: 1360px) {
+			height: 460px;
+		}
+		@media only screen and (max-width: 1280px) {
+			height: 430px;
+		}
+		@media only screen and (max-width: 1280px) {
+			height: 430px;
+		}
+		@media only screen and (max-width: 1200px) {
+			height: 380px;
+		}
+		@media only screen and (max-width: 1024px) {
+			height: 320px;
 		}
 		@media only screen and (max-width: 768px) {
 			background: url("/img/apps-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
 			height: 790px;
-			// background-position: 0 -590px;
+			background-size: cover;
 		}
 	  .btn-group-vertical>.btn, .btn-group>.btn{
 	    color: $color--blue-light;
@@ -31,47 +48,52 @@
 	  }
 	}
 	&__content {
-		width: 300px;
 		margin: 0 auto;
 		text-align: center;
-		margin-top: 10%;
+		margin-top: 8%;
 		color: #fff;
-		@media only screen and (max-width: 1375px) {
-			margin-top: 8%;
+		@media only screen and (max-width: 1500px) {
+			margin-top: 4%;
 		}
-		@media only screen and (max-width: 1085px) {
-			margin-top: 5%;
-		}
-		@media only screen and (max-width: 991px) {
-			margin-top: 15%;
-		}
-		@media only screen and (max-width: 840px) {
-			margin-top: 20%;
+		@media only screen and (max-width: 1200px) {
+			margin-top: 3%;
 		}
 		@media only screen and (max-width: 768px) {
-			margin-top: 30%;
+			margin-top: 38%;
+			width: 100px;
 		}
 	}
 	&__title {
 		font-family: $primary-font;
 		font-weight: bold;
-		font-size: 34px;
+		font-size: 28px;
 		line-height: 40px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		@media only screen and (max-width: 1024px) {
+			font-size: 28px;
+			line-height: 34px;
+			margin-bottom: 10px;
+		}
 	}
 	&__subheading {
 		font-family: $secondary-font;
 		font-weight: 300;
 		font-size: 18px;
 		line-height: 27px;
-		width: 400px;
+		width: 480px;
 		margin: 0 auto;
-
+		@media only screen and (max-width: 1024px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 	#searchInput {
-		width: 300px;
+		width: 340px;
 		margin: 0 auto;
 		margin-top: 30px;
+		@media only screen and (max-width: 1024px) {
+			margin-top: 15px;
+		}
 	}
 }
 
