@@ -1,4 +1,5 @@
 {{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
+{{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") 1}}
 <div class="container-fluid nomp">
   <div class="container">
 		<div class="row">
@@ -37,9 +38,12 @@
 						</div>
 					{{end}}
 				</div>
-				<h4 class="apps__partners__title">More Connectors</h4>
+				<div class="apps__partners__heading">
+					<h4 class="apps__partners__title">More Connectors</h4>
+					{{ partial "apps/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
+				</div>
 				<div class="pt-5 row d-flex flex-row apps__partners__partners">
-		 			{{ range (where .Site.Pages ".Params.class" "partner") }}
+		 			{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
 						<div class="col-xs-12 col-lg-6 ">
 							<div class="apps__partners__partner">
 								<div class="apps__partners__partner__header">
@@ -99,8 +103,13 @@
 
 	$("#searchInput").on("keyup", function() {
 		var value = $(this).val().toLowerCase();
+
+		$(".apps__partners__partner").css("display", "block");
+
 		$(".apps__partners__partner").filter(function() {
+
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
 			if($(".apps__partners__partner:visible").length < 10) {
 				$("#loadMore").hide()
 			}

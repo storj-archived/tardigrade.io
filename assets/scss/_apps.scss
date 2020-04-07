@@ -208,6 +208,10 @@
 		line-height: 40px;
 		color: #000;
 	}
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+	}
 	&__partner, &__partner__featured  {
 		background: #F7F8FA;
 		height: 188px;
