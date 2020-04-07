@@ -44,28 +44,27 @@
 				</div>
 				<div class="pt-5 row d-flex flex-row apps__partners__partners">
 		 			{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
-						<div class="col-xs-12 col-lg-6 ">
-							<div class="apps__partners__partner">
-								<div class="apps__partners__partner__header">
-									<img class="img-fluid apps__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
-									<h4 class="apps__partners__partner__header__name">
-										{{ .Params.name }}
-									</h4>
-									{{ if eq .Params.new true }}
-									<p class="apps__partners__partner__header__status">
-											New
-									</p>
-									{{end}}
-								</div>
-								<p class="apps__partners__partner__description">
-									{{ .Params.description }}
+						<div class="apps__partners__partner col-xs-12 col-lg-6 ">
+							<div class="apps__partners__partner__header">
+								<img class="img-fluid apps__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
+								<h4 class="apps__partners__partner__header__name">
+									{{ .Params.name }}
+								</h4>
+								{{ if eq .Params.new true }}
+								<p class="apps__partners__partner__header__status">
+										New
 								</p>
-								<div class="apps__partners__partner__category">
-									{{ .Params.categories }}
-								</div>
+								{{end}}
+							</div>
+							<p class="apps__partners__partner__description">
+								{{ .Params.description }}
+							</p>
+							<div class="apps__partners__partner__category">
+								{{ .Params.categories }}
 							</div>
 						</div>
 					{{end}}
+					<p class="badge">No Results</p>
 				</div>
 				<div id="loadMore">
 		      <p class="load-more-btn">Load More</p>
@@ -77,7 +76,7 @@
 
 <script type="text/javascript">
 	//grab first four articles of currently active year
-	$(".apps__partners__partner").slice(0, 8).css("display", "block");
+	$(".apps__partners__partner").slice(0, 8).css("display", "inline-block");
 
 	hideButton()
 
@@ -104,14 +103,16 @@
 	$("#searchInput").on("keyup", function() {
 		var value = $(this).val().toLowerCase();
 
-		$(".apps__partners__partner").css("display", "block");
-
-		$(".apps__partners__partner").filter(function() {
+		$(".apps__partners__partner").css("display", "block").filter(function() {
 
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 
+			var postLength = $(".apps__partners__partner:hidden").length
+
 			if($(".apps__partners__partner:visible").length < 10) {
 				$("#loadMore").hide()
+			} else if($(".apps__partners__partner:hidden").length === postLength) {
+				$(".badge").css("display", "block")
 			}
 
 			if(value.length == 0) {
