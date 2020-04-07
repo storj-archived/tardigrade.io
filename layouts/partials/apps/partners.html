@@ -12,7 +12,7 @@
 				</aside>
 			</div>
 			<div class="col-md-12 col-md-12 col-lg-8 ">
-				<div>
+				<div class="featured">
 					<h4 class="apps__partners__title">Featured</h4>
 					{{ range (.Paginator 1).Pages }}
 						<div class="col-12">
@@ -105,6 +105,8 @@
 
 		$(".apps__partners__partner").css("display", "block").filter(function() {
 
+			$(".featured").css("display", "none")
+
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 
 			var postLength = $(".apps__partners__partner:hidden").length
@@ -118,6 +120,7 @@
 			if(value.length == 0) {
 				$(".apps__partners__partner").css("display", "none");
 				$(".apps__partners__partner").slice(0, 8).css("display", "block");
+				$(".featured").css("display", "block")
 				$("#loadMore").show()
 			}
 		});
