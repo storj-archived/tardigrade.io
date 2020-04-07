@@ -1,11 +1,11 @@
 ---
-name : "Deloitte"
+name : "Plesk"
 
 description: ""
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/Deloitte_logo.png"
+img: "/img/partners/terminalio_logo.png"
 class: "partner"
 categories: "Application Connector"
 ---

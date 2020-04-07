@@ -1,7 +1,7 @@
 ---
-name : "Terminal.io"
+name : "Storage Node Software"
 
-description: "Periodically snapshot and store backups of your current MongoDB instance"
+description: "Monetize your excess hardware capacity with Storj"
 added: 09/05/19
 updated: 09/22/19
 new: false

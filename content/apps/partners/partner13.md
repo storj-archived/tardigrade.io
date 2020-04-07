@@ -1,11 +1,11 @@
 ---
-name : "Terminal.io"
+name : "Android Bindings"
 
-description: "Periodically snapshot and store backups of your current MongoDB instance"
+description: "Software bindings from native Go language library for developing applications in Android"
 added: 09/05/19
 updated: 09/22/19
 new: false
 img: "/img/partners/terminalio_logo.png"
 class: "partner"
-categories: "Developer Tool"
+categories: "Bindings"
 ---

@@ -1,7 +1,7 @@
 ---
-name : "SNO Board"
+name : "QNapp Storage Node"
 
-description: "Visualize your current performance metrics as a Storage Node Operator"
+description: "Integrate Storage Node Software into your QNapp device."
 added: 09/05/19
 updated: 09/22/19
 new: false

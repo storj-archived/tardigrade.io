@@ -7,5 +7,5 @@ updated: 09/22/19
 new: true
 img: "/img/partners/minio_logo.png"
 class: "partner"
-categories: "App Connector"
+categories: "Application Connector"
 ---

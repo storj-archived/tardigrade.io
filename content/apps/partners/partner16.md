@@ -1,11 +1,11 @@
 ---
-name : "Terminal.io"
+name : "Desktop Backup"
 
-description: "Periodically snapshot and store backups of your current MongoDB instance"
+description: "Use the Tardigrade Network to backup your existing desktop filesystem"
 added: 09/05/19
 updated: 09/22/19
 new: false
 img: "/img/partners/terminalio_logo.png"
 class: "partner"
-categories: "Developer Tool"
+categories: "Reference Implementations"
 ---

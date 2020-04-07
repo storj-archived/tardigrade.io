@@ -6,5 +6,5 @@ updated: 09/22/19
 new: true
 img: "/img/partners/FileZilla_logo.png"
 class: "partner"
-categories: "App Connector"
+categories: "Application Connector"
 ---
