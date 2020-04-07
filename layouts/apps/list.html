@@ -27,7 +27,7 @@
 	$("#loadMore").click(function(e){ // click event for load more
 		e.preventDefault();
 		if($(".apps__partners__partner:hidden").length !== 0){ // check if any hidden divs still exist
-			$(".apps__partners__partner:hidden").slice(0, 8).css("display", "flex");
+			$(".apps__partners__partner:hidden").slice(0, 8).css("display", "block");
 			if($("apps__partners__partners:hidden").length === 0) {
 				$("#loadMore").hide()
 			}
@@ -49,7 +49,7 @@
 
 			if(value.length == 0) {
 				$(".apps__partners__partner").css("display", "none");
-				$(".apps__partners__partner").slice(0, 8).css("display", "flex");
+				$(".apps__partners__partner").slice(0, 8).css("display", "block");
 				$("#loadMore").show()
 			}
 		});

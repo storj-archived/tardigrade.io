@@ -10,6 +10,9 @@
 	&__container {
 		background: url("/img/apps-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		background-size: cover;
+		@media only screen and (min-width: 1660px) {
+			height: 620px;
+		}
 		@media only screen and (max-width: 1660px) {
 			height: 560px;
 		}
@@ -31,10 +34,16 @@
 		@media only screen and (max-width: 1024px) {
 			height: 320px;
 		}
+		@media only screen and (max-width: 868px) {
+			height: 280px;
+		}
 		@media only screen and (max-width: 768px) {
 			background: url("/img/apps-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
 			height: 790px;
 			background-size: cover;
+		}
+		@media only screen and (max-width: 600px) {
+			height: 690px;
 		}
 	  .btn-group-vertical>.btn, .btn-group>.btn{
 	    color: $color--blue-light;
@@ -52,15 +61,25 @@
 		text-align: center;
 		margin-top: 8%;
 		color: #fff;
+		@media only screen and (min-width: 1660px) {
+			margin-top: 10%;
+		}
 		@media only screen and (max-width: 1500px) {
 			margin-top: 4%;
 		}
 		@media only screen and (max-width: 1200px) {
 			margin-top: 3%;
 		}
+		@media only screen and (max-width: 868px) {
+			margin-top: 1%;
+		}
 		@media only screen and (max-width: 768px) {
 			margin-top: 38%;
-			width: 100px;
+		}
+		@media only screen and (max-width: 600px) {
+			width: 330px;
+			margin: 0 auto;
+			margin-top: 28%;
 		}
 	}
 	&__title {
@@ -69,7 +88,7 @@
 		font-size: 28px;
 		line-height: 40px;
 		margin-bottom: 20px;
-		@media only screen and (max-width: 1024px) {
+		@media only screen and (min-width: 768px) and (max-width: 1024px) {
 			font-size: 28px;
 			line-height: 34px;
 			margin-bottom: 10px;
@@ -82,16 +101,19 @@
 		line-height: 27px;
 		width: 480px;
 		margin: 0 auto;
-		@media only screen and (max-width: 1024px) {
+		@media only screen and (min-width: 768px) and (max-width: 1024px) {
 			font-size: 14px;
 			line-height: 20px;
+		}
+		@media only screen and (max-width: 600px) {
+			width: inherit;
 		}
 	}
 	#searchInput {
 		width: 340px;
 		margin: 0 auto;
 		margin-top: 30px;
-		@media only screen and (max-width: 1024px) {
+		@media only screen and (min-width: 768px) and (max-width: 1024px) {
 			margin-top: 15px;
 		}
 	}
