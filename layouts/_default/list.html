@@ -8,8 +8,8 @@
 
       {{ partial "apps/hero" .}}
     </header>
-			<div class="apps__partners">
-      {{partial "apps/partners" . }}
+			<div id="#native" class="apps__partners">
+      {{partial "apps/categoryPartners" . }}
 			</div>
     <footer>
         {{partial "footer" . }}
@@ -18,3 +18,39 @@
     {{partial "site-scripts" .}}
   </body>
 </html>
+
+<script type="text/javascript">
+	console.log("HIEAHLSD")
+	//grab first four articles of currently active year
+	$("#native .apps__partners__partner").slice(0, 8).css("display", "block");
+
+	$("#loadMore").click(function(e){ // click event for load more
+		e.preventDefault();
+		if($("#native .apps__partners__partner:hidden").length !== 0){ // check if any hidden divs still exist
+			$("#native .apps__partners__partner:hidden").slice(0, 8).css("display", "block");
+			if($("#native apps__partners__partners:hidden").length === 0) {
+				$("#loadMore").hide()
+			}
+		} else if($("#native apps__partners__partners:hidden").length === 0){
+			$("#loadMore").hide()
+		}
+	});
+
+
+	$("#searchInput").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$(".apps__partners__partner").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			if($(".apps__partners__partner:visible").length < 10) {
+				$("#loadMore").hide()
+			}
+
+			if(value.length == 0) {
+				$(".apps__partners__partner").css("display", "none");
+				$(".apps__partners__partner").slice(0, 8).css("display", "block");
+				$("#loadMore").show()
+			}
+		});
+	});
+
+</script>

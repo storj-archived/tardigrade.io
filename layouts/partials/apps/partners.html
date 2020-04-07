@@ -37,7 +37,7 @@
 					{{end}}
 				</div>
 				<div id="loadMore">
-		      <p class="apps__partners__load-more-btn">Load More</p>
+		      <p class="load-more-btn">Load More</p>
 		    </div>
 			</div>
 		</div>
@@ -45,9 +45,45 @@
 </div>
 
 <script type="text/javascript">
+	//grab first four articles of currently active year
+	$(".apps__partners__partner").slice(0, 8).css("display", "block");
+
+	hideButton()
+
+	function hideButton(){
+		if($(".apps__partners__partner:hidden").length === 0) {
+			$("#loadMore").hide()
+		}
+	}
 
 
+	$("#loadMore").click(function(e){ // click event for load more
+		e.preventDefault();
+		if($(".apps__partners__partner:hidden").length !== 0){ // check if any hidden divs still exist
+			$(".apps__partners__partner:hidden").slice(0, 8).css("display", "block");
+
+			hideButton()
+
+		} else if($("apps__partners__partner:hidden").length === 0){
+			$("#loadMore").hide()
+		}
+	});
 
 
+	$("#searchInput").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$(".apps__partners__partner").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			if($(".apps__partners__partner:visible").length < 10) {
+				$("#loadMore").hide()
+			}
+
+			if(value.length == 0) {
+				$(".apps__partners__partner").css("display", "none");
+				$(".apps__partners__partner").slice(0, 8).css("display", "block");
+				$("#loadMore").show()
+			}
+		});
+	});
 
 </script>
