@@ -45,16 +45,6 @@
 		@media only screen and (max-width: 600px) {
 			height: 690px;
 		}
-	  .btn-group-vertical>.btn, .btn-group>.btn{
-	    color: $color--blue-light;
-	  }
-	  .navlink, .navlink a {
-	    color: $color--blue-light;
-	  }
-	  .nav-join {
-	    border-color: $color--blue-light;
-	    color: $color--blue-light;
-	  }
 	}
 	&__content {
 		margin: 0 auto;
