@@ -42,25 +42,27 @@
 					<h4 class="apps__partners__title">More Connectors</h4>
 					{{ partial "apps/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
 				</div>
-				<div class="pt-5 row d-flex flex-row apps__partners__partners">
+				<div class="pt-2 row d-flex flex-row apps__partners__partners">
 		 			{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
 						<div class="apps__partners__partner col-xs-12 col-lg-6 ">
-							<div class="apps__partners__partner__header">
-								<img class="img-fluid apps__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
-								<h4 class="apps__partners__partner__header__name">
-									{{ .Params.name }}
-								</h4>
-								{{ if eq .Params.new true }}
-								<p class="apps__partners__partner__header__status">
-										New
+							<div class="apps__partners__partner__wrapper">
+								<div class="apps__partners__partner__header">
+									<img class="img-fluid apps__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
+									<h4 class="apps__partners__partner__header__name">
+										{{ .Params.name }}
+									</h4>
+									{{ if eq .Params.new true }}
+									<p class="apps__partners__partner__header__status">
+											New
+									</p>
+									{{end}}
+								</div>
+								<p class="apps__partners__partner__description">
+									{{ .Params.description }}
 								</p>
-								{{end}}
-							</div>
-							<p class="apps__partners__partner__description">
-								{{ .Params.description }}
-							</p>
-							<div class="apps__partners__partner__category">
-								{{ .Params.categories }}
+								<div class="apps__partners__partner__category">
+									{{ .Params.categories }}
+								</div>
 							</div>
 						</div>
 					{{end}}

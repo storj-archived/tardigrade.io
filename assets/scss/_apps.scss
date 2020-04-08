@@ -117,6 +117,57 @@
 			margin-top: 15px;
 		}
 	}
+	.search-icon {
+		position: absolute;
+		right: 412px;
+		bottom: 12px;
+		@media only screen and (max-width: 1200px) {
+			right: 322px;
+		}
+		@media only screen and (max-width: 991px) {
+			right: 202px;
+		}
+		@media only screen and (max-width: 768px) {
+			right: 112px;
+		}
+		@media only screen and (max-width: 575px) {
+			right: -12px;
+		}
+	}
+	::-webkit-input-placeholder {
+	  color: #93A1AF;
+		font-family: $secondary-font;
+		font-style: normal;
+		font-size: 16px;
+	}
+	:focus::-webkit-input-placeholder {
+	  color: #93A1AF;
+	}
+	:-moz-placeholder {
+	  color: #444;
+		font-family: $secondary-font;
+		font-style: normal;
+		font-size: 16px;
+	}
+	:focus:-moz-placeholder {
+	  color: #93A1AF;
+	}
+	::-moz-placeholder {
+	  color: #444;
+	}
+	:focus::-moz-placeholder {
+	  color: #93A1AF;
+	}
+	:-ms-input-placeholder {
+	  color: #444;
+		font-family: $secondary-font;
+		font-weight: normal;
+		font-size: 16px;
+	}
+	:focus:-ms-input-placeholder {
+	  color: #93A1AF;
+	}
+
 }
 
 .sidebar {
@@ -200,6 +251,9 @@
 }
 
 .apps__partners {
+	.col-12 {
+		padding-left: 0;
+	}
 	&__title {
 		margin-top: 45px;
 		font-weight: bold;
@@ -213,12 +267,15 @@
 		justify-content: space-between;
 	}
 	&__partner, &__partner__featured  {
-		background: #F7F8FA;
 		height: 188px;
 		margin-bottom: 25px;
 		display: none;
 		@media only screen and (max-width: 1024px) {
 			background: #fff;
+		}
+		&__wrapper {
+			background: #F7F8FA;
+			padding-bottom: 15px;
 		}
 		&__header {
 			&__name {
@@ -259,8 +316,7 @@
 			font-weight: 300;
 			font-size: 15px;
 			line-height: 20px;
-			margin-left: 20px;
-			margin-top: 20px;
+			margin: 20px;
 		}
 		&__category {
 			font-family: $secondary-font;
@@ -275,9 +331,13 @@
 	&__partner__featured {
 		display: block;
 		height: 122px;
+		background: #F7F8FA;
+		padding-bottom: 15px;
 		&__category {
 			float: right;
 			margin-right: 25px;
+			position: relative;
+			bottom: 15px;
 			@media only screen and (max-width: 1024px) {
 				float: none;
 			}

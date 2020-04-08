@@ -7,5 +7,5 @@ updated: 09/22/19
 new: false
 img: "/img/partners/Kafka_logo.png"
 class: "partner"
-categories: "Application Connector"
+categories: "App Connector"
 ---
