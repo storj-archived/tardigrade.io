@@ -161,7 +161,7 @@
 
 
       analytics.identify(partner_form.email,
-        {email: partner_form.email, timestamp: partner_form.timestamp, partner_form: true},
+        partner_form,
         {integrations: {'All': false, 'Customer.io': true}}, function() {
           analytics.track("partner-form", {});
       });
