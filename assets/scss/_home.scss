@@ -47,10 +47,21 @@
 
 .navbar {
 	z-index: 2;
+	@media only screen and (max-width: 991px) {
+		text-align: center;
+	}
 }
 
 .navbar-nav {
 	margin-bottom: 13px;
+	@media only screen and (max-width: 991px) {
+		.blog-link {
+			margin-top: 12px;
+		}
+		.login-link {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .navlink {
@@ -98,6 +109,10 @@
 .dropdown-menu {
   font-size: 16px;
   width: 300px;
+	@media only screen and (max-width: 991px) {
+		margin: 0 auto;
+		margin-bottom: 12px;
+	}
   .dropdown-divider {
     width: 85%;
     margin: 10px auto;
