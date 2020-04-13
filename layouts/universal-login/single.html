@@ -158,12 +158,6 @@
 
         const nameParam = urlParams.get('name');
 
-        if (urlParams.get('activated') === 'true') {
-            selectSatelliteOnActivation(nameParam, true);
-
-            return;
-        }
-
-        selectSatelliteOnActivation(nameParam, false);
+        selectSatelliteOnActivation(nameParam, urlParams.get('activated') === 'true');
     }
 </script>
