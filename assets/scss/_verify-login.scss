@@ -1,6 +1,6 @@
 .satellites-verify {
 	&__content-wrapper {
-		height: 550px;
+		height: 580px;
 		text-align: center;
 		position: relative;
 		top: 120px;
@@ -48,5 +48,8 @@
 			line-height: 19px;
 			color: #7E8B9C;
 		}
+	}
+	&__mascot {
+		margin-top: 40px;
 	}
 }
