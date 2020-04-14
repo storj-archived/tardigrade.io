@@ -136,15 +136,15 @@
         switch (nameParam) {
             case 'Asia-East-1':
                 selectAsiaSatellite();
-                setIframeSource(`https://asia-east-1.tardigrade.io/login?activated=${activated}`);
+                setIframeSource('https://asia-east-1.tardigrade.io/login?activated=' + activated);
                 break;
             case 'Europe-West-1':
                 selectEuropeSatellite();
-                setIframeSource(`https://europe-west-1.tardigrade.io/login?activated=${activated}`);
+                setIframeSource('https://europe-west-1.tardigrade.io/login?activated=' + activated);
                 break;
             default:
                 selectUSSatellite();
-                setIframeSource(`https://us-central-1.tardigrade.io/login?activated=${activated}`);
+                setIframeSource('https://us-central-1.tardigrade.io/login?activated=' + activated);
         }
     }
 
