@@ -98,7 +98,9 @@
 				$(".apps__partners__partner").slice(0, 8).css("display", "block");
 				$(".featured").css("display", "block")
 				$(".badge").css("display", "none")
-				$("#loadMore").show()
+				if($(".apps__partners__partner:visible").length > 10) {
+					$("#loadMore").show()
+				}
 			}
 		});
 	});
