@@ -256,6 +256,9 @@
 		&__wrapper {
 			background: #F7F8FA;
 			padding-bottom: 15px;
+			@media only screen and (max-width: 1024px) {
+				background: #fff;
+			}
 		}
 		&__header {
 			&__name {
@@ -317,6 +320,9 @@
 		height: 122px;
 		background: #F7F8FA;
 		padding-bottom: 15px;
+		@media only screen and (max-width: 1024px) {
+			background: #fff;
+		}
 		&__category {
 			float: right;
 			margin-right: 25px;
