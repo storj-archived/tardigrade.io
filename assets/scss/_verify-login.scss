@@ -59,6 +59,7 @@
 		background: #fff;
 		.navlink {
 			color: $color--blue-light;
+			box-shadow: none;
 			&:hover {
 				color: $color--blue-light;
 				text-shadow: 1px 0 0 $color--blue-light;
