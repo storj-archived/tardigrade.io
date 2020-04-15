@@ -263,10 +263,11 @@
 				font-weight: bold;
 				font-size: 18px;
 				line-height: 20px;
-				display: inline;
+				display: inline-block;
 				margin-left: 10px;
-				top: 15px;
-				position: relative;
+		    top: 15px;
+		    position: relative;
+		    width: 70%;
 			}
 			&__image {
 				height: 46px;
@@ -289,6 +290,9 @@
 				border-radius: 2px;
 				text-transform: uppercase;
 				padding: 0 8px;
+				position: absolute;
+				right: 0;
+				top: 0;
 			}
 		}
 		&__description {

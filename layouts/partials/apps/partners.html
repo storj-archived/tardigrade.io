@@ -111,11 +111,12 @@
 
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 
-			var postLength = $(".apps__partners__partner:hidden").length
-
 			if($(".apps__partners__partner:visible").length < 10) {
 				$("#loadMore").hide()
-			} else if($(".apps__partners__partner:hidden").length === postLength) {
+			}
+
+			if($(".apps__partners__partner:visible").length == 0) {
+				console.log("HIT")
 				$(".badge").css("display", "block")
 			}
 
@@ -123,6 +124,7 @@
 				$(".apps__partners__partner").css("display", "none");
 				$(".apps__partners__partner").slice(0, 8).css("display", "block");
 				$(".featured").css("display", "block")
+				$(".badge").css("display", "none")
 				$("#loadMore").show()
 			}
 		});
