@@ -4,6 +4,10 @@
       {{ partial "head" . }}
     </head>
   <body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXWQXGX"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
     <header>
       {{ partial "home/hero" .}}
     </header>
@@ -17,32 +21,7 @@
 
 <script type="text/javascript">
   window.onload = function() {
-    // form in hero
-    var button = document.getElementById("mc-embedded-subscribe")
 
-    button.onclick = function (event) {
-      event.preventDefault()
-
-      if(document.getElementsByClassName("cta-email") && document.getElementsByClassName("cta-email")[0]) {
-
-        var inputValue = document.getElementsByClassName("cta-email")[0].value;
-        var errElm = document.getElementById("mce-error-response");
-
-        if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
-              // display error message
-          if(errElm) {
-            errElm.setAttribute("style", "display:flex;");
-          }
-          return;
-        } else {
-
-          analytics.identify(inputValue, {email: inputValue}, {}, function() {
-            analytics.track("developer_sign_up", {});
-            window.location = "/thank-you"
-          });
-        }
-      }
-    }
 
     // form above footer
     if(document.getElementsByClassName("cta-btm-join")[0]) {
@@ -52,7 +31,7 @@
         event.preventDefault()
         if(document.getElementsByClassName("cta-btm-email") && document.getElementsByClassName("cta-btm-email")[0]) {
 
-          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value
+          var inputValue = document.getElementsByClassName("cta-btm-email")[0].value;
           var errElm = document.getElementById("mce-error-response-bottom");
 
           if (!inputValue || inputValue.length < 0 || !inputValue.includes("@")) {
@@ -77,8 +56,7 @@
     newsletterButton.onclick = function (event) {
 
       event.preventDefault()
-
-      var inputValue = document.getElementById("mce-EMAIL-newsletter").value
+.toLowerCase().trim()
       var errElm = document.getElementById("mce-error-response-newsletter");
       var succElm = document.getElementById("mce-success-response-newsletter");
 

@@ -1,6 +1,6 @@
 ---
-title: "faster"
-content: "20% Faster"
+title: "fraction"
+content: "A Fraction of the Cost"
 class: "why-item"
-weight: 2
+weight: 3
 ---

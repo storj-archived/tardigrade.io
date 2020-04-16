@@ -3,7 +3,6 @@ title = "Tardigrade | Decentralized Cloud Object Storage"
 paginate = 8
 
 [permalinks]
-  waitlist = "/waitlist/"
   partner = "/partner/"
   privacy-policy = "/privacy-policy/"
   storage-sla = "/service-level-commitment/"
@@ -24,6 +23,7 @@ paginate = 8
   partner-form="/partner-form/"
   partner-thank-you="/partner-thank-you/"
   universal-login="/satellites/"
+	satellites-verify="/satellites/verify/"
 	unsubscribed-emails = "/unsubscribed-emails/"
 	unsubscribed-notifications = "/unsubscribed-notifications/"
 

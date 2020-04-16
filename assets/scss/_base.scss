@@ -45,6 +45,8 @@ p {
 
 footer {
   background: $color--blue-dark;
+	z-index: 0;
+  position: relative;
 }
 
 .isDisabled {
