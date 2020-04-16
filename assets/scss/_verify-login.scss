@@ -6,6 +6,12 @@
 			position: relative;
 			top: 120px;
 		}
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 		&__header {
 			font-family: $primary-font;
 			font-weight: bold;
@@ -19,6 +25,8 @@
 			margin: 15px 0 35px 0;
 		}
 		&__cta {
+			display: flex;
+			align-items: center;
 			width: 130px;
 			height: 50px;
 			border-radius: 6px;
@@ -28,8 +36,9 @@
 			font-weight: bold;
 			font-size: 16px;
 			font-family: $primary-font;
+			cursor: pointer;
 			&:hover {
-				color: #fff;
+				background-color: $color--blue-light-hover;
 			}
 			&__arrow {
 				left: 4px;
