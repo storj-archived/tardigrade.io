@@ -24,6 +24,10 @@ paginate = 8
   partner-form="/partner-form/"
   partner-thank-you="/partner-thank-you/"
   universal-login="/satellites/"
+	unsubscribed-emails = "/unsubscribed-emails/"
+	unsubscribed-notifications = "/unsubscribed-notifications/"
+
+
 
 [taxonomies]
   category = "categories"
