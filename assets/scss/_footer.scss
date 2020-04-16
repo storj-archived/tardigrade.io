@@ -152,6 +152,13 @@
 	}
 }
 
+#mce-error-response-newsletter, #mce-success-response-newsletter {
+	display: none;
+	font-size: 12px;
+  line-height: 15px;
+  margin-top: 10px;
+}
+
 @media (max-width: 992px) {
 	.footer {
 		.social-section {
