@@ -1,0 +1,82 @@
+.unsubscribed-page {
+	.unsubscribed {
+		&__content-wrapper {
+			height: 580px;
+			text-align: center;
+			position: relative;
+			top: 120px;
+		}
+		&__header {
+			font-family: $primary-font;
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 48px;
+		}
+		&__txt {
+			font-family: $secondary-font;
+			font-size: 18px;
+			line-height: 26px;
+			margin: 15px 0 35px 0;
+		}
+		&__cta {
+			width: 130px;
+			height: 50px;
+			border-radius: 6px;
+			color: #fff;
+			background: $color--blue-light;
+			padding: 12px 30px;
+			font-weight: bold;
+			font-size: 16px;
+			font-family: $primary-font;
+			&:hover {
+				color: #fff;
+			}
+			&__arrow {
+				left: 4px;
+				position: relative;
+			}
+		}
+		&__btm {
+			&__wrapper {
+				margin-top: 60px;
+				.link {
+					text-decoration: underline;
+				}
+			}
+			&__txt {
+				font-family: $secondary-font;
+				font-size: 14px;
+				line-height: 19px;
+				color: #7E8B9C;
+			}
+		}
+		&__mascot {
+			margin-top: 40px;
+		}
+	}
+	//navbar
+	.storj-blu-bg {
+		background: #fff;
+		.navlink {
+			color: $color--blue-light;
+			box-shadow: none;
+			&:hover {
+				color: $color--blue-light;
+				text-shadow: 1px 0 0 $color--blue-light;
+			}
+			&:active {
+				font-weight: bold;
+			}
+		}
+		.nav-join {
+			border-color: $color--blue-light;
+			color: $color--blue-light;
+		}
+		.logo-white {
+			display: none;
+		}
+		.logo-blue {
+			display: block;
+		}
+	}
+}
