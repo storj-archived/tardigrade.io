@@ -2,8 +2,8 @@
 name : "Western Digital Storage Node"
 
 description: "Integrate Storage Node Software into your Western Digital Hard Drive"
-added: 09/05/19
-updated: 09/22/19
+added: 3/19/20
+updated: 3/19/20
 new: false
 img: "/img/partners/western-digital.svg"
 class: "partner"

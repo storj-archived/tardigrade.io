@@ -1,8 +1,8 @@
 ---
 name : "FileZilla"
 description: "Use Storj to move files between decentralized cloud storage and FTP locations"
-added: 09/05/19
-updated: 09/22/19
+added: 3/19/20
+updated: 3/19/20
 new: true
 img: "/img/partners/filezilla.svg"
 class: "partner"
