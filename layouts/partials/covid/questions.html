@@ -1,0 +1,27 @@
+  <div class="container-fluid covid__questions">
+    <div class="container">
+      <div class="spacer60"></div>
+      <div class="row">
+        <div class="col text-center mt-5">
+          <h2 class="covid__questions__heading">
+              Common Questions
+          </h2>
+        </div>
+      </div>
+      <div class="pt-5 row d-flex flex-row">
+        {{ range where .Site.Pages ".Params.class" "covid-questions"}}
+          <div class="col-xs-12 col-lg-6">
+            <div class="pt-3 covid__questions__section-wrapper">
+              <h4 class="covid__questions__subheading">
+                  {{ .Params.question }}
+              </h4>
+              <p class="covid__questions__content">
+                  {{ .Params.answer }}
+              </p>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="spacer125"></div>
+    </div>
+  </div>

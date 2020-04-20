@@ -28,6 +28,43 @@
 				&__button-wrapper {
 					margin: 0 auto;
 				}
+				&__button {
+					border-radius: 4px;
+					background: $color--blue-light;
+					color: #fff;
+					font-weight: 800;
+					font-size: 14px;
+					line-height: 18px;
+					border: none;
+					padding: 10px 35px;
+				}
+			}
+		}
+
+		&__questions {
+			color: #000;
+
+			&__section-wrapper {
+				width: 80%;
+				margin-bottom: 30px;
+			}
+			&__heading {
+				font-family: $primary-font;
+				font-weight: bold;
+				font-size: 28px;
+				line-height: 39px;
+				margin-bottom: 15px;
+			}
+			&__subheading {
+				font-family: $primary-font;
+				font-size: 18px;
+				line-height: 23px;
+			}
+			&__content {
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 26px;
 			}
 		}
 	}
