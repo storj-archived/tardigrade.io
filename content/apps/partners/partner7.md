@@ -5,7 +5,7 @@ description: "Periodically snapshot and store backups of your current MongoDB in
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/transfersh_logo.png"
+img: "/img/partners/transfer-sh.svg"
 class: "partner"
 categories: "App Connector"
 ---

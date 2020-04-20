@@ -5,7 +5,7 @@ description: "Periodically snapshot and store backups of your current Kafka inst
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/Kafka_logo.png"
+img: "/img/partners/kafka.svg"
 class: "partner"
 categories: "App Connector"
 ---
