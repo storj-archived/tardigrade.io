@@ -5,7 +5,7 @@ description: "Use the Tardigrade Network to backup your existing desktop filesys
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/terminalio_logo.png"
+img: "/img/partners/desktop-backup.svg"
 class: "partner"
 categories: "Reference Implementations"
 ---

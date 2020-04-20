@@ -5,7 +5,7 @@ description: "Software bindings from native Go language library for developing a
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/terminalio_logo.png"
+img: "/img/partners/swift.svg"
 class: "partner"
 categories: "Bindings"
 ---

@@ -5,7 +5,7 @@ description: "Open source reference implementation of a mobile app for storing p
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/terminalio_logo.png"
+img: "/img/partners/mobile-app.svg"
 class: "partner"
 categories: "Reference Implementations"
 ---
