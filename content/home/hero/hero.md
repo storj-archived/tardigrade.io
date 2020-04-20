@@ -1,12 +1,12 @@
 ---
 title : "home-hero"
-headingLeft : "Get Early Access to Decentralized Cloud Storage"
-headingRight: "& Claim Your 1TB Credit"
-stage : "BETA"
+headingLeft : "Decentralized Cloud"
+headingRight: "Storage is the Future"
+stage : "Early Access Production"
 stageDescriptor:  ""
-subheading : "Production release of the faster, safer, more resilient cloud is coming soon. Join thousands of developers already experiencing enterprise-grade decentralized cloud storage ahead of production launch."
+subheading : "Join thousands of developers experiencing the safer, faster, completely decentralized enterprise-grade cloud storage solution."
 poweredByIMG : "/img/poweredbystorj.svg"
-heroIMG : "/img/large-tardigrade-hero.png"
+heroIMG : "/img/tar-ill-illustration.svg"
 leftBenefitsCol :
 - Affordable
 - Performant
