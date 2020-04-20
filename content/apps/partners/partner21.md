@@ -5,7 +5,7 @@ description: "Integrate Storage Node Software into your Western Digital Hard Dri
 added: 09/05/19
 updated: 09/22/19
 new: false
-img: "/img/partners/terminalio_logo.png"
+img: "/img/partners/western-digital.svg"
 class: "partner"
 categories: "Storage Node"
 ---
