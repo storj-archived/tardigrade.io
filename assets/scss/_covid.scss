@@ -1,0 +1,34 @@
+.covid-page {
+	.covid {
+		&__hero {
+			&__bg {
+				background: linear-gradient(3.21deg, #133E9C 5.15%, #00091E 94.47%);
+			}
+			&__content-wrapper {
+				text-align: center;
+				color: #fff;
+				width: 470px;
+				margin: 0 auto;
+			}
+			&__heading {
+				margin: 0 auto;
+				font-family: $primary-font;
+				font-weight: bold;
+				font-size: 32px;
+				line-height: 40px;
+			}
+			&__content {
+				margin: 0 auto;
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 26px;
+			}
+			&__cta {
+				&__button-wrapper {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
