@@ -1,0 +1,108 @@
+{{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
+{{ $paginator := .Paginate (.Paginator 8).Pages}}
+<div class="container-fluid nomp">
+  <div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-4">
+				<aside class="sidebar">
+					<section>
+					    <div class="spacer20"></div>
+								{{ partial "connectors/taxonomy" (dict "taxonomy" .Site.Taxonomies.categories "taxonomyname" "categories" "lastUrlElement" $lastUrlElement)}}
+					</section>
+				</aside>
+			</div>
+			<div class="col-md-12 col-md-12 col-lg-8 ">
+				<div class="connectors__partners__heading">
+					<h4 class="connectors__partners__title">More Connectors</h4>
+					{{ partial "connectors/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
+				</div>
+				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
+					{{ range (.Paginator 8).Pages }}
+						<div class="connectors__partners__partner col-xs-12 col-lg-6 ">
+							<div class="connectors__partners__partner__wrapper">
+								<div class="connectors__partners__partner__header">
+									<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
+									<h4 class="connectors__partners__partner__header__name">
+										{{ .Params.name }}
+									</h4>
+									{{ if eq .Params.new true }}
+									<p class="connectors__partners__partner__header__status">
+											New
+									</p>
+									{{end}}
+								</div>
+								<p class="connectors__partners__partner__description">
+									{{ .Params.description }}
+								</p>
+								<div class="connectors__partners__partner__category">
+									{{ .Params.categories }}
+								</div>
+							</div>
+						</div>
+					{{end}}
+					<p class="badge">No Results</p>
+				</div>
+				<div id="loadMore">
+		      <p class="load-more-btn">Load More</p>
+		    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	//grab first four articles of currently active year
+	$(".connectors__partners__partner").slice(0, 8).css("display", "inline-block");
+
+	hideButton()
+
+	function hideButton(){
+		if($(".connectors__partners__partner:hidden").length === 0) {
+			$("#loadMore").hide()
+		}
+	}
+
+
+	$("#loadMore").click(function(e){ // click event for load more
+		e.preventDefault();
+		if($(".connectors__partners__partner:hidden").length !== 0){ // check if any hidden divs still exist
+			$(".connectors__partners__partner:hidden").slice(0, 8).css("display", "block");
+
+			hideButton()
+
+		} else if($("connectors__partners__partner:hidden").length === 0){
+			$("#loadMore").hide()
+		}
+	});
+
+
+	$("#searchInput").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+
+		$(".connectors__partners__partner").css("display", "block").filter(function() {
+
+			$(".featured").css("display", "none")
+
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+			if($(".connectors__partners__partner:visible").length < 10) {
+				$("#loadMore").hide()
+			}
+
+			if($(".connectors__partners__partner:visible").length == 0) {
+				$(".badge").css("display", "block")
+			}
+
+			if(value.length == 0) {
+				$(".connectors__partners__partner").css("display", "none");
+				$(".connectors__partners__partner").slice(0, 8).css("display", "block");
+				$(".featured").css("display", "block")
+				$(".badge").css("display", "none")
+				if($(".connectors__partners__partner:visible").length > 10) {
+					$("#loadMore").show()
+				}
+			}
+		});
+	});
+
+</script>

@@ -1,13 +1,13 @@
-<div class="container-fluid apps__hero__container nomp">
+<div class="container-fluid connectors__hero__container nomp">
 	<div class="container-fluid inner-hero-wrapper">
     <div class="container">
       <div class="spacer20"></div>
       {{ partial "nav" .}}
 	      <div class="row">
-	        <div class="col-md-12 col-sm-12 col-lg-12 apps__hero__content">
-	        {{with .Site.GetPage "page" "apps-hero"}}
-	          <h1 class="apps__hero__title">{{ .Params.title }}</h1>
-	          <p class="apps__hero__subheading">{{ .Params.subHeading }}</p>
+	        <div class="col-md-12 col-sm-12 col-lg-12 connectors__hero__content">
+	        {{with .Site.GetPage "page" "connectors-hero"}}
+	          <h1 class="connectors__hero__title">{{ .Params.title }}</h1>
+	          <p class="connectors__hero__subheading">{{ .Params.subHeading }}</p>
 						<div>
 							<input id="searchInput" class="form-control" type="search" placeholder="Search Connectors..." aria-label="Search">
 							<img alt="Search Icon" src="/img/search-icon.svg" class="search-icon" />
@@ -17,5 +17,5 @@
 			{{end}}
 		</div>
 	</div>
-	<img class="apps__hero__background" src="/img/apps-bg.png" />
+	<img class="connectors__hero__background" src="/img/connectors-bg.png" />
 </div>

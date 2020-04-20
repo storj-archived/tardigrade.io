@@ -1,4 +1,4 @@
-.apps {
+.connectors {
 	background: #fff;
 
 	@media only screen and (max-width: 1024px) {
@@ -6,9 +6,9 @@
 	}
 }
 
-.apps__hero {
+.connectors__hero {
 	&__container {
-		background: url("/img/apps-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
+		background: url("/img/connectors-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		height: 600px;
 		position: relative;
 		overflow: hidden;
@@ -27,7 +27,7 @@
 			background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		}
 		@media only screen and (max-width: 768px) {
-			background: url("/img/apps-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
+			background: url("/img/connectors-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
 			height: 790px;
 			background-size: cover;
 		}
@@ -230,7 +230,7 @@
 	}
 }
 
-.apps__partners {
+.connectors__partners {
 	.col-12 {
 		padding-left: 0;
 	}
@@ -336,6 +336,7 @@
 		&__header {
 			&__name {
 				margin-left: 0;
+				top: 18px;
 			}
 			&__image {
 				float: left;
@@ -405,6 +406,6 @@
 	}
 }
 
-.apps footer {
+.connectors footer {
 	margin-top: 150px;
 }

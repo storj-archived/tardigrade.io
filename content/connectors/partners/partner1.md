@@ -4,7 +4,7 @@ description: "Use Storj to move files between decentralized cloud storage and FT
 added: 09/05/19
 updated: 09/22/19
 new: true
-img: "/img/partners/fileZilla.svg"
+img: "/img/partners/filezilla.svg"
 class: "partner"
 categories: "App Connector"
 ---
