@@ -1,0 +1,21 @@
+{{ with .Site.GetPage "covidQuote"}}
+<div class="container-fluid covid__quote">
+	<div class="container">
+		<div class="spacer60"></div>
+		<div class="row">
+			<div class="col-lg-3 covid__quote__image-wrapper">
+				<img class="covid__quote__image" alt="Ben Golub" src="{{ .Params.image }}"/>
+			</div>
+			<div class="col-lg-9 covid__quote__quote-content-wrapper">
+				<p>{{ .Params.quote }}</p>
+				<div>
+					<p>{{ .Params.name }}</p>
+					<p>{{ .Params.title }}</p>
+				</div>
+				<a>{{ .Params.cta }}</a>
+			</div>
+		</div>
+	</div>
+	<div class="spacer125"></div>
+</div>
+{{end}}
