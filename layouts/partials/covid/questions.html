@@ -8,10 +8,10 @@
           </h2>
         </div>
       </div>
-      <div class="row d-flex flex-row">
+      <div class="row covid__questions__wrapper">
         {{ range where .Site.Pages ".Params.class" "covid-questions"}}
-          <div class="col-xs-12 col-lg-6">
-            <div class="pt-3 covid__questions__section-wrapper">
+          <div class="col-sm-12 col-lg-6">
+            <div class="covid__questions__section-wrapper">
               <h4 class="covid__questions__subheading">
                   {{ .Params.question }}
               </h4>
