@@ -1,13 +1,13 @@
 {{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
 {{ $paginator := .Paginate (where .Site.Pages ".Params.class" "partner") 1}}
 <div class="container-fluid nomp">
-  <div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-lg-4">
 				<aside class="sidebar">
 					<section>
-					    <div class="spacer20"></div>
-								{{ partial "connectors/taxonomy" (dict "taxonomy" .Site.Taxonomies.categories "taxonomyname" "categories" "lastUrlElement" $lastUrlElement)}}
+						<div class="spacer20"></div>
+						{{ partial "connectors/taxonomy" (dict "taxonomy" .Site.Taxonomies.categories "taxonomyname" "categories" "lastUrlElement" $lastUrlElement)}}
 					</section>
 				</aside>
 			</div>
@@ -15,27 +15,27 @@
 				<div class="featured">
 					<h4 class="connectors__partners__title">Featured</h4>
 					{{ range (.Paginator 1).Pages }}
-						<div class="col-12">
-							<div class="connectors__partners__partner__featured">
-								<div class="connectors__partners__partner__featured__header">
-									<img class="img-fluid connectors__partners__partner__featured__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
-									<h4 class="connectors__partners__partner__featured__header__name">
-										{{ .Params.name }}
-									</h4>
-									{{ if eq .Params.new true }}
-									<p class="connectors__partners__partner__featured__header__status">
-											New
-									</p>
-									{{end}}
-								</div>
-								<p class="connectors__partners__partner__featured__description">
-									{{ .Params.description }}
+					<div class="col-12">
+						<div class="connectors__partners__partner__featured">
+							<div class="connectors__partners__partner__featured__header">
+								<img class="img-fluid connectors__partners__partner__featured__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
+								<h4 class="connectors__partners__partner__featured__header__name">
+									{{ .Params.name }}
+								</h4>
+								{{ if eq .Params.new true }}
+								<p class="connectors__partners__partner__featured__header__status">
+									New
 								</p>
-								<div class="connectors__partners__partner__featured__category">
-									{{ .Params.categories }}
-								</div>
+								{{end}}
+							</div>
+							<p class="connectors__partners__partner__featured__description">
+								{{ .Params.description }}
+							</p>
+							<div class="connectors__partners__partner__featured__category">
+								{{ .Params.categories }}
 							</div>
 						</div>
+					</div>
 					{{end}}
 				</div>
 				<div class="connectors__partners__heading">
@@ -43,34 +43,34 @@
 					{{ partial "connectors/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
 				</div>
 				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
-		 			{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
-						<div class="connectors__partners__partner col-xs-12 col-lg-6 ">
-							<div class="connectors__partners__partner__wrapper">
-								<div class="connectors__partners__partner__header">
-									<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
-									<h4 class="connectors__partners__partner__header__name">
-										{{ .Params.name }}
-									</h4>
-									{{ if eq .Params.new true }}
-									<p class="connectors__partners__partner__header__status">
-											New
-									</p>
-									{{end}}
-								</div>
-								<p class="connectors__partners__partner__description">
-									{{ .Params.description }}
+					{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
+					<div class="connectors__partners__partner col-xs-12 col-lg-6 ">
+						<div class="connectors__partners__partner__wrapper">
+							<div class="connectors__partners__partner__header">
+								<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
+								<h4 class="connectors__partners__partner__header__name">
+									{{ .Params.name }}
+								</h4>
+								{{ if eq .Params.new true }}
+								<p class="connectors__partners__partner__header__status">
+									New
 								</p>
-								<div class="connectors__partners__partner__category">
-									{{ .Params.categories }}
-								</div>
+								{{end}}
+							</div>
+							<p class="connectors__partners__partner__description">
+								{{ .Params.description }}
+							</p>
+							<div class="connectors__partners__partner__category">
+								{{ .Params.categories }}
 							</div>
 						</div>
+					</div>
 					{{end}}
 					<p class="badge">No Results</p>
 				</div>
 				<div id="loadMore">
-		      <p class="load-more-btn">Load More</p>
-		    </div>
+					<p class="load-more-btn">Load More</p>
+				</div>
 			</div>
 		</div>
 	</div>

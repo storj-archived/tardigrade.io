@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{ partial "head" . }}
-  </head>
-  <body class="page connectors">
-    <header class="connectors__hero">
-      {{ partial "connectors/hero" .}}
-    </header>
-			<div class="connectors__partners">
-      {{partial "connectors/partners" . }}
-			</div>
-    <footer>
-        {{partial "footer" . }}
-    </footer>
-
-    {{partial "site-scripts" .}}
-  </body>
+<head>
+	{{ partial "head" . }}
+</head>
+<body class="page connectors">
+	<header class="connectors__hero">
+		{{ partial "connectors/hero" .}}
+	</header>
+	<div class="connectors__partners">
+		{{partial "connectors/partners" . }}
+	</div>
+	<footer>
+		{{partial "footer" . }}
+	</footer>
+	{{partial "site-scripts" .}}
+</body>
 </html>
