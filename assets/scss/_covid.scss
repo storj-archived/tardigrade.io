@@ -43,6 +43,11 @@
 
 		&__quote {
 			background: $color--grey-bg;
+			&__image-wrapper {
+				@media (max-width: 991px) {
+					text-align: center;
+				}
+			}
 			&__image {
 				height: 148px;
 				width: 148px;
@@ -53,10 +58,18 @@
 				font-weight: 300;
 				font-size: 22px;
 				line-height: 26px;
+				@media (max-width: 991px) {
+					text-align: center;
+				}
 			}
 			&__content {
 				&__quote {
 					width: 70%;
+					@media (max-width: 991px) {
+						margin: 0 auto;
+						margin-top: 40px;
+						width: 60%;
+					}
 				}
 				&__name {
 					font-weight: bold;
@@ -64,14 +77,18 @@
 				}
 				&__title {
 					margin-top: 3px;
+					@media (max-width: 991px) {
+						margin: 3px auto;
+						width: 25%;
+					}
 				}
 				&__cta {
-					font-family: Poppins;
+					font-family: $primary-font;
 					font-weight: 800;
 					font-size: 14px;
 					color: $color--blue-light !important;
 					border: 2px solid $color--blue-light;
-					padding: 10px 30px;
+					padding: 10px 40px;
 					border-radius: 4px;
 					position: relative;
 					top: 40px;
@@ -81,7 +98,6 @@
 
 		&__questions {
 			color: #000;
-
 			&__section-wrapper {
 				width: 80%;
 				margin-bottom: 30px;
@@ -125,18 +141,18 @@
 				color: #000;
 			}
 			&__text {
-				 margin: 0 auto;
-				 font-family: $secondary-font;
-				 font-weight: 300;
-				 font-size: 16px;
-				 line-height: 26px;
-				 color: #000;
-				 width: 420px;
-				 text-align: center;
+				margin: 0 auto;
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 26px;
+				color: #000;
+				width: 420px;
+				text-align: center;
 			}
 			&__cta {
 				&__button-wrapper {
-					 margin: 0 auto;
+					margin: 0 auto;
 				}
 				&__button {
 					color: #fff;
