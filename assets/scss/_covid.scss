@@ -42,6 +42,7 @@
 		}
 
 		&__quote {
+			background: $color--grey-bg;
 			&__image {
 				height: 148px;
 				width: 148px;
@@ -102,6 +103,56 @@
 				font-weight: 300;
 				font-size: 16px;
 				line-height: 26px;
+			}
+		}
+
+		&__bottom {
+			&__content-wrapper {
+				background: $color--grey-bg;
+				height: 349px;
+			}
+			&__content {
+				position: relative;
+				top: 60px;
+			}
+			&__heading {
+				margin-top: 30%;
+				margin: 0 auto;
+				font-family: $primary-font;
+				font-weight: bold;
+				font-size: 28px;
+				line-height: 39px;
+				color: #000;
+			}
+			&__text {
+				 margin: 0 auto;
+				 font-family: $secondary-font;
+				 font-weight: 300;
+				 font-size: 16px;
+				 line-height: 26px;
+				 color: #000;
+				 width: 420px;
+				 text-align: center;
+			}
+			&__cta {
+				&__button-wrapper {
+					 margin: 0 auto;
+				}
+				&__button {
+					color: #fff;
+					background: $color--blue-light;
+					border-radius: 4px;
+					padding: 10px 30px;
+					font-size: 14px;
+					font-family: $primary-font;
+				}
+			}
+			&__image-wrapper {
+				margin: 0 auto;
+			}
+			&__image {
+				position: relative;
+				top: 90px;
 			}
 		}
 	}
