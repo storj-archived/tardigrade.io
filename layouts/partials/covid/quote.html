@@ -1,18 +1,18 @@
 {{ with .Site.GetPage "covidQuote"}}
 <div class="container-fluid covid__quote">
 	<div class="container">
-		<div class="spacer60"></div>
+		<div class="spacer125"></div>
 		<div class="row">
-			<div class="col-lg-3 covid__quote__image-wrapper">
+			<div class="offset-1 col-lg-3 covid__quote__image-wrapper">
 				<img class="covid__quote__image" alt="Ben Golub" src="{{ .Params.image }}"/>
 			</div>
-			<div class="col-lg-9 covid__quote__quote-content-wrapper">
-				<p>{{ .Params.quote }}</p>
+			<div class="col-lg-8 covid__quote__quote-content-wrapper">
+				<p class="covid__quote__content__quote">"{{ .Params.quote }}"</p>
 				<div>
-					<p>{{ .Params.name }}</p>
-					<p>{{ .Params.title }}</p>
+					<p class="covid__quote__content__name">{{ .Params.name }}</p>
+					<p class="covid__quote__content__title">{{ .Params.title }}</p>
 				</div>
-				<a>{{ .Params.cta }}</a>
+				<a href="" target="_blank" class="covid__quote__content__cta">{{ .Params.cta }}</a>
 			</div>
 		</div>
 	</div>
