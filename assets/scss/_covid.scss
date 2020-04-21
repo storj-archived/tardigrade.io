@@ -109,7 +109,7 @@
 			color: #000;
 			&__wrapper {
 				@media (max-width: 768px) {
-			    justify-content: space-between;
+					justify-content: space-between;
 					flex-wrap: inherit;
 					overflow: scroll;
 				}
