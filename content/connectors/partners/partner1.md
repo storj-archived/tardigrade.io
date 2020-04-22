@@ -7,4 +7,5 @@ new: true
 img: "/img/partners/filezilla.svg"
 class: "partner"
 categories: "App Connector"
+ready: false
 ---

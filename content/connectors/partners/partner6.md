@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/ipfs.svg"
 class: "partner"
 categories: "App Connector"
+ready: false
 ---

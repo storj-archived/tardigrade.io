@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/swift.svg"
 class: "partner"
 categories: "Bindings"
+ready: false
 ---

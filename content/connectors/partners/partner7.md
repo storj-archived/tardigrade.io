@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/transfer-sh.svg"
 class: "partner"
 categories: "App Connector"
+ready: true
 ---

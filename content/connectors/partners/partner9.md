@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/c-binding.svg"
 class: "partner"
 categories: "Bindings"
+ready: true
 ---

@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/kafka.svg"
 class: "partner"
 categories: "App Connector"
+ready: false
 ---
