@@ -1,3 +1,0 @@
----
-title: "Apps on Tardigrade"
----
