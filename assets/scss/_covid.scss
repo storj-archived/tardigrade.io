@@ -130,6 +130,9 @@
 					width: 260px;
 				}
 			}
+			.text-center {
+				margin: 0 auto;
+			}
 			.col-sm-12 {
 				@media (max-width: 768px) {
 					display: inline-block;
@@ -146,7 +149,10 @@
 				font-weight: bold;
 				font-size: 28px;
 				line-height: 39px;
-				margin-bottom: 60px;
+				margin-bottom: 100px;
+				@media (max-width: 991px) {
+					margin-bottom: 60px;
+				}
 			}
 			&__subheading {
 				font-family: $primary-font;
