@@ -6,7 +6,7 @@
     bottom: 0px;
     height: 60px;
     z-index: 99999999999999999;
-
+		display: flex;
     &_text {
         color: $color--white;
         margin-top: 25px;
