@@ -1,0 +1,223 @@
+.covid-page {
+	.covid {
+		&__hero {
+			&__bg {
+				background: linear-gradient(3.21deg, #133E9C 5.15%, #00091E 94.47%);
+			}
+			&__content-wrapper {
+				text-align: center;
+				color: #fff;
+				width: 470px;
+				margin: 0 auto;
+				@media (max-width: 576px) {
+					width: 80%;
+				}
+			}
+			&__heading {
+				margin: 0 auto;
+				font-family: $primary-font;
+				font-weight: bold;
+				font-size: 32px;
+				line-height: 40px;
+				@media (max-width: 576px) {
+					width: 80%;
+				}
+			}
+			&__content {
+				margin: 0 auto;
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 26px;
+			}
+			&__cta {
+				&__button-wrapper {
+					margin: 0 auto;
+				}
+				&__button {
+					border-radius: 4px;
+					background: $color--blue-light;
+					color: #fff;
+					font-weight: 800;
+					font-size: 14px;
+					line-height: 18px;
+					border: none;
+					padding: 10px 35px;
+				}
+			}
+		}
+
+		&__quote {
+			background: $color--grey-bg;
+			&__image-wrapper {
+				@media (max-width: 991px) {
+					text-align: center;
+				}
+			}
+			&__image {
+				height: 148px;
+				width: 148px;
+				border-radius: 50%;
+			}
+			&__quote-content-wrapper {
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 22px;
+				line-height: 26px;
+				@media (max-width: 991px) {
+					text-align: center;
+				}
+			}
+			&__content {
+				&__quote {
+					width: 70%;
+					@media (max-width: 991px) {
+						margin: 0 auto;
+						margin-top: 40px;
+						width: 60%;
+					}
+				}
+				&__name {
+					font-weight: bold;
+					margin-top: 30px;
+				}
+				&__title {
+					margin-top: 3px;
+					@media (max-width: 991px) {
+						margin: 3px auto;
+						width: 25%;
+					}
+					@media (max-width: 769px) {
+						width: 50%;
+					}
+				}
+				&__cta {
+					font-family: $primary-font;
+					font-weight: 800;
+					font-size: 14px;
+					color: $color--blue-light !important;
+					border: 2px solid $color--blue-light;
+					padding: 10px 40px;
+					border-radius: 4px;
+					position: relative;
+					top: 40px;
+				}
+			}
+		}
+
+		&__questions {
+			color: #000;
+			&__wrapper {
+				@media (max-width: 768px) {
+					justify-content: space-between;
+					flex-wrap: inherit;
+					overflow: scroll;
+				}
+			}
+			&__section-wrapper {
+				width: 80%;
+				margin-bottom: 30px;
+				@media (max-width: 991px) {
+					text-align: center;
+					margin: 20px auto;
+					width: 90%;
+				}
+				@media (max-width: 768px) {
+					padding: 30px;
+					background: $color--grey-bg;
+				}
+				@media (max-width: 576px) {
+					width: 260px;
+				}
+			}
+			.col-sm-12 {
+				@media (max-width: 768px) {
+					display: inline-block;
+					margin: 0 auto;
+					max-width: 60%;
+				}
+				@media (max-width: 576px) {
+					max-width: 100%;
+				}
+
+			}
+			&__heading {
+				font-family: $primary-font;
+				font-weight: bold;
+				font-size: 28px;
+				line-height: 39px;
+				margin-bottom: 60px;
+			}
+			&__subheading {
+				font-family: $primary-font;
+				font-size: 18px;
+				line-height: 23px;
+				margin-bottom: 15px;
+			}
+			&__content {
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+
+		&__bottom {
+			&__content-wrapper {
+				background: $color--grey-bg;
+				height: 349px;
+				@media (max-width: 991px) {
+					height: 400px;
+				}
+			}
+			&__content {
+				position: relative;
+				top: 60px;
+				@media (max-width: 991px) {
+					margin: 0 auto;
+					width: 50%;
+				}
+			}
+			&__heading {
+				margin-top: 30%;
+				margin: 0 auto;
+				font-family: $primary-font;
+				font-weight: bold;
+				font-size: 28px;
+				line-height: 39px;
+				color: #000;
+				text-align: center;
+			}
+			&__text {
+				margin: 0 auto;
+				font-family: $secondary-font;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 26px;
+				color: #000;
+				width: 420px;
+				text-align: center;
+			}
+			&__cta {
+				&__button-wrapper {
+					margin: 0 auto;
+				}
+				&__button {
+					color: #fff;
+					background: $color--blue-light;
+					border-radius: 4px;
+					padding: 10px 30px;
+					font-size: 14px;
+					font-family: $primary-font;
+				}
+			}
+			&__image-wrapper {
+				margin: 0 auto;
+			}
+			&__image {
+				position: relative;
+				top: 90px;
+			}
+		}
+	}
+}

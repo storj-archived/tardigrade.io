@@ -24,6 +24,8 @@ paginate = 8
   partner-thank-you="/partner-thank-you/"
   universal-login="/satellites/"
 	satellites-verify="/satellites/verify/"
+	covid="/covid/"
+
 
 [taxonomies]
   category = "categories"
