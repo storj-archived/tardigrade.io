@@ -175,6 +175,9 @@
 				@media (max-width: 991px) {
 					height: 400px;
 				}
+				@media (max-width: 400px) {
+					height: 480px;
+				}
 			}
 			&__content {
 				position: relative;
