@@ -2,7 +2,7 @@ backend:
   name: github
   repo: storj/Tardigrade.io
   branch: master
-  base_url: https://tardigrade.io
+  base_url: https://tardigrade.io	
   auth_endpoint: /oauth/auth
 
 media_folder: "static/img/"

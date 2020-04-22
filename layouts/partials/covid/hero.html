@@ -1,0 +1,35 @@
+{{ with .Site.GetPage "covidHero"}}
+<div class="container-fluid covid__hero__bg">
+	<div class="spacer30"></div>
+	<div class="container">
+		<div>
+			{{partial "nav" .}}
+		</div>
+	</div>
+	<div class="spacer90"></div>
+	<div class="container">
+		<div class="covid__hero__content-wrapper">
+			<div class="row mb-24">
+				<h1 class="covid__hero__heading">
+					{{ replace .Params.title "\n" "<br/>" | safeHTML}}
+				</h1>
+			</div>
+			<div class="spacer30"></div>
+			<div class="row">
+				<p class="covid__hero__content">{{ replace .Params.content "\n" "<br/>" | safeHTML}}</p>
+			</div>
+			<div class="spacer30"></div>
+			<div class="row">
+				<div class="covid__hero__cta__button-wrapper">
+					<a target="_blank" class="covid__hero__cta__button-link" href="https://storjlabs.typeform.com/to/ZGo8s2">
+						<button class="covid__hero__cta__button font-weight-bold">
+							{{ .Params.cta }}
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="spacer125"></div>
+</div>
+{{end}}
