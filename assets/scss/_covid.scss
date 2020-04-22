@@ -215,6 +215,7 @@
 					padding: 10px 30px;
 					font-size: 14px;
 					font-family: $primary-font;
+					border: none;
 				}
 			}
 			&__image-wrapper {
@@ -224,6 +225,11 @@
 				position: relative;
 				top: 90px;
 			}
+		}
+	}
+	.footer {
+		.consent-banner {
+			display: none;
 		}
 	}
 }
