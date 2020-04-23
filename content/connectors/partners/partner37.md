@@ -7,4 +7,5 @@ new: true
 img: "/img/partners/restic.png"
 class: "partner"
 categories: "Developer Tools"
+weight: 3
 ---

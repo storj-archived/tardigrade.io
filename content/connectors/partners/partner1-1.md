@@ -8,5 +8,5 @@ new: false
 img: "/img/partners/qnap.svg"
 class: "partner"
 categories: "Storage Node"
-
+weight: 1
 ---
