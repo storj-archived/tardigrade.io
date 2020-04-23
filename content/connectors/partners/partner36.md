@@ -7,4 +7,5 @@ new: true
 img: "/img/partners/rclone.png"
 class: "partner"
 categories: "Developer Tools"
+weight: 2
 ---
