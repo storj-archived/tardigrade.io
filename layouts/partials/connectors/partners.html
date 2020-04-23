@@ -45,24 +45,32 @@
 				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
 					{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
 					<div class="connectors__partners__partner col-xs-12 col-lg-6 ">
-						<div class="connectors__partners__partner__wrapper">
-							<div class="connectors__partners__partner__header">
-								<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
-								<h4 class="connectors__partners__partner__header__name">
-									{{ .Params.name }}
-								</h4>
-								{{ if eq .Params.new true }}
-								<p class="connectors__partners__partner__header__status">
-									New
+						{{ if eq .Params.ready false }}
+						<p class="connectors__partners__partner__header__ready">
+							Coming Soon
+						</p>
+						{{end}}
+						<div class="connectors__partners__partner__wrapper {{ if eq .Params.ready false }}not-ready{{ end }}">
+							{{ if .Params.link }}<a class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
+								<div class="connectors__partners__partner__header">
+									<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
+									<h4 class="connectors__partners__partner__header__name">
+										{{ .Params.name }}
+									</h4>
+									{{ if eq .Params.new true }}
+									<p class="connectors__partners__partner__header__status">
+										New
+									</p>
+									{{end}}
+
+								</div>
+								<p class="connectors__partners__partner__description">
+									{{ .Params.description }}
 								</p>
-								{{end}}
-							</div>
-							<p class="connectors__partners__partner__description">
-								{{ .Params.description }}
-							</p>
-							<div class="connectors__partners__partner__category">
-								{{ .Params.categories }}
-							</div>
+								<div class="connectors__partners__partner__category">
+									{{ .Params.categories }}
+								</div>
+								{{ if .Params.link }} </a> {{ end }}
 						</div>
 					</div>
 					{{end}}

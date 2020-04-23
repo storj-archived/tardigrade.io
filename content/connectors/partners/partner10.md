@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/python.svg"
 class: "partner"
 categories: "Bindings"
+ready: true
 ---

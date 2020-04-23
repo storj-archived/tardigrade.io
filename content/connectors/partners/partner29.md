@@ -7,4 +7,6 @@ new: false
 img: "/img/partners/s3-gateway.svg"
 class: "partner"
 categories: "Developer Tools"
+ready: true
+link: "https://github.com/storj/docs/blob/master/S3-Gateway.md"
 ---

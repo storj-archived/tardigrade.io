@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/desktop-backup.svg"
 class: "partner"
 categories: "Reference Implementations"
+ready: false
 ---

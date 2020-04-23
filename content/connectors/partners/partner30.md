@@ -7,4 +7,6 @@ new: false
 img: "/img/partners/uplink-cli.svg"
 class: "partner"
 categories: "Developer Tools"
+ready: true
+link: "https://documentation.tardigrade.io/setup/uplink-cli"
 ---

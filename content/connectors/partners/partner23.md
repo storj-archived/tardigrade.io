@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/plesk.svg"
 class: "partner"
 categories: "App Connector"
+ready: false
 ---

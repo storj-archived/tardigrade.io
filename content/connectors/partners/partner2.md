@@ -7,4 +7,5 @@ new: false
 img: "/img/partners/minio.svg"
 class: "partner"
 categories: "App Connector"
+ready: false
 ---

@@ -7,4 +7,5 @@ new: false
 img: "/img/partners/nextcloud.svg"
 class: "partner"
 categories: "Developer Tools"
+ready: false
 ---

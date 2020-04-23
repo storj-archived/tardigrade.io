@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/node-dashboard.png"
 class: "partner"
 categories: "Storage Node"
+ready: false
 ---
