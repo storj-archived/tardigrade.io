@@ -7,4 +7,5 @@ new: false
 img: "/img/partners/utropic-media.svg"
 class: "partner"
 categories: "System Integrator"
+ready: true
 ---

@@ -7,4 +7,5 @@ new: false
 img: "/img/partners/go-logo.svg"
 class: "partner"
 categories: "Bindings"
+ready: false
 ---

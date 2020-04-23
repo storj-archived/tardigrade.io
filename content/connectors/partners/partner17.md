@@ -8,4 +8,5 @@ new: false
 img: "/img/partners/storage-node.png"
 class: "partner"
 categories: "Storage Node"
+link: "https://documentation.storj.io/"
 ---

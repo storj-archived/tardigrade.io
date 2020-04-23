@@ -246,6 +246,9 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	.not-ready {
+		opacity: .4;
+	}
 	&__partner, &__partner__featured  {
 		height: 188px;
 		margin-bottom: 25px;
@@ -256,8 +259,14 @@
 		&__wrapper {
 			background: #F7F8FA;
 			padding-bottom: 15px;
+			color: #000;
 			@media only screen and (max-width: 1024px) {
 				background: #fff;
+			}
+		}
+		&__link {
+			&:hover {
+				color: #000;
 			}
 		}
 		&__header {
@@ -271,6 +280,7 @@
 		    top: 15px;
 		    position: relative;
 		    width: 70%;
+				color: #000;
 			}
 			&__image {
 				height: 46px;
@@ -281,7 +291,7 @@
 			&__version {
 				display: inline;
 			}
-			&__status {
+			&__status, &__ready {
 				display: inline;
 				float: right;
 				margin: 15px 30px 0px 0px;
@@ -297,6 +307,12 @@
 				right: 0;
 				top: 0;
 			}
+			&__ready {
+				color: $color--blue;
+				border: 1px solid $color--blue;
+				float: none;
+				z-index: 1;
+			}
 		}
 		&__description {
 			font-family: Roboto;
@@ -304,6 +320,7 @@
 			font-size: 15px;
 			line-height: 20px;
 			margin: 20px;
+			color: #000;
 		}
 		&__category {
 			font-family: $secondary-font;

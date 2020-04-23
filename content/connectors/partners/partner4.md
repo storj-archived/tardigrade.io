@@ -8,4 +8,5 @@ img: "/img/partners/mongo.svg"
 class: "partner"
 categories: "App Connector"
 ready: false
+link: "https://github.com/storj/mongodb-tardigrade-backup"
 ---

@@ -30,6 +30,11 @@
 									New
 								</p>
 								{{end}}
+								{{ if eq .Params.ready false }}
+								<p class="connectors__partners__partner__header__ready">
+									Coming Soon
+								</p>
+								{{end}}
 							</div>
 							<p class="connectors__partners__partner__description">
 								{{ .Params.description }}

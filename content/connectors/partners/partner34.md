@@ -7,4 +7,5 @@ new: false
 img: "/img/partners/cpanel.svg"
 class: "partner"
 categories: "Developer Tools"
+ready: false
 ---
