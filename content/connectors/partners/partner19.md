@@ -1,12 +1,11 @@
 ---
-name : "QNapp Storage Node"
-
-description: "Integrate Storage Node Software into your QNapp device."
+name : "FileZilla"
+description: "Use Storj to move files between decentralized cloud storage and FTP locations"
 added: 3/19/20
 updated: 3/19/20
 new: false
-img: "/img/partners/qnap.svg"
+img: "/img/partners/filezilla.svg"
 class: "partner"
-categories: "Storage Node"
-
+categories: "App Connector"
+ready: false
 ---
