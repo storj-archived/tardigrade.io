@@ -52,9 +52,16 @@
 	}
 }
 
+.navbar-collapse {
+	@media only screen and (max-width: 991px) {
+    margin-top: 20px;
+	}
+}
+
 .navbar-nav {
 	margin-bottom: 13px;
 	@media only screen and (max-width: 991px) {
+		text-align: left;
 		.blog-link {
 			margin-top: 12px;
 		}
@@ -158,13 +165,14 @@
   font-weight: bold;
   font-size: 14px;
   width: 150px;
+	&:hover {
+		color: $color--blue-light;
+		background: #fff;
+	}
+	@media only screen and (max-width: 991px) {
+		width: 100%;
+	}
 }
-.nav-join:hover {
-  border: 2px solid white;
-  border-radius: 4px;
-  color: white;
-}
-
 
 /*  home-hero-banner  */
 
