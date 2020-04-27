@@ -1,6 +1,8 @@
 .legal {
 	background: #F4F5F7;
-
+	.navbar-toggler {
+		margin-bottom: 10px;
+	}
 	&__container {
 		.link {
 			color: $color--blue;
@@ -27,7 +29,7 @@
 		b {
 			font-weight: bold;
 		}
-		p {
+		.dropdown-item {
 			font-family: Roboto;
 			font-weight: 300;
 			font-size: 18px;
@@ -58,6 +60,18 @@
 			.nav-join {
 				color: #2582FF;
 				border: 2px solid #2582FF;
+			}
+			.dropdown-menu {
+				.dropdown-item {
+					@media only screen and (max-width: 991px) {
+						color: #93A1AF;
+					}
+				}
+			}
+			.dropdown-menu.show {
+				@media only screen and (max-width: 991px) {
+					border: none;
+				}
 			}
 		}
   }

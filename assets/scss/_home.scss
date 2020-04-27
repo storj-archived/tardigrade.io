@@ -60,13 +60,21 @@
 
 .navbar-nav {
 	margin-bottom: 13px;
+	.login-link-mobile {
+		display: none;
+	}
 	@media only screen and (max-width: 991px) {
 		text-align: left;
 		.blog-link {
 			margin-top: 12px;
 		}
 		.login-link {
-			margin-bottom: 20px;
+			display: none;
+		}
+		.login-link-mobile {
+			display: block;
+			text-align: center;
+			margin-top: 10px;
 		}
 	}
 }
@@ -127,6 +135,10 @@
   .dropdown-divider {
     width: 85%;
     margin: 10px auto;
+		@media only screen and (max-width: 991px) {
+			width: 43%;
+			float: left;
+		}
   }
   img {
     float: right;
@@ -134,7 +146,7 @@
     top: 7px;
     display: none
   }
-  p {
+  .dropdown-header {
     font-family: "Poppins";
     color: #93A1AF;
     font-weight: bold;
@@ -142,13 +154,30 @@
       color: #93A1AF;
     }
   }
-  a {
+  .dropdown-item {
     font-family: Roboto;
     &:hover {
       color: $color--blue-light;
       font-weight: bold;
     }
   }
+}
+
+.dropdown-menu.show {
+	@media only screen and (max-width: 991px) {
+		display: inline;
+		.dropdown-item {
+			color: #fff;
+		}
+		.dropdown-header {
+			color: #93A1AF;
+			margin-bottom: 0;
+		}
+		.dropdown-icon {
+			display: none;
+		}
+
+	}
 }
 
 .btn-group {
