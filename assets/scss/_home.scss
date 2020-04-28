@@ -171,6 +171,38 @@
   }
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+	background-color: transparent !important;
+	.exit-icon {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+.navbar-toggler {
+	visibility: visible;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+	visibility: hidden;
+	.exit-icon {
+		visibility: visible;
+		display: block;
+		position: relative;
+		bottom: 20px;
+		left: 4px;
+	}
+}
+
+.navbar-toggler.bg-light:focus, .navbar-toggler.bg-light:hover {
+	background-color: transparent !important;
+}
+
+
 .dropdown-menu.show {
 	@media only screen and (max-width: 991px) {
 		display: inline;
