@@ -135,6 +135,9 @@
   .dropdown-divider {
     width: 85%;
     margin: 10px auto;
+		opacity: 0.5;
+		border-top: 1px solid $color--grey-header;
+		margin-left: 24px;
 		@media only screen and (max-width: 991px) {
 			width: 43%;
 			float: left;
@@ -148,14 +151,19 @@
   }
   .dropdown-header {
     font-family: "Poppins";
-    color: #93A1AF;
+    color: $color--grey-header;
     font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 12px;
+		line-height: 16px;
     &:hover {
-      color: #93A1AF;
+      color: $color--grey-header;
     }
   }
   .dropdown-item {
     font-family: Roboto;
+		font-size: 14px;
     &:hover {
       color: $color--blue-light;
       font-weight: bold;
@@ -170,7 +178,7 @@
 			color: #fff;
 		}
 		.dropdown-header {
-			color: #93A1AF;
+			color: $color--grey-header;
 			margin-bottom: 0;
 		}
 		.dropdown-icon {
