@@ -157,6 +157,7 @@
 		letter-spacing: 1px;
 		font-size: 12px;
 		line-height: 16px;
+		margin-top: 8px;
     &:hover {
       color: $color--grey-header;
     }
@@ -212,6 +213,7 @@
 		.dropdown-header {
 			color: $color--grey-header;
 			margin-bottom: 0;
+			margin-top: 0;
 		}
 		.dropdown-icon {
 			display: none;
