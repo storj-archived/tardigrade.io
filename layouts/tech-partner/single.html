@@ -38,6 +38,7 @@
 
 	var heroBg = document.getElementById("heroBg");
 
+	// add to hero height when navbar drops
 	function callback(mutationsList) {
     mutationsList.forEach(mutation => {
         if (mutation.target.className.includes("show")) {
