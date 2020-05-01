@@ -178,14 +178,14 @@
 
 .navbar-toggler {
 	background-color: transparent !important;
+	visibility: visible;
+	@media only screen and (max-width: 991px) {
+	  margin-bottom: 17px;
+	}
 	.exit-icon {
 		visibility: hidden;
 		display: none;
 	}
-}
-
-.navbar-toggler {
-	visibility: visible;
 }
 
 .navbar-toggler[aria-expanded="true"] {
