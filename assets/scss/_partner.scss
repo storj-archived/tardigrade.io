@@ -2,7 +2,7 @@
   &__headline {
     background: url("/img/background.svg") no-repeat;
     background-size: cover;
-    height: 609px;
+    min-height: 560px;
 
     &-wrapper {
       margin-top: 80px;
@@ -24,6 +24,7 @@
         font-weight: 600;
         font-size: 34px;
         line-height: 48px;
+        margin-bottom: 20px;
       }
 
       &-content {
@@ -158,13 +159,22 @@
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .partner {
+    &__single {
+      &-partners {
+        position: relative;
+        top: 0;
+        z-index: 1;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 890px) {
   .partner {
     &__headline {
-      &-wrapper {
-        height: 100vh;
-      }
-
       &-description {
         &-wrapper {
           padding-bottom: 2rem;
@@ -173,10 +183,6 @@
     }
 
     &__single {
-      &-partners {
-        top: 70vh;
-      }
-
       &-benefits {
         padding-top: 80vh;
       }
