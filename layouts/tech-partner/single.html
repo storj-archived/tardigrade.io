@@ -33,27 +33,3 @@
     {{partial "site-scripts" .}}
 </body>
 </html>
-
-<script type="text/javascript">
-
-	var heroBg = document.getElementById("heroBg");
-
-	// add to hero height when navbar drops
-	function callback(mutationsList) {
-    mutationsList.forEach(mutation => {
-        if (mutation.target.className.includes("show")) {
-            heroBg.style.height = "970px"
-        } else {
-					heroBg.style.height = "850px"
-				}
-    })
-	}
-
-	const mutationObserver = new MutationObserver(callback)
-
-	mutationObserver.observe(
-	    document.getElementById('navbarToggler'),
-	    { attributes: true }
-	)
-
-</script>
