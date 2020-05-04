@@ -2,7 +2,7 @@
   &__headline {
     background: url("/img/background.svg") no-repeat;
     background-size: cover;
-    height: 609px;
+    min-height: 560px;
 
     &-wrapper {
       margin-top: 80px;
@@ -24,6 +24,7 @@
         font-weight: 600;
         font-size: 34px;
         line-height: 48px;
+        margin-bottom: 20px;
       }
 
       &-content {
@@ -71,6 +72,7 @@
     &-logo-wrapper {
       img {
         height: 40px;
+        margin-top: 40px;
       }
 
       h4 {
@@ -132,13 +134,12 @@
 
   &__single {
     &-partners {
-      position: absolute;
-      top: 590px;
-      z-index: 1000;
+      position: relative;
+      top: -80px;
     }
 
     &-benefits {
-      padding-top: 65vh;
+      padding-top: 80px;
     }
 
     &-virtuous-cycle {
@@ -148,37 +149,22 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
   .partner {
     &__single {
-      &-benefits {
-        padding-top: 80vh;
+      &-partners {
+        position: relative;
+        top: 0;
+        margin-top: 80px;
       }
     }
   }
-}
-
-@media only screen and (max-width: 890px) {
   .partner {
     &__headline {
-      &-wrapper {
-        height: 100vh;
-      }
-
       &-description {
         &-wrapper {
           padding-bottom: 2rem;
         }
-      }
-    }
-
-    &__single {
-      &-partners {
-        top: 70vh;
-      }
-
-      &-benefits {
-        padding-top: 80vh;
       }
     }
   }
@@ -194,14 +180,7 @@
       img {
         transform: rotate(90deg);
       }
-
       padding-bottom: 20px;
-    }
-
-    &__single {
-      &-benefits {
-        padding-top: 85vh;
-      }
     }
   }
 }
@@ -218,16 +197,10 @@
         text-align: center;
       }
     }
-
-    &__single {
-      &-benefits {
-        padding-top: 95vh;
-      }
-    }
   }
 }
 
-@media only screen and (min-height: 1000px) {
+@media only screen and (min-height: 992px) {
   .partner {
     &__single {
       &-benefits {
