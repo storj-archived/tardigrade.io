@@ -130,6 +130,7 @@
 
 	.social-section {
 		float: right;
+    padding-left: 0;
 		.footer-social {
 			display: inline;
 			.footer__link {
@@ -162,9 +163,6 @@
 
 @media (max-width: 992px) {
 	.footer {
-		.social-section {
-			padding-left: 0;
-		}
 		&__logo-img {
 			margin-bottom: 30px;
 			width: inherit;
