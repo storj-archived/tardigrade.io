@@ -2,9 +2,16 @@
   .p404 {
 		&__content-wrapper {
 			height: 350px;
+			@media (max-width: 991px) {
+	      height: 600px;
+      }
 		}
     &__content {
       text-align: left;
+			@media (max-width: 991px) {
+	     margin-top: 300px;
+			 text-align: center;
+      }
     }
     &__heading {
       font-size: 32px;
@@ -26,10 +33,11 @@
     &__mascot {
 			height: 680px;
 			z-index: 0;
-      @media (max-width: 991px) {
-        display: none;
-      }
+			@media (max-width: 991px) {
+				position: absolute;
+				margin: 0 auto;
+				margin-top: 90px;
+			}
     }
   }
-
 }
