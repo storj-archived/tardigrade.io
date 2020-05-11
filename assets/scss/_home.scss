@@ -732,8 +732,6 @@
 	.spacer60 {
 		display: none;
 	}
-
-
 	@media only screen and (max-width: 991px) {
 		.spacer40 {
 			display: none;
@@ -741,11 +739,6 @@
 		.spacer60 {
 			display: block;
 		}
-
-	}
-	@media only screen and (max-width: 991px) {
-		height: 80%;
-
 	}
 }
 
@@ -883,24 +876,29 @@
 	position: relative;
 	background-repeat: no-repeat;
 	overflow: hidden;
+  padding: 80px 0;
 }
 
 .dev-in-mind__responsive-mobile-bg {
 	display: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  .dev-in-mind {
+		padding: 160px 0;
+	}
+}
 @media only screen and (max-width: 991px) {
 	.dev-in-mind {
 		background-image: none;
 		position: relative;
-		padding-left: 0;
-		padding-right: 0;
-		height: 1110px;
+    padding-top: 0;
+    padding-bottom: 300px;
 	}
 
 	.dev-in-mind__responsive-mobile-bg {
 		position: absolute;
-		bottom: -100px;
+		bottom: 0;
 		z-index: -1;
 		width: 200%;
 		height: 100%;
@@ -971,7 +969,6 @@
 @media only screen and (max-width: 991px) {
 
 	.dev-in-mind__cta-wrapper {
-		position: absolute;
 		margin-right: auto;
 		left: 0;
 		right: 0;
