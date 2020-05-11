@@ -456,11 +456,6 @@
 
 
 .hiw-heading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 39px;
   text-align: center;
 }
 
@@ -517,7 +512,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -762,7 +757,6 @@
 }
 
 .half-price__heading {
-  font-size: 28px;
 	text-align: center;
 }
 
@@ -1813,8 +1807,8 @@ a {
 .tab-heading {
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 39px;
+  font-size: 18px;
+  line-height: 40px;
   color: #000000;
 }
 
@@ -1853,12 +1847,6 @@ a {
   color: #1b2d45;
 }
 
-.use-case__top-heading {
-  font-family: "Poppins";
-  font-style: bold;
-  font-size: 28px;
-}
-
 .use-case__list .limit {
 	font-size: 14px;
 	line-height: 18px;
@@ -1880,8 +1868,8 @@ a {
 .large-content .tab-pane .limit {
 	font-family: Roboto;
 	font-weight: 300;
-	font-size: 22px;
-	line-height: 25px;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 .small-content {
@@ -1956,10 +1944,6 @@ a {
 }
 
 @media only screen and (min-width: 574px) and (max-width: 991px) {
-	.tab-heading {
-		font-size: 24px;
-		line-height: 33px;
-	}
 	.use-case .limit {
 		width: 100%;
 	}
