@@ -1,27 +1,28 @@
-<div class="lite-gray-bg container-fluid thank-you">
+<div class="lite-gray-bg container-fluid p404">
   <div class="container">
-    <div class="row thank-you__content-wrapper d-flex justify-content-center">
+    <div class="row p404__content-wrapper d-flex justify-content-center">
       <div class="spacer125"></div>
-      <div class="col-lg-4 thank-you__content">
-        {{ with .Site.GetPage "thankYou" }}
-        <h2 class="thank-you__heading">
+      <div class="col-lg-5 p404__content">
+        {{ with .Site.GetPage "404" }}
+				{{ end }}
+        <h2 class="p404__heading">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
         </h2>
+
         <div class="spacer20"></div>
-        <div class="thank-you__msg">
+        <div class="p404__msg">
           {{ .Params.content}}
         </div>
         <div class="spacer20"></div>
-        <a href="/community">
-          <h2 class="thank-you__cta">
+        <a href="/">
+          <h2 class="p404__cta">
             {{ .Params.cta}}
             <img class="mb-1" src="/img/blue-carrot.svg" height="13" width="13"/>
           </h2>
         </a>
-        {{ end }}
       </div>
-      <div class="col-lg-4 offset-2 thank-you__mascot">
-				<img src="/img/tardigrade-mascot.svg" />
+      <div class="col-lg-4 offset-2 p404__mascot">
+				<img src="{{ .Params.image}}" />
       </div>
     </div>
   </div>

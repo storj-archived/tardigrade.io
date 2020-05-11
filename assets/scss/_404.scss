@@ -1,0 +1,35 @@
+.p404-page {
+  .p404 {
+		&__content-wrapper {
+			height: 350px;
+		}
+    &__content {
+      text-align: left;
+    }
+    &__heading {
+      font-size: 32px;
+    }
+    &__msg {
+      font-size: 18px;
+      font-weight: 200;
+      font-family: 'Roboto'
+    }
+    &__cta {
+      font-weight: 700;
+      font-size: 18px;
+      color: $color--blue-light;
+      .mb-1 {
+        position: relative;
+        top: 2px;
+      }
+    }
+    &__mascot {
+			height: 680px;
+			z-index: 0;
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+
+}
