@@ -1313,6 +1313,10 @@ a {
 	.home-subheading {
 		margin: 0 auto;
 	}
+  .usecase-link-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .usecase-link-wrapper {
@@ -1326,6 +1330,7 @@ a {
 	text-transform: uppercase;
   mix-blend-mode: normal;
   opacity: 0.5;
+  line-height: 2;
 }
 .usecase-link-wrapper-active {
   border-left: 3px solid #2582ff;
