@@ -575,7 +575,7 @@
 	.why-tardigrade {
 		position: relative;
 		top: -410px;
-    margin-bottom: -550px;
+    margin-bottom: -400px;
 	}
 }
 
@@ -1849,10 +1849,6 @@ a {
   color: #1b2d45;
 }
 
-.use-case {
-	position: relative;
-}
-
 .use-case__top-heading {
   font-family: "Poppins";
   font-style: bold;
@@ -1889,19 +1885,6 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
-
-
-	.use-case {
-		padding-left: 0;
-		height: 1000px;
-		margin-bottom: -200px;
-	}
-
-	.use-case .container {
-		top: 230px;
-		position: relative;
-	}
-
 	.use-case__list {
 		margin: 0 auto;
 		text-align: center;
@@ -1968,15 +1951,6 @@ a {
 
 }
 
-@media only screen and (max-width: 600px) {
-	.use-case__list {
-		left: 30px;
-	}
-}
-
-
-
-
 @media only screen and (min-width: 574px) and (max-width: 991px) {
 	.tab-heading {
 		font-size: 24px;
@@ -1986,7 +1960,6 @@ a {
 		width: 100%;
 	}
 }
-
 
 .spacer16 {
   height: 16px;
