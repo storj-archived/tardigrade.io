@@ -168,6 +168,9 @@
 			width: inherit;
 			height: auto;
 		}
+    &__link {
+      line-height: 32px;
+    }
 	}
 }
 
@@ -185,9 +188,6 @@
     &__logo-img {
       width: 125px;
       height: auto;
-    }
-    &__link {
-  		line-height: 32px;
     }
   }
 }
