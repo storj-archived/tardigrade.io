@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row p404__content-wrapper d-flex justify-content-center">
       <div class="spacer125"></div>
-      <div class="col-lg-5 p404__content">
+      <div class="col-lg-6 p404__content">
         {{ with .Site.GetPage "404" }}
 				{{ end }}
         <h2 class="p404__heading">
@@ -16,12 +16,12 @@
         <div class="spacer20"></div>
         <a href="/">
           <h2 class="p404__cta">
+						<img class="mb-1" src="/img/blue-carrot-left.svg" height="13" width="13"/>
             {{ .Params.cta}}
-            <img class="mb-1" src="/img/blue-carrot.svg" height="13" width="13"/>
           </h2>
         </a>
       </div>
-      <div class="col-lg-4 offset-2 p404__mascot">
+      <div class="col-lg-6 p404__mascot">
 				<img src="{{ .Params.image}}" />
       </div>
     </div>

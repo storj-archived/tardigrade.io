@@ -1,0 +1,18 @@
+.second-nav.navbar {
+	margin-top: 15px;
+	padding-bottom: 10px;
+	.navlink {
+		color: #93A1AF;
+		&:hover {
+			color: #93A1AF;
+			text-shadow: 1px 0 0 #93A1AF;
+		}
+		&:active {
+			font-weight: bold;
+		}
+	}
+	.nav-join {
+		color: #2582FF;
+		border: 2px solid #2582FF;
+	}
+}
