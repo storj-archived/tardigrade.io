@@ -1,6 +1,8 @@
 .legal {
 	background: #F4F5F7;
-
+	.navbar-toggler {
+		margin-bottom: 10px;
+	}
 	&__container {
 		.link {
 			color: $color--blue;
@@ -27,7 +29,7 @@
 		b {
 			font-weight: bold;
 		}
-		p {
+		.dropdown-item {
 			font-family: Roboto;
 			font-weight: 300;
 			font-size: 18px;

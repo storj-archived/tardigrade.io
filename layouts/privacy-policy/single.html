@@ -3,17 +3,19 @@
   <head>
     {{ partial "head" . }}
   </head>
-  <body class="page">
+  <body class="legal page">
     <section class="legal__nav">
         {{partial "banner" .}}
-        {{partial "nav" .}}
+				{{partial "legalNav" .}}
     </section>
     {{ with .Site.GetPage "privacyPolicy" }}
-    <div class="legal__container container text-center">
-        <h1> {{ .Params.title }} </h1>
-        <div class="legal__content h-100">
-            {{ .Content }}
-        </div>
+    <div class="legal__container container container">
+			<h1 class="legal__container__title"> {{ .Params.title }} </h1>
+			<p class="legal__container__date"> Last Updated <b>{{ .Params.lastUpdated }}</b> </p>
+
+			<div class="legal__content h-100">
+					{{ .Content }}
+			</div>
     </div>
     {{end}}
 

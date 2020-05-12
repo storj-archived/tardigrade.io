@@ -83,28 +83,4 @@
     }
   }
 
-
-	var heroWrapper = document.getElementById("heroWrapper");
-	var heroBackground = document.getElementById("heroBackground");
-
-	// add to hero height when navbar drops
-	function callback(mutationsList) {
-    mutationsList.forEach(mutation => {
-        if (mutation.target.className.includes("show")) {
-          heroWrapper.style.height = "970px";
-					heroBackground.style.height = "1400px";
-        } else {
-					heroWrapper.style.height = "608px";
-					heroBackground.style.height = "1250px";
-				}
-    })
-	}
-
-	const mutationObserver = new MutationObserver(callback)
-
-	mutationObserver.observe(
-	    document.getElementById('navbarToggler'),
-	    { attributes: true }
-	)
-
 </script>

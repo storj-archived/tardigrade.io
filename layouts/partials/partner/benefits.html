@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="pt-5 row d-flex flex-row justify-content-center">
+    <div class="row d-flex flex-row justify-content-center">
         {{ range where .Site.Pages ".Params.class" "benefits"}}
             <div class="partner__benefits-logo-wrapper ml-3 col-sm-2">
                 <img class="img-fluid" src="{{ .Params.img }}" alt="benefits icon">
