@@ -50,7 +50,7 @@
 							Coming Soon
 						</p>
 						{{end}}
-						<div class="connectors__partners__partner__wrapper {{ if eq .Params.ready false }}not-ready{{ end }}">
+						<div class="connectors__partners__partner__wrapper {{ if eq .Params.new true }}new{{end}} {{ if eq .Params.ready false }}not-ready{{ end }}">
 							{{ if .Params.link }}<a class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
 								<div class="connectors__partners__partner__header">
 									<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
@@ -74,7 +74,7 @@
 						</div>
 					</div>
 					{{end}}
-					<p class="badge">No Results</p>
+					<p class="badge" class="no-results">No Results</p>
 				</div>
 				<div id="loadMore">
 					<p class="load-more-btn">Load More</p>

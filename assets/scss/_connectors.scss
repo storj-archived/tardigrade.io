@@ -236,8 +236,9 @@
 
 .connectors__partners {
 	.col-12 {
-		padding-left: 0;
+		padding: 0;
 	}
+
 	&__title {
 		margin-top: 45px;
 		font-weight: bold;
@@ -252,7 +253,26 @@
 	}
 	.not-ready {
 		opacity: .4;
+		.connectors__partners__partner__header__name {
+			width: 45%;
+			@media only screen and (max-width: 1200px) {
+				width: 35%;
+			}
+			@media only screen and (max-width: 1024px) {
+				width: 60%;
+			}
+		}
 	}
+
+	.new {
+		.connectors__partners__partner__header__name {
+			width: 60%;
+			@media only screen and (max-width: 1200px) {
+				width: 55%;
+			}
+		}
+	}
+
 	&__partner, &__partner__featured  {
 		height: 188px;
 		margin-bottom: 25px;
@@ -372,7 +392,10 @@
 		display: none;
 	}
 }
-
+.no-results {
+	font-size: 24px;
+	margin-top: 100px;
+}
 #loadMore {
 	.load-more-btn {
 		margin: 0 auto;
