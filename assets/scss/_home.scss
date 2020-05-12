@@ -191,11 +191,12 @@
 .navbar-toggler[aria-expanded="true"] {
 	visibility: hidden;
 	.exit-icon {
-		visibility: visible;
-		display: block;
-		position: relative;
-		bottom: 20px;
-		left: 4px;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    width: 18px;
 	}
 }
 
