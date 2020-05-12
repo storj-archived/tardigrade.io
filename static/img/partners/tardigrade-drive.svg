@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <g id="Group-2-Copy-2" fill="#6D44FF">
+                <rect id="Rectangle" x="0" y="0" width="42" height="42" rx="10"></rect>
+            </g>
+            <rect id="Rectangle" fill="#FFFFFF" x="18" y="31" width="6" height="2" rx="1"></rect>
+            <path d="M27,5 C28.6568542,5 30,6.34314575 30,8 L30,34 C30,35.6568542 28.6568542,37 27,37 L15,37 C13.3431458,37 12,35.6568542 12,34 L12,8 C12,6.34314575 13.3431458,5 15,5 L27,5 Z M16,7 L15,7 C14.4477153,7 14,7.44771525 14,8 L14,8 L14,34 C14,34.5522847 14.4477153,35 15,35 L15,35 L27,35 C27.5522847,35 28,34.5522847 28,34 L28,34 L28,8 C28,7.44771525 27.5522847,7 27,7 L27,7 L26,7 L25.9945143,7.14926234 C25.9181651,8.18412221 25.0543618,9 24,9 L24,9 L18,9 L17.8507377,8.99451426 C16.8158778,8.91816512 16,8.0543618 16,7 L16,7 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,5 @@
 ---
-name : "Synology - Storj: Storage Node"
-
+name : "Storage Node for Synology"
 description: "Integrate Storage Node Software into your Synology device."
 added: 3/19/20
 updated: 3/19/20
