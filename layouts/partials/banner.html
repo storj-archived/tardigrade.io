@@ -1,14 +1,14 @@
 {{ with .Site.GetPage "banner"}}
-<div class="container-fluid banner">
+<div class="banner">
   <div class="container">
     <div class="row banner">
-      <h4 class=" col-6 banner-text text-left">{{.Params.leftText}}</h4>
-      <h4 class=" col-6 banner-text text-right">
-          <a href="https://storj.io">
-        {{.Params.rightText}}
-        <img src="/img/storj-logo.svg"/><img src="/img/carrot-right.svg"/>
+      <p class="col-6 banner-text text-left">{{.Params.leftText}}</p>
+      <p class="col-6 banner-text text-right">
+        <a href="https://storj.io" target="_blank">
+          {{.Params.rightText}}
+          <img src="/img/storj-logo.svg"/><img src="/img/carrot-right.svg"/>
         </a>
-      </h4>
+      </p>
     </div>
   </div>
 </div>
