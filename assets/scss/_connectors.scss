@@ -12,58 +12,48 @@
 
 .connectors__hero {
 	&__container {
-		background: url("/img/connectors-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
-		height: 600px;
-		position: relative;
+		// background: url("/img/tar-connectors-hero.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		overflow: hidden;
-		background-size: cover;
-		@media only screen and (max-width: 1600px) {
-			height: 530px;
-		}
-		@media only screen and (max-width: 1444px) {
-			height: 500px;
-		}
-		@media only screen and (max-width: 1352px) {
-			height: 440px;
-		}
-		@media only screen and (max-width: 1200px) {
-			height: 418px;
-			background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
-		}
+		height: 418px;
+	 	background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		@media only screen and (max-width: 768px) {
 			background: url("/img/connectors-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
 			height: 790px;
 			background-size: cover;
 		}
 	}
-	&__background {
-		position: absolute;
-		top: -10px;
-		display: none;
-		@media only screen and (max-width: 1200px) {
-			display: block;
-		}
-		@media only screen and (max-width: 1024px) {
-			right: -80px;
-		}
-		@media only screen and (max-width: 944px) {
-			right: -180px;
-		}
+	&__bg {
+		background: url("/img/tar-connectors-hero.png");
+		background-size: contain;
+		background-position: 0px 199px;
+		background-repeat: no-repeat;
+		height: 100%;
 		@media only screen and (max-width: 768px) {
-			display: none;
+			background: none;
 		}
 	}
+	// &__background {
+	// 	position: absolute;
+	// 	top: -10px;
+	// 	display: block;
+	// 	@media only screen and (max-width: 1200px) {
+	// 		display: block;
+	// 	}
+	// 	@media only screen and (max-width: 1024px) {
+	// 		right: -80px;
+	// 	}
+	// 	@media only screen and (max-width: 944px) {
+	// 		right: -180px;
+	// 	}
+	// 	@media only screen and (max-width: 768px) {
+	// 		display: none;
+	// 	}
+	// }
 	&__content {
 		margin: 0 auto;
 		text-align: center;
-		margin-top: 10%;
+		margin-top: 3%;
 		color: #fff;
-		@media only screen and (max-width: 1600px) {
-			margin-top: 8%;
-		}
-		@media only screen and (max-width: 1444px) {
-			margin-top: 6%;
-		}
 		@media only screen and (max-width: 768px) {
 			margin-top: 36%;
 			width: 70%;
@@ -388,13 +378,10 @@
 		}
 	}
 	.badge {
-		margin: 0 auto;
+		margin: 80px auto;
 		display: none;
+		font-size: 24px;
 	}
-}
-.no-results {
-	font-size: 24px;
-	margin-top: 100px;
 }
 #loadMore {
 	.load-more-btn {
