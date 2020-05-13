@@ -7,5 +7,5 @@ new: false
 img: "/img/partners/fluree.svg"
 class: "partner"
 categories: "Application Connector"
-ready: true
+ready: false
 ---

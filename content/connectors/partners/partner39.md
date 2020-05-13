@@ -7,4 +7,5 @@ new: true
 img: "/img/partners/node-dashboard.png"
 class: "partner"
 categories: "Storage Node"
+weight: 97
 ---

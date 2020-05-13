@@ -12,7 +12,6 @@
 
 .connectors__hero {
 	&__container {
-		// background: url("/img/tar-connectors-hero.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		overflow: hidden;
 		height: 418px;
 	 	background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
@@ -25,7 +24,7 @@
 	}
 	.inner-hero-wrapper {
 		@media only screen and (max-width: 1200px) {
-			background: url("/img/tar-connectors-hero.png");/* W3C */
+			background: url("/img/tar-connectors-hero.png");
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: 40px 230px;
@@ -297,7 +296,7 @@
 				margin-left: 10px;
 		    top: 15px;
 		    position: relative;
-		    width: 70%;
+		    width: 60%;
 				color: #000;
 			}
 			&__image {

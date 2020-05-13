@@ -7,6 +7,5 @@ new: false
 img: "/img/partners/transfer-sh.svg"
 class: "partner"
 categories: "Application Connector"
-ready: true
 link: "http://transfer.sh/"
 ---
