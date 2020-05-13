@@ -25,7 +25,7 @@
     color: $color--white;
 		font-family: $primary-font;
 		font-size: 12px;
-		line-height: 20px;
+		line-height: 28px;
 		opacity: .4;
 		font-weight: 300;
     &-temp {
@@ -130,6 +130,7 @@
 
 	.social-section {
 		float: right;
+    padding-left: 0;
 		.footer-social {
 			display: inline;
 			.footer__link {
@@ -160,21 +161,21 @@
   margin-top: 10px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.footer {
-		.social-section {
-			padding-left: 0;
-		}
 		&__logo-img {
 			margin-bottom: 30px;
 			width: inherit;
 			height: auto;
 		}
+    &__link {
+      line-height: 32px;
+    }
 	}
 }
 
 
-@media (min-width: 874px) and (max-width: 992px) {
+@media (min-width: 874px) and (max-width: 991px) {
   .footer {
     &__content-item-btn {
       width: 400px;
