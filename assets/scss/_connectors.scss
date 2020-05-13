@@ -16,9 +16,8 @@
 		height: 418px;
 	 	background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
 		position: relative;
-		@media only screen and (max-width: 768px) {
-			background: url("/img/connectors-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
-			height: 790px;
+		@media only screen and (max-width: 600px) {
+			height: 629px;
 			background-size: cover;
 		}
 	}
@@ -30,13 +29,20 @@
 			background-position: 40px 230px;
 		}
 		@media only screen and (max-width: 991px) {
-			background-position: 40px 240px;
-		}
-		@media only screen and (max-width: 991px) {
 			background-position: 40px 260px;
 		}
 		@media only screen and (max-width: 768px) {
-			background: none;
+			background-position: 40px 280px;
+		}
+		@media only screen and (max-width: 768px) {
+			background-position: 40px 300px;
+		}
+		@media only screen and (max-width: 600px) {
+			background: url("/img/tar-connectors-hero-sm.png");
+			background-size: cover;
+			height: 100%;
+			background-position: 50% 70px;
+			background-repeat: no-repeat;
 		}
 	}
 	&__bg {
@@ -57,8 +63,8 @@
 		@media only screen and (max-width: 1200px) {
 			margin-top: 5%;
 		}
-		@media only screen and (max-width: 768px) {
-			margin-top: 36%;
+		@media only screen and (max-width: 600px) {
+			margin-top: 28%;
 			width: 70%;
 		}
 	}
@@ -76,7 +82,7 @@
 		line-height: 24px;
 		margin: 0 auto;
 		width: 400px;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 600px) {
 			width: 100%;
 		}
 	}
@@ -101,14 +107,17 @@
 		@media only screen and (max-width: 768px) {
 			right: 92px;
 		}
+		@media only screen and (max-width: 600px) {
+			right: 92px;
+		}
 		@media only screen and (max-width: 575px) {
 			right: 45px;
 		}
 		@media only screen and (max-width: 530px) {
 			right: 30px;
 		}
-		@media only screen and (max-width: 530px) {
-			right: 10px;
+		@media only screen and (max-width: 520px) {
+			right: 15px;
 		}
 	}
 	::-webkit-input-placeholder {
