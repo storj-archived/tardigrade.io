@@ -4,7 +4,7 @@ description: "Backup your NAS to Tardigrade decentralized cloud storage with our
 added: 3/19/20
 updated: 3/19/20
 new: false
-img: "/img/partners/s3-gateway.svg"
+img: "/img/partners/s3-qnap.png"
 class: "partner"
 categories: "Application Connector"
 ready: true
