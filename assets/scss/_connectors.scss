@@ -16,44 +16,48 @@
 		overflow: hidden;
 		height: 418px;
 	 	background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
+		position: relative;
 		@media only screen and (max-width: 768px) {
 			background: url("/img/connectors-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
 			height: 790px;
 			background-size: cover;
 		}
 	}
-	&__bg {
-		background: url("/img/tar-connectors-hero.png");
-		background-size: contain;
-		background-position: 0px 199px;
-		background-repeat: no-repeat;
-		height: 100%;
+	.inner-hero-wrapper {
+		@media only screen and (max-width: 1200px) {
+			background: url("/img/tar-connectors-hero.png");/* W3C */
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 40px 230px;
+		}
+		@media only screen and (max-width: 991px) {
+			background-position: 40px 240px;
+		}
+		@media only screen and (max-width: 991px) {
+			background-position: 40px 260px;
+		}
 		@media only screen and (max-width: 768px) {
 			background: none;
 		}
 	}
-	// &__background {
-	// 	position: absolute;
-	// 	top: -10px;
-	// 	display: block;
-	// 	@media only screen and (max-width: 1200px) {
-	// 		display: block;
-	// 	}
-	// 	@media only screen and (max-width: 1024px) {
-	// 		right: -80px;
-	// 	}
-	// 	@media only screen and (max-width: 944px) {
-	// 		right: -180px;
-	// 	}
-	// 	@media only screen and (max-width: 768px) {
-	// 		display: none;
-	// 	}
-	// }
+	&__bg {
+		background: url("/img/tar-connectors-hero.png");
+		background-size: contain;
+		background-position: 40px 200px;
+		background-repeat: no-repeat;
+		height: 100%;
+		@media only screen and (max-width: 1200px) {
+			 background: none;
+		}
+	}
 	&__content {
 		margin: 0 auto;
 		text-align: center;
 		margin-top: 3%;
 		color: #fff;
+		@media only screen and (max-width: 1200px) {
+			margin-top: 5%;
+		}
 		@media only screen and (max-width: 768px) {
 			margin-top: 36%;
 			width: 70%;
@@ -69,8 +73,8 @@
 	&__subheading {
 		font-family: $secondary-font;
 		font-weight: 300;
-		font-size: 18px;
-		line-height: 27px;
+		font-size: 16px;
+		line-height: 24px;
 		margin: 0 auto;
 		width: 400px;
 		@media only screen and (max-width: 768px) {
