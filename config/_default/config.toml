@@ -1,6 +1,5 @@
 languageCode = "en-us"
 title = "Tardigrade | Decentralized Cloud Object Storage"
-paginate = 8
 
 [permalinks]
   partner = "/partner/"
@@ -19,11 +18,11 @@ paginate = 8
   press-kit="/press-kit/"
   tech-partner = "/tech-partner/"
   thank-you="/thank-you/"
-  connectors="/connectors/"
   partner-form="/partner-form/"
   partner-thank-you="/partner-thank-you/"
   universal-login="/satellites/"
 	satellites-verify="/satellites/verify/"
-
-[taxonomies]
-  category = "categories"
+	unsubscribed-newsletters="/unsubscribed-newsletters/"
+	unsubscribed-notifications="/unsubscribed-notifications/"
+	covid="/covid/"
+	connectors="/connectors/"

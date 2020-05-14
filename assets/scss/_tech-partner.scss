@@ -14,19 +14,23 @@
       background-position: 100% 90px;
       background-size: 650px;
       @media only screen and (max-width: 991px) {
-        background-position: 100% 240px;
+        background-position: bottom right;
         background-size: 550px;
+      }
+      @media only screen and (max-width: 768px) {
+        background-position: bottom;
+        background-size: contain;
+        height: 1080px;
       }
       @media only screen and (max-width: 600px) {
-        background-position: 100% 480px;
-        background-size: 550px;
-        height: 850px;
+        background-position: bottom;
+        background-size: contain;
+        height: 980px;
       }
-
       @media only screen and (max-width: 500px) {
-        background-position: 100% 590px;
-        background-size: 350px;
-        height: 850px;
+        background-position: bottom;
+        background-size: contain;
+        height: 940px;
       }
       .col-sm-8 {
         @media only screen and (max-width: 600px) {
@@ -149,6 +153,9 @@
       height: 90px;
     }
   }
+	.tech-partner__why-image, .tech-partner__more-benefit-image {
+		height: 40px;
+	}
 }
 
 
