@@ -5,7 +5,5 @@ added: 3/19/20
 updated: 3/19/20
 new: false
 img: "/img/partners/utropic-media.svg"
-class: "partner"
-categories: "System Integrator"
 ready: true
 ---

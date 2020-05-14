@@ -12,60 +12,59 @@
 
 .connectors__hero {
 	&__container {
-		background: url("/img/connectors-bg.png"), radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
-		height: 600px;
-		position: relative;
 		overflow: hidden;
-		background-size: cover;
-		@media only screen and (max-width: 1600px) {
-			height: 530px;
-		}
-		@media only screen and (max-width: 1444px) {
-			height: 500px;
-		}
-		@media only screen and (max-width: 1352px) {
-			height: 440px;
-		}
-		@media only screen and (max-width: 1200px) {
-			height: 418px;
-			background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
-		}
-		@media only screen and (max-width: 768px) {
-			background: url("/img/connectors-bg-sm.png"), radial-gradient(144.46% 79.03% at 50% 49.94%, #0055C6 0%, #000000 100%); /* W3C */
-			height: 790px;
+		height: 418px;
+	 	background: radial-gradient(90.29% 121.56% at 53.03% 29.19%, #0055C6 0%, #000000 100%); /* W3C */
+		position: relative;
+		@media only screen and (max-width: 600px) {
+			height: 629px;
 			background-size: cover;
 		}
 	}
-	&__background {
-		position: absolute;
-		top: -10px;
-		display: none;
+	.inner-hero-wrapper {
 		@media only screen and (max-width: 1200px) {
-			display: block;
+			background: url("/img/tar-connectors-hero.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 40px 230px;
 		}
-		@media only screen and (max-width: 1024px) {
-			right: -80px;
-		}
-		@media only screen and (max-width: 944px) {
-			right: -180px;
+		@media only screen and (max-width: 991px) {
+			background-position: 40px 260px;
 		}
 		@media only screen and (max-width: 768px) {
-			display: none;
+			background-position: 40px 280px;
+		}
+		@media only screen and (max-width: 768px) {
+			background-position: 40px 300px;
+		}
+		@media only screen and (max-width: 600px) {
+			background: url("/img/tar-connectors-hero-sm.png");
+			background-size: cover;
+			height: 100%;
+			background-position: 50% 70px;
+			background-repeat: no-repeat;
+		}
+	}
+	&__bg {
+		background: url("/img/tar-connectors-hero.png");
+		background-size: contain;
+		background-position: 40px 200px;
+		background-repeat: no-repeat;
+		height: 100%;
+		@media only screen and (max-width: 1200px) {
+			 background: none;
 		}
 	}
 	&__content {
 		margin: 0 auto;
 		text-align: center;
-		margin-top: 10%;
+		margin-top: 3%;
 		color: #fff;
-		@media only screen and (max-width: 1600px) {
-			margin-top: 8%;
+		@media only screen and (max-width: 1200px) {
+			margin-top: 5%;
 		}
-		@media only screen and (max-width: 1444px) {
-			margin-top: 6%;
-		}
-		@media only screen and (max-width: 768px) {
-			margin-top: 36%;
+		@media only screen and (max-width: 600px) {
+			margin-top: 28%;
 			width: 70%;
 		}
 	}
@@ -79,11 +78,11 @@
 	&__subheading {
 		font-family: $secondary-font;
 		font-weight: 300;
-		font-size: 18px;
-		line-height: 27px;
+		font-size: 16px;
+		line-height: 24px;
 		margin: 0 auto;
 		width: 400px;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 600px) {
 			width: 100%;
 		}
 	}
@@ -108,14 +107,17 @@
 		@media only screen and (max-width: 768px) {
 			right: 92px;
 		}
+		@media only screen and (max-width: 600px) {
+			right: 92px;
+		}
 		@media only screen and (max-width: 575px) {
 			right: 45px;
 		}
 		@media only screen and (max-width: 530px) {
 			right: 30px;
 		}
-		@media only screen and (max-width: 530px) {
-			right: 10px;
+		@media only screen and (max-width: 520px) {
+			right: 15px;
 		}
 	}
 	::-webkit-input-placeholder {
@@ -236,8 +238,9 @@
 
 .connectors__partners {
 	.col-12 {
-		padding-left: 0;
+		padding: 0;
 	}
+
 	&__title {
 		margin-top: 45px;
 		font-weight: bold;
@@ -252,7 +255,26 @@
 	}
 	.not-ready {
 		opacity: .4;
+		.connectors__partners__partner__header__name {
+			width: 45%;
+			@media only screen and (max-width: 1200px) {
+				width: 35%;
+			}
+			@media only screen and (max-width: 1024px) {
+				width: 60%;
+			}
+		}
 	}
+
+	.new {
+		.connectors__partners__partner__header__name {
+			width: 60%;
+			@media only screen and (max-width: 1200px) {
+				width: 55%;
+			}
+		}
+	}
+
 	&__partner, &__partner__featured  {
 		height: 188px;
 		margin-bottom: 25px;
@@ -283,7 +305,7 @@
 				margin-left: 10px;
 		    top: 15px;
 		    position: relative;
-		    width: 70%;
+		    width: 60%;
 				color: #000;
 			}
 			&__image {
@@ -368,11 +390,11 @@
 		}
 	}
 	.badge {
-		margin: 0 auto;
+		margin: 80px auto;
 		display: none;
+		font-size: 24px;
 	}
 }
-
 #loadMore {
 	.load-more-btn {
 		margin: 0 auto;

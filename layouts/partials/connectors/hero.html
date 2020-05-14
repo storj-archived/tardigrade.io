@@ -1,6 +1,6 @@
 <div class="container-fluid connectors__hero__container nomp">
 	<div class="container-fluid inner-hero-wrapper">
-		<div class="container">
+		<div class="container connectors__hero__bg">
 			<div class="spacer20"></div>
 			{{ partial "nav" .}}
 			<div class="row">
@@ -9,7 +9,7 @@
 					<h1 class="connectors__hero__title">{{ .Params.title }}</h1>
 					<p class="connectors__hero__subheading">{{ .Params.subHeading }}</p>
 					<div>
-						<input id="searchInput" class="form-control" type="search" placeholder="Search Connectors..." aria-label="Search">
+						<input id="searchInput" class="form-control" placeholder="Search Connectors..." aria-label="Search">
 						<img alt="Search Icon" src="/img/search-icon.svg" class="search-icon" />
 					</div>
 				</div>
@@ -17,5 +17,4 @@
 			{{end}}
 		</div>
 	</div>
-	<img class="connectors__hero__background" src="/img/connectors-bg.png" />
 </div>

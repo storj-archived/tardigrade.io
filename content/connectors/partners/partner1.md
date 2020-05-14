@@ -1,12 +1,12 @@
 ---
-name : "Storage Node Software"
+name : "Storage Node for QNAP"
 description: "Monetize your excess hardware capacity with Storj"
 added: 3/19/20
 updated: 3/19/20
 new: false
-img: "/img/partners/storage-node.png"
+img: "/img/partners/qnap.svg"
 class: "partner"
 categories: "Storage Node"
-link: "https://documentation.storj.io/"
 weight: 97
+link: "https://documentation.storj.io/sno-applications/qnap-storage-node-app"
 ---

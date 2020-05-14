@@ -1,11 +1,9 @@
 ---
 name : "NextCloud Connector"
-description: ""
+description: "Connect your NextCloud instance to Tardigrade.io, and host your files on the decentralized cloud"
 added: 3/19/20
 updated: 3/19/20
 new: false
 img: "/img/partners/nextcloud.svg"
-class: "partner"
-categories: "Developer Tools"
 ready: false
 ---

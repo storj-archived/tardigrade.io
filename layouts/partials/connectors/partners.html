@@ -43,14 +43,14 @@
 					{{ partial "connectors/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
 				</div>
 				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
-					{{ range (where .Site.Pages.ByPublishDate ".Params.class" "partner") }}
+					{{ range (where (.Site.Pages.ByParam "ready").Reverse.ByPublishDate ".Params.class" "partner") }}
 					<div class="connectors__partners__partner col-xs-12 col-lg-6 ">
 						{{ if eq .Params.ready false }}
 						<p class="connectors__partners__partner__header__ready">
 							Coming Soon
 						</p>
 						{{end}}
-						<div class="connectors__partners__partner__wrapper {{ if eq .Params.ready false }}not-ready{{ end }}">
+						<div class="connectors__partners__partner__wrapper {{ if eq .Params.new true }}new{{end}} {{ if eq .Params.ready false }}not-ready{{ end }}">
 							{{ if .Params.link }}<a class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
 								<div class="connectors__partners__partner__header">
 									<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">

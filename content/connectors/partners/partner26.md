@@ -6,6 +6,6 @@ updated: 3/19/20
 new: false
 img: "/img/partners/fluree.svg"
 class: "partner"
-categories: "App Connector"
-ready: true
+categories: "Application Connector"
+ready: false
 ---
