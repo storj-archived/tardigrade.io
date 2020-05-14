@@ -8,4 +8,5 @@ img: "/img/partners/transfer-sh.svg"
 class: "partner"
 categories: "Application Connector"
 link: "http://transfer.sh/"
+weight: 100
 ---
