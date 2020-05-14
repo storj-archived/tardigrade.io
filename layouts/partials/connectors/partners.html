@@ -16,6 +16,7 @@
 					<h4 class="connectors__partners__title">Featured</h4>
 					{{ range (.Paginator 1).Pages }}
 					<div class="col-12">
+						{{ if .Params.link }}<a class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
 						<div class="connectors__partners__partner__featured">
 							<div class="connectors__partners__partner__featured__header">
 								<img class="img-fluid connectors__partners__partner__featured__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
@@ -35,6 +36,7 @@
 								{{ .Params.categories }}
 							</div>
 						</div>
+						{{ if .Params.link }} </a> {{ end }}
 					</div>
 					{{end}}
 				</div>

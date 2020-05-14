@@ -9,5 +9,5 @@ img: "/img/partners/swift.svg"
 class: "partner"
 categories: "Bindings"
 ready: true
-link: "https://github.com/utropicmedia/storj-swift"
+link: "https://github.com/storj/uplink-swift"
 ---
