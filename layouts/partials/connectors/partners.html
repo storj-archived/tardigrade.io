@@ -14,8 +14,7 @@
 			<div class="col-md-12 col-md-12 col-lg-8 ">
 				<div class="featured">
 					<h4 class="connectors__partners__title">Featured</h4>
-					{{ range (.Paginator 1).Pages }}
-					<div class="col-12">
+					{{ range first 1 (where (.Site.Pages.ByParam "ready").Reverse.ByPublishDate ".Params.class" "partner") }}					<div class="col-12">
 						{{ if .Params.link }}<a class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
 						<div class="connectors__partners__partner__featured">
 							<div class="connectors__partners__partner__featured__header">
