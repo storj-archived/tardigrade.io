@@ -180,44 +180,45 @@ lastUpdated: "March 19, 2020"
 	<ol type="a">
 		<li><p>&nbsp;&nbsp;<u>Fees</u>. You will pay the Fees and any other amounts due as you are otherwise notified via the Storage Services of the fees applicable to use of the Storage Platform ("Fees"). All Fees are exclusive of any applicable taxes, which are your sole responsibility. We will provide notice at least thirty (30) days in advance of any increase to the Fees. The Fees are as follows:</p></li>
 	</ol>
-</ol>
+	
+	<br>
 
-<table class="table table-bordered">
-	<tr>
-		<th>Category</th>
-		<th>Measurement</th>
-		<th>Unit</th>
-		<th>Per Billing Cycle Unit</th>
-		<th>Price</th>
-		<th>Description</th>
-	</tr>
-  <tr>
-		<td>Object</td>
-		<td>Bytes</td>
-		<td>GB Hour</td>
-		<td>GB Month</td>
-		<td>$0.010 per GB Month</td>
-		<td>Storage is calculated based on bytes uploaded, including any encryption-based overhead</td>
-  </tr>
-  <tr>
-    <td>Object</td>
-    <td>Count</td>
-    <td>GB</td>
-		<td>Total Volume</td>
-		<td>$0.0000022 per object</td>
-		<td>Each file uploaded includes a fee associated with metadata overhead</td>
-	</tr>
-	<tr>
-    <td>Egress Bandwidth</td>
-    <td>Bytes</td>
-    <td>GB</td>
-		<td>Total Volume</td>
-		<td>$0.045 per GB</td>
-		<td>Bandwidth related to object downloads calculated on bytes downloaded including long tail elimination-related bandwidth</td>
-	</tr>
-</table>
-<br>
-<ol type="a">
+	<table class="table table-bordered">
+		<tr>
+			<th>Category</th>
+			<th>Measurement</th>
+			<th>Unit</th>
+			<th>Per Billing Cycle Unit</th>
+			<th>Price</th>
+			<th>Description</th>
+		</tr>
+	  <tr>
+			<td>Object</td>
+			<td>Bytes</td>
+			<td>GB Hour</td>
+			<td>GB Month</td>
+			<td>$0.010 per GB Month</td>
+			<td>Storage is calculated based on bytes uploaded, including any encryption-based overhead</td>
+	  </tr>
+	  <tr>
+	    <td>Object</td>
+	    <td>Count</td>
+	    <td>GB</td>
+			<td>Total Volume</td>
+			<td>$0.0000022 per object</td>
+			<td>Each file uploaded includes a fee associated with metadata overhead</td>
+		</tr>
+		<tr>
+	    <td>Egress Bandwidth</td>
+	    <td>Bytes</td>
+	    <td>GB</td>
+			<td>Total Volume</td>
+			<td>$0.045 per GB</td>
+			<td>Bandwidth related to object downloads calculated on bytes downloaded including long tail elimination-related bandwidth</td>
+		</tr>
+	</table>
+	<br>
+
 	<li><p>&nbsp;&nbsp;<u>Payment</u>. Except where otherwise indicated via the Storage Services we will charge all Fees to a payment method designated by you from the available options you have via the Storage Services (the “<b>Payment Method</b>”).  You represent and warrant that you are authorized to use the Payment Method and authorize us to charge all amounts due hereunder to the Payment Method.  If your Payment Method cannot be verified, is invalid, or is not otherwise acceptable, your right to use the Storage Services may be suspended and/or terminated automatically.  Fees will be charged on a monthly basis based on your prior month’s usage. You can avoid incurring future Fees at any time by discontinuing your use of the Storage Services to store your Storage Materials.</p></li>
 	<br>
 	<li><p>&nbsp;&nbsp;<u>Late Fees</u>. Except as prohibited by law, we may assess a late charge if you do not pay Fees when due which you will pay at the lesser of 1.5% of the unpaid amount per month or the maximum rate permitted by law along with our costs of collection including but not limited to reasonable attorneys' fees and other legal fees and costs. In addition, we may suspend and/or terminate your access to the Storage Services immediately without notice if you fail to pay Fees on time.</p></li>
