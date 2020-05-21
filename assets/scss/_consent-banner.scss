@@ -29,8 +29,10 @@
         }
     }
 
+    &_close {
+        font-weight: bold;
+    }
     &_close:hover {
-        font-size: 16px;
         cursor: pointer;
     }
 }
