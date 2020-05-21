@@ -183,13 +183,21 @@ lastUpdated: "March 19, 2020"
 </ol>
 
 <table>
+	<tr>
+		<th>Category</th>
+		<th>Measurement</th>
+		<th>Unit</th>
+		<th>Per Billing Cycle Unit</th>
+		<th>Price</th>
+		<th>Description</th>
+	</tr>
   <tr>
-		<th>Object</th>
-		<th>Bytes</th>
-		<th>GB Hour</th>
-		<th>GB Month</th>
-		<th>$0.010 per GB Month</th>
-		<th>Storage is calculated based on bytes uploaded, including any encryption-based overhead</th>
+		<td>Object</td>
+		<td>Bytes</td>
+		<td>GB Hour</td>
+		<td>GB Month</td>
+		<td>$0.010 per GB Month</td>
+		<td>Storage is calculated based on bytes uploaded, including any encryption-based overhead</td>
   </tr>
   <tr>
     <td>Object</td>
