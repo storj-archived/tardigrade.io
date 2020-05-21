@@ -187,7 +187,7 @@ lastUpdated: "March 19, 2020"
 		<th>Object</th>
 		<th>Bytes</th>
 		<th>GB Hour</th>
-		<th>GM Month</th>
+		<th>GB Month</th>
 		<th>$0.010 per GB Month</th>
 		<th>Storage is calculated based on bytes uploaded, including any encryption-based overhead</th>
   </tr>
