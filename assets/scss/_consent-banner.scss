@@ -9,7 +9,7 @@
 		display: flex;
     &_text {
         color: $color--white;
-        margin-top: 25px;
+        margin-top: 23px;
         font-size: 12px;
         line-height: 14px;
     }
@@ -29,8 +29,10 @@
         }
     }
 
+    &_close {
+        font-weight: bold;
+    }
     &_close:hover {
-        font-size: 16px;
         cursor: pointer;
     }
 }
