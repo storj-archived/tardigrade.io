@@ -182,7 +182,7 @@ lastUpdated: "March 19, 2020"
 	</ol>
 </ol>
 
-<table>
+<table class="table table-bordered">
 	<tr>
 		<th>Category</th>
 		<th>Measurement</th>
@@ -279,7 +279,7 @@ lastUpdated: "March 19, 2020"
 
 			<li><p>&nbsp;&nbsp;<b>Errors</b>. This Section 2.b applies only to Errors.  Response Times and Resolution Targets are set forth in the Severity Level Table below.  Response Time will be measured from the time Company receives a Support Request until Company has responded to that Support Request.  Resolution Target will be measured from the time Company receives a Support Request until Company has Resolved that Support Request. “Resolve”, “Resolved”, “Resolution” and correlative capitalized terms mean, with respect to any particular Support Request, that Company has corrected the Error, whether by a work-around or any other reasonable means, that prompted that Support Request.  Company shall endeavor to respond to and Resolve all Support Requests within the following Response Times and Resolution Targets based on Company's designation of the severity of the associated Error:</p></li>
 			<br>
-			<table>
+			<table class="table table-bordered">
 				<tr>
 					<th>Priorty Level of Error</th>
 					<th>Definition</th>
