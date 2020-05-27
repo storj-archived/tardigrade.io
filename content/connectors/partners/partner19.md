@@ -9,4 +9,5 @@ class: "partner"
 categories: "Application Connector"
 ready: true
 link: "https://github.com/storj/filezilla"
+community: true
 ---

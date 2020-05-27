@@ -9,4 +9,5 @@ class: "partner"
 categories: "Application Connector"
 link: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
 weight: 97
+community: true
 ---

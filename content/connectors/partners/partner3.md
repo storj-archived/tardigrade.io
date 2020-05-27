@@ -7,4 +7,5 @@ date: '2020-10-18T12:46:02-06:00'
 new: false
 img: "/img/partners/deloitte.svg"
 ready: false
+community: false
 ---

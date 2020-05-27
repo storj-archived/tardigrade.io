@@ -6,4 +6,5 @@ updated: 3/19/20
 new: false
 img: "/img/partners/transfer-sh.svg"
 link: "http://transfer.sh/"
+community: false
 ---

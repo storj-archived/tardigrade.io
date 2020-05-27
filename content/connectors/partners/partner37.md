@@ -9,4 +9,5 @@ class: "partner"
 categories: "Developer Tools"
 weight: 98
 link: "https://documentation.tardigrade.io/how-tos/backup-with-restic"
+community: false
 ---

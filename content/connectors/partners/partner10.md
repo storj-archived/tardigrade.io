@@ -10,4 +10,5 @@ class: "partner"
 categories: "Bindings"
 ready: true
 link: "https://pypi.org/project/storjPython/"
+community: true
 ---

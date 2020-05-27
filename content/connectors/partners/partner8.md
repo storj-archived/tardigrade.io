@@ -7,4 +7,5 @@ updated: 3/19/20
 new: false
 img: "/img/partners/terminal-io.svg"
 ready: true
+community: false
 ---

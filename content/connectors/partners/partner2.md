@@ -8,4 +8,5 @@ img: "/img/partners/minio.svg"
 class: "partner"
 categories: "Application Connector"
 ready: false
+community: false
 ---

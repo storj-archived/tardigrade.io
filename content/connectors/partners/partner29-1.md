@@ -9,4 +9,5 @@ class: "partner"
 categories: "Developer Tools"
 ready: true
 link: "https://documentation.tardigrade.io/api-reference/s3-gateway"
+community: false
 ---

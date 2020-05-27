@@ -6,4 +6,5 @@ updated: 3/19/20
 new: false
 img: "/img/partners/cpanel.svg"
 ready: false
+community: false
 ---

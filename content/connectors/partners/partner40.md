@@ -8,4 +8,5 @@ img: "/img/partners/tardigrade-drive.svg"
 class: "partner"
 categories: "Reference Implementations"
 ready: false
+community: false
 ---
