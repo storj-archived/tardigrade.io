@@ -71,6 +71,11 @@
 								<div class="connectors__partners__partner__category">
 									{{ .Params.categories }}
 								</div>
+								{{ if eq .Params.community true }}
+									<div class="connectors__partners__partner__community">
+										Community Sourced
+									</div>
+								{{ end }}
 								{{ if .Params.link }} </a> {{ end }}
 						</div>
 					</div>
