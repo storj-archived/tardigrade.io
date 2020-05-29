@@ -9,4 +9,5 @@ img: "/img/partners/mobile-app.svg"
 class: "partner"
 categories: "Reference Implementations"
 ready: false
+community: false
 ---

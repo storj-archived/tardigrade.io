@@ -9,4 +9,5 @@ class: "partner"
 categories: "Application Connector"
 ready: true
 link: "https://documentation.tardigrade.io/how-tos/backup-on-qnap"
+community: false
 ---

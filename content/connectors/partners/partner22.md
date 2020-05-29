@@ -8,4 +8,5 @@ img: "/img/partners/free-nas.svg"
 class: "partner"
 categories: "Storage Node"
 ready: false
+community: false
 ---

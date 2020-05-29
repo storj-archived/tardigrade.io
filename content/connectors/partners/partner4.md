@@ -9,4 +9,5 @@ class: "partner"
 categories: "Application Connector"
 ready: false
 link: "https://github.com/storj/mongodb-tardigrade-backup"
+community: true
 ---

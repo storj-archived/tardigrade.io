@@ -355,6 +355,17 @@
 			margin-left: 20px;
 			margin-top: 20px;
 		}
+		&__community {
+			font-family: $secondary-font;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 20px;
+			color: #adb6c0;
+			float: right;
+			position: relative;
+			bottom: 20px;
+			right: 14px;
+		}
 	}
 	&__partner__featured {
 		display: block;

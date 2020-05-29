@@ -9,4 +9,5 @@ class: "partner"
 categories: "Storage Node"
 weight: 97
 link: "https://documentation.storj.io/setup/cli/dashboard"
+community: false
 ---

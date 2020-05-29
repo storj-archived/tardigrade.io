@@ -8,4 +8,5 @@ img: "/img/partners/western-digital.svg"
 class: "partner"
 categories: "Storage Node"
 ready: false
+community: false
 ---
