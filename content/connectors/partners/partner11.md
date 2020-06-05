@@ -8,6 +8,6 @@ img: "/img/partners/nodejs.svg"
 class: "partner"
 categories: "Bindings"
 ready: true
-link: "https://github.com/storj/uplink-nodejs"
+link: "https://github.com/utropicmedia/storj-nodejs"
 community: true
 ---

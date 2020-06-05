@@ -9,6 +9,6 @@ img: "/img/partners/python.svg"
 class: "partner"
 categories: "Bindings"
 ready: true
-link: "https://pypi.org/project/storjPython/"
+link: "https://github.com/storj-thirdparty/uplink-python"
 community: true
 ---
