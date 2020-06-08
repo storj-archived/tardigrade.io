@@ -8,6 +8,6 @@ img: "/img/partners/filezilla.svg"
 class: "partner"
 categories: "Application Connector"
 ready: true
-link: "https://github.com/storj/filezilla"
+link: "https://github.com/storj-thirdparty/FileZilla"
 community: true
 ---
