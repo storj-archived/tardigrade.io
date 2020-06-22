@@ -27,6 +27,10 @@
     var progressBarWrapper = document.getElementById("progress-bar-wrapper");
     var stepButtons = document.getElementById("step-buttons");
 
+		var useCaseOptions = document.getElementsByClassName('use-case');
+		var dataAmountOptions = document.getElementsByClassName('data-amount');
+		var fileSizeOptions = document.getElementsByClassName('file-size');
+		var perMonthOptions = document.getElementsByClassName('per-month');
 
     var index = 0; // to be increased an decreased depending on button clicked
     var progressBarValue = 8.333; // 100 divided by the 12 steps
@@ -43,6 +47,27 @@
       }
     }
 
+		// if vale is input or selected on step
+		function successfulClick() {
+			parent[index].setAttribute("style", "display:none;");
+			if(backButton) {
+				backButton.setAttribute("style", "display:inline-block;");
+			}
+			if(progressBar) {
+				progressBar.innerHTML = index + 2
+				progressBarValue = progressBarValue + 8.333;
+				progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+			}
+			index = index + 1
+			parent[index].setAttribute("style", "display:block;");
+			if(parent[index].classList.contains('partner-form-per-month')) {
+				nextButton.setAttribute("style", "display:none;");
+				submitButton.setAttribute("style", "display:inline-block;");
+			}
+			errElm[index].setAttribute("style", "display:none");
+
+		}
+
     nextButton.onclick = function (event) {
       // parent[index] will always be current step
       if(parent[index] && errElm && errElm[index]) {
@@ -54,23 +79,17 @@
           // if email input does not include ampersand
           if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
             errElm[index].setAttribute("style", "display:block;");
-          } else {
-            // next button successful click logic
-            parent[index].setAttribute("style", "display:none;");
-            if(backButton) {
-              backButton.setAttribute("style", "display:inline-block;");
-            }
-            if(progressBar) {
-              progressBar.innerHTML = index + 2
-              progressBarValue = progressBarValue + 8.333;
-              progressBar.setAttribute("style", `width: ${progressBarValue}%`);
-            }
-            index = index + 1
-            parent[index].setAttribute("style", "display:block;");
-            if(parent[index].classList.contains('partner-form-per-month')) {
-              nextButton.setAttribute("style", "display:none;");
-              submitButton.setAttribute("style", "display:inline-block;");
-            }
+          } else if(parent[index].classList.contains("partner-form-use-case")) {
+						var selected = false;
+						for (var i = 0, length = useCaseOptions.length; i < length; i++) {
+		          if (useCaseOptions[i].selected) {
+								selected = true
+								successfulClick()
+		          }
+		        }
+						!selected && errElm[index].setAttribute("style", "display:block;");
+					} else {
+            successfulClick()
           }
         }
       }
@@ -88,7 +107,6 @@
         el.hasAttribute("selected") ? el.removeAttribute("selected") : el.setAttribute("selected", "")
       }
     }
-
 
     backButton.onclick = function (event) {
       // no back button on first step
@@ -112,8 +130,7 @@
         partner_form[userInput[i].name] = userInput[i].value
       }
 
-      var useCaseOptions = document.getElementsByClassName('use-case');
-
+			// handle step with multiple choice
       if(useCaseOptions) {
         partner_form.use_case = [];
         for (var i = 0, length = useCaseOptions.length; i < length; i++) {
@@ -123,42 +140,27 @@
         }
       }
 
-      var dataAmountOptions = document.getElementsByClassName('data-amount');
+			// handle steps with multiple options, one choice
+			function handleMultipleOptions(element, destination){
+				if(element) {
+					for (var i = 0, length = element.length; i < length; i++) {
+	          if (element[i].selected) {
+	             partner_form[destination] = element[i].value;
+	             break;
+	          }
+	        }
+				}
+			}
 
-      if(dataAmountOptions) {
-        for (var i = 0, length = dataAmountOptions.length; i < length; i++) {
-          if (dataAmountOptions[i].selected) {
-             partner_form.data_amount = dataAmountOptions[i].value;
-             break;
-          }
-        }
-      }
+			handleMultipleOptions(dataAmountOptions, "data_amount")
 
-      var fileSizeOptions = document.getElementsByClassName('file-size');
+			handleMultipleOptions(fileSizeOptions, "file_sizes")
 
-      if(fileSizeOptions) {
-        for (var i = 0, length = fileSizeOptions.length; i < length; i++) {
-          if (fileSizeOptions[i].selected) {
-           partner_form.file_sizes = fileSizeOptions[i].value;
-           break;
-          }
-        }
-      }
+			handleMultipleOptions(perMonthOptions, "download_times_per_month")
 
-      var perMonthOptions = document.getElementsByClassName('per-month');
-
-      if(perMonthOptions) {
-        for (var i = 0, length = perMonthOptions.length; i < length; i++) {
-          if (perMonthOptions[i].selected) {
-             partner_form.download_times_per_month = perMonthOptions[i].value;
-             break;
-           }
-        }
-      }
 
       // timestamps with timezone
       partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
-
 
       analytics.identify(partner_form.email,
         partner_form,
