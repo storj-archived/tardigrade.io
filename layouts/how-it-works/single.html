@@ -3,28 +3,30 @@
 {{partial "head" .}}
 </head>
 
-<body class="page">
+<body class="page hiw-page">
     {{ partial "banner" .}}
     {{partial "partner/headline" .}}
-    <div class="partner__single-partners container-fluid">
-        <div class="row d-flex justify-content-center">
-            {{partial "partner/partners" .}}
-        </div>
-    </div>
+		<div class="hiw-page__section">
+				{{partial "how-it-works/encLocally" .}}
+		</div>
 
-		<div class="partner__single-benefits">
+		<div class="hiw-page__section">
 				{{partial "how-it-works/encFiles" .}}
 		</div>
 
-    <div class="partner__single-benefits">
+		<div class="hiw-page__section">
+				{{partial "how-it-works/filePieces" .}}
+		</div>
+
+    <div class="hiw-page__section">
         {{partial "how-it-works/retrieve" .}}
     </div>
 
-		<div class="partner__single-virtuous-cycle">
+		<div class="hiw-page__section">
         {{partial "how-it-works/reinventing" .}}
     </div>
 
-    <div class="partner__single-virtuous-cycle">
+    <div class="hiw-page__section">
         {{partial "how-it-works/experience" .}}
     </div>
 

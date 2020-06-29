@@ -1,13 +1,13 @@
 {{ with .Site.GetPage "experience" }}
-<div class="partner__virtuous-cycle container-fluid">
-    <div class="partner__virtuous-cycle-wrapper row d-flex flex-column justify-content-center">
+<div class="experience container-fluid">
+    <div class="experience__wrapper row d-flex flex-column justify-content-center">
         <div class="d-flex flex-column justify-content-center align-items-center text-center p-5">
-            <h4>
+            <h4 class="hiw-header">
 							{{ replace .Params.header "\n" "<br/>" | safeHTML}}
             </h4>
-            <div class="pt-5 clear">
-                <a href="{{ .Params.ctaLink }}">
-                    <button class="partner__virtuous-cycle-btn btn-signup font-weight-bold">
+            <div class="experience__cta-wrapper">
+                <a class="experience__cta-link" href="{{ .Params.ctaLink }}">
+                    <button class="experience__cta btn-signup font-weight-bold">
                         {{ .Params.cta }}
                     </button>
                 </a>

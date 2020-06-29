@@ -1,18 +1,14 @@
 {{ with .Site.GetPage "filePieces" }}
-
-<div class="use-case">
-
+<div class="file-pieces">
   <div class="container">
-
     <div class="row mt-5">
-      <div class="col-sm-6 col-md-6 col-lg-6  use-case__list">
-				<h2 class="mt-5 use-case__top-heading">
+      <div class="file-pieces__text-wrapper col-sm-6 col-md-6 col-lg-6">
+				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>
 				<div class="spacer30"></div>
-				<p>{{ .Params.text }}</p>
-
-				<div>
+				<p class="hiw-text">{{ .Params.text }}</p>
+				<div class="hiw-dropdown">
 					<div class="dropdown">
 					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    What is nodes goes offline?
@@ -36,9 +32,8 @@
 					</div>
 				</div>
       </div>
-	    <div class="col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 large-content">
-				<img alt="Retrieve Image" src="{{ .Params.img }}" />
-
+	    <div class="file-pieces__image-wrapper col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0">
+				<img class="file-pieces__image" alt="Retrieve Image" src="{{ .Params.img }}" />
 		  </div>
     </div>
   </div>

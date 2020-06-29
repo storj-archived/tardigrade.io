@@ -1,22 +1,18 @@
 {{ with .Site.GetPage "reinventing" }}
-
-<div class="use-case">
-
+<div class="reinventing">
   <div class="container">
-
-    <div class="row mt-5">
-      <div class="col-sm-6 col-md-6 col-lg-6  use-case__list">
-				<img alt="Storj Network Diagram" src="{{ .Params.img }}" />
+    <div class="row">
+      <div class="reinventing__image-wrapper col-sm-6 col-md-6 col-lg-6">
+				<img class="reinventing__image" alt="Storj Network Diagram" src="{{ .Params.img }}" />
       </div>
-	    <div class="col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 large-content">
-				<h2 class="mt-5 use-case__top-heading">
+	    <div class="reinventing__text-section col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 large-content">
+				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>
 				<div class="spacer30"></div>
-				<p>{{ .Params.text }}</p>
+				<p class="hiw-text">{{ .Params.text }}</p>
 		  </div>
     </div>
-
   </div>
 </div>
 {{ end }}
