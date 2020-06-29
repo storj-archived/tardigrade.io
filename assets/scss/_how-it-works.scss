@@ -1,0 +1,16 @@
+.hiw-page {
+	.hiw-page__section {
+		.hiw-header {
+			font-family: $primary-font;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 39px;
+		}
+		.hiw-text {
+			font-family: $secondary-font;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 23px;
+		}
+	}
+}
