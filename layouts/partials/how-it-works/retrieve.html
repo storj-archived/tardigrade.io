@@ -1,0 +1,45 @@
+{{ with .Site.GetPage "retrieve" }}
+
+<div class="use-case">
+
+  <div class="container">
+
+    <div class="row mt-5">
+      <div class="col-sm-6 col-md-6 col-lg-6  use-case__list">
+				<img alt="Retrieve Image" src="{{ .Params.img }}" />
+      </div>
+	    <div class="col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 large-content">
+				<h2 class="mt-5 use-case__top-heading">
+				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
+				</h2>
+				<div class="spacer30"></div>
+				<p>{{ .Params.text }}</p>
+
+				<div>
+					<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    What is nodes goes offline?
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					  </div>
+					</div>
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							How many pieces to retrieve a file?
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Is this fast?
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						</div>
+					</div>
+				</div>
+		  </div>
+    </div>
+  </div>
+</div>
+{{ end }}
