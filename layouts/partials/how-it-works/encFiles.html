@@ -1,21 +1,20 @@
 {{ with .Site.GetPage "encFiles" }}
-
-<div class="use-case">
-
+<div class="encFiles">
+	<div class="spacer125"></div>
   <div class="container">
-
-    <div class="row mt-5">
-      <div class="col-sm-6 col-md-6 col-lg-6  use-case__list">
-				<img alt="Retrieve Image" src="{{ .Params.img }}" />
+    <div class="row">
+      <div class="encFiles__image-wrapper col-sm-6 col-md-6 col-lg-6">
+				<div class="spacer125"></div>
+				<img class="encFiles__image" alt="Retrieve Image" src="{{ .Params.img }}" />
       </div>
-	    <div class="col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0 large-content">
-				<h2 class="mt-5 use-case__top-heading">
+	    <div class="encFiles__text-section col-sm-5 col-md-5 col-lg-5 ">
+				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>
-				<div class="spacer30"></div>
-				<p>{{ .Params.text }}</p>
-
-				<div>
+				<div class="spacer20"></div>
+				<p class="hiw-text">{{ .Params.text }}</p>
+				<div class="spacer60"></div>
+				<div class="hiw-dropdown">
 					<div class="dropdown">
 					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    What is nodes goes offline?
@@ -41,5 +40,6 @@
 		  </div>
     </div>
   </div>
+	<div class="spacer125"></div>
 </div>
 {{ end }}

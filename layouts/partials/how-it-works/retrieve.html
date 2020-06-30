@@ -1,16 +1,19 @@
 {{ with .Site.GetPage "retrieve" }}
 <div class="retrieve">
+	<div class="spacer125"></div>
   <div class="container">
     <div class="row">
       <div class="retrieve__image-wrapper col-sm-6 col-md-6 col-lg-6">
+				<div class="spacer60"></div>
 				<img class="retrieve__image" alt="Retrieve Image" src="{{ .Params.img }}" />
       </div>
 	    <div class="retrieve__text-wrapper col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0">
 				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>
-				<div class="spacer30"></div>
+				<div class="spacer20"></div>
 				<p class="hiw-text">{{ .Params.text }}</p>
+				<div class="spacer60"></div>
 				<div class="hiw-dropdown">
 					<div class="dropdown">
 					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,5 +40,6 @@
 		  </div>
     </div>
   </div>
+	<div class="spacer125"></div>
 </div>
 {{ end }}
