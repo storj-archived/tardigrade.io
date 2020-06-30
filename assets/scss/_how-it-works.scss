@@ -53,4 +53,32 @@
 	.encLocally {
 		background: $color--grey-bg;
 	}
+	.why-better {
+		&__table {
+			width: 100%;
+			&__heading {
+			}
+			&__heading.traditional {
+				color: #7E90A5;
+			}
+			&__heading.decentralized {
+				color: $color--blue-light;
+			}
+			&__title, &__heading {
+				font-family: $primary-font;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 23px;
+			}
+			&__title {
+				padding: 15px;
+			}
+			&__icon {
+				width: 17px;
+				text-align: center;
+				position: relative;
+				left: 15%;
+			}
+		}
+	}
 }
