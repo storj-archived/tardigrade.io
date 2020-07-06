@@ -35,7 +35,7 @@
     var index = 0; // to be increased an decreased depending on button clicked
     var progressBarValue = 8.333; // 100 divided by the 12 steps
 
-    var partner_form = {partner_form: true}
+    var partner_form = {partner_form: true};
 
     if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
       // remove beginning message and start process
@@ -47,7 +47,7 @@
       }
     }
 
-		// if vale is input or selected on step
+		// if value is input or selected on step
 		function successfulClick() {
 			parent[index].setAttribute("style", "display:none;");
 			if(backButton) {
@@ -65,7 +65,6 @@
 				submitButton.setAttribute("style", "display:inline-block;");
 			}
 			errElm[index].setAttribute("style", "display:none");
-
 		}
 
     nextButton.onclick = function (event) {
@@ -80,16 +79,16 @@
           if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
             errElm[index].setAttribute("style", "display:block;");
           } else if(parent[index].classList.contains("partner-form-use-case")) {
-						var selected = false;
-						for (var i = 0, length = useCaseOptions.length; i < length; i++) {
+						let selected = false;
+						for (let i = 0, length = useCaseOptions.length; i < length; i++) {
 		          if (useCaseOptions[i].selected) {
-								selected = true
-								successfulClick()
+								selected = true;
+								successfulClick();
 		          }
 		        }
 						!selected && errElm[index].setAttribute("style", "display:block;");
 					} else {
-            successfulClick()
+            successfulClick();
           }
         }
       }
@@ -115,7 +114,7 @@
       }
       parent[index].setAttribute("style", "display:none;");
       if(progressBar) {
-        progressBar.innerHTML = index
+        progressBar.innerHTML = index;
         progressBarValue = progressBarValue - 8.333;
         progressBar.setAttribute("style", `width: ${progressBarValue}%`);
       }
@@ -127,7 +126,7 @@
       var userInput = document.querySelectorAll(".user-input") // all non-selecter user inputs
 
       for (i = 0; i < userInput.length; i++) {
-        partner_form[userInput[i].name] = userInput[i].value
+        partner_form[userInput[i].name] = userInput[i].value;
       }
 
 			// handle step with multiple choice
@@ -142,25 +141,24 @@
 
 			// handle steps with multiple options, one choice
 			function handleMultipleOptions(element, destination){
-				if(element) {
-					for (var i = 0, length = element.length; i < length; i++) {
-	          if (element[i].selected) {
-	             partner_form[destination] = element[i].value;
-	             break;
-	          }
-	        }
-				}
+				if(!element) return;
+				for (var i = 0, length = element.length; i < length; i++) {
+          if (element[i].selected) {
+             partner_form[destination] = element[i].value;
+             break;
+          }
+        }
 			}
 
-			handleMultipleOptions(dataAmountOptions, "data_amount")
+			handleMultipleOptions(dataAmountOptions, "data_amount");
 
-			handleMultipleOptions(fileSizeOptions, "file_sizes")
+			handleMultipleOptions(fileSizeOptions, "file_sizes");
 
-			handleMultipleOptions(perMonthOptions, "download_times_per_month")
+			handleMultipleOptions(perMonthOptions, "download_times_per_month");
 
 
       // timestamps with timezone
-      partner_form.timestamp = Math.floor((new Date()).getTime() / 1000)
+      partner_form.timestamp = Math.floor((new Date()).getTime() / 1000);
 
       analytics.identify(partner_form.email,
         partner_form,
