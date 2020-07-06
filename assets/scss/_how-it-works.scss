@@ -29,6 +29,12 @@
 			}
 		}
 	}
+	.hiw-hero {
+		background-image: url("/img/hiw-hero-bg.png");
+		color: #fff;
+		height: 840px;
+		background-size: cover;
+	}
 	.experience {
 		background: $color--grey-bg;
 		.hiw-header {

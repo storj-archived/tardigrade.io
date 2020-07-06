@@ -1,0 +1,20 @@
+{{ with .Site.GetPage "hiwHero" }}
+<div class="hiw-hero container-fluid">
+	<div class="container">
+		<div class="spacer20"></div>
+		{{ partial "nav" .}}
+		<div class="spacer125"></div>
+    <div class="hiw-hero__wrapper ow d-flex flex-column justify-content-center">
+			<div class="d-flex flex-column justify-content-center align-items-center text-center p-5">
+	      <h4 class="hiw-header">
+					{{ replace .Params.header "\n" "<br/>" | safeHTML}}
+	      </h4>
+				<div class="spacer20"></div>
+	      <div class="hiw-hero__text-wrapper">
+	      	<p>	{{ .Params.text }} </p>
+	      </div>
+	    </div>
+		</div>
+	</div>
+</div>
+{{end}}
