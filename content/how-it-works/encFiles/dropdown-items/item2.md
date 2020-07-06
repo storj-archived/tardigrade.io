@@ -1,6 +1,6 @@
 ---
-button: "How many pieces to retrieve a file?"
-text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+button: "Why split the files?"
+text: "Splitting files yields tremendous security, performance, and durability advantages. Our decentralized architecture offers improved out-of-the-box security and privacy for our clients. It also enables better performance and reliability compared to centralized/legacy/traditional cloud storage providers."
 id: "encFilesTwo"
 class: "enc-files"
 ---

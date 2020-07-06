@@ -1,6 +1,6 @@
 ---
-button: "What kind of encryption is used?"
-text: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+button: "How many pieces?"
+text: "A typical file gets split into 80 pieces, of which any 30 can be accessed to reconstitute the file. Each of the 80 pieces is on a different drive, with different operators, power supplies, networks, geographies, etc."
 id: "encFilesOne"
 class: "enc-files"
 ---
