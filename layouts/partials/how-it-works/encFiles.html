@@ -15,71 +15,56 @@
 				<p class="hiw-text">{{ .Params.text }}</p>
 				<div class="spacer60"></div>
 				<div class="hiw-dropdown">
-					<div class="dropdown">
-						<button
-							data-toggle="collapse"
-							href="#encFilesOne"
-							role="button"
-							aria-expanded="false"
-							aria-controls="encFilesOne"
-							class="btn btn-secondary"
-							type="button"
-							id="dropdownMenuButton"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-					    What is nodes goes offline?
-					  </button>
-					  <div class="collapse" id="encFilesOne">
-						  <div class="card card-body">
-						    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-						  </div>
+					{{range where .Site.Pages ".Params.class" "enc-files"}}
+						<div class="dropdown">
+							<button
+								data-toggle="collapse"
+								href="#{{.Params.id}}"
+								role="button"
+								aria-expanded="false"
+								aria-controls="{{.Params.id}}"
+								class="btn btn-secondary"
+								type="button"
+								id="dropdownMenuButton"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								{{.Params.button}}
+							</button>
+							<img
+								class="arrow"
+								alt="dropdown arrow"
+								src="/img/dropdown-arrow.svg"
+								data-toggle="collapse"
+								href="#{{.Params.id}}"
+								role="button"
+								aria-expanded="false"
+								aria-controls="{{.Params.id}}"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							/>
+							<div class="collapse" id="{{.Params.id}}">
+								<img
+									class="arrow-down"
+									alt="dropdown arrow"
+									src="/img/dropdown-arrow-down.svg" 
+									data-toggle="collapse"
+									href="#{{.Params.id}}"
+									role="button"
+									aria-expanded="false"
+									aria-controls="{{.Params.id}}"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								/>
+								<div class="card card-body">
+									{{.Params.text}}
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="dropdown">
-						<button
-							data-toggle="collapse"
-							href="#encFilesTwo"
-							role="button"
-							aria-expanded="false"
-							aria-controls="encFilesTwo"
-							class="btn btn-secondary"
-							type="button"
-							id="dropdownMenuButton"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							How many pieces to retrieve a file?
-						</button>
-						<div class="collapse" id="encFilesTwo">
-						 <div class="card card-body">
-							 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-						 </div>
-					 </div>
-					</div>
-					<div class="dropdown">
-						<button
-							data-toggle="collapse"
-							href="#encFilesThree"
-							role="button"
-							aria-expanded="false"
-							aria-controls="encFilesThree"
-							class="btn btn-secondary"
-							type="button"
-							id="dropdownMenuButton"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>										Is this fast?
-						</button>
-						<div class="collapse" id="encFilesThree">
-						 <div class="card card-body">
-							 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-						 </div>
-					 </div>
-					</div>
+					{{end}}
 				</div>
 		  </div>
     </div>

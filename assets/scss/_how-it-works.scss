@@ -20,6 +20,24 @@
 			.dropdown {
 				border-bottom: 1px solid #C5CBDB;
 				margin-top: 30px;
+				position: relative;
+				.card-body {
+					border: none;
+					font-weight: 300;
+					font-family: $secondary-font;
+				}
+				.arrow {
+					position: absolute;
+					right: 30px;
+					bottom: 20px;
+					cursor: pointer;
+				}
+				.arrow-down {
+					position: absolute;
+					right: 30px;
+					top: 0;
+					cursor: pointer;
+				}
 			}
 			.btn {
 				position: relative;
