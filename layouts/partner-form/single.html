@@ -86,7 +86,9 @@
 								successfulClick();
 		          }
 		        }
-						!selected && errElm[index].setAttribute("style", "display:block;");
+						if(!selected) {
+							errElm[index].setAttribute("style", "display:block;");
+						}
 					} else {
             successfulClick();
           }
