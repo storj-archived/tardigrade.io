@@ -2,108 +2,105 @@
 /* See LICENSE for copying information. */
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .universal-login-area {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  min-height: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 90px;
+    width: 100%;
+    background-color: #203a5b;
+
+    &__sign-up {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 6px;
+      width: 195px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      line-height: 19px;
+
+      &:hover {
+        background-color: #fff;
+        color: #203a5b;
+      }
+    }
+  }
+
+  &__content-area {
+    background-color: #f5f6fa;
+    padding: 55px 20px 0 20px;
     display: flex;
     flex-direction: column;
-    font-family: 'Inter', sans-serif;
-    min-height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
 
-    &__header {
+    &__functional-area {
+      &__account {
+        margin-top: 50px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 10px 90px;
-        width: 100%;
-        background-color: #203A5B;
+        justify-content: center;
 
-        &__sign-up {
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-radius: 6px;
-            width: 195px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 14px;
-            line-height: 19px;
-
-            &:hover {
-                background-color: #fff;
-                color: #203A5B;
-            }
+        &__question {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #354049;
         }
+
+        &__link {
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          color: #2582ff;
+          margin-left: 5px;
+        }
+      }
     }
 
-    &__content-area {
-        background-color: #f5f6fa;
-        padding: 55px 20px 0 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        flex: 1 1 auto;
+    &__footer {
+      margin-top: 10px;
+      padding-bottom: 20px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
 
-        &__functional-area {
+      &__copyright {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #384b65;
+      }
 
-            &__account {
-                margin-top: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                &__question {
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: #354049;
-                }
-
-                &__link {
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: #2582FF;
-                    margin-left: 5px;
-                }
-            }
-        }
-
-        &__footer {
-            margin-top: 10px;
-            padding-bottom: 20px;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
-
-            &__copyright {
-                font-family: 'Inter', sans-serif;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 18px;
-                color: #384B65;
-            }
-
-            &__terms,
-            &__help {
-                color: #2582FF;
-                margin-left: 30px;
-            }
-        }
+      &__terms,
+      &__help {
+        color: #2582ff;
+        margin-left: 30px;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 800px) {
-
-    .universal-login-area {
-
-        &__header {
-            padding: 10px 20px;
-        }
+  .universal-login-area {
+    &__header {
+      padding: 10px 20px;
     }
+  }
 }
