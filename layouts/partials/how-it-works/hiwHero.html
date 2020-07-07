@@ -3,17 +3,24 @@
 	<div class="container">
 		<div class="spacer20"></div>
 		{{ partial "nav" .}}
-		<div class="spacer125"></div>
+		<div class="spacer90"></div>
     <div class="hiw-hero__wrapper ow d-flex flex-column justify-content-center">
-			<div class="d-flex flex-column justify-content-center align-items-center text-center p-5">
+			<a class="hiw-hero__video-link" href="#">
+				<img class="hiw-hero__video-icon" src="/img/video-icon.png" alt="video play button" />
+			</a>
+			<div class="hiw-hero__content-wrapper d-flex flex-column justify-content-center align-items-center text-center p-5">
 	      <h4 class="hiw-header">
 					{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 	      </h4>
-				<div class="spacer20"></div>
 	      <div class="hiw-hero__text-wrapper">
 	      	<p>	{{ .Params.text }} </p>
 	      </div>
 	    </div>
+			<div class="spacer90 spacer"></div>
+			<div class="hiw-hero__learn-more-wrapper">
+				<p class="hiw-hero__learn-more-text">Learn More</p>
+				<img class="hiw-hero__learn-more-icon" alt="arrow down" src="/img/arrow-down.svg" />
+			</div>
 		</div>
 	</div>
 </div>

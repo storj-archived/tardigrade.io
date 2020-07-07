@@ -3,8 +3,8 @@
 	<div class="spacer125"></div>
   <div class="container">
     <div class="row mt-5">
-      <div class="encLocally__text-wrapper col-sm-6 col-md-6 col-lg-6  use-case__list">
-				<h2 class="hiw-header use-case__top-heading">
+      <div class="encLocally__text-wrapper col-sm-12 col-md-12 col-lg-6">
+				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>
 				<div class="spacer20"></div>
@@ -63,7 +63,7 @@
 					{{end}}
 				</div>
       </div>
-	    <div class="encLocally__image-wrapper col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0">
+	    <div class="encLocally__image-wrapper col-sm-12 offset-lg-1 col-md-5 offset-md-12 col-lg-5 offset-lg-0">
 				<div class="spacer60"></div>
 				<img class="encLocally__image" alt="Retrieve Image" src="{{ .Params.img }}" />
 		  </div>

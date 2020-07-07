@@ -1,4 +1,4 @@
 ---
 header: "How Tardigrade Works"
-text: "Tardigrade is private and secure by default – and because we’re decentralized,  downtime and data breaches are a thing of the past."
+text: "Unlike traditional cloud storage, on Tardigrade, files are encrypted, split into smaller pieces, and distributed on a massive global network of decentralized nodes which is why it’s fast, reliable and insanely secure."
 ---

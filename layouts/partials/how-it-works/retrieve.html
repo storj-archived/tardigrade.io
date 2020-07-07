@@ -3,11 +3,11 @@
 	<div class="spacer125"></div>
   <div class="container">
     <div class="row">
-      <div class="retrieve__image-wrapper col-sm-6 col-md-6 col-lg-6">
+      <div class="retrieve__image-wrapper col-sm-12 col-md-12 col-lg-6">
 				<div class="spacer60"></div>
 				<img class="retrieve__image" alt="Retrieve Image" src="{{ .Params.img }}" />
       </div>
-	    <div class="retrieve__text-wrapper col-sm-5 offset-lg-1 col-md-5 offset-md-1 col-lg-5 offset-lg-0">
+	    <div class="retrieve__text-wrapper col-sm-12 offset-lg-1 col-md-12 offset-md-1 col-lg-5 offset-lg-0">
 				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>

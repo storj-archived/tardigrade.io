@@ -51,7 +51,43 @@
 		background-image: url("/img/hiw-hero-bg.png");
 		color: #fff;
 		height: 840px;
-		background-size: cover;
+		background-size: contain;
+		background-position: center;
+		@media only screen and (max-width: 1024px) {
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		&__video-link {
+			margin: 0 auto;
+		}
+		&__content-wrapper {
+			padding-top: 20px !important;
+		}
+		&__text-wrapper {
+			width: 80%;
+			margin-top: 10px;
+			@media only screen and (max-width: 1024px) {
+				width: 100%;
+			}
+		}
+		&__learn-more-wrapper {
+			margin: 0 auto;
+			text-align: center;
+		}
+		&__learn-more-text {
+			font-family: $primary-font;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 21px;
+		}
+		&__learn-more-icon {
+			margin-top: 20px;
+		}
+		.spacer {
+			@media only screen and (max-width: 560px) {
+				display: none;
+			}
+		}
 	}
 	.experience {
 		background: $color--grey-bg;
