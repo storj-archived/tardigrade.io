@@ -1,13 +1,13 @@
 {{ with .Site.GetPage "encFiles" }}
-<div class="encFiles">
+<div class="enc-files">
 	<div class="spacer125"></div>
   <div class="container">
     <div class="row">
-      <div class="encFiles__image-wrapper col-sm-12 col-md-12 col-lg-6">
+      <div class="enc-files__image-wrapper col-sm-12 col-md-12 col-lg-6">
 				<div class="spacer125"></div>
-				<img class="encFiles__image" alt="Retrieve Image" src="{{ .Params.img }}" />
+				<img class="enc-files__image" alt="Retrieve Image" src="{{ .Params.img }}" />
       </div>
-	    <div class="encFiles__text-section col-sm-12 col-md-12 col-lg-5 ">
+	    <div class="enc-files__text-section col-sm-12 col-md-12 col-lg-5 ">
 				<h2 class="hiw-header">
 				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
 				</h2>

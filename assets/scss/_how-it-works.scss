@@ -1,5 +1,8 @@
 .hiw-page {
 	.hiw-page__section {
+		@media only screen and (max-width: 1024px) {
+			text-align: center;
+		}
 		.hiw-header {
 			font-family: $primary-font;
 			font-weight: bold;
@@ -112,6 +115,19 @@
 	}
 	.encLocally {
 		background: $color--grey-bg;
+		&__image-wrapper {
+			@media only screen and (max-width: 1024px) {
+				margin: 0 auto;
+			}
+		}
+	}
+	.enc-files, .retrieve, .reinventing {
+		&__image-wrapper {
+			@media only screen and (max-width: 1024px) {
+				margin: 0 auto;
+				margin-bottom: 80px;
+			}
+		}
 	}
 	.why-better {
 		&__table {
