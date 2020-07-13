@@ -56,16 +56,47 @@
     height: 840px;
     background-size: contain;
     background-position: center;
+		padding: 0;
     @media only screen and (max-width: 1024px) {
       background-size: cover;
       background-repeat: no-repeat;
     }
-    &__video-link {
-      margin: 0 auto;
-    }
+		#blackBg {
+			// background: #00000057;
+			height: 100%;
+			width: 100%;
+			background: transparent;
+			z-index: 2;
+		}
+		&__wrapper {
+			position: relative;
+		}
+		// &__video-wrapper {
+		// 	display: none;
+		// }
+		&__video-link {
+			margin: 0 auto;
+			cursor: pointer;
+		}
     &__content-wrapper {
       padding-top: 20px !important;
     }
+		.modal-dialog {
+			width: 1100px;
+			position: relative;
+			top: 100px;
+			max-width: none;
+			@media (max-width: 1200px) {
+			   max-width: 80%;
+			}
+			@media (max-width: 578px) {
+			   margin: 0 auto;
+				 top: 120px;
+			}
+		}
+		.modal-content {
+	    height: 500px;
+		}
     &__text-wrapper {
       width: 80%;
       margin-top: 10px;
