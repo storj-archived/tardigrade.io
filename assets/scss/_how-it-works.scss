@@ -125,7 +125,7 @@
     }
   }
   .experience {
-    background: $color--grey-bg;
+		background: $color--blue-bg;
     .hiw-header {
       font-size: 24px;
     }
@@ -143,10 +143,10 @@
     }
   }
   .file-pieces {
-    background: $color--grey-bg;
+		background: $color--blue-bg;
   }
   .encLocally {
-    background: $color--grey-bg;
+    background: $color--blue-bg;
     &__image-wrapper {
       @media only screen and (max-width: 1024px) {
         margin: 0 auto;
