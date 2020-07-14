@@ -50,6 +50,19 @@
       }
     }
   }
+	.badge-primary {
+    color: #fff;
+    background-color: #2582FF;
+    border-radius: 50%;
+		border-radius: 50%;
+		width: 63px;
+		height: 63px;
+		margin-bottom: 40px;
+		font-family: $primary-font;
+		font-weight: 500;
+		font-size: 28px;
+		padding-top: 19px;
+	}
   .hiw-hero {
     background-image: url("/img/hiw-hero-bg.png");
     color: #fff;
