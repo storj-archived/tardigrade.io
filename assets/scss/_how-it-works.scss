@@ -1,8 +1,5 @@
 .hiw-page {
   .hiw-page__section {
-    @media only screen and (max-width: 1024px) {
-      text-align: center;
-    }
     .hiw-header {
       font-family: $primary-font;
       font-weight: bold;
@@ -49,6 +46,11 @@
         left: 10px;
       }
     }
+		.hiw__image-wrapper {
+			@media only screen and (max-width: 1024px) {
+	      display: none;
+	    }
+		}
   }
 	.badge-primary {
     color: #fff;
@@ -160,11 +162,6 @@
   }
   .encLocally {
     background: $color--blue-bg;
-    &__image-wrapper {
-      @media only screen and (max-width: 1024px) {
-        margin: 0 auto;
-      }
-    }
   }
   .enc-files,
   .retrieve,
@@ -173,8 +170,14 @@
       @media only screen and (max-width: 1024px) {
         margin: 0 auto;
         margin-bottom: 80px;
+				text-align: center;
       }
     }
+		.hiw-header {
+			@media only screen and (max-width: 500px) {
+				width: 70%;
+			}
+		}
   }
   .why-better {
     &__table {
