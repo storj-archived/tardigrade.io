@@ -36,6 +36,11 @@ HUGO_ENABLEGITINFO = "true"
   status = 200
   force = true
 
+[[redirects]]
+from = "/*"
+to = "/404/"
+status = 404
+
 [[headers]]
   for = "/*"
   [headers.values]
