@@ -1,0 +1,14 @@
+.single-connector {
+	&__hero {
+		&__bg {
+			background: url("/img/connector-bg.jpg");
+		}
+	}
+	&__content {
+		.column-section {
+			background: $color--grey-bg;
+			padding: 10px;
+	    margin: 20px 0;
+		}
+	}
+}

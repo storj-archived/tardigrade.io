@@ -1,0 +1,17 @@
+<div class="container-fluid single-connector__hero__container nomp">
+	{{ partial "nav" .}}
+	<div class="container-fluid inner-hero-wrapper">
+		<div class="container single-connector__hero__bg">
+			<div class="spacer20"></div>
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-lg-10 connectors__hero__content">
+					{{with .Site.GetPage "page" "connectorHero"}}
+					<img src="{{ .Params.img }}" class="single-connector__hero__name" />
+					<h1 class="single-connector__hero__name">{{ .Params.name }}</h1>
+					<p class="single-connector__hero__category">{{ .Params.categories }}</p>
+				</div>
+			</div>
+			{{end}}
+		</div>
+	</div>
+</div>
