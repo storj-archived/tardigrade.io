@@ -3,10 +3,12 @@
 <head>
 	{{ partial "head" . }}
 </head>
-<body class="covid-page">
-	<header>
-		{{ partial "filezilla/connectorHero" .}}
+<body class="single-connector">
+	<header class="single-connector__nav">
+			{{partial "secondNav" .}}
 	</header>
+	{{ partial "filezilla/connectorHero" .}}
+
 	{{ partial "filezilla/connectorContent" .}}
 	<footer>
 		{{partial "footer" . }}

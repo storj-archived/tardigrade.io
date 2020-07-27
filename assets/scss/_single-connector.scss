@@ -1,7 +1,62 @@
 .single-connector {
+	&__nav {
+		background: radial-gradient(90.29% 594.73% at 53.03% 29.19%, #0055C6 0%, #000000 100%);
+		color: #fff;
+		.second-nav.navbar .navlink {
+			color: #fff;
+		}
+		margin-bottom: 60px;
+	}
 	&__hero {
+		position: relative;
 		&__bg {
 			background: url("/img/connector-bg.jpg");
+			background-size: cover;
+			position: relative;
+			height: 177px;
+			margin-bottom: 40px;
+		}
+		&__content {
+			position: absolute;
+			color: #fff;
+			left: 40px;
+			display: flex;
+			top: 50px;
+		}
+		&__name {
+			color: #fff;
+		}
+		&__category {
+			color: #fff;
+		}
+		&__status {
+			position: absolute;
+			right: 50px;
+			top: 50px;
+			color: #fff;
+			border: 2px solid #fff;
+			border-radius: 3px;
+			padding: 2px 12px;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		&__image {
+			width: 66px;
+			height: 66px;
+		}
+		&__info-wrapper {
+			margin-left: 30px;
+		}
+		&__name {
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 40px;
+		}
+		&__category {
+			font-family: $secondary-font;
+			font-size: 18px;
+			line-height: 34px;
 		}
 	}
 	&__section-header {
@@ -28,8 +83,15 @@
 		background: $color--blue-light;
 		margin-right: 10px;
 	}
+	&__bottom-section {
+		text-align: center;
+		margin: 40px 0;
+	}
 	&__content {
 		padding-right: 0;
+		.col-md-7 {
+			padding-left: 0;
+		}
 		.column-section {
 			background: $color--grey-bg;
 			padding: 10px;
