@@ -4,6 +4,30 @@
 			background: url("/img/connector-bg.jpg");
 		}
 	}
+	&__section-header {
+		font-weight: bold;
+		font-size: 22px;
+	}
+	&__section-text {
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 200;
+		margin-bottom: 40px;
+	}
+	&__button {
+		color: $color--blue-light;
+		background: #fff;
+		border: 2px solid $color--blue-light;
+		font-weight: bold;
+		font-size: 16px;
+		border-radius: 4px;
+		padding: 10px 40px;
+	}
+	&__button.fill {
+		color: #fff;
+		background: $color--blue-light;
+		margin-right: 10px;
+	}
 	&__content {
 		padding-right: 0;
 		.column-section {
