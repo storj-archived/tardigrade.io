@@ -46,72 +46,68 @@
         left: 10px;
       }
     }
-		.hiw__image-wrapper {
-			@media only screen and (max-width: 1024px) {
-	      display: none;
-	    }
-		}
+    .hiw__image-wrapper {
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
   }
-	.badge-primary {
+  .badge-primary {
     color: #fff;
-    background-color: #2582FF;
+    background-color: #2582ff;
     border-radius: 50%;
-		border-radius: 50%;
-		width: 63px;
-		height: 63px;
-		margin-bottom: 40px;
-		font-family: $primary-font;
-		font-weight: 500;
-		font-size: 28px;
-		padding-top: 19px;
-	}
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    margin-bottom: 40px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 19px;
+  }
   .hiw-hero {
     background-image: url("/img/hiw-hero-bg.png");
     color: #fff;
     height: 840px;
     background-size: contain;
     background-position: center;
-		padding: 0;
+    padding: 0;
     @media only screen and (max-width: 1024px) {
       background-size: cover;
       background-repeat: no-repeat;
     }
-		#blackBg {
-			// background: #00000057;
-			height: 100%;
-			width: 100%;
-			background: transparent;
-			z-index: 2;
-		}
-		&__wrapper {
-			position: relative;
-		}
-		// &__video-wrapper {
-		// 	display: none;
-		// }
-		&__video-link {
-			margin: 0 auto;
-			cursor: pointer;
-		}
+    #blackBg {
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      z-index: 2;
+    }
+    &__wrapper {
+      position: relative;
+    }
+    &__video-link {
+      margin: 0 auto;
+      cursor: pointer;
+    }
     &__content-wrapper {
       padding-top: 20px !important;
     }
-		.modal-dialog {
-			width: 1100px;
-			position: relative;
-			top: 100px;
-			max-width: none;
-			@media (max-width: 1200px) {
-			   max-width: 80%;
-			}
-			@media (max-width: 578px) {
-			   margin: 0 auto;
-				 top: 120px;
-			}
-		}
-		.modal-content {
-	    height: 500px;
-		}
+    .modal-dialog {
+      width: 1100px;
+      position: relative;
+      top: 100px;
+      max-width: none;
+      @media (max-width: 1200px) {
+        max-width: 80%;
+      }
+      @media (max-width: 578px) {
+        margin: 0 auto;
+        top: 120px;
+      }
+    }
+    .modal-content {
+      height: 500px;
+    }
     &__text-wrapper {
       width: 80%;
       margin-top: 10px;
@@ -122,7 +118,7 @@
     &__learn-more-wrapper {
       margin: 0 auto;
       text-align: center;
-			color: #fff;
+      color: #fff;
     }
     &__learn-more-text {
       font-family: $primary-font;
@@ -140,7 +136,7 @@
     }
   }
   .experience {
-		background: $color--blue-bg;
+    background: $color--blue-bg;
     .hiw-header {
       font-size: 24px;
     }
@@ -158,7 +154,7 @@
     }
   }
   .file-pieces {
-		background: $color--blue-bg;
+    background: $color--blue-bg;
   }
   .enc-locally {
     background: $color--blue-bg;
@@ -170,14 +166,14 @@
       @media only screen and (max-width: 1024px) {
         margin: 0 auto;
         margin-bottom: 80px;
-				text-align: center;
+        text-align: center;
       }
     }
-		.hiw-header {
-			@media only screen and (max-width: 500px) {
-				width: 70%;
-			}
-		}
+    .hiw-header {
+      @media only screen and (max-width: 500px) {
+        width: 70%;
+      }
+    }
   }
   .why-better {
     &__table {
