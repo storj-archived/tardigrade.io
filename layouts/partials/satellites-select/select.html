@@ -147,7 +147,14 @@
             return;
         }
 
-        setProceedSource(`https:\/\/${name}.tardigrade.io/signup`);
+        let signUpURL = `https:\/\/${name}.tardigrade.io/signup`;
+        const searchParams = (new URL(document.location)).searchParams;
+        const partner = searchParams.get('partner');
+        if (partner) {
+            signUpURL = signUpURL.concat('?partner=', partner);
+        }
+
+        setProceedSource(signUpURL);
     }
 
     function setProceedSource(url) {

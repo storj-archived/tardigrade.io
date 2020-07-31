@@ -19,69 +19,61 @@
     <div style="display:none" id="partner-form-name" class="step active">
       <label aria-label="firstName" class="label">Your First Name *</label>
       <div class="spacer15"></div>
-      <input id="firstName" class="user-input required" value="" name="first_name" placeholder="first name" required="">
+      <input type="text" id="firstName" class="user-input required" value="" name="first_name" placeholder="First name" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-last-name step active">
-      <label aria-label="lastName" class="label">Your Last Name</label>
+      <label aria-label="lastName" class="label">Your Last Name *</label>
       <div class="spacer15"></div>
-      <input id="lastName" class="user-input not-required" value="" name="last_name" placeholder="last name">
+      <input type="text" id="lastName" class="user-input required" value="" name="last_name" placeholder="Last name" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-title step active">
-      <label aria-label="title" class="label">Your Title *</label>
+      <label aria-label="company" class="label">Your Title *</label>
       <div class="spacer15"></div>
-      <input id="title" class="user-input required" value="" name="title" placeholder="title" required="">
+      <input type="text" id="company" class="user-input required" value="" name="title" placeholder="Title" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-company step active">
       <label aria-label="company" class="label">Your Company *</label>
       <div class="spacer15"></div>
-      <input id="company" class="user-input required" value="" name="company" placeholder="company" required="">
+      <input type="text" id="company" class="user-input required" value="" name="company" placeholder="Company" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-company-website step active">
-      <label aria-label="companyWebsite" class="label">Your Company Website</label>
+      <label aria-label="companyWebsite" class="label">Your Company Website *</label>
       <div class="spacer15"></div>
-      <input id="companyWebsite" class="user-input not-required" value="" name="company_website"  placeholder="company website">
+      <input type="url" id="companyWebsite" class="user-input required" value="" name="company_website" placeholder="Company website" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-company-email step active">
       <label aria-label="email" class="label">Your Email *</label>
       <div class="spacer15"></div>
-      <input id="email" class="user-input user-email required" value="" name="email"  placeholder="email" required="">
+      <input type="email" id="email" class="user-input user-email required" value="" name="email"  placeholder="Email" required>
       <div class="error">This email is not formatted correctly</div>
     </div>
 
     <div style="display:none" class="partner-form-company-number step active">
-      <label aria-label="number" class="label">Best number we can reach you at</label>
+      <label aria-label="number" class="label">Best number we can reach you at *</label>
       <div class="spacer15"></div>
-      <input id="number" class="user-input not-required" value="" name="number"  placeholder="number">
+      <input type="tel" id="number" class="user-input required" value="" name="number" placeholder="Number" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-use-case step active form-group">
-      <label class="label">Tell us more about your use case please, which of the following applies (choose as many):</label>
+      <label class="label">Tell us more about your use case please, which of the following applies (choose as many): *</label>
       <div class="spacer15"></div>
       <div class="multiple-select-wrapper">
-        <select class="custom-select multiple-select" multiple>
+        <select class="custom-select multiple-select" multiple required>
           <option class="use-case">Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
-        </select>
-        <select class="custom-select multiple-select" multiple>
           <option class="use-case">Temporary storage of data for transit between external file systems</option>
-        </select>
-        <select class="custom-select multiple-select" multiple>
           <option class="use-case">Transfer of large files over the internet</option>
-        </select>
-        <select class="custom-select multiple-select" multiple>
           <option class="use-case">General object storage</option>
-        </select>
-        <select class="custom-select multiple-select" multiple>
           <option class="use-case">Other</option>
         </select>
       </div>
@@ -89,9 +81,9 @@
     </div>
 
     <div style="display:none" class="partner-form-data-amount  step active form-group">
-      <label class="label">What is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)?</label>
+      <label class="label">WHat is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)? *</label>
       <div class="spacer15"></div>
-      <select class="custom-select" multiple>
+      <select class="custom-select" multiple required>
         <option class="data-amount" selected>< 1 TB</option>
         <option class="data-amount">1-10 TB</option>
         <option class="data-amount">10-100 TB</option>
@@ -102,9 +94,9 @@
     </div>
 
     <div style="display:none" class="partner-form-file-size  step active form-group">
-      <label class="label">What file sizes will you usually upload?</label>
+      <label class="label">What file sizes will you usually upload? *</label>
       <div class="spacer15"></div>
-      <select class="custom-select" multiple>
+      <select class="custom-select" multiple required>
         <option class="file-size" selected>< 1 MB</option>
         <option class="file-size">1 GB</option>
         <option class="file-size">10-100 GB</option>
@@ -115,16 +107,16 @@
     </div>
 
     <div style="display:none" class="partner-form-how-long step active">
-      <label aria-label="howLong" class="label">How long do you need the data to be stored on the network before you no longer need the data?</label>
+      <label aria-label="howLong" class="label">How long do you need the data to be stored on the network before you no longer need the data? *</label>
       <div class="spacer15"></div>
-      <input id="howLong" class="user-input not-required" value="" name="how_long_data_needed"  placeholder="length of time">
+      <input type="text" id="howLong" class="user-input required" value="" name="how_long_data_needed"  placeholder="Length of time" required>
       <div class="error">Please fill this in</div>
     </div>
 
     <div style="display:none" class="partner-form-per-month step active form-group">
-      <label class="label">What number of times do you plan to download your data set per month?</label>
+      <label class="label">What number of times do you plan to download your data set per month? *</label>
       <div class="spacer15"></div>
-      <select class="custom-select" multiple>
+      <select class="custom-select" multiple required>
         <option class="per-month" selected>Very infrequently</option>
         <option class="per-month">< 20% of the total data per month</option>
         <option class="per-month">< 1 time per month</option>
