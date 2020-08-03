@@ -19,8 +19,10 @@
       background: #fff;
       .dropdown {
         border-bottom: 1px solid #c5cbdb;
-        margin-top: 30px;
+        margin-top: 0;
         position: relative;
+				padding-top: 30px;
+				cursor: pointer;
         .card-body {
           border: none;
           font-weight: 300;
@@ -30,13 +32,13 @@
         .arrow {
           position: absolute;
           right: 30px;
-          bottom: 20px;
+          bottom: 24px;
           cursor: pointer;
         }
         .arrow-down {
           position: absolute;
           right: 30px;
-          top: 0;
+          top: 32px;
           cursor: pointer;
         }
       }

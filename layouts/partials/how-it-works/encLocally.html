@@ -13,7 +13,17 @@
 				<div class="spacer60"></div>
 				<div class="hiw-dropdown">
 					{{range where .Site.Pages ".Params.class" "enc-locally"}}
-					<div class="dropdown">
+					<div
+					class="dropdown"
+					data-toggle="collapse"
+					href="#{{.Params.id}}"
+					role="button"
+					aria-expanded="false"
+					aria-controls="{{.Params.id}}"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+					>
 						<button
 						data-toggle="collapse"
 						href="#{{.Params.id}}"
@@ -33,14 +43,6 @@
 					class="arrow"
 					alt="dropdown arrow"
 					src="/img/dropdown-arrow.svg"
-					data-toggle="collapse"
-					href="#{{.Params.id}}"
-					role="button"
-					aria-expanded="false"
-					aria-controls="{{.Params.id}}"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false"
 					/>
 					<div class="collapse" id="{{.Params.id}}">
 						<img
