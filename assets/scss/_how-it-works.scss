@@ -77,6 +77,14 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+		@media only screen and (max-width: 375px) {
+			height: 710px;
+		}
+		.spacer90 {
+			@media only screen and (max-width: 415px) {
+				height: 30px;
+	    }
+		}
     #blackBg {
       height: 100%;
       width: 100%;
@@ -84,10 +92,18 @@
       z-index: 2;
     }
 		.hiw-header {
-			@media only screen and (max-width: 415px) {
+			@media only screen and (max-width: 768px) {
 				font-size: 34px;
 				line-height: 44px;
 	    }
+			@media only screen and (max-width: 375px) {
+				font-size: 24px;
+		    line-height: 34px;
+			}
+			@media only screen and (max-width: 360px) {
+				font-size: 22px;
+		    line-height: 31px;
+			}
 		}
 		&__content-wrapper {
 			@media only screen and (max-width: 415px) {
@@ -100,7 +116,13 @@
     &__video-link {
       margin: 0 auto;
       cursor: pointer;
+			text-align: center;
     }
+		&__video-icon {
+			@media only screen and (max-width: 375px) {
+				width: 70%;
+	    }
+		}
     &__content-wrapper {
       padding-top: 20px !important;
     }
@@ -125,7 +147,11 @@
       margin-top: 10px;
       @media only screen and (max-width: 1024px) {
         width: 100%;
+				margin: 20px auto;
       }
+			@media only screen and (max-width: 415px) {
+				margin: 20px auto;
+			}
     }
     &__learn-more-wrapper {
       margin: 0 auto;
