@@ -50,7 +50,7 @@
       }
     }
     .hiw__image-wrapper {
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 991px) {
         display: none;
       }
     }
@@ -75,7 +75,7 @@
     background-size: contain;
     background-position: center;
     padding: 0;
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 991px) {
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -147,7 +147,7 @@
     &__text-wrapper {
       width: 80%;
       margin-top: 10px;
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 991px) {
         width: 100%;
 				margin: 20px auto;
       }
@@ -195,15 +195,21 @@
   }
   .file-pieces {
     background: $color--blue-bg;
+		&__image {
+			margin-top: 40px;
+		}
   }
   .enc-locally {
     background: $color--blue-bg;
+		&__image {
+			margin-top: 40px;
+		}
   }
   .enc-files,
   .retrieve,
   .reinventing {
     &__image-wrapper {
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 991px) {
         margin: 0 auto;
         margin-bottom: 80px;
         text-align: center;
@@ -215,6 +221,24 @@
       }
     }
   }
+	.retrieve {
+		&__image {
+			margin-top: 60px;
+		}
+	}
+	.enc-files {
+		&__image-wrapper {
+			position: static;
+		}
+		&__image {
+			position: absolute;
+			left: 0;
+			width: 40%;
+			@media only screen and (max-width: 1400px) {
+				margin-top: 40px;
+			}
+		}
+	}
   .why-better {
     &__table {
       width: 100%;
