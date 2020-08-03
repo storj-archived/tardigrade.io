@@ -25,6 +25,7 @@
           border: none;
           font-weight: 300;
           font-family: $secondary-font;
+					color: #354049;
         }
         .arrow {
           position: absolute;
@@ -82,6 +83,17 @@
       background: transparent;
       z-index: 2;
     }
+		.hiw-header {
+			@media only screen and (max-width: 415px) {
+				font-size: 34px;
+				line-height: 44px;
+	    }
+		}
+		&__content-wrapper {
+			@media only screen and (max-width: 415px) {
+				padding: 2rem !important;
+	    }
+		}
     &__wrapper {
       position: relative;
     }
@@ -192,6 +204,9 @@
         font-size: 18px;
         font-weight: bold;
         line-height: 23px;
+				@media only screen and (max-width: 768px) {
+					font-size: 16px;
+				}
       }
       &__title {
         padding: 15px;
@@ -201,6 +216,9 @@
         text-align: center;
         position: relative;
         left: 15%;
+				@media only screen and (max-width: 768px) {
+					left: 27%;
+				}
       }
     }
   }
