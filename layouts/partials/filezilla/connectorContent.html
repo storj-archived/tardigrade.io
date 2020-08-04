@@ -12,25 +12,14 @@
 				</div>
 				<div>
 					<h3>Why Tardigrade is Perfect for Filezilla</h3>
+
 					<div class="row">
+						{{ range where .Site.Pages ".Params.class" "connector-content"}}
 						<div class="col-md-6">
-							<h4>Default Security<h4>
-							<p>End-to-end encryption is standard so your data can’t be compromised.</p>
+							<h4>{{ .Params.title }}<h4>
+							<p>{{ .Params.text }}</p>
 						</div>
-						<div class="col-md-6">
-							<h4>Better Pricing<h4>
-							<p>You’ll pay less for storage so you can spend more on innovating your project.</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<h4>More Durable<h4>
-							<p>Files are divided, and can be automatically rebuilt from just one third of its pieces.</p>
-						</div>
-						<div class="col-md-6">
-							<h4>Decentralized<h4>
-							<p>With no single point of failure, data breaches and downtime are finally a thing of the past.</p>
-						</div>
+						{{ end }}
 					</div>
 				</div>
 				<div class="single-connector__bottom-section">
