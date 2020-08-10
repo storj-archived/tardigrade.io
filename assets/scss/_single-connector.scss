@@ -15,6 +15,11 @@
 			position: relative;
 			height: 177px;
 			margin-bottom: 40px;
+			border-radius: 8px;
+			@media only screen and (max-width: 768px) {
+				height: 244px;
+				width: 95%;
+			}
 		}
 		&__content {
 			position: absolute;
@@ -22,6 +27,10 @@
 			left: 40px;
 			display: flex;
 			top: 50px;
+			@media only screen and (max-width: 768px) {
+				display: block;
+				top: 30px;
+			}
 		}
 		&__name {
 			color: #fff;
@@ -47,6 +56,10 @@
 		}
 		&__info-wrapper {
 			margin-left: 30px;
+			@media only screen and (max-width: 768px) {
+				margin-left: 0;
+				margin-top: 20px;
+			}
 		}
 		&__name {
 			font-weight: bold;
@@ -57,6 +70,37 @@
 			font-family: $secondary-font;
 			font-size: 18px;
 			line-height: 34px;
+		}
+	}
+	&__content {
+		background: $color--grey-bg;
+		&__header {
+			font-weight: bold;
+			font-family: $primary-font;
+			font-size: 24px;
+			line-height: 40px;
+			text-align: center;
+		}
+		&__section {
+			text-align: center;
+	    max-width: 40%;
+	    margin: 30px auto;
+			&__image {
+				width: 30px;
+				height: 30px;
+				margin: 10px auto;
+			}
+			&__title {
+				font-weight: bold;
+				font-family: $primary-font;
+				font-size: 16px;
+				line-height: 28px;
+			}
+			&__text {
+				font-family: $secondary-font;
+				font-size: 14px;
+				line-height: 23px;
+			}
 		}
 	}
 	&__section-header {
@@ -71,12 +115,13 @@
 	}
 	&__button {
 		color: $color--blue-light;
-		background: #fff;
-		border: 2px solid $color--blue-light;
+		background: transparent;
+		border: 3px solid $color--blue-light;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 14px;
 		border-radius: 4px;
 		padding: 10px 40px;
+		height: 46px;
 	}
 	&__button.fill {
 		color: #fff;

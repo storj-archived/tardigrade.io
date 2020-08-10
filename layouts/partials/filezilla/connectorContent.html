@@ -10,23 +10,7 @@
 					<button class="single-connector__button fill">Download</button>
 					<button class="single-connector__button">Join Tardigrade</button>
 				</div>
-				<div>
-					<h3>Why Tardigrade is Perfect for Filezilla</h3>
-
-					<div class="row">
-						{{ range where .Site.Pages ".Params.class" "connector-content"}}
-						<div class="col-md-6">
-							<h4>{{ .Params.title }}<h4>
-							<p>{{ .Params.text }}</p>
-						</div>
-						{{ end }}
-					</div>
-				</div>
-				<div class="single-connector__bottom-section">
-					<h3 class="single-connector__section-header">How Tardigrade Works</h3>
-					<p class="single-connector__section-text">Files are encrypted and split into pieces client-side, then distributed across our network of high-performance Storage Nodes, making it virtually impossible for your data to be compromised.</p>
-					<button class="single-connector__button">Get Started</button>
-				</div>
+				<div class="spacer90"></div>
 			</div>
 			<div class="col-md-4 offset-lg-1">
 				<div class="column-section">
@@ -56,6 +40,31 @@
 						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Community</a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="single-connector__content">
+					<h3 class="single-connector__content__header">Why Tardigrade is Perfect for Filezilla</h3>
+					<div class="row single-connector__content__wrapper">
+						{{ range where .Site.Pages ".Params.class" "connector-content"}}
+						<div class="col-md-6 single-connector__content__section">
+							<img class="single-connector__content__section__image" src="{{ .Params.image }}" alt="Why Tardigrade Icon" />
+							<h4 class="single-connector__content__section__title">{{ .Params.title }}<h4>
+							<p class="single-connector__content__section__text">{{ .Params.text }}</p>
+						</div>
+						{{ end }}
+					</div>
+					<div class="single-connector__bottom-section">
+						<h3 class="single-connector__section-header">How Tardigrade Works</h3>
+						<p class="single-connector__section-text">Files are encrypted and split into pieces client-side, then distributed across our network of high-performance Storage Nodes, making it virtually impossible for your data to be compromised.</p>
+						<button class="single-connector__button">Get Started</button>
+						<div class="spacer90"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 offset-lg-1">
+
 			</div>
 		</div>
 	</div>
