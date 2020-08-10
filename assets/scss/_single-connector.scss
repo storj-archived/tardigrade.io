@@ -15,7 +15,7 @@
 			position: relative;
 			height: 177px;
 			margin-bottom: 40px;
-			border-radius: 8px;
+			border-radius: 6px;
 			@media only screen and (max-width: 768px) {
 				height: 244px;
 				width: 95%;
@@ -53,6 +53,7 @@
 		&__image {
 			width: 66px;
 			height: 66px;
+			margin-top: 20px;
 		}
 		&__info-wrapper {
 			margin-left: 30px;
@@ -75,11 +76,11 @@
 	&__main {
 		background: $color--grey-bg;
 		position: relative;
-		top: -25%;
+		top: -19%;
 		@media only screen and (max-width: 992px) {
-			top: -16%;
+			top: -13%;
 		}
-		@media only screen and (max-width: 992px) {
+		@media only screen and (max-width: 768px) {
 			top: 0;
 		}
 		.row {
@@ -135,6 +136,12 @@
 		margin-bottom: 30px;
 		text-align: left;
 	}
+	&__video-wrapper {
+		width: 80%;
+		margin: 50px auto;
+		box-shadow: 5px 5px 30px 6px #888888;
+		border-radius: 6px;
+	}
 	&__button {
 		color: $color--blue-light;
 		background: transparent;
@@ -145,6 +152,13 @@
 		padding: 10px 40px;
 		height: 46px;
 		width: 202px;
+		@media only screen and (max-width: 992px) {
+			width: 45%;
+			font-size: 12px;
+		}
+		@media only screen and (max-width: 992px) {
+			width: 48%;
+		}
 	}
 	&__button.fill {
 		color: #fff;
@@ -157,8 +171,15 @@
 	}
 	&__content {
 		padding-right: 0;
-		.col-md-7 {
+		.col-md-7, .col-md-4 {
 			padding-left: 0;
+		}
+		.col-md-7.top-column {
+			.spacer90 {
+				@media only screen and (max-width: 768px) {
+					height: 40px;
+				}
+			}
 		}
 		.column-section {
 			background: $color--grey-bg;
