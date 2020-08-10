@@ -13,39 +13,38 @@
       line-height: 23px;
     }
     .hiw-dropdown {
-      border: 1px solid #c5cbdb;
-      border-radius: 4px;
       background: #fff;
-      .dropdown {
-        border-bottom: 1px solid #c5cbdb;
-        margin-top: 0;
-        position: relative;
-				padding-top: 30px;
-				cursor: pointer;
+      .card {
+        .card-header {
+          background: #fff;
+        }
         .card-body {
-          border: none;
+          border: 0;
           font-weight: 300;
           font-family: $secondary-font;
-					color: #354049;
+          color: #354049;
+          border-radius: 0;
+          padding-top: 0.5em;
+          padding-bottom: 2em;
         }
-        .arrow {
-          position: absolute;
-          right: 30px;
-          bottom: 24px;
-          cursor: pointer;
+        .btn {
+          color: #000;
+          padding-left: 0;
+          font-weight: 300;
+          font-family: $secondary-font;
         }
-        .arrow-down {
-          position: absolute;
-          right: 30px;
-          top: 32px;
-          cursor: pointer;
+        .btn .arrow {
+            transform: rotate(90deg);
+            position: absolute;
+            right: 22px;
+            top: 22px;
         }
-      }
-      .btn {
-        position: relative;
-        bottom: 12px;
-        color: #000;
-        left: 10px;
+        .btn[aria-expanded='true'] .arrow {
+            transform: rotate(90deg);
+        }
+        .btn[aria-expanded='false'] .arrow {
+            transform: rotate(0);
+        }
       }
     }
     .hiw__image-wrapper {
