@@ -44,14 +44,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-7">
-				<div class="single-connector__content">
-					<h3 class="single-connector__content__header">Why Tardigrade is Perfect for Filezilla</h3>
-					<div class="row single-connector__content__wrapper">
+				<div class="single-connector__main">
+					<div class="row single-connector__main__wrapper">
+						<h3 class="single-connector__main__header">Why Tardigrade is Perfect for Filezilla</h3>
 						{{ range where .Site.Pages ".Params.class" "connector-content"}}
-						<div class="col-md-6 single-connector__content__section">
-							<img class="single-connector__content__section__image" src="{{ .Params.image }}" alt="Why Tardigrade Icon" />
-							<h4 class="single-connector__content__section__title">{{ .Params.title }}<h4>
-							<p class="single-connector__content__section__text">{{ .Params.text }}</p>
+						<div class="col-md-6 single-connector__main__section">
+							<img class="single-connector__main__section__image" src="{{ .Params.image }}" alt="Why Tardigrade Icon" />
+							<h4 class="single-connector__main__section__title">{{ .Params.title }}<h4>
+							<p class="single-connector__main__section__text">{{ .Params.text }}</p>
 						</div>
 						{{ end }}
 					</div>

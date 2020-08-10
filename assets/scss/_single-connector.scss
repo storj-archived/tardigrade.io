@@ -72,8 +72,16 @@
 			line-height: 34px;
 		}
 	}
-	&__content {
+	&__main {
 		background: $color--grey-bg;
+		position: relative;
+		top: -25%;
+		@media only screen and (max-width: 992px) {
+			top: -16%;
+		}
+		@media only screen and (max-width: 992px) {
+			top: 0;
+		}
 		&__header {
 			font-weight: bold;
 			font-family: $primary-font;
