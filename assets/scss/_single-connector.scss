@@ -82,12 +82,18 @@
 		@media only screen and (max-width: 992px) {
 			top: 0;
 		}
+		.row {
+			margin: 0;
+			width: 100%;
+		}
 		&__header {
 			font-weight: bold;
 			font-family: $primary-font;
 			font-size: 24px;
 			line-height: 40px;
 			text-align: center;
+			margin: 0 auto;
+			width: 54%;
 		}
 		&__section {
 			text-align: center;
@@ -119,17 +125,26 @@
 		font-size: 16px;
 		line-height: 28px;
 		font-weight: 200;
-		margin-bottom: 40px;
+		width: 80%;
+    text-align: center;
+    margin: 30px auto;
+	}
+	&__section-text.about-text {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 30px;
+		text-align: left;
 	}
 	&__button {
 		color: $color--blue-light;
 		background: transparent;
-		border: 3px solid $color--blue-light;
+		border: 2px solid $color--blue-light;
 		font-weight: bold;
 		font-size: 14px;
 		border-radius: 4px;
 		padding: 10px 40px;
 		height: 46px;
+		width: 202px;
 	}
 	&__button.fill {
 		color: #fff;

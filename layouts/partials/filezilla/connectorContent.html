@@ -4,7 +4,7 @@
 			<div class="col-md-7">
 				<div>
 					<h3 class="single-connector__section-header">About</h3>
-					<p class="single-connector__section-text">Tardigrade and FileZilla work seamlessly together to make transferring files simple and secure with default end-to-end encryption. FileZillla is a cross-platform graphical FTP, SFTP, and FTPS file management and transfer tool that can easily be used to store and move files onto Tardigrade. Tardigrade has Nodes across the globe, making retrieving your files simple and fast with zone free performance.</p>
+					<p class="single-connector__section-text about-text">Tardigrade and FileZilla work seamlessly together to make transferring files simple and secure with default end-to-end encryption. FileZillla is a cross-platform graphical FTP, SFTP, and FTPS file management and transfer tool that can easily be used to store and move files onto Tardigrade. Tardigrade has Nodes across the globe, making retrieving your files simple and fast with zone free performance.</p>
 				</div>
 				<div>
 					<button class="single-connector__button fill">Download</button>
@@ -46,7 +46,10 @@
 			<div class="col-md-7">
 				<div class="single-connector__main">
 					<div class="row single-connector__main__wrapper">
-						<h3 class="single-connector__main__header">Why Tardigrade is Perfect for Filezilla</h3>
+						<div class="spacer60"></div>
+						<div class="row">
+							<h3 class="single-connector__main__header">Why Tardigrade is Perfect for Filezilla</h3>
+						</div>
 						{{ range where .Site.Pages ".Params.class" "connector-content"}}
 						<div class="col-md-6 single-connector__main__section">
 							<img class="single-connector__main__section__image" src="{{ .Params.image }}" alt="Why Tardigrade Icon" />
