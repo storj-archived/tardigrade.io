@@ -259,14 +259,11 @@
 				}
       }
       &__title {
-        padding: 15px;
+        padding: 15px 0;
       }
       &__icon {
         text-align: center;
-        position: relative;
-        left: 15%;
 				@media only screen and (max-width: 768px) {
-					left: 27%;
 				}
       }
     }
