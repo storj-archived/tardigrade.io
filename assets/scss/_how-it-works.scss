@@ -119,9 +119,7 @@
 			text-align: center;
     }
 		&__video-icon {
-			@media only screen and (max-width: 375px) {
-				width: 70%;
-	    }
+			width: 50%;
 		}
     &__content-wrapper {
       padding-top: 20px !important;
