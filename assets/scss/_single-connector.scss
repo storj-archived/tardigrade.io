@@ -5,7 +5,19 @@
 		.second-nav.navbar .navlink {
 			color: #fff;
 		}
-		margin-bottom: 60px;
+		margin-bottom: 40px;
+	}
+	&__back-wrapper {
+		margin-bottom: 40px;
+		padding-left: 0;
+	}
+	&__back-text {
+		display: inline;
+		margin-left: 10px;
+		font-family: $primary-font;
+		font-weight: 300;
+		font-size: 18px;
+		color: #3B5790;
 	}
 	&__hero {
 		position: relative;
@@ -30,6 +42,7 @@
 			@media only screen and (max-width: 768px) {
 				display: block;
 				top: 30px;
+				width: 90%;
 			}
 		}
 		&__name {
@@ -53,7 +66,9 @@
 		&__image {
 			width: 66px;
 			height: 66px;
-			margin-top: 20px;
+			@media only screen and (max-width: 768px) {
+				margin-top: 20px;
+			}
 		}
 		&__info-wrapper {
 			margin-left: 30px;
@@ -76,12 +91,9 @@
 	&__main {
 		background: $color--grey-bg;
 		position: relative;
-		top: -19%;
-		@media only screen and (max-width: 992px) {
-			top: -13%;
-		}
+		margin-top: -45%;
 		@media only screen and (max-width: 768px) {
-			top: 0;
+			margin-top: 0;
 		}
 		.row {
 			margin: 0;
@@ -95,11 +107,20 @@
 			text-align: center;
 			margin: 0 auto;
 			width: 54%;
+			@media only screen and (max-width: 1024px) {
+				width: 70%;
+			}
 		}
 		&__section {
 			text-align: center;
 	    max-width: 40%;
 	    margin: 30px auto;
+			@media only screen and (max-width: 1024px) {
+				max-width: 100%;
+			}
+			@media only screen and (max-width: 768px) {
+				max-width: 70%;
+			}
 			&__image {
 				width: 30px;
 				height: 30px;
@@ -154,10 +175,14 @@
 		width: 202px;
 		@media only screen and (max-width: 992px) {
 			width: 45%;
+			padding: 0;
+		}
+		@media only screen and (max-width: 768px) {
+			width: 48%;
 			font-size: 12px;
 		}
-		@media only screen and (max-width: 992px) {
-			width: 48%;
+		@media only screen and (max-width: 415px) {
+			width: 46%;
 		}
 	}
 	&__button.fill {
@@ -171,7 +196,7 @@
 	}
 	&__content {
 		padding-right: 0;
-		.col-md-7, .col-md-4 {
+		.col-md-7, .col-md-4, .col-md-5 {
 			padding-left: 0;
 		}
 		.col-md-7.top-column {
