@@ -5,7 +5,7 @@
 </head>
 <body class="p404-page page">
     {{ partial "banner" .}}
-    {{ partial "secondNav"  .}}
+		{{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
     <div class="text-center">
         {{partial "404/404" .}}
     </div>

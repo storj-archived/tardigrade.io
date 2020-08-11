@@ -2,8 +2,20 @@
 	&__nav {
 		background: radial-gradient(90.29% 594.73% at 53.03% 29.19%, #0055C6 0%, #000000 100%);
 		color: #fff;
-		.second-nav.navbar .navlink {
-			color: #fff;
+		.second-nav.navbar {
+				margin-top: 0;
+				padding-bottom: 10px;
+				padding-top: 20px;
+			 .navlink {
+					color: #fff;
+			}
+			.nav-join {
+				color: #fff;
+				border: 2px solid #fff;
+				&:hover {
+					color: $color--blue-light;
+				}
+			}
 		}
 		margin-bottom: 40px;
 	}
@@ -162,6 +174,7 @@
 		margin: 50px auto;
 		box-shadow: 5px 5px 30px 6px #888888;
 		border-radius: 6px;
+		max-width: 303px;
 	}
 	&__button {
 		color: $color--blue-light;

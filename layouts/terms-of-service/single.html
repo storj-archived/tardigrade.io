@@ -6,7 +6,7 @@
   <body class="legal page">
     <header class="legal__nav">
         {{partial "banner" .}}
-        {{partial "secondNav" .}}
+				{{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
     </header>
     {{ with .Site.GetPage "termsOfService" }}
     <div class="legal__container container">

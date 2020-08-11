@@ -5,11 +5,11 @@
 </head>
 <body class="single-connector">
 	<header class="single-connector__nav">
-			{{partial "secondNav" .}}
+			{{partial "secondNav" (dict "logo" "/img/tar-logo-whit-horizontal.svg" )}}
 	</header>
-	{{ partial "filezilla/connectorHero" .}}
+	{{ partial "single-connector/connectorHero" .}}
 
-	{{ partial "filezilla/connectorContent" .}}
+	{{ partial "single-connector/connectorContent" .}}
 	<footer>
 		{{partial "footer" . }}
 	</footer>
