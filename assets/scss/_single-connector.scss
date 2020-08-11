@@ -186,6 +186,7 @@
 		padding: 10px 40px;
 		height: 46px;
 		width: 202px;
+		transition-duration: .2s;
 		@media only screen and (max-width: 992px) {
 			width: 45%;
 			padding: 0;
@@ -197,11 +198,19 @@
 		@media only screen and (max-width: 415px) {
 			width: 46%;
 		}
+		&:hover {
+			background: $color--blue-light;
+			color: #fff;
+		}
 	}
 	&__button.fill {
 		color: #fff;
 		background: $color--blue-light;
 		margin-right: 10px;
+		&:hover {
+			background: #fff;
+			color: $color--blue-light;
+		}
 	}
 	&__bottom-section {
 		text-align: center;
@@ -257,6 +266,9 @@
 			}
 			&__link {
 				color: $color--blue-light;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
