@@ -7,9 +7,8 @@
 	<header class="single-connector__nav">
 			{{partial "secondNav" (dict "logo" "/img/tar-logo-whit-horizontal.svg" )}}
 	</header>
-	{{ partial "single-connector/connectorHero" .}}
-
-	{{ partial "single-connector/connectorContent" .}}
+	{{partial "single-connector/connectorHero" (dict "connectorInfo" "partner19" "context" . "page" $.Site.GetPage )}}
+	{{ partial "single-connector/connectorContent" (dict "connectorInfo" "partner19" "context" . "page" $.Site.GetPage )}}
 	<footer>
 		{{partial "footer" . }}
 	</footer>

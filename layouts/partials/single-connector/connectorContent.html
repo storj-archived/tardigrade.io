@@ -1,14 +1,15 @@
 <div class="container-fluid single-connector__content">
 	<div class="container">
 		<div class="row">
+			{{with .context.Site.GetPage .connectorInfo}}
 			<div class="col-md-7 top-column">
 				<div>
 					<h3 class="single-connector__section-header">About</h3>
-					<p class="single-connector__section-text about-text">Tardigrade and FileZilla work seamlessly together to make transferring files simple and secure with default end-to-end encryption. FileZillla is a cross-platform graphical FTP, SFTP, and FTPS file management and transfer tool that can easily be used to store and move files onto Tardigrade. Tardigrade has Nodes across the globe, making retrieving your files simple and fast with zone free performance.</p>
+					<p class="single-connector__section-text about-text">{{ .Params.about }}</p>
 				</div>
 				<div>
 					<button class="single-connector__button fill">Download</button>
-					<button class="single-connector__button">Join Tardigrade</button>
+					<a target="_blank" href="/signup"><button class="single-connector__button">Join Tardigrade</button></a>
 				</div>
 				<div class="spacer90"></div>
 			</div>
@@ -17,30 +18,35 @@
 					<p class="column-section__title">Details</p>
 					<ul class="column-section__column left">
 						<li class="column-section__list-item">Released</li>
-						<li class="column-section__list-item value">02/22/20</li>
+						<li class="column-section__list-item value">{{ .Params.released }}</li>
 					</ul>
 					<ul class="column-section__column right">
 						<li class="column-section__list-item">Version</li>
-						<li class="column-section__list-item value">1.3.22</li>
+						{{if .Params.version }}
+							<li class="column-section__list-item value">1.3.22</li>
+						{{end}}
 					</ul>
 				</div>
 				<div class="column-section">
 					<p class="column-section__title">Resources</p>
 					<ul class="column-section__link-section">
 						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Docs</a></li>
-						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Repo</a></li>
+						{{if .Params.repo}}
+							<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Repo</a></li>
+						{{end}}
 						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Website</a></li>
 					</ul>
 				</div>
 				<div class="column-section">
 					<p class="column-section__title">Links</p>
 					<ul class="column-section__link-section">
-						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Join Tardigrade</a></li>
-						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Sign In</a></li>
-						<li class="column-section__link-wrapper"><a class="column-section__link" href="#">Community</a></li>
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/signup">Join Tardigrade</a></li>
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/login">Sign In</a></li>
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/community">Community</a></li>
 					</ul>
 				</div>
 			</div>
+			{{end}}
 		</div>
 		<div class="row">
 			<div class="col-md-7">
@@ -50,7 +56,7 @@
 						<div class="row">
 							<h3 class="single-connector__main__header">Why Tardigrade is Perfect for Filezilla</h3>
 						</div>
-						{{ range where .Site.Pages ".Params.class" "connector-content"}}
+						{{ range where .context.Site.Pages ".Params.class" "connector-content"}}
 						<div class="col-sm-12 col-md-6 single-connector__main__section">
 							<img class="single-connector__main__section__image" src="{{ .Params.image }}" alt="Why Tardigrade Icon" />
 							<h4 class="single-connector__main__section__title">{{ .Params.title }}<h4>

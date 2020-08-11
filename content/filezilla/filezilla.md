@@ -1,4 +1,7 @@
 ---
-title: "benefits"
-heading: "Members of Our Open Source Partner Program Receive\nthe Following Benefits:"
+name : "Filezilla"
+new: true
+img: "/img/partners/filezilla.svg"
+bgImg: "/img/partners/connector-bg.jpg"
+categories: "App Connector"
 ---

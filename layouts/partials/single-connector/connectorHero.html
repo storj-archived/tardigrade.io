@@ -1,3 +1,4 @@
+
 <div class="container-fluid single-connector__back-wrapper">
 	<div class="container">
 		<a href="/connectors">
@@ -12,7 +13,7 @@
 			<div class="spacer20"></div>
 			<div class="row">
 				<div class="col-md-10 col-sm-10 col-lg-10 single-connector__hero__content">
-					{{with .Site.GetPage "page" "connectorHero"}}
+					{{with .context.Site.GetPage .connectorInfo}}
 					<img src="{{ .Params.img }}" class="single-connector__hero__image" />
 					<div class="single-connector__hero__info-wrapper">
 						<h1 class="single-connector__hero__name">{{ .Params.name }}</h1>

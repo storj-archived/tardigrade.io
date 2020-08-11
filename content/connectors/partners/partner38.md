@@ -6,7 +6,7 @@ updated: 3/19/20
 new: true
 img: "/img/partners/duplicati.png"
 class: "partner"
-categories: "Application Connector"
+categories: "App Connector"
 link: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
 weight: 97
 community: true
