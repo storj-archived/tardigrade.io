@@ -15,30 +15,31 @@
 	    </div>
 	  </div>
 
-	  <div class="row mt-5">
-
-	    <div class="col-xs-12 col-sm text-center">
-	      <img alt="Cloud storage encrypt icon" class="hiw-image" src="/img/encrypt.svg" height="94"/>
-				<p class="hiw-item-txt">Encrypt</p>
-	    </div>
-
-			<div class="col-xs-12 col-sm text-center">
-				<div class="hiw-arrow"></div>
+	  <div class="d-flex flex-column justify-content-center">
+			<div id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" class="modal fade hiw-video-wrapper" >
+				<div class="modal-dialog" role="document">
+					<div class="modal-content embed-responsive embed-responsive-16by9">
+						<iframe
+							width="100%"
+							height="100%"
+							src="https://www.youtube.com/embed/RtyBjWmbePQ"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+							class="embed-responsive-item"
+							>
+						</iframe>
+					</div>
+				</div>
 			</div>
-
-	    <div class="col-xs-12 col-sm text-center">
-	      <img alt="Cloud storage split icon" class="hiw-image" src="/img/split.svg" height="94"/>
-				<p class="hiw-item-txt">Split</p>
-	    </div>
-
-			<div class="col-xs-12 col-sm text-center">
-				<div class="hiw-arrow"></div>
+			<div  data-toggle="modal" data-target="#videoModal" id="link" class="hiw-video-link">
+				<img class="hiw-video-icon" src="/img/video-icon.png" alt="video play button" />
 			</div>
-
-	    <div class="col-xs-12 col-sm text-center">
-	      <img alt="Object storage distribute icon" class="hiw-image" src="/img/tar-ico-how-distributed.svg" height="94"/>
-				<p class="hiw-item-txt">Distribute</p>
-	    </div>
+			<div class="spacer30"></div>
+			<a class="hiw-learn-more" href="/how-it-works">
+				<p class="hiw-learn-more-text">Learn More</p>
+				<img class="" src="/img/blue-carrot.svg"/>
+			</a>
 
 	  </div>
 
