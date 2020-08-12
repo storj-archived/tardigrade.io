@@ -1,0 +1,45 @@
+{{ with .Site.GetPage "hiwHero" }}
+<div class="hiw-hero container-fluid">
+	<div id="blackBg">
+		<div class="container">
+			<div class="spacer20"></div>
+			{{ partial "nav" .}}
+			<div class="spacer90"></div>
+			<div class="hiw-hero__wrapper d-flex flex-column justify-content-center">
+				<div id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" class="modal fade hiw-hero__video-wrapper" >
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<iframe
+							width="100%"
+							height="100%"
+							style=""
+							src="https://www.youtube.com/embed/RtyBjWmbePQ"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+							>
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div  data-toggle="modal" data-target="#videoModal" id="link" class="hiw-hero__video-link">
+				<img class="hiw-hero__video-icon" src="/img/video-icon.png" alt="video play button" />
+			</div>
+			<div class="hiw-hero__content-wrapper d-flex flex-column justify-content-center align-items-center text-center p-5">
+				<h4 class="hiw-header">
+					{{ replace .Params.header "\n" "<br/>" | safeHTML}}
+				</h4>
+				<div class="hiw-hero__text-wrapper">
+					<p>	{{ .Params.text }} </p>
+				</div>
+			</div>
+			<div class="spacer90 spacer"></div>
+			<a href="#encLocally" class="hiw-hero__learn-more-wrapper">
+				<p class="hiw-hero__learn-more-text">Learn More</p>
+				<img class="hiw-hero__learn-more-icon" alt="arrow down" src="/img/arrow-down.svg" />
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+{{end}}

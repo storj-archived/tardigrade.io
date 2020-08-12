@@ -1,0 +1,22 @@
+{{ with .Site.GetPage "experience" }}
+<div class="experience container-fluid">
+	<div class="spacer30"></div>
+	<div class="experience__wrapper row d-flex flex-column justify-content-center">
+		<div class="d-flex flex-column justify-content-center align-items-center text-center p-5">
+			<h4 class="hiw-header">
+				{{ replace .Params.header "\n" "<br/>" | safeHTML}}
+			</h4>
+			<div class="spacer20"></div>
+			<div class="experience__cta-wrapper">
+				<a class="experience__cta-link" href="{{ .Params.ctaLink }}">
+					<button class="experience__cta btn-signup font-weight-bold">
+						{{ .Params.cta }}
+						<img class="experience__cta__arrow" src="/img/arrow-right.svg" height="13" width="13" alt="arrow image" />
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="spacer30"></div>
+</div>
+{{end}}
