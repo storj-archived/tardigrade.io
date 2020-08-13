@@ -221,8 +221,9 @@
     background: $color--blue-light;
     margin-right: 10px;
     &:hover {
-      background: #fff;
-      color: $color--blue-light;
+			color: #fff;
+	    background-color: #0069d9;
+	    border-color: #0062cc;
     }
   }
   &__bottom-section {
