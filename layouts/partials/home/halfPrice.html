@@ -8,40 +8,7 @@
 			<div class="spacer40"></div>
 			<div class="spacer60"></div>
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-4 col-lg-6 col-sm-12 half-price__content">
-          <div class="spacer40"></div>
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 half-price__section" style="border-right: 1px solid #979797">
-              <p class="half-price__column-heading">{{ .Params.col1Heading }}</p>
-              <img alt="{{.Params.col1Alt}}" class="half-price__column-image" src="{{ .Params.col1Image }}" />
-              <h2 class="half-price__column-amount">{{ .Params.col1Amount }}</h2>
-              <p class="half-price__column-metric">{{ .Params.col1Metric }}</p>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 half-price__section">
-              <p class="half-price__column-heading">{{ .Params.col2Heading }}</p>
-              <img alt="{{.Params.col2Alt}}" class="half-price__column-image" src="{{ .Params.col2Image }}" />
-              <h2 class="half-price__column-amount">{{ .Params.col2Amount }}</h2>
-              <p class="half-price__column-metric">{{ .Params.col2Metric }}</p>
-            </div>
-          </div>
-          <div class="spacer40"></div>
-					<div class="spacer60"></div>
-        </div>
-        <div class="col-lg-6 half-price__image-wrapper">
-					<div id="htcCollapseWrapper" class="half-price__image-wrapper__content">
-						<a class="" data-toggle="collapse" href="#htcCollapse" role="button" aria-expanded="false" aria-controls="htcCollapse">
-							<div class="half-price__image-wrapper__content__header">
-								<h4 class="half-price__image-wrapper__content__header__title">How Tardigrade Compares</h4>
-								<img class="half-price__image-wrapper__content__header__img" alt="How Tardigrade Compares Toggle Button" class="toggle-btn" id="toggleDownBtn" src="/img/htc-down-arrow.svg"/>
-								<img class="half-price__image-wrapper__content__header__img" alt="How Tardigrade Compares Toggle Button" class="toggle-btn" id="toggleUpBtn" src="/img/htc-up-arrow.svg"/>
-							</div>
-						</a>
-						<div class="collapse multi-collapse show" id="htcCollapse">
-							<img alt="Chart comparing Tardigrade as an alternative to AWS and Google Cloud" class="half-price__image-resp" src="/img/tar-pricing-resp.svg" width="1200" />
-						</div>
-					</div>
-					<img alt="Chart comparing Tardigrade as an alternative to AWS and Google Cloud" class="half-price__image" src="/img/tar-pricing.svg" width="1200" />
-        </div>
+  			<img src="/img/pricing-chart.svg" alt="Pricing Chart" />
       </div>
 			<div class="spacer70"></div>
 			<a class="half-price__cta__wrapper" href="/signup">
@@ -50,7 +17,6 @@
 				</p>
 			</a>
 			{{ end }}
-
     </div>
     <div class="spacer125"></div>
   </div>
