@@ -28,4 +28,4 @@
 		connectors="/connectors/"
 		how-it-works="/how-it-works/"
 		404 = "/404/"
-		filezilla="/filezilla"
+		filezilla="/connectors/filezilla"
