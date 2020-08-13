@@ -720,11 +720,47 @@
       display: block;
     }
   }
+	.justify-content-center {
+		position: relative;
+	}
+	&__content {
+		position: absolute;
+		left: 200px;
+		height: 100%;
+		text-align: center;
+	}
+	&__label {
+		display: block;
+		font-family: $primary-font;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: bold;
+		color: #000;
+	}
+	&__measures {
+		display: inline-flex;
+	}
+	&__estimate {
+		position: absolute;
+		bottom: 50px;
+		&__price {
+			font-family: $primary-font;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 46px;
+			line-height: 20px;
+			color: $color--blue-light;
+		}
+		&__text {
+			font-family: $primary-font;
+			font-size: 10px;
+			line-height: 20px;
+			font-weight: bold;
+			color: #354049;
+		}
+	}
 }
 
-.half-price__content {
-  text-align: center;
-}
 
 @media only screen and (max-width: 991px) {
   .half-price__section {
