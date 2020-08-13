@@ -580,6 +580,25 @@
 	 margin-top: 40%;
 }
 
+.experience {
+	background: #fff;
+	.hiw-header {
+		font-size: 24px;
+	}
+	&__cta {
+		background: $color--blue-light;
+		border-radius: 4px;
+		border: none;
+		color: #fff;
+		width: 177px;
+		padding: 10px 15px 10px 0;
+		&__arrow {
+			position: relative;
+			left: 15px;
+		}
+	}
+}
+
 .why-tardigrade {
   position: absolute;
   background: transparent;
