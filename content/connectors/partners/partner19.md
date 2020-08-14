@@ -14,4 +14,7 @@ about: "Tardigrade and FileZilla work seamlessly together to make transferring f
 released: "02/22/20"
 version: "1.3.22"
 repo: "https://github.com/storj-thirdparty/FileZilla"
+download: "https://filezilla-project.org/download.php?show_all=1"
+website: "https://filezilla-project.org/"
+docs: "https://wiki.filezilla-project.org/Documentation"
 ---

@@ -8,7 +8,9 @@
 					<p class="single-connector__section-text about-text">{{ .Params.about }}</p>
 				</div>
 				<div>
-					<button class="single-connector__button fill">Download</button>
+					{{if .Params.download }}
+					<a target="_blank" href="{{.Params.download}}"><button class="single-connector__button fill">Download</button></a>
+					{{end}}
 					<a target="_blank" href="/signup"><button class="single-connector__button">Join Tardigrade</button></a>
 				</div>
 				<div class="spacer90"></div>
@@ -30,11 +32,15 @@
 				<div class="column-section">
 					<p class="column-section__title">Resources</p>
 					<ul class="column-section__link-section">
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="#">Docs</a></li>
+						{{if .Params.docs}}
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.docs}}">Docs</a></li>
+						{{end}}
 						{{if .Params.repo}}
 						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.repo}}">Repo</a></li>
 						{{end}}
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="#">Website</a></li>
+						{{if .Params.website}}
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.website}}">Website</a></li>
+						{{end}}
 					</ul>
 				</div>
 				<div class="column-section">
