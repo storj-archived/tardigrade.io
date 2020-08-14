@@ -11,7 +11,7 @@
 				<div class="half-price__content">
 					<div class="half-price__input-wrapper">
 			      <label aria-label="storage" class="half-price__label">Storage</label>
-			      <input type="text" id="storage" class="half-price__input" value="" name="storage" placeholder="1" required>
+			      <input type="text" id="storage" class="half-price__input" name="storage" placeholder="1" required>
 						<div class="half-price__measures">
 							<p class="half-price__measure-text storage-measure">MB</p>
 							<p class="half-price__measure-text storage-measure">GB</p>
@@ -20,7 +20,7 @@
 					</div>
 					<div class="half-price__input-wrapper">
 			      <label aria-label="download" class="half-price__label">Download</label>
-			      <input type="text" id="download" class="half-price__input" value="" name="download" placeholder="1,000" required>
+			      <input type="text" id="download" class="half-price__input" name="download" placeholder="1,000" required>
 						<div class="half-price__measures">
 							<p class="half-price__measure-text download-measure">MB</p>
 							<p class="half-price__measure-text download-measure">GB</p>
@@ -47,11 +47,8 @@
 
 	<script type="text/javascript">
 		var estimate = document.getElementById("estimate");
-		var storage = document.getElementById("storage");
-		var download = document.getElementById("download");
 		var downloadMeasures = document.querySelectorAll(".download-measure")
 		var storageMeasures = document.querySelectorAll(".storage-measure")
-
 
 		var changeMeasure = function(measures) {
 			if(measures) {
@@ -62,8 +59,19 @@
 							measures[i].style.color="#AFB7C1";
 						}
 					}
+					calculate()
+
 				}));
 			}
+
+		}
+
+		var calculate = function() {
+			var storage = document.getElementById("storage").value;
+			var download = document.getElementById("download").value;
+
+			var calculation = (download * .045) + (storage * .01)
+			estimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
 		}
 
 		changeMeasure(downloadMeasures)
