@@ -578,6 +578,9 @@
 
 .hiw .embed-responsive {
 	 margin-top: 40%;
+	 @media only screen and (max-width: 415px) {
+		 margin-top: 50%;
+	 }
 }
 
 .experience {
