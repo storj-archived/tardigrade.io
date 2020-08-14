@@ -405,12 +405,12 @@
   border-right: none;
   resize: none;
   color: #7e8b9c;
-  font-family: "Roboto";
+  font-family: $secondary-font;
   font-size: 14px;
 }
 
 .cta-join-btn {
-  font-family: "Poppins";
+  font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -448,10 +448,11 @@
 
 .hiw-heading {
   text-align: center;
+	margin-bottom: 15px;
 }
 
 .hiw-heading-simple {
-  font-family: "Poppins";
+  font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -478,11 +479,11 @@
   font-size: 18px;
   color: $color--blue-light;
   font-weight: bold;
-  font-family: "Poppins";
+  font-family: $primary-font;
 }
 
 .y-tar-heading {
-  font-family: "Poppins";
+  font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -548,6 +549,51 @@
   .d-block {
     display: none !important;
   }
+}
+
+.hiw-video-link {
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+.hiw-video-icon {
+	width: 200px;
+	margin-top: 40px;
+}
+
+.hiw-learn-more {
+	text-align: center;
+}
+
+.hiw-learn-more-text {
+	color: $color--blue-light;
+	font-family: $primary-font;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	display: inline;
+	margin-right: 10px;
+  vertical-align: middle;
+}
+
+.experience {
+	background: #fff;
+	.hiw-header {
+		font-size: 24px;
+	}
+	&__cta {
+		background: $color--blue-light;
+		border-radius: 4px;
+		border: none;
+		color: #fff;
+		width: 177px;
+		padding: 10px 15px 10px 0;
+		&__arrow {
+			position: relative;
+			left: 15px;
+		}
+	}
 }
 
 .why-tardigrade {
