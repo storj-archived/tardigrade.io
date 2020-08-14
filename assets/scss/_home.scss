@@ -725,7 +725,7 @@
 	}
 	&__content {
 		position: absolute;
-		left: 200px;
+		left: 220px;
 		height: 100%;
 		text-align: center;
 	}
@@ -736,9 +736,20 @@
 		line-height: 16px;
 		font-weight: bold;
 		color: #000;
+    margin: 10px 0;
+		text-align: left;
 	}
 	&__measures {
 		display: inline-flex;
+		position: relative;
+		left: 20px;
+	}
+	&__measure-text {
+		font-family: $secondary-font;
+		font-weight: 500;
+		font-size: 16px;
+		color: #AFB7C1;
+		margin-right: 5px;
 	}
 	&__estimate {
 		position: absolute;
@@ -758,6 +769,15 @@
 			font-weight: bold;
 			color: #354049;
 		}
+	}
+	&__input-wrapper {
+		position: relative;
+		top: 50px;
+		margin-bottom: 30px;
+	}
+	&__input {
+		border: none;
+		width: 94px;
 	}
 }
 
