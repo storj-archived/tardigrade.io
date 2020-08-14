@@ -13,22 +13,22 @@
 			      <label aria-label="storage" class="half-price__label">Storage</label>
 			      <input type="text" id="storage" class="half-price__input" value="" name="storage" placeholder="1" required>
 						<div class="half-price__measures">
-							<p class="half-price__measure-text">MB</p>
-							<p class="half-price__measure-text">GB</p>
-							<p class="half-price__measure-text">TB</p>
+							<p class="half-price__measure-text storage-measure">MB</p>
+							<p class="half-price__measure-text storage-measure">GB</p>
+							<p class="half-price__measure-text storage-measure">TB</p>
 						</div>
 					</div>
 					<div class="half-price__input-wrapper">
 			      <label aria-label="download" class="half-price__label">Download</label>
-			      <input type="text" id="storage" class="half-price__input" value="" name="download" placeholder="1,000" required>
+			      <input type="text" id="download" class="half-price__input" value="" name="download" placeholder="1,000" required>
 						<div class="half-price__measures">
-							<p class="half-price__measure-text">MB</p>
-							<p class="half-price__measure-text">GB</p>
-							<p class="half-price__measure-text">TB</p>
+							<p class="half-price__measure-text download-measure">MB</p>
+							<p class="half-price__measure-text download-measure">GB</p>
+							<p class="half-price__measure-text download-measure">TB</p>
 						</div>
 					</div>
 					<div class="half-price__estimate">
-						<h4 class="half-price__estimate__price">$0.55</h4>
+						<h4 id="estimate" class="half-price__estimate__price">$0.55</h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
@@ -46,21 +46,40 @@
   </div>
 
 	<script type="text/javascript">
+		var estimate = document.getElementById("estimate");
+		var storage = document.getElementById("storage");
+		var download = document.getElementById("download");
+		var downloadMeasures = document.querySelectorAll(".download-measure")
+		var storageMeasures = document.querySelectorAll(".storage-measure")
 
-		// icon toggle
-		var buttonWrapper = document.getElementById("htcCollapseWrapper");
-		var toggleDownBtn = document.getElementById("toggleDownBtn");
-		var toggleUpBtn = document.getElementById("toggleUpBtn");
-		buttonWrapper.onclick = function (event) {
-			if (window.getComputedStyle(toggleUpBtn).display === "none") {
-				toggleDownBtn.style.display = "none";
-				toggleUpBtn.style.display = "flex";
-		 	} else {
-				toggleDownBtn.style.display = "flex";
-				toggleUpBtn.style.display = "none";
+
+		var changeMeasure = function(measures) {
+			if(measures) {
+				measures.forEach(el => el.addEventListener('click', event => {
+				  el.style.color="#2582FF";
+					for (var i = 0; i < measures.length; i++) {
+						if(el !== measures[i]) {
+							measures[i].style.color="#AFB7C1";
+						}
+					}
+				}));
 			}
-
-
 		}
+
+		changeMeasure(downloadMeasures)
+		changeMeasure(storageMeasures)
+
+
+
+
+		// for (var i = 0; i < measures.length; i++) {
+		// 	var measure = measures[i];
+		// 	measure.onclick = function() {
+		// 			console.log(i, measure, measure.textContent);
+		// 	}
+		// }
+
+
+
 
 	</script>
