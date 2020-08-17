@@ -49,33 +49,49 @@
 		var estimate = document.getElementById("estimate");
 		var downloadMeasures = document.querySelectorAll(".download-measure")
 		var storageMeasures = document.querySelectorAll(".storage-measure")
+		var downloadInput = document.getElementById("download");
+		var storageInput = document.getElementById("storage");
+		var storageChoice = ""
+		var downloadChoice = ""
 
-		var changeMeasure = function(measures) {
+		var changeMeasure = function(measures, choice, type) {
 			if(measures) {
 				measures.forEach(el => el.addEventListener('click', event => {
 				  el.style.color="#2582FF";
+					choice = el.textContent
 					for (var i = 0; i < measures.length; i++) {
 						if(el !== measures[i]) {
 							measures[i].style.color="#AFB7C1";
 						}
 					}
-					calculate()
-
+					calculate(choice, type)
 				}));
 			}
 
 		}
 
-		var calculate = function() {
+		var calculate = function(choice, type) {
 			var storage = document.getElementById("storage").value;
 			var download = document.getElementById("download").value;
+			var amount = 0
 
 			var calculation = (download * .045) + (storage * .01)
 			estimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
 		}
 
-		changeMeasure(downloadMeasures)
-		changeMeasure(storageMeasures)
+		var onInput = function(input, choice, type) {
+			input.addEventListener('keyup', event => {
+				if(input.value > 1) {
+					calculate(choice, type)
+				}
+			});
+		}
+
+		changeMeasure(downloadMeasures, downloadChoice, "download")
+		changeMeasure(storageMeasures, storageChoice, "storage")
+
+		onInput(downloadInput, downloadChoice, "download")
+		onInput(storageInput, storageChoice, "storage")
 
 
 
