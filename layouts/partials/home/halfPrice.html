@@ -11,24 +11,24 @@
 				<div class="half-price__content">
 					<div class="half-price__input-wrapper">
 			      <label aria-label="storage" class="half-price__label">Storage</label>
-			      <input type="text" id="storage" class="half-price__input" name="storage" placeholder="1" required>
+			      <input type="text" id="storage" class="half-price__input" name="storage" value="1" required>
 						<div class="half-price__measures">
 							<p class="half-price__measure-text storage-measure">MB</p>
 							<p class="half-price__measure-text storage-measure">GB</p>
-							<p class="half-price__measure-text storage-measure">TB</p>
+							<p style="color:#2582FF" class="half-price__measure-text storage-measure">TB</p>
 						</div>
 					</div>
 					<div class="half-price__input-wrapper">
 			      <label aria-label="download" class="half-price__label">Download</label>
-			      <input type="text" id="download" class="half-price__input" name="download" placeholder="1,000" required>
+			      <input type="text" id="download" class="half-price__input" name="download" value="1000" required>
 						<div class="half-price__measures">
 							<p class="half-price__measure-text download-measure">MB</p>
-							<p class="half-price__measure-text download-measure">GB</p>
+							<p style="color:#2582FF" class="half-price__measure-text download-measure">GB</p>
 							<p class="half-price__measure-text download-measure">TB</p>
 						</div>
 					</div>
 					<div class="half-price__estimate">
-						<h4 id="estimate" class="half-price__estimate__price">$0.55</h4>
+						<h4 id="estimate" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
@@ -51,47 +51,77 @@
 		var storageMeasures = document.querySelectorAll(".storage-measure")
 		var downloadInput = document.getElementById("download");
 		var storageInput = document.getElementById("storage");
-		var storageChoice = ""
-		var downloadChoice = ""
+		var storageChoice = "TB"
+		var downloadChoice = "GB"
 
-		var changeMeasure = function(measures, choice, type) {
+
+
+		var changeMeasure = function(measures, choiceOne, choiceTwo, typeOne, typeTwo) {
 			if(measures) {
 				measures.forEach(el => el.addEventListener('click', event => {
 				  el.style.color="#2582FF";
-					choice = el.textContent
+					choiceOne = el.textContent
 					for (var i = 0; i < measures.length; i++) {
 						if(el !== measures[i]) {
 							measures[i].style.color="#AFB7C1";
 						}
 					}
-					calculate(choice, type)
+					calculate(choiceOne, choiceTwo, typeOne, typeTwo)
 				}));
 			}
-
 		}
 
-		var calculate = function(choice, type) {
-			var storage = document.getElementById("storage").value;
-			var download = document.getElementById("download").value;
-			var amount = 0
+		var calculate = function(choiceOne, choiceTwo, typeOne, typeTwo) {
+			var inputOne = "";
+			var inputTwo = "";
+			if(typeOne === "storage") {
+				var inputOne = document.getElementById("storage").value;
+				var inputTwo = document.getElementById("download").value;
+			} else if(typeOne === "download") {
+				var inputTwo = document.getElementById("storage").value;
+				var inputOne = document.getElementById("download").value;
+			}
 
-			var calculation = (download * .045) + (storage * .01)
+			var calculation = (inputOne * measureAccount(choiceOne, typeOne)) + (inputTwo * measureAccount(choiceTwo, typeTwo))
 			estimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
 		}
 
-		var onInput = function(input, choice, type) {
+
+		var measureAccount = function(choice, type) {
+			if(type === "download") {
+				if(choice === "MB") {
+					return .000045
+				} else if(choice === "GB") {
+						return .045
+				} else if(choice === "TB") {
+					return 45
+				}
+			} else if(type === "storage") {
+				if(choice === "MB") {
+					return .00001
+				} else if(choice === "GB") {
+					return .01
+				} else if(choice === "TB") {
+					return 10
+				}
+			}
+		}
+
+		var onInput = function(input, choiceOne, choiceTwo, typeOne, typeTwo) {
 			input.addEventListener('keyup', event => {
 				if(input.value > 1) {
-					calculate(choice, type)
+					calculate(choiceOne, choiceTwo, typeOne, typeTwo)
 				}
 			});
 		}
 
-		changeMeasure(downloadMeasures, downloadChoice, "download")
-		changeMeasure(storageMeasures, storageChoice, "storage")
+		calculate(storageChoice, downloadChoice, "storage", "download")
 
-		onInput(downloadInput, downloadChoice, "download")
-		onInput(storageInput, storageChoice, "storage")
+		changeMeasure(downloadMeasures, downloadChoice, storageChoice, "download", "storage")
+		changeMeasure(storageMeasures, storageChoice, downloadChoice, "storage", "download")
+
+		onInput(downloadInput, downloadChoice, storageChoice, "download", "storage")
+		onInput(storageInput, storageChoice, downloadChoice, "storage", "download")
 
 
 
