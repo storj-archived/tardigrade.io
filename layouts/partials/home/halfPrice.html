@@ -51,38 +51,55 @@
 		var storageMeasures = document.querySelectorAll(".storage-measure")
 		var downloadInput = document.getElementById("download");
 		var storageInput = document.getElementById("storage");
-		var storageChoice = "TB"
-		var downloadChoice = "GB"
 
-
-
-		var changeMeasure = function(measures, choiceOne, choiceTwo, typeOne, typeTwo) {
+		var changeMeasure = function(measures, typeOne, typeTwo) {
 			if(measures) {
 				measures.forEach(el => el.addEventListener('click', event => {
 				  el.style.color="#2582FF";
-					choiceOne = el.textContent
 					for (var i = 0; i < measures.length; i++) {
 						if(el !== measures[i]) {
 							measures[i].style.color="#AFB7C1";
 						}
 					}
-					calculate(choiceOne, choiceTwo, typeOne, typeTwo)
+					calculate(typeOne, typeTwo)
 				}));
 			}
 		}
 
-		var calculate = function(choiceOne, choiceTwo, typeOne, typeTwo) {
+		var calculate = function(typeOne, typeTwo) {
 			var inputOne = "";
 			var inputTwo = "";
+			var firstMeasure = ""
+			var secondMeasure = ""
+			var choiceOne = ""
+			var choiceTwo = ""
+
 			if(typeOne === "storage") {
-				var inputOne = document.getElementById("storage").value;
-				var inputTwo = document.getElementById("download").value;
+				 inputOne = document.getElementById("storage").value;
+				 inputTwo = document.getElementById("download").value;
+				 secondMeasure = document.querySelectorAll(".download-measure")
+				 firstMeasure = document.querySelectorAll(".storage-measure")
 			} else if(typeOne === "download") {
-				var inputTwo = document.getElementById("storage").value;
-				var inputOne = document.getElementById("download").value;
+				 inputTwo = document.getElementById("storage").value;
+				 inputOne = document.getElementById("download").value;
+				 secondMeasure = document.querySelectorAll(".storage-measure")
+				 firstMeasure = document.querySelectorAll(".download-measure")
+			}
+
+			for (var i = 0; i < secondMeasure.length; i++) {
+				if(secondMeasure[i].style.color === "rgb(37, 130, 255)") {
+					choiceTwo = secondMeasure[i].textContent
+				}
+			}
+
+			for (var i = 0; i < firstMeasure.length; i++) {
+				if(firstMeasure[i].style.color === "rgb(37, 130, 255)") {
+					choiceOne = firstMeasure[i].textContent
+				}
 			}
 
 			var calculation = (inputOne * measureAccount(choiceOne, typeOne)) + (inputTwo * measureAccount(choiceTwo, typeTwo))
+
 			estimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
 		}
 
@@ -107,32 +124,22 @@
 			}
 		}
 
-		var onInput = function(input, choiceOne, choiceTwo, typeOne, typeTwo) {
+		var onInput = function(input, typeOne, typeTwo) {
+
 			input.addEventListener('keyup', event => {
 				if(input.value > 1) {
-					calculate(choiceOne, choiceTwo, typeOne, typeTwo)
+					calculate(typeOne, typeTwo)
 				}
 			});
 		}
 
-		calculate(storageChoice, downloadChoice, "storage", "download")
+		calculate("storage", "download")
 
-		changeMeasure(downloadMeasures, downloadChoice, storageChoice, "download", "storage")
-		changeMeasure(storageMeasures, storageChoice, downloadChoice, "storage", "download")
+		changeMeasure(downloadMeasures, "download", "storage")
+		changeMeasure(storageMeasures, "storage", "download")
 
-		onInput(downloadInput, downloadChoice, storageChoice, "download", "storage")
-		onInput(storageInput, storageChoice, downloadChoice, "storage", "download")
-
-
-
-
-		// for (var i = 0; i < measures.length; i++) {
-		// 	var measure = measures[i];
-		// 	measure.onclick = function() {
-		// 			console.log(i, measure, measure.textContent);
-		// 	}
-		// }
-
+		onInput(downloadInput, "download", "storage")
+		onInput(storageInput, "storage", "download")
 
 
 
