@@ -60,7 +60,7 @@
 					<div class="row single-connector__main__wrapper">
 						<div class="spacer60"></div>
 						<div class="row">
-							<h3 class="single-connector__main__header">Why Tardigrade is Perfect for Filezilla</h3>
+							<h3 class="single-connector__main__header">Why Tardigrade is Perfect for {{.name}}</h3>
 						</div>
 						{{ range where .context.Site.Pages ".Params.class" "connector-content"}}
 						<div class="col-sm-12 col-md-6 single-connector__main__section">
