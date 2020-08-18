@@ -728,6 +728,12 @@
 		left: 220px;
 		height: 100%;
 		text-align: center;
+		@media only screen and (max-width: 1200px) {
+			left: 135px;
+		}
+		@media only screen and (max-width: 991px) {
+			left: 15px;
+		}
 	}
 	&__label {
 		display: block;
@@ -762,6 +768,13 @@
 			font-size: 46px;
 			line-height: 20px;
 			color: $color--blue-light;
+			max-width: 80%;
+			wrap: unset;
+			overflow: scroll;
+			position: relative;
+			top: 13px;
+			height: 40px;
+			padding-top: 10px;
 		}
 		&__text {
 			font-family: $primary-font;
