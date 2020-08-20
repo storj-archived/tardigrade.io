@@ -1,0 +1,18 @@
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 12px 32px;
+}
+
+.btn-primary {
+  color: $color--white;
+  background-color: $color--blue-light;
+  border-color: $color--blue-light;
+}
+
+.btn-primary:hover {
+  color: $color--white;
+  background-color: $color--blue-light-hover;
+  border-color: $color--blue-light-hover;
+}
