@@ -8,6 +8,6 @@ img: "/img/partners/duplicati.png"
 class: "partner"
 categories: "App Connector"
 link: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
-weight: 97
+weight: 96
 community: true
 ---
