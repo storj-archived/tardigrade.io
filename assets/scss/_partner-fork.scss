@@ -7,6 +7,10 @@
 			max-width: 621px;
 			margin: 0 auto;
 			color: #fff;
+			margin: 90px auto;
+			@media only screen and (max-width: 415px) {
+				margin: 50px auto;
+			}
 		}
 		&__heading-title {
 			text-align: center;
@@ -49,6 +53,9 @@
 			font-size: 18px;
 			max-width: 300px;
 			margin: 0 auto;
+			@media only screen and (max-width: 415px) {
+				max-width: 270px;
+			}
 		}
 		&__tech-section {
 			margin-right: 10px;
