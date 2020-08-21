@@ -35,6 +35,11 @@
       margin: 0 auto;
       border-radius: 6px;
       height: 320px;
+			&:hover {
+				color: #000;
+				background: darken(#fff, 5%);
+;
+			}
       @media only screen and (max-width: 1024px) {
         margin: inherit;
       }
@@ -47,12 +52,14 @@
       font-weight: bold;
       font-size: 18px;
       margin-bottom: 5px;
+			color: #000;
     }
     &__section-content {
       font-family: $secondary-font;
       font-size: 18px;
       max-width: 300px;
       margin: 0 auto;
+			color: #000;
       @media only screen and (max-width: 415px) {
         max-width: 270px;
       }
