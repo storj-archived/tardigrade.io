@@ -34,16 +34,16 @@
           font-family: $secondary-font;
         }
         .btn .arrow {
-            transform: rotate(90deg);
-            position: absolute;
-            right: 22px;
-            top: 22px;
+          transform: rotate(90deg);
+          position: absolute;
+          right: 22px;
+          top: 22px;
         }
-        .btn[aria-expanded='true'] .arrow {
-            transform: rotate(90deg);
+        .btn[aria-expanded="true"] .arrow {
+          transform: rotate(90deg);
         }
-        .btn[aria-expanded='false'] .arrow {
-            transform: rotate(0);
+        .btn[aria-expanded="false"] .arrow {
+          transform: rotate(0);
         }
       }
     }
@@ -77,50 +77,50 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
-		@media only screen and (max-width: 375px) {
-			height: 710px;
-		}
-		.spacer90 {
-			@media only screen and (max-width: 415px) {
-				height: 30px;
-	    }
-		}
+    @media only screen and (max-width: 375px) {
+      height: 710px;
+    }
+    .spacer90 {
+      @media only screen and (max-width: 415px) {
+        height: 30px;
+      }
+    }
     #blackBg {
       height: 100%;
       width: 100%;
       background: transparent;
       z-index: 2;
     }
-		.hiw-header {
-			@media only screen and (max-width: 768px) {
-				font-size: 34px;
-				line-height: 44px;
-	    }
-			@media only screen and (max-width: 375px) {
-				font-size: 24px;
-		    line-height: 34px;
-			}
-			@media only screen and (max-width: 360px) {
-				font-size: 22px;
-		    line-height: 31px;
-			}
-		}
-		&__content-wrapper {
-			@media only screen and (max-width: 415px) {
-				padding: 2rem !important;
-	    }
-		}
+    .hiw-header {
+      @media only screen and (max-width: 768px) {
+        font-size: 34px;
+        line-height: 44px;
+      }
+      @media only screen and (max-width: 375px) {
+        font-size: 24px;
+        line-height: 34px;
+      }
+      @media only screen and (max-width: 360px) {
+        font-size: 22px;
+        line-height: 31px;
+      }
+    }
+    &__content-wrapper {
+      @media only screen and (max-width: 415px) {
+        padding: 2rem !important;
+      }
+    }
     &__wrapper {
       position: relative;
     }
     &__video-link {
       margin: 0 auto;
       cursor: pointer;
-			text-align: center;
+      text-align: center;
     }
-		&__video-icon {
-			width: 50%;
-		}
+    &__video-icon {
+      width: 50%;
+    }
     &__content-wrapper {
       padding-top: 20px !important;
     }
@@ -145,11 +145,11 @@
       margin-top: 10px;
       @media only screen and (max-width: 991px) {
         width: 100%;
-				margin: 20px auto;
+        margin: 20px auto;
       }
-			@media only screen and (max-width: 415px) {
-				margin: 20px auto;
-			}
+      @media only screen and (max-width: 415px) {
+        margin: 20px auto;
+      }
     }
     &__learn-more-wrapper {
       margin: 0 auto;
@@ -191,15 +191,15 @@
   }
   .file-pieces {
     background: $color--blue-bg;
-		&__image {
-			margin-top: 40px;
-		}
+    &__image {
+      margin-top: 40px;
+    }
   }
   .enc-locally {
     background: $color--blue-bg;
-		&__image {
-			margin-top: 40px;
-		}
+    &__image {
+      margin-top: 40px;
+    }
   }
   .enc-files,
   .retrieve,
@@ -217,24 +217,24 @@
       }
     }
   }
-	.retrieve {
-		&__image {
-			margin-top: 60px;
-		}
-	}
-	.enc-files {
-		&__image-wrapper {
-			position: static;
-		}
-		&__image {
-			position: absolute;
-			left: 0;
-			width: 40%;
-			@media only screen and (max-width: 1400px) {
-				margin-top: 40px;
-			}
-		}
-	}
+  .retrieve {
+    &__image {
+      margin-top: 60px;
+    }
+  }
+  .enc-files {
+    &__image-wrapper {
+      position: static;
+    }
+    &__image {
+      position: absolute;
+      left: 0;
+      width: 40%;
+      @media only screen and (max-width: 1400px) {
+        margin-top: 40px;
+      }
+    }
+  }
   .why-better {
     &__table {
       width: 100%;
@@ -252,17 +252,17 @@
         font-size: 18px;
         font-weight: bold;
         line-height: 23px;
-				@media only screen and (max-width: 768px) {
-					font-size: 16px;
-				}
+        @media only screen and (max-width: 768px) {
+          font-size: 16px;
+        }
       }
       &__title {
         padding: 15px 0;
       }
       &__icon {
         text-align: center;
-				@media only screen and (max-width: 768px) {
-				}
+        @media only screen and (max-width: 768px) {
+        }
       }
     }
   }
