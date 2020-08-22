@@ -1,0 +1,36 @@
+{{ with .Site.GetPage "partnerForkHero"}}
+<div class="partner-fork__hero container-fluid">
+	<div class="spacer30"></div>
+	<div class="container">
+		<div>
+			{{partial "nav" .}}
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="partner-fork__hero__heading-wrapper row">
+				<h1 class="partner-fork__hero__heading-title">
+					{{ replace .Params.title "\n" "<br/>" | safeHTML}}
+				</h1>
+				<div class="partner-fork__hero__heading-content">
+					<span>{{ replace .Params.content "\n" "<br/>" | safeHTML}}</span>
+				</div>
+			</div>
+			<div class="partner-fork__hero__content-wrapper row">
+				<a href="/tech-partner" class="col-md-6 partner-fork__hero__partner-sections partner-fork__hero__tech-section">
+					<img src="/img/partnership-types-icons/tar-wholesale-partners.png" class="partner-fork__hero__section-img" />
+					<p class="partner-fork__hero__section-title">Technology Partners</p>
+					<p class="partner-fork__hero__section-content">Build a connector</p>
+				</a>
+				<a href="/partner" class="col-md-6 partner-fork__hero__partner-sections partner-fork__hero__os-section">
+					<img src="/img/partnership-types-icons/tar-revenue-share.svg" class="partner-fork__hero__section-img" />
+					<p class="partner-fork__hero__section-title">Open Source Partners</p>
+					<p class="partner-fork__hero__section-content">As a revenue share partner, we pay you for any data storage you drive to our network.</p>
+				</a>
+			</div>
+			<div class="spacer90"></div>
+		</div>
+	</div>
+</div>
+</div>
+{{end}}

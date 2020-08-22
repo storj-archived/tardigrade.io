@@ -7,7 +7,7 @@ new: true
 img: "/img/partners/restic.png"
 class: "partner"
 categories: "Developer Tools"
-weight: 98
+weight: 97
 link: "https://documentation.tardigrade.io/how-tos/backup-with-restic"
 community: false
 ---
