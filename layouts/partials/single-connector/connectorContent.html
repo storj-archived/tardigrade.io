@@ -32,6 +32,12 @@
 				<div class="column-section">
 					<p class="column-section__title">Resources</p>
 					<ul class="column-section__link-section">
+						{{if .Params.downloadOne}}
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.downloadOneLink}}">{{.Params.downloadOne}}</a></li>
+						{{end}}
+						{{if .Params.downloadTwo}}
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.downloadTwoLink}}">{{.Params.downloadTwo}}</a></li>
+						{{end}}
 						{{if .Params.docs}}
 						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.docs}}">Docs</a></li>
 						{{end}}
