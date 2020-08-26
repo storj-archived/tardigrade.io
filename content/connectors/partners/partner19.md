@@ -17,4 +17,8 @@ repo: "https://github.com/storj-thirdparty/FileZilla"
 download: "https://filezilla-project.org/download.php?show_all=1"
 website: "https://filezilla-project.org/"
 docs: "https://wiki.filezilla-project.org/Documentation"
+downloadOne: "Download FileZilla"
+downloadOneLink: "https://filezilla-project.org/download.php?show_all=1"
+downloadTwo: "Download FileZilla Pro"
+downloadTwoLink: "https://filezillapro.com/"
 ---
