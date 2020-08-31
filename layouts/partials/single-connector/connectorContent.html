@@ -11,7 +11,7 @@
 					{{if .Params.download }}
 					<a target="_blank" href="{{.Params.download}}"><button class="single-connector__button fill">Download</button></a>
 					{{end}}
-					<a target="_blank" href="/signup"><button class="single-connector__button">Join Tardigrade</button></a>
+					<a target="_blank" href="/signup/?partnerid={{.Params.partnerid}}"><button class="single-connector__button">Join Tardigrade</button></a>
 				</div>
 				<div class="spacer90"></div>
 			</div>
@@ -52,7 +52,7 @@
 				<div class="column-section">
 					<p class="column-section__title">Links</p>
 					<ul class="column-section__link-section">
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/signup">Join Tardigrade</a></li>
+						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/signup/?partnerid={{.Params.partnerid}}">Join Tardigrade</a></li>
 						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/login">Sign In</a></li>
 						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/community">Community</a></li>
 					</ul>
@@ -92,7 +92,9 @@
 							</iframe>
 						</div>
 						<p class="single-connector__section-text">Files are encrypted and split into pieces client-side, then distributed across our network of high-performance Storage Nodes, making it virtually impossible for your data to be compromised.</p>
-						<a target="_blank" href="/signup"><button class="single-connector__button">Get Started</button></a>
+						{{with .context.Site.GetPage .connectorInfo}}
+						<a target="_blank" href="/signup/?partnerid={{.Params.partnerid}}"><button class="single-connector__button">Get Started</button></a>
+						{{end}}
 						<div class="spacer90"></div>
 					</div>
 				</div>
