@@ -1,0 +1,15 @@
+<div class="bg-light">
+  <div class="container pb-5">
+    <div class="row py-5">
+      {{with .Site.GetPage "how" }}
+      <div class="col-10 offset-1 offset-md-0 col-md-5 mb-5">
+        <img src="/img/tar-about-cloud.svg" alt="Cloud icon" class="img-fluid mt-2">
+      </div>
+      <div class="col-10 offset-1 offset-md-0 col-md-7 mb-5">
+          <h3 class="mb-4">{{.Params.heading}}</h3>
+          <p class="lh-2">{{.Params.subheading}}</p>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>

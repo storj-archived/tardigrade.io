@@ -1,0 +1,31 @@
+<div class="about_tardigrade">
+  <div class="about_tardigrade_bg text-white py-md-5">
+    <div class="container-fluid">
+      <div class="row text-right">
+        <div class="col px-0">
+          <img src="/img/tar-about-gfx1.svg" alt="Tardigrade Cloud" class="img-fluid mt-4 about_tardigrade_gfx">
+        </div>
+      </div>
+    </div>
+    <div class="container my-md-5">
+      <div class="row">
+        {{with .Site.GetPage "aboutTardigrade" }}
+        <div class="col-10 offset-1 col-md-7">
+          <h3 class="mb-4">{{.Params.heading}}</h3>
+          <p class="mb-4 lh-2">{{.Params.subheading}}</p>
+          <p class="mb-4 lh-2">{{.Params.subheading2}}</p>
+        </div>
+        <div class="col-sm-12 col-md-5">
+        </div>
+        {{end}}
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row text-left">
+        <div class="col px-0">
+          <img src="/img/tar-about-gfx2.svg" alt="Tardigrade Gateway" class="img-fluid about_tardigrade_gfx">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
