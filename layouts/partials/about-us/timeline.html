@@ -1,0 +1,72 @@
+<div class="bg-light py-5">
+
+  <div class="container-md">
+    <div class="row py-5">
+      {{with .Site.GetPage "timeline" }}
+      <div class="col text-center">
+
+        <h3 class="mb-5">{{.Params.title}}</h3>
+
+        <div class="about_timeline">
+          <h5 class="about_timeline__item about_timeline__item--year">2014</h5>
+          {{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2014" }}
+            <div class="about_timeline__item">
+              <h5 class="about_timeline__title">{{.Params.title}}</h5>
+              <p>{{.Params.subheading}}</p>
+            </div>
+          {{end}}
+          <h5 class="about_timeline__item about_timeline__item--year">2016</h5>
+          {{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2016" }}
+            <div class="about_timeline__item">
+              <h5 class="about_timeline__title">{{.Params.title}}</h5>
+              <p>{{.Params.subheading}}</p>
+            </div>
+          {{end}}
+          <h5 class="about_timeline__item about_timeline__item--year">2017</h5>
+          {{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2017" }}
+            <div class="about_timeline__item">
+              <h5 class="about_timeline__title">{{.Params.title}}</h5>
+              <p>{{.Params.subheading}}</p>
+            </div>
+          {{end}}
+          <h5 class="about_timeline__item about_timeline__item--year">2018</h5>
+          {{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2018" }}
+            <div class="about_timeline__item">
+              <h5 class="about_timeline__title">{{.Params.title}}</h5>
+              <p>{{.Params.subheading}}</p>
+            </div>
+          {{end}}
+          <h5 class="about_timeline__item about_timeline__item--year">2019</h5>
+          {{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2019" }}
+            <div class="about_timeline__item">
+              <h5 class="about_timeline__title">{{.Params.title}}</h5>
+              <p>{{.Params.subheading}}</p>
+            </div>
+          {{end}}
+          <h5 class="about_timeline__item about_timeline__item--year"></h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row py-5 justify-content-center">
+      <div class="col-10 col-lg-8 text-center">
+        <h3 class="mb-4">{{.Params.heading}}</h3>
+        <p class="mb-4 lh-2">{{.Params.subheading}}</p>
+        <p class="mb-4 lh-2">{{.Params.subheading2}}</p>
+        <div class="animation-bounce mb-4">
+          <div class="icon-arrow-down">
+          </div>
+        </div>
+        <h5>{{.Params.ctaText}}</h5>
+        <a href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mt-3">
+            {{.Params.ctaButton}}
+        </a>
+      </div>
+      {{end}}
+    </div>
+  </div>
+
+</div>

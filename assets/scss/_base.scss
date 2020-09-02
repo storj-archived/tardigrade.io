@@ -21,16 +21,14 @@ h5 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 42px;
 }
 
 span,
 p {
-  font-size: 18px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
+  // font-size: 18px;
   line-height: 1.5;
 }
 
@@ -57,4 +55,23 @@ footer {
 .fixed-bottom {
   position: fixed;
   bottom: 0;
+}
+
+.bg-white {
+  background: $color--white;
+}
+.bg-light {
+  background: $color--light-bg;
+}
+
+.rounded-xl {
+  border-radius: 10px;
+}
+
+.zi-1 {
+  z-index: 1;
+}
+
+.lh-2 {
+  line-height: 2;
 }
