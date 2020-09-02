@@ -36,12 +36,12 @@
   background: linear-gradient(90deg, #004198 0%, #000000 100%);
 }
 .about_tardigrade_bg {
-  background-image: url(../img/tar-about-tardigrade-bg.svg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
-  @media screen and (max-width: $breakpoint-md) {
-    background: none;
+  background: none;
+  @media screen and (min-width: $breakpoint-md) {
+    background-image: url(../img/tar-about-tardigrade-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
   }
 }
 
