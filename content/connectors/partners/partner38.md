@@ -1,5 +1,6 @@
 ---
 name : "Backup With Duplicati"
+partnerid : "duplicati"
 description: "Automatic Backing Up using Duplicati"
 added: 3/19/20
 updated: 3/19/20
