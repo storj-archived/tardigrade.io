@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{ partial "head" . }}
+    </head>
+    <body>
+        <header>
+            {{ partial "banner" .}}
+            {{ partial "why/hero" .}}
+        </header>
+            {{ partial "about-us/mission" .}}
+            {{ partial "about-us/how" .}}
+            {{ partial "about-us/about" .}}
+            {{ partial "about-us/timeline" .}}
+            {{ partial "about-us/leadership" .}}
+        <footer>
+            {{partial "footer" . }}
+        </footer>
+        {{ partial "site-scripts" .}}
+    </body>
+</html>
