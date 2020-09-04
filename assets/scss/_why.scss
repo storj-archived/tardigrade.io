@@ -1,0 +1,14 @@
+.why {
+	&__hero {
+		height: 547px;
+		overflow: hidden;
+	}
+	&__bold {
+		background: url("/img/why-bold-bg.jpg");
+		background-size: cover;
+	}
+	&__found {
+		background: url("/img/why-found-bg.jpg");
+		background-size: cover;
+	}
+}

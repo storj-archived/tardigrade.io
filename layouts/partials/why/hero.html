@@ -3,7 +3,7 @@
     {{partial "nav" .}}
     <div class="row text-center text-lg-left">
       {{with .Site.GetPage "whyHero" }}
-      <div class="col-sm-12 col-lg-6 pt-5 mt-5 pb-lg-5 mb-lg-5">
+			<!-- <div class="col-sm-12 col-lg-6 pt-5 mt-5 pb-lg-5 mb-lg-5">
         <h1 class="text-white" >
             {{.Params.heading}}
         </h1>
@@ -13,11 +13,23 @@
         <a href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mt-3 mb-5">
             {{.Params.ctaText}}
         </a>
-      </div>
-      <div class="col-sm-12 col-lg-6">
-      </div>
+      </div> -->
+
+      <div class="col-md-4">
+				<img src="{{.Params.img}}" />
+			</div>
+			<div class="col-md-8">
+				<h2 class="text-black" >
+            {{.Params.heading}}
+        </h2>
+        <p class="lead text-black my-4">
+            {{.Params.subheading}}
+        </p>
+				<a href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mt-3 mb-5">
+            {{.Params.ctaText}}
+        </a>
+			</div>
       {{end}}
     </div>
   </div>
-  <div class="about_hero_bg img-fluid"></div>
 </div>
