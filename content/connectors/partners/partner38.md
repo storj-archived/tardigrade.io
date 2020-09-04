@@ -15,4 +15,9 @@ about: "Duplicati is an easy to use, open source backup tool for Windows, Mac, L
 released: "02/22/20"
 version: "1.3.22"
 bgImg: "/img/duplicati-bg.svg"
+repo: "https://github.com/duplicati/duplicati/releases"
+website: "https://www.duplicati.com/"
+docs: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
+download: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
+
 ---
