@@ -3,10 +3,10 @@
     {{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
     <div class="row text-center pt-5 text-lg-left">
       {{with .Site.GetPage "whyHero" }}
-      <div class="col-md-12 col-lg-6">
+      <div class="col-md-12 col-lg-6 image">
 				<img src="{{.Params.img}}" />
 			</div>
-			<div class="col-md-12 col-lg-6">
+			<div class="col-md-12 col-lg-6 text">
 				<h2 class="text-black" >
             {{.Params.heading}}
         </h2>

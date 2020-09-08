@@ -2,12 +2,36 @@
 	&__hero {
 		overflow: hidden;
 		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
+		max-height: 547px;
+		@media only screen and (max-width: 1024px) {
+			max-height: 866px;
+			.row {
+				display: flex;
+			}
+			.image {
+				order: 2;
+			}
+			.text {
+				order: 1;
+			}
+		}
 	}
 	&__bold {
 		background: url("/img/why-bold-bg.jpg");
 		background-size: cover;
+		 background-position: 100% 100%;
 		@media only screen and (max-width: 1024px) {
 			background: url("/img/why-bold-sm-bg.jpg");
+			background-size: cover;
+			.row {
+				display: flex;
+			}
+			.image {
+				order: 2;
+			}
+			.text {
+				order: 1;
+			}
 		}
 	}
 	&__found {
@@ -19,5 +43,25 @@
 	}
 	&__resilient {
 		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
+		// max-height: 576px;
+		.container {
+			padding-left: 0;
+			padding-right: 0px;
+	    margin-right: 0px;
+	    max-width: none;
+			// max-height: 576px;
+		}
+		&__text-wrapper {
+			padding-left: 8rem!important;
+		}
+		&__image {
+			width: 100%;
+			height: 100%;
+			// max-height: 576px;
+			// @media only screen and (max-width: 1024px) {
+			// 	width: auto;
+			// 	height: auto;
+			// }
+		}
 	}
 }

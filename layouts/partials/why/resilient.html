@@ -1,17 +1,17 @@
 <div class="why__resilient">
   <div class="container">
-    <div class="row text-center text-lg-left">
+    <div class="row text-left">
       {{with .Site.GetPage "whyResilient" }}
-			<div class="col-md-12 col-lg-6 mt-5 pr-5 w-75">
-				<h2 class="text-black mt-5 mb-3" >
+			<div class="align-middle why__resilient__text-wrapper col-sm-12 col-md-6 col-lg-6 mt-5 pb-md-5 pl-lg-5">
+				<h2 class="text-black mt-5 pt-5 mb-3  w-75" >
             {{.Params.heading}}
         </h2>
-        <p class="text-black pr-5">
+        <p class="text-black pb-lg-md-4 pr-lg-5">
             {{.Params.subheading}}
         </p>
 			</div>
-			<div class="col-md-12 col-lg-6">
-				<img src="{{.Params.img}}" />
+			<div class="col-sm-12 col-md-6 col-lg-6">
+				<img class="why__resilient__image" src="{{.Params.img}}" />
 			</div>
       {{end}}
     </div>

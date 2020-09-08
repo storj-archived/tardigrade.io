@@ -1,25 +1,24 @@
 <div class="why__beat">
   <div class="container">
-    <div class="row text-center text-lg-left">
-      {{with .Site.GetPage "whyBold" }}
-      <div class="col-md-6">
-			</div>
-			<div class="col-md-6">
-				<h2 class="text-white" >
+    <div class="row py-5 my-5 text-center">
+      {{with .Site.GetPage "whyBeast" }}
+			<div class="col-lg-12">
+				<h2 class="text-black pt-4 pb-3" >
             {{.Params.heading}}
         </h2>
-        <p class="lead text-white">
+        <p class="lead pb-5 text-black">
             {{.Params.subheading}}
         </p>
 			</div>
-      {{end}}
+			<div class="col-md-lg pb-4 row">
+				{{ range where .Site.Pages ".Params.class" "beast"}}
+					<div class="text-center col-lg-3">
+						<h5 class="">{{.Params.heading}}</h5>
+						<p class="text-center pt-2 m-auto w-75">{{.Params.subheading}}</p>
+					</div>
+				{{end}}
+			</div>
+			{{end}}
     </div>
   </div>
 </div>
-
-{{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2016" }}
-	<div class="about_timeline__item">
-		<h5 class="about_timeline__title">{{.Params.title}}</h5>
-		<p>{{.Params.subheading}}</p>
-	</div>
-{{end}}
