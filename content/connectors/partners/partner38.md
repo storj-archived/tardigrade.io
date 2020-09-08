@@ -19,5 +19,5 @@ repo: "https://github.com/duplicati/duplicati/releases"
 website: "https://www.duplicati.com/"
 docs: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
 download: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
-details: "Canary version supported, official Duplicati release coming soon."
+details: Canary version supported. Official Duplicati release coming soon."
 ---
