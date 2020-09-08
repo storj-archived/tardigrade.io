@@ -1,14 +1,23 @@
 .why {
 	&__hero {
-		height: 547px;
 		overflow: hidden;
+		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
 	}
 	&__bold {
 		background: url("/img/why-bold-bg.jpg");
 		background-size: cover;
+		@media only screen and (max-width: 1024px) {
+			background: url("/img/why-bold-sm-bg.jpg");
+		}
 	}
 	&__found {
 		background: url("/img/why-found-bg.jpg");
 		background-size: cover;
+		@media only screen and (max-width: 1024px) {
+			background: url("/img/why-found-sm-bg.jpg");
+		}
+	}
+	&__resilient {
+		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
 	}
 }

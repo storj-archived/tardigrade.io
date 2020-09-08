@@ -1,4 +1,4 @@
-<div class="why__bold">
+<div class="why__beat">
   <div class="container">
     <div class="row text-center text-lg-left">
       {{with .Site.GetPage "whyBold" }}
@@ -16,3 +16,10 @@
     </div>
   </div>
 </div>
+
+{{ range where (where .Site.Pages ".Params.class" "timelineEvents") ".Params.year" "2016" }}
+	<div class="about_timeline__item">
+		<h5 class="about_timeline__title">{{.Params.title}}</h5>
+		<p>{{.Params.subheading}}</p>
+	</div>
+{{end}}

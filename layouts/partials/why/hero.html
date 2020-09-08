@@ -1,24 +1,12 @@
 <div class="why__hero">
-  <div class="container pt-4">
-    {{partial "nav" .}}
-    <div class="row text-center text-lg-left">
+  <div class="container">
+    {{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
+    <div class="row text-center pt-5 text-lg-left">
       {{with .Site.GetPage "whyHero" }}
-			<!-- <div class="col-sm-12 col-lg-6 pt-5 mt-5 pb-lg-5 mb-lg-5">
-        <h1 class="text-white" >
-            {{.Params.heading}}
-        </h1>
-        <p class="lead text-white my-4">
-            {{.Params.subheading}}
-        </p>
-        <a href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mt-3 mb-5">
-            {{.Params.ctaText}}
-        </a>
-      </div> -->
-
-      <div class="col-md-4">
+      <div class="col-md-12 col-lg-6">
 				<img src="{{.Params.img}}" />
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-12 col-lg-6">
 				<h2 class="text-black" >
             {{.Params.heading}}
         </h2>
