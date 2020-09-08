@@ -18,6 +18,9 @@
 			<div class="col-lg-4 col-md-5  offset-lg-1">
 				<div class="column-section">
 					<p class="column-section__title">Details</p>
+					{{if isset .Params "details"  }}
+						<p class="column-section__detail-message">{{ .Params.details }}</p>
+					{{else}}
 					<ul class="column-section__column left">
 						<li class="column-section__list-item">Released</li>
 						<li class="column-section__list-item value">{{ .Params.released }}</li>
@@ -28,6 +31,7 @@
 						<li class="column-section__list-item value">1.3.22</li>
 						{{end}}
 					</ul>
+					{{end}}
 				</div>
 				<div class="column-section">
 					<p class="column-section__title">Resources</p>
