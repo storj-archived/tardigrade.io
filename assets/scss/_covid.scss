@@ -2,6 +2,7 @@
   .covid {
     &__hero {
       &__bg {
+        background: $color--blue-bg;
         background: linear-gradient(3.21deg, #133e9c 5.15%, #00091e 94.47%);
       }
       &__content-wrapper {

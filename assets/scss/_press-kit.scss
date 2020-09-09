@@ -31,6 +31,7 @@
   }
   .press-kit__hero {
     @media only screen and (max-width: 991px) {
+      background: $color--blue-bg;
       background: linear-gradient(114.84deg, #133e9c -22.37%, #00091e 63.82%);
       background-image: radial-gradient(
         236.22% 100.97% at 50% -4.33%,
@@ -45,6 +46,7 @@
       background-position: 0 30%;
       background-repeat: no-repeat;
       overflow: hidden;
+      background: $color--blue-bg;
       background-image: radial-gradient(100% 80%, #0055c6 20%, #000000 100%);
       @media only screen and (max-width: 991px) {
         background-position: 30% 0;
@@ -436,6 +438,7 @@
   }
 
   .press-kit__bottom {
+    background: $color--blue-bg;
     background: radial-gradient(
       83.61% 309.43% at 50% 50%,
       #133e9c 0%,
