@@ -1,6 +1,6 @@
 
 .about_hero {
-  background: #0059d0;
+  background: $color--blue-bg;
   background: radial-gradient(516.5px at 92.17% 47.6%,#133e9c 0%,#00091e 100%);
   @media screen and (min-width: $breakpoint-lg) {
     background: $color--blue;
@@ -34,7 +34,7 @@
 }
 
 .about_tardigrade {
-  background: #0059d0;
+  background: $color--blue-bg;
   background: linear-gradient(90deg, #004198 0%, #000000 100%);
 }
 .about_tardigrade_bg {
