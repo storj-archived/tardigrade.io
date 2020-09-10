@@ -27,80 +27,12 @@ p {
       align-items: center;
 
       &__title {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 49px;
-        letter-spacing: -0.100741px;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 1.5;
+        letter-spacing: -.100741px;
         color: #252525;
-      }
-
-      &__info {
-        font-style: italic;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.100741px;
-        color: rgba(37, 37, 37, 0.7);
-        opacity: 0.5;
-        margin-left: 10px;
-      }
-    }
-
-    &__info-icon {
-      cursor: pointer;
-
-      &:hover {
-        .info-icon-circle {
-          fill: #2582ff;
-        }
-      }
-    }
-
-    &__info-popup {
-      position: absolute;
-      top: 40px;
-      left: 75px;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px;
-      max-width: 385px;
-      width: 385px;
-      z-index: 100;
-      background-color: #fff;
-      border-radius: 6px;
-      box-shadow: 0 8px 34px rgba(161, 173, 185, 0.41);
-
-      &__text {
-        margin-top: 40px;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.100741px;
-        color: rgba(37, 37, 37, 0.7);
-        font-weight: 500;
-        text-align: center;
-      }
-
-      &__link {
-        margin-top: 30px;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 21px;
-        letter-spacing: 0.01em;
-        color: #2582ff;
-      }
-
-      &__close-icon {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-
-        &:hover {
-          .close-cross-path {
-            stroke: #2683ff;
-          }
-        }
+        margin-bottom: 32px;
       }
     }
   }
