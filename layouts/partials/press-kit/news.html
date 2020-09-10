@@ -51,7 +51,7 @@
         {{end}}
 
       </div>
-      <div class="col-lg-10 2019 press-kit__news-desktop-article-group current-year">
+      <div class="col-lg-10 2019 press-kit__news__desktop-article-group current-year">
         {{range where .Site.Pages ".Params.class" "newPressArticle"}}
          <div class="row press-kit__news__article">
            <div class="col-lg-9">
@@ -83,7 +83,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2018 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2018 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2018" }}
           <div class="row press-kit__news__article">
@@ -101,7 +101,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2017 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2017 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2017" }}
           <div class="row press-kit__news__article">
@@ -119,7 +119,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2016 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2016 press-kit__news__desktop-article-group">
     {{range where .Site.Pages ".Params.class" "pressArticle"}}
       {{ if in .Params.publishedOn "2016" }}
         <div class="row press-kit__news__article">
@@ -137,7 +137,7 @@
       {{end}}
     {{end}}
     </div>
-    <div class="col-lg-10 2015 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2015 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2015" }}
           <div class="row press-kit__news__article">
@@ -155,7 +155,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2014 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2014 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2014" }}
           <div class="row press-kit__news__article">

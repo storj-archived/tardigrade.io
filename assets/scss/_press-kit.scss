@@ -23,6 +23,7 @@
       position: relative;
       right: 5px;
       display: inline;
+			font-size: 14px;
     }
     &__image {
       position: relative;
@@ -132,6 +133,9 @@
         top: 0;
       }
     }
+		&__msg {
+			z-index: 10;
+		}
   }
   .press-kit__news {
     &__title {
@@ -195,7 +199,7 @@
       .press-kit__news__press-source {
         font-weight: 300;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 21px;
         letter-spacing: 0.5px;
         float: right;
       }
