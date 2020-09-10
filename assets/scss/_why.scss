@@ -19,10 +19,12 @@
 	&__bold {
 		background: url("/img/why-bold-bg.jpg");
 		background-size: cover;
-		 background-position: 100% 100%;
+		background-position: 100% 100%;
 		@media only screen and (max-width: 1024px) {
 			background: url("/img/why-bold-sm-bg.jpg");
 			background-size: cover;
+			height: 1000px;
+			background-position: center;
 			.row {
 				display: flex;
 			}
@@ -38,30 +40,40 @@
 		background: url("/img/why-found-bg.jpg");
 		background-size: cover;
 		@media only screen and (max-width: 1024px) {
+			background-position: center;
+		}
+		@media only screen and (max-width: 768px) {
 			background: url("/img/why-found-sm-bg.jpg");
+			height: 1000px;
+			background-position: center;
+			background-size: cover;
 		}
 	}
 	&__resilient {
 		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
-		// max-height: 576px;
+		min-height: 576px;
 		.container {
 			padding-left: 0;
 			padding-right: 0px;
 	    margin-right: 0px;
 	    max-width: none;
-			// max-height: 576px;
+			min-height: 576px;
+		}
+		.row {
+			min-height: 576px;
 		}
 		&__text-wrapper {
 			padding-left: 8rem!important;
 		}
 		&__image {
-			width: 100%;
-			height: 100%;
-			// max-height: 576px;
-			// @media only screen and (max-width: 1024px) {
-			// 	width: auto;
-			// 	height: auto;
-			// }
+			background: url("/img/why-resilient-bg.jpg");
+			background-size: cover;
 		}
 	}
+	&__beast {
+		@media only screen and (max-width: 1024px) {
+			display: none;
+		}
+	}
+
 }
