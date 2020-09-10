@@ -17,10 +17,9 @@
 		}
 	}
 	&__bold {
-		background: url("/img/why-bold-bg.jpg");
+		background: url('/img/why-bold-bg.jpg'), #000;
 		background-size: cover;
 		background-position: center;
-		background-color: #000;
 		@media only screen and (max-width: $breakpoint-lg) {
 			background: url("/img/why-bold-sm-bg.jpg");
 			background-size: cover;
