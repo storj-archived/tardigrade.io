@@ -33,6 +33,7 @@ p {
       color: #2582FF;
       font-size: 14px;
       line-height: 19px;
+      font-weight: bold;
 
       &:hover {
         background-color: #2582FF;
@@ -64,16 +65,17 @@ p {
 
       &__sub-title {
         font-family: "Inter", sans-serif;
-        font-weight: 500;
-        margin-top: 55px;
+        font-weight: 400;
+        margin-top: 32px;
         font-size: 22px;
-        line-height: 30px;
+        max-width: 480px;
+        line-height: 1.5;
         letter-spacing: -0.100741px;
         color: rgba(37, 37, 37, 0.7);
       }
 
       &__steps-area {
-        margin-top: 55px;
+        margin-top: 40px;
         display: flex;
         align-items: center;
 
@@ -92,11 +94,12 @@ p {
             color: #fff;
             background-color: #2582ff;
             border-radius: 24px;
+            font-weight: bold;
           }
 
           &__divider {
             height: 65px;
-            width: 2px;
+            width: 1px;
             background-color: #2582ff;
           }
         }
@@ -124,13 +127,14 @@ p {
 
       &__account {
         margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
 
         &__question {
           font-family: "Inter", sans-serif;
-          font-weight: 500;
+          font-weight: 400;
           font-size: 16px;
           line-height: 19px;
           color: #354049;
@@ -143,6 +147,9 @@ p {
           line-height: 19px;
           color: #2582ff;
           margin-left: 5px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -153,15 +160,15 @@ p {
     align-items: center;
     justify-content: center;
     background-color: #f5f6fa;
-    margin-top: 10px;
-    padding-bottom: 20px;
-    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
     font-size: 12px;
     line-height: 18px;
 
     &__copyright {
       font-family: "Inter", sans-serif;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 12px;
       line-height: 18px;
       color: #384b65;
@@ -170,7 +177,10 @@ p {
     &__terms,
     &__help {
       color: #2582ff;
-      margin-left: 30px;
+      margin-left: 40px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

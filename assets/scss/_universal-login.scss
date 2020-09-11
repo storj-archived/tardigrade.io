@@ -30,6 +30,7 @@ p {
       color: #2582FF;
       font-size: 14px;
       line-height: 19px;
+      font-weight: bold;
 
       &:hover {
         background-color: #2582FF;
@@ -50,13 +51,14 @@ p {
     &__functional-area {
       &__account {
         margin-top: 50px;
+        margin-bottom: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
 
         &__question {
           font-family: "Inter", sans-serif;
-          font-weight: 500;
+          font-weight: 400;
           font-size: 16px;
           line-height: 19px;
           color: #354049;
@@ -69,20 +71,23 @@ p {
           line-height: 19px;
           color: #2582ff;
           margin-left: 5px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
 
     &__footer {
-      margin-top: 10px;
-      padding-bottom: 20px;
-      font-weight: 500;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-weight: 400;
       font-size: 12px;
       line-height: 18px;
 
       &__copyright {
         font-family: "Inter", sans-serif;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 12px;
         line-height: 18px;
         color: #384b65;
@@ -92,6 +97,9 @@ p {
       &__help {
         color: #2582ff;
         margin-left: 30px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
