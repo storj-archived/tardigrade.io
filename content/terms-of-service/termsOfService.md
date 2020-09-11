@@ -180,36 +180,47 @@ lastUpdated: "March 19, 2020"
 	<ol type="a">
 		<li><p>&nbsp;&nbsp;<u>Fees</u>. You will pay the Fees and any other amounts due as you are otherwise notified via the Storage Services of the fees applicable to use of the Storage Platform ("Fees"). All Fees are exclusive of any applicable taxes, which are your sole responsibility. We will provide notice at least thirty (30) days in advance of any increase to the Fees. The Fees are as follows:</p></li>
 	</ol>
-</ol>
 
-<table>
-  <tr>
-		<th>Object</th>
-		<th>Bytes</th>
-		<th>GB Hour</th>
-		<th>GM Month</th>
-		<th>$0.010 per GB Month</th>
-		<th>Storage is calculated based on bytes uploaded, including any encryption-based overhead</th>
-  </tr>
-  <tr>
-    <td>Object</td>
-    <td>Count</td>
-    <td>GB</td>
-		<td>Total Volume</td>
-		<td>$0.0000022 per object</td>
-		<td>Each file uploaded includes a fee associated with metadata overhead</td>
-	</tr>
-	<tr>
-    <td>Egress Bandwidth</td>
-    <td>Bytes</td>
-    <td>GB</td>
-		<td>Total Volume</td>
-		<td>$0.045 per GB</td>
-		<td>Bandwidth related to object downloads calculated on bytes downloaded including long tail elimination-related bandwidth</td>
-	</tr>
-</table>
-<br>
-<ol type="a">
+	<br>
+
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<tr>
+				<th>Category</th>
+				<th>Measurement</th>
+				<th>Unit</th>
+				<th>Per Billing Cycle Unit</th>
+				<th>Price</th>
+				<th>Description</th>
+			</tr>
+		  <tr>
+				<td>Object</td>
+				<td>Bytes</td>
+				<td>GB Hour</td>
+				<td>GB Month</td>
+				<td>$0.010 per GB Month</td>
+				<td>Storage is calculated based on bytes uploaded, including any encryption-based overhead</td>
+		  </tr>
+		  <tr>
+		    <td>Object</td>
+		    <td>Count</td>
+		    <td>GB</td>
+				<td>Total Volume</td>
+				<td>$0.0000022 per object</td>
+				<td>Each file uploaded includes a fee associated with metadata overhead</td>
+			</tr>
+			<tr>
+		    <td>Egress Bandwidth</td>
+		    <td>Bytes</td>
+		    <td>GB</td>
+				<td>Total Volume</td>
+				<td>$0.045 per GB</td>
+				<td>Bandwidth related to object downloads calculated on bytes downloaded including long tail elimination-related bandwidth</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
 	<li><p>&nbsp;&nbsp;<u>Payment</u>. Except where otherwise indicated via the Storage Services we will charge all Fees to a payment method designated by you from the available options you have via the Storage Services (the “<b>Payment Method</b>”).  You represent and warrant that you are authorized to use the Payment Method and authorize us to charge all amounts due hereunder to the Payment Method.  If your Payment Method cannot be verified, is invalid, or is not otherwise acceptable, your right to use the Storage Services may be suspended and/or terminated automatically.  Fees will be charged on a monthly basis based on your prior month’s usage. You can avoid incurring future Fees at any time by discontinuing your use of the Storage Services to store your Storage Materials.</p></li>
 	<br>
 	<li><p>&nbsp;&nbsp;<u>Late Fees</u>. Except as prohibited by law, we may assess a late charge if you do not pay Fees when due which you will pay at the lesser of 1.5% of the unpaid amount per month or the maximum rate permitted by law along with our costs of collection including but not limited to reasonable attorneys' fees and other legal fees and costs. In addition, we may suspend and/or terminate your access to the Storage Services immediately without notice if you fail to pay Fees on time.</p></li>
@@ -271,38 +282,42 @@ lastUpdated: "March 19, 2020"
 
 			<li><p>&nbsp;&nbsp;<b>Errors</b>. This Section 2.b applies only to Errors.  Response Times and Resolution Targets are set forth in the Severity Level Table below.  Response Time will be measured from the time Company receives a Support Request until Company has responded to that Support Request.  Resolution Target will be measured from the time Company receives a Support Request until Company has Resolved that Support Request. “Resolve”, “Resolved”, “Resolution” and correlative capitalized terms mean, with respect to any particular Support Request, that Company has corrected the Error, whether by a work-around or any other reasonable means, that prompted that Support Request.  Company shall endeavor to respond to and Resolve all Support Requests within the following Response Times and Resolution Targets based on Company's designation of the severity of the associated Error:</p></li>
 			<br>
-			<table>
-				<tr>
-					<th>Priorty Level of Error</th>
-					<th>Definition</th>
-					<th>Response Time</th>
-					<th>Resolution Target</th>
-				</tr>
-				<tr>
-					<td>Severity 1 Error</td>
-					<td>The Error results in complete interruption of a production system that impacts all users and no viable workaround exists. User must email Company to report a Severity Level 1 Error Support Request.</td>
-					<td>Company shall acknowledge receipt within one (1) day of a Support Request. Company shall provide updates every eight (8) hours.</td>
-					<td>Company shall Resolve the Support Request as soon as practicable and no later than three (3) days after Company’s receipt of the Support Request.</td>
-				</tr>
-				<tr>
-					<td>Severity 2 Error</td>
-					<td>The Error has a (i) severe impact on performance, important services / components are not functioning, a single connection is down, or a subset of users cannot access the Services in a production system; or (ii) critical business impact and deployment is delayed with a hard deadline approaching in a non-production environment; the Error cannot be easily circumvented. </td>
-					<td>During Support Hours, Company shall acknowledge receipt within two (2) days of a Support Request. Company and User will mutually agree on a schedule for ongoing updates.</td>
-					<td>Company shall Resolve the Support Request as soon as practicable and no later than five (5) days after Company’s receipt of the Support Request.</td>
-				</tr>
-				<tr>
-					<td>Non- Severe Error</td>
-					<td>The Error has a low impact on (i) a small number of users in a production environment; or (ii) development or quality assurance in a non-production environment.  Key functionality is usable; the Error can be readily circumvented.</td>
-					<td>During Support Hours, Company shall acknowledge receipt within three (3) business days of a Support Request. Company will provide ongoing updates every five (5) days.</td>
-					<td>Company shall Resolve the Support Request as soon as practicable and no later than ten (10) days after Company’s receipt of the Support Request.</td>
-				</tr>
-				<tr>
-					<td>Non- Incident</td>
-					<td>User is letting Company know about a minor problem or enhancement request for which feedback is not required. Platform is functioning as designed. </td>
-					<td>During Support Hours, Company shall acknowledge receipt within five (5) Business Days of a Support Request.</td>
-					<td>Not applicable.</td>
-				</tr>
-			</table>
+
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<tr>
+						<th>Priorty Level of Error</th>
+						<th>Definition</th>
+						<th>Response Time</th>
+						<th>Resolution Target</th>
+					</tr>
+					<tr>
+						<td>Severity 1 Error</td>
+						<td>The Error results in complete interruption of a production system that impacts all users and no viable workaround exists. User must email Company to report a Severity Level 1 Error Support Request.</td>
+						<td>Company shall acknowledge receipt within one (1) day of a Support Request. Company shall provide updates every eight (8) hours.</td>
+						<td>Company shall Resolve the Support Request as soon as practicable and no later than three (3) days after Company’s receipt of the Support Request.</td>
+					</tr>
+					<tr>
+						<td>Severity 2 Error</td>
+						<td>The Error has a (i) severe impact on performance, important services / components are not functioning, a single connection is down, or a subset of users cannot access the Services in a production system; or (ii) critical business impact and deployment is delayed with a hard deadline approaching in a non-production environment; the Error cannot be easily circumvented. </td>
+						<td>During Support Hours, Company shall acknowledge receipt within two (2) days of a Support Request. Company and User will mutually agree on a schedule for ongoing updates.</td>
+						<td>Company shall Resolve the Support Request as soon as practicable and no later than five (5) days after Company’s receipt of the Support Request.</td>
+					</tr>
+					<tr>
+						<td>Non- Severe Error</td>
+						<td>The Error has a low impact on (i) a small number of users in a production environment; or (ii) development or quality assurance in a non-production environment.  Key functionality is usable; the Error can be readily circumvented.</td>
+						<td>During Support Hours, Company shall acknowledge receipt within three (3) business days of a Support Request. Company will provide ongoing updates every five (5) days.</td>
+						<td>Company shall Resolve the Support Request as soon as practicable and no later than ten (10) days after Company’s receipt of the Support Request.</td>
+					</tr>
+					<tr>
+						<td>Non- Incident</td>
+						<td>User is letting Company know about a minor problem or enhancement request for which feedback is not required. Platform is functioning as designed. </td>
+						<td>During Support Hours, Company shall acknowledge receipt within five (5) Business Days of a Support Request.</td>
+						<td>Not applicable.</td>
+					</tr>
+				</table>
+			</div>
+
 			<br>
 			<li><p>&nbsp;&nbsp;<b>Time Extensions</b>.  The parties may, on a case-by-case basis, agree in writing to a reasonable extension of the Response Times or Resolution Targets</p></li>
 

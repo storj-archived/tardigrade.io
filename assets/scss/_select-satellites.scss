@@ -1,0 +1,172 @@
+/* Copyright (C) 2020 Storj Labs, Inc. */
+/* See LICENSE for copying information. */
+
+h1,
+p {
+  margin: 0;
+}
+
+.functional-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  font-family: "Inter", sans-serif;
+  padding: 60px 80px;
+  background-color: #fff;
+  border-radius: 6px;
+  min-width: 520px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &__title-area {
+      display: flex;
+      align-items: center;
+
+      &__title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 1.5;
+        letter-spacing: -.100741px;
+        color: #252525;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__sat-info {
+    max-width: 460px;
+    margin: 5px 0 50px 0;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.100741px;
+    color: rgba(37, 37, 37, 0.7);
+    word-break: break-word;
+  }
+}
+
+.proceed-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2582ff;
+  border-radius: 6px;
+  color: #fff;
+
+  &:hover {
+    background-color: $color--blue-light-hover;
+    color: #fff;
+  }
+}
+
+.satellite-container {
+  display: flex;
+  align-items: center;
+  background-color: #f7f8fb;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  user-select: none;
+}
+
+.satellite-container:hover {
+  border-color: #2582ff;
+}
+
+.satellite-container:hover .us-svg-path,
+.satellite-container:hover .europe-svg-path,
+.satellite-container:hover .asia-svg-path {
+  fill: #2582ff;
+}
+
+.europe-svg,
+.us-svg {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
+}
+
+.asia-svg {
+  height: 40px;
+  width: 57px;
+  margin-right: 13px;
+}
+
+.satellite-name {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #494949;
+  font-family: "Inter", sans-serif;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.storj-logo {
+  margin-right: 10px;
+}
+
+.storj-logo-text {
+  font-size: 13px;
+  line-height: 15px;
+  color: #5e6978;
+  font-family: "Inter", sans-serif;
+}
+
+.selected-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #f7f8fb;
+  border: 2px solid #2582ff;
+  user-select: none;
+  position: relative;
+}
+
+.selected-image {
+  fill: #2582ff;
+}
+
+.selected-title {
+  font-family: "Inter", sans-serif;
+  color: #2582ff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.selected-subtitle {
+  font-family: "Inter", sans-serif;
+  color: #2582ff;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.checkmark {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.selected-checkmark {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}

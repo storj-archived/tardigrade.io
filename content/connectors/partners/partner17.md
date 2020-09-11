@@ -9,4 +9,5 @@ class: "partner"
 categories: "Storage Node"
 link: "https://documentation.storj.io/"
 weight: 97
+community: false
 ---

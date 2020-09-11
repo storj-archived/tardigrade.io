@@ -1,0 +1,33 @@
+{{ $name := .name }}
+
+<div class="container-fluid single-connector__back-wrapper">
+	<div class="container">
+		<a href="/connectors">
+			<img class="single-connector__back-arrow" src="/img/back-arrow.svg" alt="Back Button" />
+			<p class="single-connector__back-text">Tardigrade Connectors</p>
+		</a>
+	</div>
+</div>
+<div class="container-fluid single-connector__hero nomp">
+	<div class="container-fluid inner-hero-wrapper">
+		{{with .context.Site.GetPage .connectorInfo}}
+		<div style="background-image: url({{ .Params.bgImg }})" class="container single-connector__hero__bg">
+			<div class="spacer20"></div>
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-lg-10 single-connector__hero__content">
+					<img src="{{ .Params.img }}" class="single-connector__hero__image" />
+					<div class="single-connector__hero__info-wrapper">
+						<h1 class="single-connector__hero__name">{{ $name }}</h1>
+						<p class="single-connector__hero__category">{{ .Params.categories }}</p>
+					</div>
+				</div>
+				{{ if eq .Params.new true }}
+				<p class="single-connector__hero__status">
+					New
+				</p>
+				{{end}}
+			</div>
+			{{end}}
+		</div>
+	</div>
+</div>

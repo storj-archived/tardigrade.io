@@ -8,5 +8,6 @@ img: "/img/partners/uplink-cli.svg"
 class: "partner"
 categories: "Developer Tools"
 ready: true
-link: "https://documentation.tardigrade.io/setup/uplink-cli"
+link: "https://documentation.tardigrade.io/getting-started/uploading-your-first-object/set-up-uplink-cli"
+community: false
 ---

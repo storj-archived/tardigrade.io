@@ -8,5 +8,6 @@ img: "/img/partners/ms-net-binding.svg"
 class: "partner"
 categories: "Bindings"
 ready: true
-link: "https://github.com/TopperDEL/uplink.net/issues"
+link: "https://github.com/TopperDEL/uplink.net/"
+community: true
 ---

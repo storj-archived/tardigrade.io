@@ -7,5 +7,7 @@ new: true
 img: "/img/partners/node-dashboard.png"
 class: "partner"
 categories: "Storage Node"
-weight: 97
+weight: 96
+link: "https://documentation.storj.io/setup/cli/dashboard"
+community: false
 ---

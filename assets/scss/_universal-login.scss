@@ -1,184 +1,106 @@
-/* Copyright (C) 2019 Storj Labs, Inc. */
+/* Copyright (C) 2020 Storj Labs, Inc. */
 /* See LICENSE for copying information. */
 
-h1,
-h2,
-p,
-body {
-    margin: 0;
-}
-
-.login {
-    display: flex;
+p {
+  margin: 0;
 }
 
 .universal-login-area {
-    padding: 80px 95px 0 95px;
-    font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  min-height: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 90px;
+    width: 100%;
+    background-color: #203a5b;
+
+    &__sign-up {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 6px;
+      width: 195px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      line-height: 19px;
+
+      &:hover {
+        background-color: #fff;
+        color: #203a5b;
+      }
+    }
+  }
+
+  &__content-area {
     background-color: #f5f6fa;
-    height: calc(100vh - 80px);
-    min-width: calc(55% - 190px);
-}
-
-.title {
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 49px;
-    letter-spacing: -0.100741px;
-    color: #252525;
-    user-select: none;
-    font-family: 'Inter', sans-serif;
-}
-
-.sub-title {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 10px 0 30px 0;
-    color: rgba(37, 37, 37, 0.9);
-    user-select: none;
-    font-family: 'Inter', sans-serif;
-}
-
-.info-link {
-    text-decoration: underline;
-    cursor: pointer;
-    color: #007bff;
-}
-
-.satellite-container {
+    padding: 55px 20px 0 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    border: 2px solid #fff;
-    user-select: none;
-}
+    justify-content: space-between;
+    flex: 1 1 auto;
 
-.satellite-container:hover {
-    border-color: #2582ff;
-}
+    &__functional-area {
+      &__account {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-.europe-svg,
-.us-svg {
-    height: 40px;
-    width: 40px;
-    margin-right: 30px;
-}
+        &__question {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #354049;
+        }
 
-.asia-svg {
-    height: 40px;
-    width: 57px;
-    margin-right: 13px;
-}
-
-.satellite-container:hover .us-svg-path,
-.satellite-container:hover .europe-svg-path,
-.satellite-container:hover .asia-svg-path {
-    fill: #2582ff;
-}
-
-.satellite-name {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: #494949;
-    font-family: 'Inter', sans-serif;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-}
-
-.storj-logo {
-    margin-right: 10px;
-}
-
-.storj-logo-text {
-    font-size: 13px;
-    line-height: 15px;
-    color: #5e6978;
-    font-family: 'Inter', sans-serif;
-}
-
-.metadata-info {
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: #959595;
-}
-
-.iframe {
-    width: 45%;
-    max-height: 100vh;
-    border: none;
-}
-
-.selected-container {
-    display: flex;
-    align-items: center;
-    background-color: #2582FF;
-    padding: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    border: 2px solid #2582FF;
-    user-select: none;
-    position: relative;
-}
-
-.selected-image {
-    fill: #fff;
-}
-
-.selected-title {
-    color: #fff;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.selected-subtitle {
-    color: #fff;
-    font-size: 13px;
-    line-height: 15px;
-}
-
-.checkmark {
-    display: none;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
-
-.selected-checkmark {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
-
-.login {
-	*, ::before, ::after {
-	    box-sizing: unset;
-	}
-}
-
-@media screen and (max-width: 1090px) {
-
-    .title {
-        font-size: 24px;
+        &__link {
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          color: #2582ff;
+          margin-left: 5px;
+        }
+      }
     }
+
+    &__footer {
+      margin-top: 10px;
+      padding-bottom: 20px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+
+      &__copyright {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #384b65;
+      }
+
+      &__terms,
+      &__help {
+        color: #2582ff;
+        margin-left: 30px;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 1024px) {
-
-    .universal-login-area {
-        min-width: 355px;
+@media screen and (max-width: 800px) {
+  .universal-login-area {
+    &__header {
+      padding: 10px 20px;
     }
+  }
 }

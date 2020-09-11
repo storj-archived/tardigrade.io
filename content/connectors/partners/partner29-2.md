@@ -6,7 +6,8 @@ updated: 3/19/20
 new: false
 img: "/img/partners/s3-qnap.png"
 class: "partner"
-categories: "Application Connector"
+categories: "App Connector"
 ready: true
 link: "https://documentation.tardigrade.io/how-tos/backup-on-qnap"
+community: false
 ---

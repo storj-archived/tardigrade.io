@@ -1,5 +1,5 @@
-<div class="container-fluid bg-gradiant nomp">
-    <div class="container-fluid inner-hero-wrapper">
+<div id="heroBackground" class="container-fluid bg-gradiant nomp">
+    <div id="heroWrapper" class="container-fluid inner-hero-wrapper">
         <div class="container">
             <div class="spacer20"></div>
             {{ partial "nav" .}}
@@ -24,14 +24,10 @@
                 <div class="spacer20"></div>
                 <p class="white home-subheading">{{.Params.subheading}}</p>
                 <div class="spacer30"></div>
-                  <a href="/satellites" class="cta-join-btn-wrapper" id="mc_embed_signup_scroll">
+                  <a href="/signup" class="cta-join-btn-wrapper" id="mc_embed_signup_scroll">
                     <button class="btn btn-primary cta-join-btn">Get Started</button><img class="cta-join-btn-arrow" src="/img/arrow-right.svg" />
                   </a>
             </div>
-
-            <!-- <div class="col-sm-5 offset-1 hero-image-wrapper">
-                <img class="pl-5 hero-image" src="{{.Params.heroIMG}}" width="1200" />
-            </div> -->
 
             {{end}}
         </div>

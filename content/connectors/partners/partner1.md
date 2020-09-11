@@ -7,6 +7,7 @@ new: false
 img: "/img/partners/qnap.svg"
 class: "partner"
 categories: "Storage Node"
-weight: 97
+weight: 99
 link: "https://documentation.storj.io/sno-applications/qnap-storage-node-app"
+community: false
 ---

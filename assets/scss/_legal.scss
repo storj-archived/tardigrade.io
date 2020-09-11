@@ -1,64 +1,48 @@
 .legal {
-	background: #F4F5F7;
-
-	&__container {
-		.link {
-			color: $color--blue;
-			&:hover {
-				color: $color--blue;
-				text-decoration: underline;
-			}
-		}
-		&__title {
-			font-family: 'Poppins';
-			font-weight: bold;
-			font-size: 34px;
-			line-height: 40px;
-			text-align: center;
-			margin-bottom: 50px;
-		}
-		&__date {
-			text-align: center;
-			margin-bottom: 50px;
-			b {
-				color: $color--blue;
-			}
-		}
-		b {
-			font-weight: bold;
-		}
-		p {
-			font-family: Roboto;
-			font-weight: 300;
-			font-size: 18px;
-			line-height: 31px;
-		}
-		table, th, td {
-		  border: 1px solid black;
-			vertical-align: top;
-			padding: 5px;
-		}
-	}
+  background: $color--grey-bg;
+  .navbar-toggler {
+    margin-bottom: 10px;
+  }
+  &__container {
+    .link {
+      color: $color--blue;
+      &:hover {
+        color: $color--blue;
+        text-decoration: underline;
+      }
+    }
+    &__title {
+      font-family: "Poppins";
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__date {
+      text-align: center;
+      margin-bottom: 50px;
+      b {
+        color: $color--blue;
+      }
+    }
+    b {
+      font-weight: bold;
+    }
+    .dropdown-item {
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 31px;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid #999;
+    }
+  }
   &__nav {
-		background: #fff;
-		margin-bottom: 80px;
-		.navbar {
-			margin-top: 15px;
-			padding-bottom: 10px;
-	    .navlink {
-				color: #93A1AF;
-				&:hover {
-					color: #93A1AF;
-					text-shadow: 1px 0 0 #93A1AF;
-				}
-				&:active {
-					font-weight: bold;
-				}
-			}
-			.nav-join {
-				color: #2582FF;
-				border: 2px solid #2582FF;
-			}
-		}
+    background: #fff;
+    margin-bottom: 80px;
   }
 }

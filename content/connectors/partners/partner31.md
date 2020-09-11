@@ -8,5 +8,6 @@ img: "/img/partners/go-logo.svg"
 class: "partner"
 categories: "Developer Tools"
 ready: true
-link: "https://godoc.org/storj.io/storj/lib/uplink"
+link: "https://pkg.go.dev/storj.io/uplink"
+community: false
 ---

@@ -1,0 +1,23 @@
+<div class="about_hero">
+  <div class="container pt-4">
+    {{partial "nav" .}}
+    <div class="row text-center text-lg-left">
+      {{with .Site.GetPage "aboutHero" }}
+      <div class="col-sm-12 col-lg-6 pt-5 mt-5 pb-lg-5 mb-lg-5">
+        <h1 class="text-white" >
+            {{.Params.heading}}
+        </h1>
+        <p class="lead text-white my-4">
+            {{.Params.subheading}}
+        </p>
+        <a href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mt-3 mb-5">
+            {{.Params.ctaText}}
+        </a>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+      </div>
+      {{end}}
+    </div>
+  </div>
+  <div class="about_hero_bg img-fluid"></div>
+</div>

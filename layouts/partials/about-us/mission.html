@@ -1,0 +1,14 @@
+<div class="container-fluid bg-light">
+  <div class="row">
+    <div class="container">
+      <div class="row justify-content-center">
+        {{with .Site.GetPage "mission" }}
+          <div class="col-sm-12 col-md-8 text-center about_mission">
+            <h3>{{.Params.heading}}</h3>
+            <p class="lead">{{.Params.subheading}}</p>
+          </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</div>

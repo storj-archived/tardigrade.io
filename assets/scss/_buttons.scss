@@ -1,0 +1,32 @@
+.btn {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.btn-lg {
+  padding: 12px 60px;
+}
+
+.btn-primary {
+  color: $color--white;
+  background-color: $color--blue-light;
+  border-color: $color--blue-light;
+}
+
+.btn-primary:hover {
+  color: $color--white;
+  background-color: $color--blue-light-hover;
+  border-color: $color--blue-light-hover;
+}
+
+.btn-outline-primary {
+  color: $color--blue-light;
+  border: 2px solid $color--blue-light;
+}
+.btn-outline-primary:hover {
+  background-color: $color--blue-light;
+  color: $color--white;
+  border-color: $color--blue-light;
+}

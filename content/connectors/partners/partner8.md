@@ -6,7 +6,6 @@ added: 3/19/20
 updated: 3/19/20
 new: false
 img: "/img/partners/terminal-io.svg"
-class: "partner"
-categories: "Application Connector"
 ready: true
+community: false
 ---

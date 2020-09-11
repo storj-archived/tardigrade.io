@@ -1,7 +1,13 @@
 .tech-partner__heading {
-  background: linear-gradient(114.84deg, #133E9C -22.37%, #00091E 63.82%);
+  background: $color--blue-bg;
+  background: linear-gradient(114.84deg, #133e9c -22.37%, #00091e 63.82%);
   @media only screen and (max-width: 768px) {
-    background: radial-gradient(236.22% 100.97% at 50% -4.33%, #0059D1 0%, #000000 100%);
+    background: $color--blue-bg;
+    background: radial-gradient(
+      236.22% 100.97% at 50% -4.33%,
+      #0059d1 0%,
+      #000000 100%
+    );
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .tech-partner__headline {
@@ -14,19 +20,23 @@
       background-position: 100% 90px;
       background-size: 650px;
       @media only screen and (max-width: 991px) {
-        background-position: 100% 240px;
+        background-position: bottom right;
         background-size: 550px;
+      }
+      @media only screen and (max-width: 768px) {
+        background-position: bottom;
+        background-size: contain;
+        height: 1080px;
       }
       @media only screen and (max-width: 600px) {
-        background-position: 100% 480px;
-        background-size: 550px;
-        height: 850px;
+        background-position: bottom;
+        background-size: contain;
+        height: 980px;
       }
-
       @media only screen and (max-width: 500px) {
-        background-position: 100% 590px;
-        background-size: 350px;
-        height: 850px;
+        background-position: bottom;
+        background-size: contain;
+        height: 940px;
       }
       .col-sm-8 {
         @media only screen and (max-width: 600px) {
@@ -41,19 +51,19 @@
           text-align: center;
         }
       }
-
-   }
-   .tech-partner__headline-heading, .tech-partner__headline-content {
-     color: #fff;
-     width: 150%;
-     text-align: left;
-     @media only screen and (max-width: 600px) {
-       width: auto;
-       text-align: center;
-     }
-   }
-   .tech-partner__cta-button-link {
-     .tech-partner__cta-button {
+    }
+    .tech-partner__headline-heading,
+    .tech-partner__headline-content {
+      color: #fff;
+      width: 150%;
+      text-align: left;
+      @media only screen and (max-width: 600px) {
+        width: auto;
+        text-align: center;
+      }
+    }
+    .tech-partner__cta-button-link {
+      .tech-partner__cta-button {
         font-size: 16px;
         line-height: 24px;
         background: #2683ff;
@@ -66,7 +76,6 @@
       }
     }
   }
-
 }
 
 .tech-partner__partnership-types {
@@ -79,7 +88,8 @@
       bottom: 30px;
     }
   }
-  .tech-partner__partnership-types-subheading, .tech-partner__partnership-types-conent {
+  .tech-partner__partnership-types-subheading,
+  .tech-partner__partnership-types-conent {
     font-size: 18px;
   }
   .tech-partner__partnership-types-section-img {
@@ -89,7 +99,7 @@
     .col-md-6 {
       max-width: 939px;
       height: 320px;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: 0px 4px 74px rgba(31, 49, 76, 0.25);
       border-radius: 10px;
       .tech-partner__partnership-types-section-wrapper {
@@ -114,18 +124,21 @@
       height: 200px;
     }
   }
-
 }
 
-.tech-partner__why, .tech-partner__more-benefits {
-  .tech-partner__why-heading, .tech-partner__more-benefit-heading {
+.tech-partner__why,
+.tech-partner__more-benefits {
+  .tech-partner__why-heading,
+  .tech-partner__more-benefit-heading {
     font-size: 28px;
   }
-  .tech-partner__why-subheading, .tech-partner__more-benefit-subheading {
+  .tech-partner__why-subheading,
+  .tech-partner__more-benefit-subheading {
     font-size: 14px;
   }
 
-  .tech-partner__why-content, .tech-partner__more-benefit-content {
+  .tech-partner__why-content,
+  .tech-partner__more-benefit-content {
     font-size: 16px;
   }
   .col-xs-12 {
@@ -133,9 +146,10 @@
     @media only screen and (max-width: 991px) {
       margin: 20px auto;
     }
-
   }
-  .tech-partner__why-heading, .tech-partner__more-benefit-heading, .col-xs-12 {
+  .tech-partner__why-heading,
+  .tech-partner__more-benefit-heading,
+  .col-xs-12 {
     @media only screen and (max-width: 768px) {
       margin: 20px auto;
       width: 90%;
@@ -149,11 +163,13 @@
       height: 90px;
     }
   }
+  .tech-partner__why-image,
+  .tech-partner__more-benefit-image {
+    height: 40px;
+  }
 }
 
-
 .tech-partner__who {
-
   .tech-partner__who {
     font-size: 28px;
   }
@@ -230,5 +246,4 @@
       height: 90px;
     }
   }
-
 }

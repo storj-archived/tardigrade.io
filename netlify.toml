@@ -1,9 +1,7 @@
 [build]
 publish = "public"
 command = "hugo --gc --minify"
-# baseUrl = "https://tardigrade.io/"
-baseUrl = "https://tardigrade-staging.netlify.app/"
-
+baseUrl = "https://tardigrade.io/"
 
 [context.production.environment]
 HUGO_VERSION = "0.58.3"
@@ -37,6 +35,11 @@ HUGO_ENABLEGITINFO = "true"
   to = "https://adoring-borg-aad42e.netlify.com/:splat"
   status = 200
   force = true
+
+[[redirects]]
+from = "/*"
+to = "/404/"
+status = 404
 
 [[headers]]
   for = "/*"

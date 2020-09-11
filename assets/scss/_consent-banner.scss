@@ -1,36 +1,37 @@
-.consent-banner{
+.consent-banner {
+  background: #11181d;
+  opacity: 0.97;
+  position: fixed;
+  bottom: 0px;
+  height: 60px;
+  z-index: 99999999999999999;
+  display: flex;
+  &_text {
+    color: $color--white;
+    margin-top: 23px;
+    font-size: 12px;
+    line-height: 14px;
+  }
 
-    background: #11181D;
-    opacity: 0.97;
-    position: fixed;
-    bottom: 0px;
-    height: 60px;
-    z-index: 99999999999999999;
-		display: flex;
+  &_link {
+    color: $color--white;
+    text-decoration: underline;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 500px) {
     &_text {
-        color: $color--white;
-        margin-top: 25px;
-        font-size: 12px;
-        line-height: 14px;
+      margin-top: 15px;
     }
 
-    &_link {
-        color: $color--white;
-        text-decoration : underline;
+    &_close {
+      margin-top: 25px;
     }
+  }
 
-    @media only screen and (min-width: 0px) and (max-width: 500px) {
-        &_text{
-        margin-top:15px;
-        }
-
-        &_close {
-        margin-top:25px;
-        }
-    }
-
-    &_close:hover {
-        font-size: 16px;
-        cursor: pointer;
-    }
+  &_close {
+    font-weight: bold;
+  }
+  &_close:hover {
+    cursor: pointer;
+  }
 }
