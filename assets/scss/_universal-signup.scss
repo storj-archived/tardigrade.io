@@ -20,23 +20,23 @@ p {
     justify-content: space-between;
     padding: 10px 90px;
     width: 100%;
-    background-color: #203a5b;
+    background-color: #fff;
 
     &__sign-in {
-      border: 1px solid rgba(255, 255, 255, 0.5);
+      border: 2px solid #2582FF;
       border-radius: 6px;
-      width: 195px;
+      width: 130px;
       height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #2582FF;
       font-size: 14px;
       line-height: 19px;
 
       &:hover {
-        background-color: #fff;
-        color: #203a5b;
+        background-color: #2582FF;
+        color: #fff;
       }
     }
   }
