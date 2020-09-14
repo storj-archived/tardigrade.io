@@ -99,18 +99,6 @@
         display: none;
       }
     }
-    &__cta-button-wrapper {
-      .hero_signup-btn {
-        width: 244px;
-        height: 46px;
-        background: #fff;
-        border: none;
-        border-radius: 5px;
-        color: $color--blue-light;
-        font-weight: 900;
-        font-size: 14px;
-      }
-    }
     &__contact-us {
       color: #fff;
       font-family: Poppins;
@@ -202,19 +190,6 @@
     }
     #loadMore {
       margin: 0 auto;
-      .press-kit__news-load-more-btn {
-        font-family: Poppins;
-        font-weight: 800;
-        font-size: 14px;
-        line-height: 41px;
-        text-align: center;
-        color: $color--blue-light;
-        border: 2px solid $color--blue-light;
-        width: 244px;
-        height: 46px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
     }
   }
   .press-kit__terminology {

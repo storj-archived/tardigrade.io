@@ -14,10 +14,8 @@
             {{ replace .Params.desc "\n" "<br/>" | safeHTML}}
           </p>
         <div class="spacer40"></div>
-        <a class="dev-in-mind__cta-wrapper" href="/signup">
-          <p class="dev-in-mind__cta">
+        <a href="/signup" class="btn btn-primary btn-lg">
           {{ .Params.cta}}
-          </p>
         </a>
         {{ end }}
       </div>
