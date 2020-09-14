@@ -52,18 +52,21 @@
 	&__resilient {
 		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
 		min-height: 576px;
-		.container {
-			padding-left: 0;
-			padding-right: 0px;
-	    margin-right: 0px;
-	    max-width: none;
-			min-height: 576px;
+		// .container {
+		// 	padding-left: 0;
+		// 	padding-right: 0px;
+	  //   margin-right: 0px;
+	  //   max-width: none;
+		// 	min-height: 576px;
+		// }
+		@media only screen and (max-width: $breakpoint-lg) {
+			background: #fff;
 		}
 		.row {
 			min-height: 576px;
 		}
 		&__text-wrapper {
-			padding-left: 8rem!important;
+			// padding-left: 8rem!important;
 		}
 		&__image {
 			background: url("/img/why-resilient-bg.jpg");

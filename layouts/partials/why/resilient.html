@@ -1,16 +1,16 @@
 <div class="why__resilient">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row text-left">
       {{with .Site.GetPage "whyResilient" }}
-			<div class="w-75 why__resilient__text-wrapper col-sm-12 col-md-6 col-lg-6 py-5 text-black">
-				<h2 class="mt-5 w-75 mb-4" >
+			<div class="why__resilient__text-wrapper col-lg-offset-1 col-sm-12 col-lg-offset-1 col-lg-6 py-5 px-5 text-black">
+				<h2 class="mt-5 mb-4 pt-5 px-5" >
             {{.Params.heading}}
         </h2>
-        <p class="w-75 text-black">
+        <p class="text-black pb-5 mb-5 px-5">
             {{.Params.subheading}}
         </p>
 			</div>
-			<div class="col-sm-12 col-md-6 col-lg-6 why__resilient__image">
+			<div class="col-sm-12 col-lg-6 why__resilient__image">
 			</div>
       {{end}}
     </div>
