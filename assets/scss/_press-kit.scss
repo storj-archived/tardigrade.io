@@ -31,7 +31,7 @@
     }
   }
   .press-kit__hero {
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: $breakpoint-lg) {
       background: $color--blue-bg;
       background: linear-gradient(114.84deg, #133e9c -22.37%, #00091e 63.82%);
       background-image: radial-gradient(
@@ -49,7 +49,7 @@
       overflow: hidden;
       background: $color--blue-bg;
       background-image: radial-gradient(100% 80%, #0055c6 20%, #000000 100%);
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         background-position: 30% 0;
       }
       @media only screen and (max-width: 768px) {
@@ -65,7 +65,7 @@
           background-image: url(../img/tar-ill-press.png);
           background-position: 100% 270px;
           background-size: 620px;
-          height: 710px;
+          height: 535px;
           background-repeat: no-repeat;
           position: absolute;
         }
@@ -91,7 +91,7 @@
         max-width: 190%;
         bottom: -55%;
       }
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         max-height: 130%;
         width: 190%;
         right: -165px;
@@ -121,7 +121,7 @@
       line-height: 28px;
       display: inline;
       margin-left: 20px;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         margin-left: 0;
         margin-top: 20px;
         top: 5px;
@@ -143,7 +143,7 @@
     }
     &__years-wrapper {
       list-style-type: none;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: none;
       }
       .press-kit__news__years-list {
@@ -170,7 +170,7 @@
     }
     &__mobile-article-group {
       display: none;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: block;
       }
     }
@@ -179,7 +179,7 @@
     }
     .current-year {
       display: block;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: none;
       }
     }
@@ -276,6 +276,7 @@
       text-align: right;
       position: relative;
       top: 7px;
+			padding-right: 0;
       .press-kit__mascot__download-btn-text {
         display: inline;
       }
@@ -284,7 +285,7 @@
       }
     }
     &__image-wrapper {
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         width: 100%;
       }
       .img-fluid {
@@ -292,7 +293,7 @@
         @media only screen and (max-width: 1200px) {
           min-width: 450px;
         }
-        @media only screen and (max-width: 991px) {
+        @media only screen and (max-width: $breakpoint-lg) {
           width: 100%;
         }
       }
@@ -300,13 +301,13 @@
   }
   .press-kit__logo {
     .heading {
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         text-align: center;
       }
     }
     &__download-btn {
       display: block;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: none;
       }
       .press-kit__logo__download-btn-text,
@@ -330,7 +331,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         max-width: 100%;
       }
     }
@@ -339,12 +340,15 @@
     }
     &__download-btn.bottom {
       display: none;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: block;
       }
     }
   }
   .press-kit__fonts {
+		.download-btn {
+			left: 4px;
+		}
     &__font {
       max-width: 48%;
       height: 160px;
@@ -352,7 +356,7 @@
       border: 1px solid $color--border;
       margin: 10px;
       padding: 0;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         max-width: 100%;
       }
     }
@@ -398,6 +402,9 @@
   }
 
   .press-kit__colors {
+		.download-btn {
+			left: 4px;
+		}
     &__color {
       max-width: 31.5%;
       height: 111px;
@@ -406,7 +413,7 @@
       margin: 10px;
       padding: 0;
       background: #fff;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         max-width: 100%;
       }
     }
