@@ -276,7 +276,11 @@
       text-align: right;
       position: relative;
       top: 7px;
-			padding-right: 0;
+			right: 3px;
+			@media only screen and (max-width: $breakpoint-lg) {
+        padding-right: 0;
+				right: 0;
+      }
       .press-kit__mascot__download-btn-text {
         display: inline;
       }
@@ -347,7 +351,14 @@
   }
   .press-kit__fonts {
 		.download-btn {
-			left: 4px;
+			@media only screen and (max-width: $breakpoint-xl) {
+				left: 8px;
+				padding-right: 0;
+			}
+			@media only screen and (max-width: $breakpoint-md) {
+				left: 4px;
+				padding-right: 15px;
+			}
 		}
     &__font {
       max-width: 48%;
@@ -356,8 +367,8 @@
       border: 1px solid $color--border;
       margin: 10px;
       padding: 0;
-      @media only screen and (max-width: $breakpoint-lg) {
-        max-width: 100%;
+			@media only screen and (max-width: $breakpoint-xl) {
+				max-width: 100%;
       }
     }
     &__desc {
@@ -403,10 +414,10 @@
 
   .press-kit__colors {
 		.download-btn {
+			padding-right: 0;
 			left: 4px;
 		}
     &__color {
-      max-width: 31.5%;
       height: 111px;
       border-radius: 10px;
       border: 1px solid $color--border;
