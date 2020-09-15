@@ -28,7 +28,7 @@
 			background: url("/img/why-bold-sm-bg.jpg");
 			background-size: cover;
 			height: 1000px;
-			background-position: center;
+			background-position: 100% 70%;
 			.row {
 				display: flex;
 			}
@@ -48,7 +48,7 @@
 		}
 		@media only screen and (max-width: $breakpoint-md) {
 			background: url("/img/why-found-sm-bg.jpg");
-			height: 1000px;
+			height: 800px;
 			background-position: center;
 			background-size: cover;
 		}
