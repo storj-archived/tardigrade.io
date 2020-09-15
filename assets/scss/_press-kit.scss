@@ -119,6 +119,9 @@
       line-height: 28px;
       display: inline;
       margin-left: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
       @media only screen and (max-width: $breakpoint-lg) {
         margin-left: 0;
         margin-top: 20px;
