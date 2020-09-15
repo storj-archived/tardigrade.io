@@ -231,12 +231,6 @@
     }
   }
   .press-kit__logo {
-    &__download-btn {
-      display: block;
-      @media only screen and (max-width: $breakpoint-lg) {
-        display: none;
-      }
-    }
     .pt-4 {
       display: flex;
       justify-content: space-between;
