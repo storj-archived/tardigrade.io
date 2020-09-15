@@ -1,10 +1,22 @@
 .why {
+	&__header {
+		font-family: $primary-font;
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 40px;
+	}
+	&__text {
+		font-family: $secondary-font;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 24px;
+	}
 	&__hero {
 		overflow: hidden;
 		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
-		max-height: 547px;
+		max-height: 507px;
 		@media only screen and (max-width: $breakpoint-lg) {
-			max-height: 866px;
+			max-height: 796px;
 			.row {
 				display: flex;
 			}
@@ -17,7 +29,7 @@
 		}
 	}
 	&__bold {
-		background-image: url('/img/why-bold-bg.jpg');
+		background-image: url('/img/why-bold-bg.png');
 		background-size: cover;
 		background-position: center;
 		background-color: #000;
@@ -25,9 +37,9 @@
 			background-position: bottom;
 		}
 		@media only screen and (max-width: $breakpoint-lg) {
-			background: url("/img/why-bold-sm-bg.jpg");
+			background: url("/img/why-bold-sm-bg.png");
 			background-size: cover;
-			height: 1000px;
+			height: 800px;
 			background-position: 100% 70%;
 			.row {
 				display: flex;
@@ -41,13 +53,13 @@
 		}
 	}
 	&__found {
-		background: url("/img/why-found-bg.jpg");
+		background: url("/img/why-found-bg.png");
 		background-size: cover;
 		@media only screen and (max-width: $breakpoint-lg) {
 			background-position: center;
 		}
 		@media only screen and (max-width: $breakpoint-md) {
-			background: url("/img/why-found-sm-bg.jpg");
+			background: url("/img/why-found-sm-bg.png");
 			height: 800px;
 			background-position: center;
 			background-size: cover;
@@ -56,24 +68,14 @@
 	&__resilient {
 		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
 		min-height: 576px;
-		// .container {
-		// 	padding-left: 0;
-		// 	padding-right: 0px;
-	  //   margin-right: 0px;
-	  //   max-width: none;
-		// 	min-height: 576px;
-		// }
 		@media only screen and (max-width: $breakpoint-lg) {
 			background: #fff;
 		}
 		.row {
 			min-height: 576px;
 		}
-		&__text-wrapper {
-			// padding-left: 8rem!important;
-		}
 		&__image {
-			background: url("/img/why-resilient-bg.jpg");
+			background: url("/img/why-resilient-bg.png");
 			background-size: cover;
 			@media only screen and (max-width: $breakpoint-lg) {
 				height: 700px;

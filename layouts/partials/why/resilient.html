@@ -2,15 +2,15 @@
   <div class="container-fluid">
     <div class="row text-left">
       {{with .Site.GetPage "whyResilient" }}
-			<div class="why__resilient__text-wrapper col-lg-offset-1 col-sm-12 col-lg-offset-1 col-lg-6 py-5 px-sm-5 px-md-5 px-lg-5 text-black">
-				<h2 class="mt-5 mb-4 pt-5 px-md-4 px-lg-5">
+			<div class="why__resilient__text-wrapper col-lg-offset-1 col-sm-12 col-lg-offset-1 col-lg-6 text-black py-5 px-sm-5 px-md-5 px-lg-5">
+				<h2 class="why__header mt-5 mb-4 pt-5 px-md-4 px-lg-5">
             {{.Params.heading}}
         </h2>
-        <p class="text-black pb-5 mb-5 px-md-4 px-lg-5">
+        <p class="why__text text-black pb-5 mb-5 px-md-4 px-lg-5">
             {{.Params.subheading}}
         </p>
 			</div>
-			<div class="col-sm-12 col-lg-6 why__resilient__image">
+			<div class="why__resilient__image col-sm-12 col-lg-6">
 			</div>
       {{end}}
     </div>
