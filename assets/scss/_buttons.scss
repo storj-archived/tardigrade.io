@@ -12,7 +12,7 @@
 .btn-primary {
   color: $color--white;
   background-color: $color--blue-light;
-  border-color: $color--blue-light;
+  border: 3px solid $color--blue-light;
 }
 
 .btn-primary:hover {
@@ -23,10 +23,17 @@
 
 .btn-outline-primary {
   color: $color--blue-light;
-  border: 2px solid $color--blue-light;
+  border: 3px solid $color--blue-light;
 }
 .btn-outline-primary:hover {
-  background-color: $color--blue-light;
+  background-color: $color--blue-light-hover;
   color: $color--white;
-  border-color: $color--blue-light;
+  border-color: $color--blue-light-hover;
+}
+
+.btn-light {
+  color: $color--blue-light;
+}
+.btn-light:hover {
+  color: $color--blue;
 }
