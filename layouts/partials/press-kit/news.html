@@ -1,12 +1,11 @@
 <div class="container-fluid">
   <div class="container">
-    <div class="spacer125"></div>
     {{ with .Site.GetPage "pressHeading.md" }}
+      <div class="spacer125"></div>
       <div class="row">
-        <div class="col mt-5 text-center">
-          <h2 class="press-kit__news__title" >{{.Title}}</h2>
+        <div class="col mb-5 text-center">
+          <h2 class="press-kit__news__title mb-4" >{{.Title}}</h2>
         </div>
-        <div class="spacer125"></div>
       </div>
     {{end}}
     <div class="row">
