@@ -107,6 +107,9 @@
           mix-blend-mode: normal;
           opacity: 0.5;
           cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
         }
         .active {
           border-left: 5px solid $color--blue-light;
@@ -114,6 +117,7 @@
           font-weight: bold;
           opacity: 1;
         }
+
       }
     }
     &__mobile-article-group {
