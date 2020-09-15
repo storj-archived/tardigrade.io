@@ -1,5 +1,6 @@
 .single-connector {
   &__nav {
+    background: $color--blue-bg;
     background: radial-gradient(
       90.29% 594.73% at 53.03% 29.19%,
       #0055c6 0%,
@@ -47,7 +48,6 @@
   &__hero {
     position: relative;
     &__bg {
-      background: url("/img/connector-bg.jpg");
       background-size: cover;
       position: relative;
       height: 177px;
@@ -189,43 +189,6 @@
     border-radius: 6px;
     max-width: 303px;
   }
-  &__button {
-    color: $color--blue-light;
-    background: transparent;
-    border: 2px solid $color--blue-light;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 4px;
-    padding: 10px 40px;
-    height: 46px;
-    width: 202px;
-    transition-duration: 0.2s;
-    @media only screen and (max-width: 992px) {
-      width: 45%;
-      padding: 0;
-    }
-    @media only screen and (max-width: 768px) {
-      width: 48%;
-      font-size: 12px;
-    }
-    @media only screen and (max-width: 415px) {
-      width: 46%;
-    }
-    &:hover {
-      background: $color--blue-light;
-      color: #fff;
-    }
-  }
-  &__button.fill {
-    color: #fff;
-    background: $color--blue-light;
-    margin-right: 10px;
-    &:hover {
-      color: #fff;
-      background-color: #0069d9;
-      border-color: #0062cc;
-    }
-  }
   &__bottom-section {
     text-align: center;
     margin: 40px 0;
@@ -262,6 +225,9 @@
         margin-bottom: 20px;
         padding-top: 10px;
       }
+			&__detail-message {
+				padding: 0px 0px 20px 20px;
+			}
       &__list-item {
         font-family: $secondary-font;
         color: #7e90a5;

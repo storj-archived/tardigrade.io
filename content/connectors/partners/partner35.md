@@ -5,7 +5,6 @@ added: 3/19/20
 updated: 3/19/20
 new: false
 img: "/img/partners/go-logo.svg"
-class: "partner"
 categories: "Bindings"
 ready: false
 community: false

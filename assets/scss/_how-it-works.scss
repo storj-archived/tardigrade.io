@@ -67,6 +67,7 @@
     padding-top: 19px;
   }
   .hiw-hero {
+    background: $color--blue-bg;
     background-image: url("/img/hiw-hero-bg.png");
     color: #fff;
     height: 840px;
@@ -175,18 +176,6 @@
     background: $color--light-bg;
     .hiw-header {
       font-size: 24px;
-    }
-    &__cta {
-      background: $color--blue-light;
-      border-radius: 4px;
-      border: none;
-      color: #fff;
-      width: 177px;
-      padding: 10px 15px 10px 0;
-      &__arrow {
-        position: relative;
-        left: 15px;
-      }
     }
   }
   .file-pieces {

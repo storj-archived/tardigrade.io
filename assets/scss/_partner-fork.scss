@@ -1,7 +1,7 @@
 .partner-fork {
   &__hero {
-    background: url("/img/partner-fork-bg.svg") no-repeat;
-    background-size: cover;
+    background: $color--blue-bg;
+    background: linear-gradient(0deg, rgba(37, 130, 255, 0.4), rgba(37, 130, 255, 0.4)), linear-gradient(163.14deg, #133E9C 9.03%, #00091E 88.37%);
     min-height: 767px;
     &__heading-wrapper {
       max-width: 621px;
