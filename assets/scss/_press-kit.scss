@@ -20,14 +20,12 @@
       color: #7e8b9c;
     }
     &__text {
-      position: relative;
-      right: 5px;
       display: inline;
+      font-family: Poppins;
 			font-size: 14px;
     }
     &__image {
-      position: relative;
-      top: 2px;
+      margin-left: 6px;
     }
   }
   .press-kit__hero {
@@ -269,57 +267,20 @@
     }
   }
   .press-kit__mascot {
-    &__title {
-      padding-left: 0;
-    }
-    &__download-btn {
-      text-align: right;
-      position: relative;
-      top: 7px;
-			right: 3px;
-			@media only screen and (max-width: $breakpoint-lg) {
-        padding-right: 0;
-				right: 0;
-      }
-      .press-kit__mascot__download-btn-text {
-        display: inline;
-      }
-      .img-fluid {
-        top: -2px;
-      }
-    }
     &__image-wrapper {
       @media only screen and (max-width: $breakpoint-lg) {
         width: 100%;
       }
       .img-fluid {
-        min-width: 550px;
-        @media only screen and (max-width: 1200px) {
-          min-width: 450px;
-        }
-        @media only screen and (max-width: $breakpoint-lg) {
-          width: 100%;
-        }
+        min-width: 100%;
       }
     }
   }
   .press-kit__logo {
-    .heading {
-      @media only screen and (max-width: $breakpoint-lg) {
-        text-align: center;
-      }
-    }
     &__download-btn {
       display: block;
       @media only screen and (max-width: $breakpoint-lg) {
         display: none;
-      }
-      .press-kit__logo__download-btn-text,
-      .img-fluid {
-        display: inline;
-      }
-      &__image {
-        top: -2px;
       }
     }
     .pt-4 {
@@ -327,11 +288,10 @@
       justify-content: space-between;
     }
     &__logo {
-      max-width: 47.5%;
       height: 160px;
       border-radius: 10px;
       border: 1px solid $color--border;
-      margin: 10px;
+      margin: 10px 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -350,22 +310,10 @@
     }
   }
   .press-kit__fonts {
-		.download-btn {
-			@media only screen and (max-width: $breakpoint-xl) {
-				left: 8px;
-				padding-right: 0;
-			}
-			@media only screen and (max-width: $breakpoint-md) {
-				left: 4px;
-				padding-right: 15px;
-			}
-		}
     &__font {
-      max-width: 48%;
       height: 160px;
       border-radius: 10px;
       border: 1px solid $color--border;
-      margin: 10px;
       padding: 0;
 			@media only screen and (max-width: $breakpoint-xl) {
 				max-width: 100%;
@@ -383,6 +331,7 @@
       font-family: Poppins;
       font-style: normal;
       font-size: 12px;
+      color: #5E6A7B;
       line-height: 21px;
       margin-bottom: 0;
       margin-top: 1px;
@@ -413,16 +362,10 @@
   }
 
   .press-kit__colors {
-		.download-btn {
-			padding-right: 0;
-			left: 4px;
-		}
     &__color {
       height: 111px;
       border-radius: 10px;
       border: 1px solid $color--border;
-      margin: 10px;
-      padding: 0;
       background: #fff;
       @media only screen and (max-width: $breakpoint-lg) {
         max-width: 100%;
@@ -430,12 +373,6 @@
     }
     .color-1 {
       background: #2582ff;
-    }
-    .color-2 {
-      background: #0059d0;
-    }
-    .color-3 {
-      background: #133e9c;
     }
     &__visual {
       height: 50%;
