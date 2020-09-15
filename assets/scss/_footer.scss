@@ -10,9 +10,10 @@
     height: auto;
   }
 
-  &__list-unstyled {
+  .list-unstyled {
     list-style-type: none;
     padding-left: 0;
+		width: 130px;
     span {
       line-height: 28px;
       font-weight: 300;
