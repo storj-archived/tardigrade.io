@@ -29,73 +29,31 @@
     }
   }
   .press-kit__hero {
-    @media only screen and (max-width: $breakpoint-lg) {
-      background: $color--blue-bg;
-      background: linear-gradient(114.84deg, #133e9c -22.37%, #00091e 63.82%);
-      background-image: radial-gradient(
-        236.22% 100.97% at 50% -4.33%,
-        #0059d1 0%,
-        #000000 100%
-      );
-    }
+    color: #fff;
+    background: $color--blue-bg;
+    background-image: radial-gradient(516.5px at 92.17% 47.6%, #133e9c 0%, #00091e 100%);
     &__bg {
       color: #fff;
-      background: #000;
-      background-size: cover;
-      background-position: 0 30%;
+      background-image: url(../img/tar-ill-press.png);
+      background-position: right bottom;
+      background-size: contain;
       background-repeat: no-repeat;
-      overflow: hidden;
-      background: $color--blue-bg;
-      background-image: radial-gradient(100% 80%, #0055c6 20%, #000000 100%);
-      @media only screen and (max-width: $breakpoint-lg) {
-        background-position: 30% 0;
+      min-height: 640px;
+      @media (min-width: $breakpoint-sm) {
+        background-position: center bottom;
+        min-height: 700px;
       }
-      @media only screen and (max-width: 768px) {
-        background: radial-gradient(
-          236.22% 100.97% at 50% -4.33%,
-          #0059d1 0%,
-          #000000 100%
-        );
-        height: 712px;
+      @media (min-width: $breakpoint-md) {
+        background-size: 80%;
+        background-position: center bottom;
       }
-      .col-md-7 {
-        @media only screen and (max-width: 768px) {
-          background-image: url(../img/tar-ill-press.png);
-          background-position: 100% 270px;
-          background-size: 620px;
-          height: 535px;
-          background-repeat: no-repeat;
-          position: absolute;
-        }
+      @media (min-width: $breakpoint-lg) {
+        background-size: 74%;
+        min-height: 480px;
+        background-position: bottom right;
       }
-      .press-kit__hero__msg {
-        @media only screen and (max-width: 768px) {
-          text-align: center;
-          margin: 0 auto;
-        }
-      }
-    }
-    &__img {
-      height: auto;
-      position: absolute;
-      float: right;
-      width: 160%;
-      right: -115px;
-      bottom: -85%;
-      box-sizing: border-box;
-      max-width: 140%;
-      max-height: 240%;
-      @media only screen and (max-width: 1200px) {
-        max-width: 190%;
-        bottom: -55%;
-      }
-      @media only screen and (max-width: $breakpoint-lg) {
-        max-height: 130%;
-        width: 190%;
-        right: -165px;
-      }
-      @media only screen and (max-width: 768px) {
-        display: none;
+      @media (min-width: $breakpoint-xl) {
+        background-size: 64%;
       }
     }
     &__cta-button-wrapper {
@@ -110,7 +68,7 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 28px;
-      display: inline;
+      display: inline-block;
       margin-left: 20px;
       &:hover {
         text-decoration: underline;
@@ -120,11 +78,7 @@
         margin-top: 20px;
         top: 5px;
         position: relative;
-      }
-      @media only screen and (max-width: 768px) {
         display: block;
-        margin-top: 30px;
-        top: 0;
       }
     }
 		&__msg {
