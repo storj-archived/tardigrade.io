@@ -410,6 +410,9 @@
     }
     &__link {
       color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     &__content {
       font-family: $primary-font;
