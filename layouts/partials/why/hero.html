@@ -1,16 +1,16 @@
 <div class="why__hero">
   {{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
   <div class="container">
-    <div class="row text-center pt-5 text-lg-left">
+    <div class="row text-center text-lg-left py-5">
       {{with .Site.GetPage "whyHero" }}
-      <div class="col-md-12 col-lg-6 image">
-				<img src="{{.Params.img}}" />
+      <div class="col-md-12 col-lg-6 mt-5 image">
+				<img src="{{.Params.img}}" alt="Tardigrade Mascot"/>
 			</div>
-			<div class="col-md-12 col-lg-6 text">
-				<h2 class="why__header text-black" >
+			<div class="col-md-12 col-lg-6 text mt-5">
+				<h2>
             {{.Params.heading}}
         </h2>
-        <p class="why__text lead text-black my-4">
+        <p class="lead my-4">
             {{.Params.subheading}}
         </p>
 				<a href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mt-3 mb-5">

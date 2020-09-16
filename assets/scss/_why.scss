@@ -1,20 +1,8 @@
 .why {
-	&__header {
-		font-family: $primary-font;
-		font-weight: bold;
-		font-size: 28px;
-		line-height: 40px;
-	}
-	&__text {
-		font-family: $secondary-font;
-		font-weight: 300;
-		font-size: 18px;
-		line-height: 24px;
-	}
 	&__hero {
 		overflow: hidden;
-		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
-		max-height: 507px;
+		background: $color--light-bg;
+		max-height: 547px;
 		@media only screen and (max-width: $breakpoint-lg) {
 			max-height: 796px;
 			.row {
