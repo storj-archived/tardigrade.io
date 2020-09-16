@@ -41,19 +41,16 @@
 		}
 	}
 	&__found {
-		background: url("/img/why-found-bg.jpg");
+		background-color: #f7f8fc;
+		background-image: url("/img/why-found-bg.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		min-height: 400px;
-		@media only screen and (max-width: $breakpoint-lg) {
-			background-position: center;
-		}
 		@media only screen and (max-width: $breakpoint-md) {
-			background: url("/img/why-found-sm-bg.png");
-			height: 800px;
-			background-position: center;
-			background-size: cover;
+			background-position: right bottom;
+			background-size: 150%;
+			min-height: 720px;
 		}
 	}
 	&__resilient {
