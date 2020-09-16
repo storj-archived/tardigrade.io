@@ -1,4 +1,8 @@
 .why {
+	&__text {
+		font-size: 18px;
+		line-height: 24px;
+	}
 	&__hero {
 		overflow: hidden;
 		background: $color--light-bg;
