@@ -13,7 +13,6 @@
 			      <label aria-label="storage" class="half-price__label">Storage</label>
 			      <input type="text" id="storage" class="half-price__input" name="storage" value="1" required>
 						<div class="half-price__measures">
-							<p class="half-price__measure-text storage-measure">MB</p>
 							<p class="half-price__measure-text storage-measure">GB</p>
 							<p style="color:#2582FF" class="half-price__measure-text storage-measure">TB</p>
 						</div>
@@ -22,7 +21,6 @@
 			      <label aria-label="download" class="half-price__label">Download</label>
 			      <input type="text" id="download" class="half-price__input" name="download" value="1000" required>
 						<div class="half-price__measures">
-							<p class="half-price__measure-text download-measure">MB</p>
 							<p style="color:#2582FF" class="half-price__measure-text download-measure">GB</p>
 							<p class="half-price__measure-text download-measure">TB</p>
 						</div>
@@ -106,17 +104,13 @@
 
 		var measureAccount = function(choice, type) {
 			if(type === "download") {
-				if(choice === "MB") {
-					return .000045
-				} else if(choice === "GB") {
+				if(choice === "GB") {
 						return .045
 				} else if(choice === "TB") {
 					return 45
 				}
 			} else if(type === "storage") {
-				if(choice === "MB") {
-					return .00001
-				} else if(choice === "GB") {
+				if(choice === "GB") {
 					return .01
 				} else if(choice === "TB") {
 					return 10
