@@ -17,18 +17,15 @@
 		}
 	}
 	&__bold {
-		background-image: url('/img/why-bold-bg.png');
+		background-image: url('/img/why-bold-bg.jpg');
 		background-size: cover;
 		background-position: center;
 		background-color: #000;
-		@media only screen and (max-width: 1500px) {
-			background-position: bottom;
-		}
+		background-repeat: no-repeat;
 		@media only screen and (max-width: $breakpoint-lg) {
-			background: url("/img/why-bold-sm-bg.png");
-			background-size: cover;
 			height: 900px;
-			background-position: 100% 60%;
+			background-position: left bottom;
+			background-size: 200%;
 			.row {
 				display: flex;
 			}
@@ -54,7 +51,7 @@
 		}
 	}
 	&__resilient {
-		background: linear-gradient(0deg, #F4F6F9, #F4F6F9), linear-gradient(142.36deg, #F9FBFF -3.19%, #DEECFF 99.92%);
+		background: $color--light-bg;
 		min-height: 576px;
 		@media only screen and (max-width: $breakpoint-lg) {
 			background: #fff;
@@ -65,8 +62,9 @@
 		&__image {
 			background: url("/img/why-resilient-bg.jpg");
 			background-size: cover;
+			background-position: center;
 			@media only screen and (max-width: $breakpoint-lg) {
-				height: 700px;
+				height: 640px;
 			}
 		}
 	}
@@ -75,5 +73,4 @@
 			display: none;
 		}
 	}
-
 }
