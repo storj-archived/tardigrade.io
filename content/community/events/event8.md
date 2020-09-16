@@ -1,5 +1,5 @@
 ---
-title : "event008"
+event : "event008"
 name : "Open Source Summit North America"
 location : "San Diego"
 when : "August 21-23, 2019"

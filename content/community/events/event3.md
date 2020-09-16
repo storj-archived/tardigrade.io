@@ -1,5 +1,5 @@
 ---
-title : "event003"
+event : "event003"
 name : "CincyDeliver DayOfAgile"
 location : "Cincinnati, OH"
 when : "July 26, 2019"

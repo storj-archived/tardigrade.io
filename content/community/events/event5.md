@@ -1,5 +1,5 @@
 ---
-title : "event005"
+event : "event005"
 name : "OSCon Ignite"
 location : "Portland"
 when : "July 15-18, 2019"

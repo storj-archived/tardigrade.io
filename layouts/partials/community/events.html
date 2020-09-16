@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-8 offset-md-2 text-center">
                 <div class="spacer125"></div>
-                <p class="community_events_heading">Upcoming Events</h1>
+                <p class="community_events_heading">Past Events</h1>
                 <div class="spacer30"></div>
                 <p class="community_events_subheading">Interested in learning more about Tardigrade? Come chat with us at these upcoming events. We also sponsor community members interested planning meetups, events, or those wanting to demo their Tardigrade projects.</p>
                 <div class="spacer55"></div>
@@ -11,10 +11,10 @@
         </div>
             <div class="community_events_table container">
             <div class="spacer30"></div>
-            {{range where .Site.Pages ".Params.class" "event"}}
+            {{range where (.Site.Pages).Reverse.ByPublishDate ".Params.class" "event"}}
                 <div class="row community_events_data text-center">
                     <div class="col col-md-3 community_events_name">{{.Params.name}}</div>
-                    <div class="col-md-3 community_events_data d-none d-md-block">{{.Params.location}}</div> 
+                    <div class="col-md-3 community_events_data d-none d-md-block">{{.Params.location}}</div>
                     <div class="col col-md-3 community_events_data">{{.Params.when}}</div>
                     <div class="col col-md-3">
                         <a href="{{.Params.link}}">
@@ -28,7 +28,7 @@
             <div class="spacer125"></div>
             <span class="text-center">
                 <p class="community_events_bottom_heading">Got a Meetup You’re Trying to Nurture?</p>
-                <p>Ask about sponsorships at 
+                <p>Ask about sponsorships at
                     <a class="community_events_bottom_cta" href="mailto:ask@storj.io">ask@storj.io</span>
                 </p>
             </span>
