@@ -2,9 +2,9 @@
 	&__hero {
 		overflow: hidden;
 		background: $color--light-bg;
-		max-height: 547px;
+		max-height: 560px;
 		@media only screen and (max-width: $breakpoint-lg) {
-			max-height: 796px;
+			max-height: 900px;
 			.row {
 				display: flex;
 			}
@@ -22,6 +22,7 @@
 		background-position: center;
 		background-color: #000;
 		background-repeat: no-repeat;
+		min-height: 560px;
 		@media only screen and (max-width: $breakpoint-lg) {
 			height: 900px;
 			background-position: left bottom;
@@ -43,29 +44,23 @@
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		min-height: 400px;
+		min-height: 560px;
 		@media only screen and (max-width: $breakpoint-md) {
 			background-position: right bottom;
 			background-size: 150%;
-			min-height: 720px;
+			min-height: 700px;
 		}
 	}
 	&__resilient {
 		background: $color--light-bg;
-		min-height: 576px;
 		@media only screen and (max-width: $breakpoint-lg) {
 			background: #fff;
-		}
-		.row {
-			min-height: 576px;
 		}
 		&__image {
 			background: url("/img/why-resilient-bg.jpg");
 			background-size: cover;
 			background-position: center;
-			@media only screen and (max-width: $breakpoint-lg) {
-				height: 640px;
-			}
+			height: 560px;
 		}
 	}
 	&__beast {
