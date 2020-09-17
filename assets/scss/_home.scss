@@ -723,7 +723,11 @@
 	.justify-content-center {
 		position: relative;
 	}
+	.col-lg-7 {
+		background: #F4F6F8;
+	}
 	&__content {
+		background: #F4F6F8;
 		// position: absolute;
 		// left: 220px;
 		// height: 100%;
@@ -805,6 +809,8 @@
 			line-height: 20px;
 			color: #949BA0;
 			font-weight: bold;
+			text-align: center;
+			width: 70px;
 		}
 	}
 }
