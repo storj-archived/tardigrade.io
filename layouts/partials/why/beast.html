@@ -3,23 +3,23 @@
     <div class="row my-5 text-center">
       {{with .Site.GetPage "whyBeast" }}
 			<div class="col-lg-12">
-				<h2 class="why__heading text-black pt-4 pb-3" >
+				<h2 class="why__heading mt-5 mb-3" >
             {{.Params.heading}}
         </h2>
-        <p class="why__text pb-5 text-black">
+        <p class="why__text">
             {{.Params.subheading}}
         </p>
 			</div>
-			<div class="col-md-lg pb-4 row">
-				{{ range where .Site.Pages ".Params.class" "beast"}}
-					<div class="text-center col-sm-6 col-lg-3 pb-5">
-						<img class="pb-4" src={{.Params.img}} alt={{.Params.alt}} />
-						<h5 class="pb-1">{{.Params.heading}}</h5>
-						<p class="text-center pt-2 m-auto w-75">{{.Params.subheading}}</p>
-					</div>
-				{{end}}
-			</div>
-			{{end}}
     </div>
+		<div class="row my-5">
+			{{ range where .Site.Pages ".Params.class" "beast"}}
+				<div class="text-center col-sm-6 col-lg-3 pb-5">
+					<img class="pb-4" src={{.Params.img}} alt={{.Params.alt}} />
+					<h5 class="pb-1">{{.Params.heading}}</h5>
+					<p class="text-center pt-2 m-auto w-75">{{.Params.subheading}}</p>
+				</div>
+			{{end}}
+		</div>
+		{{end}}
   </div>
 </div>
