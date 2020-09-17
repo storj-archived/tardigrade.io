@@ -9,15 +9,23 @@
                 <div class="spacer55"></div> -->
             </div>
         </div>
+      </div>
+      <div class="container-lg">
         <div class="community_events_table">
         {{range where (.Site.Pages).Reverse.ByPublishDate ".Params.class" "event"}}
-            <div class="row community_events_data">
-                <div class="col col-md-4 community_events_name">{{.Params.name}}</div>
-                <div class="col col-md-3 community_events_data d-none d-md-block">{{.Params.location}}</div>
-                <div class="col col-md-3 community_events_data">{{.Params.when}}</div>
+            <div class="row py-3">
+                <div class="col col-md-4">
+                    <p class="community_events_name">{{.Params.name}}</p>
+                </div>
+                <div class="col col-md-3 d-none d-md-block">
+                    <p class="community_events_data">{{.Params.location}}</p>
+                </div>
+                <div class="col col-md-3">
+                    <p class="community_events_data">{{.Params.when}}</p>
+                </div>
                 <div class="col col-md-2">
                     <a href="{{.Params.link}}">
-                        <p class="d-none d-md-block community_events_link">Learn More</p>
+                        <span class="d-none d-md-block community_events_link">Learn More</span>
                         <img class="community_main_chevron_right d-sm-block d-md-none" src="/img/chevron-right-grey.png"/>
                     </a>
                 </div>
@@ -27,6 +35,8 @@
             </div>
         {{end}}
         </div>
+      </div>
+      <div class="container">
         <div class="row text-center">
           <div class="col">
             <p class="community_events_bottom_heading mb-3">Got a Meetup You’re Trying to Nurture?</p>
