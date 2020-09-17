@@ -10,7 +10,6 @@
             </div>
         </div>
             <div class="community_events_table container">
-            <div class="spacer30"></div>
             {{range where (.Site.Pages).Reverse.ByPublishDate ".Params.class" "event"}}
                 <div class="row community_events_data text-center">
                     <div class="col col-md-3 community_events_name">{{.Params.name}}</div>
@@ -22,10 +21,12 @@
                             <img class="community_main_chevron_right d-sm-block d-md-none" src="/img/chevron-right-grey.png"/>
                         </a>
                     </div>
-                </div><hr class="community_events_divider">
+                </div>
+                <div class="row">
+                  <hr class="community_events_divider">
+                </div>
             {{end}}
             </div>
-            <div class="spacer125"></div>
             <span class="text-center">
                 <p class="community_events_bottom_heading">Got a Meetup You’re Trying to Nurture?</p>
                 <p>Ask about sponsorships at

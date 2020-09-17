@@ -143,6 +143,7 @@
       overflow-x: hidden;
       overflow-y: hidden;
       background: $color--white;
+      margin-bottom: 100px;
     }
 
     &_link {
@@ -176,8 +177,9 @@
 
     &_divider {
       width: 120%;
-      margin-left: -15px;
-      border: 1px solid rgba(147, 161, 175, 0.6);
+      border-color: 1px solid rgba(147, 161, 175, 0.6);
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     &_bottom_heading {
