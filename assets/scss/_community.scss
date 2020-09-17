@@ -153,6 +153,9 @@
       font-size: 12px;
       line-height: 40px;
       color: #9ca3ad;
+      &:hover {
+        color: $color--blue-light;
+      }
     }
 
     &_name {
@@ -195,6 +198,9 @@
     &_bottom_cta {
       font-weight: 800;
       color: #2582ff;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     @media only screen and (min-width: 0px) and (max-width: 900px) {
