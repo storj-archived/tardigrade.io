@@ -778,7 +778,7 @@
 			color: $color--blue-light;
 			max-width: 260px;
 			wrap: unset;
-			overflow: scroll;
+			overflow-x: scroll;
 			position: relative;
 			top: 13px;
 			height: 40px;
@@ -817,6 +817,14 @@
 			text-align: center;
 			width: 70px;
 		}
+	}
+	#petaContact {
+		display: none;
+	}
+	&__peta-contact {
+		background: #EAECF0;
+		height: 281px;
+		width: 397px;
 	}
 }
 

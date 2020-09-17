@@ -30,7 +30,7 @@
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
-				<!-- <div class="col-sm-12 col-lg-7 py-5">
+				<div id="charts" class="col-sm-12 col-lg-7 py-5">
 					<img src="/img/pricing-chart.svg" alt="Pricing Chart" />
 					<div class="half-price__competitors d-flex">
 						<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pr-3"></p>
@@ -38,11 +38,12 @@
 						<p class="half-price__competitors__price pr-1">$132</p>
 						<p class="half-price__competitors__price pl-1">$89</p>
 					</div>
-				</div> -->
-				<div class="col-sm-12 col-lg-7 py-5">
-					<div>
-
-					<div>
+				</div>
+				<div id="petaContact" class="col-sm-12 col-lg-7 py-5">
+					<div class="half-price__peta-contact text-center pt-5">
+						<h4 class="text-center mx-auto mb-4 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
+						<button href="/contact-us" class="btn btn-primary">Contact Us</button>
+					</div>
 				</div>
       </div>
 			<div class="spacer70"></div>
@@ -59,6 +60,8 @@
 	<script type="text/javascript">
 		var estimate = document.getElementById("estimate");
 		var tardigradeEstimate = document.getElementById("tardigradeEstimate");
+		var petaContact = document.getElementById("petaContact");
+		var charts = document.getElementById("charts");
 		var downloadMeasures = document.querySelectorAll(".download-measure")
 		var storageMeasures = document.querySelectorAll(".storage-measure")
 		var downloadInput = document.getElementById("download");
@@ -110,6 +113,14 @@
 				}
 			}
 
+			if(petaCalc(choiceOne, inputOne) || petaCalc(choiceTwo, inputTwo)) {
+				charts.style.display="none";
+				petaContact.style.display="block"
+			} else {
+				charts.style.display="block";
+				petaContact.style.display="none"
+			}
+
 			var calculation = (inputOne * measureAccount(choiceOne, typeOne)) + (inputTwo * measureAccount(choiceTwo, typeTwo))
 
 			estimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
@@ -140,6 +151,16 @@
 					calculate(typeOne, typeTwo)
 				}
 			});
+		}
+
+		var petaCalc = function(type, input) {
+
+			if(type === "GB" && input * .00001 >= 1) {
+				return true
+			} else if(type === "TB" && input * .001 >= 1) {
+				return true
+			}
+			return false
 		}
 
 		calculate("storage", "download")
