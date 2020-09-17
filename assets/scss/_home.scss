@@ -724,16 +724,16 @@
 		position: relative;
 	}
 	&__content {
-		position: absolute;
-		left: 220px;
-		height: 100%;
-		text-align: center;
-		@media only screen and (max-width: 1200px) {
-			left: 135px;
-		}
-		@media only screen and (max-width: 991px) {
-			left: 15px;
-		}
+		// position: absolute;
+		// left: 220px;
+		// height: 100%;
+		// text-align: center;
+		// @media only screen and (max-width: 1200px) {
+		// 	left: 135px;
+		// }
+		// @media only screen and (max-width: 991px) {
+		// 	left: 15px;
+		// }
 	}
 	&__label {
 		display: block;
@@ -742,7 +742,6 @@
 		line-height: 16px;
 		font-weight: bold;
 		color: #000;
-    margin: 10px 0;
 		text-align: left;
 	}
 	&__measures {
@@ -787,13 +786,26 @@
 		}
 	}
 	&__input-wrapper {
-		position: relative;
-		top: 50px;
-		margin-bottom: 30px;
+		// position: relative;
+		// top: 50px;
+		// margin-bottom: 30px;
 	}
 	&__input {
 		border: none;
 		width: 94px;
+	}
+	&__competitors {
+		justify-content: space-around;
+		bottom: 44px;
+    position: relative;
+    width: 425px;
+		text-align: center;
+		&__price {
+			font-size: 14px;
+			line-height: 20px;
+			color: #949BA0;
+			font-weight: bold;
+		}
 	}
 }
 
