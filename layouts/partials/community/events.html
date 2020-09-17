@@ -9,31 +9,32 @@
                 <div class="spacer55"></div> -->
             </div>
         </div>
-            <div class="community_events_table container">
-            {{range where (.Site.Pages).Reverse.ByPublishDate ".Params.class" "event"}}
-                <div class="row community_events_data text-center">
-                    <div class="col col-md-3 community_events_name">{{.Params.name}}</div>
-                    <div class="col-md-3 community_events_data d-none d-md-block">{{.Params.location}}</div>
-                    <div class="col col-md-3 community_events_data">{{.Params.when}}</div>
-                    <div class="col col-md-3">
-                        <a href="{{.Params.link}}">
-                            <p class="d-none d-md-block community_events_link">Learn More</p>
-                            <img class="community_main_chevron_right d-sm-block d-md-none" src="/img/chevron-right-grey.png"/>
-                        </a>
-                    </div>
+        <div class="community_events_table">
+        {{range where (.Site.Pages).Reverse.ByPublishDate ".Params.class" "event"}}
+            <div class="row community_events_data text-center">
+                <div class="col col-md-3 community_events_name">{{.Params.name}}</div>
+                <div class="col-md-3 community_events_data d-none d-md-block">{{.Params.location}}</div>
+                <div class="col col-md-3 community_events_data">{{.Params.when}}</div>
+                <div class="col col-md-3">
+                    <a href="{{.Params.link}}">
+                        <p class="d-none d-md-block community_events_link">Learn More</p>
+                        <img class="community_main_chevron_right d-sm-block d-md-none" src="/img/chevron-right-grey.png"/>
+                    </a>
                 </div>
-                <div class="row">
-                  <hr class="community_events_divider">
-                </div>
-            {{end}}
             </div>
-            <span class="text-center">
-                <p class="community_events_bottom_heading">Got a Meetup You’re Trying to Nurture?</p>
-                <p>Ask about sponsorships at
-                    <a class="community_events_bottom_cta" href="mailto:ask@storj.io">ask@storj.io</span>
-                </p>
-            </span>
-            <div class="spacer125"></div>
+            <div class="row">
+              <hr class="community_events_divider">
+            </div>
+        {{end}}
         </div>
+        <div class="row text-center">
+          <div class="col">
+            <p class="community_events_bottom_heading">Got a Meetup You’re Trying to Nurture?</p>
+            <p>Ask about sponsorships at
+                <a class="community_events_bottom_cta" href="mailto:ask@storj.io">ask@storj.io</a>
+            </p>
+          </div>
+        </div>
+        <div class="spacer125"></div>
     </div>
 </div>
