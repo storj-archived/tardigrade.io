@@ -3,6 +3,10 @@
 		font-size: 18px;
 		line-height: 24px;
 	}
+	&__heading {
+		font-size: 28px;
+		line-height: 40px;
+	}
 	&__hero {
 		overflow: hidden;
 		background: $color--light-bg;
@@ -18,6 +22,10 @@
 			.text {
 				order: 1;
 			}
+		}
+		&__heading {
+			font-size: 34px;
+			line-height: 40px;
 		}
 	}
 	&__bold {
@@ -57,19 +65,11 @@
 	}
 	&__resilient {
 		background: $color--light-bg;
-		@media only screen and (max-width: $breakpoint-lg) {
-			background: #fff;
-		}
 		&__image {
 			background: url("/img/why-resilient-bg.jpg");
 			background-size: cover;
 			background-position: center;
 			min-height: 560px;
-		}
-	}
-	&__beast {
-		@media only screen and (max-width: $breakpoint-lg) {
-			display: none;
 		}
 	}
 }
