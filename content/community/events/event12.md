@@ -1,5 +1,5 @@
 ---
-title : "event012"
+event : "event012"
 name : "Storage Developer Conference"
 location : "Santa Clara, CA"
 when : "September 23-26, 2019"
