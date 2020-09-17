@@ -4,6 +4,9 @@
 @import "color";
 @import "fonts";
 @import "base";
+@import "buttons";
+@import "icons";
+@import "breakpoints";
 
 /* Pages */
 @import "home";
@@ -26,4 +29,7 @@
 @import "connectors";
 @import "404";
 @import "secondNav";
+@import "single-connector";
 @import "how-it-works";
+@import "partner-fork";
+@import "about-us";

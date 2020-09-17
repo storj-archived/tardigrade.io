@@ -1,7 +1,8 @@
+{{ $logo := .logo }}
 <nav class="navbar navbar-expand-lg second-nav">
 	<div class="container">
 		<a class="navbar-brand" href="/">
-				<img alt="Tardigrade logo" src="/img/tar-logo-blue-horizontal.svg" style="margin-top:-14px;"/>
+				<img alt="Tardigrade logo" src={{$logo}} style="margin-top:-14px;"/>
 		</a>
 
 		<button class="navbar-toggler navbar-light bg-light"  type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +26,7 @@
 	            </div>
 	        </li>
 	        <li class="btn-group nav-item mr-3 active">
-	            <button type="button" class="navlink btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	            <button id="partnerButton" type="button" class="navlink btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	              Partners
 	              <span class="sr-only">(current)</span>
 	            </button>
@@ -60,10 +61,8 @@
 						</a>
 					</li>
 					<li class="nav-item active">
-		        <a href="/signup">
-		            <button class="btn my-2 my-sm-0 nav-join">
-		                Get Started
-		            </button>
+		        <a href="/signup" class="btn my-2 my-sm-0 nav-join">
+            		Get Started
 		        </a>
 					</li>
 					<li class="nav-item active login-link-mobile">
@@ -76,3 +75,16 @@
     </div>
 	</div>
 </nav>
+
+<script type="text/javascript">
+	var partnerButton = document.getElementById("partnerButton");
+	var clickCount = 0;
+
+	partnerButton.onclick = function (event) {
+		clickCount = clickCount + 1
+		if(clickCount === 2) {
+			window.location.href = "/partners";
+		}
+	}
+
+</script>

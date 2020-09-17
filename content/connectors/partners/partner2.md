@@ -5,8 +5,7 @@ added: 3/19/20
 updated: 3/19/20
 new: false
 img: "/img/partners/minio.svg"
-class: "partner"
-categories: "Application Connector"
+categories: "App Connector"
 ready: false
 community: false
 ---

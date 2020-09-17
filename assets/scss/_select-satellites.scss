@@ -27,80 +27,12 @@ p {
       align-items: center;
 
       &__title {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 49px;
-        letter-spacing: -0.100741px;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 1.5;
+        letter-spacing: -.100741px;
         color: #252525;
-      }
-
-      &__info {
-        font-style: italic;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.100741px;
-        color: rgba(37, 37, 37, 0.7);
-        opacity: 0.5;
-        margin-left: 10px;
-      }
-    }
-
-    &__info-icon {
-      cursor: pointer;
-
-      &:hover {
-        .info-icon-circle {
-          fill: #2582ff;
-        }
-      }
-    }
-
-    &__info-popup {
-      position: absolute;
-      top: 40px;
-      left: 75px;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px;
-      max-width: 385px;
-      width: 385px;
-      z-index: 100;
-      background-color: #fff;
-      border-radius: 6px;
-      box-shadow: 0 8px 34px rgba(161, 173, 185, 0.41);
-
-      &__text {
-        margin-top: 40px;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: -0.100741px;
-        color: rgba(37, 37, 37, 0.7);
-        font-weight: 500;
-        text-align: center;
-      }
-
-      &__link {
-        margin-top: 30px;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 21px;
-        letter-spacing: 0.01em;
-        color: #2582ff;
-      }
-
-      &__close-icon {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-
-        &:hover {
-          .close-cross-path {
-            stroke: #2683ff;
-          }
-        }
+        margin-bottom: 32px;
       }
     }
   }
@@ -117,7 +49,7 @@ p {
 }
 
 .proceed-button {
-  margin-top: 20px;
+  margin-top: 16px;
   width: 100%;
   height: 48px;
   display: flex;
@@ -126,9 +58,10 @@ p {
   background-color: #2582ff;
   border-radius: 6px;
   color: #fff;
+  font-weight: 600;
 
   &:hover {
-    background-color: #0059d0;
+    background-color: $color--blue-light-hover;
     color: #fff;
   }
 }
@@ -141,7 +74,7 @@ p {
   border-radius: 6px;
   cursor: pointer;
   margin-bottom: 20px;
-  border: 2px solid #fff;
+  border: 2px solid #f7f8fb;
   user-select: none;
 }
 
@@ -187,10 +120,10 @@ p {
 }
 
 .storj-logo-text {
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 12px;
   color: #5e6978;
   font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 .selected-container {
@@ -212,18 +145,18 @@ p {
 
 .selected-title {
   font-family: "Inter", sans-serif;
+  font-weight: 600;
   color: #2582ff;
   font-size: 16px;
   line-height: 21px;
-  font-weight: 500;
   margin-bottom: 5px;
 }
 
 .selected-subtitle {
   font-family: "Inter", sans-serif;
+  font-weight: 500;
   color: #2582ff;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: 12px;
 }
 
 .checkmark {

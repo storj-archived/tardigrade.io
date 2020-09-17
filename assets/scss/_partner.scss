@@ -1,6 +1,7 @@
 .partner {
   &__headline {
-    background: url("/img/background.svg") no-repeat;
+    background: $color--blue-bg;
+    background: radial-gradient(circle, rgba(0,55,127,1) 0%, rgba(0,5,12,1) 100%);
     background-size: cover;
     min-height: 560px;
 
@@ -110,25 +111,6 @@
           display: none !important;
         }
       }
-    }
-
-    &-btn {
-      font-size: 16px;
-      line-height: 24px;
-      background: #2683ff;
-      color: $color--white;
-      border-radius: 6px;
-      width: 218px;
-      height: 48px;
-      max-width: 320px;
-      border: 0;
-      outline: 0;
-      -webkit-backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-transition: all 0.15s ease-in-out;
-      -moz-transition: all 0.15s ease-in-out;
-      -ms-transition: all 0.15s ease-in-out;
-      transition: all 0.15s ease-in-out;
     }
   }
 

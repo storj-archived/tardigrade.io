@@ -1,6 +1,7 @@
 .community {
   &_hero {
     &_bg {
+      background: $color--blue-bg;
       background: radial-gradient(
         516.5px at 92.17% 47.6%,
         #133e9c 0%,
@@ -100,13 +101,13 @@
     }
 
     &_box_top {
-      height: 300px;
+      min-height: 300px;
     }
 
     &_chevron_right {
-      height: 40px;
-      width: 30px;
-      margin-top: -10px;
+      height: auto;
+      width: 20px;
+      margin: 0 auto;
     }
   }
 
@@ -141,8 +142,8 @@
       border-radius: 6px;
       overflow-x: hidden;
       overflow-y: hidden;
-      height: 1380px;
       background: $color--white;
+      margin-bottom: 100px;
     }
 
     &_link {
@@ -150,8 +151,10 @@
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
-      line-height: 40px;
       color: #9ca3ad;
+      &:hover {
+        color: $color--blue-light;
+      }
     }
 
     &_name {
@@ -159,7 +162,6 @@
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
-      line-height: 40px;
       color: #000000;
       text-align: left;
       padding-left: 25px;
@@ -170,14 +172,14 @@
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 40px;
       color: #000000;
     }
 
     &_divider {
       width: 120%;
-      margin-left: -15px;
-      border: 1px solid rgba(147, 161, 175, 0.6);
+      border-color: 1px solid rgba(147, 161, 175, 0.6);
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     &_bottom_heading {
@@ -193,6 +195,9 @@
     &_bottom_cta {
       font-weight: 800;
       color: #2582ff;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     @media only screen and (min-width: 0px) and (max-width: 900px) {

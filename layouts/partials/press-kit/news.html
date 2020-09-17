@@ -1,12 +1,11 @@
 <div class="container-fluid">
   <div class="container">
-    <div class="spacer125"></div>
     {{ with .Site.GetPage "pressHeading.md" }}
+      <div class="spacer125"></div>
       <div class="row">
-        <div class="col mt-5 text-center">
-          <h2 class="press-kit__news__title" >{{.Title}}</h2>
+        <div class="col mb-5 text-center">
+          <h2 class="press-kit__news__title mb-4" >{{.Title}}</h2>
         </div>
-        <div class="spacer125"></div>
       </div>
     {{end}}
     <div class="row">
@@ -51,7 +50,7 @@
         {{end}}
 
       </div>
-      <div class="col-lg-10 2019 press-kit__news-desktop-article-group current-year">
+      <div class="col-lg-10 2019 press-kit__news__desktop-article-group current-year">
         {{range where .Site.Pages ".Params.class" "newPressArticle"}}
          <div class="row press-kit__news__article">
            <div class="col-lg-9">
@@ -83,7 +82,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2018 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2018 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2018" }}
           <div class="row press-kit__news__article">
@@ -101,7 +100,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2017 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2017 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2017" }}
           <div class="row press-kit__news__article">
@@ -119,7 +118,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2016 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2016 press-kit__news__desktop-article-group">
     {{range where .Site.Pages ".Params.class" "pressArticle"}}
       {{ if in .Params.publishedOn "2016" }}
         <div class="row press-kit__news__article">
@@ -137,7 +136,7 @@
       {{end}}
     {{end}}
     </div>
-    <div class="col-lg-10 2015 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2015 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2015" }}
           <div class="row press-kit__news__article">
@@ -155,7 +154,7 @@
         {{end}}
       {{end}}
     </div>
-    <div class="col-lg-10 2014 press-kit__news-desktop-article-group">
+    <div class="col-lg-10 2014 press-kit__news__desktop-article-group">
       {{range where .Site.Pages ".Params.class" "pressArticle"}}
         {{ if in .Params.publishedOn "2014" }}
           <div class="row press-kit__news__article">
@@ -175,7 +174,7 @@
     </div>
     <div class="spacer30"></div>
     <div id="loadMore">
-      <p class="press-kit__news-load-more-btn">Load More</p>
+      <button class="btn btn-outline-primary btn-lg">Load More</button>
     </div>
     <div class="spacer125"></div>
   </div>

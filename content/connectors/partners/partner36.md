@@ -7,7 +7,7 @@ new: true
 img: "/img/partners/rclone.png"
 class: "partner"
 categories: "Developer Tools"
-weight: 98
+weight: 97
 link: "https://documentation.tardigrade.io/how-tos/sync-files-with-rclone"
 community: false
 ---

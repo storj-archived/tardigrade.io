@@ -5,7 +5,6 @@ added: 3/19/20
 updated: 3/19/20
 new: false
 img: "/img/partners/tardigrade-drive.svg"
-class: "partner"
 categories: "Reference Implementations"
 ready: false
 community: false

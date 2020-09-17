@@ -17,7 +17,7 @@
 					{{ partial "connectors/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
 				</div>
 				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
-					{{ range ((.Paginator 8).Pages.ByParam "ready").Reverse }}
+					{{ range (where ((.Paginator 8).Pages.ByParam "ready").Reverse ".Params.class" "partner") }}
 					<div class="connectors__partners__partner col-xs-12 col-lg-6 ">
 						{{ if eq .Params.ready false }}
 						<p class="connectors__partners__partner__header__ready">

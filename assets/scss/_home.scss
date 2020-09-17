@@ -277,14 +277,6 @@
   }
 }
 
-.cta-wrapper {
-  box-shadow: 0px 0px 74px rgba(31, 49, 76, 0.25);
-  border-radius: 20px;
-  height: 280px;
-  max-width: 800px;
-  background-color: white;
-}
-
 @media only screen and (max-width: 991px) {
   .hero-image {
     display: none;
@@ -382,15 +374,6 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 991px) {
-  .cta-join-btn-wrapper {
-    width: 80%;
-    margin: 0 auto;
-    top: 20px;
-    position: relative;
-  }
-}
-
 .cta-email {
   width: 45%;
   margin: 0px;
@@ -405,40 +388,15 @@
   border-right: none;
   resize: none;
   color: #7e8b9c;
-  font-family: "Roboto";
+  font-family: $secondary-font;
   font-size: 14px;
-}
-
-.cta-join-btn {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #ffffff;
-  height: 40px;
-  margin-top: -4px;
-  margin-left: -5px;
-  width: 172px;
-  text-align: left;
-  padding-left: 30px;
 }
 
 .cta-join-btn-arrow {
   position: relative;
-  right: 7%;
+  right: -10px;
   width: 15px;
   bottom: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .cta-join-btn {
-      margin-top: -2px;
-    }
-  }
 }
 
 .hiw {
@@ -448,10 +406,11 @@
 
 .hiw-heading {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .hiw-heading-simple {
-  font-family: "Poppins";
+  font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -478,11 +437,11 @@
   font-size: 18px;
   color: $color--blue-light;
   font-weight: bold;
-  font-family: "Poppins";
+  font-family: $primary-font;
 }
 
 .y-tar-heading {
-  font-family: "Poppins";
+  font-family: $primary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -547,6 +506,52 @@
 
   .d-block {
     display: none !important;
+  }
+}
+
+.hiw-video-link {
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hiw-video-icon {
+  width: 200px;
+  margin-top: 40px;
+}
+
+.hiw-learn-more {
+  text-align: center;
+  color: $color--blue-light;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline;
+  vertical-align: middle;
+  img {
+    position: relative;
+    top: -1px;
+    left: 8px;
+  }
+}
+
+.experience {
+  background: #fff;
+  .hiw-header {
+    font-size: 24px;
+  }
+  &__cta {
+    background: $color--blue-light;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    width: 177px;
+    padding: 10px 15px 10px 0;
+    &__arrow {
+      position: relative;
+      left: 15px;
+      top: -1px;
+    }
   }
 }
 
@@ -1034,13 +1039,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .dev-in-mind__cta-wrapper {
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
   .dev-in-mind__content {
     text-align: center;
     margin: 0 auto;

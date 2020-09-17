@@ -1,5 +1,5 @@
 ---
-title : "event007"
+event : "event007"
 name : "Abstractions"
 location : "Pittsburgh, PA"
 when : "August 21-23, 2019"
