@@ -4,15 +4,13 @@
       <div class="spacer125"></div>
       <div class="col-lg-4 thank-you__content">
         {{ with .Site.GetPage "thankYou" }}
-        <h2 class="thank-you__heading">
+        <h2 class="thank-you__heading mb-3">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
         </h2>
-        <div class="spacer20"></div>
         <div class="thank-you__msg">
           {{ .Params.content}}
         </div>
-        <div class="spacer20"></div>
-        <a href="/community" class="btn btn-primary btn-lg">
+        <a href="/community" class="btn btn-primary btn-lg mt-4">
             {{ .Params.cta}}
         </a>
         {{ end }}
