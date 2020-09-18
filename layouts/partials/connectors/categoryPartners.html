@@ -14,7 +14,6 @@
 			<div class="col-md-12 col-md-12 col-lg-8 ">
 				<div class="connectors__partners__heading">
 					<h4 class="connectors__partners__title">More Connectors</h4>
-					{{ partial "connectors/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
 				</div>
 				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
 					{{ range (where ((.Paginator 8).Pages.ByParam "ready").Reverse ".Params.class" "partner") }}
