@@ -33,18 +33,12 @@
             {{range where .Site.Pages ".Params.class" "superior-cloud"}}
             <div class="col-xs-12 col-lg-6 text-center {{.Params.secondClass}}">
 							<img alt="{{.Params.alt}}" class="superior-cloud__img" src="{{.Params.img}}" />
-              <h3 class="superior-cloud-heading">{{.Params.heading}}</h3>
+              <h3 class="superior-cloud-heading my-3">{{.Params.heading}}</h3>
               <p class="superior-cloud-subheading">{{.Params.desc}}</p>
             </div>
             {{end}}
           </div>
 					<div class="spacer30"></div>
-					<!-- <div class="text-center hiw-cta-wrapper superior-cloud-cta">
-						<a href="#" class="hiw-cta-link">
-							<p class="hiw-cta">Learn More</p>
-							<img class="hiw-cta__arrow" src="/img/blue-carrot.svg"></img>
-						</a>
-					</div> -->
         </div>
 				{{end}}
       </div>
