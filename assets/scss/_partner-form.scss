@@ -48,7 +48,7 @@
     overflow: visible;
   }
   #partner-form {
-    margin-top: 210px;
+    margin-top: 160px;
     text-align: center;
     height: 100vh;
     .step {
@@ -60,7 +60,8 @@
       border: 1px solid #c5cbdb;
       box-sizing: border-box;
       border-radius: 6px;
-      width: 350px;
+      max-width: 350px;
+      margin: 0 auto;
       height: 56px;
     }
     .label {
@@ -93,7 +94,7 @@
     .error {
       display: none;
       position: relative;
-      top: 11px;
+      top: 13px;
       color: red;
     }
     .progress {
