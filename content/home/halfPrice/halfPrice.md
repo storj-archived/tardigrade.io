@@ -9,6 +9,6 @@ col2Heading: "Download"
 col2Image: "/img/tar-ico-download.svg"
 col2Amount: "$0.045"
 col2Metric: "PER GB"
-col2Alt: "storage download icon"
+col2Alt: "storage bandwidth icon"
 cta: "Get Started"
 ---
