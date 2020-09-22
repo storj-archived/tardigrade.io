@@ -127,6 +127,117 @@
 			tardigradeEstimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
 		}
 
+		var calcAmazon = function(input, choice, type) {
+			if(type === "storage") {
+				if(choice === "GB") {
+					return 0
+				} else if(choice === "TB") {
+					if(input <= 50) {
+						return total * .022
+					} else if(input > 50 && >= 1000) {
+						return total * . 021
+					}
+				}
+			} else if(type === "download") {
+				if(choice === "GB") {
+					if(input >= 1 && <= 5) {
+						return total * .090
+					} else if(input > 5 && >= 10) {
+						return total * . 021
+					} else if(input > 10 && >= 1000) {
+						return total * . 085
+					} else if(input > 1000 && >= 5000) {
+						return total * . 070
+					} else if(input > 5000 && >= 15000) {
+						return total * . 070
+					} else if(input > 15000) {
+						return total * . 050
+					}
+					return 0
+				} else if(choice === "TB") {
+					if(input <= 50) {
+						return total * .022
+					} else if(input > 50 && >= 1000) {
+						return total * . 021
+					}
+				}
+			}
+		}
+
+		var calcGoogle = function(input, choice, type) {
+			if(type === "storage") {
+				if(choice === "GB") {
+					return 0
+				} else if(choice === "TB") {
+					if(input <= 50) {
+						return total * .022
+					} else if(input > 50 && >= 1000) {
+						return total * . 021
+					}
+				}
+			} else if(type === "download") {
+				if(choice === "GB") {
+					if(input >= 1 && <= 5) {
+						return total * .090
+					} else if(input > 5 && >= 10) {
+						return total * . 021
+					} else if(input > 10 && >= 1000) {
+						return total * . 085
+					} else if(input > 1000 && >= 5000) {
+						return total * . 070
+					} else if(input > 5000 && >= 15000) {
+						return total * . 070
+					} else if(input > 15000) {
+						return total * . 050
+					}
+					return 0
+				} else if(choice === "TB") {
+					if(input <= 50) {
+						return total * .022
+					} else if(input > 50 && >= 1000) {
+						return total * . 021
+					}
+				}
+			}
+		}
+
+		var calcMicro = function(input, choice, type) {
+			if(type === "storage") {
+				if(choice === "GB") {
+					return 0
+				} else if(choice === "TB") {
+					if(input <= 50) {
+						return total * .022
+					} else if(input > 50 && >= 1000) {
+						return total * . 021
+					}
+				}
+			} else if(type === "download") {
+				if(choice === "GB") {
+					if(input >= 1 && <= 5) {
+						return total * .090
+					} else if(input > 5 && >= 10) {
+						return total * . 021
+					} else if(input > 10 && >= 1000) {
+						return total * . 085
+					} else if(input > 1000 && >= 5000) {
+						return total * . 070
+					} else if(input > 5000 && >= 15000) {
+						return total * . 070
+					} else if(input > 15000) {
+						return total * . 050
+					}
+					return 0
+				} else if(choice === "TB") {
+					if(input <= 50) {
+						return total * .022
+					} else if(input > 50 && >= 1000) {
+						return total * . 021
+					}
+				}
+			}
+		}
+
 
 		var measureAccount = function(choice, type) {
 			if(type === "download") {
