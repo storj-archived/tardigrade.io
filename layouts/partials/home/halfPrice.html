@@ -8,7 +8,7 @@
 			<div class="spacer40"></div>
 			<div class="spacer60"></div>
       <div class="row">
-				<div class="half-price__content col-sm-12 offset-sm-0 offset-lg-1 col-lg-4 pt-4 pl-5">
+				<div class="half-price__content col-sm-12 col-md-12 offset-sm-0 offset-lg-1 col-lg-4 pt-5 pl-5">
 					<div class="half-price__input-wrapper">
 			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
 			      <input type="text" id="storage" class="half-price__input" name="storage" value="1" required>
@@ -25,18 +25,18 @@
 							<p class="half-price__measure-text download-measure">TB</p>
 						</div>
 					</div>
-					<div class="half-price__estimate">
+					<div class="pt-5">
 						<h4 id="estimate" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
-				<div id="charts" class="col-sm-12 col-lg-7 py-5">
+				<div id="charts" class="half-price__content col-sm-12 col-md-12 col-lg-6 py-5">
 					<img src="/img/pricing-chart.svg" alt="Pricing Chart" />
 					<div class="half-price__competitors d-flex">
 						<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pr-3"></p>
-						<p class="half-price__competitors__price pr-2">$102</p>
-						<p class="half-price__competitors__price pr-1">$132</p>
-						<p class="half-price__competitors__price pl-1">$89</p>
+						<p id="amazonEstimate" class="half-price__competitors__price pr-2"></p>
+						<p id="googleEstimate" class="half-price__competitors__price pr-1"></p>
+						<p id="microsoftEstimate" class="half-price__competitors__price pl-1"></p>
 					</div>
 				</div>
 				<div id="petaContact" class="col-sm-12 col-lg-7 py-5">
@@ -60,6 +60,9 @@
 	<script type="text/javascript">
 		var estimate = document.getElementById("estimate");
 		var tardigradeEstimate = document.getElementById("tardigradeEstimate");
+		var amazonEstimate = document.getElementById("amazonEstimate");
+		var googleEstimate = document.getElementById("googleEstimate");
+		var microsoftEstimate = document.getElementById("microsoftEstimate");
 		var petaContact = document.getElementById("petaContact");
 		var charts = document.getElementById("charts");
 		var downloadMeasures = document.querySelectorAll(".download-measure")
@@ -123,8 +126,14 @@
 
 			var calculation = (inputOne * measureAccount(choiceOne, typeOne)) + (inputTwo * measureAccount(choiceTwo, typeTwo))
 
-			estimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
-			tardigradeEstimate.textContent = "$" + Math.ceil(calculation * 100) / 100;
+			var tardiradeCalculation = "$" + Math.ceil(calculation * 100) / 100
+
+			estimate.textContent = tardiradeCalculation
+			tardigradeEstimate.textContent = tardiradeCalculation
+			console.log("AMAZON:, ", calcAmazon(inputOne, choiceOne, typeOne), calcAmazon(inputTwo, choiceTwo, typeTwo))
+			amazonEstimate.textContent = "$" + Math.ceil((calcAmazon(inputOne, choiceOne, typeOne)) + (calcAmazon(inputTwo, choiceTwo, typeTwo)) * 100) / 100
+			googleEstimate.textContent = "$" + Math.ceil((calcGoogle(inputOne, choiceOne, typeOne)) + (calcGoogle(inputTwo, choiceTwo, typeTwo)) * 100) / 100
+			microsoftEstimate.textContent = "$" + Math.ceil((calcMicro(inputOne, choiceOne, typeOne)) + (calcMicro(inputTwo, choiceTwo, typeTwo)) * 100) / 100
 		}
 
 		var calcAmazon = function(input, choice, type) {
@@ -132,51 +141,54 @@
 				if(choice === "GB") {
 					if(input <= 1000) {
 						return input * .023
-					} else if(input > 1000 && input >= 50000) {
+					} else if(input > 1000 && input <= 50000) {
 						return input * .022
 					} else if(input > 50000) {
-						return input & .021
+						return input * .021
 					}
 				} else if(choice === "TB") {
 					if(input <= 1) {
 						return input * .023
-					} else if(input > 1 && input >= 50) {
+					} else if(input > 1 && input <= 50) {
 						return input * .022
-					} else if(input > 50 && input >= 1000) {
-						return input * . 021
+					} else if(input > 50) {
+						return input * .021
 					}
 				}
 			} else if(type === "download") {
 				if(choice === "GB") {
 					if(input >= 1 && input <= 5) {
 						return input * .090
-					} else if(input > 5 && input >= 10) {
-						return input * . 021
-					} else if(input > 10 && input >= 50000) {
-						return input * . 085
-					} else if(input > 50000 && input >= 150000) {
-						return input * . 070
+					} else if(input > 5 && input <= 10) {
+						return input * .021
+					} else if(input > 10 && input <= 50000) {
+						return input * .085
+					} else if(input > 50000 && input <= 150000) {
+						return input * .070
 					} else if(input > 150000) {
-						return input * . 050
+						return input * .050
+					} else {
+						return 0
 					}
-					return 0
 				} else if(choice === "TB") {
 					if(input >= .001 && input <= .01) {
 						return input * .090
-					} else if(input > .01 && input >= 50) {
-						return input * . 085
-					} else if(input > 50 && input >= 150) {
+					} else if(input > .01 && input <= 50) {
+						return input * .085
+					} else if(input > 50 && input <= 150) {
 						return input * .070
 					} else if(input > 150) {
 						return input * .50
-					return 0
+					} else  {
+						return 0
+					}
 				}
 			}
 		}
 
 		var calcGoogle = function(input, choice, type) {
 			if(type === "storage") {
-				return total * .026
+				return input * .026
 			} else if(type === "download") {
 				if(choice === "GB") {
 					if(input >= 0 && input <= 1000) {
@@ -186,7 +198,7 @@
 					} else if(input > 10000) {
 						return input * .080
 					}
-					return total * .080
+					return input * .080
 				} else if(choice === "TB") {
 					if(input <= 1) {
 						return input * .120
@@ -206,35 +218,40 @@
 				} else if(choice === "TB") {
 					if(input >= 1 && input <= 50) {
 						return input * .0184
-					} else if(input > 50 && input >= 500) {
+					} else if(input > 50 && input <= 500) {
 						return input * .0177
 					} else if(input > 500) {
 						return input * .0170
+					} else {
+						return 0
 					}
 				}
 			} else if(type === "download") {
 				if(choice === "GB") {
-					if(input > 5 && >= 10000) {
+					if(input > 5 && input <= 10000) {
 						return input * .0870
-					} else if(input > 10000 && >= 50000) {
+					} else if(input > 10000 && input <= 50000) {
 						return input * .0830
-					} else if(input > 50000 && >= 150000) {
+					} else if(input > 50000 && input <= 150000) {
 						return input * .070
 					} else if(input > 150000 && input <= 350000) {
 						return input * .050
-					} else if(input > 350000)
+					} else if(input > 350000) {
 						return input * .050
+					} else {
+						return 0
+					}
 				} else if(choice === "TB") {
 					if(input <= .005) {
 						return 0
-					} else if(input > .005 && >= 10) {
-						return total * .087
-					} else if(input > 10 && >= 50) {
-						return total * .083
-					} else if(input > 50 && >= 150) {
-						return total * .070
+					} else if(input > .005 && input <= 10) {
+						return input * .087
+					} else if(input > 10 && input <= 50) {
+						return input * .083
+					} else if(input > 50 && input <= 150) {
+						return input * .070
 					} else if(input > 150) {
-						return total * .050
+						return input * .050
 					}
 				}
 			}

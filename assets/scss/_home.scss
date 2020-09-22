@@ -766,9 +766,12 @@
 		margin-right: 5px;
 		cursor: pointer;
 	}
+	#charts {
+		@media only screen and (max-width: $breakpoint-lg) {
+		  text-align: center;
+		}
+	}
 	&__estimate {
-		position: absolute;
-		bottom: 50px;
 		&__price {
 			font-family: $primary-font;
 			font-style: normal;
@@ -809,6 +812,12 @@
     position: relative;
     width: 425px;
 		text-align: center;
+		@media only screen and (max-width: $breakpoint-lg) {
+		  left: 19%;
+		}
+		@media only screen and (max-width: $breakpoint-md) {
+		  left: 8%;
+		}
 		&__price {
 			font-size: 14px;
 			line-height: 20px;
