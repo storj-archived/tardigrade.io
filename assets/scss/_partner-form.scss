@@ -44,13 +44,9 @@
 }
 
 .partner-form-page {
-  .community_hero_bg {
-    overflow: visible;
-  }
   #partner-form {
-    margin-top: 160px;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     .step {
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
@@ -64,33 +60,6 @@
       margin: 0 auto;
       height: 56px;
     }
-    .label {
-      display: block;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #212429;
-    }
-    .custom-select {
-      width: 50%;
-      overflow-y: hidden;
-    }
-    .multiple-select-wrapper {
-      border: 1px solid #ced4da;
-      width: 60%;
-      margin: 0 auto;
-      border-radius: 6px;
-      padding-bottom: 7px;
-      .multiple-select {
-        width: 100%;
-        border: none;
-        border-radius: 0;
-        outline: none;
-      }
-    }
     .error {
       display: none;
       position: relative;
@@ -98,9 +67,8 @@
       color: red;
     }
     .progress {
-      width: 350px;
-      margin: 0 auto;
-      margin-top: 40px;
+      max-width: 350px;
+      margin: 40px auto;
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
     }
@@ -111,51 +79,5 @@
 		.progress-bar {
 			height: 17px;
 		}
-  }
-}
-
-@media (max-width: 768px) {
-  .partner-form-page {
-    #partner-form {
-      #start-wrapper {
-        h2 {
-          font-size: 16px;
-          line-height: 28px;
-        }
-      }
-      .label {
-        line-height: 24px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .partner-form-page {
-    #partner-form {
-      margin: 140px auto;
-      width: 92%;
-      #start-wrapper {
-        h2 {
-          font-size: 15px;
-          line-height: 27px;
-        }
-      }
-      .progress,
-      .user-input {
-        width: 90%;
-      }
-
-      .custom-select {
-        width: 90%;
-        overflow-x: scroll;
-      }
-      .multiple-select-wrapper {
-        width: 90%;
-        .multiple-select {
-          overflow-x: scroll;
-        }
-      }
-    }
   }
 }

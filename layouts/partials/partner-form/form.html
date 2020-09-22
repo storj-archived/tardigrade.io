@@ -3,16 +3,12 @@
   <!-- {{partial "nav" .}} -->
   {{partial "secondNav" (dict "logo" "/img/logo-blue.svg" )}}
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <div id="partner-form">
+    <div class="row align-items-center" id="partner-form">
+      <div class="col-12 col-lg-8 offset-lg-2 align-self-center">
           <div id="start-wrapper">
-            <h2>Want to learn more about becoming</h2>
-            <h2>a Tardigrade.io partner?</h2>
-            <div class="spacer25"></div>
-            <h3>Great! Let's get started.</h3>
+            <h2>Want to learn more about becoming a Tardigrade.io partner?</h2>
             <div class="spacer30"></div>
-            <input type="submit" value="Start" name="start" id="partner-form-start" class="btn btn-primary btn-lg">
+            <input type="submit" value="Let's get started" name="start" id="partner-form-start" class="btn btn-primary btn-lg">
           </div>
 
           <div style="display:none" id="partner-form-name" class="step active">
@@ -65,43 +61,80 @@
           </div>
 
           <div style="display:none" class="partner-form-use-case step active form-group">
-            <label class="label">Tell us more about your use case please, which of the following applies (choose as many): *</label>
+            <label class="label">Tell us more about your use case please, which of the following applies <span class="small">(choose as many)</span>: *</label>
             <div class="spacer15"></div>
-            <div class="multiple-select-wrapper">
-              <select class="custom-select multiple-select" multiple required>
-                <option class="use-case">Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
-                <option class="use-case">Temporary storage of data for transit between external file systems</option>
-                <option class="use-case">Transfer of large files over the internet</option>
-                <option class="use-case">General object storage</option>
-                <option class="use-case">Other</option>
-              </select>
+            <div class="custom-control custom-checkbox text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck1">
+              <label class="custom-control-label" for="useCaseCheck1">Basic R&D and evaluation of Tardigrade for inclusion in a future project</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck2">
+              <label class="custom-control-label" for="useCaseCheck2">Temporary storage of data for transit between external file systems</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck3">
+              <label class="custom-control-label" for="useCaseCheck3">Transfer of large files over the internet</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck4">
+              <label class="custom-control-label" for="useCaseCheck4">General object storage</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input" id="useCaseCheck5">
+              <label class="custom-control-label" for="useCaseCheck5">Other</label>
             </div>
             <div class="error">A choice must be made to continue!</div>
           </div>
 
-          <div style="display:none" class="partner-form-data-amount  step active form-group">
-            <label class="label">WHat is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)? *</label>
+          <div style="display:none" class="partner-form-data-amount step active form-group">
+            <label class="label">What is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)? *</label>
             <div class="spacer15"></div>
-            <select class="custom-select" multiple required>
-              <option class="data-amount" selected>< 1 TB</option>
-              <option class="data-amount">1-10 TB</option>
-              <option class="data-amount">10-100 TB</option>
-              <option class="data-amount">> 100 TB</option>
-              <option class="data-amount">> 1000 TPB</option>
-            </select>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="dataAmountRadio1" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="custom-control-label" for="dataAmountRadio1">&lt; 1TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio2" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="custom-control-label" for="dataAmountRadio2">1-10 TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio3" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="custom-control-label" for="dataAmountRadio3">10-100 TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio4" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="custom-control-label" for="dataAmountRadio4">&gt; 100TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio5" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="custom-control-label" for="dataAmountRadio5">&gt; 1000TB</label>
+            </div>
             <div class="error">A choice must be made to continue!</div>
           </div>
 
           <div style="display:none" class="partner-form-file-size  step active form-group">
             <label class="label">What file sizes will you usually upload? *</label>
             <div class="spacer15"></div>
-            <select class="custom-select" multiple required>
-              <option class="file-size" selected>< 1 MB</option>
-              <option class="file-size">1 GB</option>
-              <option class="file-size">10-100 GB</option>
-              <option class="file-size">> 100 GB</option>
-              <option class="file-size">> 1 TB</option>
-            </select>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="fileSizeRadio1" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="custom-control-label" for="fileSizeRadio1">&lt; 1MB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio2" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="custom-control-label" for="fileSizeRadio2">1 GB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio3" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="custom-control-label" for="fileSizeRadio3">10-100 GB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio4" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="custom-control-label" for="fileSizeRadio4">&gt; 100GB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio5" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="custom-control-label" for="fileSizeRadio5">&gt; 1TB</label>
+            </div>
             <div class="error">A choice must be made to continue!</div>
           </div>
 
@@ -115,17 +148,27 @@
           <div style="display:none" class="partner-form-per-month step active form-group">
             <label class="label">What number of times do you plan to download your data set per month? *</label>
             <div class="spacer15"></div>
-            <select class="custom-select" multiple required>
-              <option class="per-month" selected>Very infrequently</option>
-              <option class="per-month">< 20% of the total data per month</option>
-              <option class="per-month">< 1 time per month</option>
-              <option class="per-month">Multiple times per month</option>
-            </select>
+            <div class="custom-control custom-radio text-left">
+              <input type="radio" id="perMonthRadio1" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="custom-control-label" for="perMonthRadio1">Very infrequently</label>
+            </div>
+            <div class="custom-control custom-radio text-left mt-2">
+              <input type="radio" id="perMonthRadio2" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="custom-control-label" for="perMonthRadio2">&lt; 20% of the total data per month</label>
+            </div>
+            <div class="custom-control custom-radio text-left mt-2">
+              <input type="radio" id="perMonthRadio3" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="custom-control-label" for="perMonthRadio3">&lt; 1 time per month</label>
+            </div>
+            <div class="custom-control custom-radio text-left mt-2">
+              <input type="radio" id="perMonthRadio4" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="custom-control-label" for="perMonthRadio4">Multiple times per month</label>
+            </div>
             <div class="error">A choice must be made to continue!</div>
           </div>
 
           <div style="display:none" id="step-buttons">
-            <div class="spacer25"></div>
+            <div class="spacer30"></div>
             <input style="display:none" type="submit" value="Back" name="back" class="btn btn-outline-primary btn-lg mr-4" id="partner-form-back">
             <input type="submit" value="Next" name="next" class="btn btn-primary btn-lg" id="partner-form-next">
             <input style="display:none" type="submit" value="Submit" name="submit" class="btn btn-primary btn-lg" id="partner-form-submit">
@@ -135,7 +178,6 @@
             <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 8.3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
           </div>
 
-        </div>
       </div>
 
     </div>
