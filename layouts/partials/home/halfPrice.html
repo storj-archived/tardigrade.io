@@ -130,72 +130,70 @@
 		var calcAmazon = function(input, choice, type) {
 			if(type === "storage") {
 				if(choice === "GB") {
-					return 0
+					if(input <= 1000) {
+						return input * .023
+					} else if(input > 1000 && input >= 50000) {
+						return input * .022
+					} else if(input > 50000) {
+						return input & .021
+					}
 				} else if(choice === "TB") {
-					if(input <= 50) {
-						return total * .022
-					} else if(input > 50 && >= 1000) {
-						return total * . 021
+					if(input <= 1) {
+						return input * .023
+					} else if(input > 1 && input >= 50) {
+						return input * .022
+					} else if(input > 50 && input >= 1000) {
+						return input * . 021
 					}
 				}
 			} else if(type === "download") {
 				if(choice === "GB") {
-					if(input >= 1 && <= 5) {
-						return total * .090
-					} else if(input > 5 && >= 10) {
-						return total * . 021
-					} else if(input > 10 && >= 1000) {
-						return total * . 085
-					} else if(input > 1000 && >= 5000) {
-						return total * . 070
-					} else if(input > 5000 && >= 15000) {
-						return total * . 070
-					} else if(input > 15000) {
-						return total * . 050
+					if(input >= 1 && input <= 5) {
+						return input * .090
+					} else if(input > 5 && input >= 10) {
+						return input * . 021
+					} else if(input > 10 && input >= 50000) {
+						return input * . 085
+					} else if(input > 50000 && input >= 150000) {
+						return input * . 070
+					} else if(input > 150000) {
+						return input * . 050
 					}
 					return 0
 				} else if(choice === "TB") {
-					if(input <= 50) {
-						return total * .022
-					} else if(input > 50 && >= 1000) {
-						return total * . 021
-					}
+					if(input >= .001 && input <= .01) {
+						return input * .090
+					} else if(input > .01 && input >= 50) {
+						return input * . 085
+					} else if(input > 50 && input >= 150) {
+						return input * .070
+					} else if(input > 150) {
+						return input * .50
+					return 0
 				}
 			}
 		}
 
 		var calcGoogle = function(input, choice, type) {
 			if(type === "storage") {
-				if(choice === "GB") {
-					return 0
-				} else if(choice === "TB") {
-					if(input <= 50) {
-						return total * .022
-					} else if(input > 50 && >= 1000) {
-						return total * . 021
-					}
-				}
+				return total * .026
 			} else if(type === "download") {
 				if(choice === "GB") {
-					if(input >= 1 && <= 5) {
-						return total * .090
-					} else if(input > 5 && >= 10) {
-						return total * . 021
-					} else if(input > 10 && >= 1000) {
-						return total * . 085
-					} else if(input > 1000 && >= 5000) {
-						return total * . 070
-					} else if(input > 5000 && >= 15000) {
-						return total * . 070
-					} else if(input > 15000) {
-						return total * . 050
+					if(input >= 0 && input <= 1000) {
+						return input * .120
+					} else if(input > 1000 && input <= 10000) {
+						return input * .110
+					} else if(input > 10000) {
+						return input * .080
 					}
-					return 0
+					return total * .080
 				} else if(choice === "TB") {
-					if(input <= 50) {
-						return total * .022
-					} else if(input > 50 && >= 1000) {
-						return total * . 021
+					if(input <= 1) {
+						return input * .120
+					} else if(input > 1 && input <= 10) {
+						return input * .110
+					} else if(input > 10) {
+						return input * .080
 					}
 				}
 			}
@@ -204,35 +202,39 @@
 		var calcMicro = function(input, choice, type) {
 			if(type === "storage") {
 				if(choice === "GB") {
-					return 0
+					return input * .0184
 				} else if(choice === "TB") {
-					if(input <= 50) {
-						return total * .022
-					} else if(input > 50 && >= 1000) {
-						return total * . 021
+					if(input >= 1 && input <= 50) {
+						return input * .0184
+					} else if(input > 50 && input >= 500) {
+						return input * .0177
+					} else if(input > 500) {
+						return input * .0170
 					}
 				}
 			} else if(type === "download") {
 				if(choice === "GB") {
-					if(input >= 1 && <= 5) {
-						return total * .090
-					} else if(input > 5 && >= 10) {
-						return total * . 021
-					} else if(input > 10 && >= 1000) {
-						return total * . 085
-					} else if(input > 1000 && >= 5000) {
-						return total * . 070
-					} else if(input > 5000 && >= 15000) {
-						return total * . 070
-					} else if(input > 15000) {
-						return total * . 050
-					}
-					return 0
+					if(input > 5 && >= 10000) {
+						return input * .0870
+					} else if(input > 10000 && >= 50000) {
+						return input * .0830
+					} else if(input > 50000 && >= 150000) {
+						return input * .070
+					} else if(input > 150000 && input <= 350000) {
+						return input * .050
+					} else if(input > 350000)
+						return input * .050
 				} else if(choice === "TB") {
-					if(input <= 50) {
-						return total * .022
-					} else if(input > 50 && >= 1000) {
-						return total * . 021
+					if(input <= .005) {
+						return 0
+					} else if(input > .005 && >= 10) {
+						return total * .087
+					} else if(input > 10 && >= 50) {
+						return total * .083
+					} else if(input > 50 && >= 150) {
+						return total * .070
+					} else if(input > 150) {
+						return total * .050
 					}
 				}
 			}
