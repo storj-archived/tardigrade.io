@@ -96,7 +96,6 @@
       padding-bottom: 7px;
       .multiple-select {
         width: 100%;
-        height: 32px;
         border: none;
         border-radius: 0;
         outline: none;
@@ -122,6 +121,9 @@
     input[type=text] {
       padding-left: 15px;
     }
+		.progress-bar {
+			height: 17px;
+		}
   }
 }
 
