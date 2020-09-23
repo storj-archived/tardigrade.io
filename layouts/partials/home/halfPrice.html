@@ -70,7 +70,8 @@
 		var downloadInput = document.getElementById("download");
 		var storageInput = document.getElementById("storage");
 
-		var changeMeasure = function(measures, typeOne, typeTwo) {
+		// handle measure change by changing color to measureChoice and triggering calculation
+		var onChangeMeasure = function(measures, recentMeasureChoice, previousMeasureChoice) {
 			if(measures) {
 				measures.forEach(el => el.addEventListener('click', event => {
 				  el.style.color="#2582FF";
@@ -79,44 +80,45 @@
 							measures[i].style.color="#AFB7C1";
 						}
 					}
-					calculate(typeOne, typeTwo)
+					calculate(recentMeasureChoice, previousMeasureChoice)
 				}));
 			}
 		}
 
-		var calculate = function(typeOne, typeTwo) {
-			var inputOne = "";
-			var inputTwo = "";
-			var firstMeasure = ""
-			var secondMeasure = ""
+		// all calulations
+		var calculate = function(recentMeasureChoice, previousMeasureChoice) {
+			var recentInputValue = "";
+			var previousInputValue = "";
+			var recentMeasureElements = ""
+			var previousMeasureElements = ""
 			var choiceOne = ""
 			var choiceTwo = ""
 
-			if(typeOne === "storage") {
-				 inputOne = document.getElementById("storage").value;
-				 inputTwo = document.getElementById("download").value;
-				 secondMeasure = document.querySelectorAll(".download-measure")
-				 firstMeasure = document.querySelectorAll(".storage-measure")
-			} else if(typeOne === "download") {
-				 inputTwo = document.getElementById("storage").value;
-				 inputOne = document.getElementById("download").value;
-				 secondMeasure = document.querySelectorAll(".storage-measure")
-				 firstMeasure = document.querySelectorAll(".download-measure")
+			if(recentMeasureChoice === "storage") {
+				 recentInputValue = document.getElementById("storage").value;
+				 previousInputValue = document.getElementById("download").value;
+				 previousMeasureElements = document.querySelectorAll(".download-measure")
+				 recentMeasureElements = document.querySelectorAll(".storage-measure")
+			} else if(recentMeasureChoice === "download") {
+				 previousInputValue = document.getElementById("storage").value;
+				 recentInputValue = document.getElementById("download").value;
+				 previousMeasureElements = document.querySelectorAll(".storage-measure")
+				 recentMeasureElements = document.querySelectorAll(".download-measure")
 			}
 
-			for (var i = 0; i < secondMeasure.length; i++) {
-				if(secondMeasure[i].style.color === "rgb(37, 130, 255)") {
-					choiceTwo = secondMeasure[i].textContent
+			for (var i = 0; i < previousMeasureElements.length; i++) {
+				if(previousMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					choiceTwo = previousMeasureElements[i].textContent
 				}
 			}
 
-			for (var i = 0; i < firstMeasure.length; i++) {
-				if(firstMeasure[i].style.color === "rgb(37, 130, 255)") {
-					choiceOne = firstMeasure[i].textContent
+			for (var i = 0; i < recentMeasureElements.length; i++) {
+				if(recentMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					choiceOne = recentMeasureElements[i].textContent
 				}
 			}
 
-			if(petaCalc(choiceOne, inputOne) || petaCalc(choiceTwo, inputTwo)) {
+			if(petaCalc(choiceOne, recentInputValue) || petaCalc(choiceTwo, previousInputValue)) {
 				charts.style.display="none";
 				petaContact.style.display="block"
 			} else {
@@ -124,21 +126,21 @@
 				petaContact.style.display="none"
 			}
 
-			var calculation = (inputOne * measureAccount(choiceOne, typeOne)) + (inputTwo * measureAccount(choiceTwo, typeTwo))
+			var calculation = (recentInputValue * measureAccount(choiceOne, recentMeasureChoice)) + (previousInputValue * measureAccount(choiceTwo, previousMeasureChoice))
 
 			var tardiradeCalculation = "$" + Math.ceil(calculation * 100) / 100
 
 			estimate.textContent = tardiradeCalculation
 			tardigradeEstimate.textContent = tardiradeCalculation
-			console.log("AMAZON:, ", calcAmazon(inputOne, choiceOne, typeOne), calcAmazon(inputTwo, choiceTwo, typeTwo))
-			amazonEstimate.textContent = "$" + Math.ceil((calcAmazon(inputOne, choiceOne, typeOne)) + (calcAmazon(inputTwo, choiceTwo, typeTwo)) * 100) / 100
-			googleEstimate.textContent = "$" + Math.ceil((calcGoogle(inputOne, choiceOne, typeOne)) + (calcGoogle(inputTwo, choiceTwo, typeTwo)) * 100) / 100
-			microsoftEstimate.textContent = "$" + Math.ceil((calcMicro(inputOne, choiceOne, typeOne)) + (calcMicro(inputTwo, choiceTwo, typeTwo)) * 100) / 100
+			console.log("AMAZON:, ", calcAmazon(recentInputValue, choiceOne, recentMeasureChoice), calcAmazon(previousInputValue, choiceTwo, previousMeasureChoice), (calcAmazon(recentInputValue, choiceOne, recentMeasureChoice)) + (calcAmazon(previousInputValue, choiceTwo, previousMeasureChoice)))
+			amazonEstimate.textContent = (calcAmazon(recentInputValue, choiceOne, recentMeasureChoice)) + (calcAmazon(previousInputValue, choiceTwo, previousMeasureChoice))
+			googleEstimate.textContent = (calcGoogle(recentInputValue, choiceOne, recentMeasureChoice)) + (calcGoogle(previousInputValue, choiceTwo, previousMeasureChoice))
+			microsoftEstimate.textContent = (calcMicro(recentInputValue, choiceOne, recentMeasureChoice)) + (calcMicro(previousInputValue, choiceTwo, previousMeasureChoice))
 		}
 
-		var calcAmazon = function(input, choice, type) {
-			if(type === "storage") {
-				if(choice === "GB") {
+		var calcAmazon = function(input, measureChoice, serviceType) {
+			if(serviceType === "storage") {
+				if(measureChoice === "GB") {
 					if(input <= 1000) {
 						return input * .023
 					} else if(input > 1000 && input <= 50000) {
@@ -146,7 +148,7 @@
 					} else if(input > 50000) {
 						return input * .021
 					}
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					if(input <= 1) {
 						return input * .023
 					} else if(input > 1 && input <= 50) {
@@ -155,8 +157,8 @@
 						return input * .021
 					}
 				}
-			} else if(type === "download") {
-				if(choice === "GB") {
+			} else if(serviceType === "download") {
+				if(measureChoice === "GB") {
 					if(input >= 1 && input <= 5) {
 						return input * .090
 					} else if(input > 5 && input <= 10) {
@@ -170,7 +172,7 @@
 					} else {
 						return 0
 					}
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					if(input >= .001 && input <= .01) {
 						return input * .090
 					} else if(input > .01 && input <= 50) {
@@ -186,11 +188,11 @@
 			}
 		}
 
-		var calcGoogle = function(input, choice, type) {
-			if(type === "storage") {
+		var calcGoogle = function(input, measureChoice, serviceType) {
+			if(serviceType === "storage") {
 				return input * .026
-			} else if(type === "download") {
-				if(choice === "GB") {
+			} else if(serviceType === "download") {
+				if(measureChoice === "GB") {
 					if(input >= 0 && input <= 1000) {
 						return input * .120
 					} else if(input > 1000 && input <= 10000) {
@@ -199,7 +201,7 @@
 						return input * .080
 					}
 					return input * .080
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					if(input <= 1) {
 						return input * .120
 					} else if(input > 1 && input <= 10) {
@@ -211,11 +213,11 @@
 			}
 		}
 
-		var calcMicro = function(input, choice, type) {
-			if(type === "storage") {
-				if(choice === "GB") {
+		var calcMicro = function(input, measureChoice, serviceType) {
+			if(serviceType === "storage") {
+				if(measureChoice === "GB") {
 					return input * .0184
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					if(input >= 1 && input <= 50) {
 						return input * .0184
 					} else if(input > 50 && input <= 500) {
@@ -226,8 +228,8 @@
 						return 0
 					}
 				}
-			} else if(type === "download") {
-				if(choice === "GB") {
+			} else if(serviceType === "download") {
+				if(measureChoice === "GB") {
 					if(input > 5 && input <= 10000) {
 						return input * .0870
 					} else if(input > 10000 && input <= 50000) {
@@ -241,7 +243,7 @@
 					} else {
 						return 0
 					}
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					if(input <= .005) {
 						return 0
 					} else if(input > .005 && input <= 10) {
@@ -258,48 +260,52 @@
 		}
 
 
-		var measureAccount = function(choice, type) {
-			if(type === "download") {
-				if(choice === "GB") {
+		var measureAccount = function(measureChoice, serviceType) {
+			if(serviceType === "download") {
+				if(measureChoice === "GB") {
 					return .045
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					return 45
 				}
-			} else if(type === "storage") {
-				if(choice === "GB") {
+			} else if(serviceType === "storage") {
+				if(measureChoice === "GB") {
 					return .01
-				} else if(choice === "TB") {
+				} else if(measureChoice === "TB") {
 					return 10
 				}
 			}
 		}
 
-		var onInput = function(input, typeOne, typeTwo) {
+		// trigger calculation on every input change
+		var onInputChange = function(input, recentMeasureChoice, previousMeasureChoice) {
 
 			input.addEventListener('keyup', event => {
 				if(input.value > 1) {
-					calculate(typeOne, typeTwo)
+					calculate(recentMeasureChoice, previousMeasureChoice)
 				}
 			});
 		}
 
-		var petaCalc = function(type, input) {
+		var petaCalc = function(serviceType, input) {
 
-			if(type === "GB" && input * .00001 >= 1) {
+			if(serviceType === "GB" && input * .00001 >= 1) {
 				return true
-			} else if(type === "TB" && input * .001 >= 1) {
+			} else if(serviceType === "TB" && input * .001 >= 1) {
 				return true
 			}
 			return false
 		}
 
+		// make initial calculation
 		calculate("storage", "download")
 
-		changeMeasure(downloadMeasures, "download", "storage")
-		changeMeasure(storageMeasures, "storage", "download")
+		// add measure change event listeners
+		onChangeMeasure(downloadMeasures, "download", "storage")
+		onChangeMeasure(storageMeasures, "storage", "download")
 
-		onInput(downloadInput, "download", "storage")
-		onInput(storageInput, "storage", "download")
+		// add input change event listeners on both inputs
+		onInputChange(downloadInput, "download", "storage")
+		onInputChange(storageInput, "storage", "download")
 
 
 
