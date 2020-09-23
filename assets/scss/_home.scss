@@ -771,6 +771,17 @@
 		  text-align: center;
 		}
 	}
+	&__tardigrade-calculation {
+		@media only screen and (max-width: $breakpoint-lg) {
+			display: none;
+		}
+		&__sm {
+			display: none;
+			@media only screen and (max-width: $breakpoint-lg) {
+				display: block;
+			}
+		}
+	}
 	&__estimate {
 		&__price {
 			font-family: $primary-font;
@@ -786,6 +797,7 @@
 			top: 13px;
 			height: 40px;
 			padding-top: 10px;
+			text-align: left;
 		}
 		&__text {
 			font-family: $primary-font;
@@ -805,6 +817,22 @@
 	&__input {
 		border: none;
 		width: 94px;
+	}
+	.form-check-label {
+		font-family: $secondary-font;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+	&__pricing-cta {
+		font-family: $secondary-font;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 16px;
+		&__link {
+			color: $color--blue-light;
+			font-weight: 400;
+		}
 	}
 	&__competitors {
 		justify-content: space-around;

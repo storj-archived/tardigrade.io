@@ -25,7 +25,11 @@
 							<p class="half-price__measure-text download-measure">TB</p>
 						</div>
 					</div>
-					<div class="pt-5">
+					<div class="form-check mt-4">
+						<input type="checkbox" class="form-check-input" id="zonesCheck">
+						<label class="form-check-label" for="exampleCheck1">Multiple Availability Zones</label>
+					</div>
+					<div class="half-price__tardigrade-calculation pt-4">
 						<h4 id="estimate" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
@@ -37,6 +41,10 @@
 						<p id="amazonEstimate" class="half-price__competitors__price pr-2"></p>
 						<p id="googleEstimate" class="half-price__competitors__price pr-1"></p>
 						<p id="microsoftEstimate" class="half-price__competitors__price pl-1"></p>
+					</div>
+					<div class="half-price__tardigrade-calculation__sm pt-4 pl-5">
+						<h4 id="estimateSm" class="half-price__estimate__price"></h4>
+						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
 				<div id="petaContact" class="col-sm-12 col-lg-7 py-5">
@@ -51,6 +59,7 @@
         <a class="btn btn-primary btn-lg" href="/signup">
   				{{ .Params.cta}}
   			</a>
+				<p class="half-price__pricing-cta pt-4">Looking for Petabyte Storage Pricing?<a class="half-price__pricing-cta__link" href="#"> Contact Us</a></p>
       </div>
 			{{ end }}
     </div>
@@ -59,6 +68,7 @@
 
 	<script type="text/javascript">
 		var estimate = document.getElementById("estimate");
+		var estimateSm = document.getElementById("estimateSm");
 		var tardigradeEstimate = document.getElementById("tardigradeEstimate");
 		var amazonEstimate = document.getElementById("amazonEstimate");
 		var googleEstimate = document.getElementById("googleEstimate");
@@ -118,7 +128,7 @@
 				}
 			}
 
-			if(petaCalc(choiceOne, recentInputValue) || petaCalc(choiceTwo, previousInputValue)) {
+			if(petabyteCalcCheck(choiceOne, recentInputValue) || petabyteCalcCheck(choiceTwo, previousInputValue)) {
 				charts.style.display="none";
 				petaContact.style.display="block"
 			} else {
@@ -126,19 +136,20 @@
 				petaContact.style.display="none"
 			}
 
-			var calculation = (recentInputValue * measureAccount(choiceOne, recentMeasureChoice)) + (previousInputValue * measureAccount(choiceTwo, previousMeasureChoice))
+			var calculation = (recentInputValue * tardigradeCalculation(choiceOne, recentMeasureChoice)) + (previousInputValue * tardigradeCalculation(choiceTwo, previousMeasureChoice))
 
 			var tardiradeCalculation = "$" + Math.ceil(calculation * 100) / 100
 
 			estimate.textContent = tardiradeCalculation
+			estimateSm.textContent = tardiradeCalculation
 			tardigradeEstimate.textContent = tardiradeCalculation
-			console.log("AMAZON:, ", calcAmazon(recentInputValue, choiceOne, recentMeasureChoice), calcAmazon(previousInputValue, choiceTwo, previousMeasureChoice), (calcAmazon(recentInputValue, choiceOne, recentMeasureChoice)) + (calcAmazon(previousInputValue, choiceTwo, previousMeasureChoice)))
-			amazonEstimate.textContent = (calcAmazon(recentInputValue, choiceOne, recentMeasureChoice)) + (calcAmazon(previousInputValue, choiceTwo, previousMeasureChoice))
-			googleEstimate.textContent = (calcGoogle(recentInputValue, choiceOne, recentMeasureChoice)) + (calcGoogle(previousInputValue, choiceTwo, previousMeasureChoice))
-			microsoftEstimate.textContent = (calcMicro(recentInputValue, choiceOne, recentMeasureChoice)) + (calcMicro(previousInputValue, choiceTwo, previousMeasureChoice))
+			console.log("AMAZON:, ", amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice), amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice), (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice)))
+			amazonEstimate.textContent = (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			googleEstimate.textContent = (googleCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (googleCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			microsoftEstimate.textContent = (microsoftCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (microsoftCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
 		}
 
-		var calcAmazon = function(input, measureChoice, serviceType) {
+		var amazonCalculation = function(input, measureChoice, serviceType) {
 			if(serviceType === "storage") {
 				if(measureChoice === "GB") {
 					if(input <= 1000) {
@@ -188,7 +199,7 @@
 			}
 		}
 
-		var calcGoogle = function(input, measureChoice, serviceType) {
+		var googleCalculation = function(input, measureChoice, serviceType) {
 			if(serviceType === "storage") {
 				return input * .026
 			} else if(serviceType === "download") {
@@ -213,7 +224,7 @@
 			}
 		}
 
-		var calcMicro = function(input, measureChoice, serviceType) {
+		var microsoftCalculation = function(input, measureChoice, serviceType) {
 			if(serviceType === "storage") {
 				if(measureChoice === "GB") {
 					return input * .0184
@@ -260,7 +271,7 @@
 		}
 
 
-		var measureAccount = function(measureChoice, serviceType) {
+		var tardigradeCalculation = function(measureChoice, serviceType) {
 			if(serviceType === "download") {
 				if(measureChoice === "GB") {
 					return .045
@@ -286,7 +297,8 @@
 			});
 		}
 
-		var petaCalc = function(serviceType, input) {
+		// check whether to render pricing question cta
+		var petabyteCalcCheck = function(serviceType, input) {
 
 			if(serviceType === "GB" && input * .00001 >= 1) {
 				return true
