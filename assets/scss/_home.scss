@@ -733,16 +733,6 @@
 	}
 	&__content {
 		background: #F4F6F8;
-		// position: absolute;
-		// left: 220px;
-		// height: 100%;
-		// text-align: center;
-		// @media only screen and (max-width: 1200px) {
-		// 	left: 135px;
-		// }
-		// @media only screen and (max-width: 991px) {
-		// 	left: 15px;
-		// }
 	}
 	&__label {
 		display: block;
@@ -781,6 +771,30 @@
 				display: block;
 			}
 		}
+	}
+	&__bar-wrapper {
+		height: 260px;
+		width: 77px;
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	&__bar {
+		max-height: 100%;
+		width: 77px;
+		background: #B9BECA;
+	}
+	#tardigradeBar {
+		background: $color--blue-light;
+	}
+	&__chart-label {
+		font-family: $primary-font;
+		font-size: 10px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #354049;
 	}
 	&__estimate {
 		&__price {
@@ -861,7 +875,10 @@
 	&__peta-contact {
 		background: #EAECF0;
 		height: 281px;
-		width: 397px;
+		width: 90%;
+		@media only screen and (max-width: $breakpoint-lg) {
+			width: 100%;
+		}
 	}
 }
 

@@ -35,22 +35,53 @@
 					</div>
 				</div>
 				<div id="charts" class="half-price__content col-sm-12 col-md-12 col-lg-6 py-5">
-					<img src="/img/pricing-chart.svg" alt="Pricing Chart" />
-					<div class="half-price__competitors d-flex">
-						<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pr-3"></p>
-						<p id="amazonEstimate" class="half-price__competitors__price pr-2"></p>
-						<p id="googleEstimate" class="half-price__competitors__price pr-1"></p>
-						<p id="microsoftEstimate" class="half-price__competitors__price pl-1"></p>
+					<!-- <img src="/img/pricing-chart.svg" alt="Pricing Chart" /> -->
+					<div class="half-price__chart row">
+						<div class="half-price__col-wrapper col-3">
+							<div class="half-price__bar-wrapper">
+								<div class="half-price__bar m-auto pb-2" id="tardigradeBar">
+								</div>
+							</div>
+							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pr-3"></p>
+							<p class="half-price__chart-label">Tardigrade</p>
+						</div>
+						<div class="half-price__col-wrapper col-3">
+							<div class="half-price__bar-wrapper">
+								<div class="half-price__bar m-auto pb-2" id="amazonBar">
+								</div>
+							</div>
+							<p id="amazonEstimate" class="half-price__competitors__price pr-2"></p>
+							<p class="half-price__chart-label">Amazon S3</p>
+						</div>
+						<div class="half-price__col-wrapper col-3">
+							<div class="half-price__bar-wrapper">
+								<div class="half-price__bar m-auto pb-2" id="googleBar">
+								</div>
+							</div>
+							<p id="googleEstimate" class="half-price__competitors__price pr-1"></p>
+							<p class="half-price__chart-label">Google</p>
+						</div>
+						<div class="half-price__col-wrapper col-3">
+							<div class="half-price__bar-wrapper">
+								<div class="half-price__bar m-auto pb-2" id="microsoftBar">
+								</div>
+							</div>
+							<p id="microsoftEstimate" class="half-price__competitors__price pl-1"></p>
+							<p class="half-price__chart-label">Azure</p>
+						</div>
+					</div>
+				</div>
+					<!-- <div class="half-price__competitors d-flex">
+					</div> -->
+					<div id="petabyteContactCta" class="half-price__content col-sm-12 col-md-12 col-lg-6 py-5">
+						<div class="half-price__peta-contact text-center pt-5">
+							<h4 class="text-center mx-auto mb-4 pt-sm-5 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
+							<button href="/contact-us" class="btn btn-primary">Contact Us</button>
+						</div>
 					</div>
 					<div class="half-price__tardigrade-calculation__sm pt-4 pl-5">
 						<h4 id="estimateSm" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
-					</div>
-				</div>
-				<div id="petabyteContactCta" class="col-sm-12 col-lg-7 py-5">
-					<div class="half-price__peta-contact text-center pt-5">
-						<h4 class="text-center mx-auto mb-4 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
-						<button href="/contact-us" class="btn btn-primary">Contact Us</button>
 					</div>
 				</div>
       </div>
@@ -79,6 +110,11 @@
 		var storageMeasures = document.querySelectorAll(".storage-measure")
 		var downloadInput = document.getElementById("download");
 		var storageInput = document.getElementById("storage");
+
+		var tardigradeBar = document.getElementById("tardigradeBar");
+		var amazonBar = document.getElementById("amazonBar");
+		var googleBar = document.getElementById("googleBar");
+		var microsoftBar = document.getElementById("microsoftBar");
 
 		// handle measure change by changing color to measure choice and triggering calculation
 		var onChangeMeasure = function(measures, recentMeasureChoice, previousMeasureChoice) {
@@ -136,17 +172,38 @@
 				petabyteContactCta.style.display="none"
 			}
 
-			var calculation = (recentInputValue * tardigradeCalculation(choiceOne, recentMeasureChoice)) + (previousInputValue * tardigradeCalculation(choiceTwo, previousMeasureChoice))
+			var tardigradeCombination = (recentInputValue * tardigradeCalculation(choiceOne, recentMeasureChoice)) + (previousInputValue * tardigradeCalculation(choiceTwo, previousMeasureChoice))
+			var amazonCombination = (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			var googleCombination = (googleCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (googleCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			var microsoftCombination = (microsoftCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (microsoftCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
 
-			var tardiradeCalculation = "$" + Math.ceil(calculation * 100) / 100
+			var tardigradeTotal = renderCalculation(tardigradeCombination)
+			var amazonTotal = renderCalculation(amazonCombination)
+			var googleTotal = renderCalculation(googleCombination)
+			var microsoftTotal = renderCalculation(microsoftCombination)
 
-			estimate.textContent = tardiradeCalculation
-			estimateSm.textContent = tardiradeCalculation
-			tardigradeEstimate.textContent = tardiradeCalculation
-			console.log("AMAZON:, ", amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice), amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice), (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice)))
-			amazonEstimate.textContent = (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
-			googleEstimate.textContent = (googleCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (googleCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
-			microsoftEstimate.textContent = (microsoftCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (microsoftCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			estimate.textContent = tardigradeTotal
+			estimateSm.textContent = tardigradeTotal
+
+			tardigradeEstimate.textContent = tardigradeTotal
+			amazonEstimate.textContent = amazonTotal
+			googleEstimate.textContent = googleTotal
+			microsoftEstimate.textContent = microsoftTotal
+
+			tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+			amazonBar.style.height = renderBarHeight(amazonCombination, tardigradeCombination)
+			googleBar.style.height = renderBarHeight(googleCombination, tardigradeCombination)
+			microsoftBar.style.height = renderBarHeight(microsoftCombination, tardigradeCombination)
+
+		}
+
+		var renderCalculation = function(total) {
+			return  "$" + Math.ceil(total * 100) / 100
+		}
+
+		var renderBarHeight = function(total, tardigradeTotal) {
+			var base = tardigradeTotal * 3
+			return ((total / base) * 100) + "%"
 		}
 
 		var amazonCalculation = function(input, measureChoice, serviceType) {
@@ -163,7 +220,7 @@
 					if(input <= 1) {
 						return input * 23
 					} else if(input > 1 && input <= 50) {
-						return input * .22
+						return input * 22
 					} else if(input > 50) {
 						return input * 21
 					}
@@ -185,7 +242,7 @@
 					if(input >= .001 && input <= .01) {
 						return input * 90
 					} else if(input > .01 && input <= 50) {
-						return input * .85
+						return input * 85
 					} else if(input > 50 && input <= 150) {
 						return input * 70
 					} else if(input > 150) {
@@ -198,8 +255,14 @@
 		}
 
 		var googleCalculation = function(input, measureChoice, serviceType) {
+			console.log("INPUT", input > 10, measureChoice === "TB", serviceType)
+
 			if(serviceType === "storage") {
-				return input * .026
+				if(measureChoice === "GB") {
+					return input * .026
+				} else if(measureChoice === "TB") {
+					return input * 26
+				}
 			} else if(serviceType === "download") {
 				if(measureChoice === "GB") {
 					if(input >= 0 && input <= 1000) {
@@ -297,10 +360,9 @@
 
 		// check whether to render pricing question cta
 		var petabyteCalcCheck = function(serviceType, input) {
-
-			if(serviceType === "GB" && input * .00001 >= 1) {
+			if(serviceType === "GB" && input >= 1000000) {
 				return true
-			} else if(serviceType === "TB" && input * .001 >= 1) {
+			} else if(serviceType === "TB" && input >= 1000) {
 				return true
 			}
 			return false
