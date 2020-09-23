@@ -47,7 +47,7 @@
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
-				<div id="petaContact" class="col-sm-12 col-lg-7 py-5">
+				<div id="petabyteContactCta" class="col-sm-12 col-lg-7 py-5">
 					<div class="half-price__peta-contact text-center pt-5">
 						<h4 class="text-center mx-auto mb-4 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
 						<button href="/contact-us" class="btn btn-primary">Contact Us</button>
@@ -73,14 +73,14 @@
 		var amazonEstimate = document.getElementById("amazonEstimate");
 		var googleEstimate = document.getElementById("googleEstimate");
 		var microsoftEstimate = document.getElementById("microsoftEstimate");
-		var petaContact = document.getElementById("petaContact");
+		var petabyteContactCta = document.getElementById("petabyteContactCta");
 		var charts = document.getElementById("charts");
 		var downloadMeasures = document.querySelectorAll(".download-measure")
 		var storageMeasures = document.querySelectorAll(".storage-measure")
 		var downloadInput = document.getElementById("download");
 		var storageInput = document.getElementById("storage");
 
-		// handle measure change by changing color to measureChoice and triggering calculation
+		// handle measure change by changing color to measure choice and triggering calculation
 		var onChangeMeasure = function(measures, recentMeasureChoice, previousMeasureChoice) {
 			if(measures) {
 				measures.forEach(el => el.addEventListener('click', event => {
@@ -95,7 +95,7 @@
 			}
 		}
 
-		// all calulations
+		// all calculation logic
 		var calculate = function(recentMeasureChoice, previousMeasureChoice) {
 			var recentInputValue = "";
 			var previousInputValue = "";
@@ -130,10 +130,10 @@
 
 			if(petabyteCalcCheck(choiceOne, recentInputValue) || petabyteCalcCheck(choiceTwo, previousInputValue)) {
 				charts.style.display="none";
-				petaContact.style.display="block"
+				petabyteContactCta.style.display="block"
 			} else {
 				charts.style.display="block";
-				petaContact.style.display="none"
+				petabyteContactCta.style.display="none"
 			}
 
 			var calculation = (recentInputValue * tardigradeCalculation(choiceOne, recentMeasureChoice)) + (previousInputValue * tardigradeCalculation(choiceTwo, previousMeasureChoice))
@@ -170,10 +170,8 @@
 				}
 			} else if(serviceType === "download") {
 				if(measureChoice === "GB") {
-					if(input >= 1 && input <= 5) {
+					if(input >= 1 && input <= 10) {
 						return input * .090
-					} else if(input > 5 && input <= 10) {
-						return input * .021
 					} else if(input > 10 && input <= 50000) {
 						return input * .085
 					} else if(input > 50000 && input <= 150000) {
