@@ -161,11 +161,11 @@
 					}
 				} else if(measureChoice === "TB") {
 					if(input <= 1) {
-						return input * .023
+						return input * 23
 					} else if(input > 1 && input <= 50) {
-						return input * .022
+						return input * .22
 					} else if(input > 50) {
-						return input * .021
+						return input * 21
 					}
 				}
 			} else if(serviceType === "download") {
@@ -183,13 +183,13 @@
 					}
 				} else if(measureChoice === "TB") {
 					if(input >= .001 && input <= .01) {
-						return input * .090
+						return input * 90
 					} else if(input > .01 && input <= 50) {
-						return input * .085
+						return input * .85
 					} else if(input > 50 && input <= 150) {
-						return input * .070
+						return input * 70
 					} else if(input > 150) {
-						return input * .50
+						return input * 50
 					} else  {
 						return 0
 					}
@@ -212,11 +212,11 @@
 					return input * .080
 				} else if(measureChoice === "TB") {
 					if(input <= 1) {
-						return input * .120
+						return input * 120
 					} else if(input > 1 && input <= 10) {
-						return input * .110
+						return input * 110
 					} else if(input > 10) {
-						return input * .080
+						return input * 80
 					}
 				}
 			}
@@ -228,11 +228,11 @@
 					return input * .0184
 				} else if(measureChoice === "TB") {
 					if(input >= 1 && input <= 50) {
-						return input * .0184
+						return input * 18.40
 					} else if(input > 50 && input <= 500) {
-						return input * .0177
+						return input * 17.70
 					} else if(input > 500) {
-						return input * .0170
+						return input * 17
 					} else {
 						return 0
 					}
@@ -256,13 +256,13 @@
 					if(input <= .005) {
 						return 0
 					} else if(input > .005 && input <= 10) {
-						return input * .087
+						return input * 87
 					} else if(input > 10 && input <= 50) {
-						return input * .083
+						return input * 83
 					} else if(input > 50 && input <= 150) {
-						return input * .070
+						return input * 70
 					} else if(input > 150) {
-						return input * .050
+						return input * 50
 					}
 				}
 			}
