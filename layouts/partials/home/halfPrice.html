@@ -29,7 +29,7 @@
 						<input type="checkbox" class="form-check-input" id="checkbox">
 						<label class="form-check-label" for="exampleCheck1">Multiple Availability Zones</label>
 					</div>
-					<div class="half-price__tardigrade-calculation pt-4">
+					<div class="half-price__tardigrade-calculation pt-3">
 						<h4 id="estimate" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
@@ -168,10 +168,15 @@
 			if(petabyteCalcCheck(choiceOne, recentInputValue) || petabyteCalcCheck(choiceTwo, previousInputValue)) {
 				charts.style.display="none";
 				petabyteContactCta.style.display="block"
+				// name change
+				estimate.style.color="#D6DAE1";
+				estimateSm.style.color="#D6DAE1"
+				return
 			} else {
 				charts.style.display="block";
 				petabyteContactCta.style.display="none"
 			}
+
 
 			var tardigradeCombination = (recentInputValue * tardigradeCalculation(choiceOne, recentMeasureChoice)) + (previousInputValue * tardigradeCalculation(choiceTwo, previousMeasureChoice))
 			var amazonCombination = (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
@@ -393,7 +398,7 @@
 				var doubledCombination = ((storageInputValue * 2) * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
 
 				var tardigradeTotal = renderCalculation(tardigradeCombination)
-				
+
 				tardigradeTotal = renderCalculation(doubledCombination)
 
 				estimate.textContent = tardigradeTotal
