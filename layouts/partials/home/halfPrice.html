@@ -1,13 +1,10 @@
-  <div class="half-price">
-    <div class="container">
-      <div class="spacer125"></div>
+  <div class="half-price py-5 my-5">
+    <div class="container pb-4">
 			{{ with .Site.GetPage "halfPrice" }}
-			<h2 class="half-price__heading">
+			<h2 class="half-price__heading mb-5">
 				{{ replace .Params.heading "\n" "<br/>" | safeHTML}}
 			</h2>
-			<div class="spacer40"></div>
-			<div class="spacer60"></div>
-      <div class="row">
+      <div class="row pt-3">
 				<div class="half-price__content col-sm-12 col-md-12 offset-sm-0 offset-lg-1 col-lg-4 pt-5 pl-5">
 					<div class="half-price__input-wrapper mt-4">
 			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
@@ -29,13 +26,13 @@
 						<input type="checkbox" class="form-check-input" id="checkbox">
 						<label class="form-check-label" for="exampleCheck1">Multiple Availability Zones</label>
 					</div>
-					<div class="half-price__tardigrade-calculation pt-3">
+					<div class="d-lg-block d-sm-none pt-3">
 						<h4 id="mainEstimate" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
-				<div id="charts" class="half-price__content col-sm-12 col-md-12 col-lg-6 pt-4 pb-5">
-					<div class="half-price__chart row">
+				<div id="charts" class="half-price__content col-sm-12 col-md-12 text-sm-center col-lg-6 pt-4 pb-5">
+					<div class="row pl-sm-5 pl-md-0">
 						<div class="half-price__col-wrapper col-3">
 							<div class="half-price__bar-wrapper">
 								<div class="half-price__bar m-auto pb-2" id="tardigradeBar">
@@ -76,14 +73,13 @@
 							<button href="mailto:partnerships@tardigrade.io" class="btn btn-primary">Contact Us</button>
 						</div>
 					</div>
-					<div class="half-price__tardigrade-calculation__sm half-price__content pb-5 pl-5">
+					<div class="d-sm-block d-lg-none half-price__content w-100 pb-5 pl-5">
 						<h4 id="mainEstimateSm" class="half-price__estimate__price"></h4>
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
       </div>
-			<div class="spacer70"></div>
-      <div class="text-center">
+      <div class="text-center mt-5">
         <a class="btn btn-primary btn-lg" href="/signup">
   				{{ .Params.cta}}
   			</a>
@@ -96,7 +92,6 @@
       </div>
 			{{ end }}
     </div>
-    <div class="spacer125"></div>
   </div>
 
 	<script type="text/javascript">
