@@ -214,12 +214,16 @@
 
 
 		var renderCalculation = function(total) {
-			return  "$" + (Math.ceil(total * 100) / 100).toFixed().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			if(isNaN(total)) {
+				return "$0"
+			} else {
+				return  "$" + (Math.ceil(total * 100) / 100).toFixed().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			}
 		}
 
 		var renderBarHeight = function(total, tardigradeTotal) {
 			var base = tardigradeTotal * 3
-			if(total == 0 && tardigradeTotal == 0) {
+			if(total == 0 && tardigradeTotal == 0 || (isNaN(total) || isNaN(tardigradeTotal))) {
 				return "0%"
 			} else {
 				return ((total / base) * 100) + "%"
