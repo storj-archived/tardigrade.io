@@ -141,6 +141,8 @@
 			var choiceOne = ""
 			var choiceTwo = ""
 
+			console.log("HIT")
+
 			if(recentMeasureChoice === "storage") {
 				 recentInputValue = document.getElementById("storage").value;
 				 previousInputValue = document.getElementById("download").value;
@@ -219,7 +221,11 @@
 
 		var renderBarHeight = function(total, tardigradeTotal) {
 			var base = tardigradeTotal * 3
-			return ((total / base) * 100) + "%"
+			if(total == 0 && tardigradeTotal == 0) {
+				return "0%"
+			} else {
+				return ((total / base) * 100) + "%"
+			}
 		}
 
 		var amazonCalculation = function(input, measureChoice, serviceType) {
@@ -370,9 +376,8 @@
 
 		// trigger calculation on every input change
 		var onInputChange = function(input, recentMeasureChoice, previousMeasureChoice) {
-
 			input.addEventListener('keyup', event => {
-				if(input.value > 1) {
+				if(input.value >= 0) {
 					calculate(recentMeasureChoice, previousMeasureChoice)
 				}
 			});
