@@ -129,8 +129,8 @@
 				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
 				var tardigradeTotal = renderCalculation(tardigradeCombination)
 
-				estimate.textContent = tardigradeTotal
-				estimateSm.textContent = tardigradeTotal
+				mainEstimate.textContent = tardigradeTotal
+				mainEstimateSm.textContent = tardigradeTotal
 				tardigradeEstimate.textContent = tardigradeTotal
 
 				tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
