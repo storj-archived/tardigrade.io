@@ -9,7 +9,7 @@
 			<div class="spacer60"></div>
       <div class="row">
 				<div class="half-price__content col-sm-12 col-md-12 offset-sm-0 offset-lg-1 col-lg-4 pt-5 pl-5">
-					<div class="half-price__input-wrapper">
+					<div class="half-price__input-wrapper mt-4">
 			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
 			      <input type="text" id="storage" class="half-price__input" name="storage" value="1" required>
 						<div class="half-price__measures">
@@ -17,7 +17,7 @@
 							<p style="color:#2582FF" class="half-price__measure-text storage-measure">TB</p>
 						</div>
 					</div>
-					<div class="half-price__input-wrapper">
+					<div class="half-price__input-wrapper mt-4">
 			      <label aria-label="download" class="half-price__label my-2">Download</label>
 			      <input type="text" id="download" class="half-price__input" name="download" value="1000" required>
 						<div class="half-price__measures">
@@ -26,7 +26,7 @@
 						</div>
 					</div>
 					<div class="form-check mt-4">
-						<input type="checkbox" class="form-check-input" id="zonesCheck">
+						<input type="checkbox" class="form-check-input" id="checkbox">
 						<label class="form-check-label" for="exampleCheck1">Multiple Availability Zones</label>
 					</div>
 					<div class="half-price__tardigrade-calculation pt-4">
@@ -34,7 +34,7 @@
 						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
-				<div id="charts" class="half-price__content col-sm-12 col-md-12 col-lg-6 py-5">
+				<div id="charts" class="half-price__content col-sm-12 col-md-12 col-lg-6 pt-4 pb-5">
 					<!-- <img src="/img/pricing-chart.svg" alt="Pricing Chart" /> -->
 					<div class="half-price__chart row">
 						<div class="half-price__col-wrapper col-3">
@@ -42,15 +42,15 @@
 								<div class="half-price__bar m-auto pb-2" id="tardigradeBar">
 								</div>
 							</div>
-							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pr-3"></p>
-							<p class="half-price__chart-label">Tardigrade</p>
+							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pt-2"></p>
+							<p style="color:#2582FF" class="half-price__chart-label">Tardigrade</p>
 						</div>
 						<div class="half-price__col-wrapper col-3">
 							<div class="half-price__bar-wrapper">
 								<div class="half-price__bar m-auto pb-2" id="amazonBar">
 								</div>
 							</div>
-							<p id="amazonEstimate" class="half-price__competitors__price pr-2"></p>
+							<p id="amazonEstimate" class="half-price__competitors__price pt-2"></p>
 							<p class="half-price__chart-label">Amazon S3</p>
 						</div>
 						<div class="half-price__col-wrapper col-3">
@@ -58,7 +58,7 @@
 								<div class="half-price__bar m-auto pb-2" id="googleBar">
 								</div>
 							</div>
-							<p id="googleEstimate" class="half-price__competitors__price pr-1"></p>
+							<p id="googleEstimate" class="half-price__competitors__price pt-2"></p>
 							<p class="half-price__chart-label">Google</p>
 						</div>
 						<div class="half-price__col-wrapper col-3">
@@ -66,9 +66,13 @@
 								<div class="half-price__bar m-auto pb-2" id="microsoftBar">
 								</div>
 							</div>
-							<p id="microsoftEstimate" class="half-price__competitors__price pl-1"></p>
+							<p id="microsoftEstimate" class="half-price__competitors__price pt-2"></p>
 							<p class="half-price__chart-label">Azure</p>
 						</div>
+					</div>
+					<div class="half-price__tardigrade-calculation__sm pt-4 pl-5">
+						<h4 id="estimateSm" class="half-price__estimate__price"></h4>
+						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
 					<!-- <div class="half-price__competitors d-flex">
@@ -78,10 +82,6 @@
 							<h4 class="text-center mx-auto mb-4 pt-sm-5 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
 							<button href="/contact-us" class="btn btn-primary">Contact Us</button>
 						</div>
-					</div>
-					<div class="half-price__tardigrade-calculation__sm pt-4 pl-5">
-						<h4 id="estimateSm" class="half-price__estimate__price"></h4>
-						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
       </div>
@@ -110,6 +110,7 @@
 		var storageMeasures = document.querySelectorAll(".storage-measure")
 		var downloadInput = document.getElementById("download");
 		var storageInput = document.getElementById("storage");
+		var checkbox = document.getElementById('checkbox');
 
 		var tardigradeBar = document.getElementById("tardigradeBar");
 		var amazonBar = document.getElementById("amazonBar");
@@ -255,7 +256,6 @@
 		}
 
 		var googleCalculation = function(input, measureChoice, serviceType) {
-			console.log("INPUT", input > 10, measureChoice === "TB", serviceType)
 
 			if(serviceType === "storage") {
 				if(measureChoice === "GB") {
@@ -331,7 +331,6 @@
 			}
 		}
 
-
 		var tardigradeCalculation = function(measureChoice, serviceType) {
 			if(serviceType === "download") {
 				if(measureChoice === "GB") {
@@ -367,6 +366,57 @@
 			}
 			return false
 		}
+
+		checkbox.addEventListener('change', (event) => {
+			var storageInputValue = document.getElementById("storage").value;
+			var downloadInputValue = document.getElementById("download").value;
+			var downloadMeasureChoice = ""
+			var storageMeasureChoice = ""
+			var downloadMeasureElements = document.querySelectorAll(".download-measure")
+			var storageMeasureElements = document.querySelectorAll(".storage-measure")
+
+			for (var i = 0; i < downloadMeasureElements.length; i++) {
+				if(downloadMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					downloadMeasureChoice = downloadMeasureElements[i].textContent
+				}
+			}
+
+			for (var i = 0; i < storageMeasureElements.length; i++) {
+				if(storageMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					storageMeasureChoice = storageMeasureElements[i].textContent
+				}
+			}
+
+
+		  if (event.target.checked) {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+				var doubledCombination = ((storageInputValue * 2) * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+
+				var tardigradeTotal = renderCalculation(tardigradeCombination)
+				
+				tardigradeTotal = renderCalculation(doubledCombination)
+
+				estimate.textContent = tardigradeTotal
+				estimateSm.textContent = tardigradeTotal
+				tardigradeEstimate.textContent = tardigradeTotal
+
+				tardigradeBar.style.height = renderBarHeight(doubledCombination, tardigradeCombination)
+
+		  } else {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+				var tardigradeTotal = renderCalculation(tardigradeCombination)
+
+				estimate.textContent = tardigradeTotal
+				estimateSm.textContent = tardigradeTotal
+				tardigradeEstimate.textContent = tardigradeTotal
+
+				// var base = tardigradeTotal * 3
+				// return ((total / base) * 100) + "%"
+
+				tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+
+		  }
+		})
 
 		// make initial calculation
 		calculate("storage", "download")
