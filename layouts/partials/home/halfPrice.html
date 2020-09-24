@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<div id="charts" class="half-price__content col-sm-12 col-md-12 col-lg-6 pt-4 pb-5">
-					<div class="half-price__chart row pl-5 pl-md-5 pl-lg-0">
+					<div class="half-price__chart row">
 						<div class="half-price__col-wrapper col-3">
 							<div class="half-price__bar-wrapper">
 								<div class="half-price__bar m-auto pb-2" id="tardigradeBar">
@@ -58,7 +58,7 @@
 								</div>
 							</div>
 							<p id="googleEstimate" class="half-price__competitors__price pt-2"></p>
-							<p class="half-price__chart-label">Google</p>
+							<p class="half-price__chart-label">Google Cloud</p>
 						</div>
 						<div class="half-price__col-wrapper col-3">
 							<div class="half-price__bar-wrapper">
@@ -69,17 +69,16 @@
 							<p class="half-price__chart-label">Azure</p>
 						</div>
 					</div>
-
-				</div>
-				<div class="half-price__tardigrade-calculation__sm half-price__content pb-5 pl-5">
-					<h4 id="mainEstimateSm" class="half-price__estimate__price"></h4>
-					<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 				</div>
 					<div id="petabyteContactCta" class="half-price__content col-sm-12 col-md-12 col-lg-6 py-5">
 						<div class="half-price__peta-contact text-center pt-5">
 							<h4 class="text-center mx-auto mb-4 pt-sm-5 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
 							<button href="mailto:partnerships@tardigrade.io" class="btn btn-primary">Contact Us</button>
 						</div>
+					</div>
+					<div class="half-price__tardigrade-calculation__sm half-price__content pb-5 pl-5">
+						<h4 id="mainEstimateSm" class="half-price__estimate__price"></h4>
+						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
 					</div>
 				</div>
       </div>
@@ -220,7 +219,7 @@
 
 
 		var renderCalculation = function(total) {
-			return  "$" + (Math.ceil(total * 100) / 100).toLocaleString("en", {useGrouping: false, minimumFractionDigits: 2}).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			return  "$" + (Math.ceil(total * 100) / 100).toFixed().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		}
 
 		var renderBarHeight = function(total, tardigradeTotal) {
@@ -399,7 +398,6 @@
 		// add input change event listeners on both inputs
 		onInputChange(downloadInput, "download", "storage")
 		onInputChange(storageInput, "storage", "download")
-
 
 
 	</script>

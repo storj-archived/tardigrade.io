@@ -773,6 +773,11 @@
 			}
 		}
 	}
+	&__chart {
+		@media only screen and (max-width: $breakpoint-lg) {
+			padding-left: 3rem;
+		}
+	}
 	&__bar-wrapper {
 		height: 260px;
 		-moz-transform: rotate(180deg);
@@ -797,12 +802,6 @@
 		max-width: 20%;
 		@media only screen and (max-width: $breakpoint-xl) {
 			max-width: 22%;
-		}
-		@media only screen and (max-width: $breakpoint-lg) {
-			max-width: 17%;
-		}
-		@media only screen and (max-width: $breakpoint-md) {
-			max-width: 20%;
 		}
 	}
 	&__chart-label {

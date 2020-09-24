@@ -88,9 +88,8 @@
 </script>
 
 <script type="text/javascript">
-		// homepage checkbox
+		// homepage availability zone checkbox
 		checkbox.addEventListener('change', (event) => {
-			console.log("HIT")
 			var checkbox = document.getElementById('checkbox');
 			var storageInputValue = document.getElementById("storage").value;
 			var downloadInputValue = document.getElementById("download").value;
@@ -120,8 +119,8 @@
 
 				tardigradeTotal = renderCalculation(doubledCombination)
 
-				estimate.textContent = tardigradeTotal
-				estimateSm.textContent = tardigradeTotal
+				mainEstimate.textContent = tardigradeTotal
+				mainEstimateSm.textContent = tardigradeTotal
 				tardigradeEstimate.textContent = tardigradeTotal
 
 				tardigradeBar.style.height = renderBarHeight(doubledCombination, tardigradeCombination)
