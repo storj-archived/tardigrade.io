@@ -86,3 +86,56 @@
     }
   }
 </script>
+
+<script type="text/javascript">
+		// homepage checkbox
+		checkbox.addEventListener('change', (event) => {
+			console.log("HIT")
+			var checkbox = document.getElementById('checkbox');
+			var storageInputValue = document.getElementById("storage").value;
+			var downloadInputValue = document.getElementById("download").value;
+			var downloadMeasureChoice = ""
+			var storageMeasureChoice = ""
+			var downloadMeasureElements = document.querySelectorAll(".download-measure")
+			var storageMeasureElements = document.querySelectorAll(".storage-measure")
+
+			for (var i = 0; i < downloadMeasureElements.length; i++) {
+				if(downloadMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					downloadMeasureChoice = downloadMeasureElements[i].textContent
+				}
+			}
+
+			for (var i = 0; i < storageMeasureElements.length; i++) {
+				if(storageMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					storageMeasureChoice = storageMeasureElements[i].textContent
+				}
+			}
+
+
+		  if (event.target.checked) {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+				var doubledCombination = ((storageInputValue * 2) * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+
+				var tardigradeTotal = renderCalculation(tardigradeCombination)
+
+				tardigradeTotal = renderCalculation(doubledCombination)
+
+				estimate.textContent = tardigradeTotal
+				estimateSm.textContent = tardigradeTotal
+				tardigradeEstimate.textContent = tardigradeTotal
+
+				tardigradeBar.style.height = renderBarHeight(doubledCombination, tardigradeCombination)
+
+		  } else {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+				var tardigradeTotal = renderCalculation(tardigradeCombination)
+
+				estimate.textContent = tardigradeTotal
+				estimateSm.textContent = tardigradeTotal
+				tardigradeEstimate.textContent = tardigradeTotal
+
+				tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+
+		  }
+		})
+</script>

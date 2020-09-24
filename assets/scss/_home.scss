@@ -767,6 +767,7 @@
 		}
 		&__sm {
 			display: none;
+			width: 100%;
 			@media only screen and (max-width: $breakpoint-lg) {
 				display: block;
 			}
@@ -794,6 +795,15 @@
 		margin: 0;
 		padding: 0;
 		max-width: 20%;
+		@media only screen and (max-width: $breakpoint-xl) {
+			max-width: 22%;
+		}
+		@media only screen and (max-width: $breakpoint-lg) {
+			max-width: 17%;
+		}
+		@media only screen and (max-width: $breakpoint-md) {
+			max-width: 20%;
+		}
 	}
 	&__chart-label {
 		font-family: $primary-font;
@@ -855,11 +865,6 @@
 		}
 	}
 	&__competitors {
-		justify-content: space-around;
-		bottom: 44px;
-    position: relative;
-    width: 425px;
-		text-align: center;
 		@media only screen and (max-width: $breakpoint-lg) {
 		  left: 19%;
 		}
