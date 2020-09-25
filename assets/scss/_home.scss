@@ -765,7 +765,7 @@
 	&__chart-label {
 		font-family: $primary-font;
 		font-size: 10px;
-		font-weight: 700;
+		font-weight: 600;
 		line-height: 20px;
 		color: #939ba0;
 		text-align: center;
@@ -781,8 +781,8 @@
 			max-width: 260px;
 			wrap: unset;
 			position: relative;
-			top: 13px;
-			height: 40px;
+      top: 8px;
+      height: 37px;
 			padding-top: 10px;
 			text-align: left;
 		}
@@ -831,7 +831,7 @@
 			line-height: 20px;
 			color: #949BA0;
       font-family: $primary-font;
-			font-weight: bold;
+			font-weight: 600;
 			text-align: center;
 		}
 	}
