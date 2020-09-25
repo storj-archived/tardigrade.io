@@ -714,9 +714,6 @@
 	.justify-content-center {
 		position: relative;
 	}
-	.col-lg-7 {
-		background: #F4F6F8;
-	}
 	&__content {
 		background: #F4F6F8;
     border-radius: 6px;
@@ -843,8 +840,8 @@
 	}
 	&__peta-contact {
 		background: #EAECF0;
-		height: 281px;
 		width: 90%;
+    border-radius: 6px;
 		@media only screen and (max-width: $breakpoint-lg) {
 			width: 100%;
 		}

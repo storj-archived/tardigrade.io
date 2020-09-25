@@ -5,79 +5,83 @@
 				{{ replace .Params.heading "\n" "<br/>" | safeHTML}}
 			</h2>
       <div class="row pt-3">
-				<div class="half-price__content col-sm-12 col-md-12 offset-sm-0 offset-lg-1 col-lg-4 pt-5 pl-5">
-					<div class="half-price__input-wrapper mt-4">
-			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
-			      <input type="number" id="storage" class="half-price__input form-control pl-2" name="storage" value="1" min="0" required>
-						<div class="half-price__measures">
-							<p class="half-price__measure-text storage-measure">GB</p>
-							<p style="color:#2582FF" class="half-price__measure-text storage-measure">TB</p>
-						</div>
-					</div>
-					<div class="half-price__input-wrapper mt-4">
-			      <label aria-label="download" class="half-price__label my-2">Download</label>
-			      <input type="number" id="download" class="half-price__input form-control pl-2" name="download" value="1000" min="0" required>
-						<div class="half-price__measures">
-							<p style="color:#2582FF" class="half-price__measure-text download-measure">GB</p>
-							<p class="half-price__measure-text download-measure">TB</p>
-						</div>
-					</div>
-					<div class="custom-control custom-checkbox mt-4">
-						<input type="checkbox" class="custom-control-input" id="multipleZonesCheckbox">
-						<label class="form-check-label custom-control-label" for="multipleZonesCheckbox">Multiple Availability Zones</label>
-					</div>
-					<div class="d-lg-block d-sm-none pt-3">
-						<h4 id="mainEstimate" class="half-price__estimate__price"></h4>
-						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
-					</div>
-				</div>
-				<div id="charts" class="half-price__content col-sm-12 col-md-12 text-sm-center col-lg-6 pt-4 pb-5">
-					<div class="row pl-sm-5 pl-lg-0">
-						<div class="half-price__col-wrapper col-3">
-							<div class="half-price__bar-wrapper">
-								<div class="half-price__bar m-auto pb-2" id="tardigradeBar">
-								</div>
-							</div>
-							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pt-2"></p>
-							<p style="color:#2582FF" class="half-price__chart-label">Tardigrade</p>
-						</div>
-						<div class="half-price__col-wrapper col-3">
-							<div class="half-price__bar-wrapper">
-								<div class="half-price__bar m-auto pb-2" id="amazonBar">
-								</div>
-							</div>
-							<p id="amazonEstimate" class="half-price__competitors__price pt-2"></p>
-							<p class="half-price__chart-label">Amazon S3</p>
-						</div>
-						<div class="half-price__col-wrapper col-3">
-							<div class="half-price__bar-wrapper">
-								<div class="half-price__bar m-auto pb-2" id="googleBar">
-								</div>
-							</div>
-							<p id="googleEstimate" class="half-price__competitors__price pt-2"></p>
-							<p class="half-price__chart-label">Google Cloud</p>
-						</div>
-						<div class="half-price__col-wrapper col-3">
-							<div class="half-price__bar-wrapper">
-								<div class="half-price__bar m-auto pb-2" id="microsoftBar">
-								</div>
-							</div>
-							<p id="microsoftEstimate" class="half-price__competitors__price pt-2"></p>
-							<p class="half-price__chart-label">Azure</p>
-						</div>
-					</div>
-				</div>
-					<div id="petabyteContactCta" class="half-price__content col-sm-12 col-md-12 col-lg-6 py-5">
-						<div class="half-price__peta-contact text-center pt-5">
-							<h4 class="text-center mx-auto mb-4 pt-sm-5 pt-4 w-75">Looking for Petabyte Storage Pricing?</h4>
-							<button href="mailto:partnerships@tardigrade.io" class="btn btn-primary">Contact Us</button>
-						</div>
-					</div>
-					<div class="d-sm-block d-lg-none half-price__content w-100 pb-5 pl-5">
-						<h4 id="mainEstimateSm" class="half-price__estimate__price"></h4>
-						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
-					</div>
-				</div>
+        <div class="col-md-12 col-lg-10 offset-lg-1 half-price__content p-5">
+          <div class="row">
+    				<div class="col-sm-12 col-md-12 col-lg-5">
+    					<div class="half-price__input-wrapper mt-4">
+    			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
+    			      <input type="number" id="storage" class="half-price__input form-control pl-2" name="storage" value="1" min="0" required>
+    						<div class="half-price__measures">
+    							<p class="half-price__measure-text storage-measure">GB</p>
+    							<p style="color:#2582FF" class="half-price__measure-text storage-measure">TB</p>
+    						</div>
+    					</div>
+    					<div class="half-price__input-wrapper mt-4">
+    			      <label aria-label="download" class="half-price__label my-2">Download</label>
+    			      <input type="number" id="download" class="half-price__input form-control pl-2" name="download" value="1000" min="0" required>
+    						<div class="half-price__measures">
+    							<p style="color:#2582FF" class="half-price__measure-text download-measure">GB</p>
+    							<p class="half-price__measure-text download-measure">TB</p>
+    						</div>
+    					</div>
+    					<div class="custom-control custom-checkbox mt-4">
+    						<input type="checkbox" class="custom-control-input" id="multipleZonesCheckbox">
+    						<label class="form-check-label custom-control-label" for="multipleZonesCheckbox">Multiple Availability Zones</label>
+    					</div>
+    					<div class="d-lg-block d-sm-none pt-3">
+    						<h4 id="mainEstimate" class="half-price__estimate__price"></h4>
+    						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
+    					</div>
+    				</div>
+    				<div id="charts" class="col-sm-12 col-md-12 text-sm-center col-lg-7">
+    					<div class="row pl-sm-5 pl-lg-0">
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto pb-2" id="tardigradeBar">
+    								</div>
+    							</div>
+    							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p style="color:#2582FF" class="half-price__chart-label">Tardigrade</p>
+    						</div>
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto pb-2" id="amazonBar">
+    								</div>
+    							</div>
+    							<p id="amazonEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p class="half-price__chart-label">Amazon S3</p>
+    						</div>
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto pb-2" id="googleBar">
+    								</div>
+    							</div>
+    							<p id="googleEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p class="half-price__chart-label">Google Cloud</p>
+    						</div>
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto pb-2" id="microsoftBar">
+    								</div>
+    							</div>
+    							<p id="microsoftEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p class="half-price__chart-label">Azure</p>
+    						</div>
+    					</div>
+    				</div>
+  					<div id="petabyteContactCta" class="col-sm-12 col-md-12 col-lg-6 py-5">
+  						<div class="half-price__peta-contact text-center p-5">
+  							<h4 class="text-center mx-auto mb-4">Looking for Petabyte Storage Pricing?</h4>
+  							<button href="mailto:partnerships@tardigrade.io" class="btn btn-primary">Contact Us</button>
+  						</div>
+  					</div>
+  					<div class="d-sm-block d-lg-none w-100 pb-5 pl-5">
+    						<h4 id="mainEstimateSm" class="half-price__estimate__price"></h4>
+    						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
+  					</div>
+    				</div>
+          </div>
+        </div>
       </div>
       <div class="text-center mt-5">
         <a class="btn btn-primary btn-lg" href="/signup">
