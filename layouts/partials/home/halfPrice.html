@@ -382,7 +382,7 @@
 
 		// trigger calculation on every input change
 		var onInputChange = function(input, recentMeasureChoice, previousMeasureChoice) {
-			input.addEventListener('keyup', event => {
+			input.addEventListener('change', event => {
 				if(input.value >= 0) {
 					calculate(recentMeasureChoice, previousMeasureChoice)
 				}
