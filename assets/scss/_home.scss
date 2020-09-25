@@ -804,6 +804,9 @@
 		border: none;
 		width: 94px;
     display: inline-block;
+    font-family: $secondary-font;
+    font-weight: bold;
+    color: #000;
 	}
 	.form-check-label {
 		font-family: $secondary-font;
