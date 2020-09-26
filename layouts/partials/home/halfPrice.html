@@ -387,6 +387,11 @@
 					calculate(recentMeasureChoice, previousMeasureChoice)
 				}
 			});
+      input.addEventListener('keyup', event => {
+				if(input.value >= 0) {
+					calculate(recentMeasureChoice, previousMeasureChoice)
+				}
+			});
 		}
 
 		// check whether to render pricing question cta
