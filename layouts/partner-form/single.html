@@ -32,6 +32,11 @@ window.onload = function() {
 	var fileSizeOptions = document.getElementsByClassName('file-size');
 	var perMonthOptions = document.getElementsByClassName('per-month');
 
+	var useCaseLabels = document.getElementsByClassName('use-case-label');
+	var dataAmountLabels = document.getElementsByClassName('data-amount-label');
+	var fileSizeLabels = document.getElementsByClassName('file-size-label');
+	var perMonthLabels = document.getElementsByClassName('per-month-label');
+
 	var index = 0; // to be increased an decreased depending on button clicked
 	var progressBarValue = 8.333; // 100 divided by the 12 steps
 
@@ -60,6 +65,8 @@ window.onload = function() {
 		}
 		index = index + 1
 		parent[index].setAttribute("style", "display:block;");
+		document.querySelectorAll(".user-input")[index]
+
 		if(parent[index].classList.contains('partner-form-per-month')) {
 			nextButton.setAttribute("style", "display:none;");
 			submitButton.setAttribute("style", "display:inline-block;");
@@ -67,47 +74,54 @@ window.onload = function() {
 		errElm[index].setAttribute("style", "display:none");
 	}
 
+	function errorCheck(index) {
+		var userEmailInput = parent[index].querySelector(".user-email");
+		// if email input does not include ampersand
+		if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
+			errElm[index].setAttribute("style", "display:block;");
+		} else if(parent[index].classList.contains("partner-form-use-case")) {
+			let selected = false;
+			for (let i = 0, length = useCaseOptions.length; i < length; i++) {
+				if (useCaseOptions[i].checked) {
+					selected = true;
+					successfulClick();
+				}
+			}
+			if(!selected) {
+				errElm[index].setAttribute("style", "display:block;");
+			}
+		}
+		else {
+			successfulClick();
+			errElm[index].setAttribute("style", "display:none;");
+		}
+	}
+
 	nextButton.onclick = function (event) {
+		onNextStep(event)
+	}
+
+
+	document.onkeypress = function (event) {
+    if (event.keyCode == 13) {
+        onNextStep(event)
+    }
+	}
+
+	function onNextStep(event) {
 		// parent[index] will always be current step
 		if(parent[index] && errElm && errElm[index]) {
 			// if required field is empty
 			if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
 				errElm[index].setAttribute("style", "display:block;");
 			} else {
-				var userEmailInput = parent[index].querySelector(".user-email");
-				// if email input does not include ampersand
-				if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
-					errElm[index].setAttribute("style", "display:block;");
-				} else if(parent[index].classList.contains("partner-form-use-case")) {
-					let selected = false;
-					for (let i = 0, length = useCaseOptions.length; i < length; i++) {
-						if (useCaseOptions[i].selected) {
-							selected = true;
-							successfulClick();
-						}
-					}
-					if(!selected) {
-						errElm[index].setAttribute("style", "display:block;");
-					}
-				} else {
-					successfulClick();
-				}
+				errorCheck(index)
 			}
 		}
 	}
 
-	// toggle use case options
-	window.onmousedown = function (e) {
-		var el = e.target;
-		if (el.tagName.toLowerCase() == "option" &&
-		el.parentNode.hasAttribute("multiple") &&
-		el.className == "use-case") {
 
-			e.preventDefault();
-			// toggle selection
-			el.hasAttribute("selected") ? el.removeAttribute("selected") : el.setAttribute("selected", "")
-		}
-	}
+
 
 	backButton.onclick = function (event) {
 		// no back button on first step
@@ -134,29 +148,29 @@ window.onload = function() {
 		// handle step with multiple choice
 		if(useCaseOptions) {
 			partner_form.use_case = [];
-			for (var i = 0, length = useCaseOptions.length; i < length; i++) {
-				if (useCaseOptions[i].selected) {
-					partner_form.use_case.push(useCaseOptions[i].value);
-				}
+			for(var i=0; useCaseOptions[i]; ++i){
+	      if(useCaseOptions[i].checked){
+           partner_form.use_case.push(useCaseLabels[i].textContent);
+	      }
 			}
 		}
 
 		// handle steps with multiple options, one choice
-		function handleMultipleOptions(element, destination){
-			if(!element) return;
-			for (var i = 0, length = element.length; i < length; i++) {
-				if (element[i].selected) {
-					partner_form[destination] = element[i].value;
-					break;
-				}
+		function handleMultipleOptions(elements, label, destination){
+			if(!elements) return;
+			for(var i=0; elements[i]; ++i){
+	      if(elements[i].checked){
+							partner_form[destination] = label[i].textContent;
+							break
+	      }
 			}
 		}
 
-		handleMultipleOptions(dataAmountOptions, "data_amount");
+		handleMultipleOptions(dataAmountOptions, dataAmountLabels, "data_amount");
 
-		handleMultipleOptions(fileSizeOptions, "file_sizes");
+		handleMultipleOptions(fileSizeOptions, fileSizeLabels, "file_sizes");
 
-		handleMultipleOptions(perMonthOptions, "download_times_per_month");
+		handleMultipleOptions(perMonthOptions, perMonthLabels, "download_times_per_month");
 
 
 		// timestamps with timezone
