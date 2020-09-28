@@ -56,6 +56,7 @@ window.onload = function() {
 		firstStep.setAttribute("style", "display:inherit;");
 		progressBarWrapper.setAttribute("style", "display:inherit;");
 		stepButtons.setAttribute("style", "display:inherit;");
+		setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
 	}
 
 	// if value is input or selected on step
@@ -77,6 +78,7 @@ window.onload = function() {
 			submitButton.setAttribute("style", "display:inline-block;");
 		}
 		errElm[index].setAttribute("style", "display:none");
+		setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
 	}
 
 	function errorCheck(index) {
