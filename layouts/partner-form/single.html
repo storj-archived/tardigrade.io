@@ -81,54 +81,6 @@ window.onload = function() {
 		setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
 	}
 
-	function errorCheck(index) {
-		var userEmailInput = parent[index].querySelector(".user-email");
-		// if email input does not include ampersand
-		if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
-			errElm[index].setAttribute("style", "display:block;");
-		} else if(parent[index].classList.contains("partner-form-use-case")) {
-			multiOptionErrCheck(index, useCaseOptions)
-		} else if(parent[index].classList.contains("partner-form-data-amount")) {
-			multiOptionErrCheck(index, dataAmountOptions)
-		} else if(parent[index].classList.contains("partner-form-file-size")) {
-			multiOptionErrCheck(index, fileSizeOptions)
-		} else {
-			errElm[index].setAttribute("style", "display:none;");
-			successfulClick();
-		}
-	}
-
-	nextButton.onclick = function (event) {
-		onNextStep(event)
-	}
-
-	document.onkeypress = function (event) {
-    if (event.keyCode == 13) {
-			// if last step, submit form on enter
-			if(index === 0 && !started) {
-				started = true
-				beginForm(event)
-			} else if(progressBarValue > 92) {
-				onSubmit(event)
-			} else {
-				onNextStep(event)
-			}
-    }
-	}
-
-	function onNextStep(event) {
-		event.preventDefault()
-		// parent[index] will always be current step
-		if(parent[index] && errElm && errElm[index]) {
-			// if required field is empty
-			if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
-				errElm[index].setAttribute("style", "display:block;");
-			} else {
-				errorCheck(index)
-			}
-		}
-	}
-
 	// check for at least one option selection
 	function multiOptionErrCheck(index, currentStepOptions, isSubmit) {
 		let selected = false;
@@ -143,8 +95,43 @@ window.onload = function() {
 		}
 		if(!selected) {
 			errElm[index].setAttribute("style", "display:block;");
+			setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
 		}
 	}
+
+	function errorCheck(index) {
+		var userEmailInput = parent[index].querySelector(".user-email");
+		// if email input does not include ampersand
+		if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
+			errElm[index].setAttribute("style", "display:block;");
+			setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+		} else if(parent[index].classList.contains("partner-form-use-case")) {
+			multiOptionErrCheck(index, useCaseOptions)
+		} else if(parent[index].classList.contains("partner-form-data-amount")) {
+			multiOptionErrCheck(index, dataAmountOptions)
+		} else if(parent[index].classList.contains("partner-form-file-size")) {
+			multiOptionErrCheck(index, fileSizeOptions)
+		} else {
+			errElm[index].setAttribute("style", "display:none;");
+			successfulClick();
+		}
+	}
+
+
+	function onNextStep(event) {
+		event.preventDefault()
+		// parent[index] will always be current step
+		if(parent[index] && errElm && errElm[index]) {
+			// if required field is empty
+			if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
+				errElm[index].setAttribute("style", "display:block;");
+				setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+			} else {
+				errorCheck(index)
+			}
+		}
+	}
+
 
 	function onSubmit(event) {
 
@@ -155,11 +142,12 @@ window.onload = function() {
 		if(style.display !== "block") {
 			var userInput = document.querySelectorAll(".user-input") // all non-selecter user inputs
 
+			// gather inputs for non-multi option
 			for (i = 0; i < userInput.length; i++) {
 				partner_form[userInput[i].name] = userInput[i].value;
 			}
 
-			// handle step with multiple options and choices
+			// gather inputs with multiple options and choices
 			if(useCaseOptions) {
 				partner_form.use_case = [];
 				for(var i=0; useCaseOptions[i]; ++i){
@@ -169,7 +157,7 @@ window.onload = function() {
 				}
 			}
 
-			// handle steps with multiple options but one choice
+			// gather inputs with multiple options but one choice
 			function handleMultipleOptions(elements, label, destination){
 				if(!elements) return;
 				for(var i=0; elements[i]; ++i){
@@ -205,6 +193,20 @@ window.onload = function() {
 
 	}
 
+	document.onkeypress = function (event) {
+		if (event.keyCode == 13) {
+			// if last step, submit form on enter
+			if(index === 0 && !started) {
+				started = true
+				beginForm(event)
+			} else if(progressBarValue > 92) {
+				onSubmit(event)
+			} else {
+				onNextStep(event)
+			}
+		}
+	}
+
 
 	backButton.onclick = function (event) {
 		// no back button on first step
@@ -219,9 +221,12 @@ window.onload = function() {
 		}
 		index = index - 1
 		parent[index].setAttribute("style", "display:block;");
+		setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
 	}
 
-
+	nextButton.onclick = function (event) {
+		onNextStep(event)
+	}
 
 	submitButton.onclick = function (event) {
 		onSubmit(event)
