@@ -62,21 +62,31 @@ window.onload = function() {
 	// if value is input or selected on step
 	function successfulClick(event) {
 		parent[index].setAttribute("style", "display:none;");
+
+		// make sure back btn is present
 		if(backButton) {
 			backButton.setAttribute("style", "display:inline-block;");
 		}
+
+		// progress bar logic
 		if(progressBar) {
 			progressBar.innerHTML = index + 2
 			progressBarValue = progressBarValue + 8.333;
 			progressBar.setAttribute("style", `width: ${progressBarValue}%`);
 		}
+
+		// display next step
 		index = index + 1
 		parent[index].setAttribute("style", "display:block;");
 		document.querySelectorAll(".user-input")[index]
+
+		// remove next button and show submit button if last step
 		if(parent[index].classList.contains('partner-form-per-month')) {
 			nextButton.setAttribute("style", "display:none;");
 			submitButton.setAttribute("style", "display:inline-block;");
 		}
+
+		// remove error display and focus input for next step
 		errElm[index].setAttribute("style", "display:none");
 		setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
 	}
@@ -193,6 +203,7 @@ window.onload = function() {
 
 	}
 
+	// on enter
 	document.onkeypress = function (event) {
 		if (event.keyCode == 13) {
 			// if last step, submit form on enter
