@@ -1,5 +1,5 @@
 ---
-title : "event010"
+event : "event010"
 name : "Music City Tech"
 location : "Nashville, TN"
 when : "September 5-7, 2019"

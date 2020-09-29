@@ -1,6 +1,6 @@
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="/scripts/jquery-3.5.1.slim.min.js"></script>
+<script src="/scripts/popper.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
 <script>
     function select(e){
         var currentTab = e.parentNode;
@@ -85,4 +85,56 @@
       }
     }
   }
+</script>
+
+<script type="text/javascript">
+		// homepage availability zone checkbox
+		checkbox.addEventListener('change', (event) => {
+			var checkbox = document.getElementById('checkbox');
+			var storageInputValue = document.getElementById("storage").value;
+			var downloadInputValue = document.getElementById("download").value;
+			var downloadMeasureChoice = ""
+			var storageMeasureChoice = ""
+			var downloadMeasureElements = document.querySelectorAll(".download-measure")
+			var storageMeasureElements = document.querySelectorAll(".storage-measure")
+
+			for (var i = 0; i < downloadMeasureElements.length; i++) {
+				if(downloadMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					downloadMeasureChoice = downloadMeasureElements[i].textContent
+				}
+			}
+
+			for (var i = 0; i < storageMeasureElements.length; i++) {
+				if(storageMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					storageMeasureChoice = storageMeasureElements[i].textContent
+				}
+			}
+
+
+		  if (event.target.checked) {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+				var doubledCombination = ((storageInputValue * 2) * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+
+				var tardigradeTotal = renderCalculation(tardigradeCombination)
+
+				tardigradeTotal = renderCalculation(doubledCombination)
+
+				mainEstimate.textContent = tardigradeTotal
+				mainEstimateSm.textContent = tardigradeTotal
+				tardigradeEstimate.textContent = tardigradeTotal
+
+				tardigradeBar.style.height = renderBarHeight(doubledCombination, tardigradeCombination)
+
+		  } else {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+				var tardigradeTotal = renderCalculation(tardigradeCombination)
+
+				mainEstimate.textContent = tardigradeTotal
+				mainEstimateSm.textContent = tardigradeTotal
+				tardigradeEstimate.textContent = tardigradeTotal
+
+				tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+
+		  }
+		})
 </script>

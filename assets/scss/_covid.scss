@@ -35,16 +35,6 @@
         &__button-wrapper {
           margin: 0 auto;
         }
-        &__button {
-          border-radius: 4px;
-          background: $color--blue-light;
-          color: #fff;
-          font-weight: 800;
-          font-size: 14px;
-          line-height: 18px;
-          border: none;
-          padding: 10px 35px;
-        }
       }
     }
 
@@ -210,15 +200,6 @@
       &__cta {
         &__button-wrapper {
           margin: 0 auto;
-        }
-        &__button {
-          color: #fff;
-          background: $color--blue-light;
-          border-radius: 4px;
-          padding: 10px 30px;
-          font-size: 14px;
-          font-family: $primary-font;
-          border: none;
         }
       }
       &__image-wrapper {

@@ -16,7 +16,6 @@
 		community="/community/"
 		press-kit="/press-kit/"
 		tech-partner = "/tech-partner/"
-		thank-you="/thank-you/"
 		partner-form="/partner-form/"
 		partner-thank-you="/partner-thank-you/"
 		universal-login="/login/"
@@ -32,3 +31,4 @@
 		partner-fork="/partners/"
 		about-us="/about-us/"
 		duplicati="/connectors/duplicati"
+		why="/whats-a-tardigrade/"

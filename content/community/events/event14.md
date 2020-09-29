@@ -1,5 +1,5 @@
 ---
-title : "event014"
+event : "event014"
 name : "All Things Open "
 location : "Raleigh, NC"
 when : "October 13-15, 2019"

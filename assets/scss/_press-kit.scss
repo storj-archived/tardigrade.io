@@ -20,95 +20,45 @@
       color: #7e8b9c;
     }
     &__text {
-      position: relative;
-      right: 5px;
       display: inline;
+      font-family: Poppins;
+			font-size: 14px;
     }
     &__image {
-      position: relative;
-      top: 2px;
+      margin-left: 6px;
     }
   }
   .press-kit__hero {
-    @media only screen and (max-width: 991px) {
-      background: $color--blue-bg;
-      background: linear-gradient(114.84deg, #133e9c -22.37%, #00091e 63.82%);
-      background-image: radial-gradient(
-        236.22% 100.97% at 50% -4.33%,
-        #0059d1 0%,
-        #000000 100%
-      );
-    }
+    color: #fff;
+    background: $color--blue-bg;
+    background-image: radial-gradient(516.5px at 92.17% 47.6%, #133e9c 0%, #00091e 100%);
     &__bg {
       color: #fff;
-      background: #000;
-      background-size: cover;
-      background-position: 0 30%;
+      background-image: url(../img/tar-ill-press.png);
+      background-position: right bottom;
+      background-size: contain;
       background-repeat: no-repeat;
-      overflow: hidden;
-      background: $color--blue-bg;
-      background-image: radial-gradient(100% 80%, #0055c6 20%, #000000 100%);
-      @media only screen and (max-width: 991px) {
-        background-position: 30% 0;
+      min-height: 640px;
+      @media (min-width: $breakpoint-sm) {
+        background-position: center bottom;
+        min-height: 700px;
       }
-      @media only screen and (max-width: 768px) {
-        background: radial-gradient(
-          236.22% 100.97% at 50% -4.33%,
-          #0059d1 0%,
-          #000000 100%
-        );
-        height: 712px;
+      @media (min-width: $breakpoint-md) {
+        background-size: 80%;
+        background-position: center bottom;
       }
-      .col-md-7 {
-        @media only screen and (max-width: 768px) {
-          background-image: url(../img/tar-ill-press.png);
-          background-position: 100% 270px;
-          background-size: 620px;
-          height: 710px;
-          background-repeat: no-repeat;
-          position: absolute;
-        }
+      @media (min-width: $breakpoint-lg) {
+        background-size: 74%;
+        min-height: 480px;
+        background-position: bottom right;
       }
-      .press-kit__hero__msg {
-        @media only screen and (max-width: 768px) {
-          text-align: center;
-          margin: 0 auto;
-        }
-      }
-    }
-    &__img {
-      height: auto;
-      position: absolute;
-      float: right;
-      width: 160%;
-      right: -115px;
-      bottom: -85%;
-      box-sizing: border-box;
-      max-width: 140%;
-      max-height: 240%;
-      @media only screen and (max-width: 1200px) {
-        max-width: 190%;
-        bottom: -55%;
-      }
-      @media only screen and (max-width: 991px) {
-        max-height: 130%;
-        width: 190%;
-        right: -165px;
-      }
-      @media only screen and (max-width: 768px) {
-        display: none;
+      @media (min-width: $breakpoint-xl) {
+        background-size: 64%;
       }
     }
     &__cta-button-wrapper {
       .hero_signup-btn {
-        width: 244px;
-        height: 46px;
-        background: #fff;
-        border: none;
-        border-radius: 5px;
         color: $color--blue-light;
-        font-weight: 900;
-        font-size: 14px;
       }
     }
     &__contact-us {
@@ -118,20 +68,22 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 28px;
-      display: inline;
+      display: inline-block;
       margin-left: 20px;
-      @media only screen and (max-width: 991px) {
+      &:hover {
+        text-decoration: underline;
+      }
+      @media only screen and (max-width: $breakpoint-lg) {
         margin-left: 0;
         margin-top: 20px;
         top: 5px;
         position: relative;
-      }
-      @media only screen and (max-width: 768px) {
         display: block;
-        margin-top: 30px;
-        top: 0;
       }
     }
+		&__msg {
+			z-index: 10;
+		}
   }
   .press-kit__news {
     &__title {
@@ -139,7 +91,7 @@
     }
     &__years-wrapper {
       list-style-type: none;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: none;
       }
       .press-kit__news__years-list {
@@ -155,6 +107,9 @@
           mix-blend-mode: normal;
           opacity: 0.5;
           cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
         }
         .active {
           border-left: 5px solid $color--blue-light;
@@ -162,11 +117,12 @@
           font-weight: bold;
           opacity: 1;
         }
+
       }
     }
     &__mobile-article-group {
       display: none;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: block;
       }
     }
@@ -175,7 +131,7 @@
     }
     .current-year {
       display: block;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: none;
       }
     }
@@ -195,26 +151,13 @@
       .press-kit__news__press-source {
         font-weight: 300;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 21px;
         letter-spacing: 0.5px;
         float: right;
       }
     }
     #loadMore {
       margin: 0 auto;
-      .press-kit__news-load-more-btn {
-        font-family: Poppins;
-        font-weight: 800;
-        font-size: 14px;
-        line-height: 41px;
-        text-align: center;
-        color: $color--blue-light;
-        border: 2px solid $color--blue-light;
-        width: 244px;
-        height: 46px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
     }
   }
   .press-kit__terminology {
@@ -265,68 +208,29 @@
     }
   }
   .press-kit__mascot {
-    &__title {
-      padding-left: 0;
-    }
-    &__download-btn {
-      text-align: right;
-      position: relative;
-      top: 7px;
-      .press-kit__mascot__download-btn-text {
-        display: inline;
-      }
-      .img-fluid {
-        top: -2px;
-      }
-    }
     &__image-wrapper {
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         width: 100%;
       }
       .img-fluid {
-        min-width: 550px;
-        @media only screen and (max-width: 1200px) {
-          min-width: 450px;
-        }
-        @media only screen and (max-width: 991px) {
-          width: 100%;
-        }
+        min-width: 100%;
       }
     }
   }
   .press-kit__logo {
-    .heading {
-      @media only screen and (max-width: 991px) {
-        text-align: center;
-      }
-    }
-    &__download-btn {
-      display: block;
-      @media only screen and (max-width: 991px) {
-        display: none;
-      }
-      .press-kit__logo__download-btn-text,
-      .img-fluid {
-        display: inline;
-      }
-      &__image {
-        top: -2px;
-      }
-    }
     .pt-4 {
       display: flex;
       justify-content: space-between;
     }
     &__logo {
-      max-width: 47.5%;
       height: 160px;
       border-radius: 10px;
       border: 1px solid $color--border;
-      margin: 10px;
+      margin: 10px 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         max-width: 100%;
       }
     }
@@ -335,21 +239,19 @@
     }
     &__download-btn.bottom {
       display: none;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         display: block;
       }
     }
   }
   .press-kit__fonts {
     &__font {
-      max-width: 48%;
       height: 160px;
       border-radius: 10px;
       border: 1px solid $color--border;
-      margin: 10px;
       padding: 0;
-      @media only screen and (max-width: 991px) {
-        max-width: 100%;
+			@media only screen and (max-width: $breakpoint-xl) {
+				max-width: 100%;
       }
     }
     &__desc {
@@ -364,6 +266,7 @@
       font-family: Poppins;
       font-style: normal;
       font-size: 12px;
+      color: #5E6A7B;
       line-height: 21px;
       margin-bottom: 0;
       margin-top: 1px;
@@ -395,25 +298,16 @@
 
   .press-kit__colors {
     &__color {
-      max-width: 31.5%;
       height: 111px;
       border-radius: 10px;
       border: 1px solid $color--border;
-      margin: 10px;
-      padding: 0;
       background: #fff;
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: $breakpoint-lg) {
         max-width: 100%;
       }
     }
     .color-1 {
       background: #2582ff;
-    }
-    .color-2 {
-      background: #0059d0;
-    }
-    .color-3 {
-      background: #133e9c;
     }
     &__visual {
       height: 50%;
@@ -451,6 +345,9 @@
     }
     &__link {
       color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     &__content {
       font-family: $primary-font;

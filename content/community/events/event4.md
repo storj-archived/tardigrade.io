@@ -1,5 +1,5 @@
 ---
-title : "event004"
+event : "event004"
 name : "Hopper Down Under"
 location : "Brisbane, AU"
 when : "July 30 to Aug 1, 2019"
