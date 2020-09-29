@@ -4,16 +4,9 @@
     {{partial "head" .}}
 </head>
 <body class="page">
-    {{ partial "banner" .}}
-    <div  class="container-fluid pt-3 pb-1 storj-blu-bg">
-        <div class="container storj-blu-bg">
-        {{ partial "nav"  .}}
-        </div>
-        <div class="container-fluid pt-3 d-xs-block d-lg-none storj-blu-bg"></div>
-    </div>
-    <div class="text-center">
-        {{partial "thank-you/main" .}}
-    </div>
+    {{partial "banner" .}}
+    {{partial "secondNav" (dict "logo" "/img/logo-blue.svg" )}}
+    {{partial "thank-you/main" .}}
     <footer>
         {{partial "footer" . }}
     </footer>
