@@ -44,10 +44,10 @@
 }
 
 .partner-form-page {
-  height: 100vh;
+  min-height: 100vh;
   #partner-form {
     text-align: center;
-    height: 80vh;
+    min-height: 80vh;
     .step {
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
