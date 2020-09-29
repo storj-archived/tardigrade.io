@@ -76,6 +76,14 @@
     #step-buttons {
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
+      .btn {
+        @media (max-width: 380px) {
+          margin-right: 0 !important;
+          padding-left: 0;
+          padding-right: 0;
+          width: 49%;
+        }
+      }
     }
 		.progress-bar {
 			height: 17px;
