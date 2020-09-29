@@ -1,140 +1,183 @@
-<div class="partner-form-page ">
-  <div class="container-fluid community_hero_bg">
-    <div  class="container">
-      <div class="spacer20"></div>
-      {{partial "nav" .}}
-      <div class="spacer15"></div>
-    </div>
-  </div>
-  <div id="partner-form">
-    <div id="start-wrapper">
-      <h2>Want to learn more about becoming</h2>
-      <h2>a Tardigrade.io Open-Source Partner?</h2>
-      <div class="spacer30"></div>
-      <h2>Great! Let's get started.</h2>
-      <div class="spacer25"></div>
-      <input type="submit" value="Start" name="start" id="partner-form-start" class="btn btn-primary btn-lg">
-    </div>
+<div class="partner-form-page">
+  <!-- {{partial "nav" .}} -->
+  {{partial "secondNav" (dict "logo" "/img/logo-blue.svg" )}}
+  <div class="container">
+    <div class="row align-items-center" id="partner-form">
+      <div class="col-12 col-lg-8 offset-lg-2 align-self-center">
+          <div id="start-wrapper">
+            <h2>Want to learn more about becoming a Tardigrade.io partner?</h2>
+            <div class="spacer30"></div>
+            <input type="submit" value="Let's get started" name="start" id="partner-form-start" class="btn btn-primary btn-lg mb-5">
+          </div>
 
-    <div style="display:none" id="partner-form-name" class="step active">
-      <label aria-label="firstName" class="label">Your First Name *</label>
-      <div class="spacer15"></div>
-      <input type="text" id="firstName" class="user-input required" value="" name="first_name" placeholder="First name" required>
-      <div class="error">Please fill this in</div>
-    </div>
+          <div style="display:none" id="partner-form-name" class="step active">
+            <label aria-label="firstName" class="label font-weight-bold">Your First Name *</label>
+            <div class="spacer15"></div>
+            <input type="text" id="firstName" class="user-input form-control required" value="" name="first_name" placeholder="First name" required>
+            <div class="error invalid-feedback">Please enter your name.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-last-name step active">
-      <label aria-label="lastName" class="label">Your Last Name *</label>
-      <div class="spacer15"></div>
-      <input type="text" id="lastName" class="user-input required" value="" name="last_name" placeholder="Last name" required>
-      <div class="error">Please fill this in</div>
-    </div>
+          <div style="display:none" class="partner-form-last-name step active">
+            <label aria-label="lastName" class="label font-weight-bold">Your Last Name *</label>
+            <div class="spacer15"></div>
+            <input type="text" id="lastName" class="user-input form-control required" value="" name="last_name" placeholder="Last name" required>
+            <div class="error invalid-feedback">Please enter your last name.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-title step active">
-      <label aria-label="company" class="label">Your Title *</label>
-      <div class="spacer15"></div>
-      <input type="text" id="company" class="user-input required" value="" name="title" placeholder="Title" required>
-      <div class="error">Please fill this in</div>
-    </div>
+          <div style="display:none" class="partner-form-title step active">
+            <label aria-label="title" class="label font-weight-bold">Your Title *</label>
+            <div class="spacer15"></div>
+            <input type="text" id="title" class="user-input form-control required" value="" name="title" placeholder="Title" required>
+            <div class="error invalid-feedback">Please enter your title.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-company step active">
-      <label aria-label="company" class="label">Your Company *</label>
-      <div class="spacer15"></div>
-      <input type="text" id="company" class="user-input required" value="" name="company" placeholder="Company" required>
-      <div class="error">Please fill this in</div>
-    </div>
+          <div style="display:none" class="partner-form-company step active">
+            <label aria-label="company" class="label font-weight-bold">Your Company *</label>
+            <div class="spacer15"></div>
+            <input type="text" id="company" class="user-input form-control required" value="" name="company" placeholder="Company" required>
+            <div class="error invalid-feedback">Please enter your company.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-company-website step active">
-      <label aria-label="companyWebsite" class="label">Your Company Website *</label>
-      <div class="spacer15"></div>
-      <input type="url" id="companyWebsite" class="user-input required" value="" name="company_website" placeholder="Company website" required>
-      <div class="error">Please fill this in</div>
-    </div>
+          <div style="display:none" class="partner-form-company-website step active">
+            <label aria-label="companyWebsite" class="label font-weight-bold">Your Company Website *</label>
+            <div class="spacer15"></div>
+            <input type="url" id="companyWebsite" class="user-input form-control required" value="" name="company_website" placeholder="Company website" required>
+            <div class="error invalid-feedback">Please enter your company website.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-company-email step active">
-      <label aria-label="email" class="label">Your Email *</label>
-      <div class="spacer15"></div>
-      <input type="email" id="email" class="user-input user-email required" value="" name="email"  placeholder="Email" required>
-      <div class="error">This email is not formatted correctly</div>
-    </div>
+          <div style="display:none" class="partner-form-company-email step active">
+            <label aria-label="email" class="label font-weight-bold">Your Email *</label>
+            <div class="spacer15"></div>
+            <input type="email" id="email" class="user-input user-email form-control required" value="" name="email"  placeholder="Email" required>
+            <div class="error invalid-feedback">Invalid email address.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-company-number step active">
-      <label aria-label="number" class="label">Best number we can reach you at *</label>
-      <div class="spacer15"></div>
-      <input type="tel" id="number" class="user-input required" value="" name="number" placeholder="Number" required>
-      <div class="error">Please fill this in</div>
-    </div>
+          <div style="display:none" class="partner-form-company-number step active">
+            <label aria-label="number" class="label font-weight-bold">Best number we can reach you at *</label>
+            <div class="spacer15"></div>
+            <input type="tel" id="number" class="user-input form-control required" value="" name="number" placeholder="Number" required>
+            <div class="error invalid-feedback">Please enter your number.</div>
+          </div>
 
-    <div style="display:none" class="partner-form-use-case step active form-group">
-      <label class="label">Tell us more about your use case please, which of the following applies (choose as many): *</label>
-      <div class="spacer15"></div>
-      <div class="multiple-select-wrapper">
-        <select class="custom-select multiple-select" multiple required>
-          <option class="use-case">Basic R&D and evaluation of Tardigrade for inclusion in a future project</option>
-          <option class="use-case">Temporary storage of data for transit between external file systems</option>
-          <option class="use-case">Transfer of large files over the internet</option>
-          <option class="use-case">General object storage</option>
-          <option class="use-case">Other</option>
-        </select>
+          <div style="display:none" class="partner-form-use-case step active form-group">
+            <label class="label font-weight-bold">Tell us more about your use case please, which of the following applies <span class="small">(choose as many)</span>: *</label>
+            <div class="spacer15"></div>
+            <div class="custom-control custom-checkbox text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck1">
+              <label class="custom-control-label use-case-label" for="useCaseCheck1">Basic R&D and evaluation of Tardigrade for inclusion in a future project</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck2">
+              <label class="custom-control-label use-case-label" for="useCaseCheck2">Temporary storage of data for transit between external file systems</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck3">
+              <label class="custom-control-label use-case-label" for="useCaseCheck3">Transfer of large files over the internet</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck4">
+              <label class="custom-control-label use-case-label" for="useCaseCheck4">General object storage</label>
+            </div>
+            <div class="custom-control custom-checkbox mt-2 text-left">
+              <input type="checkbox" class="custom-control-input use-case" id="useCaseCheck5">
+              <label class="custom-control-label use-case-label" for="useCaseCheck5">Other</label>
+            </div>
+            <div class="error invalid-feedback">Please check your use cases.</div>
+          </div>
+
+          <div style="display:none" class="partner-form-data-amount step active form-group">
+            <label class="label font-weight-bold">What is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)? *</label>
+            <div class="spacer15"></div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="dataAmountRadio1" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="custom-control-label" for="dataAmountRadio1">&lt; 1TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio2" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="data-amount-label custom-control-label" for="dataAmountRadio2">1-10 TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio3" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="data-amount-label custom-control-label" for="dataAmountRadio3">10-100 TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio4" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="data-amount-label custom-control-label" for="dataAmountRadio4">&gt; 100TB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="dataAmountRadio5" name="dataAmountRadio" class="custom-control-input data-amount">
+              <label class="data-amount-label custom-control-label" for="dataAmountRadio5">&gt; 1000TB</label>
+            </div>
+            <div class="error invalid-feedback">Please select one of the options.</div>
+          </div>
+
+          <div style="display:none" class="partner-form-file-size  step active form-group">
+            <label class="label font-weight-bold">What file sizes will you usually upload? *</label>
+            <div class="spacer15"></div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="fileSizeRadio1" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="file-size-label custom-control-label" for="fileSizeRadio1">&lt; 1MB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio2" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="file-size-label custom-control-label" for="fileSizeRadio2">1 GB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio3" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="file-size-label custom-control-label" for="fileSizeRadio3">10-100 GB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio4" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="file-size-label custom-control-label" for="fileSizeRadio4">&gt; 100GB</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mt-2">
+              <input type="radio" id="fileSizeRadio5" name="fileSizeRadio" class="custom-control-input file-size">
+              <label class="file-size-label custom-control-label" for="fileSizeRadio5">&gt; 1TB</label>
+            </div>
+            <div class="error invalid-feedback">Please select one of the options.</div>
+          </div>
+
+          <div style="display:none" class="partner-form-how-long step active">
+            <label aria-label="howLong" class="label font-weight-bold">How long do you need the data to be stored on the network before you no longer need the data? *</label>
+            <div class="spacer15"></div>
+            <input type="text" id="howLong" class="user-input form-control required" value="" name="how_long_data_needed"  placeholder="Length of time" required>
+            <div class="error invalid-feedback">Please write your answer.</div>
+          </div>
+
+          <div style="display:none" class="partner-form-per-month step active form-group">
+            <label class="label font-weight-bold">What number of times do you plan to download your data set per month? *</label>
+            <div class="spacer15"></div>
+            <div class="custom-control custom-radio text-left">
+              <input type="radio" id="perMonthRadio1" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="per-month-label custom-control-label" for="perMonthRadio1">Very infrequently</label>
+            </div>
+            <div class="custom-control custom-radio text-left mt-2">
+              <input type="radio" id="perMonthRadio2" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="per-month-label custom-control-label" for="perMonthRadio2">&lt; 20% of the total data per month</label>
+            </div>
+            <div class="custom-control custom-radio text-left mt-2">
+              <input type="radio" id="perMonthRadio3" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="per-month-label custom-control-label" for="perMonthRadio3">&lt; 1 time per month</label>
+            </div>
+            <div class="custom-control custom-radio text-left mt-2">
+              <input type="radio" id="perMonthRadio4" name="perMonthRadio" class="custom-control-input per-month">
+              <label class="per-month-label custom-control-label" for="perMonthRadio4">Multiple times per month</label>
+            </div>
+            <div class="error invalid-feedback">Please select one of the options.</div>
+          </div>
+
+          <div style="display:none" id="step-buttons">
+            <input style="display:none" type="submit" value="Back" name="back" class="btn btn-outline-primary btn-lg mr-4 my-4" id="partner-form-back">
+            <input type="submit" value="Next" name="next" class="btn btn-primary btn-lg my-4" id="partner-form-next">
+            <input style="display:none" type="submit" value="Submit" name="submit" class="btn btn-primary btn-lg" id="partner-form-submit">
+          </div>
+
+          <div style="display:none" id="progress-bar-wrapper" class="progress">
+            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 8.3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
+          </div>
+
       </div>
-      <div class="error">A choice must be made to continue!</div>
-    </div>
 
-    <div style="display:none" class="partner-form-data-amount  step active form-group">
-      <label class="label">WHat is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)? *</label>
-      <div class="spacer15"></div>
-      <select class="custom-select" multiple required>
-        <option class="data-amount" selected>< 1 TB</option>
-        <option class="data-amount">1-10 TB</option>
-        <option class="data-amount">10-100 TB</option>
-        <option class="data-amount">> 100 TB</option>
-        <option class="data-amount">> 1000 TPB</option>
-      </select>
-      <div class="error">A choice must be made to continue!</div>
     </div>
-
-    <div style="display:none" class="partner-form-file-size  step active form-group">
-      <label class="label">What file sizes will you usually upload? *</label>
-      <div class="spacer15"></div>
-      <select class="custom-select" multiple required>
-        <option class="file-size" selected>< 1 MB</option>
-        <option class="file-size">1 GB</option>
-        <option class="file-size">10-100 GB</option>
-        <option class="file-size">> 100 GB</option>
-        <option class="file-size">> 1 TB</option>
-      </select>
-      <div class="error">A choice must be made to continue!</div>
-    </div>
-
-    <div style="display:none" class="partner-form-how-long step active">
-      <label aria-label="howLong" class="label">How long do you need the data to be stored on the network before you no longer need the data? *</label>
-      <div class="spacer15"></div>
-      <input type="text" id="howLong" class="user-input required" value="" name="how_long_data_needed"  placeholder="Length of time" required>
-      <div class="error">Please fill this in</div>
-    </div>
-
-    <div style="display:none" class="partner-form-per-month step active form-group">
-      <label class="label">What number of times do you plan to download your data set per month? *</label>
-      <div class="spacer15"></div>
-      <select class="custom-select" multiple required>
-        <option class="per-month" selected>Very infrequently</option>
-        <option class="per-month">< 20% of the total data per month</option>
-        <option class="per-month">< 1 time per month</option>
-        <option class="per-month">Multiple times per month</option>
-      </select>
-      <div class="error">A choice must be made to continue!</div>
-    </div>
-
-    <div style="display:none" id="step-buttons">
-      <div class="spacer25"></div>
-      <input style="display:none" type="submit" value="Back" name="back" id="partner-form-back">
-      <input type="submit" value="Next" name="next" class="btn btn-primary btn-lg" id="partner-form-next">
-      <input style="display:none" type="submit" value="Submit" name="submit" class="btn btn-primary btn-lg" id="partner-form-submit">
-    </div>
-
-    <div style="display:none" id="progress-bar-wrapper" class="progress">
-      <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 8.3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
-    </div>
-
   </div>
 </div>
