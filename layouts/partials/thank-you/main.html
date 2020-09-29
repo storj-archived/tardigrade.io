@@ -6,9 +6,9 @@
         <h2 class="thank-you__heading mb-3 mt-lg-5">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
         </h2>
-        <div class="thank-you__msg">
+        <p class="thank-you__msg">
           {{ .Params.content}}
-        </div>
+        </p>
         <a href="/community" class="btn btn-primary btn-lg my-4">
             {{ .Params.cta}}
         </a>
