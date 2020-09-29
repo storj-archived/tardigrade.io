@@ -1,6 +1,6 @@
 ---
-title: "how-it-works"
+title: "Thank You"
 heading: Thanks!
-content: Check your email for next steps and join the community to get involved.
-cta: Join Developer Community
+content: We'll be getting back to you shortly. Join the community to get involved.
+cta: Join Community
 ---
