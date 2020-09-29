@@ -727,21 +727,23 @@
 		color: #000;
 		text-align: left;
 	}
-	&__measures {
-		display: inline-flex;
-		position: relative;
-		left: 10px;
-	}
 	&__measure-text {
 		font-family: $secondary-font;
 		font-weight: 500;
 		font-size: 16px;
 		color: #AFB7C1;
-		margin-right: 10px;
-		cursor: pointer;
+    padding-right: 2px;
+    padding-left: 2px;
+    position: relative;
+    top: -2px;
+    margin-right: 2px;
+    &:hover, &:focus {
+      text-decoration: none;
+      color: $color--blue;
+    }
 	}
 	&__bar-wrapper {
-		height: 260px;
+		height: 248px;
 		-moz-transform: rotate(180deg);
 		-webkit-transform: rotate(180deg);
 		-ms-transform: rotate(180deg);
@@ -803,6 +805,7 @@
     font-family: $secondary-font;
     font-weight: bold;
     color: #000;
+    margin-right: 4px;
 	}
 	.form-check-label {
 		font-family: $secondary-font;
@@ -843,7 +846,6 @@
 	}
 	&__peta-contact {
 		background: #EAECF0;
-		width: 90%;
     border-radius: 6px;
 		@media only screen and (max-width: $breakpoint-lg) {
 			width: 100%;
