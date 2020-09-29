@@ -1,21 +1,20 @@
 <div class="lite-gray-bg container-fluid thank-you">
   <div class="container">
     <div class="row thank-you__content-wrapper d-flex justify-content-center">
-      <div class="spacer125"></div>
-      <div class="col-lg-4 thank-you__content">
+      <div class="col-lg-4 thank-you__content my-5 text-center">
         {{ with .Site.GetPage "thankYou" }}
-        <h2 class="thank-you__heading mb-3">
+        <h2 class="thank-you__heading mb-3 mt-lg-5">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
         </h2>
         <div class="thank-you__msg">
           {{ .Params.content}}
         </div>
-        <a href="/community" class="btn btn-primary btn-lg mt-4">
+        <a href="/community" class="btn btn-primary btn-lg my-4">
             {{ .Params.cta}}
         </a>
         {{ end }}
       </div>
-      <div class="col-lg-4 offset-2">
+      <div class="col-lg-4 offset-lg-2 mt-lg-5">
 				<img src="/img/tardigrade-mascot.png" class="img-fluid" alt="Tardigrade Mascot"/>
       </div>
     </div>
