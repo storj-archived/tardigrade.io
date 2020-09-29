@@ -1,7 +1,7 @@
 <div class="lite-gray-bg container-fluid thank-you">
   <div class="container">
     <div class="row thank-you__content-wrapper d-flex justify-content-center">
-      <div class="col-lg-4 thank-you__content my-5 text-center">
+      <div class="col-lg-5 col-xl-4 thank-you__content my-5 text-center">
         {{ with .Site.GetPage "thankYou" }}
         <h2 class="thank-you__heading mb-3 mt-lg-5">
           {{ replace .Params.heading "\n" "<br/>" | safeHTML}}
@@ -14,7 +14,7 @@
         </a>
         {{ end }}
       </div>
-      <div class="col-lg-4 offset-lg-2 mt-lg-5">
+      <div class="col-lg-4 col-xl-offset-1 mt-lg-5">
 				<img src="/img/tardigrade-mascot.png" class="img-fluid" alt="Tardigrade Mascot"/>
       </div>
     </div>
