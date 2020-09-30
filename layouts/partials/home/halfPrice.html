@@ -227,7 +227,7 @@
 		var renderBarHeight = function(total, tardigradeTotal) {
 			var checkbox = document.getElementById('checkbox');
 
-			var factor = checkbox.checked ? 5 : 3
+			var factor = checkbox.checked && total > 1000 ? 5 : 3
 			var base = tardigradeTotal * factor
 			if(total == 0 && tardigradeTotal == 0 || (isNaN(total) || isNaN(tardigradeTotal))) {
 				return "0%"
