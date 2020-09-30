@@ -9,9 +9,9 @@
 				</div>
 				<div>
 					{{if .Params.download }}
-					<a target="_blank" href="{{.Params.download}}" class="btn btn-primary btn-lg mr-2 mb-2">Download</a>
+					<a rel="noopener noreferrer" target="_blank" href="{{.Params.download}}" class="btn btn-primary btn-lg mr-2 mb-2">Download</a>
 					{{end}}
-					<a target="_blank" href="/signup/?partner={{.Params.partnerid}}" class="btn btn-outline-primary btn-lg mb-2">Join Tardigrade</a>
+					<a rel="noopener noreferrer" target="_blank" href="/signup/?partner={{.Params.partnerid}}" class="btn btn-outline-primary btn-lg mb-2">Join Tardigrade</a>
 				</div>
 				<div class="spacer90"></div>
 			</div>
@@ -37,28 +37,28 @@
 					<p class="column-section__title">Resources</p>
 					<ul class="column-section__link-section">
 						{{if .Params.downloadOne}}
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.downloadOneLink}}">{{.Params.downloadOne}}</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="{{.Params.downloadOneLink}}">{{.Params.downloadOne}}</a></li>
 						{{end}}
 						{{if .Params.downloadTwo}}
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.downloadTwoLink}}">{{.Params.downloadTwo}}</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="{{.Params.downloadTwoLink}}">{{.Params.downloadTwo}}</a></li>
 						{{end}}
 						{{if .Params.docs}}
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.docs}}">Docs</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="{{.Params.docs}}">Docs</a></li>
 						{{end}}
 						{{if .Params.repo}}
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.repo}}">Repo</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="{{.Params.repo}}">Repo</a></li>
 						{{end}}
 						{{if .Params.website}}
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="{{.Params.website}}">Website</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="{{.Params.website}}">Website</a></li>
 						{{end}}
 					</ul>
 				</div>
 				<div class="column-section">
 					<p class="column-section__title">Links</p>
 					<ul class="column-section__link-section">
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/signup/?partner={{.Params.partnerid}}">Join Tardigrade</a></li>
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/login">Sign In</a></li>
-						<li class="column-section__link-wrapper"><a target="_blank" class="column-section__link" href="/community">Community</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="/signup/?partner={{.Params.partnerid}}">Join Tardigrade</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="/login">Sign In</a></li>
+						<li class="column-section__link-wrapper"><a rel="noopener noreferrer" target="_blank" class="column-section__link" href="/community">Community</a></li>
 					</ul>
 				</div>
 			</div>
@@ -97,7 +97,7 @@
 						</div>
 						<p class="single-connector__section-text">Files are encrypted and split into pieces client-side, then distributed across our network of high-performance Storage Nodes, making it virtually impossible for your data to be compromised.</p>
 						{{with .context.Site.GetPage .connectorInfo}}
-						<a target="_blank" href="/signup/?partner={{.Params.partnerid}}" class="btn btn-outline-primary btn-lg">Get Started</a>
+						<a rel="noopener noreferrer" target="_blank" href="/signup/?partner={{.Params.partnerid}}" class="btn btn-outline-primary btn-lg">Get Started</a>
 						{{end}}
 						<div class="spacer90"></div>
 					</div>

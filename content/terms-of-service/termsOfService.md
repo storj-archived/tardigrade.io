@@ -3,7 +3,7 @@ title: "Tardigrade Terms Of Service"
 lastUpdated: "March 19, 2020"
 ---
 
-<p>THESE TARDIGRADE TERMS OF SERVICE (THE “<b>AGREEMENT</b>”) ARE A LEGAL AGREEMENT BETWEEN YOU OR THE ENTITY YOU REPRESENT (“<b>USER</b>,” OR “<b>SUBSCRIBER</b>,” OR “<b>YOU</b>” OR “<b>YOUR</b>”) AND STORJ LABS INTERNATIONAL, SEZC,, INCLUDING ITS PARENT, SUBSIDIARIES, AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, LICENSEES, AND EMPLOYEES (“<b>COMPANY</b>,” AS DEFINED BELOW, “<b>US</b>,” “<b>WE</b>” OR “<b>OUR</b>”) GOVERNING THE TERMS OF YOUR  USE OF THE STORAGE SERVICES AS DEFINED HEREIN.  THIS AGREEMENT HEREBY INCORPORATES BY REFERENCE THE FOLLOWING AGREEMENTS: <a target="_blank" href="https://storj.io/privacy-policy/" class="link">PRIVACY POLICY</a>, <a target="_blank" href="https://storj.io/terms-of-use/" class="link">TERMS OF USE</a>, <a target="_blank" href="https://storj.io/code-of-conduct/" class="link">CODE OF CONDUCT</a>, AND <a target="_blank" href="https://storj.io/storj-share-terms/" class="link">STORAGE NODE OPERATOR TERMS AND CONDITIONS.</a>  BY ACCEPTING THE TERMS OF THIS AGREEMENT, EITHER BY CLICKING TO SIGNIFY ACCEPTANCE, BY SETTING UP A USER ACCOUNT, OR BY USING THE STORAGE SERVICES, YOU AGREE TO BE BOUND BY THE PROVISIONS OF THIS AGREEMENT.   YOU REPRESENT AND WARRANT THAT YOU HAVE THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON USER’S BEHALF. </p>
+<p>THESE TARDIGRADE TERMS OF SERVICE (THE “<b>AGREEMENT</b>”) ARE A LEGAL AGREEMENT BETWEEN YOU OR THE ENTITY YOU REPRESENT (“<b>USER</b>,” OR “<b>SUBSCRIBER</b>,” OR “<b>YOU</b>” OR “<b>YOUR</b>”) AND STORJ LABS INTERNATIONAL, SEZC,, INCLUDING ITS PARENT, SUBSIDIARIES, AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, LICENSEES, AND EMPLOYEES (“<b>COMPANY</b>,” AS DEFINED BELOW, “<b>US</b>,” “<b>WE</b>” OR “<b>OUR</b>”) GOVERNING THE TERMS OF YOUR  USE OF THE STORAGE SERVICES AS DEFINED HEREIN.  THIS AGREEMENT HEREBY INCORPORATES BY REFERENCE THE FOLLOWING AGREEMENTS: <a href="https://storj.io/privacy-policy/" class="link">PRIVACY POLICY</a>, <a href="https://storj.io/terms-of-use/" class="link">TERMS OF USE</a>, <a href="https://storj.io/code-of-conduct/" class="link">CODE OF CONDUCT</a>, AND <a href="https://storj.io/storj-share-terms/" class="link">STORAGE NODE OPERATOR TERMS AND CONDITIONS.</a>  BY ACCEPTING THE TERMS OF THIS AGREEMENT, EITHER BY CLICKING TO SIGNIFY ACCEPTANCE, BY SETTING UP A USER ACCOUNT, OR BY USING THE STORAGE SERVICES, YOU AGREE TO BE BOUND BY THE PROVISIONS OF THIS AGREEMENT.   YOU REPRESENT AND WARRANT THAT YOU HAVE THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON USER’S BEHALF. </p>
 <br>
 <p><b>PLEASE READ THE TERMS OF THIS AGREEMENT CAREFULLY TO ENSURE THAT YOU UNDERSTAND EACH PROVISION. THIS AGREEMENT CONTAINS A BINDING ARBITRATION AND WAIVER OF CLASS ACTION RIGHTS PROVISION THAT REQUIRES THE USE OF INDIVIDUAL ARBITRATION TO RESOLVE DISPUTES AS SET FORTH BELOW.  IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, PLEASE DO NOT ACCESS OR USE THE STORAGE SERVICES.</b></p>
 <br>
@@ -40,7 +40,7 @@ lastUpdated: "March 19, 2020"
 	<br>
 	<li><p>&nbsp;&nbsp;“<b>Storage Materials</b>” means data and other materials stored by User on the Storage Services.</p></li>
 	<br>
-	<li><p>&nbsp;&nbsp;“<b>Documentation</b>” means information that describes the Storage Services, provides instructions or recommendations related to the configuration and/or use of the Storage Services, or otherwise informs Users of the intended use of the Storage Services, including, but not limited to content provided directly to user or  published at <a class="link" target="_blank" href="https://documentation.tardigrade.io">https://documentation.tardigrade.io</a>, <a class="link" target="_blank" href="https://documentation.storj.io">https://documentation.storj.io</a>, or otherwise made available in conjunction with the Storage Services.</p></li>
+	<li><p>&nbsp;&nbsp;“<b>Documentation</b>” means information that describes the Storage Services, provides instructions or recommendations related to the configuration and/or use of the Storage Services, or otherwise informs Users of the intended use of the Storage Services, including, but not limited to content provided directly to user or  published at <a rel="noopener noreferrer" class="link" target="_blank" href="https://documentation.tardigrade.io">https://documentation.tardigrade.io</a>, <a rel="noopener noreferrer" class="link" target="_blank" href="https://documentation.storj.io">https://documentation.storj.io</a>, or otherwise made available in conjunction with the Storage Services.</p></li>
 	<br>
 	<li><p>&nbsp;&nbsp;“<b>Major Release</b>” means a new release of the Software as indicated by a change to the number to the left of the decimal point in the version number, for example, Version 2.1 upgraded to Version 3.0.</p></li>
 	<br>
@@ -275,7 +275,7 @@ lastUpdated: "March 19, 2020"
 				<ol type="1">
 					<li><p>&nbsp;&nbsp;Respond to and Resolve all Support Requests in accordance with the Service Levels;</p></li>
 
-					<li><p>&nbsp;&nbsp;Provide e-mail and Community support to User during Support Hours by means of the support page located at <a class="link" target"_blank" href="https://storj.io/support.html">https://storj.io/support.html</a>, the e-mail address <a class="link" href="mailto:support@storj.io">support@storj.io</a> and the Storj Community Forum at <a class="link" target"_blank" href="https://forum.storj.io/home">https://forum.storj.io/home</a>;</p></li>
+					<li><p>&nbsp;&nbsp;Provide e-mail and Community support to User during Support Hours by means of the support page located at <a rel="noopener noreferrer" class="link" target"_blank" href="https://storj.io/support.html">https://storj.io/support.html</a>, the e-mail address <a class="link" href="mailto:support@storj.io">support@storj.io</a> and the Storj Community Forum at <a rel="noopener noreferrer" class="link" target"_blank" href="https://forum.storj.io/home">https://forum.storj.io/home</a>;</p></li>
 				</ol>
 			</li>
 
@@ -334,7 +334,7 @@ lastUpdated: "March 19, 2020"
 	<br>
 	<li>&nbsp;&nbsp;<b>Contacting the Company Service Desk</b>.  User should contact the Company Service Desk using the following methods:
 		<ol type="i">
-			<li><p>&nbsp;&nbsp;Tardigrade support portal at <a class="link" target="_blank" href="https://support.tardigrade.io">https://support.tardigrade.io</a></p></li>
+			<li><p>&nbsp;&nbsp;Tardigrade support portal at <a rel="noopener noreferrer" class="link" target="_blank" href="https://support.tardigrade.io">https://support.tardigrade.io</a></p></li>
 
 			<li><p>&nbsp;&nbsp;For Severity 1 or 2 Errors Company provides a support email address at <a class="link" href="mailto:support@tardigrade.io">support@tardigrade.io</a></p></li>
 		</ol>
