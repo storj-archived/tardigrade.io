@@ -10,7 +10,6 @@
 	</footer>
 	{{ partial "site-scripts" .}}
 </body>
-</html>
 
 <script type="text/javascript">
 window.onload = function() {
@@ -228,7 +227,7 @@ window.onload = function() {
 		if(progressBar) {
 			progressBar.innerHTML = index;
 			progressBarValue = progressBarValue - 8.333;
-			progressBar.setAttribute("style", `width: ${progressBarValue}%`);
+			progressBar.setAttribute("style", "width: ${progressBarValue}%");
 		}
 		index = index - 1
 		parent[index].setAttribute("style", "display:block;");
@@ -245,3 +244,5 @@ window.onload = function() {
 
 }
 </script>
+
+</html>
