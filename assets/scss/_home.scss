@@ -100,7 +100,8 @@
 .navlink {
   &:hover {
     color: #fff;
-    text-shadow: 1px 0 0 #fff;
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
   }
 }
 
