@@ -2,7 +2,7 @@ backend:
   name: github
   repo: storj/Tardigrade.io
   branch: master
-  base_url: https://tardigrade.io	
+  base_url: https://tardigrade.io
   auth_endpoint: /oauth/auth
 
 media_folder: "static/img/"
@@ -245,15 +245,4 @@ collections:
     - {label: "Image", name: "img", widget: "image"}
     - {label: "class", name: "class", widget: "hidden", default: "virtuous-cycle"}
     - {label: "weight", name: "weight", widget: "hidden"}
-    - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "waitlist"
-    label: "waitlist"
-    folder: "content/waitlist/"
-    slug: "{{slug}}"
-    fields:
-    - {label: "title", name: "title", widget: "hidden"}
-    - {label: "Heading", name: "heading", widget: "string"}
-    - {label: "Sub-heading", name: "subHeading", widget: "string"}
-    - {label: "Form-Heading", name: "formHeading", widget: "string"}
-    - {label: "Form-Description", name: "formDescription", widget: "string"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
