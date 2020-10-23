@@ -1,7 +1,7 @@
 ---
 title : "home-hero"
 headingLeft : "Decentralized Cloud"
-headingRight: "Storage is the Future"
+headingRight: "Storage for Developers"
 stage : "Early Access Production"
 stageDescriptor:  ""
 subheading : "Join thousands of developers experiencing the safer, faster, completely decentralized enterprise-grade cloud storage solution."
