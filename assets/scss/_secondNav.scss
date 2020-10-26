@@ -1,5 +1,5 @@
 .second-nav.navbar {
-  margin-top: 15px;
+  padding-top: 20px;
   padding-bottom: 10px;
   .navlink {
     color: #93a1af;
@@ -32,5 +32,9 @@
   }
   .navbar-toggler[aria-expanded="true"] {
     visibility: visible;
+  }
+  .logo {
+    margin-top: -14px;
+    height: 21px;
   }
 }

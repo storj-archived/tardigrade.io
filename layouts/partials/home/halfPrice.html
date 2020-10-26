@@ -173,6 +173,8 @@
 
 				mainEstimate.style.color="#D6DAE1";
 				mainEstimateSm.style.color="#D6DAE1"
+				mainEstimate.textContent="-----"
+				mainEstimateSm.textContent="-----"
 				return
 			} else {
 				charts.style.display="block";
@@ -228,7 +230,7 @@
 			var checkbox = document.getElementById('checkbox');
 
 			var factor = checkbox.checked && tardigradeTotal > 100 && tardigradeTotal < 20000 ? 5 : 3
-			var base = tardigradeTotal * factor
+			var base = 106000
 			if(total == 0 && tardigradeTotal == 0 || (isNaN(total) || isNaN(tardigradeTotal))) {
 				return "0%"
 			} else {

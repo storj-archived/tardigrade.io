@@ -111,35 +111,12 @@
         padding: 2rem !important;
       }
     }
-    &__wrapper {
-      position: relative;
-    }
-    &__video-link {
-      margin: 0 auto;
-      cursor: pointer;
-      text-align: center;
-    }
-    &__video-icon {
-      width: 50%;
+    &__video-wrapper {
+      box-shadow: 0 0 40px rgb(7, 30, 67);
+      border-radius: 4px;
     }
     &__content-wrapper {
       padding-top: 20px !important;
-    }
-    .modal-dialog {
-      width: 1100px;
-      position: relative;
-      top: 100px;
-      max-width: none;
-      @media (max-width: 1200px) {
-        max-width: 80%;
-      }
-      @media (max-width: 578px) {
-        margin: 0 auto;
-        top: 120px;
-      }
-    }
-    .modal-content {
-      height: 500px;
     }
     &__text-wrapper {
       width: 80%;
@@ -162,6 +139,7 @@
       font-weight: bold;
       font-size: 18px;
       line-height: 21px;
+      display: block;
     }
     &__learn-more-icon {
       margin-top: 20px;

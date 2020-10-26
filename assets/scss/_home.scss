@@ -100,7 +100,8 @@
 .navlink {
   &:hover {
     color: #fff;
-    text-shadow: 1px 0 0 #fff;
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
   }
 }
 
@@ -1372,16 +1373,6 @@ a {
   border-right: 1px solid #dcdcdc;
 }
 
-.waitlist-middle {
-  text-decoration: none !important;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #2582ff;
-}
-
 .limit {
   max-width: 420px;
 }
@@ -1540,53 +1531,6 @@ a {
   line-height: 23px;
   text-align: center;
   margin: 0 auto;
-}
-
-/* Waitlist */
-
-.waitlist-heading {
-  margin-bottom: 0.3em;
-  color: color(primary);
-  font-weight: 800;
-  font-size: 40px;
-}
-
-.waitlist-sub-heading {
-  height: 93px;
-  opacity: 0.8;
-  color: color(primary);
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-}
-
-.waitlist-input-name,
-.waitlist-input-email {
-  width: 100%;
-  margin-top: 15px;
-  padding: 15px;
-  max-width: 500px;
-}
-
-.waitlist-input-name {
-  border: none;
-  background-color: color(secondary);
-  color: color(accent);
-}
-
-.waitlist-input-email {
-  border: none;
-  background-color: color(secondary);
-  color: color(accent);
-}
-
-.get-access-btn {
-  height: 46px;
-  border: 2px solid color(primary);
-  border-radius: 4px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-weight: 800;
 }
 
 /* Timeline */
