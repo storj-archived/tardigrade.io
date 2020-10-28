@@ -389,10 +389,11 @@
       float: right;
       margin-right: 25px;
       position: relative;
-      bottom: 15px;
-      @media only screen and (max-width: 1024px) {
+      bottom: 40px;
+      @media only screen and (max-width: 991px) {
         float: none;
-        bottom: 0;
+				bottom: 20px;
+				left: 96px;
       }
     }
     &__header {
