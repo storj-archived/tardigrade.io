@@ -173,6 +173,8 @@
 
 				mainEstimate.style.color="#D6DAE1";
 				mainEstimateSm.style.color="#D6DAE1"
+				mainEstimate.textContent="-----"
+				mainEstimateSm.textContent="-----"
 				return
 			} else {
 				charts.style.display="block";
@@ -214,7 +216,6 @@
 			multiZoneCalc()
 
 		}
-
 
 		var renderCalculation = function(total) {
 			if(isNaN(total)) {
