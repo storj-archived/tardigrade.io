@@ -1,5 +1,5 @@
 ---
-title : "usecase-tab"
+title : "tab 6"
 name : snapshots
 heading : Database Snapshots
 desc : Backup and store critical database records.
