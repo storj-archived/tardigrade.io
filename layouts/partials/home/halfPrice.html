@@ -217,7 +217,6 @@
 
 		}
 
-
 		var renderCalculation = function(total) {
 			if(isNaN(total)) {
 				return "$0"
@@ -230,7 +229,7 @@
 			var checkbox = document.getElementById('checkbox');
 
 			var factor = checkbox.checked && tardigradeTotal > 100 && tardigradeTotal < 20000 ? 5 : 3
-			var base = 106000
+			var base = tardigradeTotal * factor
 			if(total == 0 && tardigradeTotal == 0 || (isNaN(total) || isNaN(tardigradeTotal))) {
 				return "0%"
 			} else {
