@@ -10,7 +10,6 @@
 	</footer>
 	{{ partial "site-scripts" .}}
 </body>
-</html>
 
 <script type="text/javascript">
 window.onload = function() {
@@ -26,6 +25,7 @@ window.onload = function() {
 	var firstStep = document.getElementById("partner-form-name");
 	var progressBarWrapper = document.getElementById("progress-bar-wrapper");
 	var stepButtons = document.getElementById("step-buttons");
+	var adBlockerMessage = document.getElementById("ad-blocker-message");
 
 	var useCaseOptions = document.getElementsByClassName('use-case');
 	var dataAmountOptions = document.getElementsByClassName('data-amount');
@@ -80,10 +80,11 @@ window.onload = function() {
 		parent[index].setAttribute("style", "display:block;");
 		document.querySelectorAll(".user-input")[index]
 
-		// remove next button and show submit button if last step
-		if(parent[index].classList.contains('partner-form-per-month')) {
+		// remove next button, show submit button & ad message if last step
+		if(index == 11) {
 			nextButton.setAttribute("style", "display:none;");
 			submitButton.setAttribute("style", "display:inline-block;");
+			adBlockerMessage.setAttribute("style", "display:inline-block;");
 		}
 
 		// remove error display and focus input for next step
@@ -230,6 +231,14 @@ window.onload = function() {
 			progressBarValue = progressBarValue - 8.333;
 			progressBar.setAttribute("style", "width: " + progressBarValue + "%");
 		}
+
+		// if last step, remove ad block message and submit button
+		if(index == 11) {
+			nextButton.setAttribute("style", "display:inline-block;");
+			submitButton.setAttribute("style", "display:none;");
+			adBlockerMessage.setAttribute("style", "display:none;");
+		}
+
 		index = index - 1
 		parent[index].setAttribute("style", "display:block;");
 		setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
@@ -245,3 +254,4 @@ window.onload = function() {
 
 }
 </script>
+</html>

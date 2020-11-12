@@ -72,7 +72,7 @@
     }
     .progress {
       max-width: 350px;
-      margin: 40px auto;
+      margin: 20px auto;
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
     }
@@ -88,8 +88,15 @@
         }
       }
     }
-		.progress-bar {
-			height: 17px;
-		}
+    .progress-bar {
+      height: 17px;
+    }
+  }
+  #ad-blocker-message {
+	 color: red;
+	 position: relative;
+	 width: 100%;
+	 top: 10px;
+	 display: none;
   }
 }
