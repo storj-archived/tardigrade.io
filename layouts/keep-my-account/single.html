@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{partial "head" .}}
+</head>
+<body class="page account_page">
+	<div class="bg-squares">
+    <div class="container pt-3 pb-1">
+      {{ partial "nav" .}}
+      {{ partial "keep-my-account/keep" .}}
+    </div>
+  </div>
+	<footer>
+			{{partial "footer" . }}
+	</footer>
+	{{ partial "site-scripts" .}}
+</body>
+</html>
