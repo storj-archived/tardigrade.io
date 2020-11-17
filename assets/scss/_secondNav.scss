@@ -5,7 +5,8 @@
     color: #93a1af;
     &:hover {
       color: #93a1af;
-      text-shadow: 1px 0 0 #93a1af;
+      text-stroke: 1px #93a1af;
+      -webkit-text-stroke: 1px #93a1af;
     }
     &:active {
       font-weight: bold;
