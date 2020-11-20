@@ -37,6 +37,12 @@ window.onload = function() {
 	var fileSizeLabels = document.getElementsByClassName('file-size-label');
 	var perMonthLabels = document.getElementsByClassName('per-month-label');
 
+    // used for detection of ads
+    var adDetect = document.createElement('div');
+    adDetect.id='bEdVCQrLFqol';
+    adDetect.style.display='none';
+    document.body.appendChild(adDetect);
+
 	var index = 0; // to be increased an decreased depending on button clicked
 	var progressBarValue = 8.333; // 100 divided by the 12 steps
 	var started = false;
@@ -81,7 +87,7 @@ window.onload = function() {
 		document.querySelectorAll(".user-input")[index]
 
 		// remove next button, show submit button & ad message if last step
-		if(index == 11) {
+		if(index == 11 && document.getElementById('bEdVCQrLFqol')) {
 			nextButton.setAttribute("style", "display:none;");
 			submitButton.setAttribute("style", "display:inline-block;");
 			adBlockerMessage.setAttribute("style", "display:inline-block;");
@@ -233,7 +239,7 @@ window.onload = function() {
 		}
 
 		// if last step, remove ad block message and submit button
-		if(index == 11) {
+		if(index == 11 && document.getElementById('bEdVCQrLFqol')) {
 			nextButton.setAttribute("style", "display:inline-block;");
 			submitButton.setAttribute("style", "display:none;");
 			adBlockerMessage.setAttribute("style", "display:none;");
