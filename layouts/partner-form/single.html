@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	{{ partial "head" . }}
+    <script src="/scripts/prebid-ads.js"></script>
 </head>
 <body>
 	{{ partial "partner-form/form" .}}
@@ -13,7 +14,6 @@
 
 <script type="text/javascript">
 window.onload = function() {
-
 	var nextButton = document.getElementById("partner-form-next");
 	var backButton = document.getElementById("partner-form-back");
 	var submitButton = document.getElementById("partner-form-submit");
@@ -36,12 +36,6 @@ window.onload = function() {
 	var dataAmountLabels = document.getElementsByClassName('data-amount-label');
 	var fileSizeLabels = document.getElementsByClassName('file-size-label');
 	var perMonthLabels = document.getElementsByClassName('per-month-label');
-
-    // used for detection of ads
-    var adDetect = document.createElement('div');
-    adDetect.id='bEdVCQrLFqol';
-    adDetect.style.display='none';
-    document.body.appendChild(adDetect);
 
 	var index = 0; // to be increased an decreased depending on button clicked
 	var progressBarValue = 8.333; // 100 divided by the 12 steps
@@ -87,10 +81,12 @@ window.onload = function() {
 		document.querySelectorAll(".user-input")[index]
 
 		// remove next button, show submit button & ad message if last step
-		if(index == 11 && document.getElementById('bEdVCQrLFqol')) {
+		if(index == 11) {
 			nextButton.setAttribute("style", "display:none;");
 			submitButton.setAttribute("style", "display:inline-block;");
-			adBlockerMessage.setAttribute("style", "display:inline-block;");
+            if(window.canRunAds === undefined) {
+                adBlockerMessage.setAttribute("style", "display:inline-block;");
+            }
 		}
 
 		// remove error display and focus input for next step
@@ -239,10 +235,12 @@ window.onload = function() {
 		}
 
 		// if last step, remove ad block message and submit button
-		if(index == 11 && document.getElementById('bEdVCQrLFqol')) {
+		if(index == 11) {
 			nextButton.setAttribute("style", "display:inline-block;");
 			submitButton.setAttribute("style", "display:none;");
-			adBlockerMessage.setAttribute("style", "display:none;");
+            if(window.canRunAds === undefined) {
+                adBlockerMessage.setAttribute("style", "display:none;");
+            }
 		}
 
 		index = index - 1
