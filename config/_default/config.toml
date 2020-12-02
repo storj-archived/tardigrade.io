@@ -37,3 +37,4 @@
 		keep-my-account-1tb-success="/keep-my-account-1tb-success/"
 		deactivate-my-account="/deactivate-my-account/"
 		deactivate-my-account-success="/deactivate-my-account-success/"
+        filebase="/connectors/filebase"
