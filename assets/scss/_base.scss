@@ -64,6 +64,17 @@ footer {
   background: $color--light-bg;
 }
 
+.bg-gradient {
+  background: $color--blue-bg;
+  background: radial-gradient(circle, rgba(0,55,127,1) 0%, rgba(0,5,12,1) 100%);
+}
+.bg-squares {
+  background: $color--blue-bg;
+  background-image: radial-gradient(circle, rgba(0,55,127,1) 0%, rgba(0,5,12,1) 100%); /* fallback */
+  background-image: url("/img/tar-bg-squares.svg"), radial-gradient(circle, rgba(0,55,127,1) 0%, rgba(0,5,12,1) 100%);
+  background-size: cover;
+}
+
 .rounded-xl {
   border-radius: 10px;
 }

@@ -1,5 +1,5 @@
 ---
-title : "event011"
+event : "event011"
 name : "Open Core Summit"
 location : "San Francisco, CA"
 when : "September 19-20, 2019"

@@ -44,141 +44,52 @@
 }
 
 .partner-form-page {
-  .community_hero_bg {
-    overflow: visible;
-  }
+  min-height: 100vh;
   #partner-form {
-    margin-top: 210px;
     text-align: center;
-    height: 100vh;
+    min-height: 80vh;
     .step {
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
+    }
+    .label {
+      margin-bottom: 4px;
     }
     .user-input {
       background: #ffffff;
       border: 1px solid #c5cbdb;
       box-sizing: border-box;
       border-radius: 6px;
-      width: 350px;
-      height: 56px;
-    }
-    .partner-form-button {
-      background: $color--blue-light;
-      border-radius: 6px;
-      border: none;
-      width: 142px;
-      height: 48px;
-      color: #fff;
-      font-weight: bold;
-      outline: none;
-      cursor: pointer;
-      padding: 0;
-    }
-    #partner-form-back {
-      background: #fff;
-      border-radius: 6px;
-      border: 2px solid $color--blue-light;
-      width: 142px;
-      height: 48px;
-      color: $color--blue-light;
-      font-weight: bold;
-      outline: none;
-      cursor: pointer;
-    }
-    .label {
-      display: block;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #212429;
-    }
-    .custom-select {
-      width: 50%;
-      overflow-y: hidden;
-    }
-    .multiple-select-wrapper {
-      border: 1px solid #ced4da;
-      width: 60%;
+      max-width: 350px;
       margin: 0 auto;
-      border-radius: 6px;
-      padding-bottom: 7px;
-      .multiple-select {
-        width: 100%;
-        height: 32px;
-        border: none;
-        border-radius: 0;
-        outline: none;
-      }
+      height: 56px;
     }
     .error {
       display: none;
       position: relative;
-      top: 11px;
+      top: 10px;
       color: red;
     }
     .progress {
-      width: 350px;
-      margin: 0 auto;
-      margin-top: 40px;
+      max-width: 350px;
+      margin: 40px auto;
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
     }
     #step-buttons {
       -webkit-animation: in 900ms ease both;
       animation: in 900ms ease both;
-    }
-    input {
-      padding-left: 15px;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .partner-form-page {
-    #partner-form {
-      #start-wrapper {
-        h2 {
-          font-size: 16px;
-          line-height: 28px;
-        }
-      }
-      .label {
-        line-height: 24px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .partner-form-page {
-    #partner-form {
-      margin: 140px auto;
-      width: 92%;
-      #start-wrapper {
-        h2 {
-          font-size: 15px;
-          line-height: 27px;
-        }
-      }
-      .progress,
-      .user-input {
-        width: 90%;
-      }
-
-      .custom-select {
-        width: 90%;
-        overflow-x: scroll;
-      }
-      .multiple-select-wrapper {
-        width: 90%;
-        .multiple-select {
-          overflow-x: scroll;
+      .btn {
+        @media (max-width: 380px) {
+          margin-right: 0 !important;
+          padding-left: 0;
+          padding-right: 0;
+          width: 49%;
         }
       }
     }
+		.progress-bar {
+			height: 17px;
+		}
   }
 }

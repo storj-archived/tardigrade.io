@@ -1,5 +1,5 @@
 ---
-title : "usecase-tab"
+title : "tab 2"
 name : media
 heading : Media Content Storage
 desc : Store large volumes of video, photo, or audio media, including tape/physical alternatives.

@@ -14,7 +14,6 @@
 			<div class="col-md-12 col-md-12 col-lg-8 ">
 				<div class="connectors__partners__heading">
 					<h4 class="connectors__partners__title">More Connectors</h4>
-					{{ partial "connectors/dropdown" (dict "lastPage" $paginator.Last "lastUrlElement" $lastUrlElement) }}
 				</div>
 				<div class="pt-2 row d-flex flex-row connectors__partners__partners">
 					{{ range (where ((.Paginator 8).Pages.ByParam "ready").Reverse ".Params.class" "partner") }}
@@ -25,7 +24,7 @@
 						</p>
 						{{end}}
 						<div class="connectors__partners__partner__wrapper {{ if eq .Params.ready false }}not-ready{{ end }}">
-							{{ if .Params.link }}<a class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
+							{{ if .Params.link }}<a rel="noopener noreferrer" class="connectors__partners__partner__link" target="_blank" href="{{ .Params.link }}"> {{ end }}
 							<div class="connectors__partners__partner__header">
 								<img class="img-fluid connectors__partners__partner__header__image" alt="{{ .Params.name }} logo" src="{{ .Params.img }}" alt="{{ .Params.name }}">
 								<h4 class="connectors__partners__partner__header__name">
@@ -59,8 +58,8 @@
 					{{end}}
 					<p class="badge">No Results</p>
 				</div>
-				<div id="loadMore">
-					<p class="load-more-btn">Load More</p>
+				<div id="loadMore" class="text-center">
+					<p class="btn btn-outline-primary btn-lg">Load More</p>
 				</div>
 			</div>
 		</div>
@@ -68,8 +67,7 @@
 </div>
 
 <script type="text/javascript">
-	//grab first four articles of currently active year
-	$(".connectors__partners__partner").slice(0, 8).css("display", "inline-block");
+	$(".connectors__partners__partner").slice(0, 9).css("display", "inline-block");
 
 	hideButton()
 
@@ -93,16 +91,18 @@
 	});
 
 
+	// search logic
 	$("#searchInput").on("keyup", function() {
 		var value = $(this).val().toLowerCase();
 
 		$(".connectors__partners__partner").css("display", "block").filter(function() {
 
+			// hide featured section during search
 			$(".featured").css("display", "none")
 
 			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 
-			if($(".connectors__partners__partner:visible").length < 10) {
+			if($(".connectors__partners__partner:visible").length < 9) {
 				$("#loadMore").hide()
 			}
 
@@ -115,7 +115,7 @@
 				$(".connectors__partners__partner").slice(0, 8).css("display", "block");
 				$(".featured").css("display", "block")
 				$(".badge").css("display", "none")
-				if($(".connectors__partners__partner:visible").length > 10) {
+				if($(".connectors__partners__partner:visible").length < 9) {
 					$("#loadMore").show()
 				}
 			}

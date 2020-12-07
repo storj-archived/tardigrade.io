@@ -1,5 +1,5 @@
 ---
-title : "event002"
+event : "event002"
 name : "Gopher Con"
 location : "San Diego"
 when : "July 24-27th, 2019"

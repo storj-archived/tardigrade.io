@@ -1,5 +1,5 @@
 ---
-title: "usecases"
+title: "usecase 2"
 name : media
 heading : Media Storage
 isActive : true

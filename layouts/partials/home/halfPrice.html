@@ -1,76 +1,504 @@
-  <div class="container-fluid half-price">
-    <div class="container">
-      <div class="spacer125"></div>
+  <div class="half-price py-5 my-5">
+    <div class="container pb-4">
 			{{ with .Site.GetPage "halfPrice" }}
-			<h2 class="half-price__heading">
+			<h2 class="half-price__heading mb-5">
 				{{ replace .Params.heading "\n" "<br/>" | safeHTML}}
 			</h2>
-			<div class="spacer40"></div>
-			<div class="spacer60"></div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-4 col-lg-6 col-sm-12 half-price__content">
-          <div class="spacer40"></div>
+      <div class="row pt-3">
+        <div class="col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 half-price__content p-5">
           <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 half-price__section" style="border-right: 1px solid #979797">
-              <p class="half-price__column-heading">{{ .Params.col1Heading }}</p>
-              <img alt="{{.Params.col1Alt}}" class="half-price__column-image" src="{{ .Params.col1Image }}" />
-              <h2 class="half-price__column-amount">{{ .Params.col1Amount }}</h2>
-              <p class="half-price__column-metric">{{ .Params.col1Metric }}</p>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 half-price__section">
-              <p class="half-price__column-heading">{{ .Params.col2Heading }}</p>
-              <img alt="{{.Params.col2Alt}}" class="half-price__column-image" src="{{ .Params.col2Image }}" />
-              <h2 class="half-price__column-amount">{{ .Params.col2Amount }}</h2>
-              <p class="half-price__column-metric">{{ .Params.col2Metric }}</p>
-            </div>
+    				<div class="col-12 col-md-4">
+    					<div class="half-price__input-wrapper">
+    			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
+    			      <input type="number" id="storage" class="half-price__input form-control pl-2" name="storage" value="1" min="0" required>
+  							<button class="btn btn-link half-price__measure-text storage-measure">GB</button>
+  							<button style="color:#2582FF" class="btn btn-link half-price__measure-text storage-measure">TB</button>
+    					</div>
+    					<div class="half-price__input-wrapper mt-4">
+    			      <label aria-label="download" class="half-price__label my-2">Download</label>
+    			      <input type="number" id="download" class="half-price__input form-control pl-2" name="download" value="1000" min="0" required>
+  							<button style="color:#2582FF" class="btn btn-link half-price__measure-text download-measure">GB</button>
+  							<button class="btn btn-link half-price__measure-text download-measure">TB</button>
+    					</div>
+    					<div class="custom-control custom-checkbox mt-4">
+    						<input type="checkbox" class="custom-control-input" id="checkbox">
+    						<label class="form-check-label custom-control-label" for="checkbox">Multiple Availability Zones</label>
+    					</div>
+    					<div class="d-none d-md-block pt-3">
+    						<h4 id="mainEstimate" class="half-price__estimate__price"></h4>
+    						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
+    					</div>
+    				</div>
+    				<div id="charts" class="col-12 col-md-8 col-xl-7 offset-xl-1 text-sm-center mt-4 mt-sm-0">
+    					<div class="row">
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto" id="tardigradeBar">
+    								</div>
+    							</div>
+    							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p style="color:#2582FF" class="half-price__chart-label">Tardigrade</p>
+    						</div>
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto" id="amazonBar">
+    								</div>
+    							</div>
+    							<p id="amazonEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p class="half-price__chart-label">Amazon S3</p>
+    						</div>
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto" id="googleBar">
+    								</div>
+    							</div>
+    							<p id="googleEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p class="half-price__chart-label">Google Cloud</p>
+    						</div>
+    						<div class="half-price__col-wrapper col-3">
+    							<div class="half-price__bar-wrapper">
+    								<div class="half-price__bar m-auto" id="microsoftBar">
+    								</div>
+    							</div>
+    							<p id="microsoftEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p class="half-price__chart-label">Azure</p>
+    						</div>
+    					</div>
+    				</div>
+  					<div id="petabyteContactCta" class="col-12 col-md-8 col-xl-7 offset-xl-1 mt-5 mt-md-0">
+  						<div class="half-price__peta-contact text-center p-5 h-100">
+  							<h4 class="text-center mx-auto my-3 mt-md-5">Looking for Petabyte Storage Pricing?</h4>
+  							<button href="mailto:partnerships@tardigrade.io" class="btn btn-primary">Contact Us</button>
+  						</div>
+  					</div>
+  					<div class="col-12 d-sm-block d-md-none mt-5 mb-2">
+    						<h5 id="mainEstimateSm" class="half-price__estimate__price"></h5>
+    						<p class="half-price__estimate__text">Estimated Monthly Cost</p>
+  					</div>
+    				</div>
           </div>
-          <div class="spacer40"></div>
-					<div class="spacer60"></div>
-        </div>
-        <div class="col-lg-6 half-price__image-wrapper">
-					<div id="htcCollapseWrapper" class="half-price__image-wrapper__content">
-						<a class="" data-toggle="collapse" href="#htcCollapse" role="button" aria-expanded="false" aria-controls="htcCollapse">
-							<div class="half-price__image-wrapper__content__header">
-								<h4 class="half-price__image-wrapper__content__header__title">How Tardigrade Compares</h4>
-								<img class="half-price__image-wrapper__content__header__img" alt="How Tardigrade Compares Toggle Button" class="toggle-btn" id="toggleDownBtn" src="/img/htc-down-arrow.svg"/>
-								<img class="half-price__image-wrapper__content__header__img" alt="How Tardigrade Compares Toggle Button" class="toggle-btn" id="toggleUpBtn" src="/img/htc-up-arrow.svg"/>
-							</div>
-						</a>
-						<div class="collapse multi-collapse show" id="htcCollapse">
-							<img alt="Chart comparing Tardigrade as an alternative to AWS and Google Cloud" class="half-price__image-resp" src="/img/tar-pricing-resp.svg" width="1200" />
-						</div>
-					</div>
-					<img alt="Chart comparing Tardigrade as an alternative to AWS and Google Cloud" class="half-price__image" src="/img/tar-pricing.svg" width="1200" />
         </div>
       </div>
-			<div class="spacer70"></div>
-			<a class="half-price__cta__wrapper" href="/signup">
-				<p class="half-price__cta">
-				{{ .Params.cta}}
+      <div class="text-center mt-5">
+        <a class="btn btn-primary btn-lg" href="/signup">
+  				{{ .Params.cta}}
+  			</a>
+				<p class="half-price__pricing-cta pt-4">
+					Looking for Petabyte Storage Pricing?
+					<a class="half-price__pricing-cta__link" href="mailto:partnerships@tardigrade.io">
+						Contact Us
+					</a>
 				</p>
-			</a>
+      </div>
 			{{ end }}
-
     </div>
-    <div class="spacer125"></div>
   </div>
 
 	<script type="text/javascript">
+		var mainEstimate = document.getElementById("mainEstimate");
+		var mainEstimateSm = document.getElementById("mainEstimateSm");
 
-		// icon toggle
-		var buttonWrapper = document.getElementById("htcCollapseWrapper");
-		var toggleDownBtn = document.getElementById("toggleDownBtn");
-		var toggleUpBtn = document.getElementById("toggleUpBtn");
-		buttonWrapper.onclick = function (event) {
-			if (window.getComputedStyle(toggleUpBtn).display === "none") {
-				toggleDownBtn.style.display = "none";
-				toggleUpBtn.style.display = "flex";
-		 	} else {
-				toggleDownBtn.style.display = "flex";
-				toggleUpBtn.style.display = "none";
+		var tardigradeEstimate = document.getElementById("tardigradeEstimate");
+		var amazonEstimate = document.getElementById("amazonEstimate");
+		var googleEstimate = document.getElementById("googleEstimate");
+		var microsoftEstimate = document.getElementById("microsoftEstimate");
+
+		var petabyteContactCta = document.getElementById("petabyteContactCta");
+		var charts = document.getElementById("charts");
+
+		var downloadMeasures = document.querySelectorAll(".download-measure")
+		var storageMeasures = document.querySelectorAll(".storage-measure")
+
+		var downloadInput = document.getElementById("download");
+		var storageInput = document.getElementById("storage");
+
+		var tardigradeBar = document.getElementById("tardigradeBar");
+		var amazonBar = document.getElementById("amazonBar");
+		var googleBar = document.getElementById("googleBar");
+		var microsoftBar = document.getElementById("microsoftBar");
+
+		// handle measure change by changing color to measure choice and triggering calculation
+		var onChangeMeasure = function(measures, recentMeasureChoice, previousMeasureChoice) {
+			if(measures) {
+				measures.forEach(el => el.addEventListener('click', event => {
+				  el.style.color="#2582FF";
+					for (var i = 0; i < measures.length; i++) {
+						if(el !== measures[i]) {
+							measures[i].style.color="#AFB7C1";
+						}
+					}
+					calculate(recentMeasureChoice, previousMeasureChoice)
+				}));
+			}
+		}
+
+		// all calculation logic
+		var calculate = function(recentMeasureChoice, previousMeasureChoice) {
+			var recentInputValue = "";
+			var previousInputValue = "";
+			var recentMeasureElements = ""
+			var previousMeasureElements = ""
+			var choiceOne = ""
+			var choiceTwo = ""
+
+			if(recentMeasureChoice === "storage") {
+				 recentInputValue = document.getElementById("storage").value;
+				 previousInputValue = document.getElementById("download").value;
+				 previousMeasureElements = document.querySelectorAll(".download-measure")
+				 recentMeasureElements = document.querySelectorAll(".storage-measure")
+			} else if(recentMeasureChoice === "download") {
+				 previousInputValue = document.getElementById("storage").value;
+				 recentInputValue = document.getElementById("download").value;
+				 previousMeasureElements = document.querySelectorAll(".storage-measure")
+				 recentMeasureElements = document.querySelectorAll(".download-measure")
+			}
+
+			// change chosen measure color
+			for (var i = 0; i < previousMeasureElements.length; i++) {
+				if(previousMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					choiceTwo = previousMeasureElements[i].textContent
+				}
+			}
+
+			for (var i = 0; i < recentMeasureElements.length; i++) {
+				if(recentMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					choiceOne = recentMeasureElements[i].textContent
+				}
+			}
+
+			// render cta and change main estimate color if user inputs petabyte
+			if(petabyteCalcCheck(choiceOne, recentInputValue) || petabyteCalcCheck(choiceTwo, previousInputValue)) {
+				charts.style.display="none";
+				petabyteContactCta.style.display="block"
+
+				mainEstimate.style.color="#D6DAE1";
+				mainEstimateSm.style.color="#D6DAE1"
+				mainEstimate.textContent="-----"
+				mainEstimateSm.textContent="-----"
+				return
+			} else {
+				charts.style.display="block";
+				petabyteContactCta.style.display="none"
+
+				mainEstimate.style.color="#2582ff";
+				mainEstimateSm.style.color="#2582ff"
 			}
 
 
+			// add storage and download totals
+			var tardigradeCombination = (recentInputValue * tardigradeCalculation(choiceOne, recentMeasureChoice)) + (previousInputValue * tardigradeCalculation(choiceTwo, previousMeasureChoice))
+			var amazonCombination = (amazonCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (amazonCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			var googleCombination = (googleCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (googleCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+			var microsoftCombination = (microsoftCalculation(recentInputValue, choiceOne, recentMeasureChoice)) + (microsoftCalculation(previousInputValue, choiceTwo, previousMeasureChoice))
+
+			// style rendered amount
+			var tardigradeTotal = renderCalculation(tardigradeCombination)
+			var amazonTotal = renderCalculation(amazonCombination)
+			var googleTotal = renderCalculation(googleCombination)
+			var microsoftTotal = renderCalculation(microsoftCombination)
+
+			// input totals into elements
+			mainEstimate.textContent = tardigradeTotal
+			mainEstimateSm.textContent = tardigradeTotal
+
+			tardigradeEstimate.textContent = tardigradeTotal
+			amazonEstimate.textContent = amazonTotal
+			googleEstimate.textContent = googleTotal
+			microsoftEstimate.textContent = microsoftTotal
+
+			// edit bargraph heights
+			tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+			amazonBar.style.height = renderBarHeight(amazonCombination, tardigradeCombination)
+			googleBar.style.height = renderBarHeight(googleCombination, tardigradeCombination)
+			microsoftBar.style.height = renderBarHeight(microsoftCombination, tardigradeCombination)
+
+			// check for checked box on every calculation
+			multiZoneCalc()
+
 		}
+
+		var renderCalculation = function(total) {
+			if(isNaN(total)) {
+				return "$0"
+			} else {
+				return  "$" + (Math.ceil(total * 100) / 100).toFixed().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			}
+		}
+
+		var renderBarHeight = function(total, tardigradeTotal, checked) {
+			var checkbox = document.getElementById('checkbox');
+
+			var factor = checkbox.checked && tardigradeTotal > 100 && tardigradeTotal < 20000 ? 5 : 3
+			var base = tardigradeTotal * factor
+			if(total == 0 && tardigradeTotal == 0 || (isNaN(total) || isNaN(tardigradeTotal))) {
+				return "0%"
+			} else {
+				return ((total / base) * 100) + "%"
+			}
+		}
+
+		var amazonCalculation = function(input, measureChoice, serviceType) {
+			if(serviceType === "storage") {
+				if(measureChoice === "GB") {
+					if(input <= 1000) {
+						return input * .023
+					} else if(input > 1000 && input <= 50000) {
+						return input * .022
+					} else if(input > 50000) {
+						return input * .021
+					}
+				} else if(measureChoice === "TB") {
+					if(input <= 1) {
+						return input * 23
+					} else if(input > 1 && input <= 50) {
+						return input * 22
+					} else if(input > 50) {
+						return input * 21
+					}
+				}
+			} else if(serviceType === "download") {
+				if(measureChoice === "GB") {
+					if(input >= 1 && input <= 10) {
+						return input * .090
+					} else if(input > 10 && input <= 50000) {
+						return input * .085
+					} else if(input > 50000 && input <= 150000) {
+						return input * .070
+					} else if(input > 150000) {
+						return input * .050
+					} else {
+						return 0
+					}
+				} else if(measureChoice === "TB") {
+					if(input >= .001 && input <= .01) {
+						return input * 90
+					} else if(input > .01 && input <= 50) {
+						return input * 85
+					} else if(input > 50 && input <= 150) {
+						return input * 70
+					} else if(input > 150) {
+						return input * 50
+					} else  {
+						return 0
+					}
+				}
+			}
+		}
+
+		var googleCalculation = function(input, measureChoice, serviceType) {
+
+			if(serviceType === "storage") {
+				if(measureChoice === "GB") {
+					return input * .026
+				} else if(measureChoice === "TB") {
+					return input * 26
+				}
+			} else if(serviceType === "download") {
+				if(measureChoice === "GB") {
+					if(input >= 0 && input <= 1000) {
+						return input * .120
+					} else if(input > 1000 && input <= 10000) {
+						return input * .110
+					} else if(input > 10000) {
+						return input * .080
+					}
+					return input * .080
+				} else if(measureChoice === "TB") {
+					if(input <= 1) {
+						return input * 120
+					} else if(input > 1 && input <= 10) {
+						return input * 110
+					} else if(input > 10) {
+						return input * 80
+					}
+				}
+			}
+		}
+
+		var microsoftCalculation = function(input, measureChoice, serviceType) {
+			if(serviceType === "storage") {
+				if(measureChoice === "GB") {
+					if(input <= 50000) {
+						return input * .0184
+					} else if(input > 50000 && input <= 500000) {
+						return input * .00177
+					} else if(input < 500000) {
+						return input * .00170
+					}
+				} else if(measureChoice === "TB") {
+					if(input >= 1 && input <= 50) {
+						return input * 18.40
+					} else if(input > 50 && input <= 500) {
+						return input * 17.70
+					} else if(input > 500) {
+						return input * 17
+					} else {
+						return 0
+					}
+				}
+			} else if(serviceType === "download") {
+				if(measureChoice === "GB") {
+					if(input > 5 && input <= 10000) {
+						return input * .0870
+					} else if(input > 10000 && input <= 50000) {
+						return input * .0830
+					} else if(input > 50000 && input <= 150000) {
+						return input * .070
+					} else if(input > 150000 && input <= 350000) {
+						return input * .050
+					} else if(input > 350000) {
+						return input * .050
+					} else {
+						return 0
+					}
+				} else if(measureChoice === "TB") {
+					if(input <= .005) {
+						return 0
+					} else if(input > .005 && input <= 10) {
+						return input * 87
+					} else if(input > 10 && input <= 50) {
+						return input * 83
+					} else if(input > 50 && input <= 150) {
+						return input * 70
+					} else if(input > 150) {
+						return input * 50
+					}
+				}
+			}
+		}
+
+		var tardigradeCalculation = function(measureChoice, serviceType) {
+			if(serviceType === "download") {
+				if(measureChoice === "GB") {
+					return .045
+				} else if(measureChoice === "TB") {
+					return 45
+				}
+			} else if(serviceType === "storage") {
+				if(measureChoice === "GB") {
+					return .01
+				} else if(measureChoice === "TB") {
+					return 10
+				}
+			}
+		}
+
+		// trigger calculation on every input change
+		var onInputChange = function(input, recentMeasureChoice, previousMeasureChoice) {
+			input.addEventListener('change', event => {
+				if(input.value >= 0) {
+					calculate(recentMeasureChoice, previousMeasureChoice)
+				}
+			});
+      input.addEventListener('keyup', event => {
+				if(input.value >= 0) {
+					calculate(recentMeasureChoice, previousMeasureChoice)
+				}
+			});
+		}
+
+		// check whether to render pricing question cta
+		var petabyteCalcCheck = function(serviceType, input) {
+			if(serviceType === "GB" && input >= 1000000) {
+				return true
+			} else if(serviceType === "TB" && input >= 1000) {
+				return true
+			}
+			return false
+		}
+
+		var multiZoneCalc = function(event) {
+			var checkbox = document.getElementById('checkbox');
+			var storageInputValue = document.getElementById("storage").value;
+			var downloadInputValue = document.getElementById("download").value;
+			var downloadMeasureChoice = ""
+			var storageMeasureChoice = ""
+			var downloadMeasureElements = document.querySelectorAll(".download-measure")
+			var storageMeasureElements = document.querySelectorAll(".storage-measure")
+
+			for (var i = 0; i < downloadMeasureElements.length; i++) {
+				if(downloadMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					downloadMeasureChoice = downloadMeasureElements[i].textContent
+				}
+			}
+
+			for (var i = 0; i < storageMeasureElements.length; i++) {
+				if(storageMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+					storageMeasureChoice = storageMeasureElements[i].textContent
+				}
+			}
+
+
+			if (checkbox.checked) {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+
+				var amazonCombination = (amazonCalculation(storageInputValue, storageMeasureChoice, "storage")) + (amazonCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+				var googleCombination = (googleCalculation(storageInputValue, storageMeasureChoice, "storage")) + (googleCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+				var microsoftCombination = (microsoftCalculation(storageInputValue, storageMeasureChoice, "storage")) + (microsoftCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+
+				var amazonDoubleCombination = (amazonCalculation((storageInputValue * 2), storageMeasureChoice, "storage")) + (amazonCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+				var googleDoubleCombination = (googleCalculation((storageInputValue * 2), storageMeasureChoice, "storage")) + (googleCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+				var microsoftDoubleCombination = (microsoftCalculation((storageInputValue * 2), storageMeasureChoice, "storage")) + (microsoftCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+
+
+				var amazonTotal = renderCalculation(amazonCombination)
+				var googleTotal = renderCalculation(googleCombination)
+				var microsoftTotal = renderCalculation(microsoftCombination)
+
+
+				amazonTotal = renderCalculation(amazonDoubleCombination)
+				googleTotal = renderCalculation(googleDoubleCombination)
+				microsoftTotal = renderCalculation(microsoftDoubleCombination)
+
+
+				amazonEstimate.textContent = amazonTotal
+				googleEstimate.textContent = googleTotal
+				microsoftEstimate.textContent = microsoftTotal
+
+				tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+				amazonBar.style.height = renderBarHeight(amazonDoubleCombination, tardigradeCombination)
+				googleBar.style.height = renderBarHeight(googleDoubleCombination, tardigradeCombination)
+				microsoftBar.style.height = renderBarHeight(microsoftDoubleCombination, tardigradeCombination)
+
+			} else {
+				var tardigradeCombination = (storageInputValue * tardigradeCalculation(storageMeasureChoice, "storage")) + (downloadInputValue * tardigradeCalculation(downloadMeasureChoice, "download"))
+
+				var amazonCombination = (amazonCalculation(storageInputValue, storageMeasureChoice, "storage")) + (amazonCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+				var googleCombination = (googleCalculation(storageInputValue, storageMeasureChoice, "storage")) + (googleCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+				var microsoftCombination = (microsoftCalculation(storageInputValue, storageMeasureChoice, "storage")) + (microsoftCalculation(downloadInputValue, downloadMeasureChoice, "download"))
+
+				var amazonTotal = renderCalculation(amazonCombination)
+				var googleTotal = renderCalculation(googleCombination)
+				var microsoftTotal = renderCalculation(microsoftCombination)
+
+				amazonEstimate.textContent = amazonTotal
+				googleEstimate.textContent = googleTotal
+				microsoftEstimate.textContent = microsoftTotal
+
+				tardigradeBar.style.height = renderBarHeight(tardigradeCombination, tardigradeCombination)
+				amazonBar.style.height = renderBarHeight(amazonCombination, tardigradeCombination)
+				googleBar.style.height = renderBarHeight(googleCombination, tardigradeCombination)
+				microsoftBar.style.height = renderBarHeight(microsoftCombination, tardigradeCombination)
+			}
+		}
+
+
+		// homepage availability zone checkbox
+		checkbox.addEventListener('change', (event) => {
+			multiZoneCalc(event)
+		})
+
+
+		// make initial calculation
+		calculate("storage", "download")
+
+		// add measure change event listeners
+		onChangeMeasure(downloadMeasures, "download", "storage")
+		onChangeMeasure(storageMeasures, "storage", "download")
+
+		// add input change event listeners on both inputs
+		onInputChange(downloadInput, "download", "storage")
+		onInputChange(storageInput, "storage", "download")
+
 
 	</script>

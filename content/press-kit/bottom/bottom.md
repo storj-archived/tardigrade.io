@@ -1,4 +1,4 @@
 ---
-title: "Looking for Storj?"
+title: "Looking for Storj Labs?"
 cta: "Check Out the Storj Press Kit"
 ---

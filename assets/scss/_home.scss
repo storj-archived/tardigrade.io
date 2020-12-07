@@ -100,7 +100,8 @@
 .navlink {
   &:hover {
     color: #fff;
-    text-shadow: 1px 0 0 #fff;
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
   }
 }
 
@@ -277,14 +278,6 @@
   }
 }
 
-.cta-wrapper {
-  box-shadow: 0px 0px 74px rgba(31, 49, 76, 0.25);
-  border-radius: 20px;
-  height: 280px;
-  max-width: 800px;
-  background-color: white;
-}
-
 @media only screen and (max-width: 991px) {
   .hero-image {
     display: none;
@@ -382,15 +375,6 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 991px) {
-  .cta-join-btn-wrapper {
-    width: 80%;
-    margin: 0 auto;
-    top: 20px;
-    position: relative;
-  }
-}
-
 .cta-email {
   width: 45%;
   margin: 0px;
@@ -409,36 +393,11 @@
   font-size: 14px;
 }
 
-.cta-join-btn {
-  font-family: $primary-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.25px;
-  color: #ffffff;
-  height: 40px;
-  margin-top: -4px;
-  margin-left: -5px;
-  width: 172px;
-  text-align: left;
-  padding-left: 30px;
-}
-
 .cta-join-btn-arrow {
   position: relative;
-  right: 7%;
+  right: -10px;
   width: 15px;
   bottom: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .cta-join-btn {
-      margin-top: -2px;
-    }
-  }
 }
 
 .hiw {
@@ -564,17 +523,17 @@
 
 .hiw-learn-more {
   text-align: center;
-}
-
-.hiw-learn-more-text {
   color: $color--blue-light;
   font-family: $primary-font;
   font-weight: bold;
   font-size: 18px;
-  line-height: 20px;
   display: inline;
-  margin-right: 10px;
   vertical-align: middle;
+  img {
+    position: relative;
+    top: -1px;
+    left: 8px;
+  }
 }
 
 .experience {
@@ -592,6 +551,7 @@
     &__arrow {
       position: relative;
       left: 15px;
+      top: -1px;
     }
   }
 }
@@ -752,25 +712,148 @@
 }
 
 .half-price {
-  .spacer40 {
-    display: block;
-  }
-  .spacer60 {
-    display: none;
-  }
-  @media only screen and (max-width: 991px) {
-    .spacer40 {
-      display: none;
+	.justify-content-center {
+		position: relative;
+	}
+	&__content {
+		background: #F4F6F8;
+    border-radius: 6px;
+	}
+	&__label {
+		display: block;
+		font-family: $primary-font;
+		font-size: 13px;
+		line-height: 16px;
+		font-weight: bold;
+		color: #000;
+		text-align: left;
+	}
+	&__measure-text {
+		font-family: $secondary-font;
+		font-weight: 500;
+		font-size: 16px;
+		color: #AFB7C1;
+    padding-right: 2px;
+    padding-left: 2px;
+    position: relative;
+    top: -2px;
+    margin-right: 2px;
+    &:hover, &:focus {
+      text-decoration: none;
+      color: $color--blue;
     }
-    .spacer60 {
-      display: block;
-    }
-  }
+	}
+	&__bar-wrapper {
+		height: 248px;
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		text-align: center;
+	}
+	&__bar {
+		max-height: 100%;
+		width: 70%;
+		background: #D6DAE1;
+		transition-duration: .5s;
+	}
+	#tardigradeBar {
+		background: $color--blue-light;
+	}
+	&__col-wrapper {
+		margin: 0;
+		padding: 0;
+	}
+	&__chart-label {
+		font-family: $primary-font;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: 20px;
+		color: #939ba0;
+		text-align: center;
+	}
+	&__estimate {
+		&__price {
+			font-family: $primary-font;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 46px;
+			line-height: 20px;
+			color: $color--blue-light;
+			max-width: 260px;
+			wrap: unset;
+			position: relative;
+      top: 8px;
+      height: 37px;
+			padding-top: 10px;
+			text-align: left;
+		}
+		&__text {
+			font-family: $primary-font;
+			font-size: 10px;
+			line-height: 20px;
+			font-weight: bold;
+			color: #354049;
+			text-align: left;
+			margin-top: 15px;
+		}
+	}
+	&__input {
+		border: none;
+		width: 94px;
+    display: inline-block;
+    font-family: $secondary-font;
+    font-weight: bold;
+    color: #000;
+    margin-right: 4px;
+	}
+	.form-check-label {
+		font-family: $secondary-font;
+		font-size: 12px;
+    line-height: 22px;
+	}
+	&__pricing-cta {
+		font-family: $secondary-font;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 16px;
+		&__link {
+			color: $color--blue-light;
+			font-weight: 400;
+      &:hover {
+        text-decoration: underline;
+      }
+		}
+	}
+	&__competitors {
+		@media only screen and (max-width: $breakpoint-lg) {
+		  left: 19%;
+		}
+		@media only screen and (max-width: $breakpoint-md) {
+		  left: 8%;
+		}
+		&__price {
+			font-size: 14px;
+			line-height: 20px;
+			color: #949BA0;
+      font-family: $primary-font;
+			font-weight: 600;
+			text-align: center;
+		}
+	}
+	#petaContact {
+		display: none;
+	}
+	&__peta-contact {
+		background: #EAECF0;
+    border-radius: 6px;
+		@media only screen and (max-width: $breakpoint-lg) {
+			width: 100%;
+		}
+	}
 }
 
-.half-price__content {
-  text-align: center;
-}
 
 @media only screen and (max-width: 991px) {
   .half-price__section {
@@ -990,13 +1073,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .dev-in-mind__cta-wrapper {
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
   .dev-in-mind__content {
     text-align: center;
     margin: 0 auto;
@@ -1297,16 +1373,6 @@ a {
   border-right: 1px solid #dcdcdc;
 }
 
-.waitlist-middle {
-  text-decoration: none !important;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: #2582ff;
-}
-
 .limit {
   max-width: 420px;
 }
@@ -1465,53 +1531,6 @@ a {
   line-height: 23px;
   text-align: center;
   margin: 0 auto;
-}
-
-/* Waitlist */
-
-.waitlist-heading {
-  margin-bottom: 0.3em;
-  color: color(primary);
-  font-weight: 800;
-  font-size: 40px;
-}
-
-.waitlist-sub-heading {
-  height: 93px;
-  opacity: 0.8;
-  color: color(primary);
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-}
-
-.waitlist-input-name,
-.waitlist-input-email {
-  width: 100%;
-  margin-top: 15px;
-  padding: 15px;
-  max-width: 500px;
-}
-
-.waitlist-input-name {
-  border: none;
-  background-color: color(secondary);
-  color: color(accent);
-}
-
-.waitlist-input-email {
-  border: none;
-  background-color: color(secondary);
-  color: color(accent);
-}
-
-.get-access-btn {
-  height: 46px;
-  border: 2px solid color(primary);
-  border-radius: 4px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-weight: 800;
 }
 
 /* Timeline */

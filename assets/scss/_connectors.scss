@@ -27,19 +27,19 @@
   }
   .inner-hero-wrapper {
     height: 100%;
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $breakpoint-xl) {
       background: url("/img/tar-connectors-hero.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 40px 230px;
     }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: $breakpoint-lg) {
       background-position: 40px 260px;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $breakpoint-md) {
       background-position: 40px 280px;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $breakpoint-md) {
       background-position: 40px 300px;
     }
     @media only screen and (max-width: 600px) {
@@ -56,7 +56,7 @@
     background-position: 40px 200px;
     background-repeat: no-repeat;
     height: 100%;
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $breakpoint-xl) {
       background: none;
     }
   }
@@ -65,7 +65,7 @@
     text-align: center;
     margin-top: 3%;
     color: #fff;
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $breakpoint-xl) {
       margin-top: 5%;
     }
     @media only screen and (max-width: 600px) {
@@ -95,7 +95,7 @@
     width: 380px;
     margin: 0 auto;
     margin-top: 30px;
-    @media only screen and (max-width: 575px) {
+    @media only screen and (max-width: $breakpoint-sm) {
       width: 105%;
     }
   }
@@ -103,16 +103,16 @@
     position: absolute;
     right: 392px;
     bottom: 12px;
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $breakpoint-xl) {
       right: 302px;
     }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: $breakpoint-lg) {
       right: 182px;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $breakpoint-md) {
       right: 92px;
     }
-    @media only screen and (max-width: 575px) {
+    @media only screen and (max-width: $breakpoint-sm) {
       right: 45px;
     }
     @media only screen and (max-width: 530px) {
@@ -158,7 +158,7 @@
 }
 
 .sidebar {
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: $breakpoint-lg) {
     display: none;
   }
   .category-title {
@@ -262,7 +262,7 @@
     opacity: 0.4;
     .connectors__partners__partner__header__name {
       width: 45%;
-      @media only screen and (max-width: 1200px) {
+      @media only screen and (max-width: $breakpoint-xl) {
         width: 35%;
       }
       @media only screen and (max-width: 1024px) {
@@ -274,7 +274,7 @@
   .new {
     .connectors__partners__partner__header__name {
       width: 60%;
-      @media only screen and (max-width: 1200px) {
+      @media only screen and (max-width: $breakpoint-xl) {
         width: 55%;
       }
     }
@@ -354,6 +354,7 @@
       line-height: 20px;
       margin: 20px;
       color: #000;
+      min-height: 40px;
     }
     &__category {
       font-family: $secondary-font;
@@ -388,10 +389,11 @@
       float: right;
       margin-right: 25px;
       position: relative;
-      bottom: 15px;
-      @media only screen and (max-width: 1024px) {
+      bottom: 40px;
+      @media only screen and (max-width: $breakpoint-lg) {
         float: none;
-        bottom: 0;
+				bottom: 20px;
+				left: 96px;
       }
     }
     &__header {
@@ -411,23 +413,6 @@
     margin: 80px auto;
     display: none;
     font-size: 24px;
-  }
-}
-#loadMore {
-  .load-more-btn {
-    margin: 0 auto;
-    font-family: $primary-font;
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 41px;
-    text-align: center;
-    color: $color--blue-light;
-    border: 2px solid $color--blue-light;
-    width: 244px;
-    height: 46px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 40px;
   }
 }
 

@@ -2,7 +2,7 @@ backend:
   name: github
   repo: storj/Tardigrade.io
   branch: master
-  base_url: https://tardigrade.io	
+  base_url: https://tardigrade.io
   auth_endpoint: /oauth/auth
 
 media_folder: "static/img/"
@@ -66,7 +66,7 @@ collections:
     - {label: "Desc", name: "desc", widget: "string"}
     - {label: "class", name: "class", widget: "hidden", default: "simplestorage"}
     - {label: "Draft", name: "draft", widget: "boolean", default: false}
-  - name: "why-tardigrade"
+  - name: "why-tardigrade-heading"
     label: "Home-Why-Tardigrade-section-heading"
     folder: "content/home/why-tardigrade/heading/"
     slug: "{{slug}}"
@@ -74,7 +74,7 @@ collections:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "heading", name: "heading", widget: "string"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "why-tardigrade"
+  - name: "why-tardigrade-reasons"
     label: "Home-Why-Tardigrade-Reasons-section"
     folder: "content/home/why-tardigrade/reasons/"
     slug: "{{slug}}"
@@ -88,7 +88,7 @@ collections:
     - {label: "w", name: "w", widget: "hidden"}
     - {label: "weight", name: "weight", widget: "hidden"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "why-tardigrade"
+  - name: "why-tardigrade-cta"
     label: "Home-Why-Tardigrade-CTA"
     folder: "content/home/why-tardigrade/cta/"
     slug: "{{slug}}"
@@ -108,7 +108,7 @@ collections:
     - {label: "isActive", name: "isActive", widget: "hidden", default: false}
     - {label: "class", name: "class", widget: "hidden", default: "usecase"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "usecases"
+  - name: "usecases-data-tabs"
     label: "Home-Usecase-Description-section"
     folder: "content/home/usecases/data-tabs/"
     slug: "{{slug}}"
@@ -120,26 +120,6 @@ collections:
     - {label: "Description", name: "desc", widget: "string"}
     - {label: "class", name: "class", widget: "hidden", default: "tab"}
     - {label: "isActive", name: "isActive", widget: "hidden", default: false}
-    - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "milestones"
-    label: "Home-Milestones-Heading-section"
-    folder: "content/milestones/heading/"
-    slug: "{{slug}}"
-    fields:
-    - {label: "title", name: "title", widget: "hidden"}
-    - {label: "Heading", name: "heading", widget: "string"}
-    - {label: "Sub-heading-1", name: "subheading1", widget: "string"}
-    - {label: "Sub-heading-2", name: "subheading2", widget: "string"}
-    - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "milestones"
-    label: "Home-Milestones-section"
-    folder: "content/milestones/milestones"
-    slug: "{{slug}}"
-    fields:
-    - {label: "title", name: "title", widget: "hidden"}
-    - {label: "Heading", name: "heading", widget: "string"}
-    - {label: "Status", name: "status", widget: "string"}
-    - {label: "class", name: "class", widget: "hidden", default: "milestone"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
   - name: "footer-connect"
     label: "Footer-Connect-Column"
@@ -191,7 +171,7 @@ collections:
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Content", name: "content", widget: "string"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "partners"
+  - name: "partner-benefits"
     label: "partners-benefits-heading"
     folder: "content/partner/benefits/"
     slug: "{{slug}}"
@@ -199,17 +179,7 @@ collections:
     - {label: "title", name: "title", widget: "hidden"}
     - {label: "heading", name: "heading", widget: "string"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "partners"
-    label: "Partners-Logo-section"
-    folder: "content/partner/benefit-icons/"
-    slug: "{{slug}}"
-    fields:
-    - {label: "title", name: "title", widget: "hidden"}
-    - {label: "Image", name: "img", widget: "image"}
-    - {label: "class", name: "class", widget: "hidden", default: "partners"}
-    - {label: "weight", name: "weight", widget: "hidden"}
-    - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "partners"
+  - name: "partner-benefit-icons"
     label: "Partners-Benefits-section"
     folder: "content/partner/benefit-icons/"
     slug: "{{slug}}"
@@ -245,15 +215,4 @@ collections:
     - {label: "Image", name: "img", widget: "image"}
     - {label: "class", name: "class", widget: "hidden", default: "virtuous-cycle"}
     - {label: "weight", name: "weight", widget: "hidden"}
-    - {label: "draft", name: "draft", widget: "boolean", default: false}
-  - name: "waitlist"
-    label: "waitlist"
-    folder: "content/waitlist/"
-    slug: "{{slug}}"
-    fields:
-    - {label: "title", name: "title", widget: "hidden"}
-    - {label: "Heading", name: "heading", widget: "string"}
-    - {label: "Sub-heading", name: "subHeading", widget: "string"}
-    - {label: "Form-Heading", name: "formHeading", widget: "string"}
-    - {label: "Form-Description", name: "formDescription", widget: "string"}
     - {label: "draft", name: "draft", widget: "boolean", default: false}

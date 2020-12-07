@@ -1,11 +1,12 @@
 .second-nav.navbar {
-  margin-top: 15px;
+  padding-top: 20px;
   padding-bottom: 10px;
   .navlink {
     color: #93a1af;
     &:hover {
       color: #93a1af;
-      text-shadow: 1px 0 0 #93a1af;
+      text-stroke: 1px #93a1af;
+      -webkit-text-stroke: 1px #93a1af;
     }
     &:active {
       font-weight: bold;
@@ -32,5 +33,9 @@
   }
   .navbar-toggler[aria-expanded="true"] {
     visibility: visible;
+  }
+  .logo {
+    margin-top: -14px;
+    height: 21px;
   }
 }

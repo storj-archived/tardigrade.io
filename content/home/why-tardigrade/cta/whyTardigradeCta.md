@@ -1,5 +1,5 @@
 ---
-title: "why-tardigrade__cta"
+title: "why-tardigrade cta"
 ctaText: Get Started
 link: "/waitlist/"
 ---

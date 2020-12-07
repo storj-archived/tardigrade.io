@@ -1,0 +1,46 @@
+<div class="row align-items-center mb-4">
+    <div class="col-md-12 col-lg-5 text-white mb-5 mt-5 mt-lg-0">
+        <h1 class="mb-4">Start Using Your Tardigrade Account</h1>
+        <p class="lead">We’re thrilled you’re still interested in using Tardigrade. To optimize your experience, please take a moment to answer a few questions.</p>
+    </div>
+    <div class="col-md-12 col-lg-6 offset-lg-1">
+      <div class="card p-5 my-5">
+        <h3 class="mb-4">Get Started</h3>
+        <form name="submit-to-google-sheet" action="/keep-my-account-success">
+          <label for="email">Account Email Address</label>
+          <input type="email" id="email" name="email" value="" placeholder="email@example.com" class="form-control mb-3" required>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" value="" placeholder="First Last" class="form-control mb-3" required>
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" value="" placeholder="Company Name" class="form-control mb-3" required>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" value="" placeholder="Position title" class="form-control mb-3" required>
+          <button type="submit" class="btn btn-primary btn-lg mt-4">Keep My Account</button>
+        </form>
+      </div>
+    </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyqLxtHL9HEmPW1r15-FuT61JuyZZd73DC7MRh5hPU41me9LG0/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => window.location.href = "/keep-my-account-success")
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+  function getURLParameter(e) {
+  return decodeURI((new RegExp(e + "=(.+?)(&|$)").exec(location.search) || [, ""])[1]);
+  }
+
+  if (getURLParameter("email") === "") {
+    console.log("No URL param value found.");
+  } else {
+    document.getElementById("email").value = getURLParameter("email");
+  }
+</script>
