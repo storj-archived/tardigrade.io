@@ -11,8 +11,8 @@ about: "Filebase is a cloud-managed offering, that allows users to store data on
 released: "12/05/20"
 version: "1"
 bgImg: "/img/filebase-bg.svg"
-repo: "https://github.com/duplicati/duplicati/releases"
-website: "https://www.duplicati.com/"
-docs: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
-download: "https://documentation.tardigrade.io/how-tos/backup-with-duplicati"
+website: "https://filebase.com/"
+docs: "https://docs.filebase.com"
+ctaName: "Get Started with Filebase"
+ctaLink: "https://filebase.com/"
 ---
