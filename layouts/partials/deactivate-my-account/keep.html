@@ -24,38 +24,3 @@
       </div>
     </div>
 </div>
-
-<script type="text/javascript">
-  document.getElementById('otherReason').style.display='none';
-  function CheckReason(val){
-   var element=document.getElementById('reason');
-   if(val=='other')
-     document.getElementById('otherReason').style.display='block';
-   else
-     document.getElementById('otherReason').style.display='none';
-  }
-</script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyX-1N5TK6WGEsQTvEoo9M0TJEK8rWxYT6ZDoUV4O8l3896axgp/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => window.location.href = "/deactivate-my-account-success")
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
-<script>
-  function getURLParameter(e) {
-  return decodeURI((new RegExp(e + "=(.+?)(&|$)").exec(location.search) || [, ""])[1]);
-  }
-
-  if (getURLParameter("email") === "") {
-    console.log("No URL param value found.");
-  } else {
-    document.getElementById("email").value = getURLParameter("email");
-  }
-</script>

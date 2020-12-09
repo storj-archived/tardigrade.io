@@ -1,1 +1,7 @@
 node_modules
+
+# Mac OS X files
+.DS_Store
+
+# Jetbrains
+.idea/
