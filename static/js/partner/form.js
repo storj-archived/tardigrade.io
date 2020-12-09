@@ -213,7 +213,7 @@ window.onload = function() {
         }
         index = index - 1
         parent[index].setAttribute("style", "display:block;");
-        setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+        setTimeout(function(){parent[index].querySelector('input').focus(); }, 200);
     }
 
     nextButton.onclick = function (event) {
