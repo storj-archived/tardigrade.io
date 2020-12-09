@@ -2,7 +2,6 @@
 name : "Filebase"
 partnerid : "filebase"
 img: "/img/partners/filebase.svg"
-class: "partner"
 categories: "App Connector"
 link: "/connectors/filebase"
 new: true
