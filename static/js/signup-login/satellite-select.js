@@ -104,3 +104,15 @@ window.onload = function() {
     selectSatellite(usSatellite.name);
     setButtonLabel()
 }
+
+document.getElementById("us-container").addEventListener("click", function() {
+    selectSatellite(usSatellite.name)
+});
+
+document.getElementById("asia-container").addEventListener("click", function() {
+    selectSatellite(asiaSatellite.name)
+});
+
+document.getElementById("europe-container").addEventListener("click", function() {
+    selectSatellite(europeSatellite.name)
+});
