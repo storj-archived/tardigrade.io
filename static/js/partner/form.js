@@ -40,7 +40,7 @@ window.onload = function() {
         firstStep.setAttribute("style", "display:inherit;");
         progressBarWrapper.setAttribute("style", "display:inherit;");
         stepButtons.setAttribute("style", "display:inherit;");
-        setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+        setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
     }
 
     // if value is input or selected on step
@@ -72,7 +72,7 @@ window.onload = function() {
 
         // remove error display and focus input for next step
         errElm[index].setAttribute("style", "display:none");
-        setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+        setTimeout(function(){parent[index].querySelector('input').focus(); }, 200);
     }
 
     // check for at least one option selection
