@@ -36,42 +36,41 @@ window.onload = function() {
     }
 
     function beginForm(event) {
-        formStart.setAttribute("style", "display:none;");
-        firstStep.setAttribute("style", "display:inherit;");
-        progressBarWrapper.setAttribute("style", "display:inherit;");
-        stepButtons.setAttribute("style", "display:inherit;");
+        formStart.style.display = 'none';
+        firstStep.style.display = 'inherit';
+        progressBarWrapper.style.display = 'inherit';
+        stepButtons.style.display = 'inherit';
         setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
     }
 
     // if value is input or selected on step
     function successfulClick(event) {
-        parent[index].setAttribute("style", "display:none;");
+        parent[index].style.display = 'none';
 
         // make sure back btn is present
         if(backButton) {
-            backButton.setAttribute("style", "display:inline-block;");
+            backButton.style.display = 'inline-block';
         }
 
         // progress bar logic
         if(progressBar) {
-            progressBar.innerHTML = index + 2
+            progressBar.innerHTML = (index + 2).toString()
             progressBarValue = progressBarValue + 8.333;
-            progressBar.setAttribute("style", "width: " + progressBarValue + "%");
+            progressBar.style.width = `${progressBarValue}%`
         }
 
         // display next step
         index = index + 1
-        parent[index].setAttribute("style", "display:block;");
-        document.querySelectorAll(".user-input")[index]
+        parent[index].style.display = 'inline-block';
 
         // remove next button and show submit button if last step
         if(parent[index].classList.contains('partner-form-per-month')) {
-            nextButton.setAttribute("style", "display:none;");
-            submitButton.setAttribute("style", "display:inline-block;");
+            nextButton.style.display = 'none';
+            submitButton.style.display = 'inline-block';
         }
 
         // remove error display and focus input for next step
-        errElm[index].setAttribute("style", "display:none");
+        errElm[index].style.display = 'none';
         setTimeout(function(){parent[index].querySelector('input').focus(); }, 200);
     }
 
@@ -81,15 +80,15 @@ window.onload = function() {
         for (let i = 0, length = currentStepOptions.length; i < length; i++) {
             if (currentStepOptions[i].checked) {
                 selected = true;
-                errElm[index].setAttribute("style", "display:none;");
+                errElm[index].style.display = 'none';
                 if(!isSubmit) {
                     successfulClick();
                 }
             }
         }
         if(!selected) {
-            errElm[index].setAttribute("style", "display:block;");
-            setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+            errElm[index].style.display = 'block';
+            setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
         }
     }
 
@@ -97,8 +96,8 @@ window.onload = function() {
         var userEmailInput = parent[index].querySelector(".user-email");
         // if email input does not include ampersand
         if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
-            errElm[index].setAttribute("style", "display:block;");
-            setTimeout(function(){ 		parent[index].querySelector('input').focus(); }, 200);
+            errElm[index].style.display = 'block';
+            setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
         } else if(parent[index].classList.contains("partner-form-use-case")) {
             multiOptionErrCheck(index, useCaseOptions)
         } else if(parent[index].classList.contains("partner-form-data-amount")) {
@@ -106,7 +105,7 @@ window.onload = function() {
         } else if(parent[index].classList.contains("partner-form-file-size")) {
             multiOptionErrCheck(index, fileSizeOptions)
         } else {
-            errElm[index].setAttribute("style", "display:none;");
+            errElm[index].style.display = 'none';
             successfulClick();
         }
     }
@@ -117,7 +116,7 @@ window.onload = function() {
         if(parent[index] && errElm && errElm[index]) {
             // if required field is empty
             if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
-                errElm[index].setAttribute("style", "display:block;");
+                errElm[index].style.display = 'block';
                 setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
             } else {
                 errorCheck(index)
@@ -203,16 +202,16 @@ window.onload = function() {
     backButton.onclick = function (event) {
         // no back button on first step
         if(index == 1 && backButton) {
-            backButton.setAttribute("style", "display:none");
+            backButton.style.display = 'none';
         }
-        parent[index].setAttribute("style", "display:none;");
+        parent[index].style.display = 'none';
         if(progressBar) {
             progressBar.innerHTML = index;
             progressBarValue = progressBarValue - 8.333;
-            progressBar.setAttribute("style", "width: " + progressBarValue + "%");
+            progressBar.style.width = `${progressBarValue}%`
         }
         index = index - 1
-        parent[index].setAttribute("style", "display:block;");
+        parent[index].style.display = 'block';
         setTimeout(function(){parent[index].querySelector('input').focus(); }, 200);
     }
 
