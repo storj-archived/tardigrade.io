@@ -12,3 +12,7 @@ function redirectToLogin() {
             location.href = 'https://us-central-1.tardigrade.io/login?activated=false';
     }
 }
+
+window.onload = function () {
+    document.getElementById('verifyButton').addEventListener('click', redirectToLogin)
+}
