@@ -24,10 +24,10 @@ var microsoftBar = document.getElementById("microsoftBar");
 var onChangeMeasure = function(measures, recentMeasureChoice, previousMeasureChoice) {
     if(measures) {
         measures.forEach(el => el.addEventListener('click', event => {
-            el.style.color="#2582FF";
+            el.classList.add('selected');
             for (var i = 0; i < measures.length; i++) {
                 if(el !== measures[i]) {
-                    measures[i].style.color="#AFB7C1";
+                    measures[i].classList.remove('selected');
                 }
             }
             calculate(recentMeasureChoice, previousMeasureChoice)
@@ -58,13 +58,13 @@ var calculate = function(recentMeasureChoice, previousMeasureChoice) {
 
     // change chosen measure color
     for (var i = 0; i < previousMeasureElements.length; i++) {
-        if(previousMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+        if(previousMeasureElements[i].classList.contains('selected')) {
             choiceTwo = previousMeasureElements[i].textContent
         }
     }
 
     for (var i = 0; i < recentMeasureElements.length; i++) {
-        if(recentMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+        if(recentMeasureElements[i].classList.contains('selected')) {
             choiceOne = recentMeasureElements[i].textContent
         }
     }
@@ -127,7 +127,7 @@ var renderCalculation = function(total) {
     }
 }
 
-var renderBarHeight = function(total, tardigradeTotal, checked) {
+var renderBarHeight = function(total, tardigradeTotal) {
     var checkbox = document.getElementById('checkbox');
 
     var factor = checkbox.checked && tardigradeTotal > 100 && tardigradeTotal < 20000 ? 5 : 3
@@ -319,13 +319,13 @@ var multiZoneCalc = function(event) {
     var storageMeasureElements = document.querySelectorAll(".storage-measure")
 
     for (var i = 0; i < downloadMeasureElements.length; i++) {
-        if(downloadMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+        if(downloadMeasureElements[i].classList.contains('selected')) {
             downloadMeasureChoice = downloadMeasureElements[i].textContent
         }
     }
 
     for (var i = 0; i < storageMeasureElements.length; i++) {
-        if(storageMeasureElements[i].style.color === "rgb(37, 130, 255)") {
+        if(storageMeasureElements[i].classList.contains('selected')) {
             storageMeasureChoice = storageMeasureElements[i].textContent
         }
     }
