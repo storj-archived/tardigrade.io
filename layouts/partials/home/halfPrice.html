@@ -12,12 +12,12 @@
     			      <label aria-label="storage" class="half-price__label my-2">Storage</label>
     			      <input type="number" id="storage" class="half-price__input form-control pl-2" name="storage" value="1" min="0" required>
   							<button class="btn btn-link half-price__measure-text storage-measure">GB</button>
-  							<button style="color:#2582FF" class="btn btn-link half-price__measure-text storage-measure">TB</button>
+  							<button class="btn btn-link half-price__measure-text storage-measure selected">TB</button>
     					</div>
     					<div class="half-price__input-wrapper mt-4">
     			      <label aria-label="download" class="half-price__label my-2">Download</label>
     			      <input type="number" id="download" class="half-price__input form-control pl-2" name="download" value="1000" min="0" required>
-  							<button style="color:#2582FF" class="btn btn-link half-price__measure-text download-measure">GB</button>
+  							<button class="btn btn-link half-price__measure-text download-measure selected">GB</button>
   							<button class="btn btn-link half-price__measure-text download-measure">TB</button>
     					</div>
     					<div class="custom-control custom-checkbox mt-4">
@@ -36,8 +36,8 @@
     								<div class="half-price__bar m-auto" id="tardigradeBar">
     								</div>
     							</div>
-    							<p style="color:#2582FF" id="tardigradeEstimate" class="half-price__competitors__price pt-2"></p>
-    							<p style="color:#2582FF" class="half-price__chart-label">Tardigrade</p>
+    							<p id="tardigradeEstimate" class="half-price__competitors__price pt-2"></p>
+    							<p id="tardigradeEstimateLabel" class="half-price__chart-label">Tardigrade</p>
     						</div>
     						<div class="half-price__col-wrapper col-3">
     							<div class="half-price__bar-wrapper">

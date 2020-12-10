@@ -715,13 +715,6 @@
   background-repeat: no-repeat;
 }
 
-#tbStorageButton,
-#gbDownloadButton,
-#tardigradeEstimate,
-#tardigradeEstimateLabel {
-  color: #2582FF;
-}
-
 .half-price {
 	.justify-content-center {
 		position: relative;
@@ -863,6 +856,12 @@
 			width: 100%;
 		}
 	}
+
+    .selected,
+    #tardigradeEstimate,
+    #tardigradeEstimateLabel {
+      color: #2582FF;
+    }
 }
 
 
