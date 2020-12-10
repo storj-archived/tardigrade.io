@@ -11,7 +11,9 @@
 .partner-form-how-long,
 .partner-form-per-month,
 #step-buttons,
-#progress-bar-wrapper {
+#progress-bar-wrapper,
+#partner-form-back,
+#partner-form-submit {
   display: none;
 }
 
@@ -106,7 +108,8 @@
       }
     }
 		.progress-bar {
-			height: 17px;
+          width: 8.3%;
+          height: 17px;
 		}
   }
 }

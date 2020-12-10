@@ -29,4 +29,6 @@ function closeBanner(){
 
 window.onload = function() {
     checkConsent();
+
+    document.getElementById('consent-banner-close').onclick = () => closeBanner()
 }

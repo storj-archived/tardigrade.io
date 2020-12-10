@@ -52,6 +52,10 @@
   }
 }
 
+.navbar-logo {
+  margin-top: -14px;
+}
+
 .navbar-collapse {
   @media only screen and (max-width: 991px) {
     margin-top: 20px;
@@ -709,6 +713,13 @@
   background-position: 0px 0px;
   height: 1000px;
   background-repeat: no-repeat;
+}
+
+#tbStorageButton,
+#gbDownloadButton,
+#tardigradeEstimate,
+#tardigradeEstimateLabel {
+  color: #2582FF;
 }
 
 .half-price {
@@ -2077,6 +2088,10 @@ a {
   padding: 12px 15px;
   width: 98%;
   margin: 0 auto;
+}
+
+.hero-tardigrade-msg-link {
+  text-decoration: none;
 }
 
 .hero-tardigrade-msg-left {
