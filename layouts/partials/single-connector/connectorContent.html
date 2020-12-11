@@ -8,8 +8,8 @@
 					<p class="single-connector__section-text about-text">{{ .Params.about }}</p>
 				</div>
 				<div>
-					{{if .Params.download }}
-					<a rel="noopener noreferrer" target="_blank" href="{{.Params.download}}" class="btn btn-primary btn-lg mr-2 mb-2">Download</a>
+                    {{if .Params.ctaName }}
+					<a rel="noopener noreferrer" target="_blank" href="{{.Params.ctaLink}}" class="btn btn-primary btn-lg mr-2 mb-2">{{.Params.ctaName}}</a>
 					{{end}}
 					<a rel="noopener noreferrer" target="_blank" href="/signup/?partner={{.Params.partnerid}}" class="btn btn-outline-primary btn-lg mb-2">Join Tardigrade</a>
 				</div>
@@ -28,7 +28,7 @@
 					<ul class="column-section__column right">
 						<li class="column-section__list-item">Version</li>
 						{{if .Params.version }}
-						<li class="column-section__list-item value">1.3.22</li>
+						<li class="column-section__list-item value">{{.Params.version}}</li>
 						{{end}}
 					</ul>
 					{{end}}
