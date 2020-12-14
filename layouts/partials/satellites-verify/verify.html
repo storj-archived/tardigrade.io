@@ -4,7 +4,7 @@
             <div class="satellites-verify__content">
                 <h2 class="satellites-verify__header">Got it!</h2>
                 <p class="satellites-verify__txt">Check your email for next steps.</p>
-                <button class="btn btn-primary btn-lg" onclick="redirectToLogin()">
+                <button id="verifyButton" class="btn btn-primary btn-lg">
                     Sign In
                     <img class="satellites-verify__cta__arrow" src="/img/arrow-right.svg" height="13" width="13" alt="arrow image"/>
                 </button>
@@ -21,20 +21,3 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    function redirectToLogin() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const nameParam = urlParams.get('name');
-        switch (nameParam) {
-            case 'Asia-East-1':
-                location.href = 'https://asia-east-1.tardigrade.io/login?activated=false';
-                break;
-            case 'Europe-West-1':
-                location.href = 'https://europe-west-1.tardigrade.io/login?activated=false';
-                break;
-            default:
-                location.href = 'https://us-central-1.tardigrade.io/login?activated=false';
-        }
-    }
-</script>

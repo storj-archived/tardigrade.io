@@ -10,56 +10,56 @@
             <input type="submit" value="Let's get started" name="start" id="partner-form-start" class="btn btn-primary btn-lg mb-5">
           </div>
 
-          <div style="display:none" id="partner-form-name" class="step active">
+          <div id="partner-form-name" class="step active">
             <label aria-label="firstName" class="label font-weight-bold">Your First Name *</label>
             <div class="spacer15"></div>
             <input type="text" id="firstName" class="user-input form-control required" value="" name="first_name" placeholder="First name" required>
             <div class="error invalid-feedback">Please enter your name.</div>
           </div>
 
-          <div style="display:none" class="partner-form-last-name step active">
+          <div class="partner-form-last-name step active">
             <label aria-label="lastName" class="label font-weight-bold">Your Last Name *</label>
             <div class="spacer15"></div>
             <input type="text" id="lastName" class="user-input form-control required" value="" name="last_name" placeholder="Last name" required>
             <div class="error invalid-feedback">Please enter your last name.</div>
           </div>
 
-          <div style="display:none" class="partner-form-title step active">
+          <div class="partner-form-title step active">
             <label aria-label="title" class="label font-weight-bold">Your Title *</label>
             <div class="spacer15"></div>
             <input type="text" id="title" class="user-input form-control required" value="" name="title" placeholder="Title" required>
             <div class="error invalid-feedback">Please enter your title.</div>
           </div>
 
-          <div style="display:none" class="partner-form-company step active">
+          <div class="partner-form-company step active">
             <label aria-label="company" class="label font-weight-bold">Your Company *</label>
             <div class="spacer15"></div>
             <input type="text" id="company" class="user-input form-control required" value="" name="company" placeholder="Company" required>
             <div class="error invalid-feedback">Please enter your company.</div>
           </div>
 
-          <div style="display:none" class="partner-form-company-website step active">
+          <div class="partner-form-company-website step active">
             <label aria-label="companyWebsite" class="label font-weight-bold">Your Company Website *</label>
             <div class="spacer15"></div>
             <input type="url" id="companyWebsite" class="user-input form-control required" value="" name="company_website" placeholder="Company website" required>
             <div class="error invalid-feedback">Please enter your company website.</div>
           </div>
 
-          <div style="display:none" class="partner-form-company-email step active">
+          <div class="partner-form-company-email step active">
             <label aria-label="email" class="label font-weight-bold">Your Email *</label>
             <div class="spacer15"></div>
             <input type="email" id="email" class="user-input user-email form-control required" value="" name="email"  placeholder="Email" required>
             <div class="error invalid-feedback">Invalid email address.</div>
           </div>
 
-          <div style="display:none" class="partner-form-company-number step active">
+          <div class="partner-form-company-number step active">
             <label aria-label="number" class="label font-weight-bold">Best number we can reach you at *</label>
             <div class="spacer15"></div>
             <input type="tel" id="number" class="user-input form-control required" value="" name="number" placeholder="Number" required>
             <div class="error invalid-feedback">Please enter your number.</div>
           </div>
 
-          <div style="display:none" class="partner-form-use-case step active form-group">
+          <div class="partner-form-use-case step active form-group">
             <label class="label font-weight-bold">Tell us more about your use case please, which of the following applies <span class="small">(choose as many)</span>: *</label>
             <div class="spacer15"></div>
             <div class="custom-control custom-checkbox text-left">
@@ -85,7 +85,7 @@
             <div class="error invalid-feedback">Please check your use cases.</div>
           </div>
 
-          <div style="display:none" class="partner-form-data-amount step active form-group">
+          <div class="partner-form-data-amount step active form-group">
             <label class="label font-weight-bold">What is the total amount of data that you will store in the Tardigrade platform (TB stored in a typical month)? *</label>
             <div class="spacer15"></div>
             <div class="custom-control custom-radio custom-control-inline">
@@ -111,7 +111,7 @@
             <div class="error invalid-feedback">Please select one of the options.</div>
           </div>
 
-          <div style="display:none" class="partner-form-file-size  step active form-group">
+          <div class="partner-form-file-size  step active form-group">
             <label class="label font-weight-bold">What file sizes will you usually upload? *</label>
             <div class="spacer15"></div>
             <div class="custom-control custom-radio custom-control-inline">
@@ -137,14 +137,14 @@
             <div class="error invalid-feedback">Please select one of the options.</div>
           </div>
 
-          <div style="display:none" class="partner-form-how-long step active">
+          <div class="partner-form-how-long step active">
             <label aria-label="howLong" class="label font-weight-bold">How long do you need the data to be stored on the network before you no longer need the data? *</label>
             <div class="spacer15"></div>
             <input type="text" id="howLong" class="user-input form-control required" value="" name="how_long_data_needed"  placeholder="Length of time" required>
             <div class="error invalid-feedback">Please write your answer.</div>
           </div>
 
-          <div style="display:none" class="partner-form-per-month step active form-group">
+          <div class="partner-form-per-month step active form-group">
             <label class="label font-weight-bold">What number of times do you plan to download your data set per month? *</label>
             <div class="spacer15"></div>
             <div class="custom-control custom-radio text-left">
@@ -166,14 +166,14 @@
             <div class="error invalid-feedback">Please select one of the options.</div>
           </div>
 
-          <div style="display:none" id="step-buttons">
-            <input style="display:none" type="submit" value="Back" name="back" class="btn btn-outline-primary btn-lg mr-4 my-4" id="partner-form-back">
+          <div id="step-buttons">
+            <input type="submit" value="Back" name="back" class="btn btn-outline-primary btn-lg mr-4 my-4" id="partner-form-back">
             <input type="submit" value="Next" name="next" class="btn btn-primary btn-lg my-4" id="partner-form-next">
-            <input style="display:none" type="submit" value="Submit" name="submit" class="btn btn-primary btn-lg" id="partner-form-submit">
+            <input type="submit" value="Submit" name="submit" class="btn btn-primary btn-lg" id="partner-form-submit">
           </div>
 
-          <div style="display:none" id="progress-bar-wrapper" class="progress">
-            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 8.3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
+          <div id="progress-bar-wrapper" class="progress">
+            <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="12">1</div>
           </div>
 
       </div>

@@ -1,3 +1,22 @@
+#partner-form-name,
+.partner-form-last-name,
+.partner-form-title,
+.partner-form-company,
+.partner-form-company-website,
+.partner-form-company-email,
+.partner-form-company-number,
+.partner-form-use-case,
+.partner-form-data-amount,
+.partner-form-file-size,
+.partner-form-how-long,
+.partner-form-per-month,
+#step-buttons,
+#progress-bar-wrapper,
+#partner-form-back,
+#partner-form-submit {
+  display: none;
+}
+
 @-webkit-keyframes in {
   0% {
     opacity: 0;
@@ -89,7 +108,8 @@
       }
     }
 		.progress-bar {
-			height: 17px;
+          width: 8.3%;
+          height: 17px;
 		}
   }
 }

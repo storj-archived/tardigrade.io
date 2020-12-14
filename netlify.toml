@@ -46,3 +46,4 @@ status = 404
   [headers.values]
     X-Frame-Options = "deny"
     Strict-Transport-Security = "max-age=300; includeSubDomains"
+    Content-Security-Policy = "default-src 'none'; script-src 'self' *.googleadservices.com *.google-analytics.com *.googleapis.com *.googletagmanager.com *.segment.com *.pingdom.net *.netlify.com unpkg.com *.customer.io; connect-src 'self' *.google.com *.segment.io *.google-analytics.com; img-src 'self' data: *.google-analytics.com *.customer.io *.doubleclick.net *.googletagmanager.com *.google.com; style-src 'self' *.googleapis.com *.cloudflare.com *.bootstrapcdn.com; base-uri 'self'; form-action 'self'; font-src 'self' *.gstatic.com *.cloudflare.com; child-src 'self' *.googletagmanager.com *.youtube.com;"

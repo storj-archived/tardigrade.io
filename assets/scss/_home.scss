@@ -52,6 +52,10 @@
   }
 }
 
+.navbar-logo {
+  margin-top: -14px;
+}
+
 .navbar-collapse {
   @media only screen and (max-width: 991px) {
     margin-top: 20px;
@@ -852,6 +856,12 @@
 			width: 100%;
 		}
 	}
+
+    .selected,
+    #tardigradeEstimate,
+    #tardigradeEstimateLabel {
+      color: #2582FF;
+    }
 }
 
 
@@ -2077,6 +2087,10 @@ a {
   padding: 12px 15px;
   width: 98%;
   margin: 0 auto;
+}
+
+.hero-tardigrade-msg-link {
+  text-decoration: none;
 }
 
 .hero-tardigrade-msg-left {
