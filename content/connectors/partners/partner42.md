@@ -18,5 +18,5 @@ bgImg: "/img/fastly-bg.svg"
 website: "http://fastly.com/"
 docs: "https://docs.fastly.com/en/guides/tardigrade-decentralized-object-cloud-storage"
 ctaName: "Get Started With Fastly"
-ctaLink: "http://fastly.com/"
+ctaLink: "https://docs.fastly.com/en/guides/tardigrade-decentralized-object-cloud-storage"
 ---
