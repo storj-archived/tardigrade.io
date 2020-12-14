@@ -5,11 +5,12 @@ added: 3/19/20
 updated: 3/19/20
 new: true
 img: "/img/partners/fastly.svg"
+class: "partner"
 categories: "App Connector"
-link: "/connectors/duplicati"
+link: "/connectors/fastly"
 weight: 98
 community: true
-about: "Duplicati is an easy to use, open source backup tool for Windows, Mac, Linux, iOS, and Android that enables backups to the decentralized cloud. Duplicati users can now take advantage of the benefits of enterprise-grade security backed by SLAs, with end-to-end encryption on every file through a new native integration with Tardigrade."
+about: "Fastly’s edge cloud platform enables customers to create great digital experiences quickly, securely, and reliably. And now Fastly developers can quickly set up Tardigrade as the endpoint for log streaming output and CDN origin, delivering faster, more powerful sites and applications on a secure, programmable edge cloud platform."
 released: "12/05/20"
 version: "1"
 bgImg: "/img/fastly-bg.svg"
