@@ -1,6 +1,7 @@
 ---
 name : "Fastly"
 partnerid : "fastly"
+description: "Fastly developers can use Tardigrade as the endpoint for log streaming/CDN origin."
 added: 3/19/20
 updated: 3/19/20
 new: true
