@@ -10,6 +10,16 @@
   }
 }
 
+.filezilla-hero-bg {
+  background-image: url("/img/connector-bg.jpg");
+}
+.duplicati-hero-bg {
+  background-image: url("/img/duplicati-bg.svg");
+}
+.fastly-hero-bg {
+  background-image: url("/img/fastly-bg.svg");
+}
+
 .connectors__hero {
   &__container {
     overflow: hidden;
@@ -50,6 +60,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &__bg {
     background: url("/img/tar-connectors-hero.png");
     background-size: contain;

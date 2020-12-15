@@ -11,7 +11,7 @@
 <div class="container-fluid single-connector__hero nomp">
 	<div class="container-fluid inner-hero-wrapper">
 		{{with .context.Site.GetPage .connectorInfo}}
-		<div style="background-image: url({{ .Params.bgImg }})" class="container single-connector__hero__bg">
+		<div class="container single-connector__hero__bg {{ .Params.partnerid }}-hero-bg">
 			<div class="spacer20"></div>
 			<div class="row">
 				<div class="col-md-10 col-sm-10 col-lg-10 single-connector__hero__content">
