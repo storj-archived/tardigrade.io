@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	{{ partial "head" . }}
+    {{partial "head" .}}
 </head>
-<body class="single-connector">
-	<header class="single-connector__nav">
-		{{partial "secondNav" (dict "logo" "/img/tar-logo-whit-horizontal.svg" )}}
-	</header>
-	{{partial "single-connector/connectorHero" (dict "name" "Fastly" "connectorInfo" "partner42" "context" . "page" $.Site.GetPage )}}
-	{{ partial "single-connector/connectorContent" (dict "name" "Fastly" "connectorInfo" "partner42" "context" . "page" $.Site.GetPage )}}
+<body class="page bg-light">
+    {{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
+    {{ partial "fastly/hero" .}}
+    {{ partial "fastly/how" .}}
 	<footer>
-		{{partial "footer" . }}
+			{{partial "footer" . }}
 	</footer>
 	{{ partial "site-scripts" .}}
+  <script type="text/javascript" src="/js/fastly-form.js"></script>
 </body>
 </html>
