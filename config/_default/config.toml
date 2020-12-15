@@ -31,5 +31,6 @@
 		about-us="/about-us/"
 		duplicati="/connectors/duplicati"
 		why="/whats-a-tardigrade/"
-		fastly="/fastly/"
 		fastly-success="/fastly-success/"
+        fastly="/connectors/fastly/"
+        fastly-register="/fastly"
