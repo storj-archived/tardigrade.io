@@ -17,7 +17,7 @@
         {{range where .Site.Pages ".Params.class" "usecase"}}
         <div class="pl-3 {{if eq .Params.isActive true}}usecase-link-wrapper-active{{else}}usecase-link-wrapper{{end}}" >
           <a
-            class="nav-link"
+            class="nav-link usecases-tabs-link"
             id="v-pills-{{.Params.name}}-tab"
             data-toggle="pill"
             href="#v-pills-{{.Params.name}}"
@@ -71,7 +71,7 @@
     </div>
 
   </div>
-  
+
 	<img class="dev-in-mind__responsive-mobile-bg" src="/img/tar-web-grey-bg-sm-2.png" />
 
 </div>
