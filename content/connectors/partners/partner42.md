@@ -12,7 +12,7 @@ link: "/connectors/fastly"
 weight: 98
 community: true
 about: "Fastly’s edge cloud platform enables customers to create great digital experiences quickly, securely, and reliably. And now Fastly developers can quickly set up Tardigrade as the endpoint for log streaming output and CDN origin, delivering faster, more powerful sites and applications on a secure, programmable edge cloud platform."
-released: "12/05/20"
+released: "12/15/20"
 version: "1"
 bgImg: "/img/fastly-bg.svg"
 website: "http://fastly.com/"
