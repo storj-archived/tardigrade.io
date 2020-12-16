@@ -7,5 +7,8 @@ form.addEventListener('submit', e => {
   spinner.removeAttribute('hidden');
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => window.location.href = "/fastly-success")
-    .catch(error => console.error('Error!', error.message))
+    .catch(error => {
+      console.error('Error!', error.message)
+      spinner.setAttribute('hidden')
+    })
 })
