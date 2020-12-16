@@ -3,10 +3,8 @@
 <head>
     {{partial "head" .}}
 </head>
-<body class="satellites-verify-page page">
-	<div class="container pt-3 pb-1 storj-blu-bg">
-			{{ partial "nav"  .}}
-	</div>
+<body class="page bg-light">
+      {{partial "secondNav" (dict "logo" "/img/tar-logo-blue-horizontal.svg" )}}
 			{{ partial "fastly-success/success" .}}
 	<footer>
 			{{partial "footer" . }}
