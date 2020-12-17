@@ -125,6 +125,8 @@ function onNextStep(event) {
 
 function onSubmit(event) {
 
+    event.preventDefault();
+
     multiOptionErrCheck(index, perMonthOptions, true)
 
     var style = window.getComputedStyle(errElm[index]);
@@ -221,4 +223,3 @@ nextButton.addEventListener('click', function (event) {
 submitButton.addEventListener('click', function (event) {
     onSubmit(event)
 })
-
