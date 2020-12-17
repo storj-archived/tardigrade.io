@@ -5,7 +5,7 @@
 <g mask="url(#mask0)">
 <rect width="939" height="177" rx="6" fill="#4F0000"/>
 <rect width="939" height="177" rx="6" fill="url(#paint0_linear)"/>
-<rect width="443" height="321" transform="matrix(-1 0 0 1 888 10)" fill="url(#pattern0)" fill-opacity="0.3"/>
+<rect x="445" y="10" width="443" height="321" fill="url(#pattern0)" fill-opacity="0.3"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
