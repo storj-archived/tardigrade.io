@@ -201,6 +201,7 @@ document.onkeypress = function (event) {
 }
 
 backButton.addEventListener('click', function (event) {
+    event.preventDefault()
     // no back button on first step
     if(index === 1 && backButton) {
         backButton.style.display = 'none';
