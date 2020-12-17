@@ -34,3 +34,4 @@
 		fastly-success="/fastly-success/"
         fastly="/connectors/fastly/"
         fastly-register="/fastly"
+        filebase="/connectors/filebase/"
