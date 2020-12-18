@@ -58,8 +58,8 @@ function successfulClick(event) {
     if(progressBar) {
         progressBar.innerHTML = index + 2;
         progressBarValue = progressBarValue + 8.333;
-        progressBar.style.width = `${progressBarValue}%`
-    }
+        progressBar.classList.remove(`step-${index + 1}`)
+        progressBar.classList.add(`step-${index + 2}`)    }
 
     // display next step
     index = index + 1
@@ -222,7 +222,8 @@ backButton.addEventListener('click', function (event) {
     if(progressBar) {
         progressBar.innerHTML = index;
         progressBarValue = progressBarValue - 8.333;
-        progressBar.style.width = `${progressBarValue}%`
+        progressBar.classList.remove(`step-${index + 1}`)
+        progressBar.classList.add(`step-${index}`)
     }
     index = index - 1
     parent[index].classList.add('d-block');
