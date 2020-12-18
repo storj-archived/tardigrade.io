@@ -35,20 +35,23 @@ if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
 }
 
 function beginForm(event) {
-    formStart.style.display = 'none';
-    firstStep.style.display = 'inherit';
-    progressBarWrapper.style.display = 'inherit';
-    stepButtons.style.display = 'inherit';
+    formStart.classList.add('d-none');
+    firstStep.classList.add('d-block');
+    progressBarWrapper.classList.add('d-block');
+    stepButtons.classList.add('d-block');
     setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
 }
 
 // if value is input or selected on step
 function successfulClick(event) {
-    parent[index].style.display = 'none';
+    parent[index].classList.add('d-none');
+    parent[index].classList.remove('d-block');
+    parent[index].classList.remove('d-inline-block');
 
     // make sure back btn is present
     if(backButton) {
-        backButton.style.display = 'inline-block';
+        backButton.classList.add('d-inline-block');
+        backButton.classList.remove('d-none');
     }
 
     // progress bar logic
@@ -60,12 +63,14 @@ function successfulClick(event) {
 
     // display next step
     index = index + 1
-    parent[index].style.display = 'inline-block';
+    parent[index].classList.add('d-inline-block');
 
     // remove next button and show submit button if last step
     if(parent[index].classList.contains('partner-form-per-month')) {
-        nextButton.style.display = 'none';
-        submitButton.style.display = 'inline-block';
+        nextButton.classList.add('d-none');
+        submitButton.classList.add('d-inline-block');
+        nextButton.classList.remove('d-inline-block');
+        submitButton.classList.add('d-none');
     }
 
     // remove error display and focus input for next step
@@ -204,16 +209,20 @@ backButton.addEventListener('click', function (event) {
     event.preventDefault()
     // no back button on first step
     if(index === 1 && backButton) {
-        backButton.style.display = 'none';
+        backButton.classList.add('d-none');
+        backButton.classList.remove('d-inline-block');
     }
-    parent[index].style.display = 'none';
+    parent[index].classList.add('d-none');
+    parent[index].classList.remove('d-block');
+    parent[index].classList.remove('d-inline-block');
     if(progressBar) {
         progressBar.innerHTML = index;
         progressBarValue = progressBarValue - 8.333;
         progressBar.style.width = `${progressBarValue}%`
     }
     index = index - 1
-    parent[index].style.display = 'block';
+    parent[index].classList.add('d-block');
+    parent[index].classList.remove('d-none');
     setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
 })
 
