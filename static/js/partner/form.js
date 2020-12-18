@@ -74,7 +74,8 @@ function successfulClick(event) {
     }
 
     // remove error display and focus input for next step
-    errElm[index].style.display = 'none';
+    errElm[index].classList.add('d-none');
+    errElm[index].classList.remove('d-block');
     setTimeout(function(){parent[index].querySelector('input').focus(); }, 200);
 }
 
@@ -84,14 +85,15 @@ function multiOptionErrCheck(index, currentStepOptions, isSubmit) {
     for (let i = 0, length = currentStepOptions.length; i < length; i++) {
         if (currentStepOptions[i].checked) {
             selected = true;
-            errElm[index].style.display = 'none';
-            if(!isSubmit) {
+            errElm[index].classList.add('d-none');
+            errElm[index].classList.remove('d-block');            if(!isSubmit) {
                 successfulClick();
             }
         }
     }
     if(!selected) {
-        errElm[index].style.display = 'block';
+        errElm[index].classList.add('d-block');
+        errElm[index].classList.remove('d-none');
         setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
     }
 }
@@ -100,8 +102,8 @@ function errorCheck(index) {
     var userEmailInput = parent[index].querySelector(".user-email");
     // if email input does not include ampersand
     if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
-        errElm[index].style.display = 'block';
-        setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
+        errElm[index].classList.add('d-block');
+        errElm[index].classList.remove('d-none');        setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
     } else if(parent[index].classList.contains("partner-form-use-case")) {
         multiOptionErrCheck(index, useCaseOptions)
     } else if(parent[index].classList.contains("partner-form-data-amount")) {
@@ -109,7 +111,8 @@ function errorCheck(index) {
     } else if(parent[index].classList.contains("partner-form-file-size")) {
         multiOptionErrCheck(index, fileSizeOptions)
     } else {
-        errElm[index].style.display = 'none';
+        errElm[index].classList.add('d-none');
+        errElm[index].classList.remove('d-block');
         successfulClick();
     }
 }
@@ -120,7 +123,8 @@ function onNextStep(event) {
     if(parent[index] && errElm && errElm[index]) {
         // if required field is empty
         if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
-            errElm[index].style.display = 'block';
+            errElm[index].classList.add('d-block');
+            errElm[index].classList.remove('d-none');
             setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
         } else {
             errorCheck(index)
