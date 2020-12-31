@@ -35,41 +35,47 @@ if(formStart && startButton && firstStep && progressBarWrapper && stepButtons) {
 }
 
 function beginForm(event) {
-    formStart.style.display = 'none';
-    firstStep.style.display = 'inherit';
-    progressBarWrapper.style.display = 'inherit';
-    stepButtons.style.display = 'inherit';
+    formStart.classList.add('d-none');
+    firstStep.classList.add('d-block');
+    progressBarWrapper.classList.add('d-block');
+    stepButtons.classList.add('d-block');
     setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
 }
 
 // if value is input or selected on step
 function successfulClick(event) {
-    parent[index].style.display = 'none';
+    parent[index].classList.add('d-none');
+    parent[index].classList.remove('d-block');
+    parent[index].classList.remove('d-inline-block');
 
     // make sure back btn is present
     if(backButton) {
-        backButton.style.display = 'inline-block';
+        backButton.classList.add('d-inline-block');
+        backButton.classList.remove('d-none');
     }
 
     // progress bar logic
     if(progressBar) {
         progressBar.innerHTML = index + 2;
         progressBarValue = progressBarValue + 8.333;
-        progressBar.style.width = `${progressBarValue}%`
-    }
+        progressBar.classList.remove(`step-${index + 1}`)
+        progressBar.classList.add(`step-${index + 2}`)    }
 
     // display next step
     index = index + 1
-    parent[index].style.display = 'inline-block';
+    parent[index].classList.add('d-inline-block');
 
     // remove next button and show submit button if last step
     if(parent[index].classList.contains('partner-form-per-month')) {
-        nextButton.style.display = 'none';
-        submitButton.style.display = 'inline-block';
+        nextButton.classList.add('d-none');
+        submitButton.classList.add('d-inline-block');
+        nextButton.classList.remove('d-inline-block');
+        submitButton.classList.add('d-none');
     }
 
     // remove error display and focus input for next step
-    errElm[index].style.display = 'none';
+    errElm[index].classList.add('d-none');
+    errElm[index].classList.remove('d-block');
     setTimeout(function(){parent[index].querySelector('input').focus(); }, 200);
 }
 
@@ -79,14 +85,15 @@ function multiOptionErrCheck(index, currentStepOptions, isSubmit) {
     for (let i = 0, length = currentStepOptions.length; i < length; i++) {
         if (currentStepOptions[i].checked) {
             selected = true;
-            errElm[index].style.display = 'none';
-            if(!isSubmit) {
+            errElm[index].classList.add('d-none');
+            errElm[index].classList.remove('d-block');            if(!isSubmit) {
                 successfulClick();
             }
         }
     }
     if(!selected) {
-        errElm[index].style.display = 'block';
+        errElm[index].classList.add('d-block');
+        errElm[index].classList.remove('d-none');
         setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
     }
 }
@@ -95,8 +102,8 @@ function errorCheck(index) {
     var userEmailInput = parent[index].querySelector(".user-email");
     // if email input does not include ampersand
     if(userEmailInput && userEmailInput.value && !userEmailInput.value.includes("@")) {
-        errElm[index].style.display = 'block';
-        setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
+        errElm[index].classList.add('d-block');
+        errElm[index].classList.remove('d-none');        setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
     } else if(parent[index].classList.contains("partner-form-use-case")) {
         multiOptionErrCheck(index, useCaseOptions)
     } else if(parent[index].classList.contains("partner-form-data-amount")) {
@@ -104,7 +111,8 @@ function errorCheck(index) {
     } else if(parent[index].classList.contains("partner-form-file-size")) {
         multiOptionErrCheck(index, fileSizeOptions)
     } else {
-        errElm[index].style.display = 'none';
+        errElm[index].classList.add('d-none');
+        errElm[index].classList.remove('d-block');
         successfulClick();
     }
 }
@@ -115,7 +123,8 @@ function onNextStep(event) {
     if(parent[index] && errElm && errElm[index]) {
         // if required field is empty
         if(parent[index].querySelector(".required") && parent[index].querySelector(".required").value == "") {
-            errElm[index].style.display = 'block';
+            errElm[index].classList.add('d-block');
+            errElm[index].classList.remove('d-none');
             setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
         } else {
             errorCheck(index)
@@ -124,6 +133,8 @@ function onNextStep(event) {
 }
 
 function onSubmit(event) {
+
+    event.preventDefault();
 
     multiOptionErrCheck(index, perMonthOptions, true)
 
@@ -199,18 +210,24 @@ document.onkeypress = function (event) {
 }
 
 backButton.addEventListener('click', function (event) {
+    event.preventDefault()
     // no back button on first step
     if(index === 1 && backButton) {
-        backButton.style.display = 'none';
+        backButton.classList.add('d-none');
+        backButton.classList.remove('d-inline-block');
     }
-    parent[index].style.display = 'none';
+    parent[index].classList.add('d-none');
+    parent[index].classList.remove('d-block');
+    parent[index].classList.remove('d-inline-block');
     if(progressBar) {
         progressBar.innerHTML = index;
         progressBarValue = progressBarValue - 8.333;
-        progressBar.style.width = `${progressBarValue}%`
+        progressBar.classList.remove(`step-${index + 1}`)
+        progressBar.classList.add(`step-${index}`)
     }
     index = index - 1
-    parent[index].style.display = 'block';
+    parent[index].classList.add('d-block');
+    parent[index].classList.remove('d-none');
     setTimeout(function(){ parent[index].querySelector('input').focus(); }, 200);
 })
 
@@ -221,4 +238,3 @@ nextButton.addEventListener('click', function (event) {
 submitButton.addEventListener('click', function (event) {
     onSubmit(event)
 })
-
