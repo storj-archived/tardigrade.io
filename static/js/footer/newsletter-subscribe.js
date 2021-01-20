@@ -1,6 +1,10 @@
-var button = document.getElementById("mc-embedded-subscribe-footer");
+window.onload = function() {
+    var button = document.getElementById("mc-embedded-subscribe-footer");
 
-if(button) {
+    if (!button) {
+        return;
+    }
+
     button.onclick = function (event) {
         event.preventDefault();
 
