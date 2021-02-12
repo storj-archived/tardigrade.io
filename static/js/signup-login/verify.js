@@ -13,11 +13,7 @@ function redirectToLogin() {
 }
 
 function addTrailingSlashIfNeeded(str) {
-    if (str.slice(-1) !== '/') {
-        return `${str}/`
-    }
-
-    return str
+    return str.slice(-1) !== '/' ? `${str}/` : str
 }
 
 window.onload = function () {
