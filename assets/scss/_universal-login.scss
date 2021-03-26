@@ -112,3 +112,51 @@ p {
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+
+  .universal-login-area {
+
+    &__content-area {
+
+        display:flex;
+        flex-flow: column;
+        padding: 35px 20px 0 20px;
+
+        &__functional-area {
+
+            .functional-area {
+                min-width: 100%;
+                background: transparent;
+                padding: 10px;
+            }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+    .universal-login-area {
+
+      &__header {
+
+          &__logo-link {
+              width: 100%;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+    .universal-login-area {
+
+      &__header {
+
+          &__logo {
+              width: 90%;
+          }
+      }
+  }
+}

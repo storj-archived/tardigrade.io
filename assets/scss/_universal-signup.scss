@@ -54,6 +54,7 @@ p {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      order: 1;
 
       &__title {
         font-weight: 900;
@@ -124,6 +125,7 @@ p {
 
     &__functional-area {
       margin-left: 20px;
+      order: 2;
 
       &__account {
         margin-top: 50px;
@@ -194,5 +196,55 @@ p {
     &__content-area {
       padding: 55px 20px 0 20px;
     }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .universal-signup-area {
+
+    &__content-area {
+
+        display:flex;
+        flex-flow: column;
+        padding: 35px 20px 0 20px;
+
+        &__info {
+            order: 2;
+
+            &__title {
+                font-size: 29px;
+                line-height: 39px;
+            }
+
+            &__sub-title {
+                font-size: 18px;
+            }
+        }
+
+        &__functional-area {
+            order: 1;
+            margin-left: 0;
+
+            .functional-area {
+                min-width: 100%;
+                background: transparent;
+                padding: 10px;
+            }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+    .universal-signup-area {
+
+      &__header {
+
+          &__logo-link {
+
+              width: 90%;
+          }
+      }
   }
 }
