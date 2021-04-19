@@ -1,3 +1,0 @@
----
-title: "Cookie Policy"
----

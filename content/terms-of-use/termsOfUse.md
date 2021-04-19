@@ -1,3 +1,0 @@
----
-title: "Terms Of Use"
----
