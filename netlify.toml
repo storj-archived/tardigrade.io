@@ -5,6 +5,18 @@
   force = true
 
 [[redirects]]
+  from = "/community"
+  to = "https://forum.storj.io"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/community/"
+  to = "https://forum.storj.io"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "https://www.storj.io/:splat"
   status = 301
