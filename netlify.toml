@@ -1,48 +1,6 @@
-[build]
-publish = "public"
-command = "hugo --gc --minify"
-baseUrl = "https://tardigrade.io/"
-
-[context.production.environment]
-HUGO_VERSION = "0.75.1"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
-
-[context.split1]
-command = "hugo --gc --minify --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.75.1"
-HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.75.1"
-
-[context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "ç"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
-
 [[redirects]]
-  from = "/blog/*"
-  to = "https://adoring-borg-aad42e.netlify.com/:splat"
-  status = 200
+  from = "/*"
+  to = "https://www.storj.io/:splat"
+  status = 301
   force = true
 
-[[redirects]]
-from = "/*"
-to = "/404/"
-status = 404
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "deny"
-    Strict-Transport-Security = "max-age=300; includeSubDomains"
