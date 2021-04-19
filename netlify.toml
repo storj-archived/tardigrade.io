@@ -5,6 +5,18 @@
   force = true
 
 [[redirects]]
+  from = "/categories/app-connector/"
+  to = "https://www.storj.io/integrations-category/app-connectors"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/categories/app-connector"
+  to = "https://www.storj.io/integrations-category/app-connectors"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/categories/*"
   to = "https://www.storj.io/integrations-category/:splat"
   status = 301
