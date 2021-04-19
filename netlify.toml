@@ -1,4 +1,10 @@
 [[redirects]]
+  from = "/connectors/*"
+  to = "https://www.storj.io/integrations/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/trusted-satellites"
   to = "https://www.storj.io/dcs-satellites"
   status = 301
